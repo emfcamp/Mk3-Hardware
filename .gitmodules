@@ -1,0 +1,6 @@
+[submodule "libraries/matt"]
+	path = libraries/matt
+	url = https://github.com/mattbrejza/eagle-lib
+[submodule "libraries/sparkfun"]
+	path = libraries/sparkfun
+	url = https://github.com/sparkfun/sparkfun-eagle-libraries
