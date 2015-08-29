@@ -14508,6 +14508,21 @@ Simple slide switch. Spark Fun Electronics SKU : COM-00102</description>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="C38" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL"/>
 <part name="GND62" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
+<part name="SJ1" library="TiLDA Mk3 Parts" deviceset="SOLDERJUMPER" device="TRACE"/>
+<part name="SJ2" library="TiLDA Mk3 Parts" deviceset="SOLDERJUMPER" device="TRACE"/>
+<part name="GND63" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
+<part name="GND64" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
+<part name="C48" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="nc"/>
+<part name="C49" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="nc"/>
+<part name="GND65" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
+<part name="GND66" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
+<part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
+<part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
+<part name="C50" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/4u7/10V/X5R"/>
+<part name="C51" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/4u7/10V/X5R"/>
+<part name="GND67" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
+<part name="GND68" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
+<part name="GND69" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14548,6 +14563,8 @@ off/on switch</text>
 will need to decide on 
 usb otg power arrangment</text>
 <text x="251.46" y="162.56" size="1.778" layer="91">not sure we need this</text>
+<text x="78.74" y="147.32" size="1.778" layer="91">default: closed for 401</text>
+<text x="99.06" y="157.48" size="1.778" layer="91">make a part which combines these</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -14772,6 +14789,21 @@ usb otg power arrangment</text>
 <instance part="+3V6" gate="G$1" x="220.98" y="190.5" rot="R270"/>
 <instance part="C38" gate="G$1" x="106.68" y="180.34" rot="R180"/>
 <instance part="GND62" gate="1" x="106.68" y="172.72"/>
+<instance part="SJ1" gate="1" x="71.12" y="147.32" rot="R90"/>
+<instance part="SJ2" gate="1" x="76.2" y="147.32" rot="R90"/>
+<instance part="GND63" gate="1" x="71.12" y="139.7"/>
+<instance part="GND64" gate="1" x="76.2" y="139.7"/>
+<instance part="C48" gate="G$1" x="81.28" y="149.86" rot="R180"/>
+<instance part="C49" gate="G$1" x="86.36" y="149.86" rot="R180"/>
+<instance part="GND65" gate="1" x="81.28" y="144.78"/>
+<instance part="GND66" gate="1" x="86.36" y="144.78"/>
+<instance part="+3V7" gate="G$1" x="193.04" y="233.68" rot="R90"/>
+<instance part="+3V8" gate="G$1" x="180.34" y="241.3"/>
+<instance part="C50" gate="G$1" x="180.34" y="231.14" rot="R180"/>
+<instance part="C51" gate="G$1" x="175.26" y="231.14" rot="R180"/>
+<instance part="GND67" gate="1" x="180.34" y="223.52"/>
+<instance part="GND68" gate="1" x="200.66" y="218.44" rot="R270"/>
+<instance part="GND69" gate="1" x="200.66" y="213.36" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -15183,6 +15215,39 @@ usb otg power arrangment</text>
 <pinref part="GND62" gate="1" pin="GND"/>
 <pinref part="C38" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="175.26" x2="106.68" y2="177.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SJ1" gate="1" pin="1"/>
+<pinref part="GND63" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="SJ2" gate="1" pin="1"/>
+<pinref part="GND64" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C48" gate="G$1" pin="1"/>
+<pinref part="GND65" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C49" gate="G$1" pin="1"/>
+<pinref part="GND66" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C51" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="228.6" x2="175.26" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="C50" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="226.06" x2="180.34" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="226.06" x2="180.34" y2="228.6" width="0.1524" layer="91"/>
+<pinref part="GND67" gate="1" pin="GND"/>
+<junction x="180.34" y="226.06"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="SHIELD@1"/>
+<pinref part="GND68" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="SHIELD@3"/>
+<pinref part="GND69" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="3V3" class="0">
@@ -16187,12 +16252,6 @@ usb otg power arrangment</text>
 <label x="137.16" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="VCC"/>
-<wire x1="203.2" y1="233.68" x2="195.58" y2="233.68" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="SDIO_CLK" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="SCK"/>
@@ -16290,6 +16349,20 @@ usb otg power arrangment</text>
 <junction x="78.74" y="180.34"/>
 <junction x="83.82" y="180.34"/>
 <junction x="63.5" y="182.88"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="VCC"/>
+<wire x1="203.2" y1="233.68" x2="195.58" y2="233.68" width="0.1524" layer="91"/>
+<pinref part="+3V7" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="+3V8" gate="G$1" pin="+3V3"/>
+<pinref part="C50" gate="G$1" pin="2"/>
+<wire x1="180.34" y1="238.76" x2="180.34" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="238.76" x2="175.26" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="C51" gate="G$1" pin="2"/>
+<wire x1="175.26" y1="238.76" x2="175.26" y2="236.22" width="0.1524" layer="91"/>
+<junction x="180.34" y="238.76"/>
 </segment>
 </net>
 <net name="USB_ID" class="0">
@@ -16479,6 +16552,35 @@ usb otg power arrangment</text>
 <segment>
 <pinref part="S5" gate="1" pin="S"/>
 <wire x1="190.5" y1="190.5" x2="198.12" y2="190.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$38" class="0">
+<segment>
+<pinref part="IC1" gate="_POWER" pin="VSS1"/>
+<pinref part="SJ2" gate="1" pin="2"/>
+<wire x1="60.96" y1="157.48" x2="76.2" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="157.48" x2="76.2" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="C49" gate="G$1" pin="2"/>
+<wire x1="76.2" y1="157.48" x2="86.36" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="157.48" x2="86.36" y2="154.94" width="0.1524" layer="91"/>
+<junction x="76.2" y="157.48"/>
+</segment>
+</net>
+<net name="N$37" class="0">
+<segment>
+<pinref part="IC1" gate="_POWER" pin="VSS"/>
+<pinref part="SJ1" gate="1" pin="2"/>
+<wire x1="60.96" y1="154.94" x2="71.12" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="154.94" x2="71.12" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="C48" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="154.94" x2="81.28" y2="154.94" width="0.1524" layer="91"/>
+<junction x="71.12" y="154.94"/>
+</segment>
+</net>
+<net name="N$39" class="0">
+<segment>
+<wire x1="99.06" y1="157.48" x2="86.36" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="157.48" x2="76.2" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
