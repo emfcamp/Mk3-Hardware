@@ -148,9 +148,9 @@
 <board>
 <plain>
 <wire x1="45.8" y1="26.7" x2="61.2" y2="26.7" width="1.2" layer="20"/>
-<wire x1="0" y1="0" x2="100" y2="0" width="0" layer="20"/>
-<wire x1="100" y1="0" x2="100" y2="53.5" width="0" layer="20"/>
-<wire x1="100" y1="53.5" x2="0" y2="53.5" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="107" y2="0" width="0" layer="20"/>
+<wire x1="107" y1="0" x2="107" y2="53.5" width="0" layer="20"/>
+<wire x1="107" y1="53.5" x2="0" y2="53.5" width="0" layer="20"/>
 <wire x1="0" y1="53.5" x2="0" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
@@ -1622,13 +1622,13 @@ design rules under a new name.</description>
 <element name="C49" library="TiLDA Mk3 Parts" package="C0402-SMALLER" value="nc" x="43.5" y="18.5" rot="MR0"/>
 <element name="C50" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/4u7/10V/X5R" x="4.5" y="20" rot="MR270"/>
 <element name="C51" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/4u7/10V/X5R" x="8" y="20.5" rot="MR270"/>
-<element name="TP1" library="TiLDA Mk3 Parts" package="4MMEDGE" value="TP4MM" x="88.5" y="49.5"/>
+<element name="TP1" library="TiLDA Mk3 Parts" package="4MMEDGE" value="TP4MM" x="91" y="49.5"/>
 <element name="TP2" library="TiLDA Mk3 Parts" package="4MMEDGE" value="TP4MM" x="4.5" y="49" rot="R45"/>
 <element name="TP3" library="TiLDA Mk3 Parts" package="4MMEDGE" value="TP4MM" x="14" y="49.5"/>
 <element name="TP4" library="TiLDA Mk3 Parts" package="4MMEDGE" value="TP4MM" x="96" y="49.5"/>
-<element name="TP5" library="TiLDA Mk3 Parts" package="4MMEDGE" value="TP4MM" x="10" y="4" rot="R180"/>
+<element name="TP5" library="TiLDA Mk3 Parts" package="4MMEDGE" value="TP4MM" x="14.5" y="4" rot="R180"/>
 <element name="TP6" library="TiLDA Mk3 Parts" package="4MMEDGE" value="TP4MM" x="4" y="40.5" rot="R90"/>
-<element name="TP7" library="TiLDA Mk3 Parts" package="4MMEDGE" value="TP4MM" x="3" y="4" rot="R180"/>
+<element name="TP7" library="TiLDA Mk3 Parts" package="4MMEDGE" value="TP4MM" x="5.5" y="4" rot="R180"/>
 <element name="Q1" library="TiLDA Mk3 Parts" package="SC70-3-R" value="BSS84W" x="-21" y="-21.5"/>
 <element name="D1" library="diode" package="SMB" value="" x="-19.5" y="-28.5"/>
 <element name="R19" library="TiLDA Mk3 Parts" package="R0402-SMALLER" value="" x="-24.5" y="-28.5"/>
@@ -1641,7 +1641,7 @@ design rules under a new name.</description>
 <element name="C53" library="TiLDA Mk3 Parts" package="C0402-SMALLER" value="0402/10p/50V/NP0" x="25.5" y="16" rot="MR0"/>
 <element name="C54" library="TiLDA Mk3 Parts" package="C0402-SMALLER" value="0402/10p/50V/NP0" x="27.5" y="16" rot="MR0"/>
 <element name="TP8" library="TiLDA Mk3 Parts" package="4MMEDGE" value="TP4MM" x="96.5" y="56.5"/>
-<element name="TP9" library="TiLDA Mk3 Parts" package="4MMEDGE" value="TP4MM" x="90" y="4" rot="R180"/>
+<element name="TP9" library="TiLDA Mk3 Parts" package="4MMEDGE" value="TP4MM" x="92" y="4" rot="R180"/>
 <element name="TP10" library="TiLDA Mk3 Parts" package="4MMEDGE" value="TP4MM" x="97" y="4" rot="R180"/>
 </elements>
 <signals>
@@ -2998,9 +2998,6 @@ design rules under a new name.</description>
 <wire x1="19" y1="52.5" x2="59" y2="52.5" width="0.2" layer="16"/>
 <wire x1="59" y1="52.5" x2="64.204" y2="50.3" width="0" layer="19" extent="16-16"/>
 </signal>
-<signal name="ADC2">
-<contactref element="IC1" pad="16"/>
-</signal>
 <signal name="ADC3">
 <contactref element="IC1" pad="17"/>
 <contactref element="LED2" pad="A"/>
@@ -3048,6 +3045,12 @@ design rules under a new name.</description>
 <contactref element="C54" pad="2"/>
 <wire x1="27" y1="16" x2="29.75" y2="18.75" width="0" layer="19" extent="16-16"/>
 <wire x1="24.95" y1="14.5" x2="27" y2="16" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$46">
+<contactref element="IC2" pad="55"/>
+</signal>
+<signal name="N$47">
+<contactref element="IC2" pad="57"/>
 </signal>
 </signals>
 </board>

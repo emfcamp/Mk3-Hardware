@@ -17493,6 +17493,12 @@ be 0805 parts instead</text>
 <wire x1="248.92" y1="27.94" x2="223.52" y2="27.94" width="0.1524" layer="97"/>
 <wire x1="223.52" y1="27.94" x2="223.52" y2="43.18" width="0.1524" layer="97"/>
 <text x="678.18" y="167.64" size="1.778" layer="97">how is this flashed? do we want test points?</text>
+<text x="769.62" y="71.12" size="1.778" layer="97" rot="MR90">&lt; connect</text>
+<text x="753.872" y="77.724" size="1.778" layer="97" rot="MR180">&lt; connect</text>
+<text x="736.6" y="147.32" size="1.778" layer="97">connect WP/HOLD</text>
+<text x="792.48" y="58.42" size="1.778" layer="97">probably dont need this</text>
+<wire x1="789.94" y1="58.42" x2="777.24" y2="58.42" width="0.1524" layer="97"/>
+<wire x1="777.24" y1="58.42" x2="772.16" y2="63.5" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -19677,13 +19683,6 @@ be 0805 parts instead</text>
 <pinref part="J4" gate="G$1" pin="SCL"/>
 </segment>
 </net>
-<net name="ADC2" class="0">
-<segment>
-<pinref part="IC1" gate="_PA" pin="PA2"/>
-<wire x1="43.18" y1="124.46" x2="53.34" y2="124.46" width="0.1524" layer="91"/>
-<label x="48.26" y="124.46" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="ADC3" class="0">
 <segment>
 <pinref part="IC1" gate="_PA" pin="PA3"/>
@@ -19745,6 +19744,18 @@ be 0805 parts instead</text>
 <pinref part="C54" gate="G$1" pin="2"/>
 <wire x1="139.7" y1="86.36" x2="144.78" y2="86.36" width="0.1524" layer="91"/>
 <junction x="139.7" y="86.36"/>
+</segment>
+</net>
+<net name="N$46" class="0">
+<segment>
+<pinref part="IC2" gate="_UART" pin="TX"/>
+<wire x1="614.68" y1="193.04" x2="617.22" y2="193.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$47" class="0">
+<segment>
+<pinref part="IC2" gate="_UART" pin="RX"/>
+<wire x1="614.68" y1="190.5" x2="617.22" y2="190.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
