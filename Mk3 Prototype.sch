@@ -18915,7 +18915,23 @@ be 0805 parts instead</text>
 <text x="5.08" y="147.32" size="3.81" layer="97" ratio="15">Port C</text>
 <text x="76.2" y="147.32" size="3.81" layer="97" ratio="15">Port D</text>
 <text x="132.08" y="198.12" size="1.778" layer="91" rot="R270">NC if 405</text>
-<text x="147.32" y="58.42" size="1.778" layer="91" rot="R90">need to jumper between Vin/Vbat</text>
+<text x="490.22" y="91.44" size="1.778" layer="91" rot="R90">need to jumper between Vin/Vbat</text>
+<wire x1="485.14" y1="48.26" x2="485.14" y2="53.34" width="0.1524" layer="96"/>
+<wire x1="485.14" y1="55.88" x2="485.14" y2="53.34" width="0.1524" layer="96"/>
+<wire x1="485.14" y1="53.34" x2="482.6" y2="53.34" width="0.1524" layer="96"/>
+<wire x1="485.14" y1="53.34" x2="487.68" y2="53.34" width="0.1524" layer="96"/>
+<wire x1="485.14" y1="53.34" x2="482.6" y2="50.8" width="0.1524" layer="96"/>
+<wire x1="482.6" y1="50.8" x2="487.68" y2="50.8" width="0.1524" layer="96"/>
+<wire x1="487.68" y1="50.8" x2="485.14" y2="53.34" width="0.1524" layer="96"/>
+<text x="464.82" y="63.5" size="1.778" layer="96">potential usb otg support</text>
+<wire x1="474.98" y1="60.96" x2="474.98" y2="58.42" width="0.1524" layer="96"/>
+<wire x1="474.98" y1="58.42" x2="480.06" y2="53.34" width="0.1524" layer="96"/>
+<text x="797.56" y="248.92" size="6.4516" layer="94">List of things to check</text>
+<text x="797.56" y="236.22" size="2.54" layer="94">is the stm32f4 annoying with interrupts on some pins, and are peripherals which
+ require interrupt wired to take this into account?</text>
+<text x="591.82" y="177.8" size="1.778" layer="97">might need to be connected 
+to a ftdi header for debug</text>
+<text x="797.56" y="223.52" size="2.54" layer="94">SDIO_SW can be easily changed away from pin PC13</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -19183,18 +19199,18 @@ be 0805 parts instead</text>
 <instance part="C49" gate="G$1" x="215.9" y="200.66" rot="R180"/>
 <instance part="C56" gate="G$1" x="210.82" y="200.66" rot="R180"/>
 <instance part="U4" gate="G$1" x="335.28" y="58.42" rot="R90"/>
-<instance part="SV1" gate="G$1" x="152.4" y="101.6"/>
-<instance part="D2" gate="G$1" x="172.72" y="106.68"/>
-<instance part="GND50" gate="1" x="193.04" y="99.06"/>
-<instance part="GND63" gate="1" x="162.56" y="96.52"/>
-<instance part="SV2" gate="G$1" x="152.4" y="86.36"/>
-<instance part="SV3" gate="G$1" x="152.4" y="73.66"/>
-<instance part="SV4" gate="G$1" x="152.4" y="60.96"/>
-<instance part="SV5" gate="G$1" x="152.4" y="48.26"/>
-<instance part="GND64" gate="1" x="160.02" y="81.28"/>
-<instance part="GND66" gate="1" x="160.02" y="68.58"/>
-<instance part="GND76" gate="1" x="160.02" y="55.88"/>
-<instance part="GND77" gate="1" x="160.02" y="43.18"/>
+<instance part="SV1" gate="G$1" x="520.7" y="101.6"/>
+<instance part="D2" gate="G$1" x="541.02" y="106.68"/>
+<instance part="GND50" gate="1" x="561.34" y="99.06"/>
+<instance part="GND63" gate="1" x="530.86" y="96.52"/>
+<instance part="SV2" gate="G$1" x="495.3" y="119.38"/>
+<instance part="SV3" gate="G$1" x="495.3" y="106.68"/>
+<instance part="SV4" gate="G$1" x="495.3" y="93.98"/>
+<instance part="SV5" gate="G$1" x="495.3" y="81.28"/>
+<instance part="GND64" gate="1" x="502.92" y="114.3"/>
+<instance part="GND66" gate="1" x="502.92" y="101.6"/>
+<instance part="GND76" gate="1" x="502.92" y="88.9"/>
+<instance part="GND77" gate="1" x="502.92" y="76.2"/>
 </instances>
 <busses>
 </busses>
@@ -19681,14 +19697,14 @@ be 0805 parts instead</text>
 </segment>
 <segment>
 <pinref part="D2" gate="G$1" pin="VSS"/>
-<wire x1="190.5" y1="104.14" x2="193.04" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="558.8" y1="104.14" x2="561.34" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="GND50" gate="1" pin="GND"/>
-<wire x1="193.04" y1="104.14" x2="193.04" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="561.34" y1="104.14" x2="561.34" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SV1" gate="G$1" pin="1"/>
 <pinref part="GND63" gate="1" pin="GND"/>
-<wire x1="160.02" y1="99.06" x2="162.56" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="528.32" y1="99.06" x2="530.86" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SV2" gate="G$1" pin="1"/>
@@ -19946,6 +19962,11 @@ be 0805 parts instead</text>
 <pinref part="J7" gate="G$1" pin="RST"/>
 <wire x1="360.68" y1="243.84" x2="363.22" y2="243.84" width="0.1524" layer="91"/>
 <label x="360.68" y="243.84" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="_PD" pin="PD0"/>
+<wire x1="93.98" y1="139.7" x2="96.52" y2="139.7" width="0.1524" layer="91"/>
+<label x="96.52" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LCD_A0" class="0">
@@ -20509,12 +20530,22 @@ be 0805 parts instead</text>
 <wire x1="772.16" y1="71.12" x2="739.14" y2="71.12" width="0.1524" layer="91"/>
 <label x="741.68" y="71.12" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC4" gate="_PE" pin="PE3"/>
+<wire x1="93.98" y1="68.58" x2="101.6" y2="68.58" width="0.1524" layer="91"/>
+<label x="99.06" y="68.58" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="WIFI_!HIB" class="0">
 <segment>
 <pinref part="IC2" gate="_CONTROL" pin="!HIB"/>
 <wire x1="739.14" y1="76.2" x2="741.68" y2="76.2" width="0.1524" layer="91"/>
 <label x="741.68" y="76.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="33.02" y1="99.06" x2="35.56" y2="99.06" width="0.1524" layer="91"/>
+<label x="35.56" y="99.06" size="1.778" layer="95"/>
+<pinref part="IC4" gate="_PC" pin="PC13"/>
 </segment>
 </net>
 <net name="NRST" class="0">
@@ -20801,9 +20832,9 @@ be 0805 parts instead</text>
 <label x="607.06" y="27.94" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
-<wire x1="33.02" y1="99.06" x2="35.56" y2="99.06" width="0.1524" layer="91"/>
-<label x="35.56" y="99.06" size="1.778" layer="95"/>
-<pinref part="IC4" gate="_PC" pin="PC13"/>
+<wire x1="35.56" y1="116.84" x2="33.02" y2="116.84" width="0.1524" layer="91"/>
+<label x="35.56" y="116.84" size="1.778" layer="95"/>
+<pinref part="IC4" gate="_PC" pin="PC7"/>
 </segment>
 </net>
 <net name="USB_D_N" class="2">
@@ -21222,13 +21253,6 @@ be 0805 parts instead</text>
 <pinref part="IC4" gate="_PC" pin="PC6"/>
 </segment>
 </net>
-<net name="N$56" class="0">
-<segment>
-<wire x1="35.56" y1="116.84" x2="33.02" y2="116.84" width="0.1524" layer="91"/>
-<label x="35.56" y="116.84" size="1.778" layer="95"/>
-<pinref part="IC4" gate="_PC" pin="PC7"/>
-</segment>
-</net>
 <net name="N$38" class="0">
 <segment>
 <pinref part="IC4" gate="_PWR" pin="VCAP2"/>
@@ -21292,9 +21316,9 @@ be 0805 parts instead</text>
 <label x="33.02" y="185.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="195.58" y="111.76" size="1.778" layer="95"/>
+<label x="563.88" y="111.76" size="1.778" layer="95"/>
 <pinref part="D2" gate="G$1" pin="DIN"/>
-<wire x1="195.58" y1="111.76" x2="190.5" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="563.88" y1="111.76" x2="558.8" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="USART2_TX" class="0">
@@ -21337,24 +21361,72 @@ be 0805 parts instead</text>
 <segment>
 <pinref part="SV1" gate="G$1" pin="3"/>
 <pinref part="D2" gate="G$1" pin="DOUT"/>
-<wire x1="160.02" y1="104.14" x2="167.64" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="528.32" y1="104.14" x2="535.94" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$42" class="0">
 <segment>
 <pinref part="SV5" gate="G$1" pin="2"/>
-<wire x1="160.02" y1="48.26" x2="165.1" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="48.26" x2="165.1" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="502.92" y1="81.28" x2="508" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="508" y1="81.28" x2="508" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="SV2" gate="G$1" pin="2"/>
-<wire x1="165.1" y1="73.66" x2="165.1" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="86.36" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="508" y1="106.68" x2="508" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="508" y1="119.38" x2="502.92" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="SV3" gate="G$1" pin="2"/>
-<wire x1="160.02" y1="73.66" x2="165.1" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="73.66" x2="165.1" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="502.92" y1="106.68" x2="508" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="508" y1="106.68" x2="508" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="SV4" gate="G$1" pin="2"/>
-<wire x1="165.1" y1="60.96" x2="160.02" y2="60.96" width="0.1524" layer="91"/>
-<junction x="165.1" y="73.66"/>
-<junction x="165.1" y="60.96"/>
+<wire x1="508" y1="93.98" x2="502.92" y2="93.98" width="0.1524" layer="91"/>
+<junction x="508" y="106.68"/>
+<junction x="508" y="93.98"/>
+</segment>
+</net>
+<net name="TIM1_CH1" class="0">
+<segment>
+<pinref part="IC4" gate="_PE" pin="PE9"/>
+<wire x1="93.98" y1="50.8" x2="99.06" y2="50.8" width="0.1524" layer="91"/>
+<label x="99.06" y="50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="G$1" pin="3"/>
+<wire x1="502.92" y1="121.92" x2="513.08" y2="121.92" width="0.1524" layer="91"/>
+<label x="510.54" y="121.92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TIM1_CH2" class="0">
+<segment>
+<pinref part="IC4" gate="_PE" pin="PE11"/>
+<wire x1="93.98" y1="45.72" x2="101.6" y2="45.72" width="0.1524" layer="91"/>
+<label x="99.06" y="45.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV3" gate="G$1" pin="3"/>
+<wire x1="502.92" y1="109.22" x2="513.08" y2="109.22" width="0.1524" layer="91"/>
+<label x="510.54" y="109.22" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TIM1_CH3" class="0">
+<segment>
+<pinref part="IC4" gate="_PE" pin="PE13"/>
+<wire x1="93.98" y1="40.64" x2="101.6" y2="40.64" width="0.1524" layer="91"/>
+<label x="99.06" y="40.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV4" gate="G$1" pin="3"/>
+<wire x1="502.92" y1="96.52" x2="513.08" y2="96.52" width="0.1524" layer="91"/>
+<label x="510.54" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TIM1_CH4" class="0">
+<segment>
+<pinref part="IC4" gate="_PE" pin="PE14"/>
+<wire x1="93.98" y1="38.1" x2="101.6" y2="38.1" width="0.1524" layer="91"/>
+<label x="99.06" y="38.1" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV5" gate="G$1" pin="3"/>
+<wire x1="502.92" y1="83.82" x2="513.08" y2="83.82" width="0.1524" layer="91"/>
+<label x="510.54" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
