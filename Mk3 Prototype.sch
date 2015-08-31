@@ -18491,6 +18491,90 @@ W = angled&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-LED">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find discrete LEDs for illumination or indication, but no displays.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="WS2812B">
+<description>&lt;b&gt;Intelligent control LED with integrated light source&lt;/b&gt;&lt;p&gt;
+WS2812B&lt;br&gt;
+source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</description>
+<smd name="1" x="-2.45" y="1.6" dx="1.5" dy="1" layer="1"/>
+<smd name="4" x="2.45" y="1.6" dx="1.5" dy="1" layer="1"/>
+<smd name="3" x="2.45" y="-1.6" dx="1.5" dy="1" layer="1"/>
+<smd name="2" x="-2.45" y="-1.6" dx="1.5" dy="1" layer="1"/>
+<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="2.5" x2="-2.5" y2="2.5" width="0.127" layer="51"/>
+<circle x="-1.149040625" y="1.61858125" radius="0.125" width="0.25" layer="21"/>
+<text x="4" y="1.2" size="1.016" layer="25">&gt;NAME</text>
+<text x="4" y="-1.6" size="0.6096" layer="27">&gt;VALUE</text>
+<wire x1="-2.50951875" y1="2.250440625" x2="-2.50951875" y2="2.504440625" width="0.127" layer="21"/>
+<wire x1="-2.50951875" y1="2.504440625" x2="-2.45871875" y2="2.504440625" width="0.127" layer="21"/>
+<wire x1="-2.45871875" y1="2.504440625" x2="-2.45871875" y2="2.499359375" width="0.127" layer="21"/>
+<wire x1="-2.45871875" y1="2.499359375" x2="2.491740625" y2="2.499359375" width="0.127" layer="21"/>
+<wire x1="2.491740625" y1="2.499359375" x2="2.491740625" y2="2.26821875" width="0.127" layer="21"/>
+<wire x1="-2.50951875" y1="-2.225040625" x2="-2.50951875" y2="-2.49681875" width="0.127" layer="21"/>
+<wire x1="-2.50951875" y1="-2.49681875" x2="-2.45871875" y2="-2.49681875" width="0.127" layer="21"/>
+<wire x1="-2.45871875" y1="-2.49681875" x2="-2.45871875" y2="-2.499359375" width="0.127" layer="21"/>
+<wire x1="-2.45871875" y1="-2.499359375" x2="2.50951875" y2="-2.499359375" width="0.127" layer="21"/>
+<wire x1="2.50951875" y1="-2.499359375" x2="2.50951875" y2="-2.2733" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="WS2812B">
+<description>&lt;b&gt;Intelligent control LED with integrated light source&lt;/b&gt;&lt;p&gt;
+WS2812B&lt;br&gt;
+source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</description>
+<pin name="VDD" x="-5.08" y="5.08" length="short" direction="pwr"/>
+<pin name="DOUT" x="-5.08" y="-2.54" length="short" direction="out"/>
+<pin name="VSS" x="17.78" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="DIN" x="17.78" y="5.08" length="short" direction="in" rot="R180"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="15.24" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="15.24" y2="7.62" width="0.254" layer="94"/>
+<wire x1="15.24" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<text x="-2.286" y="8.382" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="WS2812B" prefix="D" uservalue="yes">
+<description>&lt;b&gt;WS2812B&lt;/b&gt; - Intelligent control LED integrated light source
+
+&lt;p&gt;Technical Specifications:
+&lt;ul&gt;
+&lt;li&gt;Power Supply Voltage (VDD): 3.5 to 5.3 V&lt;/li&gt;
+&lt;li&gt;Input Voltage (VI): -0.5 to VDD+0.5 V&lt;/li&gt;
+&lt;li&gt;Operating Junction Temperature (Topt): -25°C to +80°C&lt;/li&gt;
+&lt;li&gt;Storage Temperature Range (Tstg): -55°C to +150°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="WS2812B" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="WS2812B">
+<connects>
+<connect gate="G$1" pin="DIN" pad="4"/>
+<connect gate="G$1" pin="DOUT" pad="2"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="VSS" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -18757,6 +18841,17 @@ W = angled&lt;p&gt;
 <part name="C56" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
 <part name="U4" library="TiLDA Mk3 Parts" deviceset="ARDUINOR3" device="-NODIM"/>
 <part name="SV1" library="con-lstb" deviceset="MA03-1" device=""/>
+<part name="D2" library="SparkFun-LED" deviceset="WS2812B" device=""/>
+<part name="GND50" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
+<part name="GND63" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
+<part name="SV2" library="con-lstb" deviceset="MA03-1" device=""/>
+<part name="SV3" library="con-lstb" deviceset="MA03-1" device=""/>
+<part name="SV4" library="con-lstb" deviceset="MA03-1" device=""/>
+<part name="SV5" library="con-lstb" deviceset="MA03-1" device=""/>
+<part name="GND64" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
+<part name="GND66" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
+<part name="GND76" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
+<part name="GND77" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -18820,6 +18915,7 @@ be 0805 parts instead</text>
 <text x="5.08" y="147.32" size="3.81" layer="97" ratio="15">Port C</text>
 <text x="76.2" y="147.32" size="3.81" layer="97" ratio="15">Port D</text>
 <text x="132.08" y="198.12" size="1.778" layer="91" rot="R270">NC if 405</text>
+<text x="147.32" y="58.42" size="1.778" layer="91" rot="R90">need to jumper between Vin/Vbat</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -19087,7 +19183,18 @@ be 0805 parts instead</text>
 <instance part="C49" gate="G$1" x="215.9" y="200.66" rot="R180"/>
 <instance part="C56" gate="G$1" x="210.82" y="200.66" rot="R180"/>
 <instance part="U4" gate="G$1" x="335.28" y="58.42" rot="R90"/>
-<instance part="SV1" gate="G$1" x="149.86" y="121.92"/>
+<instance part="SV1" gate="G$1" x="152.4" y="101.6"/>
+<instance part="D2" gate="G$1" x="172.72" y="106.68"/>
+<instance part="GND50" gate="1" x="193.04" y="99.06"/>
+<instance part="GND63" gate="1" x="162.56" y="96.52"/>
+<instance part="SV2" gate="G$1" x="152.4" y="86.36"/>
+<instance part="SV3" gate="G$1" x="152.4" y="73.66"/>
+<instance part="SV4" gate="G$1" x="152.4" y="60.96"/>
+<instance part="SV5" gate="G$1" x="152.4" y="48.26"/>
+<instance part="GND64" gate="1" x="160.02" y="81.28"/>
+<instance part="GND66" gate="1" x="160.02" y="68.58"/>
+<instance part="GND76" gate="1" x="160.02" y="55.88"/>
+<instance part="GND77" gate="1" x="160.02" y="43.18"/>
 </instances>
 <busses>
 </busses>
@@ -19571,6 +19678,33 @@ be 0805 parts instead</text>
 <junction x="187.96" y="187.96"/>
 <junction x="187.96" y="190.5"/>
 <junction x="187.96" y="193.04"/>
+</segment>
+<segment>
+<pinref part="D2" gate="G$1" pin="VSS"/>
+<wire x1="190.5" y1="104.14" x2="193.04" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="GND50" gate="1" pin="GND"/>
+<wire x1="193.04" y1="104.14" x2="193.04" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SV1" gate="G$1" pin="1"/>
+<pinref part="GND63" gate="1" pin="GND"/>
+<wire x1="160.02" y1="99.06" x2="162.56" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="G$1" pin="1"/>
+<pinref part="GND64" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="SV3" gate="G$1" pin="1"/>
+<pinref part="GND66" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="SV4" gate="G$1" pin="1"/>
+<pinref part="GND76" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="SV5" gate="G$1" pin="1"/>
+<pinref part="GND77" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="F1" class="0">
@@ -21158,9 +21292,9 @@ be 0805 parts instead</text>
 <label x="33.02" y="185.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="121.92" x2="172.72" y2="121.92" width="0.1524" layer="91"/>
-<label x="167.64" y="121.92" size="1.778" layer="95"/>
+<label x="195.58" y="111.76" size="1.778" layer="95"/>
+<pinref part="D2" gate="G$1" pin="DIN"/>
+<wire x1="195.58" y1="111.76" x2="190.5" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="USART2_TX" class="0">
@@ -21197,6 +21331,30 @@ be 0805 parts instead</text>
 <wire x1="304.8" y1="71.12" x2="307.34" y2="71.12" width="0.1524" layer="91"/>
 <label x="304.8" y="71.12" size="1.778" layer="95" rot="MR0"/>
 <pinref part="U4" gate="G$1" pin="D3"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="SV1" gate="G$1" pin="3"/>
+<pinref part="D2" gate="G$1" pin="DOUT"/>
+<wire x1="160.02" y1="104.14" x2="167.64" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$42" class="0">
+<segment>
+<pinref part="SV5" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="48.26" x2="165.1" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="48.26" x2="165.1" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="SV2" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="73.66" x2="165.1" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="86.36" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="SV3" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="73.66" x2="165.1" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="73.66" x2="165.1" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="SV4" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="60.96" x2="160.02" y2="60.96" width="0.1524" layer="91"/>
+<junction x="165.1" y="73.66"/>
+<junction x="165.1" y="60.96"/>
 </segment>
 </net>
 </nets>
