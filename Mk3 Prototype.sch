@@ -19744,13 +19744,6 @@ be 0805 parts instead</text>
 <label x="96.52" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="D3" class="0">
-<segment>
-<wire x1="304.8" y1="71.12" x2="307.34" y2="71.12" width="0.1524" layer="91"/>
-<label x="304.8" y="71.12" size="1.778" layer="95" rot="MR0"/>
-<pinref part="U4" gate="G$1" pin="D3"/>
-</segment>
-</net>
 <net name="D4" class="0">
 <segment>
 <wire x1="304.8" y1="68.58" x2="307.34" y2="68.58" width="0.1524" layer="91"/>
@@ -21192,6 +21185,18 @@ be 0805 parts instead</text>
 <wire x1="304.8" y1="78.74" x2="307.34" y2="78.74" width="0.1524" layer="91"/>
 <label x="304.8" y="78.74" size="1.778" layer="95" rot="MR0"/>
 <pinref part="U4" gate="G$1" pin="D0"/>
+</segment>
+</net>
+<net name="TIM1_CH1N" class="0">
+<segment>
+<pinref part="IC4" gate="_PB" pin="PB13"/>
+<wire x1="68.58" y1="167.64" x2="71.12" y2="167.64" width="0.1524" layer="91"/>
+<label x="71.12" y="167.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="304.8" y1="71.12" x2="307.34" y2="71.12" width="0.1524" layer="91"/>
+<label x="304.8" y="71.12" size="1.778" layer="95" rot="MR0"/>
+<pinref part="U4" gate="G$1" pin="D3"/>
 </segment>
 </net>
 </nets>
