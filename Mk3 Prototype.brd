@@ -2157,13 +2157,6 @@ design rules under a new name.</description>
 <wire x1="-48" y1="-31" x2="-43" y2="-31" width="0" layer="19" extent="1-1"/>
 <wire x1="-52" y1="-31" x2="-48" y2="-31" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="VIN">
-<contactref element="U4" pad="VIN"/>
-<contactref element="U4" pad="VIN"/>
-</signal>
-<signal name="MASTER_RESET">
-<contactref element="U4" pad="RESET"/>
-</signal>
 <signal name="LCD_!CS">
 <contactref element="J7" pad="2"/>
 <contactref element="IC4" pad="90"/>
@@ -3060,7 +3053,7 @@ design rules under a new name.</description>
 <wire x1="-20.35" y1="-22.425" x2="66.75" y2="4.25" width="0" layer="19" extent="1-16"/>
 <wire x1="-21.7" y1="-28.5" x2="-20.35" y2="-22.425" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$41">
+<signal name="ADC_VBUS">
 <contactref element="R19" pad="2"/>
 <contactref element="R20" pad="1"/>
 <wire x1="-24" y1="-28.5" x2="-28" y2="-28.5" width="0" layer="19" extent="1-1"/>
@@ -3174,14 +3167,8 @@ design rules under a new name.</description>
 <wire x1="60" y1="46" x2="61" y2="47" width="0.2" layer="16"/>
 <wire x1="61" y1="47" x2="69.704" y2="51.05" width="0" layer="19" extent="16-16"/>
 </signal>
-<signal name="ADC3">
-<contactref element="LED2" pad="A"/>
-<contactref element="C52" pad="2"/>
-<contactref element="R22" pad="1"/>
+<signal name="ADCLIGHT">
 <contactref element="IC4" pad="26"/>
-<wire x1="-33" y1="-31" x2="-37" y2="-31" width="0" layer="19" extent="1-1"/>
-<wire x1="41.25" y1="2.5" x2="-33" y2="-31" width="0" layer="19" extent="1-1"/>
-<wire x1="37" y1="16.75" x2="41.25" y2="2.5" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="OCS32_IN">
 <contactref element="X4" pad="P$1"/>
@@ -3283,9 +3270,6 @@ design rules under a new name.</description>
 <wire x1="29.5" y1="28.5" x2="30" y2="29" width="0.2" layer="16"/>
 <wire x1="30" y1="29" x2="30" y2="30" width="0.2" layer="16"/>
 <wire x1="30" y1="30" x2="37.7" y2="51.05" width="0" layer="19" extent="16-16"/>
-</signal>
-<signal name="5V0">
-<contactref element="U4" pad="5V"/>
 </signal>
 <signal name="D2">
 <contactref element="U4" pad="D2"/>
@@ -3583,12 +3567,25 @@ design rules under a new name.</description>
 <wire x1="3" y1="19" x2="20.5" y2="19" width="0.2" layer="1"/>
 <wire x1="20.5" y1="19" x2="23.25" y2="20.5" width="0" layer="19" extent="1-16"/>
 </signal>
-<signal name="N$30">
+<signal name="ADC_VIN">
 <contactref element="R25" pad="2"/>
 <contactref element="R26" pad="1"/>
 <contactref element="C57" pad="2"/>
 <wire x1="-49" y1="-31" x2="-51" y2="-31" width="0" layer="19" extent="1-1"/>
 <wire x1="-45" y1="-31" x2="-49" y2="-31" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ADC_LIGHT">
+<contactref element="LED2" pad="A"/>
+<contactref element="C52" pad="2"/>
+<contactref element="R22" pad="1"/>
+<wire x1="-33" y1="-31" x2="-37" y2="-31" width="0" layer="19" extent="1-1"/>
+<wire x1="41.25" y1="2.5" x2="-33" y2="-31" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="5V">
+<contactref element="U4" pad="5V"/>
+</signal>
+<signal name="N$14">
+<contactref element="U4" pad="VIN"/>
 </signal>
 </signals>
 </board>
