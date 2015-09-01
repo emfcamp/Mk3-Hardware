@@ -19176,7 +19176,7 @@ be 0805 parts instead</text>
 <text x="53.34" y="215.9" size="3.81" layer="97" ratio="15">Port B</text>
 <text x="5.08" y="147.32" size="3.81" layer="97" ratio="15">Port C</text>
 <text x="76.2" y="147.32" size="3.81" layer="97" ratio="15">Port D</text>
-<text x="132.08" y="198.12" size="1.778" layer="91" rot="R270">NC if 405</text>
+<text x="121.92" y="233.68" size="1.778" layer="91">C10 (on pin 48) DNP for 405</text>
 <text x="490.22" y="91.44" size="1.778" layer="91" rot="R90">need to jumper between Vin/Vbat</text>
 <wire x1="485.14" y1="48.26" x2="485.14" y2="53.34" width="0.1524" layer="96"/>
 <wire x1="485.14" y1="55.88" x2="485.14" y2="53.34" width="0.1524" layer="96"/>
