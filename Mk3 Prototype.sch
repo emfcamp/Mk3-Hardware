@@ -19318,6 +19318,15 @@ to a gpio</text>
 <wire x1="535.94" y1="58.42" x2="541.02" y2="58.42" width="0.1524" layer="97"/>
 <wire x1="541.02" y1="58.42" x2="538.48" y2="60.96" width="0.1524" layer="97"/>
 <text x="543.56" y="55.88" size="1.778" layer="91" rot="R90">low leakage</text>
+<text x="414.02" y="38.1" size="1.778" layer="91" rot="R90">add capacitance</text>
+<text x="558.8" y="274.32" size="1.778" layer="91">see datasheet on how to route these</text>
+<wire x1="581.66" y1="271.78" x2="581.66" y2="226.06" width="0.1524" layer="97"/>
+<wire x1="581.66" y1="226.06" x2="579.12" y2="223.52" width="0.1524" layer="97"/>
+<wire x1="581.66" y1="226.06" x2="584.2" y2="223.52" width="0.1524" layer="97"/>
+<text x="551.18" y="271.78" size="1.778" layer="97">http://www.ti.com/lit/ug/swru370a/swru370a.pdf</text>
+<text x="492.76" y="274.32" size="1.778" layer="97">keep solder mask open below qfn to 
+`improve heat dissipation and yield'</text>
+<wire x1="518.16" y1="271.78" x2="518.16" y2="243.84" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
