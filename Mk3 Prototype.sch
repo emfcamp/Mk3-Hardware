@@ -20245,11 +20245,6 @@ to a gpio</text>
 <wire x1="30.48" y1="190.5" x2="33.02" y2="190.5" width="0.1524" layer="91"/>
 <label x="33.02" y="190.5" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="TP4" gate="G$1" pin="TP"/>
-<wire x1="203.2" y1="50.8" x2="203.2" y2="45.72" width="0.1524" layer="91"/>
-<label x="203.2" y="45.72" size="1.778" layer="95" rot="R90"/>
-</segment>
 </net>
 <net name="A1" class="0">
 <segment>
@@ -20261,11 +20256,6 @@ to a gpio</text>
 <pinref part="IC4" gate="_PA" pin="PA6"/>
 <wire x1="33.02" y1="187.96" x2="30.48" y2="187.96" width="0.1524" layer="91"/>
 <label x="33.02" y="187.96" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="TP1" gate="G$1" pin="TP"/>
-<wire x1="200.66" y1="50.8" x2="200.66" y2="45.72" width="0.1524" layer="91"/>
-<label x="200.66" y="45.72" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="A2" class="0">
@@ -20291,6 +20281,11 @@ to a gpio</text>
 <label x="71.12" y="203.2" size="1.778" layer="95"/>
 <pinref part="IC4" gate="_PB" pin="PB0"/>
 </segment>
+<segment>
+<pinref part="TP5" gate="G$1" pin="TP"/>
+<wire x1="180.34" y1="20.32" x2="180.34" y2="30.48" width="0.1524" layer="91"/>
+<label x="180.34" y="20.32" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="A3" class="0">
 <segment>
@@ -20314,6 +20309,11 @@ to a gpio</text>
 <wire x1="71.12" y1="200.66" x2="68.58" y2="200.66" width="0.1524" layer="91"/>
 <label x="71.12" y="200.66" size="1.778" layer="95"/>
 <pinref part="IC4" gate="_PB" pin="PB1"/>
+</segment>
+<segment>
+<pinref part="TP7" gate="G$1" pin="TP"/>
+<wire x1="177.8" y1="20.32" x2="177.8" y2="30.48" width="0.1524" layer="91"/>
+<label x="177.8" y="20.32" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="D2" class="0">
@@ -20345,6 +20345,11 @@ to a gpio</text>
 <wire x1="304.8" y1="60.96" x2="307.34" y2="60.96" width="0.1524" layer="91"/>
 <label x="304.8" y="60.96" size="1.778" layer="95" rot="MR0"/>
 <pinref part="U4" gate="G$1" pin="D7"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="_PD" pin="PD0"/>
+<wire x1="93.98" y1="139.7" x2="96.52" y2="139.7" width="0.1524" layer="91"/>
+<label x="96.52" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D8" class="0">
@@ -20391,11 +20396,6 @@ to a gpio</text>
 <pinref part="J7" gate="G$1" pin="RST"/>
 <wire x1="360.68" y1="243.84" x2="363.22" y2="243.84" width="0.1524" layer="91"/>
 <label x="360.68" y="243.84" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
-<pinref part="IC4" gate="_PD" pin="PD0"/>
-<wire x1="93.98" y1="139.7" x2="96.52" y2="139.7" width="0.1524" layer="91"/>
-<label x="96.52" y="139.7" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="_PE" pin="PE1"/>
@@ -21814,9 +21814,9 @@ to a gpio</text>
 <label x="510.54" y="121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="TP7" gate="G$1" pin="TP"/>
-<wire x1="177.8" y1="20.32" x2="177.8" y2="30.48" width="0.1524" layer="91"/>
-<label x="177.8" y="20.32" size="1.778" layer="95" rot="R90"/>
+<pinref part="TP1" gate="G$1" pin="TP"/>
+<wire x1="200.66" y1="50.8" x2="200.66" y2="45.72" width="0.1524" layer="91"/>
+<label x="200.66" y="50.8" size="1.778" layer="95" rot="MR270"/>
 </segment>
 </net>
 <net name="TIM1_CH2" class="0">
@@ -21831,9 +21831,9 @@ to a gpio</text>
 <label x="510.54" y="109.22" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="TP5" gate="G$1" pin="TP"/>
-<wire x1="180.34" y1="20.32" x2="180.34" y2="30.48" width="0.1524" layer="91"/>
-<label x="180.34" y="20.32" size="1.778" layer="95" rot="R90"/>
+<pinref part="TP4" gate="G$1" pin="TP"/>
+<wire x1="203.2" y1="50.8" x2="203.2" y2="45.72" width="0.1524" layer="91"/>
+<label x="203.2" y="50.8" size="1.778" layer="95" rot="MR270"/>
 </segment>
 </net>
 <net name="TIM1_CH3" class="0">
