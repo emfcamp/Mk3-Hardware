@@ -19161,7 +19161,6 @@ be 0805 parts instead</text>
 <wire x1="172.72" y1="20.32" x2="172.72" y2="50.8" width="0.1524" layer="97"/>
 <text x="678.18" y="167.64" size="1.778" layer="97">how is this flashed? do we want test points?</text>
 <text x="584.2" y="124.46" size="1.778" layer="97" rot="MR90">&lt; connect</text>
-<text x="527.812" y="32.004" size="1.778" layer="97" rot="MR180">&lt; connect</text>
 <text x="736.6" y="147.32" size="1.778" layer="97">connect WP/HOLD</text>
 <text x="792.48" y="58.42" size="1.778" layer="97">probably dont need this</text>
 <wire x1="789.94" y1="58.42" x2="777.24" y2="58.42" width="0.1524" layer="97"/>
@@ -19203,15 +19202,15 @@ common to vcc</text>
 to a gpio</text>
 <wire x1="419.1" y1="121.92" x2="424.18" y2="121.92" width="0.1524" layer="97"/>
 <wire x1="424.18" y1="121.92" x2="426.72" y2="124.46" width="0.1524" layer="97"/>
-<text x="299.72" y="157.48" size="1.778" layer="94" rot="R90">connect to PWM</text>
 <text x="109.22" y="114.3" size="1.778" layer="91">can move if needed</text>
-<text x="241.3" y="48.26" size="1.778" layer="97" rot="MR90">&lt; connect</text>
 <text x="472.44" y="86.36" size="1.778" layer="97" rot="MR0">&lt; connect</text>
 <text x="591.82" y="170.18" size="1.778" layer="91">connect to same usart as esp-07
 *IF* needed by the stm32</text>
 <text x="553.72" y="43.18" size="1.778" layer="91">needs to be &gt;750mA for esp</text>
 <text x="373.38" y="63.5" size="1.778" layer="91">V_UNREG or VBUS?</text>
 <text x="386.08" y="60.96" size="1.778" layer="91">or NC</text>
+<text x="797.56" y="215.9" size="2.54" layer="94">check DMA channel conflicts</text>
+<text x="797.56" y="208.28" size="2.54" layer="94">check ESP pin connections</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -20136,6 +20135,11 @@ to a gpio</text>
 <wire x1="30.48" y1="190.5" x2="33.02" y2="190.5" width="0.1524" layer="91"/>
 <label x="33.02" y="190.5" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="TP4" gate="G$1" pin="TP"/>
+<wire x1="203.2" y1="50.8" x2="203.2" y2="45.72" width="0.1524" layer="91"/>
+<label x="203.2" y="45.72" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="A1" class="0">
 <segment>
@@ -20147,6 +20151,11 @@ to a gpio</text>
 <pinref part="IC4" gate="_PA" pin="PA6"/>
 <wire x1="33.02" y1="187.96" x2="30.48" y2="187.96" width="0.1524" layer="91"/>
 <label x="33.02" y="187.96" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="TP1" gate="G$1" pin="TP"/>
+<wire x1="200.66" y1="50.8" x2="200.66" y2="45.72" width="0.1524" layer="91"/>
+<label x="200.66" y="45.72" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="A2" class="0">
@@ -20441,13 +20450,6 @@ to a gpio</text>
 <pinref part="Q11" gate="G$1" pin="D"/>
 <wire x1="360.68" y1="213.36" x2="360.68" y2="220.98" width="0.1524" layer="91"/>
 <junction x="360.68" y="220.98"/>
-</segment>
-</net>
-<net name="LCD_BACKLIGHT" class="0">
-<segment>
-<label x="297.18" y="157.48" size="1.778" layer="95" rot="R90"/>
-<wire x1="297.18" y1="157.48" x2="297.18" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="Q12" gate="G$1" pin="G"/>
 </segment>
 </net>
 <net name="LCD_V1" class="0">
@@ -21345,6 +21347,11 @@ to a gpio</text>
 <junction x="510.54" y="30.48"/>
 <label x="513.08" y="30.48" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC4" gate="_PA" pin="PA2"/>
+<wire x1="30.48" y1="198.12" x2="40.64" y2="198.12" width="0.1524" layer="91"/>
+<label x="33.02" y="198.12" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$40" class="0">
 <segment>
@@ -21539,12 +21546,6 @@ to a gpio</text>
 <segment>
 <wire x1="261.62" y1="101.6" x2="264.16" y2="101.6" width="0.1524" layer="91"/>
 <label x="264.16" y="101.6" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$48" class="0">
-<segment>
-<wire x1="30.48" y1="193.04" x2="33.02" y2="193.04" width="0.1524" layer="91"/>
-<pinref part="IC4" gate="_PA" pin="PA4"/>
 </segment>
 </net>
 <net name="TIM2_CH1" class="0">
@@ -21812,29 +21813,11 @@ to a gpio</text>
 <wire x1="612.14" y1="111.76" x2="607.06" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$43" class="0">
-<segment>
-<pinref part="X5" gate="G$1" pin="GPIO0"/>
-<wire x1="612.14" y1="114.3" x2="586.74" y2="114.3" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$44" class="0">
 <segment>
 <pinref part="X5" gate="G$1" pin="GPIO15"/>
 <pinref part="R24" gate="G$1" pin="2"/>
 <wire x1="612.14" y1="93.98" x2="607.06" y2="93.98" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$45" class="0">
-<segment>
-<pinref part="X5" gate="G$1" pin="GPIO16"/>
-<wire x1="612.14" y1="91.44" x2="586.74" y2="91.44" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$49" class="0">
-<segment>
-<pinref part="X5" gate="G$1" pin="CH_PD"/>
-<wire x1="612.14" y1="121.92" x2="586.74" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="JOY_UP" class="0">
@@ -21903,6 +21886,11 @@ to a gpio</text>
 <wire x1="236.22" y1="45.72" x2="243.84" y2="45.72" width="0.1524" layer="91"/>
 <label x="238.76" y="45.72" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="30.48" y1="193.04" x2="33.02" y2="193.04" width="0.1524" layer="91"/>
+<pinref part="IC4" gate="_PA" pin="PA4"/>
+<label x="33.02" y="193.04" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="ADC_LIGHT" class="0">
 <segment>
@@ -21923,6 +21911,104 @@ to a gpio</text>
 <segment>
 <pinref part="U4" gate="G$1" pin="VIN"/>
 <wire x1="363.22" y1="63.5" x2="373.38" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="TIM5_CH1" class="0">
+<segment>
+<pinref part="IC4" gate="_PA" pin="PA0"/>
+<wire x1="30.48" y1="203.2" x2="43.18" y2="203.2" width="0.1524" layer="91"/>
+<label x="38.1" y="203.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<label x="297.18" y="157.48" size="1.778" layer="95" rot="R90"/>
+<wire x1="297.18" y1="157.48" x2="297.18" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="Q12" gate="G$1" pin="G"/>
+</segment>
+</net>
+<net name="ESP_CH_PD" class="0">
+<segment>
+<pinref part="IC4" gate="_PC" pin="PC0"/>
+<wire x1="33.02" y1="134.62" x2="40.64" y2="134.62" width="0.1524" layer="91"/>
+<label x="35.56" y="134.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X5" gate="G$1" pin="CH_PD"/>
+<wire x1="612.14" y1="121.92" x2="586.74" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ESP_GPIO0" class="0">
+<segment>
+<pinref part="IC4" gate="_PC" pin="PC1"/>
+<wire x1="40.64" y1="132.08" x2="33.02" y2="132.08" width="0.1524" layer="91"/>
+<label x="35.56" y="132.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X5" gate="G$1" pin="GPIO0"/>
+<wire x1="612.14" y1="114.3" x2="586.74" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ESP_GPIO16" class="0">
+<segment>
+<pinref part="IC4" gate="_PC" pin="PC2"/>
+<wire x1="33.02" y1="129.54" x2="40.64" y2="129.54" width="0.1524" layer="91"/>
+<label x="35.56" y="129.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X5" gate="G$1" pin="GPIO16"/>
+<wire x1="612.14" y1="91.44" x2="586.74" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="MOM_LEFT" class="0">
+<segment>
+<pinref part="S1" gate="G$1" pin="2"/>
+<wire x1="431.8" y1="81.28" x2="434.34" y2="81.28" width="0.1524" layer="91"/>
+<label x="434.34" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="_PB" pin="PB2"/>
+<wire x1="68.58" y1="198.12" x2="71.12" y2="198.12" width="0.1524" layer="91"/>
+<label x="71.12" y="198.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MOM_RIGHT" class="0">
+<segment>
+<pinref part="S4" gate="G$1" pin="2"/>
+<wire x1="431.8" y1="86.36" x2="434.34" y2="86.36" width="0.1524" layer="91"/>
+<label x="434.34" y="86.36" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="_PA" pin="PA1"/>
+<wire x1="30.48" y1="200.66" x2="40.64" y2="200.66" width="0.1524" layer="91"/>
+<label x="35.56" y="200.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="_PE" pin="PE7"/>
+<wire x1="93.98" y1="58.42" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
+<label x="99.06" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MOM_DWN" class="0">
+<segment>
+<pinref part="S3" gate="G$1" pin="2"/>
+<wire x1="431.8" y1="101.6" x2="434.34" y2="101.6" width="0.1524" layer="91"/>
+<label x="434.34" y="101.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="_PE" pin="PE8"/>
+<wire x1="93.98" y1="53.34" x2="101.6" y2="53.34" width="0.1524" layer="91"/>
+<label x="99.06" y="53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MOM_UP" class="0">
+<segment>
+<pinref part="S2" gate="G$1" pin="2"/>
+<wire x1="431.8" y1="93.98" x2="434.34" y2="93.98" width="0.1524" layer="91"/>
+<label x="434.34" y="93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="_PC" pin="PC3"/>
+<wire x1="33.02" y1="127" x2="40.64" y2="127" width="0.1524" layer="91"/>
+<label x="35.56" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
