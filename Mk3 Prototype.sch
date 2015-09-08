@@ -20255,6 +20255,230 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </deviceset>
 </devicesets>
 </library>
+<library name="con-coax">
+<description>&lt;b&gt;Coax Connectors&lt;/b&gt;&lt;p&gt;
+Radiall  and M/A COM.&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="MC-921">
+<description>&lt;b&gt;COAX. MICROWAVE CONNECTOR O/D diam 2.1&lt;/b&gt;&lt;p&gt;
+Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</description>
+<wire x1="-1.2" y1="1" x2="-1" y2="1.2" width="0.2032" layer="51" curve="-90"/>
+<wire x1="-1" y1="1.2" x2="1" y2="1.2" width="0.2032" layer="51"/>
+<wire x1="1" y1="1.2" x2="1.2" y2="1" width="0.2032" layer="51" curve="-90"/>
+<wire x1="1.2" y1="1" x2="1.2" y2="-1" width="0.2032" layer="51"/>
+<wire x1="1.2" y1="-1" x2="1" y2="-1.2" width="0.2032" layer="51" curve="-90"/>
+<wire x1="1" y1="-1.2" x2="-1" y2="-1.2" width="0.2032" layer="51"/>
+<wire x1="-1" y1="-1.2" x2="-1.2" y2="-1" width="0.2032" layer="51" curve="-90"/>
+<wire x1="-1.2" y1="-1" x2="-1.2" y2="1" width="0.2032" layer="51"/>
+<wire x1="0.5" y1="-1.2" x2="-0.5" y2="-1.2" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="0.7" width="0.1016" layer="21"/>
+<circle x="0" y="0" radius="0.175" width="0.1016" layer="21"/>
+<smd name="2@1" x="-1.475" y="0" dx="1.05" dy="2.2" layer="1"/>
+<smd name="2@2" x="1.475" y="0" dx="1.05" dy="2.2" layer="1"/>
+<smd name="1" x="0" y="1.5275" dx="1" dy="1.05" layer="1"/>
+<rectangle x1="-0.3" y1="1.3" x2="0.3" y2="1.55" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="BNC-F2">
+<wire x1="0" y1="-2.54" x2="-0.762" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-0.508" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0.508" x2="-0.762" y2="0.508" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="0.508" x2="-0.508" y2="0" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="0" x2="-0.762" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-0.508" x2="-2.54" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="0" y2="0.508" width="0.3048" layer="94" curve="-79.611142" cap="flat"/>
+<wire x1="-2.54" y1="-2.54" x2="0" y2="-0.508" width="0.3048" layer="94" curve="79.611142" cap="flat"/>
+<text x="-2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="3.302" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="GND@1" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MC-921" prefix="X">
+<description>&lt;b&gt;COAX. MICROWAVE CONNECTOR O/D diam 2.1&lt;/b&gt;&lt;p&gt;
+Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</description>
+<gates>
+<gate name="G$1" symbol="BNC-F2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MC-921">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="GND@1" pad="2@1 2@2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="SparkFun-RF">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find things that send or receive RF- GPS, cellular modules, Bluetooth, WiFi, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="ANTENNA-CHIP2">
+<wire x1="-0.889" y1="0.508" x2="-0.889" y2="-0.508" width="0.2032" layer="21"/>
+<wire x1="0.889" y1="0.508" x2="0.889" y2="-0.508" width="0.2032" layer="21"/>
+<smd name="FEED" x="0" y="1.25" dx="1.7" dy="1" layer="1"/>
+<smd name="P$2" x="0" y="-1.25" dx="1.7" dy="1" layer="1"/>
+</package>
+<package name="ANTENNA-CHIP3">
+<wire x1="-1" y1="3.4" x2="-1" y2="2" width="0.2032" layer="21"/>
+<wire x1="-1" y1="2" x2="-1" y2="-3.4" width="0.2032" layer="21"/>
+<wire x1="1" y1="3.4" x2="1" y2="2" width="0.2032" layer="21"/>
+<wire x1="1" y1="2" x2="1" y2="-3.4" width="0.2032" layer="21"/>
+<wire x1="1" y1="2" x2="-1" y2="2" width="0.2032" layer="21"/>
+<smd name="FEED" x="0" y="4.5" dx="1.8" dy="1.5" layer="1"/>
+<smd name="NC" x="0" y="-4.5" dx="1.8" dy="1.5" layer="1"/>
+</package>
+<package name="ANTENNA-CHIP4">
+<wire x1="-4" y1="1" x2="-4" y2="-1" width="0.127" layer="51"/>
+<wire x1="-4" y1="-1" x2="4" y2="-1" width="0.127" layer="51"/>
+<wire x1="4" y1="-1" x2="4" y2="1" width="0.127" layer="51"/>
+<wire x1="4" y1="1" x2="-4" y2="1" width="0.127" layer="51"/>
+<wire x1="-3" y1="1" x2="3" y2="1" width="0.2032" layer="21"/>
+<wire x1="3" y1="-1" x2="-3" y2="-1" width="0.2032" layer="21"/>
+<circle x="-3" y="0.6" radius="0.1414" width="0.127" layer="21"/>
+<smd name="SIG" x="-4" y="0" dx="1" dy="2" layer="1"/>
+<smd name="NC" x="4" y="0" dx="1" dy="2" layer="1"/>
+<text x="-1.651" y="-0.254" size="0.6096" layer="51">152111</text>
+<text x="-4" y="-2" size="0.4064" layer="27">&gt;VALUE</text>
+<text x="-3.99" y="1.59" size="0.4064" layer="25">&gt;NAME</text>
+</package>
+<package name="ANTENNA-CHIP5">
+<wire x1="-2.413" y1="-1.143" x2="2.413" y2="-1.143" width="0.2032" layer="21"/>
+<wire x1="-2.413" y1="1.143" x2="2.413" y2="1.143" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="0" x2="2.159" y2="0" width="0.2032" layer="21"/>
+<wire x1="2.159" y1="0" x2="1.778" y2="0.381" width="0.2032" layer="21"/>
+<wire x1="2.159" y1="0" x2="1.778" y2="-0.381" width="0.2032" layer="21"/>
+<smd name="FEED" x="-3.302" y="0" dx="1.016" dy="2.54" layer="1" rot="R180"/>
+<smd name="NC" x="3.302" y="0" dx="1.016" dy="2.54" layer="1" rot="R180"/>
+<text x="0.508" y="0.127" size="0.8128" layer="51">AF</text>
+<text x="-2.54" y="0.381" size="0.4064" layer="25">&gt;Name</text>
+<text x="-2.54" y="-0.762" size="0.4064" layer="27">&gt;Value</text>
+</package>
+<package name="ANTENNA-CHIP6">
+<description>Footprint for Part#1575AT43A40</description>
+<wire x1="-2.7" y1="1" x2="2.7" y2="1" width="0.127" layer="21"/>
+<wire x1="-2.7" y1="-1" x2="2.7" y2="-1" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="0.3" x2="-2.6" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="-0.3" x2="-1.6" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-0.3" x2="-1.6" y2="0.3" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="0.3" x2="-2.6" y2="0.3" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="1" x2="3.5" y2="1" width="0.127" layer="51"/>
+<wire x1="3.5" y1="1" x2="3.5" y2="-1" width="0.127" layer="51"/>
+<wire x1="3.5" y1="-1" x2="-3.5" y2="-1" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="-1" x2="-3.5" y2="1" width="0.127" layer="51"/>
+<smd name="NC" x="3.4" y="0" dx="2" dy="0.75" layer="1" rot="R90"/>
+<smd name="1" x="-3.4" y="0" dx="2" dy="0.75" layer="1" rot="R90"/>
+<text x="-3.81" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.7" y="-1.3" size="0.4064" layer="27" rot="R180">&gt;VALUE</text>
+</package>
+<package name="ANTENNA-CHIP_2500AT44M0400">
+<smd name="FEED" x="-4" y="0" dx="1" dy="1.5" layer="1"/>
+<smd name="NC" x="4" y="0" dx="1" dy="1.5" layer="1"/>
+<wire x1="-4" y1="0.5" x2="-2.5" y2="0.5" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="0.5" x2="4" y2="0.5" width="0.127" layer="51"/>
+<wire x1="4" y1="0.5" x2="4" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="4" y1="-0.5" x2="-2.5" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-0.5" x2="-4" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="-4" y1="-0.5" x2="-4" y2="0.5" width="0.127" layer="51"/>
+<wire x1="-3.1" y1="0.5" x2="-2.5" y2="0.5" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="0.5" x2="3.1" y2="0.5" width="0.2032" layer="21"/>
+<wire x1="3.1" y1="-0.5" x2="-2.5" y2="-0.5" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="-0.5" x2="-3.1" y2="-0.5" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="0.5" x2="-2.5" y2="-0.5" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="0.5" x2="-2.5" y2="-0.5" width="0.127" layer="51"/>
+<text x="-3.302" y="1.016" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-3.302" y="-1.524" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="ANTENNA2">
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<text x="1.27" y="0" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.27" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="SIGNAL" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ANTENNA2">
+<description>&lt;b&gt;Chip antenna&lt;/b&gt;&lt;p&gt;
+Single endded antenna. Common with smaller chip antennas. CHIP4 package is the GPS Chip Antenna &lt;b&gt;SKU:&lt;/b&gt; GPS-08418. CHIP5 package is 2.4GHz chip antenna &lt;b&gt;SKU:&lt;/b&gt; WRL-00144.</description>
+<gates>
+<gate name="G$1" symbol="ANTENNA2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD" package="ANTENNA-CHIP2">
+<connects>
+<connect gate="G$1" pin="SIGNAL" pad="FEED"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD2" package="ANTENNA-CHIP3">
+<connects>
+<connect gate="G$1" pin="SIGNAL" pad="FEED"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD3" package="ANTENNA-CHIP4">
+<connects>
+<connect gate="G$1" pin="SIGNAL" pad="SIG"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD5" package="ANTENNA-CHIP5">
+<connects>
+<connect gate="G$1" pin="SIGNAL" pad="FEED"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD6" package="ANTENNA-CHIP6">
+<connects>
+<connect gate="G$1" pin="SIGNAL" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2500AT44M0400" package="ANTENNA-CHIP_2500AT44M0400">
+<connects>
+<connect gate="G$1" pin="SIGNAL" pad="FEED"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -20583,6 +20807,10 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="D1" library="TiLDA Mk3 Parts" deviceset="DIODE-" device="SOD123"/>
 <part name="SJ2" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NO" device="YES_SILK"/>
 <part name="JP4" library="SparkFun-Connectors" deviceset="M10" device="SILK_FEMALE_PTH"/>
+<part name="X6" library="con-coax" deviceset="MC-921" device=""/>
+<part name="R33" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="DNP (0ohm)"/>
+<part name="GND95" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
+<part name="U$1" library="SparkFun-RF" deviceset="ANTENNA2" device="2500AT44M0400"/>
 </parts>
 <sheets>
 <sheet>
@@ -20620,7 +20848,6 @@ be 0805 parts instead</text>
 <text x="655.32" y="177.8" size="1.778" layer="91">keep this crystal footprint just in case</text>
 <text x="655.32" y="175.26" size="1.778" layer="91">default: use stm32, DNP crystal + caps</text>
 <text x="266.7" y="111.76" size="1.778" layer="91">ESD!</text>
-<text x="739.14" y="251.46" size="1.778" layer="91">add optional uFl connector?</text>
 <text x="53.34" y="162.56" size="1.778" layer="91" rot="R90">SPI2</text>
 <wire x1="170.18" y1="50.8" x2="208.28" y2="50.8" width="0.1524" layer="97"/>
 <wire x1="208.28" y1="50.8" x2="208.28" y2="20.32" width="0.1524" layer="97"/>
@@ -20685,6 +20912,8 @@ needs lots of capacitance</text>
 <text x="523.24" y="68.58" size="1.778" layer="91">close for OTG</text>
 <text x="106.68" y="114.3" size="1.778" layer="91">/ JOY_CEN</text>
 <text x="797.56" y="185.42" size="2.54" layer="94">pull PB2 (BOOT1) low?</text>
+<text x="718.82" y="251.46" size="1.778" layer="91">spec</text>
+<text x="741.68" y="246.38" size="1.778" layer="91">spec</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -21037,6 +21266,10 @@ needs lots of capacitance</text>
 <attribute name="NAME" x="530.86" y="63.5" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="JP4" gate="G$1" x="317.5" y="38.1" rot="R180"/>
+<instance part="X6" gate="G$1" x="713.74" y="251.46" rot="MR0"/>
+<instance part="R33" gate="G$1" x="706.12" y="246.38" rot="R270"/>
+<instance part="GND95" gate="1" x="711.2" y="246.38"/>
+<instance part="U$1" gate="G$1" x="749.3" y="246.38"/>
 </instances>
 <busses>
 </busses>
@@ -21133,11 +21366,6 @@ needs lots of capacitance</text>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="736.6" y1="215.9" x2="736.6" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="Y1" gate="G$1" pin="GND"/>
-<wire x1="756.92" y1="243.84" x2="756.92" y2="241.3" width="0.1524" layer="91"/>
-<pinref part="GND11" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -21296,19 +21524,6 @@ needs lots of capacitance</text>
 <pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="GND42" gate="1" pin="GND"/>
 <wire x1="779.78" y1="40.64" x2="779.78" y2="66.04" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="L1" gate="G$1" pin="2"/>
-<wire x1="734.06" y1="241.3" x2="736.6" y2="241.3" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="736.6" y1="241.3" x2="736.6" y2="238.76" width="0.1524" layer="91"/>
-<junction x="736.6" y="241.3"/>
-<pinref part="Y1" gate="G$1" pin="1"/>
-<wire x1="736.6" y1="241.3" x2="754.38" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="754.38" y1="238.76" x2="754.38" y2="241.3" width="0.1524" layer="91"/>
-<pinref part="GND43" gate="1" pin="GND"/>
-<junction x="754.38" y="241.3"/>
-<wire x1="754.38" y1="241.3" x2="754.38" y2="243.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
@@ -21608,6 +21823,10 @@ needs lots of capacitance</text>
 <segment>
 <pinref part="C61" gate="G$1" pin="2"/>
 <pinref part="GND94" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="X6" gate="G$1" pin="GND@1"/>
+<pinref part="GND95" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="F1" class="0">
@@ -22111,7 +22330,7 @@ needs lots of capacitance</text>
 <label x="701.04" y="160.02" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="N$3" class="1">
 <segment>
 <pinref part="FL1" gate="G$1" pin="IN"/>
 <pinref part="IC2" gate="_ANT" pin="RF_BG"/>
@@ -22121,12 +22340,15 @@ needs lots of capacitance</text>
 <net name="N$2" class="1">
 <segment>
 <pinref part="FL1" gate="G$1" pin="OUT"/>
-<wire x1="693.42" y1="241.3" x2="716.28" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="693.42" y1="241.3" x2="706.12" y2="241.3" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="1"/>
 <pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="706.12" y1="241.3" x2="716.28" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="716.28" y1="241.3" x2="718.82" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="716.28" y1="241.3" x2="716.28" y2="238.76" width="0.1524" layer="91"/>
 <junction x="716.28" y="241.3"/>
+<pinref part="R33" gate="G$1" pin="2"/>
+<junction x="706.12" y="241.3"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -23721,6 +23943,28 @@ needs lots of capacitance</text>
 <label x="297.18" y="157.48" size="1.778" layer="95" rot="R90"/>
 <wire x1="297.18" y1="157.48" x2="297.18" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="Q12" gate="G$1" pin="G"/>
+</segment>
+</net>
+<net name="N$48" class="1">
+<segment>
+<pinref part="R33" gate="G$1" pin="1"/>
+<pinref part="X6" gate="G$1" pin="1"/>
+<wire x1="706.12" y1="251.46" x2="711.2" y2="251.46" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ANT" class="1">
+<segment>
+<pinref part="L1" gate="G$1" pin="2"/>
+<wire x1="734.06" y1="241.3" x2="736.6" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="736.6" y1="241.3" x2="736.6" y2="238.76" width="0.1524" layer="91"/>
+<junction x="736.6" y="241.3"/>
+<wire x1="736.6" y1="241.3" x2="749.3" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="749.3" y1="241.3" x2="754.38" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="754.38" y1="238.76" x2="754.38" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="GND43" gate="1" pin="GND"/>
+<pinref part="U$1" gate="G$1" pin="SIGNAL"/>
+<junction x="749.3" y="241.3"/>
 </segment>
 </net>
 </nets>
