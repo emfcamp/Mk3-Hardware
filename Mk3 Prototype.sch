@@ -20811,6 +20811,11 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="R33" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="DNP (0ohm)"/>
 <part name="GND95" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="U$1" library="SparkFun-RF" deviceset="ANTENNA2" device="2500AT44M0400"/>
+<part name="C62" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/4u7/10V/X5R"/>
+<part name="C63" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/4u7/10V/X5R"/>
+<part name="GND96" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
+<part name="C64" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/4u7/10V/X5R"/>
+<part name="GND97" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20877,8 +20882,6 @@ be 0805 parts instead</text>
 to a ftdi header for debug</text>
 <text x="797.56" y="223.52" size="2.54" layer="94">SDIO_SW can be easily changed away from pin PC13</text>
 <text x="585.724" y="93.218" size="1.778" layer="91" rot="R90">connect these three </text>
-<text x="632.46" y="137.16" size="1.778" layer="91">decouple</text>
-<text x="543.56" y="116.84" size="1.778" layer="91">decouple</text>
 <text x="462.28" y="119.38" size="1.778" layer="91">also connect
 to a gpio</text>
 <text x="601.98" y="213.36" size="1.778" layer="91">connect to same usart as esp-07
@@ -21270,6 +21273,11 @@ needs lots of capacitance</text>
 <instance part="R33" gate="G$1" x="706.12" y="246.38" rot="R270"/>
 <instance part="GND95" gate="1" x="711.2" y="246.38"/>
 <instance part="U$1" gate="G$1" x="749.3" y="246.38"/>
+<instance part="C62" gate="G$1" x="248.92" y="200.66" rot="R180"/>
+<instance part="C63" gate="G$1" x="645.16" y="132.08" rot="R180"/>
+<instance part="GND96" gate="1" x="645.16" y="127"/>
+<instance part="C64" gate="G$1" x="538.48" y="121.92" rot="R270"/>
+<instance part="GND97" gate="1" x="543.56" y="121.92" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -21666,7 +21674,12 @@ needs lots of capacitance</text>
 <segment>
 <pinref part="GND79" gate="1" pin="GND"/>
 <pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="243.84" y1="198.12" x2="243.84" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="198.12" x2="243.84" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="C62" gate="G$1" pin="1"/>
+<wire x1="243.84" y1="195.58" x2="243.84" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="198.12" x2="248.92" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="195.58" x2="243.84" y2="195.58" width="0.1524" layer="91"/>
+<junction x="243.84" y="195.58"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="1"/>
@@ -21827,6 +21840,14 @@ needs lots of capacitance</text>
 <segment>
 <pinref part="X6" gate="G$1" pin="GND@1"/>
 <pinref part="GND95" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C63" gate="G$1" pin="1"/>
+<pinref part="GND96" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C64" gate="G$1" pin="1"/>
+<pinref part="GND97" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="F1" class="0">
@@ -22773,6 +22794,9 @@ needs lots of capacitance</text>
 <junction x="210.82" y="208.28"/>
 <junction x="243.84" y="210.82"/>
 <junction x="243.84" y="208.28"/>
+<pinref part="C62" gate="G$1" pin="2"/>
+<wire x1="248.92" y1="205.74" x2="248.92" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="208.28" x2="243.84" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="VCC"/>
@@ -22802,6 +22826,9 @@ needs lots of capacitance</text>
 <segment>
 <pinref part="X5" gate="G$1" pin="VCC"/>
 <pinref part="+3V11" gate="G$1" pin="+3V3"/>
+<pinref part="C63" gate="G$1" pin="2"/>
+<wire x1="629.92" y1="137.16" x2="645.16" y2="137.16" width="0.1524" layer="91"/>
+<junction x="629.92" y="137.16"/>
 </segment>
 <segment>
 <pinref part="R23" gate="G$1" pin="1"/>
@@ -23965,6 +23992,17 @@ needs lots of capacitance</text>
 <pinref part="GND43" gate="1" pin="GND"/>
 <pinref part="U$1" gate="G$1" pin="SIGNAL"/>
 <junction x="749.3" y="241.3"/>
+</segment>
+</net>
+<net name="N$49" class="0">
+<segment>
+<pinref part="D2" gate="G$1" pin="VDD"/>
+<wire x1="535.94" y1="111.76" x2="530.86" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="530.86" y1="111.76" x2="530.86" y2="121.92" width="0.1524" layer="91"/>
+<junction x="530.86" y="121.92"/>
+<wire x1="530.86" y1="121.92" x2="530.86" y2="127" width="0.1524" layer="91"/>
+<pinref part="C64" gate="G$1" pin="2"/>
+<wire x1="533.4" y1="121.92" x2="530.86" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
