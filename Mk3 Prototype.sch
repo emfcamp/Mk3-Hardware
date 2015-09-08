@@ -20817,6 +20817,10 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="C64" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/4u7/10V/X5R"/>
 <part name="GND97" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V21" library="supply1" deviceset="+3V3" device=""/>
+<part name="C65" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/??u/6.3V/X5R"/>
+<part name="C66" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/??u/4V/X5R"/>
+<part name="C67" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/??u/4V/X5R"/>
+<part name="C68" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/??u/6.3V/X5R"/>
 </parts>
 <sheets>
 <sheet>
@@ -20919,6 +20923,7 @@ needs lots of capacitance</text>
 <text x="718.82" y="251.46" size="1.778" layer="91">spec</text>
 <text x="741.68" y="246.38" size="1.778" layer="91">spec</text>
 <text x="797.56" y="177.8" size="2.54" layer="94">see if a resistor is needed on the stm32 crytal</text>
+<text x="408.94" y="157.48" size="1.778" layer="91"> - large caps have been 'doubled up'</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -21281,6 +21286,10 @@ needs lots of capacitance</text>
 <instance part="C64" gate="G$1" x="538.48" y="121.92" rot="R270"/>
 <instance part="GND97" gate="1" x="543.56" y="121.92" rot="R90"/>
 <instance part="+3V21" gate="G$1" x="701.04" y="162.56"/>
+<instance part="C65" gate="G$1" x="459.74" y="185.42" rot="R180"/>
+<instance part="C66" gate="G$1" x="452.12" y="203.2" rot="R180"/>
+<instance part="C67" gate="G$1" x="434.34" y="203.2" rot="R180"/>
+<instance part="C68" gate="G$1" x="414.02" y="220.98" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -21458,8 +21467,13 @@ needs lots of capacitance</text>
 </segment>
 <segment>
 <pinref part="C15" gate="G$1" pin="1"/>
-<wire x1="408.94" y1="218.44" x2="408.94" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="408.94" y1="218.44" x2="408.94" y2="215.9" width="0.1524" layer="91"/>
 <pinref part="GND28" gate="1" pin="GND"/>
+<pinref part="C68" gate="G$1" pin="1"/>
+<wire x1="408.94" y1="215.9" x2="408.94" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="414.02" y1="218.44" x2="414.02" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="414.02" y1="215.9" x2="408.94" y2="215.9" width="0.1524" layer="91"/>
+<junction x="408.94" y="215.9"/>
 </segment>
 <segment>
 <pinref part="C17" gate="G$1" pin="1"/>
@@ -21469,12 +21483,22 @@ needs lots of capacitance</text>
 <segment>
 <pinref part="C19" gate="G$1" pin="1"/>
 <pinref part="GND29" gate="1" pin="GND"/>
-<wire x1="439.42" y1="177.8" x2="439.42" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="439.42" y1="177.8" x2="439.42" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="C67" gate="G$1" pin="1"/>
+<wire x1="439.42" y1="198.12" x2="439.42" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="434.34" y1="200.66" x2="434.34" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="434.34" y1="198.12" x2="439.42" y2="198.12" width="0.1524" layer="91"/>
+<junction x="439.42" y="198.12"/>
 </segment>
 <segment>
 <pinref part="C20" gate="G$1" pin="1"/>
 <pinref part="GND30" gate="1" pin="GND"/>
-<wire x1="447.04" y1="177.8" x2="447.04" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="447.04" y1="177.8" x2="447.04" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="C66" gate="G$1" pin="1"/>
+<wire x1="447.04" y1="198.12" x2="447.04" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="452.12" y1="200.66" x2="452.12" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="452.12" y1="198.12" x2="447.04" y2="198.12" width="0.1524" layer="91"/>
+<junction x="447.04" y="198.12"/>
 </segment>
 <segment>
 <pinref part="C21" gate="G$1" pin="1"/>
@@ -21484,7 +21508,12 @@ needs lots of capacitance</text>
 <segment>
 <pinref part="C22" gate="G$1" pin="1"/>
 <pinref part="GND32" gate="1" pin="GND"/>
-<wire x1="464.82" y1="157.48" x2="464.82" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="464.82" y1="157.48" x2="464.82" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="C65" gate="G$1" pin="1"/>
+<wire x1="464.82" y1="180.34" x2="464.82" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="459.74" y1="182.88" x2="459.74" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="459.74" y1="180.34" x2="464.82" y2="180.34" width="0.1524" layer="91"/>
+<junction x="464.82" y="180.34"/>
 </segment>
 <segment>
 <pinref part="C23" gate="G$1" pin="1"/>
@@ -22450,7 +22479,8 @@ needs lots of capacitance</text>
 <segment>
 <wire x1="495.3" y1="228.6" x2="421.64" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="C15" gate="G$1" pin="2"/>
-<wire x1="421.64" y1="228.6" x2="408.94" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="421.64" y1="228.6" x2="414.02" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="414.02" y1="228.6" x2="408.94" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="408.94" y1="226.06" x2="408.94" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="_POWER" pin="VDD_ANA1"/>
 <wire x1="495.3" y1="233.68" x2="431.8" y2="233.68" width="0.1524" layer="91"/>
@@ -22476,6 +22506,9 @@ needs lots of capacitance</text>
 <junction x="421.64" y="228.6"/>
 <pinref part="IC2" gate="_POWER" pin="LDO_IN2"/>
 <pinref part="IC2" gate="_POWER" pin="LDO_IN1"/>
+<pinref part="C68" gate="G$1" pin="2"/>
+<wire x1="414.02" y1="226.06" x2="414.02" y2="228.6" width="0.1524" layer="91"/>
+<junction x="414.02" y="228.6"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -22513,6 +22546,12 @@ needs lots of capacitance</text>
 <junction x="457.2" y="208.28"/>
 <pinref part="IC2" gate="_POWER" pin="VDD_PA_IN"/>
 <pinref part="IC2" gate="_POWER" pin="DCDC_PA_OUT"/>
+<pinref part="C66" gate="G$1" pin="2"/>
+<junction x="452.12" y="208.28"/>
+<pinref part="C67" gate="G$1" pin="2"/>
+<wire x1="434.34" y1="208.28" x2="434.34" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="434.34" y1="210.82" x2="439.42" y2="210.82" width="0.1524" layer="91"/>
+<junction x="439.42" y="210.82"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -22544,6 +22583,9 @@ needs lots of capacitance</text>
 <junction x="464.82" y="195.58"/>
 <pinref part="IC2" gate="_POWER" pin="VDD_DIG1"/>
 <pinref part="IC2" gate="_POWER" pin="VDD_DIG2"/>
+<pinref part="C65" gate="G$1" pin="2"/>
+<wire x1="459.74" y1="190.5" x2="459.74" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="459.74" y1="193.04" x2="464.82" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
