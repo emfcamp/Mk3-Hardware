@@ -20816,6 +20816,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="GND96" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C64" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/4u7/10V/X5R"/>
 <part name="GND97" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
+<part name="+3V21" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20917,6 +20918,7 @@ needs lots of capacitance</text>
 <text x="797.56" y="185.42" size="2.54" layer="94">pull PB2 (BOOT1) low?</text>
 <text x="718.82" y="251.46" size="1.778" layer="91">spec</text>
 <text x="741.68" y="246.38" size="1.778" layer="91">spec</text>
+<text x="797.56" y="177.8" size="2.54" layer="94">see if a resistor is needed on the stm32 crytal</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -21278,6 +21280,7 @@ needs lots of capacitance</text>
 <instance part="GND96" gate="1" x="645.16" y="127"/>
 <instance part="C64" gate="G$1" x="538.48" y="121.92" rot="R270"/>
 <instance part="GND97" gate="1" x="543.56" y="121.92" rot="R90"/>
+<instance part="+3V21" gate="G$1" x="701.04" y="162.56"/>
 </instances>
 <busses>
 </busses>
@@ -22302,6 +22305,8 @@ needs lots of capacitance</text>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="726.44" y1="144.78" x2="701.04" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="701.04" y1="144.78" x2="701.04" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="701.04" y1="144.78" x2="695.96" y2="144.78" width="0.1524" layer="91"/>
+<junction x="701.04" y="144.78"/>
 </segment>
 </net>
 <net name="CC_FLASH_MISO" class="0">
@@ -22323,6 +22328,8 @@ needs lots of capacitance</text>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="762" y1="137.16" x2="762" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="762" y1="137.16" x2="751.84" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="762" y1="137.16" x2="774.7" y2="137.16" width="0.1524" layer="91"/>
+<junction x="762" y="137.16"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="_FLASH_SPI" pin="MOSI"/>
@@ -22337,18 +22344,13 @@ needs lots of capacitance</text>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="751.84" y1="139.7" x2="772.16" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="772.16" y1="139.7" x2="772.16" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="772.16" y1="139.7" x2="774.7" y2="139.7" width="0.1524" layer="91"/>
+<junction x="772.16" y="139.7"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="_FLASH_SPI" pin="CLK"/>
 <wire x1="751.84" y1="165.1" x2="749.3" y2="165.1" width="0.1524" layer="91"/>
 <label x="751.84" y="165.1" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="701.04" y1="157.48" x2="701.04" y2="160.02" width="0.1524" layer="91"/>
-<label x="701.04" y="160.02" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$3" class="1">
@@ -22931,6 +22933,12 @@ needs lots of capacitance</text>
 <junction x="617.22" y="45.72"/>
 <junction x="622.3" y="45.72"/>
 <junction x="627.38" y="45.72"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="701.04" y1="157.48" x2="701.04" y2="160.02" width="0.1524" layer="91"/>
+<label x="701.04" y="160.02" size="1.778" layer="95" rot="R90"/>
+<pinref part="+3V21" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="USB_ID" class="0">
