@@ -20978,6 +20978,8 @@ needs lots of capacitance</text>
 <wire x1="581.66" y1="10.16" x2="581.66" y2="33.02" width="0.1524" layer="97"/>
 <text x="297.18" y="243.84" size="1.778" layer="91">- needed with low voltage cutoff?</text>
 <text x="-20.32" y="177.8" size="1.778" layer="91">tim2_ch1</text>
+<text x="411.48" y="30.48" size="1.778" layer="91" rot="R90">input over voltage protection?</text>
+<text x="599.44" y="53.34" size="1.778" layer="91">input over voltage protection?</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
