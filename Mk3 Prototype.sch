@@ -20868,8 +20868,8 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="C68" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/??u/6.3V/X5R"/>
 <part name="IC1" library="TiLDA Mk3 Parts" deviceset="BD49XXX" device=""/>
 <part name="GND98" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="C69" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C1206K" value="1n"/>
 <part name="GND99" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
+<part name="C69" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/1n/10V/X5R"/>
 </parts>
 <sheets>
 <sheet>
@@ -20977,6 +20977,7 @@ needs lots of capacitance</text>
 <wire x1="589.28" y1="10.16" x2="581.66" y2="10.16" width="0.1524" layer="97"/>
 <wire x1="581.66" y1="10.16" x2="581.66" y2="33.02" width="0.1524" layer="97"/>
 <text x="297.18" y="243.84" size="1.778" layer="91">- needed with low voltage cutoff?</text>
+<text x="-20.32" y="177.8" size="1.778" layer="91">tim2_ch1</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -21345,8 +21346,8 @@ needs lots of capacitance</text>
 <instance part="C68" gate="G$1" x="414.02" y="220.98" rot="R180"/>
 <instance part="IC1" gate="G$1" x="576.58" y="35.56"/>
 <instance part="GND98" gate="1" x="566.42" y="27.94"/>
-<instance part="C69" gate="G$1" x="591.82" y="27.94"/>
 <instance part="GND99" gate="1" x="591.82" y="20.32"/>
+<instance part="C69" gate="G$1" x="591.82" y="27.94"/>
 </instances>
 <busses>
 </busses>
@@ -21945,8 +21946,8 @@ needs lots of capacitance</text>
 <wire x1="566.42" y1="33.02" x2="566.42" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C69" gate="G$1" pin="2"/>
 <pinref part="GND99" gate="1" pin="GND"/>
+<pinref part="C69" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="F1" class="0">
@@ -22173,18 +22174,6 @@ needs lots of capacitance</text>
 <junction x="147.32" y="195.58"/>
 <junction x="144.78" y="195.58"/>
 <label x="132.08" y="195.58" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="LCD_!CS" class="0">
-<segment>
-<pinref part="J7" gate="G$1" pin="CS1B"/>
-<wire x1="360.68" y1="246.38" x2="363.22" y2="246.38" width="0.1524" layer="91"/>
-<label x="360.68" y="246.38" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
-<pinref part="IC4" gate="_PB" pin="PB4"/>
-<wire x1="68.58" y1="193.04" x2="71.12" y2="193.04" width="0.1524" layer="91"/>
-<label x="71.12" y="193.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LCD_POWER" class="0">
@@ -23396,20 +23385,6 @@ needs lots of capacitance</text>
 <junction x="307.34" y="35.56"/>
 </segment>
 </net>
-<net name="TIM4_CH4" class="0">
-<segment>
-<wire x1="68.58" y1="177.8" x2="71.12" y2="177.8" width="0.1524" layer="91"/>
-<label x="71.12" y="177.8" size="1.778" layer="95"/>
-<pinref part="IC4" gate="_PB" pin="PB9"/>
-</segment>
-<segment>
-<wire x1="304.8" y1="50.8" x2="307.34" y2="50.8" width="0.1524" layer="91"/>
-<label x="304.8" y="50.8" size="1.778" layer="95" rot="MR0"/>
-<pinref part="U4" gate="G$1" pin="D10"/>
-<pinref part="JP4" gate="G$1" pin="3"/>
-<junction x="307.34" y="50.8"/>
-</segment>
-</net>
 <net name="I2C_SCL" class="0">
 <segment>
 <wire x1="68.58" y1="187.96" x2="71.12" y2="187.96" width="0.1524" layer="91"/>
@@ -23496,19 +23471,7 @@ needs lots of capacitance</text>
 <pinref part="R27" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="TIM2_CH1" class="0">
-<segment>
-<wire x1="33.02" y1="162.56" x2="30.48" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="IC4" gate="_PA" pin="PA15"/>
-<label x="33.02" y="162.56" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="304.8" y1="63.5" x2="307.34" y2="63.5" width="0.1524" layer="91"/>
-<label x="304.8" y="63.5" size="1.778" layer="95" rot="MR0"/>
-<pinref part="U4" gate="G$1" pin="D6"/>
-</segment>
-</net>
-<net name="TIM4_CH3" class="0">
+<net name="TIM10_CH1" class="0">
 <segment>
 <wire x1="71.12" y1="180.34" x2="68.58" y2="180.34" width="0.1524" layer="91"/>
 <label x="71.12" y="180.34" size="1.778" layer="95"/>
@@ -23520,18 +23483,6 @@ needs lots of capacitance</text>
 <pinref part="U4" gate="G$1" pin="D9"/>
 <pinref part="JP4" gate="G$1" pin="2"/>
 <junction x="307.34" y="53.34"/>
-</segment>
-</net>
-<net name="TIM2_CH3" class="0">
-<segment>
-<wire x1="71.12" y1="175.26" x2="68.58" y2="175.26" width="0.1524" layer="91"/>
-<label x="71.12" y="175.26" size="1.778" layer="95"/>
-<pinref part="IC4" gate="_PB" pin="PB10"/>
-</segment>
-<segment>
-<wire x1="304.8" y1="66.04" x2="307.34" y2="66.04" width="0.1524" layer="91"/>
-<label x="304.8" y="66.04" size="1.778" layer="95" rot="MR0"/>
-<pinref part="U4" gate="G$1" pin="D5"/>
 </segment>
 </net>
 <net name="USART6_TX" class="0">
@@ -23777,9 +23728,9 @@ needs lots of capacitance</text>
 <label x="459.74" y="127" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="_PD" pin="PD13"/>
-<wire x1="93.98" y1="104.14" x2="104.14" y2="104.14" width="0.1524" layer="91"/>
-<label x="96.52" y="104.14" size="1.778" layer="95"/>
+<pinref part="IC4" gate="_PD" pin="PD8"/>
+<wire x1="93.98" y1="116.84" x2="104.14" y2="116.84" width="0.1524" layer="91"/>
+<label x="96.52" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADC_VIN" class="0">
@@ -23892,9 +23843,9 @@ needs lots of capacitance</text>
 <label x="434.34" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="_PE" pin="PE8"/>
-<wire x1="93.98" y1="53.34" x2="101.6" y2="53.34" width="0.1524" layer="91"/>
-<label x="99.06" y="53.34" size="1.778" layer="95"/>
+<pinref part="IC4" gate="_PE" pin="PE10"/>
+<wire x1="93.98" y1="48.26" x2="99.06" y2="48.26" width="0.1524" layer="91"/>
+<label x="99.06" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOM_UP" class="0">
@@ -24129,10 +24080,69 @@ needs lots of capacitance</text>
 <wire x1="599.44" y1="40.64" x2="594.36" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="594.36" y1="40.64" x2="594.36" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="OUT"/>
-<pinref part="C69" gate="G$1" pin="1"/>
 <wire x1="591.82" y1="30.48" x2="591.82" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="591.82" y1="35.56" x2="594.36" y2="35.56" width="0.1524" layer="91"/>
 <junction x="591.82" y="35.56"/>
+<pinref part="C69" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="SPI3_NSS" class="0">
+<segment>
+<wire x1="33.02" y1="162.56" x2="30.48" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="IC4" gate="_PA" pin="PA15"/>
+<label x="33.02" y="162.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J7" gate="G$1" pin="CS1B"/>
+<wire x1="360.68" y1="246.38" x2="363.22" y2="246.38" width="0.1524" layer="91"/>
+<label x="360.68" y="246.38" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="TIM11_CH1" class="0">
+<segment>
+<wire x1="68.58" y1="177.8" x2="71.12" y2="177.8" width="0.1524" layer="91"/>
+<label x="71.12" y="177.8" size="1.778" layer="95"/>
+<pinref part="IC4" gate="_PB" pin="PB9"/>
+</segment>
+<segment>
+<wire x1="304.8" y1="50.8" x2="307.34" y2="50.8" width="0.1524" layer="91"/>
+<label x="304.8" y="50.8" size="1.778" layer="95" rot="MR0"/>
+<pinref part="U4" gate="G$1" pin="D10"/>
+<pinref part="JP4" gate="G$1" pin="3"/>
+<junction x="307.34" y="50.8"/>
+</segment>
+</net>
+<net name="TIM4_CH2" class="0">
+<segment>
+<pinref part="IC4" gate="_PD" pin="PD13"/>
+<wire x1="93.98" y1="104.14" x2="104.14" y2="104.14" width="0.1524" layer="91"/>
+<label x="96.52" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="304.8" y1="66.04" x2="307.34" y2="66.04" width="0.1524" layer="91"/>
+<label x="304.8" y="66.04" size="1.778" layer="95" rot="MR0"/>
+<pinref part="U4" gate="G$1" pin="D5"/>
+</segment>
+</net>
+<net name="TIM4_CH3" class="0">
+<segment>
+<pinref part="IC4" gate="_PD" pin="PD14"/>
+<wire x1="93.98" y1="101.6" x2="104.14" y2="101.6" width="0.1524" layer="91"/>
+<label x="96.52" y="101.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="304.8" y1="63.5" x2="307.34" y2="63.5" width="0.1524" layer="91"/>
+<label x="304.8" y="63.5" size="1.778" layer="95" rot="MR0"/>
+<pinref part="U4" gate="G$1" pin="D6"/>
+</segment>
+</net>
+<net name="N$50" class="0">
+<segment>
+<pinref part="SV1" gate="G$1" pin="2"/>
+<wire x1="528.32" y1="101.6" x2="530.86" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="530.86" y1="101.6" x2="530.86" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="530.86" y1="109.22" x2="523.24" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="523.24" y1="109.22" x2="523.24" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
