@@ -20870,6 +20870,12 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="GND98" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND99" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C69" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/1n/10V/X5R"/>
+<part name="LED3" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT"/>
+<part name="LED4" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT"/>
+<part name="R34" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER"/>
+<part name="R35" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER"/>
+<part name="GND100" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
+<part name="GND101" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21350,6 +21356,12 @@ needs lots of capacitance</text>
 <instance part="GND98" gate="1" x="566.42" y="27.94"/>
 <instance part="GND99" gate="1" x="591.82" y="20.32"/>
 <instance part="C69" gate="G$1" x="591.82" y="27.94"/>
+<instance part="LED3" gate="G$1" x="144.78" y="76.2" rot="R90"/>
+<instance part="LED4" gate="G$1" x="144.78" y="71.12" rot="R90"/>
+<instance part="R34" gate="G$1" x="137.16" y="76.2" rot="R180"/>
+<instance part="R35" gate="G$1" x="137.16" y="71.12" rot="R180"/>
+<instance part="GND100" gate="1" x="152.4" y="76.2" rot="R90"/>
+<instance part="GND101" gate="1" x="152.4" y="71.12" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -21950,6 +21962,14 @@ needs lots of capacitance</text>
 <segment>
 <pinref part="GND99" gate="1" pin="GND"/>
 <pinref part="C69" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="LED4" gate="G$1" pin="C"/>
+<pinref part="GND101" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="GND100" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="F1" class="0">
@@ -24145,6 +24165,42 @@ needs lots of capacitance</text>
 <wire x1="530.86" y1="101.6" x2="530.86" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="530.86" y1="109.22" x2="523.24" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="523.24" y1="109.22" x2="523.24" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$51" class="0">
+<segment>
+<pinref part="LED4" gate="G$1" pin="A"/>
+<pinref part="R35" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$52" class="0">
+<segment>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="R34" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="LED1" class="0">
+<segment>
+<pinref part="R34" gate="G$1" pin="2"/>
+<wire x1="132.08" y1="76.2" x2="127" y2="76.2" width="0.1524" layer="91"/>
+<label x="124.46" y="76.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="_PE" pin="PE15"/>
+<wire x1="93.98" y1="35.56" x2="101.6" y2="35.56" width="0.1524" layer="91"/>
+<label x="99.06" y="35.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LED2" class="0">
+<segment>
+<pinref part="R35" gate="G$1" pin="2"/>
+<wire x1="132.08" y1="71.12" x2="127" y2="71.12" width="0.1524" layer="91"/>
+<label x="124.46" y="71.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="_PB" pin="PB10"/>
+<wire x1="68.58" y1="175.26" x2="71.12" y2="175.26" width="0.1524" layer="91"/>
+<label x="71.12" y="175.26" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
