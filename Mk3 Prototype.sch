@@ -21359,8 +21359,14 @@ to a ftdi header for debug</text>
 <instance part="GND65" gate="1" x="205.74" y="165.1"/>
 <instance part="+3V7" gate="G$1" x="424.18" y="43.18" rot="R90"/>
 <instance part="+3V8" gate="G$1" x="469.9" y="53.34"/>
-<instance part="C50" gate="G$1" x="469.9" y="43.18" rot="R180"/>
-<instance part="C51" gate="G$1" x="464.82" y="43.18" rot="R180"/>
+<instance part="C50" gate="G$1" x="469.9" y="43.18" smashed="yes" rot="R180">
+<attribute name="NAME" x="470.281" y="43.18" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="472.821" y="43.18" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="C51" gate="G$1" x="464.82" y="43.18" smashed="yes" rot="R180">
+<attribute name="NAME" x="465.201" y="43.18" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="462.661" y="43.18" size="1.778" layer="96" rot="R270"/>
+</instance>
 <instance part="GND67" gate="1" x="469.9" y="35.56"/>
 <instance part="GND68" gate="1" x="431.8" y="27.94" rot="R270"/>
 <instance part="GND69" gate="1" x="431.8" y="22.86" rot="R270"/>
