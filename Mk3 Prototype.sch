@@ -13990,6 +13990,62 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <text x="-0.889" y="1.016" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-0.989" y="-1.486" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
+<package name="SJ_2S">
+<description>Small solder jumper with big paste layer so it will short during reflow.</description>
+<wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.1524" layer="21"/>
+<wire x1="0.8" y1="1" x2="1.1" y2="0.75" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.1" y1="0.75" x2="-0.8" y2="1" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.1" y1="-0.75" x2="-0.8" y2="-1" width="0.1524" layer="21" curve="90.114706"/>
+<wire x1="0.8" y1="-1" x2="1.1" y2="-0.75" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.1" y1="-0.75" x2="1.1" y2="0.75" width="0.1524" layer="21"/>
+<wire x1="-1.1" y1="-0.75" x2="-1.1" y2="0.75" width="0.1524" layer="21"/>
+<wire x1="-0.8" y1="1" x2="0.8" y2="1" width="0.1524" layer="21"/>
+<smd name="1" x="-0.4119" y="0" dx="0.635" dy="1.27" layer="1"/>
+<smd name="2" x="0.4119" y="0" dx="0.635" dy="1.27" layer="1"/>
+<text x="-0.9498" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.9498" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.2192" y1="-1.143" x2="1.2192" y2="1.143" layer="31"/>
+</package>
+<package name="SJ_2S-TRACE">
+<description>Solder jumper, small, shorted with trace. No paste layer. Trace is cuttable.</description>
+<wire x1="0.8255" y1="-1.016" x2="-0.8255" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="0.8255" y1="1.016" x2="1.0795" y2="0.762" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1.0795" y1="0.762" x2="-0.8255" y2="1.016" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1.0795" y1="-0.762" x2="-0.8255" y2="-1.016" width="0.2032" layer="21" curve="90"/>
+<wire x1="0.8255" y1="-1.016" x2="1.0795" y2="-0.762" width="0.2032" layer="21" curve="90"/>
+<wire x1="-0.8255" y1="1.016" x2="0.8255" y2="1.016" width="0.2032" layer="21"/>
+<wire x1="-0.381" y1="0" x2="0.381" y2="0" width="0.2032" layer="1"/>
+<smd name="1" x="-0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<text x="-0.9525" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.9525" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+<package name="SJ_2S-NOTRACE">
+<wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.2032" layer="21"/>
+<wire x1="0.8" y1="1" x2="1" y2="0.7" width="0.2032" layer="21" curve="-90.076445"/>
+<wire x1="-1" y1="0.7" x2="-0.8" y2="1" width="0.2032" layer="21" curve="-90.03821"/>
+<wire x1="-1" y1="-0.7" x2="-0.8" y2="-1" width="0.2032" layer="21" curve="90.03821"/>
+<wire x1="0.8" y1="-1" x2="1" y2="-0.7" width="0.2032" layer="21" curve="90.03821"/>
+<wire x1="-0.8" y1="1" x2="0.8" y2="1" width="0.2032" layer="21"/>
+<smd name="1" x="-0.4009" y="0" dx="0.635" dy="1.27" layer="1" rot="R180" cream="no"/>
+<smd name="2" x="0.4127" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<text x="-0.9525" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.9525" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" layer="31"/>
+</package>
+<package name="SJ_2S-NO">
+<description>Small solder jumper with no paste layer so it will open after reflow.</description>
+<wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.2032" layer="21"/>
+<wire x1="0.8" y1="1" x2="1" y2="0.7" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1" y1="0.7" x2="-0.8" y2="1" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1" y1="-0.7" x2="-0.8" y2="-1" width="0.2032" layer="21" curve="90"/>
+<wire x1="0.8" y1="-1" x2="1" y2="-0.7" width="0.2032" layer="21" curve="90"/>
+<wire x1="-0.8" y1="1" x2="0.8" y2="1" width="0.2032" layer="21"/>
+<smd name="1" x="-0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<text x="-0.908" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.908" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="A3L-LOC">
@@ -18442,6 +18498,16 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <rectangle x1="-1.651" y1="-2.54" x2="1.651" y2="-1.651" layer="94"/>
 <pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+</symbol>
+<symbol name="SJ">
+<wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -24629,6 +24695,51 @@ Simple slide switch. Spark Fun Electronics SKU : COM-00102</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="SOLDERJUMPER" prefix="SJ">
+<description>&lt;b&gt;Solder Jumper&lt;/b&gt;
+Standard SMD solder jumper. Used to automate production. Two varients : Normally Open and Normally Closed are the same, but have different paste layers. NC will have a large amount of paste and should jumper during reflow.</description>
+<gates>
+<gate name="1" symbol="SJ" x="0" y="0"/>
+</gates>
+<devices>
+<device name="NC" package="SJ_2S">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TRACE" package="SJ_2S-TRACE">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NC2" package="SJ_2S-NOTRACE">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NO" package="SJ_2S-NO">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="supply1">
@@ -27161,8 +27272,8 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <part name="R29" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
 <part name="GND52" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND53" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R19" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="22"/>
-<part name="R20" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="22"/>
+<part name="R19" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/22/1%"/>
+<part name="R20" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/22/1%"/>
 <part name="X2" library="TiLDA Mk3 Parts" deviceset="CRYSTAL" device="-3.2-2.5" value="CRYSTAL-3.2-2.5"/>
 <part name="GND54" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND55" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -27313,7 +27424,7 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <part name="R12" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER"/>
 <part name="GND100" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND101" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="F1" library="SparkFun-PowerIC" deviceset="PTC" device="SMD"/>
+<part name="F1" library="SparkFun-PowerIC" deviceset="PTC" device="SMD" value="MC36222"/>
 <part name="C2" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/4u7/10V/X5R"/>
 <part name="R6" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/47k/5%"/>
 <part name="GND92" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -27327,6 +27438,8 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="C4" library="TiLDA Mk3 Parts" deviceset="CPOL-EU" device="E2.5-6" value="DNP (OTG)"/>
 <part name="GND102" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
+<part name="+3V23" library="supply1" deviceset="+3V3" device=""/>
+<part name="SJ3" library="TiLDA Mk3 Parts" deviceset="SOLDERJUMPER" device="TRACE"/>
 </parts>
 <sheets>
 <sheet>
@@ -27345,7 +27458,6 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <text x="408.94" y="251.46" size="3.81" layer="97" ratio="15">WIFI Power</text>
 <text x="670.56" y="96.52" size="3.81" layer="97" ratio="15">WIFI Control</text>
 <text x="459.74" y="12.7" size="1.778" layer="91" rot="R90">might want to change footprint</text>
-<text x="134.62" y="190.5" size="1.778" layer="91" rot="R270">ferrite bead to vcc</text>
 <text x="33.02" y="223.52" size="1.778" layer="91">values depend on crystal</text>
 <text x="599.44" y="35.56" size="1.778" layer="91" rot="MR270">will probably want changing
  to the smaller version</text>
@@ -27385,8 +27497,6 @@ be 0805 parts instead</text>
 to a ftdi header for debug</text>
 <text x="797.56" y="223.52" size="2.54" layer="94">SDIO_SW can be easily changed away from pin PC13</text>
 <text x="628.904" y="126.238" size="1.778" layer="91" rot="R90">connect these three </text>
-<text x="601.98" y="213.36" size="1.778" layer="91">connect to same usart as esp-07
-*IF* needed by the stm32</text>
 <text x="797.56" y="215.9" size="2.54" layer="94">check DMA channel conflicts</text>
 <text x="797.56" y="208.28" size="2.54" layer="94">check ESP pin connections</text>
 <text x="797.56" y="200.66" size="2.54" layer="94">add current measuring options</text>
@@ -27423,6 +27533,13 @@ to a ftdi header for debug</text>
 <text x="220.98" y="96.52" size="1.778" layer="91">close for OTG</text>
 <text x="358.14" y="127" size="1.778" layer="91">/ JOY_CEN</text>
 <text x="289.56" y="167.64" size="1.778" layer="91">1431303 / 2317885</text>
+<text x="213.36" y="129.54" size="1.778" layer="91">1861193</text>
+<wire x1="132.08" y1="193.04" x2="132.08" y2="187.96" width="0.1524" layer="94"/>
+<text x="106.68" y="154.94" size="1.778" layer="97">undecided whether to bother with this</text>
+<wire x1="124.46" y1="160.02" x2="124.46" y2="162.56" width="0.1524" layer="97"/>
+<wire x1="124.46" y1="162.56" x2="124.46" y2="182.88" width="0.1524" layer="97"/>
+<wire x1="124.46" y1="182.88" x2="132.08" y2="190.5" width="0.1524" layer="97"/>
+<wire x1="124.46" y1="160.02" x2="124.46" y2="157.48" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -27631,12 +27748,12 @@ to a ftdi header for debug</text>
 <instance part="GND52" gate="1" x="127" y="215.9" rot="R270"/>
 <instance part="GND53" gate="1" x="424.18" y="38.1" rot="R270"/>
 <instance part="R19" gate="G$1" x="218.44" y="119.38" smashed="yes" rot="R180">
-<attribute name="NAME" x="214.63" y="115.3414" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="222.25" y="115.316" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="227.076" y="121.4374" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="227.33" y="115.316" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R20" gate="G$1" x="218.44" y="116.84" smashed="yes" rot="R180">
-<attribute name="NAME" x="214.63" y="112.8014" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="222.25" y="112.776" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="227.076" y="118.8974" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="227.33" y="112.776" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="X2" gate="G$1" x="43.18" y="236.22" smashed="yes" rot="R90">
 <attribute name="NAME" x="46.482" y="236.728" size="1.778" layer="95"/>
@@ -27769,11 +27886,19 @@ to a ftdi header for debug</text>
 <instance part="GND76" gate="1" x="429.26" y="91.44"/>
 <instance part="GND77" gate="1" x="429.26" y="78.74"/>
 <instance part="X1" gate="G$1" x="673.1" y="147.32"/>
-<instance part="R25" gate="G$1" x="645.16" y="144.78"/>
+<instance part="R25" gate="G$1" x="645.16" y="144.78" smashed="yes">
+<attribute name="NAME" x="641.35" y="141.1986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="633.73" y="138.938" size="1.778" layer="96"/>
+</instance>
 <instance part="GND80" gate="1" x="673.1" y="106.68"/>
 <instance part="+3V11" gate="G$1" x="673.1" y="172.72"/>
-<instance part="+3V12" gate="G$1" x="637.54" y="144.78" rot="R90"/>
-<instance part="R26" gate="G$1" x="645.16" y="127"/>
+<instance part="+3V12" gate="G$1" x="637.54" y="144.78" smashed="yes" rot="R90">
+<attribute name="VALUE" x="636.778" y="145.796" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R26" gate="G$1" x="645.16" y="127" smashed="yes">
+<attribute name="NAME" x="641.35" y="128.4986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="633.73" y="131.318" size="1.778" layer="96"/>
+</instance>
 <instance part="GND81" gate="1" x="637.54" y="127" rot="R270"/>
 <instance part="+3V13" gate="G$1" x="205.74" y="45.72" rot="R90"/>
 <instance part="GND82" gate="1" x="172.72" y="45.72" rot="R90"/>
@@ -27787,7 +27912,7 @@ to a ftdi header for debug</text>
 <instance part="SJ2" gate="G$1" x="233.68" y="101.6" smashed="yes" rot="R180">
 <attribute name="NAME" x="236.22" y="99.06" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="R10" gate="G$1" x="241.3" y="109.22" rot="R180"/>
+<instance part="R10" gate="G$1" x="243.84" y="109.22" rot="R180"/>
 <instance part="GND85" gate="1" x="637.54" y="228.6"/>
 <instance part="R22" gate="G$1" x="678.18" y="180.34"/>
 <instance part="SV1" gate="G$1" x="645.16" y="233.68" rot="MR0"/>
@@ -27838,8 +27963,11 @@ to a ftdi header for debug</text>
 <instance part="GND95" gate="1" x="711.2" y="246.38"/>
 <instance part="U$1" gate="G$1" x="749.3" y="246.38"/>
 <instance part="C8" gate="G$1" x="259.08" y="200.66" rot="R180"/>
-<instance part="C41" gate="G$1" x="688.34" y="165.1" rot="R180"/>
-<instance part="GND96" gate="1" x="688.34" y="160.02"/>
+<instance part="C41" gate="G$1" x="688.34" y="165.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="688.721" y="165.1" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="691.261" y="165.1" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="GND96" gate="1" x="688.34" y="157.48"/>
 <instance part="C47" gate="G$1" x="464.82" y="124.46" rot="R270"/>
 <instance part="GND97" gate="1" x="469.9" y="124.46" rot="R90"/>
 <instance part="+3V21" gate="G$1" x="701.04" y="162.56"/>
@@ -27886,6 +28014,10 @@ to a ftdi header for debug</text>
 <instance part="+3V1" gate="G$1" x="327.66" y="119.38" rot="R90"/>
 <instance part="C4" gate="G$1" x="508" y="55.88"/>
 <instance part="GND102" gate="1" x="508" y="48.26"/>
+<instance part="+3V23" gate="G$1" x="132.08" y="182.88" rot="R180"/>
+<instance part="SJ3" gate="1" x="132.08" y="190.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="129.54" y="187.96" size="1.778" layer="95" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -28460,6 +28592,7 @@ to a ftdi header for debug</text>
 <segment>
 <pinref part="C41" gate="G$1" pin="1"/>
 <pinref part="GND96" gate="1" pin="GND"/>
+<wire x1="688.34" y1="160.02" x2="688.34" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C47" gate="G$1" pin="1"/>
@@ -28711,23 +28844,12 @@ to a ftdi header for debug</text>
 <junction x="307.34" y="38.1"/>
 </segment>
 <segment>
-<pinref part="C18" gate="G$1" pin="2"/>
-<pinref part="C17" gate="G$1" pin="2"/>
-<wire x1="160.02" y1="193.04" x2="160.02" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="195.58" x2="152.4" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="193.04" x2="152.4" y2="195.58" width="0.1524" layer="91"/>
-<junction x="152.4" y="195.58"/>
-<pinref part="L3" gate="G$1" pin="2"/>
-<wire x1="152.4" y1="195.58" x2="144.78" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="_PWR" pin="VREF+"/>
-<wire x1="165.1" y1="195.58" x2="162.56" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="_PWR" pin="VDDA"/>
-<wire x1="162.56" y1="195.58" x2="160.02" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="193.04" x2="162.56" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="193.04" x2="162.56" y2="195.58" width="0.1524" layer="91"/>
-<junction x="162.56" y="195.58"/>
-<junction x="160.02" y="195.58"/>
-<label x="147.32" y="195.58" size="1.778" layer="95"/>
+<pinref part="L3" gate="G$1" pin="1"/>
+<wire x1="134.62" y1="195.58" x2="132.08" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="SJ3" gate="1" pin="2"/>
+<wire x1="132.08" y1="195.58" x2="127" y2="195.58" width="0.1524" layer="91"/>
+<junction x="132.08" y="195.58"/>
+<label x="127" y="195.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LCD_POWER" class="0">
@@ -29591,6 +29713,10 @@ to a ftdi header for debug</text>
 <junction x="330.2" y="114.3"/>
 <junction x="330.2" y="119.38"/>
 </segment>
+<segment>
+<pinref part="SJ3" gate="1" pin="1"/>
+<pinref part="+3V23" gate="G$1" pin="+3V3"/>
+</segment>
 </net>
 <net name="USB_ID" class="0">
 <segment>
@@ -29997,13 +30123,6 @@ to a ftdi header for debug</text>
 <pinref part="SV1" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$29" class="0">
-<segment>
-<pinref part="L3" gate="G$1" pin="1"/>
-<wire x1="129.54" y1="195.58" x2="134.62" y2="195.58" width="0.1524" layer="91"/>
-<label x="132.08" y="195.58" size="1.778" layer="95" rot="R180"/>
-</segment>
-</net>
 <net name="USB_ID_" class="0">
 <segment>
 <wire x1="30.48" y1="175.26" x2="33.02" y2="175.26" width="0.1524" layer="91"/>
@@ -30023,7 +30142,7 @@ to a ftdi header for debug</text>
 <label x="33.02" y="177.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="256.54" y1="109.22" x2="246.38" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="109.22" x2="248.92" y2="109.22" width="0.1524" layer="91"/>
 <label x="248.92" y="109.22" size="1.778" layer="95"/>
 <pinref part="R10" gate="G$1" pin="1"/>
 </segment>
@@ -30435,11 +30554,11 @@ to a ftdi header for debug</text>
 <segment>
 <label x="248.92" y="121.92" size="1.778" layer="95"/>
 <pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="223.52" y1="121.92" x2="228.6" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="109.22" x2="228.6" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="109.22" x2="228.6" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="121.92" x2="256.54" y2="121.92" width="0.1524" layer="91"/>
-<junction x="228.6" y="121.92"/>
+<wire x1="223.52" y1="121.92" x2="231.14" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="109.22" x2="231.14" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="109.22" x2="231.14" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="121.92" x2="256.54" y2="121.92" width="0.1524" layer="91"/>
+<junction x="231.14" y="121.92"/>
 <pinref part="F1" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -30562,12 +30681,12 @@ to a ftdi header for debug</text>
 </net>
 <net name="N$43" class="0">
 <segment>
-<wire x1="795.02" y1="228.6" x2="906.78" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="795.02" y1="226.06" x2="906.78" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$45" class="0">
 <segment>
-<wire x1="906.78" y1="228.6" x2="795.02" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="906.78" y1="226.06" x2="795.02" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SPI1_MISO" class="0">
@@ -30796,6 +30915,46 @@ to a ftdi header for debug</text>
 <segment>
 <pinref part="Q3" gate="G$1" pin="D"/>
 <pinref part="R28" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="DFGFDG" class="0">
+<segment>
+<pinref part="C18" gate="G$1" pin="2"/>
+<pinref part="C17" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="193.04" x2="160.02" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="195.58" x2="152.4" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="193.04" x2="152.4" y2="195.58" width="0.1524" layer="91"/>
+<junction x="152.4" y="195.58"/>
+<pinref part="L3" gate="G$1" pin="2"/>
+<wire x1="152.4" y1="195.58" x2="144.78" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="_PWR" pin="VREF+"/>
+<wire x1="165.1" y1="195.58" x2="162.56" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="_PWR" pin="VDDA"/>
+<wire x1="162.56" y1="195.58" x2="160.02" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="193.04" x2="162.56" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="193.04" x2="162.56" y2="195.58" width="0.1524" layer="91"/>
+<junction x="162.56" y="195.58"/>
+<junction x="160.02" y="195.58"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<wire x1="795.02" y1="187.96" x2="845.82" y2="185.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<wire x1="845.82" y1="187.96" x2="795.02" y2="185.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$58" class="0">
+<segment>
+<wire x1="795.02" y1="195.58" x2="919.48" y2="193.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$59" class="0">
+<segment>
+<wire x1="919.48" y1="195.58" x2="795.02" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
