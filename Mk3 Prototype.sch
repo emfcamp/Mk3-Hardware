@@ -3817,31 +3817,6 @@ chip</description>
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
 </package>
-<package name="TO220V">
-<description>&lt;b&gt;TO 200 vertical&lt;/b&gt;</description>
-<wire x1="5.08" y1="-1.143" x2="4.953" y2="-4.064" width="0.127" layer="21"/>
-<wire x1="4.699" y1="-4.318" x2="4.953" y2="-4.064" width="0.127" layer="21"/>
-<wire x1="4.699" y1="-4.318" x2="-4.699" y2="-4.318" width="0.127" layer="21"/>
-<wire x1="-4.953" y1="-4.064" x2="-4.699" y2="-4.318" width="0.127" layer="21"/>
-<wire x1="-4.953" y1="-4.064" x2="-5.08" y2="-1.143" width="0.127" layer="21"/>
-<circle x="-4.4958" y="-3.7084" radius="0.254" width="0.127" layer="21"/>
-<pad name="1" x="-2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="0" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<pad name="3" x="2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<text x="-5.08" y="-6.0452" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-7.62" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-3.175" y="-3.175" size="1.27" layer="51" ratio="10">1</text>
-<text x="-0.635" y="-3.175" size="1.27" layer="51" ratio="10">2</text>
-<text x="1.905" y="-3.175" size="1.27" layer="51" ratio="10">3</text>
-<rectangle x1="-5.334" y1="-0.762" x2="5.334" y2="0" layer="21"/>
-<rectangle x1="-5.334" y1="-1.27" x2="-3.429" y2="-0.762" layer="21"/>
-<rectangle x1="-1.651" y1="-1.27" x2="-0.889" y2="-0.762" layer="21"/>
-<rectangle x1="-3.429" y1="-1.27" x2="-1.651" y2="-0.762" layer="51"/>
-<rectangle x1="0.889" y1="-1.27" x2="1.651" y2="-0.762" layer="21"/>
-<rectangle x1="3.429" y1="-1.27" x2="5.334" y2="-0.762" layer="21"/>
-<rectangle x1="-0.889" y1="-1.27" x2="0.889" y2="-0.762" layer="51"/>
-<rectangle x1="1.651" y1="-1.27" x2="3.429" y2="-0.762" layer="51"/>
-</package>
 <package name="SOT23-3">
 <wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
 <wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
@@ -3856,21 +3831,6 @@ chip</description>
 <smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
 <text x="-0.8255" y="1.778" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.016" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-<package name="SOT523">
-<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="51"/>
-<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="51"/>
-<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="51"/>
-<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="51"/>
-<wire x1="-0.5" y1="0.4" x2="-0.8" y2="0.4" width="0.15" layer="21"/>
-<wire x1="-0.8" y1="0.4" x2="-0.8" y2="-0.2" width="0.15" layer="21"/>
-<wire x1="0.5" y1="0.4" x2="0.8" y2="0.4" width="0.15" layer="21"/>
-<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.2" width="0.15" layer="21"/>
-<smd name="3" x="0" y="0.65" dx="0.4" dy="0.51" layer="1"/>
-<smd name="2" x="0.5" y="-0.65" dx="0.4" dy="0.51" layer="1"/>
-<smd name="1" x="-0.5" y="-0.65" dx="0.4" dy="0.51" layer="1"/>
-<text x="-0.9255" y="1.178" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.116" y="-1.4905" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
 <package name="SOT23-R">
 <description>&lt;b&gt;SOT23&lt;/b&gt; - Reflow soldering</description>
@@ -9265,46 +9225,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <rectangle x1="-2.032" y1="-1.016" x2="2.032" y2="-0.508" layer="94"/>
 <pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-</symbol>
-<symbol name="MOSFET-N">
-<wire x1="0.762" y1="0.762" x2="0.762" y2="0" width="0.254" layer="94"/>
-<wire x1="0.762" y1="0" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="0.762" y1="3.175" x2="0.762" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0.762" y1="2.54" x2="0.762" y2="1.905" width="0.254" layer="94"/>
-<wire x1="0.762" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0.762" y1="-1.905" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0.762" y1="-2.54" x2="0.762" y2="-3.175" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="0.762" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="2.54" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="0.508" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0.762" y1="2.54" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="4.572" y1="0.762" x2="4.318" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="4.318" y1="0.508" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="0.508" x2="3.302" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="3.302" y1="0.508" x2="3.048" y2="0.254" width="0.1524" layer="94"/>
-<circle x="2.54" y="-2.54" radius="0.3592" width="0" layer="94"/>
-<circle x="2.54" y="2.54" radius="0.3592" width="0" layer="94"/>
-<text x="5.08" y="0.635" size="1.27" layer="95">&gt;NAME</text>
-<text x="5.08" y="-1.27" size="1.27" layer="96">&gt;VALUE</text>
-<text x="3.175" y="3.175" size="0.8128" layer="93">D</text>
-<text x="3.175" y="-3.81" size="0.8128" layer="93">S</text>
-<text x="-1.27" y="-1.905" size="0.8128" layer="93">G</text>
-<pin name="G" x="-2.54" y="-2.54" visible="pad" length="short"/>
-<pin name="S" x="2.54" y="-5.08" visible="pad" length="short" rot="R90"/>
-<pin name="D" x="2.54" y="5.08" visible="pad" length="short" rot="R270"/>
-<polygon width="0.1524" layer="94">
-<vertex x="3.81" y="0.508"/>
-<vertex x="3.302" y="-0.254"/>
-<vertex x="4.318" y="-0.254"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="1.016" y="0"/>
-<vertex x="2.032" y="0.762"/>
-<vertex x="2.032" y="-0.762"/>
-</polygon>
 </symbol>
 <symbol name="MOSFET-P">
 <wire x1="-1.778" y1="0.762" x2="-1.778" y2="0" width="0.254" layer="94"/>
@@ -15352,88 +15272,6 @@ DIN A3, landscape with location and doc. field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MOSFET-N" prefix="Q" uservalue="yes">
-<description>&lt;b&gt;N-Channel Mosfet&lt;/b&gt;
-&lt;ul&gt;
-&lt;li&gt;2N7002E - 60V 260mA SOT23 [Digikey: 2N7002ET1GOSTR-ND] - &lt;b&gt;REEL&lt;/b&gt;&lt;/li&gt;
-&lt;li&gt;BSH103 - 30V 850mA SOT23 [Digikey: 568-5013-1-ND]&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="MOSFET-N" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="WAVE" package="SOT23-W">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="REFLOW" package="SOT23">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="GDS_TO220V" package="TO220V">
-<connects>
-<connect gate="G$1" pin="D" pad="2"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-SC70-3" package="SC70-3-R">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-SOT23-SPARK" package="SOT23-3">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-SOT23" package="SOT23">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-SOT523" package="SOT523">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="MOSFET-P" prefix="Q">
 <gates>
 <gate name="G$1" symbol="MOSFET-P" x="0" y="0"/>
@@ -20735,7 +20573,6 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <part name="GND2" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND3" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND4" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="Q12" library="TiLDA Mk3 Parts" deviceset="MOSFET-N" device="-SC70-3" value="2N7002KW"/>
 <part name="J1" library="TiLDA Mk3 Parts" deviceset="USB-AB" device="-LWK" value="ZX62-AB-5PA(11)"/>
 <part name="GND17" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND5" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -20828,7 +20665,6 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <part name="J2" library="dtb" deviceset="SWD_SHROUD" device="" value="SWD_SHROUD"/>
 <part name="GND46" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="U1" library="TiLDA Mk3 Parts" deviceset="USD-SOCKET" device="NEW"/>
-<part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
@@ -21019,6 +20855,8 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <part name="GND103" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="R37" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
 <part name="GND104" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
+<part name="Q2" library="TiLDA Mk3 Parts" deviceset="MOSFET-P" device="-SC70-3" value="BSS84W"/>
+<part name="+3V22" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21154,13 +20992,12 @@ to a ftdi header for debug</text>
 <attribute name="NAME" x="348.361" y="172.72" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="327.66" y="150.241" size="1.778" layer="96"/>
 </instance>
-<instance part="R45" gate="G$1" x="297.18" y="152.4"/>
+<instance part="R45" gate="G$1" x="294.64" y="162.56"/>
 <instance part="Q11" gate="G$1" x="332.74" y="226.06" rot="R90"/>
 <instance part="GND1" gate="1" x="320.04" y="152.4" rot="R90"/>
 <instance part="GND2" gate="1" x="297.18" y="208.28" rot="R270"/>
 <instance part="GND3" gate="1" x="355.6" y="170.18"/>
 <instance part="GND4" gate="1" x="337.82" y="165.1"/>
-<instance part="Q12" gate="G$1" x="309.88" y="154.94" rot="MR270"/>
 <instance part="J1" gate="G$1" x="187.96" y="116.84" smashed="yes" rot="R180">
 <attribute name="NAME" x="190.5" y="106.68" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="182.88" y="123.19" size="1.778" layer="96" rot="R270"/>
@@ -21289,7 +21126,6 @@ to a ftdi header for debug</text>
 <instance part="J2" gate="G$1" x="27.94" y="17.78"/>
 <instance part="GND46" gate="1" x="10.16" y="7.62"/>
 <instance part="U1" gate="G$1" x="441.96" y="38.1"/>
-<instance part="+3V1" gate="G$1" x="294.64" y="162.56" rot="R270"/>
 <instance part="+3V2" gate="G$1" x="375.92" y="53.34" rot="R270"/>
 <instance part="+3V3" gate="G$1" x="375.92" y="48.26" rot="R270"/>
 <instance part="+3V4" gate="G$1" x="10.16" y="27.94"/>
@@ -21545,6 +21381,8 @@ to a ftdi header for debug</text>
 <instance part="GND103" gate="1" x="431.8" y="20.32" rot="R270"/>
 <instance part="R37" gate="G$1" x="88.9" y="193.04" rot="R90"/>
 <instance part="GND104" gate="1" x="88.9" y="185.42"/>
+<instance part="Q2" gate="G$1" x="304.8" y="162.56" rot="MR90"/>
+<instance part="+3V22" gate="G$1" x="317.5" y="162.56" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -21602,11 +21440,6 @@ to a ftdi header for debug</text>
 <pinref part="J7" gate="G$1" pin="VSS"/>
 <wire x1="360.68" y1="210.82" x2="363.22" y2="210.82" width="0.1524" layer="91"/>
 <pinref part="GND71" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="Q12" gate="G$1" pin="S"/>
-<wire x1="314.96" y1="152.4" x2="317.5" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="193.04" y1="111.76" x2="203.2" y2="111.76" width="0.1524" layer="91"/>
@@ -22162,6 +21995,11 @@ to a ftdi header for debug</text>
 <pinref part="R37" gate="G$1" pin="1"/>
 <pinref part="GND104" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="GND1" gate="1" pin="GND"/>
+<pinref part="U2" gate="OUTLINE" pin="K"/>
+<wire x1="317.5" y1="152.4" x2="289.56" y2="152.4" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="F1" class="0">
 <segment>
@@ -22570,20 +22408,6 @@ to a ftdi header for debug</text>
 <pinref part="C46" gate="G$1" pin="2"/>
 <wire x1="363.22" y1="185.42" x2="342.9" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="342.9" y1="185.42" x2="342.9" y2="177.8" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="LCD_A_SWITCHED" class="0">
-<segment>
-<pinref part="R45" gate="G$1" pin="2"/>
-<wire x1="304.8" y1="152.4" x2="302.26" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="Q12" gate="G$1" pin="D"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="U2" gate="OUTLINE" pin="K"/>
-<pinref part="R45" gate="G$1" pin="1"/>
-<wire x1="292.1" y1="152.4" x2="289.56" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CC_FLASH_!CS" class="0">
@@ -23030,11 +22854,6 @@ to a ftdi header for debug</text>
 </net>
 <net name="+3V3" class="0">
 <segment>
-<pinref part="U2" gate="OUTLINE" pin="A"/>
-<pinref part="+3V1" gate="G$1" pin="+3V3"/>
-<wire x1="292.1" y1="162.56" x2="289.56" y2="162.56" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <wire x1="373.38" y1="53.34" x2="363.22" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
 <pinref part="U4" gate="G$1" pin="3V"/>
@@ -23236,6 +23055,11 @@ to a ftdi header for debug</text>
 <wire x1="701.04" y1="157.48" x2="701.04" y2="160.02" width="0.1524" layer="91"/>
 <label x="701.04" y="160.02" size="1.778" layer="95" rot="R90"/>
 <pinref part="+3V21" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="Q2" gate="G$1" pin="S"/>
+<pinref part="+3V22" gate="G$1" pin="+3V3"/>
+<wire x1="309.88" y1="162.56" x2="314.96" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="USB_ID" class="0">
@@ -24246,9 +24070,10 @@ to a ftdi header for debug</text>
 <label x="99.06" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="312.42" y="157.48" size="1.778" layer="95" rot="R90"/>
-<wire x1="312.42" y1="157.48" x2="312.42" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="Q12" gate="G$1" pin="G"/>
+<wire x1="307.34" y1="154.94" x2="307.34" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="Q2" gate="G$1" pin="G"/>
+<wire x1="307.34" y1="154.94" x2="309.88" y2="154.94" width="0.1524" layer="91"/>
+<label x="309.88" y="154.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$48" class="1">
@@ -24416,6 +24241,18 @@ to a ftdi header for debug</text>
 <pinref part="C59" gate="G$1" pin="1"/>
 <wire x1="520.7" y1="114.3" x2="520.7" y2="106.68" width="0.1524" layer="91"/>
 <junction x="520.7" y="114.3"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U2" gate="OUTLINE" pin="A"/>
+<pinref part="R45" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$57" class="0">
+<segment>
+<pinref part="Q2" gate="G$1" pin="D"/>
+<pinref part="R45" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
