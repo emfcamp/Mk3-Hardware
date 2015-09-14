@@ -27289,7 +27289,7 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <part name="R1" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER"/>
 <part name="S5" library="TiLDA Mk3 Parts" deviceset="SWITCH-SPST" device="-SMD-A"/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
-<part name="C1" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0805K" value="0603/10u/16V/X5R"/>
+<part name="C1" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0805K" value="0603/4u7/16V/X5R"/>
 <part name="GND62" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C10" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/0R"/>
 <part name="GND65" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -27536,10 +27536,11 @@ to a ftdi header for debug</text>
 <text x="213.36" y="129.54" size="1.778" layer="91">1861193</text>
 <wire x1="132.08" y1="193.04" x2="132.08" y2="187.96" width="0.1524" layer="94"/>
 <text x="106.68" y="154.94" size="1.778" layer="97">undecided whether to bother with this</text>
-<wire x1="124.46" y1="160.02" x2="124.46" y2="162.56" width="0.1524" layer="97"/>
-<wire x1="124.46" y1="162.56" x2="124.46" y2="182.88" width="0.1524" layer="97"/>
+<wire x1="124.46" y1="157.48" x2="124.46" y2="182.88" width="0.1524" layer="97"/>
 <wire x1="124.46" y1="182.88" x2="132.08" y2="190.5" width="0.1524" layer="97"/>
-<wire x1="124.46" y1="160.02" x2="124.46" y2="157.48" width="0.1524" layer="97"/>
+<text x="215.9" y="139.7" size="1.778" layer="91">potentially remove</text>
+<wire x1="223.52" y1="139.7" x2="223.52" y2="127" width="0.1524" layer="97"/>
+<wire x1="223.52" y1="127" x2="218.44" y2="121.92" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -27717,8 +27718,8 @@ to a ftdi header for debug</text>
 <instance part="S2" gate="G$1" x="337.82" y="104.14" smashed="yes">
 <attribute name="NAME" x="335.28" y="106.68" size="1.778" layer="95"/>
 </instance>
-<instance part="S1" gate="G$1" x="337.82" y="114.3" smashed="yes">
-<attribute name="NAME" x="335.28" y="116.84" size="1.778" layer="95"/>
+<instance part="S1" gate="G$1" x="337.82" y="114.3" smashed="yes" rot="MR0">
+<attribute name="NAME" x="340.36" y="116.84" size="1.778" layer="95" rot="MR0"/>
 </instance>
 <instance part="S4" gate="G$1" x="337.82" y="119.38" smashed="yes">
 <attribute name="NAME" x="335.28" y="121.92" size="1.778" layer="95"/>
@@ -29702,16 +29703,15 @@ to a ftdi header for debug</text>
 <wire x1="332.74" y1="104.14" x2="330.2" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="330.2" y1="104.14" x2="330.2" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="S4" gate="G$1" pin="1"/>
-<wire x1="330.2" y1="114.3" x2="330.2" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="330.2" y1="119.38" x2="332.74" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$1" pin="1"/>
-<wire x1="332.74" y1="114.3" x2="330.2" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="330.2" y1="114.3" x2="330.2" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="119.38" x2="330.2" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="S3" gate="G$1" pin="1"/>
+<wire x1="330.2" y1="114.3" x2="330.2" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="330.2" y1="109.22" x2="332.74" y2="109.22" width="0.1524" layer="91"/>
 <junction x="330.2" y="109.22"/>
-<junction x="330.2" y="114.3"/>
 <junction x="330.2" y="119.38"/>
+<pinref part="S1" gate="G$1" pin="2"/>
+<wire x1="332.74" y1="114.3" x2="330.2" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SJ3" gate="1" pin="1"/>
@@ -30533,9 +30533,11 @@ to a ftdi header for debug</text>
 </net>
 <net name="MOM_UP" class="0">
 <segment>
-<pinref part="S1" gate="G$1" pin="2"/>
-<wire x1="342.9" y1="114.3" x2="345.44" y2="114.3" width="0.1524" layer="91"/>
 <label x="345.44" y="114.3" size="1.778" layer="95"/>
+<wire x1="345.44" y1="114.3" x2="350.52" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="345.44" y1="114.3" x2="345.44" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="S1" gate="G$1" pin="1"/>
+<wire x1="342.9" y1="114.3" x2="345.44" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="_PE" pin="PE4"/>
