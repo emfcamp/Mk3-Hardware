@@ -27440,6 +27440,11 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <part name="GND102" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V23" library="supply1" deviceset="+3V3" device=""/>
 <part name="SJ3" library="TiLDA Mk3 Parts" deviceset="SOLDERJUMPER" device="TRACE"/>
+<part name="LED5" library="TiLDA Mk3 Parts" deviceset="LED" device="5MM"/>
+<part name="R39" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0207/10"/>
+<part name="Q5" library="TiLDA Mk3 Parts" deviceset="MOSFET-P" device="-SOT23" value="NTR4101"/>
+<part name="GND105" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
+<part name="+3V24" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -27541,6 +27546,11 @@ to a ftdi header for debug</text>
 <text x="215.9" y="139.7" size="1.778" layer="91">potentially remove</text>
 <wire x1="223.52" y1="139.7" x2="223.52" y2="127" width="0.1524" layer="97"/>
 <wire x1="223.52" y1="127" x2="218.44" y2="121.92" width="0.1524" layer="97"/>
+<text x="271.78" y="177.8" size="1.778" layer="91" rot="R90">fairly sure this  cap should be at least 16V</text>
+<wire x1="274.32" y1="223.52" x2="292.1" y2="223.52" width="0.1524" layer="96"/>
+<wire x1="292.1" y1="223.52" x2="299.72" y2="215.9" width="0.1524" layer="96"/>
+<wire x1="299.72" y1="215.9" x2="322.58" y2="215.9" width="0.1524" layer="96"/>
+<wire x1="322.58" y1="215.9" x2="327.66" y2="210.82" width="0.1524" layer="96"/>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -28019,6 +28029,11 @@ to a ftdi header for debug</text>
 <instance part="SJ3" gate="1" x="132.08" y="190.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="129.54" y="187.96" size="1.778" layer="95" rot="R90"/>
 </instance>
+<instance part="LED5" gate="G$1" x="144.78" y="86.36" rot="R90"/>
+<instance part="R39" gate="G$1" x="137.16" y="86.36" rot="R180"/>
+<instance part="Q5" gate="G$1" x="127" y="86.36" rot="MR270"/>
+<instance part="GND105" gate="1" x="152.4" y="86.36" rot="R90"/>
+<instance part="+3V24" gate="G$1" x="119.38" y="86.36" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -28641,6 +28656,10 @@ to a ftdi header for debug</text>
 <segment>
 <pinref part="C4" gate="G$1" pin="-"/>
 <pinref part="GND102" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND105" gate="1" pin="GND"/>
+<pinref part="LED5" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="F1" class="0">
@@ -29717,6 +29736,10 @@ to a ftdi header for debug</text>
 <pinref part="SJ3" gate="1" pin="1"/>
 <pinref part="+3V23" gate="G$1" pin="+3V3"/>
 </segment>
+<segment>
+<pinref part="Q5" gate="G$1" pin="S"/>
+<pinref part="+3V24" gate="G$1" pin="+3V3"/>
+</segment>
 </net>
 <net name="USB_ID" class="0">
 <segment>
@@ -30249,6 +30272,12 @@ to a ftdi header for debug</text>
 <wire x1="304.8" y1="71.12" x2="307.34" y2="71.12" width="0.1524" layer="91"/>
 <label x="304.8" y="71.12" size="1.778" layer="95" rot="MR0"/>
 <pinref part="U2" gate="G$1" pin="D3"/>
+</segment>
+<segment>
+<pinref part="Q5" gate="G$1" pin="G"/>
+<wire x1="124.46" y1="91.44" x2="124.46" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="93.98" x2="137.16" y2="93.98" width="0.1524" layer="91"/>
+<label x="129.54" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -30957,6 +30986,18 @@ to a ftdi header for debug</text>
 <net name="N$59" class="0">
 <segment>
 <wire x1="919.48" y1="195.58" x2="795.02" y2="193.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$60" class="0">
+<segment>
+<pinref part="R39" gate="G$1" pin="1"/>
+<pinref part="LED5" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$61" class="0">
+<segment>
+<pinref part="Q5" gate="G$1" pin="D"/>
+<pinref part="R39" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
