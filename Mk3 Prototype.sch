@@ -28009,6 +28009,195 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 </deviceset>
 </devicesets>
 </library>
+<library name="passives-7351">
+<packages>
+<package name="C0805-N">
+<smd name="1" x="-0.9" y="0" dx="1.15" dy="1.45" layer="1"/>
+<smd name="2" x="0.9" y="0" dx="1.15" dy="1.45" layer="1"/>
+<wire x1="-1.749" y1="0.999" x2="1.749" y2="0.999" width="0" layer="39"/>
+<wire x1="1.749" y1="0.999" x2="1.745" y2="-0.999" width="0" layer="39"/>
+<wire x1="1.745" y1="-0.999" x2="-1.745" y2="-0.999" width="0" layer="39"/>
+<wire x1="-1.745" y1="-0.999" x2="-1.749" y2="0.999" width="0" layer="39"/>
+<rectangle x1="-1" y1="-0.6" x2="1" y2="0.6" layer="51"/>
+<text x="-1.72171875" y="1.225875" size="0.8128" layer="25" font="vector" ratio="13">&gt;NAME</text>
+<wire x1="-1.75" y1="1" x2="1.75" y2="1" width="0.1" layer="21"/>
+<wire x1="1.75" y1="1" x2="1.75" y2="-1" width="0.1" layer="21"/>
+<wire x1="1.75" y1="-1" x2="-1.75" y2="-1" width="0.1" layer="21"/>
+<wire x1="-1.75" y1="-1" x2="-1.75" y2="1" width="0.1" layer="21"/>
+</package>
+<package name="C0402-L">
+<smd name="1" x="-0.43" y="0" dx="0.49" dy="0.54" layer="1"/>
+<smd name="2" x="0.43" y="0" dx="0.49" dy="0.54" layer="1"/>
+<wire x1="-0.779" y1="0.399" x2="0.779" y2="0.399" width="0" layer="39"/>
+<wire x1="0.779" y1="0.399" x2="0.779" y2="-0.399" width="0" layer="39"/>
+<wire x1="0.779" y1="-0.399" x2="-0.779" y2="-0.399" width="0" layer="39"/>
+<wire x1="-0.779" y1="-0.399" x2="-0.779" y2="0.399" width="0" layer="39"/>
+<text x="-1.27" y="0.635" size="0.8128" layer="25" font="vector" ratio="13">&gt;NAME</text>
+<rectangle x1="-0.5" y1="-0.25" x2="0.5" y2="0.25" layer="51"/>
+</package>
+<package name="C0402-N">
+<smd name="1" x="-0.48" y="0" dx="0.59" dy="0.64" layer="1"/>
+<smd name="2" x="0.48" y="0" dx="0.59" dy="0.64" layer="1"/>
+<wire x1="-0.929" y1="0.469" x2="0.929" y2="0.469" width="0" layer="39"/>
+<wire x1="0.929" y1="0.469" x2="0.929" y2="-0.469" width="0" layer="39"/>
+<wire x1="0.929" y1="-0.469" x2="-0.929" y2="-0.469" width="0" layer="39"/>
+<wire x1="-0.929" y1="-0.469" x2="-0.929" y2="0.469" width="0" layer="39"/>
+<text x="-1.27" y="0.635" size="0.8128" layer="25" font="vector" ratio="13">&gt;NAME</text>
+<rectangle x1="-0.5" y1="-0.25" x2="0.5" y2="0.25" layer="51"/>
+</package>
+<package name="C0603-L">
+<smd name="1" x="-0.7" y="0" dx="0.75" dy="0.9" layer="1"/>
+<smd name="2" x="0.7" y="0" dx="0.75" dy="0.9" layer="1"/>
+<wire x1="-1.199" y1="0.599" x2="1.199" y2="0.599" width="0" layer="39"/>
+<wire x1="1.199" y1="0.599" x2="1.199" y2="-0.599" width="0" layer="39"/>
+<wire x1="1.199" y1="-0.599" x2="-1.199" y2="-0.599" width="0" layer="39"/>
+<wire x1="-1.199" y1="-0.599" x2="-1.199" y2="0.599" width="0" layer="39"/>
+<rectangle x1="-0.8" y1="-0.405" x2="0.8" y2="0.405" layer="51"/>
+<text x="-1.545153125" y="0.7245625" size="0.8128" layer="25" font="vector" ratio="13">&gt;NAME</text>
+</package>
+<package name="C0603-N">
+<smd name="1" x="-0.8" y="0" dx="0.95" dy="1" layer="1"/>
+<smd name="2" x="0.8" y="0" dx="0.95" dy="1" layer="1"/>
+<wire x1="-1.549" y1="0.749" x2="1.549" y2="0.749" width="0" layer="39"/>
+<wire x1="1.549" y1="0.749" x2="1.549" y2="-0.749" width="0" layer="39"/>
+<wire x1="1.549" y1="-0.749" x2="-1.549" y2="-0.749" width="0" layer="39"/>
+<wire x1="-1.549" y1="-0.749" x2="-1.549" y2="0.749" width="0" layer="39"/>
+<rectangle x1="-0.8" y1="-0.405" x2="0.8" y2="0.405" layer="51"/>
+<text x="-1.55890625" y="0.899078125" size="0.8128" layer="25" font="vector" ratio="13">&gt;NAME</text>
+<wire x1="1.5" y1="0.75" x2="-1.5" y2="0.75" width="0.1" layer="21"/>
+<wire x1="-1.5" y1="0.75" x2="-1.5" y2="-0.75" width="0.1" layer="21"/>
+<wire x1="-1.5" y1="-0.75" x2="1.5" y2="-0.75" width="0.1" layer="21"/>
+<wire x1="1.5" y1="-0.75" x2="1.5" y2="0.75" width="0.1" layer="21"/>
+</package>
+<package name="C0805-L">
+<smd name="1" x="-0.8" y="0" dx="0.95" dy="1.35" layer="1"/>
+<smd name="2" x="0.8" y="0" dx="0.95" dy="1.35" layer="1"/>
+<wire x1="-1.399" y1="0.849" x2="1.399" y2="0.849" width="0" layer="39"/>
+<wire x1="1.399" y1="0.849" x2="1.399" y2="-0.849" width="0" layer="39"/>
+<wire x1="1.399" y1="-0.849" x2="-1.399" y2="-0.849" width="0" layer="39"/>
+<wire x1="-1.399" y1="-0.849" x2="-1.399" y2="0.849" width="0" layer="39"/>
+<rectangle x1="-1" y1="-0.6" x2="1" y2="0.6" layer="51"/>
+<text x="-1.56333125" y="0.888184375" size="0.8128" layer="25" font="vector" ratio="13">&gt;NAME</text>
+</package>
+<package name="C1206-L">
+<smd name="1" x="-1.4" y="0" dx="0.95" dy="1.7" layer="1"/>
+<smd name="2" x="1.4" y="0" dx="0.95" dy="1.7" layer="1"/>
+<wire x1="-1.999" y1="0.999" x2="1.999" y2="0.999" width="0" layer="39"/>
+<wire x1="1.999" y1="0.999" x2="1.999" y2="-0.999" width="0" layer="39"/>
+<wire x1="1.999" y1="-0.999" x2="-1.999" y2="-0.999" width="0" layer="39"/>
+<wire x1="-1.999" y1="-0.999" x2="-1.999" y2="0.999" width="0" layer="39"/>
+<rectangle x1="-1.6" y1="-0.8" x2="1.6" y2="0.8" layer="51"/>
+<text x="-1.72171875" y="1.225875" size="0.8128" layer="25" font="vector" ratio="13">&gt;NAME</text>
+<wire x1="-0.625" y1="0.75" x2="0.625" y2="0.75" width="0.2" layer="21"/>
+<wire x1="-0.625" y1="-0.75" x2="0.625" y2="-0.75" width="0.2" layer="21"/>
+</package>
+<package name="C1206-N">
+<smd name="1" x="-1.5" y="0" dx="1.15" dy="1.8" layer="1"/>
+<smd name="2" x="1.5" y="0" dx="1.15" dy="1.8" layer="1"/>
+<wire x1="-2.349" y1="1.149" x2="2.349" y2="1.149" width="0" layer="39"/>
+<wire x1="2.349" y1="1.149" x2="2.349" y2="-1.149" width="0" layer="39"/>
+<wire x1="2.349" y1="-1.149" x2="-2.349" y2="-1.149" width="0" layer="39"/>
+<wire x1="-2.349" y1="-1.149" x2="-2.349" y2="1.149" width="0" layer="39"/>
+<rectangle x1="-1.6" y1="-0.8" x2="1.6" y2="0.8" layer="51"/>
+<text x="-1.72171875" y="1.3228375" size="0.8128" layer="25" font="vector" ratio="13">&gt;NAME</text>
+<wire x1="-0.625" y1="0.75" x2="0.625" y2="0.75" width="0.2" layer="21"/>
+<wire x1="-0.625" y1="-0.75" x2="0.625" y2="-0.75" width="0.2" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="CAP">
+<pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<text x="2.54" y="0" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="0" y1="-0.635" x2="0" y2="0.3175" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.8575" x2="0" y2="-1.905" width="0.1524" layer="94"/>
+<rectangle x1="-2.2225" y1="-0.9525" x2="2.2225" y2="-0.3175" layer="94"/>
+<rectangle x1="-2.2225" y1="-2.2225" x2="2.2225" y2="-1.5875" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CAPACITOR" prefix="C" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="CAP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0402-L" package="C0402-L">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0402-N" package="C0402-N">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0603-L" package="C0603-L">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0603-N" package="C0603-N">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0805-N" package="C0805-N">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0805-L" package="C0805-L">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1206-L" package="C1206-L">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1206-N" package="C1206-N">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -28059,24 +28248,24 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <parts>
 <part name="FRAME1" library="TiLDA Mk3 Parts" deviceset="A3L-LOC" device=""/>
 <part name="LOGO1" library="TiLDA Mk3 Parts" deviceset="OSHW-LOGO" device="M"/>
-<part name="FID1" library="TiLDA Mk3 Parts" deviceset="FIDUCIAL" device="1X2.5-STOP"/>
 <part name="FID2" library="TiLDA Mk3 Parts" deviceset="FIDUCIAL" device="1X2.5-STOP"/>
-<part name="FID6" library="TiLDA Mk3 Parts" deviceset="FIDUCIAL" device="1X2.5-STOP"/>
-<part name="FID3" library="TiLDA Mk3 Parts" deviceset="FIDUCIAL" device="1X2.5-STOP"/>
+<part name="FID1" library="TiLDA Mk3 Parts" deviceset="FIDUCIAL" device="1X2.5-STOP"/>
 <part name="FID4" library="TiLDA Mk3 Parts" deviceset="FIDUCIAL" device="1X2.5-STOP"/>
+<part name="FID3" library="TiLDA Mk3 Parts" deviceset="FIDUCIAL" device="1X2.5-STOP"/>
+<part name="FID6" library="TiLDA Mk3 Parts" deviceset="FIDUCIAL" device="1X2.5-STOP"/>
 <part name="FID5" library="TiLDA Mk3 Parts" deviceset="FIDUCIAL" device="1X2.5-STOP"/>
 <part name="U1" library="TiLDA Mk3 Parts" deviceset="JHD12864-G13BSW-OUTLINE" device="" value="JHD12864-G13BSW-OUTLINE"/>
 <part name="J2" library="TiLDA Mk3 Parts" deviceset="JHD12863-G13BSW-CONNECTOR" device="-SFV30R-2STE1HLF" value="SFV30R-2STE1HLF"/>
-<part name="C61" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/10V/X5R"/>
-<part name="C57" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/10V/X5R"/>
-<part name="C56" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/10V/X5R"/>
-<part name="C64" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/10V/X5R"/>
-<part name="C55" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/10V/X5R"/>
-<part name="C54" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/10V/X5R"/>
-<part name="C63" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/10V/X5R"/>
-<part name="C53" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/10V/X5R"/>
-<part name="C52" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/10V/X5R"/>
-<part name="R28" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/12R/5%"/>
+<part name="C59" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/16V/X5R"/>
+<part name="C58" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/16V/X5R"/>
+<part name="C57" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/16V/X5R"/>
+<part name="C60" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/16V/X5R"/>
+<part name="C54" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/16V/X5R"/>
+<part name="C53" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/16V/X5R"/>
+<part name="C63" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/16V/X5R"/>
+<part name="C52" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/16V/X5R"/>
+<part name="C51" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/16V/X5R"/>
+<part name="R32" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/12R/5%"/>
 <part name="Q4" library="TiLDA Mk3 Parts" deviceset="MOSFET-P" device="-SC70-3" value="BSS84W"/>
 <part name="GND1" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND2" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -28099,16 +28288,16 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="GND10" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="Y1" library="TiLDA Mk3 Parts" deviceset="AH316M245001-T" device=""/>
 <part name="GND11" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R27" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
-<part name="R36" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
+<part name="R31" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
+<part name="R39" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
 <part name="GND12" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND13" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R37" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
+<part name="R40" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
 <part name="C69" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
 <part name="GND14" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="X4" library="TiLDA Mk3 Parts" deviceset="RESONATOR_EPSON_FC_145" device="" value="DNP - ABS07-32.768KHZ-T"/>
-<part name="C27" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="DNP - 0402/10p/50V/NP0"/>
 <part name="C26" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="DNP - 0402/10p/50V/NP0"/>
+<part name="C25" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="DNP - 0402/10p/50V/NP0"/>
 <part name="GND15" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND16" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="X5" library="TiLDA Mk3 Parts" deviceset="CRYSTAL" device="-2.5X2.0" value="Q24FA20H00396"/>
@@ -28116,45 +28305,45 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="GND19" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C65" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/6p2/100V/NP0"/>
 <part name="C68" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/6p2/100V/NP0"/>
-<part name="R23" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
-<part name="R32" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
+<part name="R27" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
+<part name="R34" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
 <part name="GND20" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R30" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
-<part name="R31" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
-<part name="R34" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/10K/5%"/>
+<part name="R35" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
+<part name="R36" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
+<part name="R37" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/10K/5%"/>
 <part name="GND21" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND22" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND23" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND24" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="L6" library="TiLDA Mk3 Parts" deviceset="INDUCTOR" device="1008" value="1008/2u2/1300mA"/>
-<part name="C50" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/10u/6.3V/X5R"/>
-<part name="C37" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
-<part name="C48" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
-<part name="C59" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
+<part name="C49" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/10u/6.3V/X5R"/>
+<part name="C36" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
+<part name="C50" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
+<part name="C56" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
 <part name="GND25" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND26" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND27" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND28" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="L5" library="TiLDA Mk3 Parts" deviceset="INDUCTOR" device="1008" value="1008/1u/??"/>
-<part name="C38" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/22u/4V/X5R"/>
-<part name="C58" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/22u/4V/X5R"/>
-<part name="C51" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/1u/10V/X5R"/>
+<part name="L5" library="TiLDA Mk3 Parts" deviceset="INDUCTOR" device="1008" value="1008/1u/1500mA"/>
+<part name="C38" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/10u/6.3V/X5R"/>
+<part name="C61" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/10u/6.3V/X5R"/>
+<part name="C55" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/1u/10V/X5R"/>
 <part name="GND29" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND30" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND31" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="L4" library="TiLDA Mk3 Parts" deviceset="INDUCTOR" device="1008" value="1008/2u2/1300mA"/>
-<part name="C29" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/10u/6.3V/X5R"/>
-<part name="C43" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
-<part name="C32" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
+<part name="C28" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/10u/6.3V/X5R"/>
+<part name="C42" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
+<part name="C30" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
 <part name="GND32" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND33" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND34" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="C60" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
-<part name="C33" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
-<part name="C36" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/4u7/6.3V/X5R"/>
-<part name="C42" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/4u7/6.3V/X5R"/>
-<part name="C45" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/4u7/6.3V/X5R"/>
-<part name="C46" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
+<part name="C62" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
+<part name="C32" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
+<part name="C35" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/4u7/6.3V/X5R"/>
+<part name="C43" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/4u7/6.3V/X5R"/>
+<part name="C47" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/4u7/6.3V/X5R"/>
+<part name="C44" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
 <part name="C31" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
 <part name="GND35" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND36" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -28163,13 +28352,13 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="GND39" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND40" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND41" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="C62" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
-<part name="R35" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
+<part name="C64" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
+<part name="R38" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
 <part name="GND42" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND43" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R24" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
+<part name="R28" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
 <part name="GND44" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R33" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
+<part name="R42" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
 <part name="GND45" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="J3" library="dtb" deviceset="SWD_SHROUD" device="" value="SWD_SHROUD"/>
 <part name="GND46" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -28186,48 +28375,47 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="JP3" library="TiLDA Mk3 Parts" deviceset="M02" device="-JST-2MM-SMT"/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="C39" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
-<part name="C20" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
+<part name="C19" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
 <part name="C11" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
 <part name="C12" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
-<part name="C40" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/1u/10V/X5R"/>
-<part name="C9" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/1u/10V/X5R"/>
+<part name="C9" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/2.2u/6.3V/X5R"/>
 <part name="GND47" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="C18" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
-<part name="C17" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
+<part name="C16" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
+<part name="C15" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/10n/25V/X7R"/>
 <part name="GND48" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R18" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/220K/5%"/>
-<part name="R17" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/220K/5%"/>
-<part name="C34" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/1u/10V/X5R"/>
+<part name="R22" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/220K/5%"/>
+<part name="R21" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/220K/5%"/>
+<part name="C33" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/1u/10V/X5R"/>
 <part name="GND49" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND51" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R29" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
+<part name="R33" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
 <part name="GND52" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND53" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R19" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/22/1%"/>
-<part name="R20" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/22/1%"/>
+<part name="R23" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/22/1%"/>
+<part name="R25" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/22/1%"/>
 <part name="X2" library="TiLDA Mk3 Parts" deviceset="CRYSTAL" device="-3.2-2.5" value="CRYSTAL-3.2-2.5"/>
 <part name="GND54" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND55" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="C22" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/12p/50V/NP0"/>
-<part name="C21" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/12p/50V/NP0"/>
+<part name="C21" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/6.2p/50V/NP0"/>
+<part name="C20" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/6.2p/50V/NP0"/>
 <part name="GND58" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R5" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/2k/5%"/>
+<part name="R6" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/2k/5%"/>
 <part name="GND59" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND60" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C3" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/4u7/10V/X5R"/>
 <part name="GND61" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="LED4" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT"/>
-<part name="R1" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER"/>
+<part name="LED5" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT"/>
+<part name="R2" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER"/>
 <part name="S5" library="TiLDA Mk3 Parts" deviceset="SWITCH-SPST" device="-SMD-A"/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
-<part name="C1" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0805K" value="0603/4u7/16V/X5R"/>
+<part name="C1" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0805K" value="0603/4u7/10V/X5R"/>
 <part name="GND62" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C10" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/0R"/>
 <part name="GND65" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
-<part name="C15" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/4u7/10V/X5R"/>
-<part name="C19" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/4u7/10V/X5R"/>
+<part name="C37" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/4u7/10V/X5R"/>
+<part name="C17" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/4u7/10V/X5R"/>
 <part name="GND67" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND68" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND69" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -28238,20 +28426,20 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="TP8" library="TiLDA Mk3 Parts" deviceset="TP" device="4MM"/>
 <part name="TP5" library="TiLDA Mk3 Parts" deviceset="TP" device="4MM"/>
 <part name="TP7" library="TiLDA Mk3 Parts" deviceset="TP" device="4MM"/>
-<part name="R15" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/220k/5%"/>
-<part name="R16" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/220k/5%"/>
+<part name="R18" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/220k/5%"/>
+<part name="R19" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/220k/5%"/>
 <part name="GND70" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND71" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R21" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
-<part name="LED3" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT"/>
+<part name="R26" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
+<part name="LED4" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT"/>
 <part name="C13" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/1u/10V/X5R"/>
-<part name="R4" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/2M2/5%"/>
+<part name="R5" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/2M2/5%"/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND72" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND73" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="X3" library="TiLDA Mk3 Parts" deviceset="RESONATOR_EPSON_FC_145" device="" value="ABS07-32.768KHZ-T"/>
-<part name="C25" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/10p/50V/NP0"/>
+<part name="C23" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/10p/50V/NP0"/>
 <part name="C24" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/10p/50V/NP0"/>
 <part name="GND74" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND75" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -28266,9 +28454,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="GND56" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND57" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="IC3" library="TiLDA Mk3 Parts" deviceset="STM32F401V" device=""/>
-<part name="C30" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/1u/10V/X5R"/>
-<part name="C23" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
-<part name="C35" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
+<part name="C29" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/2.2u/6.3V/X5R"/>
+<part name="C22" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
+<part name="C34" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
 <part name="U2" library="TiLDA Mk3 Parts" deviceset="ARDUINOR3" device="-NODIM"/>
 <part name="SV2" library="con-lstb" deviceset="MA03-1" device=""/>
 <part name="D1" library="SparkFun-LED" deviceset="WS2812B" device=""/>
@@ -28283,25 +28471,25 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="GND76" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND77" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="X1" library="TiLDA Mk3 Parts" deviceset="ESP-07" device=""/>
-<part name="R25" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
+<part name="R29" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
 <part name="GND80" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V12" library="supply1" deviceset="+3V3" device=""/>
-<part name="R26" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
+<part name="R30" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
 <part name="GND81" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND82" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V14" library="supply1" deviceset="+3V3" device=""/>
-<part name="R2" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/220k/5%"/>
 <part name="R3" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/220k/5%"/>
-<part name="C16" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/1u/10V/X5R"/>
+<part name="R4" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/220k/5%"/>
+<part name="C18" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/1u/10V/X5R"/>
 <part name="GND83" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND84" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="L2" library="TiLDA Mk3 Parts" deviceset="WE-CBF" device="_0805" value="Bead"/>
-<part name="SJ2" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NO" device="YES_SILK"/>
+<part name="SJ3" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NO" device="YES_SILK"/>
 <part name="R10" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/1k/5%"/>
 <part name="GND85" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R22" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0"/>
+<part name="R24" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0"/>
 <part name="SV1" library="con-lstb" deviceset="MA03-1" device=""/>
 <part name="S6" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD-1101NE"/>
 <part name="GND86" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -28313,55 +28501,53 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="+3V20" library="supply1" deviceset="+3V3" device=""/>
 <part name="Q1" library="TiLDA Mk3 Parts" deviceset="DMMT5401" device=""/>
 <part name="Q2" library="TiLDA Mk3 Parts" deviceset="MOSFET-P" device="-SOT23" value="NTR4101"/>
-<part name="R13" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/47k/5%"/>
-<part name="R14" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/10k/5%"/>
+<part name="R15" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/47k/5%"/>
+<part name="R16" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/10k/5%"/>
 <part name="GND87" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND88" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="IC2" library="TiLDA Mk3 Parts" deviceset="AP3419" device=""/>
 <part name="GND89" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R7" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/90k/1%"/>
-<part name="R8" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/22k/1%"/>
+<part name="R8" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/90k/1%"/>
+<part name="R9" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/22k/1%"/>
 <part name="GND90" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="L1" library="TiLDA Mk3 Parts" deviceset="INDUCTOR" device="1210"/>
-<part name="C5" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0805K" value="0603/10u/10V/X5R"/>
+<part name="C5" library="passives-7351" deviceset="CAPACITOR" device="0805-N" value="0805/10u/10V/X5R"/>
 <part name="GND91" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="C6" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0805K" value="0603/10u/16V/X5R"/>
+<part name="C6" library="passives-7351" deviceset="CAPACITOR" device="0805-N" value="0805/10u/10V/X5R"/>
 <part name="GND94" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="D3" library="TiLDA Mk3 Parts" deviceset="DIODE-" device="SOD123"/>
 <part name="D2" library="TiLDA Mk3 Parts" deviceset="DIODE-" device="SOD123"/>
 <part name="SJ1" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NO" device="YES_SILK"/>
 <part name="JP4" library="SparkFun-Connectors" deviceset="M10" device="SILK_FEMALE_PTH"/>
 <part name="X6" library="con-coax" deviceset="MC-921" device=""/>
-<part name="R38" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="DNP (0ohm)"/>
+<part name="R41" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="DNP (0ohm)"/>
 <part name="GND95" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="U$1" library="SparkFun-RF" deviceset="ANTENNA2" device="2500AT44M0400"/>
-<part name="C8" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/4u7/10V/X5R"/>
-<part name="C41" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/4u7/10V/X5R"/>
+<part name="ANT1" library="SparkFun-RF" deviceset="ANTENNA2" device="2500AT44M0400"/>
+<part name="C8" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/4u7/6.3V/X5R"/>
+<part name="C41" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/4u7/6.3V/X5R"/>
 <part name="GND96" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="C47" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/4u7/10V/X5R"/>
+<part name="C46" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/1u/10V/X5R"/>
 <part name="GND97" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V21" library="supply1" deviceset="+3V3" device=""/>
-<part name="C28" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/??u/6.3V/X5R"/>
-<part name="C49" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/??u/4V/X5R"/>
-<part name="C44" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/??u/4V/X5R"/>
-<part name="C66" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/??u/6.3V/X5R"/>
+<part name="C48" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/10u/6.3V/X5R"/>
+<part name="C45" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/10u/6.3V/X5R"/>
 <part name="IC1" library="TiLDA Mk3 Parts" deviceset="BD49XXX" device=""/>
 <part name="GND98" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND99" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="C7" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/1n/10V/NP0"/>
-<part name="LED1" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT"/>
+<part name="C7" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/10n/25V/X7R"/>
 <part name="LED2" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT"/>
-<part name="R11" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER"/>
+<part name="LED3" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT"/>
 <part name="R12" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER"/>
+<part name="R14" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER"/>
 <part name="GND100" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND101" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="C2" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/4u7/10V/X5R"/>
-<part name="R6" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/47k/5%"/>
+<part name="C2" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/4u7/6.3V/X5R"/>
+<part name="R7" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/47k/5%"/>
 <part name="GND92" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="C14" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0603/1u/10V/X5R"/>
+<part name="C14" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/1u/10V/X5R"/>
 <part name="GND93" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND103" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R9" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
+<part name="R11" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
 <part name="GND104" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="Q3" library="TiLDA Mk3 Parts" deviceset="MOSFET-P" device="-SOT23" value="NTR4101"/>
 <part name="+3V22" library="supply1" deviceset="+3V3" device=""/>
@@ -28369,16 +28555,17 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="C4" library="TiLDA Mk3 Parts" deviceset="CPOL-EU" device="E2.5-6" value="DNP (OTG)"/>
 <part name="GND102" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V23" library="supply1" deviceset="+3V3" device=""/>
-<part name="SJ3" library="TiLDA Mk3 Parts" deviceset="SOLDERJUMPER" device="TRACE"/>
-<part name="LED5" library="TiLDA Mk3 Parts" deviceset="LED" device="5MM"/>
-<part name="R39" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0207/10"/>
+<part name="SJ2" library="TiLDA Mk3 Parts" deviceset="SOLDERJUMPER" device="TRACE"/>
+<part name="LED1" library="TiLDA Mk3 Parts" deviceset="LED" device="5MM"/>
+<part name="R1" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0207/10"/>
 <part name="Q5" library="TiLDA Mk3 Parts" deviceset="MOSFET-P" device="-SOT23" value="NTR4101"/>
 <part name="GND105" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V24" library="supply1" deviceset="+3V3" device=""/>
-<part name="R40" library="TiLDA Mk3 Parts" deviceset="VARISTOR" device="CN0603"/>
-<part name="R41" library="TiLDA Mk3 Parts" deviceset="VARISTOR" device="CN0603"/>
-<part name="R42" library="TiLDA Mk3 Parts" deviceset="VARISTOR" device="CN0603"/>
+<part name="R20" library="TiLDA Mk3 Parts" deviceset="VARISTOR" device="CN0603"/>
+<part name="R13" library="TiLDA Mk3 Parts" deviceset="VARISTOR" device="CN0603"/>
+<part name="R17" library="TiLDA Mk3 Parts" deviceset="VARISTOR" device="CN0603"/>
 <part name="GND106" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
+<part name="+3V25" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -28392,7 +28579,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <text x="698.5" y="170.18" size="3.81" layer="97" ratio="15">WIFI Flash</text>
 <text x="647.7" y="200.66" size="3.81" layer="97" ratio="15">WIFI Xtal</text>
 <text x="421.64" y="236.22" size="1.778" layer="91">LQM2HPN2R2MG0L </text>
-<text x="464.82" y="218.44" size="1.778" layer="91">??</text>
+<text x="464.82" y="218.44" size="1.778" layer="91">LQM2HPN2R2MG0L </text>
 <text x="469.9" y="198.12" size="1.778" layer="91">LQM2HPN2R2MG0L </text>
 <text x="408.94" y="251.46" size="3.81" layer="97" ratio="15">WIFI Power</text>
 <text x="670.56" y="96.52" size="3.81" layer="97" ratio="15">WIFI Control</text>
@@ -28405,8 +28592,6 @@ look for a better
 off/on switch</text>
 <text x="304.8" y="243.84" size="1.778" layer="91">not sure we need this</text>
 <text x="304.8" y="241.3" size="1.778" layer="91">what is its idle current?</text>
-<text x="408.94" y="160.02" size="1.778" layer="91">if possible i think the 22u 0603 should
-be 0805 parts instead</text>
 <text x="655.32" y="177.8" size="1.778" layer="91">keep this crystal footprint just in case</text>
 <text x="655.32" y="175.26" size="1.778" layer="91">default: use stm32, DNP crystal + caps</text>
 <wire x1="170.18" y1="50.8" x2="208.28" y2="50.8" width="0.1524" layer="97"/>
@@ -28460,7 +28645,6 @@ to a ftdi header for debug</text>
 <text x="718.82" y="251.46" size="1.778" layer="91">spec</text>
 <text x="741.68" y="246.38" size="1.778" layer="91">spec</text>
 <text x="797.56" y="177.8" size="2.54" layer="94">see if a resistor is needed on the stm32 crytal</text>
-<text x="408.94" y="157.48" size="1.778" layer="91"> - large caps have been 'doubled up'</text>
 <text x="530.86" y="101.6" size="1.778" layer="91">3.6V version</text>
 <text x="301.244" y="237.744" size="1.778" layer="91">- needed with low voltage cutoff?</text>
 <text x="-20.32" y="177.8" size="1.778" layer="91">tim2_ch1</text>
@@ -28480,27 +28664,35 @@ to a ftdi header for debug</text>
 <wire x1="292.1" y1="223.52" x2="299.72" y2="215.9" width="0.1524" layer="96"/>
 <wire x1="299.72" y1="215.9" x2="322.58" y2="215.9" width="0.1524" layer="96"/>
 <wire x1="322.58" y1="215.9" x2="327.66" y2="210.82" width="0.1524" layer="96"/>
+<text x="408.94" y="154.94" size="1.778" layer="91">orginally two caps of value
+0603/22u/4V/X5R</text>
+<wire x1="434.34" y1="172.72" x2="434.34" y2="170.18" width="0.1524" layer="97"/>
+<wire x1="434.34" y1="170.18" x2="444.5" y2="170.18" width="0.1524" layer="97"/>
+<wire x1="444.5" y1="170.18" x2="452.12" y2="170.18" width="0.1524" layer="97"/>
+<wire x1="452.12" y1="170.18" x2="452.12" y2="172.72" width="0.1524" layer="97"/>
+<wire x1="444.5" y1="170.18" x2="444.5" y2="165.1" width="0.1524" layer="97"/>
+<wire x1="444.5" y1="165.1" x2="439.42" y2="160.02" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="LOGO1" gate="G$1" x="330.2" y="15.24"/>
-<instance part="FID1" gate="G$1" x="345.44" y="22.86"/>
-<instance part="FID2" gate="G$1" x="350.52" y="22.86"/>
-<instance part="FID6" gate="G$1" x="355.6" y="22.86"/>
+<instance part="FID2" gate="G$1" x="345.44" y="22.86"/>
+<instance part="FID1" gate="G$1" x="350.52" y="22.86"/>
+<instance part="FID4" gate="G$1" x="355.6" y="22.86"/>
 <instance part="FID3" gate="G$1" x="360.68" y="22.86"/>
-<instance part="FID4" gate="G$1" x="365.76" y="22.86"/>
+<instance part="FID6" gate="G$1" x="365.76" y="22.86"/>
 <instance part="FID5" gate="G$1" x="370.84" y="22.86"/>
 <instance part="U1" gate="OUTLINE" x="287.02" y="157.48" rot="R90"/>
 <instance part="J2" gate="G$1" x="373.38" y="213.36" rot="MR0"/>
-<instance part="C61" gate="G$1" x="327.66" y="208.28" rot="R90"/>
-<instance part="C57" gate="G$1" x="307.34" y="200.66" rot="R90"/>
-<instance part="C56" gate="G$1" x="307.34" y="190.5" rot="R90"/>
-<instance part="C64" gate="G$1" x="314.96" y="180.34" rot="R90"/>
-<instance part="C55" gate="G$1" x="327.66" y="172.72" smashed="yes" rot="R180">
+<instance part="C59" gate="G$1" x="327.66" y="208.28" rot="R90"/>
+<instance part="C58" gate="G$1" x="307.34" y="200.66" rot="R90"/>
+<instance part="C57" gate="G$1" x="307.34" y="190.5" rot="R90"/>
+<instance part="C60" gate="G$1" x="314.96" y="180.34" rot="R90"/>
+<instance part="C54" gate="G$1" x="327.66" y="172.72" smashed="yes" rot="R180">
 <attribute name="NAME" x="328.041" y="172.72" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="327.66" y="160.401" size="1.778" layer="96"/>
 </instance>
-<instance part="C54" gate="G$1" x="332.74" y="172.72" smashed="yes" rot="R180">
+<instance part="C53" gate="G$1" x="332.74" y="172.72" smashed="yes" rot="R180">
 <attribute name="NAME" x="333.121" y="172.72" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="327.66" y="157.861" size="1.778" layer="96"/>
 </instance>
@@ -28508,15 +28700,15 @@ to a ftdi header for debug</text>
 <attribute name="NAME" x="338.201" y="172.72" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="327.66" y="155.321" size="1.778" layer="96"/>
 </instance>
-<instance part="C53" gate="G$1" x="342.9" y="172.72" smashed="yes" rot="R180">
+<instance part="C52" gate="G$1" x="342.9" y="172.72" smashed="yes" rot="R180">
 <attribute name="NAME" x="343.281" y="172.72" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="327.66" y="152.781" size="1.778" layer="96"/>
 </instance>
-<instance part="C52" gate="G$1" x="347.98" y="172.72" smashed="yes" rot="R180">
+<instance part="C51" gate="G$1" x="347.98" y="172.72" smashed="yes" rot="R180">
 <attribute name="NAME" x="348.361" y="172.72" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="327.66" y="150.241" size="1.778" layer="96"/>
 </instance>
-<instance part="R28" gate="G$1" x="294.64" y="162.56"/>
+<instance part="R32" gate="G$1" x="294.64" y="162.56"/>
 <instance part="Q4" gate="G$1" x="332.74" y="226.06" rot="R90"/>
 <instance part="GND1" gate="1" x="320.04" y="152.4" rot="R90"/>
 <instance part="GND2" gate="1" x="297.18" y="208.28" rot="R270"/>
@@ -28560,19 +28752,19 @@ to a ftdi header for debug</text>
 <attribute name="NAME" x="759.46" y="249.682" size="1.778" layer="95"/>
 </instance>
 <instance part="GND11" gate="1" x="759.46" y="241.3" rot="R90"/>
-<instance part="R27" gate="G$1" x="762" y="129.54" rot="R270"/>
-<instance part="R36" gate="G$1" x="772.16" y="129.54" rot="R270"/>
+<instance part="R31" gate="G$1" x="762" y="129.54" rot="R270"/>
+<instance part="R39" gate="G$1" x="772.16" y="129.54" rot="R270"/>
 <instance part="GND12" gate="1" x="762" y="109.22"/>
 <instance part="GND13" gate="1" x="772.16" y="109.22"/>
-<instance part="R37" gate="G$1" x="701.04" y="152.4" rot="R270"/>
+<instance part="R40" gate="G$1" x="701.04" y="152.4" rot="R270"/>
 <instance part="C69" gate="G$1" x="779.78" y="137.16" rot="R180"/>
 <instance part="GND14" gate="1" x="779.78" y="109.22"/>
 <instance part="X4" gate="G$1" x="673.1" y="190.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="670.56" y="193.294" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="670.56" y="191.008" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C27" gate="G$1" x="665.48" y="195.58" rot="R90"/>
-<instance part="C26" gate="G$1" x="665.48" y="185.42" rot="R90"/>
+<instance part="C26" gate="G$1" x="665.48" y="195.58" rot="R90"/>
+<instance part="C25" gate="G$1" x="665.48" y="185.42" rot="R90"/>
 <instance part="GND15" gate="1" x="637.54" y="195.58" rot="R270"/>
 <instance part="GND16" gate="1" x="637.54" y="185.42" rot="R270"/>
 <instance part="X5" gate="G$1" x="739.14" y="190.5" smashed="yes" rot="R90">
@@ -28583,12 +28775,12 @@ to a ftdi header for debug</text>
 <instance part="GND19" gate="1" x="728.98" y="190.5" rot="R270"/>
 <instance part="C65" gate="G$1" x="746.76" y="195.58" rot="MR90"/>
 <instance part="C68" gate="G$1" x="746.76" y="185.42" rot="MR90"/>
-<instance part="R23" gate="G$1" x="675.64" y="68.58" rot="R270"/>
-<instance part="R32" gate="G$1" x="683.26" y="66.04" rot="R270"/>
+<instance part="R27" gate="G$1" x="675.64" y="68.58" rot="R270"/>
+<instance part="R34" gate="G$1" x="683.26" y="66.04" rot="R270"/>
 <instance part="GND20" gate="1" x="683.26" y="48.26"/>
-<instance part="R30" gate="G$1" x="759.46" y="48.26" rot="R270"/>
-<instance part="R31" gate="G$1" x="751.84" y="48.26" rot="R270"/>
-<instance part="R34" gate="G$1" x="744.22" y="48.26" rot="R270"/>
+<instance part="R35" gate="G$1" x="759.46" y="48.26" rot="R270"/>
+<instance part="R36" gate="G$1" x="751.84" y="48.26" rot="R270"/>
+<instance part="R37" gate="G$1" x="744.22" y="48.26" rot="R270"/>
 <instance part="GND21" gate="1" x="744.22" y="27.94"/>
 <instance part="GND22" gate="1" x="751.84" y="27.94"/>
 <instance part="GND23" gate="1" x="759.46" y="27.94"/>
@@ -28597,10 +28789,13 @@ to a ftdi header for debug</text>
 <attribute name="NAME" x="421.64" y="243.84" size="1.778" layer="95"/>
 <attribute name="VALUE" x="421.64" y="238.76" size="1.778" layer="96"/>
 </instance>
-<instance part="C50" gate="G$1" x="408.94" y="220.98" rot="R180"/>
-<instance part="C37" gate="G$1" x="431.8" y="220.98" rot="R180"/>
-<instance part="C48" gate="G$1" x="426.72" y="220.98" rot="R180"/>
-<instance part="C59" gate="G$1" x="421.64" y="220.98" rot="R180"/>
+<instance part="C49" gate="G$1" x="408.94" y="220.98" smashed="yes" rot="R180">
+<attribute name="NAME" x="408.94" y="220.98" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="406.4" y="220.98" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="C36" gate="G$1" x="431.8" y="220.98" rot="R180"/>
+<instance part="C50" gate="G$1" x="426.72" y="220.98" rot="R180"/>
+<instance part="C56" gate="G$1" x="421.64" y="220.98" rot="R180"/>
 <instance part="GND25" gate="1" x="431.8" y="190.5"/>
 <instance part="GND26" gate="1" x="426.72" y="190.5"/>
 <instance part="GND27" gate="1" x="421.64" y="190.5"/>
@@ -28610,8 +28805,8 @@ to a ftdi header for debug</text>
 <attribute name="VALUE" x="464.82" y="220.98" size="1.778" layer="96"/>
 </instance>
 <instance part="C38" gate="G$1" x="439.42" y="203.2" rot="R180"/>
-<instance part="C58" gate="G$1" x="447.04" y="203.2" rot="R180"/>
-<instance part="C51" gate="G$1" x="457.2" y="200.66" rot="R180"/>
+<instance part="C61" gate="G$1" x="447.04" y="203.2" rot="R180"/>
+<instance part="C55" gate="G$1" x="457.2" y="200.66" rot="R180"/>
 <instance part="GND29" gate="1" x="439.42" y="175.26"/>
 <instance part="GND30" gate="1" x="447.04" y="175.26"/>
 <instance part="GND31" gate="1" x="457.2" y="172.72"/>
@@ -28619,18 +28814,18 @@ to a ftdi header for debug</text>
 <attribute name="NAME" x="469.9" y="205.74" size="1.778" layer="95"/>
 <attribute name="VALUE" x="469.9" y="200.66" size="1.778" layer="96"/>
 </instance>
-<instance part="C29" gate="G$1" x="464.82" y="185.42" rot="R180"/>
-<instance part="C43" gate="G$1" x="472.44" y="185.42" rot="R180"/>
-<instance part="C32" gate="G$1" x="477.52" y="185.42" rot="R180"/>
+<instance part="C28" gate="G$1" x="464.82" y="185.42" rot="R180"/>
+<instance part="C42" gate="G$1" x="472.44" y="185.42" rot="R180"/>
+<instance part="C30" gate="G$1" x="477.52" y="185.42" rot="R180"/>
 <instance part="GND32" gate="1" x="464.82" y="154.94"/>
 <instance part="GND33" gate="1" x="472.44" y="154.94"/>
 <instance part="GND34" gate="1" x="477.52" y="154.94"/>
-<instance part="C60" gate="G$1" x="551.18" y="195.58" rot="R180"/>
-<instance part="C33" gate="G$1" x="556.26" y="195.58" rot="R180"/>
-<instance part="C36" gate="G$1" x="574.04" y="220.98" rot="R180"/>
-<instance part="C42" gate="G$1" x="579.12" y="220.98" rot="R180"/>
-<instance part="C45" gate="G$1" x="584.2" y="220.98" rot="R180"/>
-<instance part="C46" gate="G$1" x="568.96" y="220.98" rot="R180"/>
+<instance part="C62" gate="G$1" x="551.18" y="195.58" rot="R180"/>
+<instance part="C32" gate="G$1" x="556.26" y="195.58" rot="R180"/>
+<instance part="C35" gate="G$1" x="574.04" y="220.98" rot="R180"/>
+<instance part="C43" gate="G$1" x="579.12" y="220.98" rot="R180"/>
+<instance part="C47" gate="G$1" x="584.2" y="220.98" rot="R180"/>
+<instance part="C44" gate="G$1" x="568.96" y="220.98" rot="R180"/>
 <instance part="C31" gate="G$1" x="563.88" y="220.98" rot="R180"/>
 <instance part="GND35" gate="1" x="551.18" y="165.1"/>
 <instance part="GND36" gate="1" x="556.26" y="165.1"/>
@@ -28639,13 +28834,13 @@ to a ftdi header for debug</text>
 <instance part="GND39" gate="1" x="574.04" y="190.5"/>
 <instance part="GND40" gate="1" x="579.12" y="190.5"/>
 <instance part="GND41" gate="1" x="584.2" y="190.5"/>
-<instance part="C62" gate="G$1" x="779.78" y="68.58" rot="R180"/>
-<instance part="R35" gate="G$1" x="779.78" y="86.36" rot="R270"/>
+<instance part="C64" gate="G$1" x="779.78" y="68.58" rot="R180"/>
+<instance part="R38" gate="G$1" x="779.78" y="86.36" rot="R270"/>
 <instance part="GND42" gate="1" x="779.78" y="38.1"/>
 <instance part="GND43" gate="1" x="754.38" y="236.22"/>
-<instance part="R24" gate="G$1" x="764.54" y="58.42" rot="R270"/>
+<instance part="R28" gate="G$1" x="764.54" y="58.42" rot="R270"/>
 <instance part="GND44" gate="1" x="764.54" y="35.56"/>
-<instance part="R33" gate="G$1" x="772.16" y="63.5" rot="R270"/>
+<instance part="R42" gate="G$1" x="772.16" y="63.5" rot="R270"/>
 <instance part="GND45" gate="1" x="772.16" y="43.18"/>
 <instance part="J3" gate="G$1" x="27.94" y="17.78"/>
 <instance part="GND46" gate="1" x="10.16" y="7.62"/>
@@ -28670,28 +28865,27 @@ to a ftdi header for debug</text>
 <instance part="JP3" gate="G$1" x="596.9" y="38.1" rot="R90"/>
 <instance part="+3V5" gate="G$1" x="254" y="228.6"/>
 <instance part="C39" gate="G$1" x="231.14" y="200.66" rot="R180"/>
-<instance part="C20" gate="G$1" x="236.22" y="200.66" rot="R180"/>
+<instance part="C19" gate="G$1" x="236.22" y="200.66" rot="R180"/>
 <instance part="C11" gate="G$1" x="241.3" y="200.66" rot="R180"/>
 <instance part="C12" gate="G$1" x="246.38" y="200.66" rot="R180"/>
-<instance part="C40" gate="G$1" x="254" y="200.66" rot="R180"/>
 <instance part="C9" gate="G$1" x="157.48" y="205.74" rot="R90"/>
 <instance part="GND47" gate="1" x="132.08" y="205.74" rot="R270"/>
-<instance part="C18" gate="G$1" x="160.02" y="187.96" rot="R180"/>
-<instance part="C17" gate="G$1" x="152.4" y="187.96" rot="R180"/>
+<instance part="C16" gate="G$1" x="160.02" y="187.96" rot="R180"/>
+<instance part="C15" gate="G$1" x="152.4" y="187.96" rot="R180"/>
 <instance part="GND48" gate="1" x="144.78" y="177.8"/>
-<instance part="R18" gate="G$1" x="114.3" y="203.2" rot="MR270"/>
-<instance part="R17" gate="G$1" x="114.3" y="218.44" rot="R90"/>
-<instance part="C34" gate="G$1" x="121.92" y="203.2" rot="R180"/>
+<instance part="R22" gate="G$1" x="114.3" y="203.2" rot="MR270"/>
+<instance part="R21" gate="G$1" x="114.3" y="218.44" rot="R90"/>
+<instance part="C33" gate="G$1" x="121.92" y="203.2" rot="R180"/>
 <instance part="GND49" gate="1" x="114.3" y="185.42"/>
 <instance part="GND51" gate="1" x="121.92" y="177.8"/>
-<instance part="R29" gate="G$1" x="137.16" y="215.9"/>
+<instance part="R33" gate="G$1" x="137.16" y="215.9"/>
 <instance part="GND52" gate="1" x="127" y="215.9" rot="R270"/>
 <instance part="GND53" gate="1" x="424.18" y="38.1" rot="R270"/>
-<instance part="R19" gate="G$1" x="218.44" y="119.38" smashed="yes" rot="R180">
+<instance part="R23" gate="G$1" x="218.44" y="119.38" smashed="yes" rot="R180">
 <attribute name="NAME" x="227.076" y="121.4374" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="227.33" y="115.316" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R20" gate="G$1" x="218.44" y="116.84" smashed="yes" rot="R180">
+<instance part="R25" gate="G$1" x="218.44" y="116.84" smashed="yes" rot="R180">
 <attribute name="NAME" x="227.076" y="118.8974" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="227.33" y="112.776" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -28701,10 +28895,10 @@ to a ftdi header for debug</text>
 </instance>
 <instance part="GND54" gate="1" x="83.82" y="236.22" rot="R90"/>
 <instance part="GND55" gate="1" x="33.02" y="236.22" rot="R270"/>
-<instance part="C22" gate="G$1" x="50.8" y="241.3" rot="R270"/>
-<instance part="C21" gate="G$1" x="50.8" y="231.14" rot="R270"/>
+<instance part="C21" gate="G$1" x="50.8" y="241.3" rot="R270"/>
+<instance part="C20" gate="G$1" x="50.8" y="231.14" rot="R270"/>
 <instance part="GND58" gate="1" x="563.88" y="48.26"/>
-<instance part="R5" gate="G$1" x="571.5" y="50.8" smashed="yes" rot="R270">
+<instance part="R6" gate="G$1" x="571.5" y="50.8" smashed="yes" rot="R270">
 <attribute name="NAME" x="572.9986" y="54.61" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="568.198" y="54.61" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -28715,8 +28909,8 @@ to a ftdi header for debug</text>
 <attribute name="VALUE" x="579.501" y="50.8" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND61" gate="1" x="581.66" y="45.72"/>
-<instance part="LED4" gate="G$1" x="538.48" y="53.34" rot="R90"/>
-<instance part="R1" gate="G$1" x="530.86" y="53.34" rot="R180"/>
+<instance part="LED5" gate="G$1" x="538.48" y="53.34" rot="R90"/>
+<instance part="R2" gate="G$1" x="530.86" y="53.34" rot="R180"/>
 <instance part="S5" gate="1" x="637.54" y="55.88" rot="R180"/>
 <instance part="+3V6" gate="G$1" x="619.76" y="129.54"/>
 <instance part="C1" gate="G$1" x="525.78" y="45.72" smashed="yes" rot="R180">
@@ -28728,11 +28922,11 @@ to a ftdi header for debug</text>
 <instance part="GND65" gate="1" x="205.74" y="165.1"/>
 <instance part="+3V7" gate="G$1" x="424.18" y="43.18" rot="R90"/>
 <instance part="+3V8" gate="G$1" x="469.9" y="53.34"/>
-<instance part="C15" gate="G$1" x="469.9" y="43.18" smashed="yes" rot="R180">
+<instance part="C37" gate="G$1" x="469.9" y="43.18" smashed="yes" rot="R180">
 <attribute name="NAME" x="470.281" y="43.18" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="472.821" y="43.18" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C19" gate="G$1" x="464.82" y="43.18" smashed="yes" rot="R180">
+<instance part="C17" gate="G$1" x="464.82" y="43.18" smashed="yes" rot="R180">
 <attribute name="NAME" x="465.201" y="43.18" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="462.661" y="43.18" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -28760,21 +28954,21 @@ to a ftdi header for debug</text>
 <instance part="TP7" gate="G$1" x="177.8" y="17.78" smashed="yes" rot="R180">
 <attribute name="NAME" x="179.07" y="16.51" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="R15" gate="G$1" x="500.38" y="38.1" smashed="yes" rot="R270">
+<instance part="R18" gate="G$1" x="500.38" y="38.1" smashed="yes" rot="R270">
 <attribute name="NAME" x="501.8786" y="41.91" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="494.538" y="41.91" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R16" gate="G$1" x="500.38" y="27.94" smashed="yes" rot="R270">
+<instance part="R19" gate="G$1" x="500.38" y="27.94" smashed="yes" rot="R270">
 <attribute name="NAME" x="501.8786" y="31.75" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="497.078" y="41.91" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND70" gate="1" x="500.38" y="20.32"/>
 <instance part="+3V9" gate="G$1" x="322.58" y="226.06" rot="R90"/>
 <instance part="GND71" gate="1" x="358.14" y="210.82" rot="R270"/>
-<instance part="R21" gate="G$1" x="683.26" y="200.66" rot="R270"/>
-<instance part="LED3" gate="G$1" x="266.7" y="50.8" rot="R180"/>
+<instance part="R26" gate="G$1" x="683.26" y="200.66" rot="R270"/>
+<instance part="LED4" gate="G$1" x="266.7" y="50.8" rot="R180"/>
 <instance part="C13" gate="G$1" x="266.7" y="38.1" rot="R180"/>
-<instance part="R4" gate="G$1" x="274.32" y="38.1" rot="R270"/>
+<instance part="R5" gate="G$1" x="274.32" y="38.1" rot="R270"/>
 <instance part="+3V10" gate="G$1" x="266.7" y="60.96"/>
 <instance part="GND72" gate="1" x="274.32" y="15.24"/>
 <instance part="GND73" gate="1" x="266.7" y="10.16"/>
@@ -28782,7 +28976,7 @@ to a ftdi header for debug</text>
 <attribute name="NAME" x="40.386" y="83.82" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="42.672" y="83.82" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C25" gate="G$1" x="48.26" y="78.74" rot="R180"/>
+<instance part="C23" gate="G$1" x="48.26" y="78.74" rot="R180"/>
 <instance part="C24" gate="G$1" x="38.1" y="78.74" rot="R180"/>
 <instance part="GND74" gate="1" x="48.26" y="50.8"/>
 <instance part="GND75" gate="1" x="38.1" y="50.8"/>
@@ -28809,9 +29003,9 @@ to a ftdi header for debug</text>
 <instance part="IC3" gate="_PC" x="25.4" y="114.3"/>
 <instance part="IC3" gate="_PB" x="60.96" y="182.88"/>
 <instance part="IC3" gate="_PA" x="22.86" y="182.88"/>
-<instance part="C30" gate="G$1" x="157.48" y="200.66" rot="R90"/>
-<instance part="C23" gate="G$1" x="226.06" y="200.66" rot="R180"/>
-<instance part="C35" gate="G$1" x="220.98" y="200.66" rot="R180"/>
+<instance part="C29" gate="G$1" x="157.48" y="200.66" rot="R90"/>
+<instance part="C22" gate="G$1" x="226.06" y="200.66" rot="R180"/>
+<instance part="C34" gate="G$1" x="220.98" y="200.66" rot="R180"/>
 <instance part="U2" gate="G$1" x="335.28" y="58.42" rot="R90"/>
 <instance part="SV2" gate="G$1" x="447.04" y="104.14"/>
 <instance part="D1" gate="G$1" x="467.36" y="109.22"/>
@@ -28826,7 +29020,7 @@ to a ftdi header for debug</text>
 <instance part="GND76" gate="1" x="429.26" y="91.44"/>
 <instance part="GND77" gate="1" x="429.26" y="78.74"/>
 <instance part="X1" gate="G$1" x="673.1" y="147.32"/>
-<instance part="R25" gate="G$1" x="645.16" y="144.78" smashed="yes">
+<instance part="R29" gate="G$1" x="645.16" y="144.78" smashed="yes">
 <attribute name="NAME" x="641.35" y="141.1986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="633.73" y="138.938" size="1.778" layer="96"/>
 </instance>
@@ -28835,7 +29029,7 @@ to a ftdi header for debug</text>
 <instance part="+3V12" gate="G$1" x="637.54" y="144.78" smashed="yes" rot="R90">
 <attribute name="VALUE" x="636.778" y="145.796" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R26" gate="G$1" x="645.16" y="127" smashed="yes">
+<instance part="R30" gate="G$1" x="645.16" y="127" smashed="yes">
 <attribute name="NAME" x="641.35" y="128.4986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="633.73" y="131.318" size="1.778" layer="96"/>
 </instance>
@@ -28843,18 +29037,18 @@ to a ftdi header for debug</text>
 <instance part="+3V13" gate="G$1" x="205.74" y="45.72" rot="R90"/>
 <instance part="GND82" gate="1" x="172.72" y="45.72" rot="R90"/>
 <instance part="+3V14" gate="G$1" x="314.96" y="127" rot="R90"/>
-<instance part="R2" gate="G$1" x="228.6" y="50.8" rot="R270"/>
-<instance part="R3" gate="G$1" x="228.6" y="40.64" rot="R270"/>
-<instance part="C16" gate="G$1" x="236.22" y="40.64" rot="R180"/>
+<instance part="R3" gate="G$1" x="228.6" y="50.8" rot="R270"/>
+<instance part="R4" gate="G$1" x="228.6" y="40.64" rot="R270"/>
+<instance part="C18" gate="G$1" x="236.22" y="40.64" rot="R180"/>
 <instance part="GND83" gate="1" x="228.6" y="33.02"/>
 <instance part="GND84" gate="1" x="236.22" y="15.24"/>
 <instance part="L2" gate="G$1" x="203.2" y="121.92"/>
-<instance part="SJ2" gate="G$1" x="233.68" y="101.6" smashed="yes" rot="R180">
+<instance part="SJ3" gate="G$1" x="233.68" y="101.6" smashed="yes" rot="R180">
 <attribute name="NAME" x="236.22" y="99.06" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="R10" gate="G$1" x="243.84" y="109.22" rot="R180"/>
 <instance part="GND85" gate="1" x="637.54" y="228.6"/>
-<instance part="R22" gate="G$1" x="678.18" y="180.34"/>
+<instance part="R24" gate="G$1" x="678.18" y="180.34"/>
 <instance part="SV1" gate="G$1" x="645.16" y="233.68" rot="MR0"/>
 <instance part="S6" gate="G$1" x="622.3" y="248.92" rot="R180"/>
 <instance part="GND86" gate="1" x="614.68" y="248.92" rot="R270"/>
@@ -28866,17 +29060,17 @@ to a ftdi header for debug</text>
 <instance part="+3V20" gate="G$1" x="723.9" y="139.7" rot="R90"/>
 <instance part="Q1" gate="G$1" x="612.14" y="43.18"/>
 <instance part="Q2" gate="G$1" x="612.14" y="58.42" rot="MR90"/>
-<instance part="R13" gate="G$1" x="622.3" y="27.94" rot="R270"/>
-<instance part="R14" gate="G$1" x="607.06" y="27.94" rot="R270"/>
+<instance part="R15" gate="G$1" x="622.3" y="27.94" rot="R270"/>
+<instance part="R16" gate="G$1" x="607.06" y="27.94" rot="R270"/>
 <instance part="GND87" gate="1" x="622.3" y="20.32"/>
 <instance part="GND88" gate="1" x="607.06" y="20.32"/>
 <instance part="IC2" gate="G$1" x="576.58" y="124.46"/>
 <instance part="GND89" gate="1" x="579.12" y="106.68"/>
-<instance part="R7" gate="G$1" x="607.06" y="119.38" smashed="yes" rot="R270">
+<instance part="R8" gate="G$1" x="607.06" y="119.38" smashed="yes" rot="R270">
 <attribute name="NAME" x="608.5586" y="123.19" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="612.902" y="118.11" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R8" gate="G$1" x="607.06" y="109.22" smashed="yes" rot="R270">
+<instance part="R9" gate="G$1" x="607.06" y="109.22" smashed="yes" rot="R270">
 <attribute name="NAME" x="608.5586" y="113.03" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="611.378" y="113.03" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -28899,22 +29093,20 @@ to a ftdi header for debug</text>
 </instance>
 <instance part="JP4" gate="G$1" x="317.5" y="38.1" rot="R180"/>
 <instance part="X6" gate="G$1" x="713.74" y="251.46" rot="MR0"/>
-<instance part="R38" gate="G$1" x="706.12" y="246.38" rot="R270"/>
+<instance part="R41" gate="G$1" x="706.12" y="246.38" rot="R270"/>
 <instance part="GND95" gate="1" x="711.2" y="246.38"/>
-<instance part="U$1" gate="G$1" x="749.3" y="246.38"/>
-<instance part="C8" gate="G$1" x="259.08" y="200.66" rot="R180"/>
+<instance part="ANT1" gate="G$1" x="749.3" y="246.38"/>
+<instance part="C8" gate="G$1" x="254" y="200.66" rot="R180"/>
 <instance part="C41" gate="G$1" x="688.34" y="165.1" smashed="yes" rot="R180">
 <attribute name="NAME" x="688.721" y="165.1" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="691.261" y="165.1" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND96" gate="1" x="688.34" y="157.48"/>
-<instance part="C47" gate="G$1" x="464.82" y="124.46" rot="R270"/>
+<instance part="C46" gate="G$1" x="464.82" y="124.46" rot="R270"/>
 <instance part="GND97" gate="1" x="469.9" y="124.46" rot="R90"/>
 <instance part="+3V21" gate="G$1" x="701.04" y="162.56"/>
-<instance part="C28" gate="G$1" x="459.74" y="185.42" rot="R180"/>
-<instance part="C49" gate="G$1" x="452.12" y="203.2" rot="R180"/>
-<instance part="C44" gate="G$1" x="434.34" y="203.2" rot="R180"/>
-<instance part="C66" gate="G$1" x="414.02" y="220.98" rot="R180"/>
+<instance part="C48" gate="G$1" x="452.12" y="203.2" rot="R180"/>
+<instance part="C45" gate="G$1" x="434.34" y="203.2" rot="R180"/>
 <instance part="IC1" gate="G$1" x="535.94" y="111.76"/>
 <instance part="GND98" gate="1" x="525.78" y="106.68"/>
 <instance part="GND99" gate="1" x="553.72" y="99.06"/>
@@ -28922,17 +29114,17 @@ to a ftdi header for debug</text>
 <attribute name="NAME" x="553.339" y="106.68" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="556.641" y="111.76" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="LED1" gate="G$1" x="144.78" y="76.2" rot="R90"/>
-<instance part="LED2" gate="G$1" x="144.78" y="71.12" rot="R90"/>
-<instance part="R11" gate="G$1" x="137.16" y="76.2" rot="R180"/>
-<instance part="R12" gate="G$1" x="137.16" y="71.12" rot="R180"/>
+<instance part="LED2" gate="G$1" x="144.78" y="76.2" rot="R90"/>
+<instance part="LED3" gate="G$1" x="144.78" y="71.12" rot="R90"/>
+<instance part="R12" gate="G$1" x="137.16" y="76.2" rot="R180"/>
+<instance part="R14" gate="G$1" x="137.16" y="71.12" rot="R180"/>
 <instance part="GND100" gate="1" x="152.4" y="76.2" rot="R90"/>
 <instance part="GND101" gate="1" x="152.4" y="71.12" rot="R90"/>
 <instance part="C2" gate="G$1" x="520.7" y="104.14" smashed="yes">
 <attribute name="NAME" x="520.319" y="104.14" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="515.239" y="93.98" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R6" gate="G$1" x="520.7" y="119.38" smashed="yes" rot="R270">
+<instance part="R7" gate="G$1" x="520.7" y="119.38" smashed="yes" rot="R270">
 <attribute name="NAME" x="522.1986" y="123.19" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="517.652" y="105.664" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -28943,7 +29135,7 @@ to a ftdi header for debug</text>
 </instance>
 <instance part="GND93" gate="1" x="508" y="20.32"/>
 <instance part="GND103" gate="1" x="431.8" y="20.32" rot="R270"/>
-<instance part="R9" gate="G$1" x="88.9" y="193.04" rot="R90"/>
+<instance part="R11" gate="G$1" x="88.9" y="193.04" rot="R90"/>
 <instance part="GND104" gate="1" x="88.9" y="185.42"/>
 <instance part="Q3" gate="G$1" x="304.8" y="162.56" rot="MR90"/>
 <instance part="+3V22" gate="G$1" x="317.5" y="162.56" rot="R270"/>
@@ -28951,18 +29143,19 @@ to a ftdi header for debug</text>
 <instance part="C4" gate="G$1" x="508" y="55.88"/>
 <instance part="GND102" gate="1" x="508" y="48.26"/>
 <instance part="+3V23" gate="G$1" x="132.08" y="182.88" rot="R180"/>
-<instance part="SJ3" gate="1" x="132.08" y="190.5" smashed="yes" rot="R90">
+<instance part="SJ2" gate="1" x="132.08" y="190.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="129.54" y="187.96" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="LED5" gate="G$1" x="144.78" y="86.36" rot="R90"/>
-<instance part="R39" gate="G$1" x="137.16" y="86.36" rot="R180"/>
+<instance part="LED1" gate="G$1" x="144.78" y="86.36" rot="R90"/>
+<instance part="R1" gate="G$1" x="137.16" y="86.36" rot="R180"/>
 <instance part="Q5" gate="G$1" x="127" y="86.36" rot="MR270"/>
 <instance part="GND105" gate="1" x="152.4" y="86.36" rot="R90"/>
 <instance part="+3V24" gate="G$1" x="119.38" y="86.36" rot="R90"/>
-<instance part="R40" gate="G$1" x="205.74" y="93.98" rot="R90"/>
-<instance part="R41" gate="G$1" x="210.82" y="93.98" rot="R90"/>
-<instance part="R42" gate="G$1" x="215.9" y="93.98" rot="R90"/>
+<instance part="R20" gate="G$1" x="205.74" y="93.98" rot="R90"/>
+<instance part="R13" gate="G$1" x="210.82" y="93.98" rot="R90"/>
+<instance part="R17" gate="G$1" x="215.9" y="93.98" rot="R90"/>
 <instance part="GND106" gate="1" x="210.82" y="83.82"/>
+<instance part="+3V25" gate="G$1" x="457.2" y="132.08"/>
 </instances>
 <busses>
 </busses>
@@ -28992,12 +29185,12 @@ to a ftdi header for debug</text>
 <wire x1="355.6" y1="177.8" x2="355.6" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C52" gate="G$1" pin="1"/>
+<pinref part="C51" gate="G$1" pin="1"/>
 <wire x1="347.98" y1="170.18" x2="347.98" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="C55" gate="G$1" pin="1"/>
+<pinref part="C54" gate="G$1" pin="1"/>
 <wire x1="327.66" y1="170.18" x2="327.66" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="167.64" x2="332.74" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="C54" gate="G$1" pin="1"/>
+<pinref part="C53" gate="G$1" pin="1"/>
 <wire x1="332.74" y1="167.64" x2="337.82" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="337.82" y1="167.64" x2="342.9" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="342.9" y1="167.64" x2="347.98" y2="167.64" width="0.1524" layer="91"/>
@@ -29006,13 +29199,13 @@ to a ftdi header for debug</text>
 <pinref part="C63" gate="G$1" pin="1"/>
 <wire x1="337.82" y1="167.64" x2="337.82" y2="170.18" width="0.1524" layer="91"/>
 <junction x="337.82" y="167.64"/>
-<pinref part="C53" gate="G$1" pin="1"/>
+<pinref part="C52" gate="G$1" pin="1"/>
 <wire x1="342.9" y1="167.64" x2="342.9" y2="170.18" width="0.1524" layer="91"/>
 <junction x="342.9" y="167.64"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C61" gate="G$1" pin="1"/>
+<pinref part="C59" gate="G$1" pin="1"/>
 <wire x1="325.12" y1="208.28" x2="299.72" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
@@ -29022,10 +29215,15 @@ to a ftdi header for debug</text>
 <pinref part="GND71" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="193.04" y1="111.76" x2="203.2" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="111.76" x2="198.12" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="111.76" x2="203.2" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="111.76" x2="203.2" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="GND"/>
 <pinref part="GND17" gate="1" pin="GND"/>
+<pinref part="J1" gate="G$1" pin="SHIELD"/>
+<wire x1="193.04" y1="109.22" x2="198.12" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="109.22" x2="198.12" y2="111.76" width="0.1524" layer="91"/>
+<junction x="198.12" y="111.76"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="_POWER" pin="GND"/>
@@ -29056,12 +29254,12 @@ to a ftdi header for debug</text>
 <pinref part="GND10" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R27" gate="G$1" pin="2"/>
+<pinref part="R31" gate="G$1" pin="2"/>
 <wire x1="762" y1="124.46" x2="762" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R36" gate="G$1" pin="2"/>
+<pinref part="R39" gate="G$1" pin="2"/>
 <wire x1="772.16" y1="124.46" x2="772.16" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 </segment>
@@ -29071,12 +29269,12 @@ to a ftdi header for debug</text>
 <pinref part="GND14" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C27" gate="G$1" pin="1"/>
+<pinref part="C26" gate="G$1" pin="1"/>
 <wire x1="662.94" y1="195.58" x2="640.08" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C26" gate="G$1" pin="1"/>
+<pinref part="C25" gate="G$1" pin="1"/>
 <wire x1="662.94" y1="185.42" x2="640.08" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 </segment>
@@ -29100,51 +29298,46 @@ to a ftdi header for debug</text>
 </segment>
 <segment>
 <pinref part="GND20" gate="1" pin="GND"/>
-<pinref part="R32" gate="G$1" pin="2"/>
+<pinref part="R34" gate="G$1" pin="2"/>
 <wire x1="683.26" y1="50.8" x2="683.26" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R34" gate="G$1" pin="2"/>
+<pinref part="R37" gate="G$1" pin="2"/>
 <wire x1="744.22" y1="43.18" x2="744.22" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="GND21" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R31" gate="G$1" pin="2"/>
+<pinref part="R36" gate="G$1" pin="2"/>
 <wire x1="751.84" y1="43.18" x2="751.84" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="GND22" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R30" gate="G$1" pin="2"/>
+<pinref part="R35" gate="G$1" pin="2"/>
 <wire x1="759.46" y1="43.18" x2="759.46" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="GND23" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R23" gate="G$1" pin="2"/>
+<pinref part="R27" gate="G$1" pin="2"/>
 <wire x1="675.64" y1="63.5" x2="675.64" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="GND24" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C37" gate="G$1" pin="1"/>
+<pinref part="C36" gate="G$1" pin="1"/>
 <wire x1="431.8" y1="218.44" x2="431.8" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="GND25" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C59" gate="G$1" pin="1"/>
+<pinref part="C56" gate="G$1" pin="1"/>
 <wire x1="421.64" y1="218.44" x2="421.64" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="GND27" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C50" gate="G$1" pin="1"/>
-<wire x1="408.94" y1="218.44" x2="408.94" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="C49" gate="G$1" pin="1"/>
 <pinref part="GND28" gate="1" pin="GND"/>
-<pinref part="C66" gate="G$1" pin="1"/>
-<wire x1="408.94" y1="215.9" x2="408.94" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="414.02" y1="218.44" x2="414.02" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="414.02" y1="215.9" x2="408.94" y2="215.9" width="0.1524" layer="91"/>
-<junction x="408.94" y="215.9"/>
+<wire x1="408.94" y1="218.44" x2="408.94" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C48" gate="G$1" pin="1"/>
+<pinref part="C50" gate="G$1" pin="1"/>
 <wire x1="426.72" y1="218.44" x2="426.72" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="GND26" gate="1" pin="GND"/>
 </segment>
@@ -29152,54 +29345,49 @@ to a ftdi header for debug</text>
 <pinref part="C38" gate="G$1" pin="1"/>
 <pinref part="GND29" gate="1" pin="GND"/>
 <wire x1="439.42" y1="177.8" x2="439.42" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="C44" gate="G$1" pin="1"/>
+<pinref part="C45" gate="G$1" pin="1"/>
 <wire x1="439.42" y1="198.12" x2="439.42" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="434.34" y1="200.66" x2="434.34" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="434.34" y1="198.12" x2="439.42" y2="198.12" width="0.1524" layer="91"/>
 <junction x="439.42" y="198.12"/>
 </segment>
 <segment>
-<pinref part="C58" gate="G$1" pin="1"/>
+<pinref part="C61" gate="G$1" pin="1"/>
 <pinref part="GND30" gate="1" pin="GND"/>
 <wire x1="447.04" y1="177.8" x2="447.04" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="C49" gate="G$1" pin="1"/>
+<pinref part="C48" gate="G$1" pin="1"/>
 <wire x1="447.04" y1="198.12" x2="447.04" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="452.12" y1="200.66" x2="452.12" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="452.12" y1="198.12" x2="447.04" y2="198.12" width="0.1524" layer="91"/>
 <junction x="447.04" y="198.12"/>
 </segment>
 <segment>
-<pinref part="C51" gate="G$1" pin="1"/>
+<pinref part="C55" gate="G$1" pin="1"/>
 <pinref part="GND31" gate="1" pin="GND"/>
 <wire x1="457.2" y1="175.26" x2="457.2" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C29" gate="G$1" pin="1"/>
-<pinref part="GND32" gate="1" pin="GND"/>
-<wire x1="464.82" y1="157.48" x2="464.82" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="C28" gate="G$1" pin="1"/>
-<wire x1="464.82" y1="180.34" x2="464.82" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="459.74" y1="182.88" x2="459.74" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="459.74" y1="180.34" x2="464.82" y2="180.34" width="0.1524" layer="91"/>
-<junction x="464.82" y="180.34"/>
+<pinref part="GND32" gate="1" pin="GND"/>
+<wire x1="464.82" y1="157.48" x2="464.82" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C43" gate="G$1" pin="1"/>
+<pinref part="C42" gate="G$1" pin="1"/>
 <pinref part="GND33" gate="1" pin="GND"/>
 <wire x1="472.44" y1="157.48" x2="472.44" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C32" gate="G$1" pin="1"/>
+<pinref part="C30" gate="G$1" pin="1"/>
 <pinref part="GND34" gate="1" pin="GND"/>
 <wire x1="477.52" y1="157.48" x2="477.52" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C60" gate="G$1" pin="1"/>
+<pinref part="C62" gate="G$1" pin="1"/>
 <pinref part="GND35" gate="1" pin="GND"/>
 <wire x1="551.18" y1="167.64" x2="551.18" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C33" gate="G$1" pin="1"/>
+<pinref part="C32" gate="G$1" pin="1"/>
 <pinref part="GND36" gate="1" pin="GND"/>
 <wire x1="556.26" y1="167.64" x2="556.26" y2="193.04" width="0.1524" layer="91"/>
 </segment>
@@ -29209,37 +29397,37 @@ to a ftdi header for debug</text>
 <wire x1="563.88" y1="193.04" x2="563.88" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C46" gate="G$1" pin="1"/>
+<pinref part="C44" gate="G$1" pin="1"/>
 <pinref part="GND38" gate="1" pin="GND"/>
 <wire x1="568.96" y1="193.04" x2="568.96" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C36" gate="G$1" pin="1"/>
+<pinref part="C35" gate="G$1" pin="1"/>
 <pinref part="GND39" gate="1" pin="GND"/>
 <wire x1="574.04" y1="193.04" x2="574.04" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C42" gate="G$1" pin="1"/>
+<pinref part="C43" gate="G$1" pin="1"/>
 <pinref part="GND40" gate="1" pin="GND"/>
 <wire x1="579.12" y1="193.04" x2="579.12" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C45" gate="G$1" pin="1"/>
+<pinref part="C47" gate="G$1" pin="1"/>
 <pinref part="GND41" gate="1" pin="GND"/>
 <wire x1="584.2" y1="193.04" x2="584.2" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C62" gate="G$1" pin="1"/>
+<pinref part="C64" gate="G$1" pin="1"/>
 <pinref part="GND42" gate="1" pin="GND"/>
 <wire x1="779.78" y1="40.64" x2="779.78" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R24" gate="G$1" pin="2"/>
+<pinref part="R28" gate="G$1" pin="2"/>
 <wire x1="764.54" y1="53.34" x2="764.54" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="GND44" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R33" gate="G$1" pin="2"/>
+<pinref part="R42" gate="G$1" pin="2"/>
 <wire x1="772.16" y1="58.42" x2="772.16" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="GND45" gate="1" pin="GND"/>
 </segment>
@@ -29260,23 +29448,23 @@ to a ftdi header for debug</text>
 <segment>
 <pinref part="C9" gate="G$1" pin="1"/>
 <pinref part="GND47" gate="1" pin="GND"/>
-<pinref part="C30" gate="G$1" pin="1"/>
+<pinref part="C29" gate="G$1" pin="1"/>
 <wire x1="154.94" y1="200.66" x2="154.94" y2="205.74" width="0.1524" layer="91"/>
 <junction x="154.94" y="205.74"/>
 <wire x1="154.94" y1="205.74" x2="134.62" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="R22" gate="G$1" pin="2"/>
 <pinref part="GND49" gate="1" pin="GND"/>
 <wire x1="114.3" y1="187.96" x2="114.3" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C34" gate="G$1" pin="1"/>
+<pinref part="C33" gate="G$1" pin="1"/>
 <pinref part="GND51" gate="1" pin="GND"/>
 <wire x1="121.92" y1="200.66" x2="121.92" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R29" gate="G$1" pin="1"/>
+<pinref part="R33" gate="G$1" pin="1"/>
 <pinref part="GND52" gate="1" pin="GND"/>
 <wire x1="129.54" y1="215.9" x2="132.08" y2="215.9" width="0.1524" layer="91"/>
 </segment>
@@ -29291,9 +29479,9 @@ to a ftdi header for debug</text>
 <wire x1="35.56" y1="236.22" x2="38.1" y2="236.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C21" gate="G$1" pin="1"/>
+<pinref part="C20" gate="G$1" pin="1"/>
 <wire x1="53.34" y1="231.14" x2="78.74" y2="231.14" width="0.1524" layer="91"/>
-<pinref part="C22" gate="G$1" pin="1"/>
+<pinref part="C21" gate="G$1" pin="1"/>
 <pinref part="X2" gate="G$1" pin="GND@1"/>
 <pinref part="GND54" gate="1" pin="GND"/>
 <wire x1="81.28" y1="236.22" x2="78.74" y2="236.22" width="0.1524" layer="91"/>
@@ -29309,7 +29497,7 @@ to a ftdi header for debug</text>
 <wire x1="563.88" y1="53.34" x2="563.88" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="GND59" gate="1" pin="GND"/>
 <wire x1="571.5" y1="45.72" x2="571.5" y2="38.1" width="0.1524" layer="91"/>
 </segment>
@@ -29332,9 +29520,9 @@ to a ftdi header for debug</text>
 <wire x1="205.74" y1="167.64" x2="205.74" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C19" gate="G$1" pin="1"/>
+<pinref part="C17" gate="G$1" pin="1"/>
 <wire x1="464.82" y1="40.64" x2="464.82" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="C15" gate="G$1" pin="1"/>
+<pinref part="C37" gate="G$1" pin="1"/>
 <wire x1="464.82" y1="38.1" x2="469.9" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="469.9" y1="38.1" x2="469.9" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="GND67" gate="1" pin="GND"/>
@@ -29349,11 +29537,11 @@ to a ftdi header for debug</text>
 <pinref part="GND69" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R16" gate="G$1" pin="2"/>
+<pinref part="R19" gate="G$1" pin="2"/>
 <pinref part="GND70" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="GND72" gate="1" pin="GND"/>
 <wire x1="274.32" y1="17.78" x2="274.32" y2="33.02" width="0.1524" layer="91"/>
 </segment>
@@ -29363,7 +29551,7 @@ to a ftdi header for debug</text>
 <wire x1="266.7" y1="12.7" x2="266.7" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C25" gate="G$1" pin="1"/>
+<pinref part="C23" gate="G$1" pin="1"/>
 <pinref part="GND74" gate="1" pin="GND"/>
 <wire x1="48.26" y1="53.34" x2="48.26" y2="76.2" width="0.1524" layer="91"/>
 </segment>
@@ -29374,19 +29562,14 @@ to a ftdi header for debug</text>
 </segment>
 <segment>
 <pinref part="GND79" gate="1" pin="GND"/>
-<pinref part="C40" gate="G$1" pin="1"/>
-<wire x1="254" y1="198.12" x2="254" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="254" y1="195.58" x2="254" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="259.08" y1="198.12" x2="259.08" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="259.08" y1="195.58" x2="254" y2="195.58" width="0.1524" layer="91"/>
-<junction x="254" y="195.58"/>
+<wire x1="254" y1="198.12" x2="254" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C39" gate="G$1" pin="1"/>
 <pinref part="C12" gate="G$1" pin="1"/>
 <pinref part="C11" gate="G$1" pin="1"/>
-<pinref part="C20" gate="G$1" pin="1"/>
+<pinref part="C19" gate="G$1" pin="1"/>
 <wire x1="231.14" y1="198.12" x2="231.14" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="175.26" x2="236.22" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="175.26" x2="241.3" y2="175.26" width="0.1524" layer="91"/>
@@ -29400,18 +29583,18 @@ to a ftdi header for debug</text>
 <wire x1="238.76" y1="175.26" x2="236.22" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="175.26" x2="236.22" y2="198.12" width="0.1524" layer="91"/>
 <junction x="236.22" y="175.26"/>
-<pinref part="C35" gate="G$1" pin="1"/>
+<pinref part="C34" gate="G$1" pin="1"/>
 <wire x1="220.98" y1="198.12" x2="220.98" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="175.26" x2="226.06" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="C23" gate="G$1" pin="1"/>
+<pinref part="C22" gate="G$1" pin="1"/>
 <wire x1="226.06" y1="175.26" x2="231.14" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="198.12" x2="226.06" y2="175.26" width="0.1524" layer="91"/>
 <junction x="231.14" y="175.26"/>
 <junction x="226.06" y="175.26"/>
 </segment>
 <segment>
-<pinref part="C17" gate="G$1" pin="1"/>
-<pinref part="C18" gate="G$1" pin="1"/>
+<pinref part="C15" gate="G$1" pin="1"/>
+<pinref part="C16" gate="G$1" pin="1"/>
 <wire x1="160.02" y1="182.88" x2="160.02" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="182.88" x2="152.4" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="185.42" x2="152.4" y2="182.88" width="0.1524" layer="91"/>
@@ -29482,7 +29665,7 @@ to a ftdi header for debug</text>
 <pinref part="GND80" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R26" gate="G$1" pin="1"/>
+<pinref part="R30" gate="G$1" pin="1"/>
 <pinref part="GND81" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -29490,11 +29673,11 @@ to a ftdi header for debug</text>
 <pinref part="GND82" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="GND83" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C16" gate="G$1" pin="1"/>
+<pinref part="C18" gate="G$1" pin="1"/>
 <pinref part="GND84" gate="1" pin="GND"/>
 <wire x1="236.22" y1="17.78" x2="236.22" y2="38.1" width="0.1524" layer="91"/>
 </segment>
@@ -29507,11 +29690,11 @@ to a ftdi header for debug</text>
 <pinref part="GND86" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="R15" gate="G$1" pin="2"/>
 <pinref part="GND87" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R14" gate="G$1" pin="2"/>
+<pinref part="R16" gate="G$1" pin="2"/>
 <pinref part="GND88" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -29519,7 +29702,7 @@ to a ftdi header for debug</text>
 <pinref part="GND89" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="R9" gate="G$1" pin="2"/>
 <pinref part="GND90" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -29540,7 +29723,7 @@ to a ftdi header for debug</text>
 <wire x1="688.34" y1="160.02" x2="688.34" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C47" gate="G$1" pin="1"/>
+<pinref part="C46" gate="G$1" pin="1"/>
 <pinref part="GND97" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -29553,11 +29736,11 @@ to a ftdi header for debug</text>
 <pinref part="C7" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="LED3" gate="G$1" pin="C"/>
 <pinref part="GND101" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="LED2" gate="G$1" pin="C"/>
 <pinref part="GND100" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -29574,7 +29757,7 @@ to a ftdi header for debug</text>
 <pinref part="GND103" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="R11" gate="G$1" pin="1"/>
 <pinref part="GND104" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -29588,16 +29771,16 @@ to a ftdi header for debug</text>
 </segment>
 <segment>
 <pinref part="GND105" gate="1" pin="GND"/>
-<pinref part="LED5" gate="G$1" pin="C"/>
+<pinref part="LED1" gate="G$1" pin="C"/>
 </segment>
 <segment>
-<pinref part="R42" gate="G$1" pin="2"/>
+<pinref part="R17" gate="G$1" pin="2"/>
 <wire x1="215.9" y1="88.9" x2="215.9" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="86.36" x2="210.82" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="R41" gate="G$1" pin="2"/>
+<pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="210.82" y1="86.36" x2="210.82" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="86.36" x2="205.74" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="R40" gate="G$1" pin="2"/>
+<pinref part="R20" gate="G$1" pin="2"/>
 <wire x1="205.74" y1="86.36" x2="205.74" y2="88.9" width="0.1524" layer="91"/>
 <junction x="210.82" y="86.36"/>
 <pinref part="GND106" gate="1" pin="GND"/>
@@ -29807,7 +29990,7 @@ to a ftdi header for debug</text>
 <segment>
 <pinref part="L3" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="195.58" x2="132.08" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="SJ3" gate="1" pin="2"/>
+<pinref part="SJ2" gate="1" pin="2"/>
 <wire x1="132.08" y1="195.58" x2="127" y2="195.58" width="0.1524" layer="91"/>
 <junction x="132.08" y="195.58"/>
 <label x="127" y="195.58" size="1.778" layer="95"/>
@@ -29849,7 +30032,7 @@ to a ftdi header for debug</text>
 <segment>
 <pinref part="J2" gate="G$1" pin="VOUT"/>
 <label x="360.68" y="208.28" size="1.778" layer="95" rot="MR0"/>
-<pinref part="C61" gate="G$1" pin="2"/>
+<pinref part="C59" gate="G$1" pin="2"/>
 <wire x1="363.22" y1="208.28" x2="332.74" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -29857,7 +30040,7 @@ to a ftdi header for debug</text>
 <segment>
 <pinref part="J2" gate="G$1" pin="P3+"/>
 <label x="360.68" y="205.74" size="1.778" layer="95" rot="MR0"/>
-<pinref part="C57" gate="G$1" pin="2"/>
+<pinref part="C58" gate="G$1" pin="2"/>
 <wire x1="312.42" y1="200.66" x2="314.96" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="200.66" x2="314.96" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="205.74" x2="363.22" y2="205.74" width="0.1524" layer="91"/>
@@ -29869,10 +30052,10 @@ to a ftdi header for debug</text>
 <label x="360.68" y="203.2" size="1.778" layer="95" rot="MR0"/>
 <wire x1="363.22" y1="203.2" x2="317.5" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="317.5" y1="203.2" x2="317.5" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="C56" gate="G$1" pin="1"/>
+<pinref part="C57" gate="G$1" pin="1"/>
 <wire x1="304.8" y1="190.5" x2="299.72" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="190.5" x2="299.72" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="C57" gate="G$1" pin="1"/>
+<pinref part="C58" gate="G$1" pin="1"/>
 <wire x1="299.72" y1="195.58" x2="299.72" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="200.66" x2="304.8" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="195.58" x2="317.5" y2="195.58" width="0.1524" layer="91"/>
@@ -29883,7 +30066,7 @@ to a ftdi header for debug</text>
 <segment>
 <pinref part="J2" gate="G$1" pin="P1+"/>
 <label x="360.68" y="200.66" size="1.778" layer="95" rot="MR0"/>
-<pinref part="C56" gate="G$1" pin="2"/>
+<pinref part="C57" gate="G$1" pin="2"/>
 <wire x1="312.42" y1="190.5" x2="320.04" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="320.04" y1="190.5" x2="320.04" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="320.04" y1="200.66" x2="363.22" y2="200.66" width="0.1524" layer="91"/>
@@ -29895,7 +30078,7 @@ to a ftdi header for debug</text>
 <label x="360.68" y="198.12" size="1.778" layer="95" rot="MR0"/>
 <wire x1="363.22" y1="198.12" x2="322.58" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="322.58" y1="198.12" x2="322.58" y2="180.34" width="0.1524" layer="91"/>
-<pinref part="C64" gate="G$1" pin="2"/>
+<pinref part="C60" gate="G$1" pin="2"/>
 <wire x1="322.58" y1="180.34" x2="320.04" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -29903,7 +30086,7 @@ to a ftdi header for debug</text>
 <segment>
 <pinref part="J2" gate="G$1" pin="P2-"/>
 <label x="360.68" y="195.58" size="1.778" layer="95" rot="MR0"/>
-<pinref part="C64" gate="G$1" pin="1"/>
+<pinref part="C60" gate="G$1" pin="1"/>
 <wire x1="312.42" y1="180.34" x2="307.34" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="307.34" y1="180.34" x2="307.34" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="307.34" y1="177.8" x2="325.12" y2="177.8" width="0.1524" layer="91"/>
@@ -29915,7 +30098,7 @@ to a ftdi header for debug</text>
 <segment>
 <pinref part="J2" gate="G$1" pin="V4"/>
 <label x="360.68" y="193.04" size="1.778" layer="95" rot="MR0"/>
-<pinref part="C55" gate="G$1" pin="2"/>
+<pinref part="C54" gate="G$1" pin="2"/>
 <wire x1="363.22" y1="193.04" x2="327.66" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="193.04" x2="327.66" y2="177.8" width="0.1524" layer="91"/>
 </segment>
@@ -29924,7 +30107,7 @@ to a ftdi header for debug</text>
 <segment>
 <pinref part="J2" gate="G$1" pin="V3"/>
 <label x="360.68" y="190.5" size="1.778" layer="95" rot="MR0"/>
-<pinref part="C54" gate="G$1" pin="2"/>
+<pinref part="C53" gate="G$1" pin="2"/>
 <wire x1="363.22" y1="190.5" x2="332.74" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="332.74" y1="190.5" x2="332.74" y2="177.8" width="0.1524" layer="91"/>
 </segment>
@@ -29942,7 +30125,7 @@ to a ftdi header for debug</text>
 <segment>
 <pinref part="J2" gate="G$1" pin="V0"/>
 <label x="360.68" y="182.88" size="1.778" layer="95" rot="MR0"/>
-<pinref part="C52" gate="G$1" pin="2"/>
+<pinref part="C51" gate="G$1" pin="2"/>
 <wire x1="363.22" y1="182.88" x2="347.98" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="347.98" y1="182.88" x2="347.98" y2="177.8" width="0.1524" layer="91"/>
 </segment>
@@ -29996,7 +30179,7 @@ to a ftdi header for debug</text>
 <segment>
 <pinref part="J2" gate="G$1" pin="V1"/>
 <label x="360.68" y="185.42" size="1.778" layer="95" rot="MR0"/>
-<pinref part="C53" gate="G$1" pin="2"/>
+<pinref part="C52" gate="G$1" pin="2"/>
 <wire x1="363.22" y1="185.42" x2="342.9" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="342.9" y1="185.42" x2="342.9" y2="177.8" width="0.1524" layer="91"/>
 </segment>
@@ -30010,7 +30193,7 @@ to a ftdi header for debug</text>
 <segment>
 <pinref part="IC5" gate="G$1" pin="CS"/>
 <label x="723.9" y="144.78" size="1.778" layer="95" rot="MR0"/>
-<pinref part="R37" gate="G$1" pin="2"/>
+<pinref part="R40" gate="G$1" pin="2"/>
 <wire x1="726.44" y1="144.78" x2="701.04" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="701.04" y1="144.78" x2="701.04" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="701.04" y1="144.78" x2="695.96" y2="144.78" width="0.1524" layer="91"/>
@@ -30033,7 +30216,7 @@ to a ftdi header for debug</text>
 <segment>
 <pinref part="IC5" gate="G$1" pin="MOSI"/>
 <label x="754.38" y="137.16" size="1.778" layer="95"/>
-<pinref part="R27" gate="G$1" pin="1"/>
+<pinref part="R31" gate="G$1" pin="1"/>
 <wire x1="762" y1="137.16" x2="762" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="762" y1="137.16" x2="751.84" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="762" y1="137.16" x2="774.7" y2="137.16" width="0.1524" layer="91"/>
@@ -30049,7 +30232,7 @@ to a ftdi header for debug</text>
 <segment>
 <pinref part="IC5" gate="G$1" pin="SCK"/>
 <label x="754.38" y="139.7" size="1.778" layer="95"/>
-<pinref part="R36" gate="G$1" pin="1"/>
+<pinref part="R39" gate="G$1" pin="1"/>
 <wire x1="751.84" y1="139.7" x2="772.16" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="772.16" y1="139.7" x2="772.16" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="772.16" y1="139.7" x2="774.7" y2="139.7" width="0.1524" layer="91"/>
@@ -30078,7 +30261,7 @@ to a ftdi header for debug</text>
 <wire x1="716.28" y1="241.3" x2="718.82" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="716.28" y1="241.3" x2="716.28" y2="238.76" width="0.1524" layer="91"/>
 <junction x="716.28" y="241.3"/>
-<pinref part="R38" gate="G$1" pin="2"/>
+<pinref part="R41" gate="G$1" pin="2"/>
 <junction x="706.12" y="241.3"/>
 </segment>
 </net>
@@ -30107,7 +30290,7 @@ to a ftdi header for debug</text>
 <net name="N$10" class="0">
 <segment>
 <pinref part="IC4" gate="_CONTROL" pin="RESERVED@3"/>
-<pinref part="R23" gate="G$1" pin="1"/>
+<pinref part="R27" gate="G$1" pin="1"/>
 <wire x1="698.5" y1="76.2" x2="675.64" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="675.64" y1="76.2" x2="675.64" y2="73.66" width="0.1524" layer="91"/>
 </segment>
@@ -30115,7 +30298,7 @@ to a ftdi header for debug</text>
 <net name="N$11" class="0">
 <segment>
 <pinref part="IC4" gate="_CONTROL" pin="RESERVED@19"/>
-<pinref part="R32" gate="G$1" pin="1"/>
+<pinref part="R34" gate="G$1" pin="1"/>
 <wire x1="698.5" y1="73.66" x2="683.26" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="683.26" y1="73.66" x2="683.26" y2="71.12" width="0.1524" layer="91"/>
 </segment>
@@ -30123,7 +30306,7 @@ to a ftdi header for debug</text>
 <net name="WIFI_SOP2" class="0">
 <segment>
 <pinref part="IC4" gate="_CONTROL" pin="SOP2/TCXO_EN"/>
-<pinref part="R34" gate="G$1" pin="1"/>
+<pinref part="R37" gate="G$1" pin="1"/>
 <wire x1="739.14" y1="55.88" x2="744.22" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="744.22" y1="55.88" x2="744.22" y2="53.34" width="0.1524" layer="91"/>
 <label x="741.68" y="55.88" size="1.778" layer="95"/>
@@ -30132,7 +30315,7 @@ to a ftdi header for debug</text>
 <net name="WIFI_SOP1" class="0">
 <segment>
 <pinref part="IC4" gate="_CONTROL" pin="SOP1"/>
-<pinref part="R31" gate="G$1" pin="1"/>
+<pinref part="R36" gate="G$1" pin="1"/>
 <wire x1="739.14" y1="58.42" x2="751.84" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="751.84" y1="58.42" x2="751.84" y2="53.34" width="0.1524" layer="91"/>
 <label x="741.68" y="58.42" size="1.778" layer="95"/>
@@ -30141,7 +30324,7 @@ to a ftdi header for debug</text>
 <net name="WIFI_SOP0" class="0">
 <segment>
 <pinref part="IC4" gate="_CONTROL" pin="SOP0"/>
-<pinref part="R30" gate="G$1" pin="1"/>
+<pinref part="R35" gate="G$1" pin="1"/>
 <wire x1="739.14" y1="60.96" x2="759.46" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="759.46" y1="60.96" x2="759.46" y2="53.34" width="0.1524" layer="91"/>
 <label x="741.68" y="60.96" size="1.778" layer="95"/>
@@ -30157,9 +30340,8 @@ to a ftdi header for debug</text>
 <net name="N$18" class="0">
 <segment>
 <wire x1="495.3" y1="228.6" x2="421.64" y2="228.6" width="0.1524" layer="91"/>
-<pinref part="C50" gate="G$1" pin="2"/>
-<wire x1="421.64" y1="228.6" x2="414.02" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="414.02" y1="228.6" x2="408.94" y2="228.6" width="0.1524" layer="91"/>
+<pinref part="C49" gate="G$1" pin="2"/>
+<wire x1="421.64" y1="228.6" x2="408.94" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="408.94" y1="226.06" x2="408.94" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="IC4" gate="_POWER" pin="VDD_ANA1"/>
 <wire x1="495.3" y1="233.68" x2="431.8" y2="233.68" width="0.1524" layer="91"/>
@@ -30174,20 +30356,17 @@ to a ftdi header for debug</text>
 <wire x1="408.94" y1="228.6" x2="408.94" y2="231.14" width="0.1524" layer="91"/>
 <junction x="408.94" y="228.6"/>
 <junction x="408.94" y="231.14"/>
-<pinref part="C37" gate="G$1" pin="2"/>
+<pinref part="C36" gate="G$1" pin="2"/>
 <wire x1="431.8" y1="226.06" x2="431.8" y2="233.68" width="0.1524" layer="91"/>
 <junction x="431.8" y="233.68"/>
-<pinref part="C48" gate="G$1" pin="2"/>
+<pinref part="C50" gate="G$1" pin="2"/>
 <wire x1="426.72" y1="231.14" x2="426.72" y2="226.06" width="0.1524" layer="91"/>
 <junction x="426.72" y="231.14"/>
-<pinref part="C59" gate="G$1" pin="2"/>
+<pinref part="C56" gate="G$1" pin="2"/>
 <wire x1="421.64" y1="228.6" x2="421.64" y2="226.06" width="0.1524" layer="91"/>
 <junction x="421.64" y="228.6"/>
 <pinref part="IC4" gate="_POWER" pin="LDO_IN2"/>
 <pinref part="IC4" gate="_POWER" pin="LDO_IN1"/>
-<pinref part="C66" gate="G$1" pin="2"/>
-<wire x1="414.02" y1="226.06" x2="414.02" y2="228.6" width="0.1524" layer="91"/>
-<junction x="414.02" y="228.6"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -30211,7 +30390,7 @@ to a ftdi header for debug</text>
 <pinref part="C38" gate="G$1" pin="2"/>
 <wire x1="439.42" y1="208.28" x2="439.42" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="439.42" y1="210.82" x2="447.04" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="C58" gate="G$1" pin="2"/>
+<pinref part="C61" gate="G$1" pin="2"/>
 <wire x1="447.04" y1="210.82" x2="452.12" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="452.12" y1="210.82" x2="495.3" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="447.04" y1="208.28" x2="447.04" y2="210.82" width="0.1524" layer="91"/>
@@ -30219,15 +30398,15 @@ to a ftdi header for debug</text>
 <wire x1="452.12" y1="210.82" x2="452.12" y2="208.28" width="0.1524" layer="91"/>
 <junction x="452.12" y="210.82"/>
 <wire x1="452.12" y1="208.28" x2="457.2" y2="208.28" width="0.1524" layer="91"/>
-<pinref part="C51" gate="G$1" pin="2"/>
+<pinref part="C55" gate="G$1" pin="2"/>
 <wire x1="457.2" y1="208.28" x2="495.3" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="457.2" y1="208.28" x2="457.2" y2="205.74" width="0.1524" layer="91"/>
 <junction x="457.2" y="208.28"/>
 <pinref part="IC4" gate="_POWER" pin="VDD_PA_IN"/>
 <pinref part="IC4" gate="_POWER" pin="DCDC_PA_OUT"/>
-<pinref part="C49" gate="G$1" pin="2"/>
+<pinref part="C48" gate="G$1" pin="2"/>
 <junction x="452.12" y="208.28"/>
-<pinref part="C44" gate="G$1" pin="2"/>
+<pinref part="C45" gate="G$1" pin="2"/>
 <wire x1="434.34" y1="208.28" x2="434.34" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="434.34" y1="210.82" x2="439.42" y2="210.82" width="0.1524" layer="91"/>
 <junction x="439.42" y="210.82"/>
@@ -30242,10 +30421,10 @@ to a ftdi header for debug</text>
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="C43" gate="G$1" pin="2"/>
+<pinref part="C42" gate="G$1" pin="2"/>
 <wire x1="472.44" y1="190.5" x2="472.44" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="472.44" y1="195.58" x2="495.3" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="C32" gate="G$1" pin="2"/>
+<pinref part="C30" gate="G$1" pin="2"/>
 <wire x1="477.52" y1="190.5" x2="477.52" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="477.52" y1="193.04" x2="495.3" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="477.52" y1="193.04" x2="464.82" y2="193.04" width="0.1524" layer="91"/>
@@ -30254,7 +30433,7 @@ to a ftdi header for debug</text>
 <pinref part="L4" gate="G$1" pin="1"/>
 <wire x1="464.82" y1="195.58" x2="464.82" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="464.82" y1="203.2" x2="467.36" y2="203.2" width="0.1524" layer="91"/>
-<pinref part="C29" gate="G$1" pin="2"/>
+<pinref part="C28" gate="G$1" pin="2"/>
 <wire x1="464.82" y1="193.04" x2="464.82" y2="190.5" width="0.1524" layer="91"/>
 <junction x="464.82" y="193.04"/>
 <wire x1="472.44" y1="195.58" x2="464.82" y2="195.58" width="0.1524" layer="91"/>
@@ -30262,15 +30441,12 @@ to a ftdi header for debug</text>
 <junction x="464.82" y="195.58"/>
 <pinref part="IC4" gate="_POWER" pin="VDD_DIG1"/>
 <pinref part="IC4" gate="_POWER" pin="VDD_DIG2"/>
-<pinref part="C28" gate="G$1" pin="2"/>
-<wire x1="459.74" y1="190.5" x2="459.74" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="459.74" y1="193.04" x2="464.82" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="IC4" gate="_POWER" pin="VDD_PLL"/>
-<pinref part="C60" gate="G$1" pin="2"/>
+<pinref part="C62" gate="G$1" pin="2"/>
 <wire x1="543.56" y1="203.2" x2="551.18" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="551.18" y1="203.2" x2="551.18" y2="200.66" width="0.1524" layer="91"/>
 </segment>
@@ -30278,7 +30454,7 @@ to a ftdi header for debug</text>
 <net name="N$25" class="0">
 <segment>
 <pinref part="IC4" gate="_POWER" pin="VDD_RAM"/>
-<pinref part="C33" gate="G$1" pin="2"/>
+<pinref part="C32" gate="G$1" pin="2"/>
 <wire x1="543.56" y1="208.28" x2="556.26" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="556.26" y1="208.28" x2="556.26" y2="200.66" width="0.1524" layer="91"/>
 </segment>
@@ -30287,10 +30463,10 @@ to a ftdi header for debug</text>
 <segment>
 <pinref part="IC4" gate="_CONTROL" pin="!RESET"/>
 <wire x1="739.14" y1="78.74" x2="779.78" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="R35" gate="G$1" pin="2"/>
+<pinref part="R38" gate="G$1" pin="2"/>
 <wire x1="779.78" y1="81.28" x2="779.78" y2="78.74" width="0.1524" layer="91"/>
 <junction x="779.78" y="78.74"/>
-<pinref part="C62" gate="G$1" pin="2"/>
+<pinref part="C64" gate="G$1" pin="2"/>
 <wire x1="779.78" y1="78.74" x2="779.78" y2="73.66" width="0.1524" layer="91"/>
 <label x="741.68" y="78.74" size="1.778" layer="95"/>
 </segment>
@@ -30302,7 +30478,7 @@ to a ftdi header for debug</text>
 </net>
 <net name="WIFI_FORCE_AP" class="0">
 <segment>
-<pinref part="R24" gate="G$1" pin="1"/>
+<pinref part="R28" gate="G$1" pin="1"/>
 <pinref part="IC4" gate="_CONTROL" pin="FORCE_AP"/>
 <wire x1="764.54" y1="63.5" x2="764.54" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="764.54" y1="66.04" x2="739.14" y2="66.04" width="0.1524" layer="91"/>
@@ -30312,7 +30488,7 @@ to a ftdi header for debug</text>
 <net name="WIFI_INTR" class="0">
 <segment>
 <pinref part="IC4" gate="_CONTROL" pin="HOST_INTR"/>
-<pinref part="R33" gate="G$1" pin="1"/>
+<pinref part="R42" gate="G$1" pin="1"/>
 <wire x1="772.16" y1="68.58" x2="772.16" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="772.16" y1="71.12" x2="739.14" y2="71.12" width="0.1524" layer="91"/>
 <label x="741.68" y="71.12" size="1.778" layer="95"/>
@@ -30342,8 +30518,8 @@ to a ftdi header for debug</text>
 <label x="45.72" y="12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="165.1" y1="220.98" x2="162.56" y2="220.98" width="0.1524" layer="91"/>
-<label x="162.56" y="220.98" size="1.778" layer="95" rot="MR0"/>
+<wire x1="165.1" y1="220.98" x2="160.02" y2="220.98" width="0.1524" layer="91"/>
+<label x="160.02" y="220.98" size="1.778" layer="95" rot="MR0"/>
 <pinref part="IC3" gate="_PWR" pin="!NRST"/>
 </segment>
 <segment>
@@ -30483,10 +30659,9 @@ to a ftdi header for debug</text>
 <junction x="254" y="220.98"/>
 <pinref part="C39" gate="G$1" pin="2"/>
 <wire x1="236.22" y1="215.9" x2="198.12" y2="215.9" width="0.1524" layer="91"/>
-<pinref part="C40" gate="G$1" pin="2"/>
 <pinref part="C12" gate="G$1" pin="2"/>
 <pinref part="C11" gate="G$1" pin="2"/>
-<pinref part="C20" gate="G$1" pin="2"/>
+<pinref part="C19" gate="G$1" pin="2"/>
 <junction x="254" y="213.36"/>
 <wire x1="231.14" y1="205.74" x2="231.14" y2="213.36" width="0.1524" layer="91"/>
 <junction x="231.14" y="213.36"/>
@@ -30496,7 +30671,6 @@ to a ftdi header for debug</text>
 <junction x="241.3" y="218.44"/>
 <wire x1="246.38" y1="205.74" x2="246.38" y2="220.98" width="0.1524" layer="91"/>
 <junction x="246.38" y="220.98"/>
-<wire x1="254" y1="205.74" x2="254" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="_PWR" pin="VDD"/>
 <pinref part="IC3" gate="_PWR" pin="VDD1"/>
 <pinref part="IC3" gate="_PWR" pin="VDD2"/>
@@ -30508,18 +30682,17 @@ to a ftdi header for debug</text>
 <wire x1="254" y1="208.28" x2="254" y2="210.82" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="_PWR" pin="VDD4"/>
 <wire x1="254" y1="210.82" x2="226.06" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="C35" gate="G$1" pin="2"/>
+<pinref part="C34" gate="G$1" pin="2"/>
 <wire x1="226.06" y1="210.82" x2="198.12" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="205.74" x2="220.98" y2="208.28" width="0.1524" layer="91"/>
-<pinref part="C23" gate="G$1" pin="2"/>
+<pinref part="C22" gate="G$1" pin="2"/>
 <wire x1="226.06" y1="205.74" x2="226.06" y2="210.82" width="0.1524" layer="91"/>
 <junction x="226.06" y="210.82"/>
 <junction x="220.98" y="208.28"/>
 <junction x="254" y="210.82"/>
 <junction x="254" y="208.28"/>
 <pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="259.08" y1="205.74" x2="259.08" y2="208.28" width="0.1524" layer="91"/>
-<wire x1="259.08" y1="208.28" x2="254" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="254" y1="205.74" x2="254" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U4" gate="G$1" pin="VCC"/>
@@ -30528,10 +30701,10 @@ to a ftdi header for debug</text>
 </segment>
 <segment>
 <pinref part="+3V8" gate="G$1" pin="+3V3"/>
-<pinref part="C15" gate="G$1" pin="2"/>
+<pinref part="C37" gate="G$1" pin="2"/>
 <wire x1="469.9" y1="50.8" x2="469.9" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="469.9" y1="50.8" x2="464.82" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="C19" gate="G$1" pin="2"/>
+<pinref part="C17" gate="G$1" pin="2"/>
 <wire x1="464.82" y1="50.8" x2="464.82" y2="48.26" width="0.1524" layer="91"/>
 <junction x="469.9" y="50.8"/>
 </segment>
@@ -30541,7 +30714,7 @@ to a ftdi header for debug</text>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="LED4" gate="G$1" pin="C"/>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
 <wire x1="266.7" y1="58.42" x2="266.7" y2="55.88" width="0.1524" layer="91"/>
 </segment>
@@ -30553,7 +30726,7 @@ to a ftdi header for debug</text>
 <junction x="673.1" y="170.18"/>
 </segment>
 <segment>
-<pinref part="R25" gate="G$1" pin="1"/>
+<pinref part="R29" gate="G$1" pin="1"/>
 <pinref part="+3V12" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
@@ -30565,7 +30738,7 @@ to a ftdi header for debug</text>
 <pinref part="+3V14" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="R21" gate="G$1" pin="1"/>
+<pinref part="R26" gate="G$1" pin="1"/>
 <pinref part="+3V15" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
@@ -30596,23 +30769,23 @@ to a ftdi header for debug</text>
 <wire x1="568.96" y1="231.14" x2="586.74" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="563.88" y1="226.06" x2="563.88" y2="228.6" width="0.1524" layer="91"/>
 <junction x="563.88" y="228.6"/>
-<pinref part="C46" gate="G$1" pin="2"/>
+<pinref part="C44" gate="G$1" pin="2"/>
 <wire x1="568.96" y1="226.06" x2="568.96" y2="231.14" width="0.1524" layer="91"/>
 <junction x="568.96" y="231.14"/>
-<pinref part="C36" gate="G$1" pin="2"/>
+<pinref part="C35" gate="G$1" pin="2"/>
 <wire x1="574.04" y1="226.06" x2="574.04" y2="236.22" width="0.1524" layer="91"/>
 <junction x="574.04" y="236.22"/>
-<pinref part="C42" gate="G$1" pin="2"/>
+<pinref part="C43" gate="G$1" pin="2"/>
 <wire x1="579.12" y1="226.06" x2="579.12" y2="238.76" width="0.1524" layer="91"/>
 <junction x="579.12" y="238.76"/>
-<pinref part="C45" gate="G$1" pin="2"/>
+<pinref part="C47" gate="G$1" pin="2"/>
 <wire x1="584.2" y1="226.06" x2="584.2" y2="241.3" width="0.1524" layer="91"/>
 <junction x="584.2" y="241.3"/>
 <label x="586.74" y="243.84" size="1.778" layer="95" rot="R90"/>
 <pinref part="+3V16" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="R35" gate="G$1" pin="1"/>
+<pinref part="R38" gate="G$1" pin="1"/>
 <wire x1="779.78" y1="91.44" x2="779.78" y2="93.98" width="0.1524" layer="91"/>
 <label x="779.78" y="93.98" size="1.778" layer="95" rot="R90"/>
 <pinref part="+3V17" gate="G$1" pin="+3V3"/>
@@ -30637,7 +30810,7 @@ to a ftdi header for debug</text>
 </segment>
 <segment>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
-<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="L1" gate="G$1" pin="2"/>
 <junction x="607.06" y="124.46"/>
 <pinref part="C5" gate="G$1" pin="1"/>
@@ -30647,7 +30820,7 @@ to a ftdi header for debug</text>
 <junction x="619.76" y="124.46"/>
 </segment>
 <segment>
-<pinref part="R37" gate="G$1" pin="1"/>
+<pinref part="R40" gate="G$1" pin="1"/>
 <wire x1="701.04" y1="157.48" x2="701.04" y2="160.02" width="0.1524" layer="91"/>
 <label x="701.04" y="160.02" size="1.778" layer="95" rot="R90"/>
 <pinref part="+3V21" gate="G$1" pin="+3V3"/>
@@ -30674,23 +30847,33 @@ to a ftdi header for debug</text>
 <wire x1="332.74" y1="114.3" x2="330.2" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SJ3" gate="1" pin="1"/>
+<pinref part="SJ2" gate="1" pin="1"/>
 <pinref part="+3V23" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
 <pinref part="Q5" gate="G$1" pin="S"/>
 <pinref part="+3V24" gate="G$1" pin="+3V3"/>
 </segment>
+<segment>
+<pinref part="D1" gate="G$1" pin="VDD"/>
+<wire x1="462.28" y1="114.3" x2="457.2" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="457.2" y1="114.3" x2="457.2" y2="124.46" width="0.1524" layer="91"/>
+<junction x="457.2" y="124.46"/>
+<wire x1="457.2" y1="124.46" x2="457.2" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="C46" gate="G$1" pin="2"/>
+<wire x1="459.74" y1="124.46" x2="457.2" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="+3V25" gate="G$1" pin="+3V3"/>
+</segment>
 </net>
 <net name="USB_ID" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="USBID"/>
 <label x="210.82" y="101.6" size="1.778" layer="95"/>
-<pinref part="SJ2" gate="G$1" pin="2"/>
+<pinref part="SJ3" gate="G$1" pin="2"/>
 <wire x1="193.04" y1="114.3" x2="205.74" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="114.3" x2="205.74" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="101.6" x2="228.6" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="R40" gate="G$1" pin="1"/>
+<pinref part="R20" gate="G$1" pin="1"/>
 <wire x1="205.74" y1="99.06" x2="205.74" y2="101.6" width="0.1524" layer="91"/>
 <junction x="205.74" y="101.6"/>
 </segment>
@@ -30704,9 +30887,9 @@ to a ftdi header for debug</text>
 </net>
 <net name="VBATT_IN" class="0">
 <segment>
-<pinref part="R18" gate="G$1" pin="1"/>
-<pinref part="R17" gate="G$1" pin="1"/>
-<pinref part="C34" gate="G$1" pin="2"/>
+<pinref part="R22" gate="G$1" pin="1"/>
+<pinref part="R21" gate="G$1" pin="1"/>
+<pinref part="C33" gate="G$1" pin="2"/>
 <wire x1="121.92" y1="208.28" x2="121.92" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="210.82" x2="114.3" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="210.82" x2="114.3" y2="213.36" width="0.1524" layer="91"/>
@@ -30721,7 +30904,7 @@ to a ftdi header for debug</text>
 <net name="BOOT0" class="0">
 <segment>
 <label x="160.02" y="218.44" size="1.778" layer="95" rot="MR0"/>
-<pinref part="R29" gate="G$1" pin="2"/>
+<pinref part="R33" gate="G$1" pin="2"/>
 <wire x1="162.56" y1="218.44" x2="160.02" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="218.44" x2="162.56" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="218.44" x2="162.56" y2="215.9" width="0.1524" layer="91"/>
@@ -30754,10 +30937,10 @@ to a ftdi header for debug</text>
 </net>
 <net name="USB_D_N" class="2">
 <segment>
-<pinref part="R19" gate="G$1" pin="2"/>
+<pinref part="R23" gate="G$1" pin="2"/>
 <pinref part="J1" gate="G$1" pin="D-"/>
 <wire x1="213.36" y1="119.38" x2="208.28" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="R41" gate="G$1" pin="1"/>
+<pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="208.28" y1="119.38" x2="193.04" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="99.06" x2="210.82" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="106.68" x2="208.28" y2="106.68" width="0.1524" layer="91"/>
@@ -30767,20 +30950,20 @@ to a ftdi header for debug</text>
 </net>
 <net name="USB_D_P" class="2">
 <segment>
-<pinref part="R20" gate="G$1" pin="2"/>
+<pinref part="R25" gate="G$1" pin="2"/>
 <pinref part="J1" gate="G$1" pin="D+"/>
 <wire x1="213.36" y1="116.84" x2="210.82" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="116.84" x2="193.04" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="116.84" x2="210.82" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="109.22" x2="215.9" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="R42" gate="G$1" pin="1"/>
+<pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="215.9" y1="109.22" x2="215.9" y2="99.06" width="0.1524" layer="91"/>
 <junction x="210.82" y="116.84"/>
 </segment>
 </net>
 <net name="D_N" class="2">
 <segment>
-<pinref part="R19" gate="G$1" pin="1"/>
+<pinref part="R23" gate="G$1" pin="1"/>
 <wire x1="223.52" y1="119.38" x2="256.54" y2="119.38" width="0.1524" layer="91"/>
 <label x="248.92" y="119.38" size="1.778" layer="95"/>
 </segment>
@@ -30792,7 +30975,7 @@ to a ftdi header for debug</text>
 </net>
 <net name="D_P" class="2">
 <segment>
-<pinref part="R20" gate="G$1" pin="1"/>
+<pinref part="R25" gate="G$1" pin="1"/>
 <wire x1="256.54" y1="116.84" x2="223.52" y2="116.84" width="0.1524" layer="91"/>
 <label x="248.92" y="116.84" size="1.778" layer="95"/>
 </segment>
@@ -30807,7 +30990,7 @@ to a ftdi header for debug</text>
 <pinref part="X2" gate="G$1" pin="C2"/>
 <wire x1="30.48" y1="238.76" x2="43.18" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="241.3" x2="43.18" y2="238.76" width="0.1524" layer="91"/>
-<pinref part="C22" gate="G$1" pin="2"/>
+<pinref part="C21" gate="G$1" pin="2"/>
 <wire x1="43.18" y1="241.3" x2="45.72" y2="241.3" width="0.1524" layer="91"/>
 <junction x="43.18" y="241.3"/>
 <pinref part="IC3" gate="_PH" pin="PH0/OCS_IN"/>
@@ -30817,7 +31000,7 @@ to a ftdi header for debug</text>
 <segment>
 <pinref part="X2" gate="G$1" pin="C1"/>
 <wire x1="30.48" y1="231.14" x2="43.18" y2="231.14" width="0.1524" layer="91"/>
-<pinref part="C21" gate="G$1" pin="2"/>
+<pinref part="C20" gate="G$1" pin="2"/>
 <wire x1="45.72" y1="231.14" x2="43.18" y2="231.14" width="0.1524" layer="91"/>
 <junction x="43.18" y="231.14"/>
 <wire x1="43.18" y1="231.14" x2="43.18" y2="233.68" width="0.1524" layer="91"/>
@@ -30827,7 +31010,7 @@ to a ftdi header for debug</text>
 <net name="N$34" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="PROG"/>
-<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="563.88" y1="55.88" x2="571.5" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -30850,21 +31033,21 @@ to a ftdi header for debug</text>
 <junction x="607.06" y="58.42"/>
 </segment>
 <segment>
-<pinref part="R17" gate="G$1" pin="2"/>
+<pinref part="R21" gate="G$1" pin="2"/>
 <wire x1="114.3" y1="223.52" x2="114.3" y2="236.22" width="0.1524" layer="91"/>
 <label x="114.3" y="236.22" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="CHARGING" class="0">
 <segment>
-<pinref part="LED4" gate="G$1" pin="C"/>
+<pinref part="LED5" gate="G$1" pin="C"/>
 <pinref part="U3" gate="G$1" pin="STAT"/>
 </segment>
 </net>
 <net name="N$35" class="0">
 <segment>
-<pinref part="LED4" gate="G$1" pin="A"/>
-<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="LED5" gate="G$1" pin="A"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="V_UNREG" class="0">
@@ -30875,13 +31058,13 @@ to a ftdi header for debug</text>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="563.88" y1="111.76" x2="563.88" y2="124.46" width="0.1524" layer="91"/>
 <junction x="563.88" y="124.46"/>
-<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="R7" gate="G$1" pin="1"/>
 <junction x="520.7" y="124.46"/>
 <wire x1="520.7" y1="124.46" x2="510.54" y2="124.46" width="0.1524" layer="91"/>
 <label x="508" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="228.6" y1="55.88" x2="228.6" y2="63.5" width="0.1524" layer="91"/>
 <label x="228.6" y="63.5" size="1.778" layer="95"/>
 </segment>
@@ -30894,6 +31077,37 @@ to a ftdi header for debug</text>
 <wire x1="642.62" y1="55.88" x2="652.78" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="642.62" y1="55.88" x2="640.08" y2="55.88" width="0.1524" layer="91"/>
 <label x="645.16" y="55.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="434.34" y1="134.62" x2="434.34" y2="139.7" width="0.1524" layer="91"/>
+<label x="434.34" y="134.62" size="1.778" layer="95" rot="R90"/>
+<pinref part="SV5" gate="G$1" pin="2"/>
+<wire x1="429.26" y1="83.82" x2="434.34" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="434.34" y1="83.82" x2="434.34" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="SV4" gate="G$1" pin="2"/>
+<wire x1="434.34" y1="109.22" x2="434.34" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="434.34" y1="121.92" x2="429.26" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="SV6" gate="G$1" pin="2"/>
+<wire x1="429.26" y1="109.22" x2="434.34" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="434.34" y1="109.22" x2="434.34" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="SV3" gate="G$1" pin="2"/>
+<wire x1="434.34" y1="96.52" x2="429.26" y2="96.52" width="0.1524" layer="91"/>
+<junction x="434.34" y="109.22"/>
+<junction x="434.34" y="96.52"/>
+<junction x="434.34" y="121.92"/>
+<wire x1="434.34" y1="129.54" x2="434.34" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="434.34" y1="121.92" x2="434.34" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="449.58" y1="132.08" x2="449.58" y2="139.7" width="0.1524" layer="91"/>
+<label x="449.58" y="134.62" size="1.778" layer="95" rot="R90"/>
+<pinref part="SV2" gate="G$1" pin="2"/>
+<wire x1="454.66" y1="104.14" x2="457.2" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="457.2" y1="104.14" x2="457.2" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="457.2" y1="111.76" x2="449.58" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="449.58" y1="111.76" x2="449.58" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="449.58" y1="129.54" x2="449.58" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="449.58" y1="121.92" x2="449.58" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$37" class="0">
@@ -30922,8 +31136,8 @@ to a ftdi header for debug</text>
 </net>
 <net name="ADC_VBUS" class="0">
 <segment>
-<pinref part="R15" gate="G$1" pin="2"/>
-<pinref part="R16" gate="G$1" pin="1"/>
+<pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="R19" gate="G$1" pin="1"/>
 <junction x="500.38" y="33.02"/>
 <label x="502.92" y="33.02" size="1.778" layer="95"/>
 <wire x1="500.38" y1="33.02" x2="508" y2="33.02" width="0.1524" layer="91"/>
@@ -30952,17 +31166,17 @@ to a ftdi header for debug</text>
 <segment>
 <wire x1="673.1" y1="180.34" x2="657.86" y2="180.34" width="0.1524" layer="91"/>
 <label x="665.48" y="180.34" size="1.778" layer="95" rot="MR0"/>
-<pinref part="R22" gate="G$1" pin="1"/>
+<pinref part="R24" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="IC4" gate="_XTAL" pin="RCT_XTAL_N"/>
-<pinref part="R21" gate="G$1" pin="2"/>
+<pinref part="R26" gate="G$1" pin="2"/>
 <junction x="683.26" y="195.58"/>
 <pinref part="X4" gate="G$1" pin="1"/>
 <wire x1="673.1" y1="195.58" x2="673.1" y2="193.04" width="0.1524" layer="91"/>
-<pinref part="C27" gate="G$1" pin="2"/>
+<pinref part="C26" gate="G$1" pin="2"/>
 <wire x1="673.1" y1="195.58" x2="670.56" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="683.26" y1="195.58" x2="673.1" y2="195.58" width="0.1524" layer="91"/>
 <junction x="673.1" y="195.58"/>
@@ -31067,7 +31281,7 @@ to a ftdi header for debug</text>
 <wire x1="33.02" y1="96.52" x2="48.26" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="96.52" x2="48.26" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="X3" gate="G$1" pin="1"/>
-<pinref part="C25" gate="G$1" pin="2"/>
+<pinref part="C23" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="83.82" x2="48.26" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="86.36" x2="45.72" y2="86.36" width="0.1524" layer="91"/>
 <junction x="48.26" y="86.36"/>
@@ -31111,7 +31325,7 @@ to a ftdi header for debug</text>
 <segment>
 <label x="248.92" y="101.6" size="1.778" layer="95"/>
 <wire x1="256.54" y1="101.6" x2="238.76" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="SJ2" gate="G$1" pin="1"/>
+<pinref part="SJ3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="FS_VUSB" class="0">
@@ -31157,7 +31371,7 @@ to a ftdi header for debug</text>
 <pinref part="IC3" gate="_PWR" pin="VCAP2"/>
 <wire x1="165.1" y1="203.2" x2="162.56" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="203.2" x2="162.56" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="C30" gate="G$1" pin="2"/>
+<pinref part="C29" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="SPI4_MOSI" class="0">
@@ -31243,25 +31457,6 @@ to a ftdi header for debug</text>
 <wire x1="454.66" y1="106.68" x2="462.28" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$42" class="0">
-<segment>
-<pinref part="SV5" gate="G$1" pin="2"/>
-<wire x1="429.26" y1="83.82" x2="434.34" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="434.34" y1="83.82" x2="434.34" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="SV4" gate="G$1" pin="2"/>
-<wire x1="434.34" y1="109.22" x2="434.34" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="434.34" y1="121.92" x2="429.26" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="SV6" gate="G$1" pin="2"/>
-<wire x1="429.26" y1="109.22" x2="434.34" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="434.34" y1="109.22" x2="434.34" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="SV3" gate="G$1" pin="2"/>
-<wire x1="434.34" y1="96.52" x2="429.26" y2="96.52" width="0.1524" layer="91"/>
-<junction x="434.34" y="109.22"/>
-<junction x="434.34" y="96.52"/>
-<wire x1="434.34" y1="121.92" x2="434.34" y2="134.62" width="0.1524" layer="91"/>
-<junction x="434.34" y="121.92"/>
-</segment>
-</net>
 <net name="TIM1_CH1" class="0">
 <segment>
 <pinref part="IC3" gate="_PE" pin="PE9"/>
@@ -31345,14 +31540,14 @@ to a ftdi header for debug</text>
 <net name="N$39" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="GPIO2"/>
-<pinref part="R25" gate="G$1" pin="2"/>
+<pinref part="R29" gate="G$1" pin="2"/>
 <wire x1="655.32" y1="144.78" x2="650.24" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$44" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="GPIO15"/>
-<pinref part="R26" gate="G$1" pin="2"/>
+<pinref part="R30" gate="G$1" pin="2"/>
 <wire x1="655.32" y1="127" x2="650.24" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -31406,9 +31601,9 @@ to a ftdi header for debug</text>
 </net>
 <net name="ADC_VIN" class="0">
 <segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="C16" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="C18" gate="G$1" pin="2"/>
 <wire x1="236.22" y1="45.72" x2="228.6" y2="45.72" width="0.1524" layer="91"/>
 <junction x="228.6" y="45.72"/>
 <junction x="236.22" y="45.72"/>
@@ -31423,9 +31618,9 @@ to a ftdi header for debug</text>
 </net>
 <net name="ADC_LIGHT" class="0">
 <segment>
-<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="LED4" gate="G$1" pin="A"/>
 <pinref part="C13" gate="G$1" pin="2"/>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="274.32" y1="45.72" x2="266.7" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="274.32" y1="43.18" x2="274.32" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="274.32" y1="45.72" x2="276.86" y2="45.72" width="0.1524" layer="91"/>
@@ -31486,7 +31681,7 @@ to a ftdi header for debug</text>
 <segment>
 <pinref part="IC3" gate="_PB" pin="PB2"/>
 <label x="71.12" y="198.12" size="1.778" layer="95"/>
-<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="68.58" y1="198.12" x2="88.9" y2="198.12" width="0.1524" layer="91"/>
 <junction x="88.9" y="198.12"/>
 <wire x1="88.9" y1="198.12" x2="93.98" y2="198.12" width="0.1524" layer="91"/>
@@ -31552,7 +31747,7 @@ to a ftdi header for debug</text>
 <pinref part="U3" gate="G$1" pin="VIN"/>
 <wire x1="543.56" y1="58.42" x2="525.78" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="525.78" y1="58.42" x2="525.78" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 <junction x="525.78" y="58.42"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="525.78" y1="50.8" x2="525.78" y2="53.34" width="0.1524" layer="91"/>
@@ -31564,7 +31759,7 @@ to a ftdi header for debug</text>
 <label x="487.68" y="58.42" size="1.778" layer="95"/>
 <wire x1="508" y1="58.42" x2="500.38" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="500.38" y1="58.42" x2="487.68" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="R15" gate="G$1" pin="1"/>
+<pinref part="R18" gate="G$1" pin="1"/>
 <wire x1="500.38" y1="43.18" x2="500.38" y2="58.42" width="0.1524" layer="91"/>
 <junction x="500.38" y="58.42"/>
 <pinref part="D3" gate="G$1" pin="A"/>
@@ -31594,10 +31789,10 @@ to a ftdi header for debug</text>
 <net name="N$32" class="0">
 <segment>
 <pinref part="IC4" gate="_XTAL" pin="RTC_XTAL_P"/>
-<pinref part="R22" gate="G$1" pin="2"/>
+<pinref part="R24" gate="G$1" pin="2"/>
 <wire x1="683.26" y1="180.34" x2="683.26" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="X4" gate="G$1" pin="2"/>
-<pinref part="C26" gate="G$1" pin="2"/>
+<pinref part="C25" gate="G$1" pin="2"/>
 <wire x1="673.1" y1="185.42" x2="673.1" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="683.26" y1="185.42" x2="673.1" y2="185.42" width="0.1524" layer="91"/>
 <junction x="673.1" y="185.42"/>
@@ -31612,7 +31807,7 @@ to a ftdi header for debug</text>
 <wire x1="627.38" y1="53.34" x2="627.38" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="C2"/>
 <wire x1="627.38" y1="35.56" x2="622.3" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="R15" gate="G$1" pin="1"/>
 <wire x1="622.3" y1="35.56" x2="622.3" y2="33.02" width="0.1524" layer="91"/>
 <junction x="622.3" y="35.56"/>
 </segment>
@@ -31620,7 +31815,7 @@ to a ftdi header for debug</text>
 <net name="N$7" class="0">
 <segment>
 <pinref part="Q1" gate="G$1" pin="C1"/>
-<pinref part="R14" gate="G$1" pin="1"/>
+<pinref part="R16" gate="G$1" pin="1"/>
 <wire x1="607.06" y1="35.56" x2="607.06" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="B1"/>
 <wire x1="607.06" y1="33.02" x2="612.14" y2="33.02" width="0.1524" layer="91"/>
@@ -31634,8 +31829,8 @@ to a ftdi header for debug</text>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="R7" gate="G$1" pin="2"/>
-<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="607.06" y1="114.3" x2="599.44" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="599.44" y1="114.3" x2="599.44" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="FB"/>
@@ -31727,7 +31922,7 @@ to a ftdi header for debug</text>
 </net>
 <net name="N$48" class="1">
 <segment>
-<pinref part="R38" gate="G$1" pin="1"/>
+<pinref part="R41" gate="G$1" pin="1"/>
 <pinref part="X6" gate="G$1" pin="1"/>
 <wire x1="706.12" y1="251.46" x2="711.2" y2="251.46" width="0.1524" layer="91"/>
 </segment>
@@ -31743,19 +31938,8 @@ to a ftdi header for debug</text>
 <wire x1="749.3" y1="241.3" x2="754.38" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="754.38" y1="238.76" x2="754.38" y2="241.3" width="0.1524" layer="91"/>
 <pinref part="GND43" gate="1" pin="GND"/>
-<pinref part="U$1" gate="G$1" pin="SIGNAL"/>
+<pinref part="ANT1" gate="G$1" pin="SIGNAL"/>
 <junction x="749.3" y="241.3"/>
-</segment>
-</net>
-<net name="N$49" class="0">
-<segment>
-<pinref part="D1" gate="G$1" pin="VDD"/>
-<wire x1="462.28" y1="114.3" x2="457.2" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="457.2" y1="114.3" x2="457.2" y2="124.46" width="0.1524" layer="91"/>
-<junction x="457.2" y="124.46"/>
-<wire x1="457.2" y1="124.46" x2="457.2" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="C47" gate="G$1" pin="2"/>
-<wire x1="459.74" y1="124.46" x2="457.2" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -31820,30 +32004,21 @@ to a ftdi header for debug</text>
 <pinref part="U2" gate="G$1" pin="D6"/>
 </segment>
 </net>
-<net name="N$50" class="0">
+<net name="N$51" class="0">
 <segment>
-<pinref part="SV2" gate="G$1" pin="2"/>
-<wire x1="454.66" y1="104.14" x2="457.2" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="457.2" y1="104.14" x2="457.2" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="457.2" y1="111.76" x2="449.58" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="449.58" y1="111.76" x2="449.58" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="R14" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$51" class="0">
+<net name="N$52" class="0">
 <segment>
 <pinref part="LED2" gate="G$1" pin="A"/>
 <pinref part="R12" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$52" class="0">
-<segment>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<pinref part="R11" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="LED1" class="0">
 <segment>
-<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="76.2" x2="127" y2="76.2" width="0.1524" layer="91"/>
 <label x="124.46" y="76.2" size="1.778" layer="95"/>
 </segment>
@@ -31855,7 +32030,7 @@ to a ftdi header for debug</text>
 </net>
 <net name="LED2" class="0">
 <segment>
-<pinref part="R12" gate="G$1" pin="2"/>
+<pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="71.12" x2="127" y2="71.12" width="0.1524" layer="91"/>
 <label x="124.46" y="71.12" size="1.778" layer="95"/>
 </segment>
@@ -31878,7 +32053,7 @@ to a ftdi header for debug</text>
 <net name="N$56" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="VDD"/>
-<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="528.32" y1="114.3" x2="520.7" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="520.7" y1="114.3" x2="520.7" y2="106.68" width="0.1524" layer="91"/>
@@ -31888,19 +32063,19 @@ to a ftdi header for debug</text>
 <net name="N$1" class="0">
 <segment>
 <pinref part="U1" gate="OUTLINE" pin="A"/>
-<pinref part="R28" gate="G$1" pin="1"/>
+<pinref part="R32" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$57" class="0">
 <segment>
 <pinref part="Q3" gate="G$1" pin="D"/>
-<pinref part="R28" gate="G$1" pin="2"/>
+<pinref part="R32" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="DFGFDG" class="0">
 <segment>
-<pinref part="C18" gate="G$1" pin="2"/>
-<pinref part="C17" gate="G$1" pin="2"/>
+<pinref part="C16" gate="G$1" pin="2"/>
+<pinref part="C15" gate="G$1" pin="2"/>
 <wire x1="160.02" y1="193.04" x2="160.02" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="195.58" x2="152.4" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="193.04" x2="152.4" y2="195.58" width="0.1524" layer="91"/>
@@ -31939,14 +32114,14 @@ to a ftdi header for debug</text>
 </net>
 <net name="N$60" class="0">
 <segment>
-<pinref part="R39" gate="G$1" pin="1"/>
-<pinref part="LED5" gate="G$1" pin="A"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$61" class="0">
 <segment>
 <pinref part="Q5" gate="G$1" pin="D"/>
-<pinref part="R39" gate="G$1" pin="2"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
