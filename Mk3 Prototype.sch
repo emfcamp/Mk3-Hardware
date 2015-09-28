@@ -28584,6 +28584,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="IC2" library="TiLDA Mk3 Parts" deviceset="NCP1529" device="MU"/>
 <part name="+3V26" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V27" library="supply1" deviceset="+3V3" device=""/>
+<part name="R43" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/220/5%"/>
 </parts>
 <sheets>
 <sheet>
@@ -28630,7 +28631,7 @@ off/on switch</text>
 <text x="53.34" y="215.9" size="3.81" layer="97" ratio="15">Port B</text>
 <text x="5.08" y="147.32" size="3.81" layer="97" ratio="15">Port C</text>
 <text x="76.2" y="147.32" size="3.81" layer="97" ratio="15">Port D</text>
-<text x="137.16" y="233.68" size="1.778" layer="91">C10 (on pin 48) DNP for 405</text>
+<text x="137.16" y="233.68" size="1.778" layer="91">C9 (on pin 48) DNP for 405</text>
 <text x="416.56" y="93.98" size="1.778" layer="91" rot="R90">need to jumper between Vin/Vbat</text>
 <text x="797.56" y="248.92" size="6.4516" layer="94">List of things to check</text>
 <text x="797.56" y="236.22" size="2.54" layer="94">is the stm32f4 annoying with interrupts on some pins, and are peripherals which
@@ -28689,6 +28690,8 @@ to a ftdi header for debug</text>
 <wire x1="452.12" y1="170.18" x2="452.12" y2="172.72" width="0.1524" layer="97"/>
 <wire x1="444.5" y1="170.18" x2="444.5" y2="165.1" width="0.1524" layer="97"/>
 <wire x1="444.5" y1="165.1" x2="439.42" y2="160.02" width="0.1524" layer="97"/>
+<text x="129.286" y="199.136" size="1.778" layer="91" rot="R90">low ESR</text>
+<text x="797.56" y="170.18" size="2.54" layer="94">move esp decoupling cap to vcc pin</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -29175,6 +29178,7 @@ to a ftdi header for debug</text>
 <instance part="IC2" gate="G$1" x="579.12" y="121.92"/>
 <instance part="+3V26" gate="G$1" x="340.36" y="228.6"/>
 <instance part="+3V27" gate="G$1" x="358.14" y="180.34" rot="R90"/>
+<instance part="R43" gate="G$1" x="38.1" y="231.14"/>
 </instances>
 <busses>
 </busses>
@@ -31011,12 +31015,11 @@ to a ftdi header for debug</text>
 <net name="N$33" class="0">
 <segment>
 <pinref part="X2" gate="G$1" pin="C1"/>
-<wire x1="30.48" y1="231.14" x2="43.18" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="C20" gate="G$1" pin="2"/>
 <wire x1="45.72" y1="231.14" x2="43.18" y2="231.14" width="0.1524" layer="91"/>
-<junction x="43.18" y="231.14"/>
 <wire x1="43.18" y1="231.14" x2="43.18" y2="233.68" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="_PH" pin="PH1/OSC_OUT"/>
+<pinref part="R43" gate="G$1" pin="2"/>
+<junction x="43.18" y="231.14"/>
 </segment>
 </net>
 <net name="N$34" class="0">
@@ -32124,6 +32127,23 @@ to a ftdi header for debug</text>
 <segment>
 <pinref part="L1" gate="G$1" pin="1"/>
 <pinref part="IC2" gate="G$1" pin="SW"/>
+</segment>
+</net>
+<net name="N$42" class="0">
+<segment>
+<pinref part="IC3" gate="_PH" pin="PH1/OSC_OUT"/>
+<pinref part="R43" gate="G$1" pin="1"/>
+<wire x1="30.48" y1="231.14" x2="33.02" y2="231.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$49" class="0">
+<segment>
+<wire x1="797.56" y1="177.8" x2="899.16" y2="180.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$50" class="0">
+<segment>
+<wire x1="899.16" y1="177.8" x2="795.02" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
