@@ -28692,6 +28692,7 @@ to a ftdi header for debug</text>
 <wire x1="444.5" y1="165.1" x2="439.42" y2="160.02" width="0.1524" layer="97"/>
 <text x="129.286" y="199.136" size="1.778" layer="91" rot="R90">low ESR</text>
 <text x="797.56" y="170.18" size="2.54" layer="94">move esp decoupling cap to vcc pin</text>
+<text x="797.56" y="162.56" size="2.54" layer="94">sort out power switch</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
