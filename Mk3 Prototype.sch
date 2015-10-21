@@ -6362,15 +6362,15 @@ Through-hole SPDT Switch&lt;br&gt;
 </polygon>
 </package>
 <package name="4MMEDGE">
-<pad name="P$1" x="0" y="0" drill="4"/>
-<polygon width="0.127" layer="1">
+<pad name="P$1" x="0" y="-1.27" drill="4"/>
+<polygon width="0.1524" layer="1">
 <vertex x="2.54" y="3.81"/>
 <vertex x="2.54" y="-1.27" curve="-90"/>
 <vertex x="0" y="-3.81" curve="-90"/>
 <vertex x="-2.54" y="-1.27"/>
 <vertex x="-2.54" y="3.81"/>
 </polygon>
-<polygon width="0.127" layer="16">
+<polygon width="0.1524" layer="16">
 <vertex x="2.54" y="3.81"/>
 <vertex x="2.54" y="-1.27" curve="-90"/>
 <vertex x="0" y="-3.81" curve="-90"/>
@@ -28585,6 +28585,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="GND107" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C27" library="passives-7351" deviceset="CAPACITOR" device="0805-N" value="0805/22u/??V/X5R"/>
 <part name="C40" library="passives-7351" deviceset="CAPACITOR" device="0805-N" value="0805/22u/??V/X5R"/>
+<part name="TP12" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
+<part name="TP13" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
+<part name="R46" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/10K/5%"/>
 </parts>
 <sheets>
 <sheet>
@@ -29187,6 +29190,16 @@ when screen power is off</text>
 <instance part="C40" gate="G$1" x="447.04" y="205.74" smashed="yes" rot="R180">
 <attribute name="NAME" x="447.421" y="205.74" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="442.341" y="220.98" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="TP12" gate="G$1" x="314.96" y="231.14" smashed="yes">
+<attribute name="NAME" x="313.69" y="232.41" size="1.778" layer="95"/>
+</instance>
+<instance part="TP13" gate="G$1" x="325.12" y="231.14" smashed="yes">
+<attribute name="NAME" x="323.85" y="232.41" size="1.778" layer="95"/>
+</instance>
+<instance part="R46" gate="G$1" x="622.3" y="190.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="620.8014" y="186.69" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="617.982" y="179.07" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -30455,6 +30468,11 @@ when screen power is off</text>
 <label x="627.38" y="248.92" size="1.778" layer="95"/>
 <pinref part="S6" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="IC3" gate="_PE" pin="PE8"/>
+<wire x1="93.98" y1="53.34" x2="99.06" y2="53.34" width="0.1524" layer="91"/>
+<label x="96.52" y="53.34" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="WIFI_FORCE_AP" class="0">
 <segment>
@@ -30843,7 +30861,10 @@ when screen power is off</text>
 <segment>
 <pinref part="R44" gate="G$1" pin="1"/>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
-<wire x1="314.96" y1="226.06" x2="312.42" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="TP12" gate="G$1" pin="TP"/>
+<wire x1="314.96" y1="228.6" x2="314.96" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="226.06" x2="314.96" y2="226.06" width="0.1524" layer="91"/>
+<junction x="314.96" y="226.06"/>
 </segment>
 </net>
 <net name="USB_ID" class="0">
@@ -31134,12 +31155,6 @@ when screen power is off</text>
 <label x="33.02" y="203.2" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$40" class="0">
-<segment>
-<wire x1="314.96" y1="236.22" x2="320.04" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="320.04" y1="236.22" x2="325.12" y2="231.14" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="MCO1" class="0">
 <segment>
 <wire x1="30.48" y1="180.34" x2="33.02" y2="180.34" width="0.1524" layer="91"/>
@@ -31285,20 +31300,6 @@ when screen power is off</text>
 <pinref part="IC3" gate="_PC" pin="PC15/OSC32_OUT"/>
 </segment>
 </net>
-<net name="N$46" class="0">
-<segment>
-<pinref part="IC4" gate="_UART" pin="TX"/>
-<wire x1="637.54" y1="236.22" x2="624.84" y2="236.22" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="G$1" pin="3"/>
-</segment>
-</net>
-<net name="N$47" class="0">
-<segment>
-<pinref part="IC4" gate="_UART" pin="RX"/>
-<wire x1="624.84" y1="233.68" x2="637.54" y2="233.68" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="USB_ID_" class="0">
 <segment>
 <wire x1="30.48" y1="175.26" x2="33.02" y2="175.26" width="0.1524" layer="91"/>
@@ -31345,8 +31346,18 @@ when screen power is off</text>
 </segment>
 <segment>
 <pinref part="X1" gate="G$1" pin="URXD"/>
-<wire x1="655.32" y1="162.56" x2="642.62" y2="162.56" width="0.1524" layer="91"/>
-<label x="642.62" y="162.56" size="1.778" layer="95"/>
+<label x="599.44" y="162.56" size="1.778" layer="95"/>
+<wire x1="655.32" y1="162.56" x2="624.84" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="624.84" y1="162.56" x2="599.44" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="624.84" y1="162.56" x2="624.84" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="624.84" y1="213.36" x2="632.46" y2="213.36" width="0.1524" layer="91"/>
+<pinref part="IC4" gate="_UART" pin="RX"/>
+<wire x1="624.84" y1="233.68" x2="632.46" y2="233.68" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="G$1" pin="2"/>
+<wire x1="632.46" y1="233.68" x2="637.54" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="632.46" y1="213.36" x2="632.46" y2="233.68" width="0.1524" layer="91"/>
+<junction x="632.46" y="233.68"/>
+<junction x="624.84" y="162.56"/>
 </segment>
 </net>
 <net name="N$38" class="0">
@@ -31516,8 +31527,12 @@ when screen power is off</text>
 </segment>
 <segment>
 <pinref part="X1" gate="G$1" pin="UTXD"/>
-<wire x1="642.62" y1="160.02" x2="655.32" y2="160.02" width="0.1524" layer="91"/>
-<label x="642.62" y="160.02" size="1.778" layer="95"/>
+<label x="599.44" y="160.02" size="1.778" layer="95"/>
+<wire x1="655.32" y1="160.02" x2="622.3" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="R46" gate="G$1" pin="1"/>
+<wire x1="622.3" y1="160.02" x2="599.44" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="622.3" y1="185.42" x2="622.3" y2="160.02" width="0.1524" layer="91"/>
+<junction x="622.3" y="160.02"/>
 </segment>
 </net>
 <net name="N$39" class="0">
@@ -32117,8 +32132,11 @@ when screen power is off</text>
 <net name="N$53" class="0">
 <segment>
 <pinref part="R44" gate="G$1" pin="2"/>
-<wire x1="325.12" y1="226.06" x2="327.66" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="Q4" gate="G$1" pin="S"/>
+<pinref part="TP13" gate="G$1" pin="TP"/>
+<wire x1="325.12" y1="228.6" x2="325.12" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="226.06" x2="327.66" y2="226.06" width="0.1524" layer="91"/>
+<junction x="325.12" y="226.06"/>
 </segment>
 </net>
 <net name="LCD_VCC" class="0">
@@ -32175,6 +32193,19 @@ when screen power is off</text>
 <pinref part="S5" gate="1" pin="S"/>
 <wire x1="640.08" y1="43.18" x2="640.08" y2="45.72" width="0.1524" layer="91"/>
 <junction x="640.08" y="45.72"/>
+</segment>
+</net>
+<net name="N$40" class="0">
+<segment>
+<pinref part="IC4" gate="_UART" pin="TX"/>
+<pinref part="SV1" gate="G$1" pin="3"/>
+<wire x1="637.54" y1="236.22" x2="629.92" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="629.92" y1="236.22" x2="624.84" y2="236.22" width="0.1524" layer="91"/>
+<junction x="629.92" y="236.22"/>
+<wire x1="629.92" y1="215.9" x2="629.92" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="622.3" y1="215.9" x2="629.92" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="R46" gate="G$1" pin="2"/>
+<wire x1="622.3" y1="195.58" x2="622.3" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
