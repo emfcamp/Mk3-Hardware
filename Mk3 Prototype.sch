@@ -7403,39 +7403,36 @@ Through-hole SPDT Switch&lt;br&gt;
 <pad name="SCL" x="18.796" y="50.8" drill="1" diameter="1.6764" shape="octagon"/>
 <pad name="IOREF" x="30.48" y="2.54" drill="1" diameter="1.6764" shape="octagon"/>
 <pad name="RESERVED" x="27.94" y="2.54" drill="1" diameter="1.6764" shape="octagon"/>
-<text x="33.528" y="3.7999" size="1.016" layer="21" font="vector" rot="R90">RST</text>
-<text x="34.7523" y="3.81" size="1.016" layer="21" font="vector">3v</text>
-<text x="37.5463" y="3.81" size="1.016" layer="21" font="vector">5v</text>
-<text x="40.7771" y="3.81" size="1.016" layer="21" font="vector">Gnd</text>
-<text x="44.7853" y="3.81" size="1.016" layer="21" font="vector">Vin</text>
-<text x="54.1121" y="0.4623" size="1.016" layer="21" font="vector">Analog In</text>
-<text x="50.419" y="3.81" size="1.016" layer="21" font="vector">0</text>
-<text x="52.959" y="3.81" size="1.016" layer="21" font="vector">1</text>
-<text x="55.499" y="3.81" size="1.016" layer="21" font="vector">2</text>
-<text x="58.039" y="3.81" size="1.016" layer="21" font="vector">3</text>
-<text x="60.579" y="3.81" size="1.016" layer="21" font="vector">4</text>
-<text x="63.119" y="3.81" size="1.016" layer="21" font="vector">5</text>
-<text x="23.368" y="49.911" size="1.016" layer="21" font="vector" rot="R270">ARef</text>
-<text x="25.908" y="49.784" size="1.016" layer="21" font="vector" rot="R270">gnd</text>
-<text x="30.099" y="49.53" size="1.016" layer="21" font="vector" rot="R180">13</text>
-<text x="32.639" y="49.53" size="1.016" layer="21" font="vector" rot="R180">12</text>
-<text x="35.179" y="49.53" size="1.016" layer="21" font="vector" rot="R180">11</text>
-<text x="37.719" y="49.53" size="1.016" layer="21" font="vector" rot="R180">10</text>
-<text x="39.751" y="49.53" size="1.016" layer="21" font="vector" rot="R180">9</text>
-<text x="42.291" y="49.53" size="1.016" layer="21" font="vector" rot="R180">8</text>
-<text x="46.355" y="49.53" size="1.016" layer="21" font="vector" rot="R180">7</text>
-<text x="48.895" y="49.53" size="1.016" layer="21" font="vector" rot="R180">6</text>
-<text x="51.435" y="49.53" size="1.016" layer="21" font="vector" rot="R180">5</text>
-<text x="53.975" y="49.53" size="1.016" layer="21" font="vector" rot="R180">4</text>
-<text x="56.515" y="49.53" size="1.016" layer="21" font="vector" rot="R180">3</text>
-<text x="59.055" y="49.53" size="1.016" layer="21" font="vector" rot="R180">2</text>
-<text x="61.595" y="49.53" size="1.016" layer="21" font="vector" rot="R180">1</text>
-<text x="64.135" y="49.53" size="1.016" layer="21" font="vector" rot="R180">0</text>
-<text x="31.623" y="52.07" size="1.016" layer="21" font="vector">Digital I/O</text>
-<text x="50.927" y="52.07" size="1.016" layer="21" font="vector">Digital I/O</text>
-<text x="18.288" y="49.911" size="1.016" layer="21" font="vector" rot="R270">SCL</text>
-<text x="20.828" y="49.911" size="1.016" layer="21" font="vector" rot="R270">SDA</text>
-<text x="30.988" y="3.7999" size="1.016" layer="21" font="vector" rot="R90">IOr</text>
+<text x="33.528" y="3.7999" size="1.016" layer="21" font="vector" ratio="14" rot="R90">RST</text>
+<text x="34.7523" y="3.81" size="1.016" layer="21" font="vector" ratio="14">3v</text>
+<text x="37.5463" y="3.81" size="1.016" layer="21" font="vector" ratio="14">5v</text>
+<text x="40.7771" y="3.81" size="1.016" layer="21" font="vector" ratio="14">Gnd</text>
+<text x="44.7853" y="3.81" size="1.016" layer="21" font="vector" ratio="14">Vin</text>
+<text x="50.419" y="3.81" size="1.016" layer="21" font="vector" ratio="14">0</text>
+<text x="52.959" y="3.81" size="1.016" layer="21" font="vector" ratio="14">1</text>
+<text x="55.499" y="3.81" size="1.016" layer="21" font="vector" ratio="14">2</text>
+<text x="58.039" y="3.81" size="1.016" layer="21" font="vector" ratio="14">3</text>
+<text x="60.579" y="3.81" size="1.016" layer="21" font="vector" ratio="14">4</text>
+<text x="63.119" y="3.81" size="1.016" layer="21" font="vector" ratio="14">5</text>
+<text x="23.368" y="49.911" size="1.016" layer="21" font="vector" ratio="14" rot="R270">ARef</text>
+<text x="25.908" y="49.784" size="1.016" layer="21" font="vector" ratio="14" rot="R270">gnd</text>
+<text x="30.099" y="49.53" size="1.016" layer="21" font="vector" ratio="14" rot="R180">13</text>
+<text x="32.639" y="49.53" size="1.016" layer="21" font="vector" ratio="14" rot="R180">12</text>
+<text x="35.179" y="49.53" size="1.016" layer="21" font="vector" ratio="14" rot="R180">11</text>
+<text x="37.719" y="49.53" size="1.016" layer="21" font="vector" ratio="14" rot="R180">10</text>
+<text x="39.751" y="49.53" size="1.016" layer="21" font="vector" ratio="14" rot="R180">9</text>
+<text x="42.291" y="49.53" size="1.016" layer="21" font="vector" ratio="14" rot="R180">8</text>
+<text x="46.355" y="49.53" size="1.016" layer="21" font="vector" ratio="14" rot="R180">7</text>
+<text x="48.895" y="49.53" size="1.016" layer="21" font="vector" ratio="14" rot="R180">6</text>
+<text x="51.435" y="49.53" size="1.016" layer="21" font="vector" ratio="14" rot="R180">5</text>
+<text x="53.975" y="49.53" size="1.016" layer="21" font="vector" ratio="14" rot="R180">4</text>
+<text x="56.515" y="49.53" size="1.016" layer="21" font="vector" ratio="14" rot="R180">3</text>
+<text x="59.055" y="49.53" size="1.016" layer="21" font="vector" ratio="14" rot="R180">2</text>
+<text x="61.595" y="49.53" size="1.016" layer="21" font="vector" ratio="14" rot="R180">1</text>
+<text x="64.135" y="49.53" size="1.016" layer="21" font="vector" ratio="14" rot="R180">0</text>
+<text x="18.288" y="49.911" size="1.016" layer="21" font="vector" ratio="14" rot="R270">SCL</text>
+<text x="20.828" y="49.911" size="1.016" layer="21" font="vector" ratio="14" rot="R270">SDA</text>
+<text x="30.988" y="3.7999" size="1.016" layer="21" font="vector" ratio="14" rot="R90">IOr</text>
 </package>
 <package name="ESP-07">
 <wire x1="2" y1="0" x2="-14.45" y2="0" width="0.127" layer="51"/>
@@ -17376,11 +17373,11 @@ Source: www.epcos.com .. 01430148.pdf</description>
 <pin name="TP" x="0" y="-2.54" visible="off" length="short" direction="in" rot="R90"/>
 </symbol>
 <symbol name="L">
-<rectangle x1="-2.54" y1="-1.27" x2="2.54" y2="1.27" layer="94"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<text x="-3.81" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-3.81" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<rectangle x1="-2.54" y1="1.27" x2="2.54" y2="3.81" layer="94"/>
+<pin name="1" x="-5.08" y="2.54" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="5.08" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<text x="-3.81" y="-1.27" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-3.81" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="STM32F401V_PD">
 <pin name="PD0" x="5.08" y="20.32" length="middle" rot="R180"/>
@@ -26445,6 +26442,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="TP12" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
 <part name="TP13" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
 <part name="R46" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/10K/5%"/>
+<part name="R13" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/0.1R/5%"/>
+<part name="TP11" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
+<part name="TP14" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
 </parts>
 <sheets>
 <sheet>
@@ -26499,7 +26499,6 @@ off/on switch</text>
 <text x="601.98" y="220.98" size="1.778" layer="97">might need to be connected 
 to a ftdi header for debug</text>
 <text x="797.56" y="223.52" size="2.54" layer="94">SDIO_SW can be easily changed away from pin PC13</text>
-<text x="628.904" y="126.238" size="1.778" layer="91" rot="R90">connect these three </text>
 <text x="797.56" y="215.9" size="2.54" layer="94">check DMA channel conflicts</text>
 <text x="797.56" y="208.28" size="2.54" layer="94">check ESP pin connections</text>
 <text x="797.56" y="200.66" size="2.54" layer="94">add current measuring options</text>
@@ -26511,7 +26510,6 @@ to a ftdi header for debug</text>
 <text x="492.76" y="274.32" size="1.778" layer="97">keep solder mask open below qfn to 
 `improve heat dissipation and yield'</text>
 <wire x1="518.16" y1="271.78" x2="518.16" y2="243.84" width="0.1524" layer="97"/>
-<text x="640.08" y="157.48" size="1.778" layer="91" rot="R90">add testpoints</text>
 <text x="612.14" y="264.16" size="1.778" layer="91">http://processors.wiki.ti.com/index.php/CC3100_Production_Line_Guide#Programming_the_CC3100_QFN_in_the_Production_Line</text>
 <text x="797.56" y="193.04" size="2.54" layer="94">aref arrangment, consider to allow Aref changing on gpio</text>
 <text x="596.9" y="121.92" size="1.778" layer="91">spec</text>
@@ -26900,7 +26898,7 @@ when screen power is off</text>
 <attribute name="VALUE" x="633.73" y="138.938" size="1.778" layer="96"/>
 </instance>
 <instance part="GND80" gate="1" x="673.1" y="106.68"/>
-<instance part="+3V11" gate="G$1" x="673.1" y="172.72"/>
+<instance part="+3V11" gate="G$1" x="655.32" y="170.18" rot="R90"/>
 <instance part="+3V12" gate="G$1" x="637.54" y="144.78" smashed="yes" rot="R90">
 <attribute name="VALUE" x="636.778" y="145.796" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -27052,6 +27050,13 @@ when screen power is off</text>
 <instance part="R46" gate="G$1" x="622.3" y="190.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="620.8014" y="186.69" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="617.982" y="179.07" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R13" gate="G$1" x="665.48" y="170.18"/>
+<instance part="TP11" gate="G$1" x="660.4" y="172.72" smashed="yes">
+<attribute name="NAME" x="659.13" y="173.99" size="1.778" layer="95"/>
+</instance>
+<instance part="TP14" gate="G$1" x="673.1" y="172.72" smashed="yes">
+<attribute name="NAME" x="671.83" y="173.99" size="1.778" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -27880,7 +27885,7 @@ when screen power is off</text>
 </segment>
 <segment>
 <pinref part="L3" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="195.58" x2="132.08" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="198.12" x2="132.08" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="SJ2" gate="1" pin="2"/>
 <wire x1="132.08" y1="195.58" x2="127" y2="195.58" width="0.1524" layer="91"/>
 <junction x="132.08" y="195.58"/>
@@ -28564,13 +28569,6 @@ when screen power is off</text>
 <wire x1="266.7" y1="58.42" x2="266.7" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X1" gate="G$1" pin="VCC"/>
-<pinref part="+3V11" gate="G$1" pin="+3V3"/>
-<pinref part="C41" gate="G$1" pin="2"/>
-<wire x1="673.1" y1="170.18" x2="688.34" y2="170.18" width="0.1524" layer="91"/>
-<junction x="673.1" y="170.18"/>
-</segment>
-<segment>
 <pinref part="R29" gate="G$1" pin="1"/>
 <pinref part="+3V12" gate="G$1" pin="+3V3"/>
 </segment>
@@ -28717,6 +28715,13 @@ when screen power is off</text>
 <wire x1="314.96" y1="228.6" x2="314.96" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="312.42" y1="226.06" x2="314.96" y2="226.06" width="0.1524" layer="91"/>
 <junction x="314.96" y="226.06"/>
+</segment>
+<segment>
+<pinref part="+3V11" gate="G$1" pin="+3V3"/>
+<pinref part="R13" gate="G$1" pin="1"/>
+<wire x1="657.86" y1="170.18" x2="660.4" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="TP11" gate="G$1" pin="TP"/>
+<junction x="660.4" y="170.18"/>
 </segment>
 </net>
 <net name="USB_ID" class="0">
@@ -29579,7 +29584,7 @@ when screen power is off</text>
 <segment>
 <pinref part="J1" gate="G$1" pin="VBUS"/>
 <pinref part="L2" gate="G$1" pin="1"/>
-<wire x1="193.04" y1="121.92" x2="198.12" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="121.92" x2="198.12" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VBUS" class="0">
@@ -29591,7 +29596,7 @@ when screen power is off</text>
 <wire x1="231.14" y1="121.92" x2="256.54" y2="121.92" width="0.1524" layer="91"/>
 <junction x="231.14" y="121.92"/>
 <pinref part="L2" gate="G$1" pin="2"/>
-<wire x1="208.28" y1="121.92" x2="231.14" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="124.46" x2="231.14" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="VIN"/>
@@ -29915,7 +29920,7 @@ when screen power is off</text>
 <wire x1="152.4" y1="193.04" x2="152.4" y2="195.58" width="0.1524" layer="91"/>
 <junction x="152.4" y="195.58"/>
 <pinref part="L3" gate="G$1" pin="2"/>
-<wire x1="152.4" y1="195.58" x2="144.78" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="195.58" x2="144.78" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="_PWR" pin="VREF+"/>
 <wire x1="165.1" y1="195.58" x2="162.56" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="_PWR" pin="VDDA"/>
@@ -30078,6 +30083,17 @@ when screen power is off</text>
 <net name="N$62" class="0">
 <segment>
 <wire x1="873.76" y1="175.26" x2="797.56" y2="170.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VCC" class="0">
+<segment>
+<pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="X1" gate="G$1" pin="VCC"/>
+<wire x1="670.56" y1="170.18" x2="673.1" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="C41" gate="G$1" pin="2"/>
+<wire x1="688.34" y1="170.18" x2="673.1" y2="170.18" width="0.1524" layer="91"/>
+<junction x="673.1" y="170.18"/>
+<pinref part="TP14" gate="G$1" pin="TP"/>
 </segment>
 </net>
 </nets>
