@@ -26588,6 +26588,7 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="TP11" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
 <part name="TP14" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
 <part name="ANT2" library="TiLDA Mk3 Parts" deviceset="CHIPANT" device=""/>
+<part name="TP7" library="TiLDA Mk3 Parts" deviceset="TP" device="4MM"/>
 </parts>
 <sheets>
 <sheet>
@@ -27233,6 +27234,7 @@ when screen power is off</text>
 <attribute name="NAME" x="232.41" y="85.09" size="1.778" layer="95"/>
 </instance>
 <instance part="ANT2" gate="G$1" x="736.6" y="243.84"/>
+<instance part="TP7" gate="G$1" x="617.22" y="134.62" smashed="yes" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -27981,6 +27983,7 @@ when screen power is off</text>
 <segment>
 <wire x1="617.22" y1="137.16" x2="617.22" y2="147.32" width="0.1524" layer="91"/>
 <label x="617.22" y="137.16" size="1.778" layer="95" rot="R90"/>
+<pinref part="TP7" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="D2" class="0">
