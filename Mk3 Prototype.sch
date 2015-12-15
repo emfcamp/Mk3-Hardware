@@ -26370,8 +26370,6 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="GND42" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="R28" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
 <part name="GND44" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R42" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
-<part name="GND45" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="J3" library="dtb" deviceset="SWD_SHROUD" device="" value="SWD_SHROUD"/>
 <part name="GND46" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="U4" library="TiLDA Mk3 Parts" deviceset="USD-SOCKET" device="NEW"/>
@@ -26870,8 +26868,6 @@ when screen power is off</text>
 <instance part="GND42" gate="1" x="779.78" y="38.1"/>
 <instance part="R28" gate="G$1" x="764.54" y="58.42" rot="R270"/>
 <instance part="GND44" gate="1" x="764.54" y="35.56"/>
-<instance part="R42" gate="G$1" x="772.16" y="63.5" rot="R270"/>
-<instance part="GND45" gate="1" x="772.16" y="43.18"/>
 <instance part="J3" gate="G$1" x="27.94" y="17.78"/>
 <instance part="GND46" gate="1" x="10.16" y="7.62"/>
 <instance part="U4" gate="G$1" x="439.42" y="33.02"/>
@@ -27493,11 +27489,6 @@ when screen power is off</text>
 <pinref part="R28" gate="G$1" pin="2"/>
 <wire x1="764.54" y1="53.34" x2="764.54" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="GND44" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="R42" gate="G$1" pin="2"/>
-<wire x1="772.16" y1="58.42" x2="772.16" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="GND45" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="GND1"/>
@@ -28494,8 +28485,6 @@ when screen power is off</text>
 <net name="WIFI_INTR" class="0">
 <segment>
 <pinref part="IC4" gate="_CONTROL" pin="HOST_INTR"/>
-<pinref part="R42" gate="G$1" pin="1"/>
-<wire x1="772.16" y1="68.58" x2="772.16" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="772.16" y1="71.12" x2="739.14" y2="71.12" width="0.1524" layer="91"/>
 <label x="741.68" y="71.12" size="1.778" layer="95"/>
 </segment>
