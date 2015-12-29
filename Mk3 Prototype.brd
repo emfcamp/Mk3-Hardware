@@ -2449,7 +2449,7 @@ design rules under a new name.</description>
 <element name="R10" library="TiLDA Mk3 Parts" package="R0402-SMALLER" value="0402/1k/5%" x="11.7" y="10.5" smashed="yes" rot="MR270">
 <attribute name="NAME" x="13.1015" y="11.589" size="0.8128" layer="26" font="vector" ratio="14" rot="MR270"/>
 </element>
-<element name="R24" library="TiLDA Mk3 Parts" package="R0402-SMALLER" value="0" x="78.7" y="27.4" smashed="yes" rot="MR180">
+<element name="R24" library="TiLDA Mk3 Parts" package="R0402-SMALLER" value="0402/0R" x="78.7" y="27.4" smashed="yes" rot="MR180">
 <attribute name="NAME" x="77.311" y="28.7015" size="0.8128" layer="26" font="vector" ratio="14" rot="MR180"/>
 </element>
 <element name="SV1" library="TiLDA Mk3 Parts" package="1X03" value="" x="90.5" y="46.8" smashed="yes" rot="MR90">

@@ -26497,7 +26497,7 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="SJ3" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NO" device="YES_SILK"/>
 <part name="R10" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/1k/5%"/>
 <part name="GND85" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R24" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0"/>
+<part name="R24" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/0R"/>
 <part name="SV1" library="TiLDA Mk3 Parts" deviceset="M03" device="PTH"/>
 <part name="S6" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD-1101NE"/>
 <part name="GND86" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
