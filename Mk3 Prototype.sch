@@ -26318,8 +26318,8 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="X5" library="TiLDA Mk3 Parts" deviceset="CRYSTAL" device="-2.5X2.0" value="Q24FA20H00396"/>
 <part name="GND18" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND19" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="C65" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/6p2/100V/NP0"/>
-<part name="C68" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/6p2/100V/NP0"/>
+<part name="C65" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/6.0p/50V/NP0"/>
+<part name="C68" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/6.0p/50V/NP0"/>
 <part name="R27" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
 <part name="R34" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
 <part name="GND20" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -26406,8 +26406,8 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="X2" library="TiLDA Mk3 Parts" deviceset="CRYSTAL" device="-3.2-2.5" value="CRYSTAL-3.2-2.5"/>
 <part name="GND54" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND55" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="C21" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/6.2p/50V/NP0"/>
-<part name="C20" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/6.2p/50V/NP0"/>
+<part name="C21" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/6.0p/50V/NP0"/>
+<part name="C20" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/6.0p/50V/NP0"/>
 <part name="GND58" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="R6" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/2k/5%"/>
 <part name="GND59" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
