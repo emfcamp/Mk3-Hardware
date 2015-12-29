@@ -26415,7 +26415,7 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="C3" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/4u7/10V/X5R"/>
 <part name="GND61" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="LED5" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT"/>
-<part name="R2" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER"/>
+<part name="R2" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/220/5%"/>
 <part name="S5" library="TiLDA Mk3 Parts" deviceset="SWITCH-SPST" device="-SMD-A"/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="C1" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0805K" value="0603/4u7/10V/X5R"/>
@@ -26541,8 +26541,8 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="C7" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/10n/25V/X7R"/>
 <part name="LED2" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT"/>
 <part name="LED3" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT"/>
-<part name="R12" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER"/>
-<part name="R14" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER"/>
+<part name="R12" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/150/5%"/>
+<part name="R14" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/150/5%"/>
 <part name="GND100" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND101" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C2" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/4u7/6.3V/X5R"/>
@@ -26687,6 +26687,7 @@ when screen power is off</text>
 <text x="106.934" y="110.49" size="1.778" layer="97">USB AB</text>
 <text x="294.64" y="144.78" size="3.81" layer="97" ratio="15">Buttons</text>
 <text x="322.834" y="160.528" size="1.778" layer="97">5x</text>
+<text x="558.8" y="127" size="1.778" layer="91">VLS252012HBX-2R2M-1 (which is 1008 rather than 1210)</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -30159,6 +30160,12 @@ when screen power is off</text>
 <wire x1="477.52" y1="66.04" x2="406.4" y2="66.04" width="0.1524" layer="91" style="longdash"/>
 <wire x1="477.52" y1="66.04" x2="495.3" y2="66.04" width="0.1524" layer="91" style="longdash"/>
 <wire x1="495.3" y1="66.04" x2="495.3" y2="147.32" width="0.1524" layer="91" style="longdash"/>
+</segment>
+</net>
+<net name="N$36" class="0">
+<segment>
+<wire x1="558.8" y1="127" x2="584.2" y2="127" width="0.1524" layer="91"/>
+<wire x1="584.2" y1="127" x2="591.82" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
