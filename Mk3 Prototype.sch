@@ -26298,7 +26298,7 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="GND7" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="FL1" library="TiLDA Mk3 Parts" deviceset="DEA202450BT-1294C1-H" device=""/>
 <part name="GND8" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="L7" library="TiLDA Mk3 Parts" deviceset="INDUCTOR" device="-0402-NARROW" value="0402/??"/>
+<part name="L7" library="TiLDA Mk3 Parts" deviceset="INDUCTOR" device="-0402-NARROW" value="0402/?? (0R for prototype)"/>
 <part name="C67" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/1p/50V/NP0"/>
 <part name="C70" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/??/50V/NP0"/>
 <part name="GND9" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -26514,10 +26514,10 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="GND87" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND88" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND89" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R8" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/90k/1%"/>
+<part name="R8" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/91k/1%"/>
 <part name="R9" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/22k/1%"/>
 <part name="GND90" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="L1" library="TiLDA Mk3 Parts" deviceset="INDUCTOR" device="1210"/>
+<part name="L1" library="TiLDA Mk3 Parts" deviceset="INDUCTOR" device="1210" value="2u2 SRN2512-2R2M"/>
 <part name="C5" library="passives-7351" deviceset="CAPACITOR" device="0805-N" value="0805/10u/10V/X5R"/>
 <part name="GND91" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C6" library="passives-7351" deviceset="CAPACITOR" device="0805-N" value="0805/10u/10V/X5R"/>
@@ -26687,7 +26687,7 @@ when screen power is off</text>
 <text x="106.934" y="110.49" size="1.778" layer="97">USB AB</text>
 <text x="294.64" y="144.78" size="3.81" layer="97" ratio="15">Buttons</text>
 <text x="322.834" y="160.528" size="1.778" layer="97">5x</text>
-<text x="558.8" y="127" size="1.778" layer="91">VLS252012HBX-2R2M-1 (which is 1008 rather than 1210)</text>
+<text x="558.8" y="127" size="1.778" layer="91">SRN2512-2R2M (which is 1008 rather than 1210)</text>
 <text x="655.32" y="38.1" size="1.778" layer="90" rot="R270">Consider leakage here if
 cutoff is active and switch on</text>
 <wire x1="635" y1="50.8" x2="642.62" y2="50.8" width="0.1524" layer="90"/>
