@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -64,7 +64,7 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="90" name="Modules" color="5" fill="1" visible="no" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -26403,7 +26403,7 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="GND53" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="R23" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/22/1%"/>
 <part name="R25" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/22/1%"/>
-<part name="X2" library="TiLDA Mk3 Parts" deviceset="CRYSTAL" device="-3.2-2.5" value="CRYSTAL-3.2-2.5"/>
+<part name="X2" library="TiLDA Mk3 Parts" deviceset="CRYSTAL" device="-3.2-2.5" value="16MHz-3.2-2.5"/>
 <part name="GND54" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND55" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C21" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/6.0p/50V/NP0"/>
@@ -26688,6 +26688,10 @@ when screen power is off</text>
 <text x="294.64" y="144.78" size="3.81" layer="97" ratio="15">Buttons</text>
 <text x="322.834" y="160.528" size="1.778" layer="97">5x</text>
 <text x="558.8" y="127" size="1.778" layer="91">VLS252012HBX-2R2M-1 (which is 1008 rather than 1210)</text>
+<text x="655.32" y="38.1" size="1.778" layer="90" rot="R270">Consider leakage here if
+cutoff is active and switch on</text>
+<wire x1="635" y1="50.8" x2="642.62" y2="50.8" width="0.1524" layer="90"/>
+<wire x1="642.62" y1="50.8" x2="655.32" y2="38.1" width="0.1524" layer="90"/>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>

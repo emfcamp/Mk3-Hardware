@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -2314,7 +2314,7 @@ design rules under a new name.</description>
 <element name="R25" library="TiLDA Mk3 Parts" package="R0402-SMALLER" value="0402/22/1%" x="19.3" y="27.9" smashed="yes" rot="MR270">
 <attribute name="NAME" x="18.0985" y="26.911" size="0.8128" layer="26" font="vector" ratio="14" rot="MR90"/>
 </element>
-<element name="X2" library="TiLDA Mk3 Parts" package="CRYSTAL-3.2-2.5" value="CRYSTAL-3.2-2.5" x="45.5" y="24.5" smashed="yes" rot="MR90">
+<element name="X2" library="TiLDA Mk3 Parts" package="CRYSTAL-3.2-2.5" value="16MHz-3.2-2.5" x="45.5" y="24.5" smashed="yes" rot="MR90">
 <attribute name="NAME" x="43.8" y="26.35" size="0.8128" layer="26" font="vector" ratio="14" rot="MR270"/>
 </element>
 <element name="C21" library="TiLDA Mk3 Parts" package="C0402-SMALLER" value="0402/6.0p/50V/NP0" x="47.75" y="24.3" smashed="yes" rot="MR90">
