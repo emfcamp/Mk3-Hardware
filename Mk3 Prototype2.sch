@@ -25410,15 +25410,11 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="+3V25" library="supply1" deviceset="+3V3" device=""/>
 <part name="IC2" library="TiLDA Mk3 Parts" deviceset="NCP1529" device="MU"/>
 <part name="R43" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/220/5%"/>
-<part name="R44" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/1R/5%"/>
-<part name="Q4" library="TiLDA Mk3 Parts" deviceset="MOSFET-P" device="-SOT23" value="NTR4101"/>
 <part name="Q6" library="TiLDA Mk3 Parts" deviceset="MOSFET-P" device="-SOT23" value="NTR4101"/>
 <part name="R45" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/220k/5%"/>
 <part name="GND107" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C27" library="passives-7351" deviceset="CAPACITOR" device="0805-N" value="0805/22u/??V/X5R"/>
 <part name="C40" library="passives-7351" deviceset="CAPACITOR" device="0805-N" value="0805/22u/??V/X5R"/>
-<part name="TP12" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
-<part name="TP13" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
 <part name="R46" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/10K/5%"/>
 <part name="R13" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/0.1R/5%"/>
 <part name="TP11" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
@@ -25553,14 +25549,13 @@ when screen power is off</text>
 <text x="566.42" y="365.76" size="1.778" layer="91" rot="R90">add footprint for cap</text>
 <text x="322.58" y="383.54" size="1.778" layer="91">0: parallel; 1: serial</text>
 <text x="347.98" y="393.7" size="1.778" layer="91">5 ohm</text>
-<text x="91.44" y="55.88" size="1.778" layer="91">spi4_mosi</text>
 <text x="81.28" y="175.26" size="1.778" layer="91">led2</text>
-<text x="-7.62" y="203.2" size="1.778" layer="91">adc_vbus</text>
-<text x="-7.62" y="198.12" size="1.778" layer="91">adc_light</text>
 <text x="337.82" y="78.74" size="1.778" layer="91">i2c</text>
 <text x="337.82" y="76.2" size="1.778" layer="91">i2c</text>
 <text x="363.22" y="393.7" size="1.778" layer="91">extra backlight connection if 2.4"</text>
 <text x="322.58" y="292.1" size="1.778" layer="91">is 3.3V fine?</text>
+<text x="58.42" y="48.26" size="1.778" layer="91">unconnected</text>
+<text x="596.9" y="170.18" size="1.778" layer="91">add small resistors to stop shorting agaoinst vcc/gnd</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -26035,8 +26030,6 @@ when screen power is off</text>
 <attribute name="NAME" x="34.29" y="232.6386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="29.21" y="227.838" size="1.778" layer="96"/>
 </instance>
-<instance part="R44" gate="G$1" x="317.5" y="226.06"/>
-<instance part="Q4" gate="G$1" x="335.28" y="226.06" rot="R90"/>
 <instance part="Q6" gate="G$1" x="642.62" y="58.42" rot="R90"/>
 <instance part="R45" gate="G$1" x="635" y="50.8" rot="R270"/>
 <instance part="GND107" gate="1" x="637.54" y="33.02"/>
@@ -26047,12 +26040,6 @@ when screen power is off</text>
 <instance part="C40" gate="G$1" x="447.04" y="205.74" smashed="yes" rot="R180">
 <attribute name="NAME" x="447.421" y="205.74" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="444.881" y="205.74" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="TP12" gate="G$1" x="312.42" y="231.14" smashed="yes">
-<attribute name="NAME" x="311.15" y="232.41" size="1.778" layer="95"/>
-</instance>
-<instance part="TP13" gate="G$1" x="322.58" y="231.14" smashed="yes">
-<attribute name="NAME" x="321.31" y="232.41" size="1.778" layer="95"/>
 </instance>
 <instance part="R46" gate="G$1" x="208.28" y="88.9" smashed="yes" rot="R90">
 <attribute name="NAME" x="206.7814" y="85.09" size="1.778" layer="95" rot="R90"/>
@@ -26917,11 +26904,6 @@ when screen power is off</text>
 <label x="365.76" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="71.12" y1="200.66" x2="68.58" y2="200.66" width="0.1524" layer="91"/>
-<label x="71.12" y="200.66" size="1.778" layer="95"/>
-<pinref part="IC3" gate="_PB" pin="PB1"/>
-</segment>
-<segment>
 <wire x1="617.22" y1="137.16" x2="617.22" y2="147.32" width="0.1524" layer="91"/>
 <label x="617.22" y="137.16" size="1.778" layer="95" rot="R90"/>
 <pinref part="TP7" gate="G$1" pin="TP"/>
@@ -26957,7 +26939,6 @@ when screen power is off</text>
 <segment>
 <wire x1="332.74" y1="218.44" x2="332.74" y2="220.98" width="0.1524" layer="91"/>
 <label x="312.42" y="218.44" size="1.778" layer="95"/>
-<pinref part="Q4" gate="G$1" pin="G"/>
 </segment>
 </net>
 <net name="LCD_!RST" class="0">
@@ -26971,9 +26952,9 @@ when screen power is off</text>
 <label x="345.44" y="378.46" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="_PB" pin="PB7"/>
-<wire x1="68.58" y1="185.42" x2="71.12" y2="185.42" width="0.1524" layer="91"/>
-<label x="71.12" y="185.42" size="1.778" layer="95"/>
+<pinref part="IC3" gate="_PD" pin="PD7"/>
+<wire x1="73.66" y1="116.84" x2="83.82" y2="116.84" width="0.1524" layer="91"/>
+<label x="76.2" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LCD_A0" class="0">
@@ -27266,11 +27247,6 @@ when screen power is off</text>
 <wire x1="231.14" y1="124.46" x2="231.14" y2="109.22" width="0.1524" layer="91"/>
 <label x="231.14" y="109.22" size="1.778" layer="95" rot="R90"/>
 <pinref part="S6" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="IC3" gate="_PE" pin="PE8"/>
-<wire x1="73.66" y1="48.26" x2="78.74" y2="48.26" width="0.1524" layer="91"/>
-<label x="76.2" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="WIFI_FORCE_AP" class="0">
@@ -27629,12 +27605,9 @@ when screen power is off</text>
 <pinref part="+3V25" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="R44" gate="G$1" pin="1"/>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
-<pinref part="TP12" gate="G$1" pin="TP"/>
 <wire x1="312.42" y1="228.6" x2="312.42" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="307.34" y1="226.06" x2="312.42" y2="226.06" width="0.1524" layer="91"/>
-<junction x="312.42" y="226.06"/>
 </segment>
 <segment>
 <pinref part="+3V11" gate="G$1" pin="+3V3"/>
@@ -27956,6 +27929,11 @@ when screen power is off</text>
 <pinref part="C14" gate="G$1" pin="2"/>
 <junction x="508" y="33.02"/>
 <wire x1="508" y1="33.02" x2="515.62" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="_PC" pin="PC4"/>
+<wire x1="33.02" y1="124.46" x2="35.56" y2="124.46" width="0.1524" layer="91"/>
+<label x="35.56" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MCO1" class="0">
@@ -28428,6 +28406,11 @@ when screen power is off</text>
 <junction x="149.86" y="43.18"/>
 <wire x1="149.86" y1="43.18" x2="149.86" y2="45.72" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="IC3" gate="_PB" pin="PB1"/>
+<wire x1="68.58" y1="200.66" x2="71.12" y2="200.66" width="0.1524" layer="91"/>
+<label x="71.12" y="200.66" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="ESP_CH_PD" class="0">
 <segment>
@@ -28442,9 +28425,12 @@ when screen power is off</text>
 <label x="558.8" y="370.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="_PC" pin="PC4"/>
-<wire x1="33.02" y1="124.46" x2="35.56" y2="124.46" width="0.1524" layer="91"/>
-<label x="35.56" y="124.46" size="1.778" layer="95"/>
+<pinref part="IC3" gate="_PB" pin="PB2"/>
+<label x="71.12" y="198.12" size="1.778" layer="95"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="198.12" x2="88.9" y2="198.12" width="0.1524" layer="91"/>
+<junction x="88.9" y="198.12"/>
+<wire x1="88.9" y1="198.12" x2="93.98" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOM_LEFT" class="0">
@@ -28815,12 +28801,8 @@ when screen power is off</text>
 </net>
 <net name="N$53" class="0">
 <segment>
-<pinref part="R44" gate="G$1" pin="2"/>
-<pinref part="Q4" gate="G$1" pin="S"/>
-<pinref part="TP13" gate="G$1" pin="TP"/>
 <wire x1="322.58" y1="228.6" x2="322.58" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="322.58" y1="226.06" x2="330.2" y2="226.06" width="0.1524" layer="91"/>
-<junction x="322.58" y="226.06"/>
 </segment>
 </net>
 <net name="LCD_VCC" class="0">
@@ -28851,7 +28833,6 @@ when screen power is off</text>
 <wire x1="360.68" y1="213.36" x2="360.68" y2="220.98" width="0.1524" layer="91"/>
 <junction x="360.68" y="220.98"/>
 <wire x1="340.36" y1="226.06" x2="360.68" y2="226.06" width="0.1524" layer="91"/>
-<pinref part="Q4" gate="G$1" pin="D"/>
 </segment>
 </net>
 <net name="N$54" class="0">
@@ -29033,9 +29014,9 @@ when screen power is off</text>
 <label x="342.9" y="302.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="_PD" pin="PD7"/>
-<wire x1="73.66" y1="116.84" x2="83.82" y2="116.84" width="0.1524" layer="91"/>
-<label x="76.2" y="116.84" size="1.778" layer="95"/>
+<pinref part="IC3" gate="_PB" pin="PB7"/>
+<wire x1="68.58" y1="185.42" x2="71.12" y2="185.42" width="0.1524" layer="91"/>
+<label x="71.12" y="185.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LCD7" class="0">
@@ -29165,9 +29146,9 @@ when screen power is off</text>
 <label x="342.9" y="304.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="_PD" pin="PD4"/>
-<wire x1="73.66" y1="124.46" x2="83.82" y2="124.46" width="0.1524" layer="91"/>
-<label x="76.2" y="124.46" size="1.778" layer="95"/>
+<pinref part="IC3" gate="_PB" pin="PB6"/>
+<wire x1="68.58" y1="187.96" x2="71.12" y2="187.96" width="0.1524" layer="91"/>
+<label x="71.12" y="187.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TIM2_CH1" class="0">
@@ -29220,11 +29201,6 @@ when screen power is off</text>
 </net>
 <net name="LCD_MODE" class="0">
 <segment>
-<pinref part="IC3" gate="_PB" pin="PB6"/>
-<wire x1="68.58" y1="187.96" x2="71.12" y2="187.96" width="0.1524" layer="91"/>
-<label x="71.12" y="187.96" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="J4" gate="G$1" pin="IM1"/>
 <wire x1="355.6" y1="388.62" x2="358.14" y2="388.62" width="0.1524" layer="91"/>
 <pinref part="J4" gate="G$1" pin="IM3"/>
@@ -29236,6 +29212,11 @@ when screen power is off</text>
 <wire x1="358.14" y1="386.08" x2="355.6" y2="386.08" width="0.1524" layer="91"/>
 <junction x="355.6" y="386.08"/>
 <junction x="355.6" y="383.54"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="_PD" pin="PD4"/>
+<wire x1="73.66" y1="124.46" x2="83.82" y2="124.46" width="0.1524" layer="91"/>
+<label x="76.2" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LCD_ADC_X" class="0">
@@ -29260,16 +29241,6 @@ when screen power is off</text>
 <pinref part="J4" gate="G$1" pin="Y-"/>
 <wire x1="358.14" y1="271.78" x2="355.6" y2="271.78" width="0.1524" layer="91"/>
 <label x="355.6" y="271.78" size="1.778" layer="95" rot="MR0"/>
-</segment>
-</net>
-<net name="BOOT1" class="0">
-<segment>
-<pinref part="IC3" gate="_PB" pin="PB2"/>
-<label x="71.12" y="198.12" size="1.778" layer="95"/>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="198.12" x2="88.9" y2="198.12" width="0.1524" layer="91"/>
-<junction x="88.9" y="198.12"/>
-<wire x1="88.9" y1="198.12" x2="93.98" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LCD_Y" class="0">
