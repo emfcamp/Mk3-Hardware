@@ -25451,9 +25451,8 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="+3V28" library="supply1" deviceset="+3V3" device=""/>
 <part name="C38" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/4u7/6.3V/X5R"/>
 <part name="C45" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
-<part name="GND113" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="GND114" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="JP2" library="TiLDA Mk3 Parts" deviceset="M10" device="NOSILK"/>
+<part name="GND113" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -25554,12 +25553,14 @@ when screen power is off</text>
 <text x="566.42" y="365.76" size="1.778" layer="91" rot="R90">add footprint for cap</text>
 <text x="322.58" y="383.54" size="1.778" layer="91">0: parallel; 1: serial</text>
 <text x="347.98" y="393.7" size="1.778" layer="91">5 ohm</text>
-<text x="91.44" y="68.58" size="1.778" layer="91">lcd_!RST</text>
-<text x="91.44" y="63.5" size="1.778" layer="91">wifi_inter</text>
-<text x="91.44" y="60.96" size="1.778" layer="91">mom_up</text>
-<text x="91.44" y="58.42" size="1.778" layer="91">tim9_ch1</text>
 <text x="91.44" y="55.88" size="1.778" layer="91">spi4_mosi</text>
-<text x="91.44" y="53.34" size="1.778" layer="91">mom_right</text>
+<text x="81.28" y="175.26" size="1.778" layer="91">led2</text>
+<text x="-7.62" y="203.2" size="1.778" layer="91">adc_vbus</text>
+<text x="-7.62" y="198.12" size="1.778" layer="91">adc_light</text>
+<text x="337.82" y="78.74" size="1.778" layer="91">i2c</text>
+<text x="337.82" y="76.2" size="1.778" layer="91">i2c</text>
+<text x="363.22" y="393.7" size="1.778" layer="91">extra backlight connection if 2.4"</text>
+<text x="322.58" y="292.1" size="1.778" layer="91">is 3.3V fine?</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -26083,10 +26084,10 @@ when screen power is off</text>
 <attribute name="NAME" x="561.34" y="368.3" size="1.778" layer="95" rot="R270"/>
 </instance>
 <instance part="GND109" gate="1" x="558.8" y="358.14"/>
-<instance part="JP1" gate="G$1" x="330.2" y="38.1" smashed="yes" rot="R180">
-<attribute name="NAME" x="330.2" y="29.21" size="1.778" layer="95" rot="R180"/>
+<instance part="JP1" gate="G$1" x="340.36" y="71.12" smashed="yes" rot="R180">
+<attribute name="NAME" x="340.36" y="62.23" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="GND2" gate="1" x="353.06" y="281.94"/>
+<instance part="GND2" gate="1" x="350.52" y="284.48" rot="R270"/>
 <instance part="+3V27" gate="G$1" x="330.2" y="403.86" rot="R90"/>
 <instance part="R47" gate="G$1" x="350.52" y="401.32" smashed="yes">
 <attribute name="NAME" x="346.71" y="402.8186" size="1.778" layer="95"/>
@@ -26104,17 +26105,16 @@ when screen power is off</text>
 <instance part="GND110" gate="1" x="350.52" y="337.82" rot="R270"/>
 <instance part="GND111" gate="1" x="350.52" y="368.3" rot="R270"/>
 <instance part="GND112" gate="1" x="353.06" y="391.16" rot="R270"/>
-<instance part="+3V28" gate="G$1" x="330.2" y="289.56" rot="R90"/>
-<instance part="C38" gate="G$1" x="342.9" y="284.48" smashed="yes" rot="R180">
-<attribute name="NAME" x="343.281" y="284.48" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="345.821" y="284.48" size="1.778" layer="96" rot="R270"/>
+<instance part="+3V28" gate="G$1" x="312.42" y="289.56" rot="R90"/>
+<instance part="C38" gate="G$1" x="325.12" y="284.48" smashed="yes" rot="R180">
+<attribute name="NAME" x="322.961" y="284.48" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="325.501" y="284.48" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C45" gate="G$1" x="337.82" y="284.48" rot="R180"/>
-<instance part="GND113" gate="1" x="342.9" y="279.4"/>
-<instance part="GND114" gate="1" x="337.82" y="279.4"/>
-<instance part="JP2" gate="G$1" x="342.9" y="38.1" smashed="yes" rot="R180">
-<attribute name="NAME" x="342.9" y="29.21" size="1.778" layer="95" rot="R180"/>
+<instance part="C45" gate="G$1" x="317.5" y="284.48" rot="R180"/>
+<instance part="JP2" gate="G$1" x="347.98" y="38.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="347.98" y="29.21" size="1.778" layer="95" rot="R180"/>
 </instance>
+<instance part="GND113" gate="1" x="320.04" y="274.32"/>
 </instances>
 <busses>
 </busses>
@@ -26809,12 +26809,14 @@ when screen power is off</text>
 <pinref part="GND112" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C38" gate="G$1" pin="1"/>
-<pinref part="GND113" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="C45" gate="G$1" pin="1"/>
-<pinref part="GND114" gate="1" pin="GND"/>
+<wire x1="317.5" y1="281.94" x2="317.5" y2="276.86" width="0.1524" layer="91"/>
+<pinref part="C38" gate="G$1" pin="1"/>
+<wire x1="317.5" y1="276.86" x2="320.04" y2="276.86" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="276.86" x2="325.12" y2="276.86" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="276.86" x2="325.12" y2="281.94" width="0.1524" layer="91"/>
+<pinref part="GND113" gate="1" pin="GND"/>
+<junction x="320.04" y="276.86"/>
 </segment>
 </net>
 <net name="F1" class="0">
@@ -26879,21 +26881,11 @@ when screen power is off</text>
 <wire x1="365.76" y1="68.58" x2="363.22" y2="68.58" width="0.1524" layer="91"/>
 <label x="365.76" y="68.58" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="IC3" gate="_PA" pin="PA1"/>
-<wire x1="30.48" y1="200.66" x2="33.02" y2="200.66" width="0.1524" layer="91"/>
-<label x="33.02" y="200.66" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="A1" class="0">
 <segment>
 <wire x1="365.76" y1="71.12" x2="363.22" y2="71.12" width="0.1524" layer="91"/>
 <label x="365.76" y="71.12" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC3" gate="_PA" pin="PA2"/>
-<wire x1="30.48" y1="198.12" x2="33.02" y2="198.12" width="0.1524" layer="91"/>
-<label x="33.02" y="198.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A2" class="0">
@@ -26901,21 +26893,11 @@ when screen power is off</text>
 <wire x1="365.76" y1="73.66" x2="363.22" y2="73.66" width="0.1524" layer="91"/>
 <label x="365.76" y="73.66" size="1.778" layer="95"/>
 </segment>
-<segment>
-<wire x1="35.56" y1="124.46" x2="33.02" y2="124.46" width="0.1524" layer="91"/>
-<label x="35.56" y="124.46" size="1.778" layer="95"/>
-<pinref part="IC3" gate="_PC" pin="PC4"/>
-</segment>
 </net>
 <net name="A4" class="0">
 <segment>
 <wire x1="365.76" y1="78.74" x2="363.22" y2="78.74" width="0.1524" layer="91"/>
 <label x="365.76" y="78.74" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="68.58" y1="203.2" x2="71.12" y2="203.2" width="0.1524" layer="91"/>
-<label x="71.12" y="203.2" size="1.778" layer="95"/>
-<pinref part="IC3" gate="_PB" pin="PB0"/>
 </segment>
 <segment>
 <pinref part="TP8" gate="G$1" pin="TP"/>
@@ -26927,11 +26909,6 @@ when screen power is off</text>
 <segment>
 <wire x1="365.76" y1="76.2" x2="363.22" y2="76.2" width="0.1524" layer="91"/>
 <label x="365.76" y="76.2" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="35.56" y1="121.92" x2="33.02" y2="121.92" width="0.1524" layer="91"/>
-<label x="35.56" y="121.92" size="1.778" layer="95"/>
-<pinref part="IC3" gate="_PC" pin="PC5"/>
 </segment>
 </net>
 <net name="A5" class="0">
@@ -26993,16 +26970,16 @@ when screen power is off</text>
 <wire x1="358.14" y1="378.46" x2="342.9" y2="378.46" width="0.1524" layer="91"/>
 <label x="345.44" y="378.46" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC3" gate="_PB" pin="PB7"/>
+<wire x1="68.58" y1="185.42" x2="71.12" y2="185.42" width="0.1524" layer="91"/>
+<label x="71.12" y="185.42" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="LCD_A0" class="0">
 <segment>
 <wire x1="360.68" y1="241.3" x2="363.22" y2="241.3" width="0.1524" layer="91"/>
 <label x="360.68" y="241.3" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
-<pinref part="IC3" gate="_PD" pin="PD7"/>
-<wire x1="73.66" y1="116.84" x2="83.82" y2="116.84" width="0.1524" layer="91"/>
-<label x="76.2" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CC_FLASH_!CS" class="0">
@@ -27319,11 +27296,6 @@ when screen power is off</text>
 <pinref part="IC4" gate="_CONTROL" pin="!HIB"/>
 <wire x1="739.14" y1="76.2" x2="741.68" y2="76.2" width="0.1524" layer="91"/>
 <label x="741.68" y="76.2" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="33.02" y1="99.06" x2="35.56" y2="99.06" width="0.1524" layer="91"/>
-<label x="35.56" y="99.06" size="1.778" layer="95"/>
-<pinref part="IC3" gate="_PC" pin="PC13"/>
 </segment>
 </net>
 <net name="NRST" class="0">
@@ -27695,14 +27667,14 @@ when screen power is off</text>
 <pinref part="J4" gate="G$1" pin="VDDI"/>
 <wire x1="358.14" y1="289.56" x2="353.06" y2="289.56" width="0.1524" layer="91"/>
 <pinref part="+3V28" gate="G$1" pin="+3V3"/>
-<wire x1="353.06" y1="289.56" x2="342.9" y2="289.56" width="0.1524" layer="91"/>
-<wire x1="342.9" y1="289.56" x2="337.82" y2="289.56" width="0.1524" layer="91"/>
-<wire x1="337.82" y1="289.56" x2="332.74" y2="289.56" width="0.1524" layer="91"/>
+<wire x1="353.06" y1="289.56" x2="325.12" y2="289.56" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="289.56" x2="317.5" y2="289.56" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="289.56" x2="314.96" y2="289.56" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="287.02" x2="353.06" y2="289.56" width="0.1524" layer="91"/>
 <pinref part="C45" gate="G$1" pin="2"/>
-<junction x="337.82" y="289.56"/>
+<junction x="317.5" y="289.56"/>
 <pinref part="C38" gate="G$1" pin="2"/>
-<junction x="342.9" y="289.56"/>
+<junction x="325.12" y="289.56"/>
 <junction x="353.06" y="289.56"/>
 </segment>
 </net>
@@ -27985,11 +27957,6 @@ when screen power is off</text>
 <junction x="508" y="33.02"/>
 <wire x1="508" y1="33.02" x2="515.62" y2="33.02" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="IC3" gate="_PA" pin="PA0"/>
-<wire x1="30.48" y1="203.2" x2="33.02" y2="203.2" width="0.1524" layer="91"/>
-<label x="33.02" y="203.2" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="MCO1" class="0">
 <segment>
@@ -28018,8 +27985,9 @@ when screen power is off</text>
 <pinref part="IC3" gate="_PB" pin="PB14"/>
 </segment>
 <segment>
-<wire x1="304.8" y1="45.72" x2="307.34" y2="45.72" width="0.1524" layer="91"/>
-<label x="304.8" y="45.72" size="1.778" layer="95" rot="MR0"/>
+<wire x1="332.74" y1="35.56" x2="337.82" y2="35.56" width="0.1524" layer="91"/>
+<label x="332.74" y="35.56" size="1.778" layer="95" rot="MR0"/>
+<pinref part="JP2" gate="G$1" pin="9"/>
 </segment>
 </net>
 <net name="SPI2_MOSI" class="0">
@@ -28029,19 +27997,21 @@ when screen power is off</text>
 <pinref part="IC3" gate="_PB" pin="PB15"/>
 </segment>
 <segment>
-<wire x1="304.8" y1="48.26" x2="307.34" y2="48.26" width="0.1524" layer="91"/>
-<label x="304.8" y="48.26" size="1.778" layer="95" rot="MR0"/>
+<wire x1="332.74" y1="33.02" x2="337.82" y2="33.02" width="0.1524" layer="91"/>
+<label x="332.74" y="33.02" size="1.778" layer="95" rot="MR0"/>
+<pinref part="JP2" gate="G$1" pin="10"/>
 </segment>
 </net>
 <net name="SPI2_CLK" class="0">
 <segment>
-<wire x1="304.8" y1="43.18" x2="307.34" y2="43.18" width="0.1524" layer="91"/>
-<label x="304.8" y="43.18" size="1.778" layer="95" rot="MR0"/>
+<wire x1="332.74" y1="38.1" x2="337.82" y2="38.1" width="0.1524" layer="91"/>
+<label x="332.74" y="38.1" size="1.778" layer="95" rot="MR0"/>
+<pinref part="JP2" gate="G$1" pin="8"/>
 </segment>
 <segment>
-<wire x1="76.2" y1="127" x2="73.66" y2="127" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="_PD" pin="PD3"/>
-<label x="76.2" y="127" size="1.778" layer="95"/>
+<pinref part="IC3" gate="_PB" pin="PB10"/>
+<wire x1="68.58" y1="175.26" x2="71.12" y2="175.26" width="0.1524" layer="91"/>
+<label x="71.12" y="175.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI3_SCK" class="0">
@@ -28078,21 +28048,11 @@ when screen power is off</text>
 </net>
 <net name="I2C_SDA" class="0">
 <segment>
-<wire x1="68.58" y1="185.42" x2="71.12" y2="185.42" width="0.1524" layer="91"/>
-<label x="71.12" y="185.42" size="1.778" layer="95"/>
-<pinref part="IC3" gate="_PB" pin="PB7"/>
-</segment>
-<segment>
 <wire x1="304.8" y1="35.56" x2="307.34" y2="35.56" width="0.1524" layer="91"/>
 <label x="304.8" y="35.56" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="I2C_SCL" class="0">
-<segment>
-<wire x1="68.58" y1="187.96" x2="71.12" y2="187.96" width="0.1524" layer="91"/>
-<label x="71.12" y="187.96" size="1.778" layer="95"/>
-<pinref part="IC3" gate="_PB" pin="PB6"/>
-</segment>
 <segment>
 <wire x1="304.8" y1="33.02" x2="307.34" y2="33.02" width="0.1524" layer="91"/>
 <label x="304.8" y="33.02" size="1.778" layer="95" rot="MR0"/>
@@ -28155,8 +28115,9 @@ when screen power is off</text>
 <pinref part="IC3" gate="_PB" pin="PB8"/>
 </segment>
 <segment>
-<wire x1="304.8" y1="53.34" x2="307.34" y2="53.34" width="0.1524" layer="91"/>
-<label x="304.8" y="53.34" size="1.778" layer="95" rot="MR0"/>
+<wire x1="325.12" y1="78.74" x2="330.2" y2="78.74" width="0.1524" layer="91"/>
+<label x="325.12" y="78.74" size="1.778" layer="95" rot="MR0"/>
+<pinref part="JP1" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="USART6_TX" class="0">
@@ -28170,6 +28131,11 @@ when screen power is off</text>
 <wire x1="619.76" y1="167.64" x2="619.76" y2="160.02" width="0.1524" layer="91"/>
 <label x="619.76" y="165.1" size="1.778" layer="95" rot="MR270"/>
 </segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="5"/>
+<wire x1="337.82" y1="45.72" x2="332.74" y2="45.72" width="0.1524" layer="91"/>
+<label x="332.74" y="45.72" size="1.778" layer="95" rot="MR0"/>
+</segment>
 </net>
 <net name="N$38" class="0">
 <segment>
@@ -28177,13 +28143,6 @@ when screen power is off</text>
 <wire x1="165.1" y1="203.2" x2="162.56" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="203.2" x2="162.56" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="C29" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="SPI4_MOSI" class="0">
-<segment>
-<label x="480.06" y="106.68" size="1.778" layer="95"/>
-<pinref part="D1" gate="G$1" pin="DIN"/>
-<wire x1="485.14" y1="106.68" x2="480.06" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SPI1_MOSI" class="0">
@@ -28282,6 +28241,11 @@ when screen power is off</text>
 <wire x1="424.18" y1="91.44" x2="434.34" y2="91.44" width="0.1524" layer="91"/>
 <label x="431.8" y="91.44" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="1"/>
+<wire x1="332.74" y1="55.88" x2="337.82" y2="55.88" width="0.1524" layer="91"/>
+<label x="332.74" y="55.88" size="1.778" layer="95" rot="MR0"/>
+</segment>
 </net>
 <net name="TIM1_CH2" class="0">
 <segment>
@@ -28298,6 +28262,11 @@ when screen power is off</text>
 <pinref part="SV5" gate="G$1" pin="3"/>
 <wire x1="424.18" y1="78.74" x2="434.34" y2="78.74" width="0.1524" layer="91"/>
 <label x="431.8" y="78.74" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="2"/>
+<wire x1="337.82" y1="53.34" x2="332.74" y2="53.34" width="0.1524" layer="91"/>
+<label x="332.74" y="53.34" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="TIM1_CH3" class="0">
@@ -28316,6 +28285,11 @@ when screen power is off</text>
 <wire x1="642.62" y1="137.16" x2="642.62" y2="149.86" width="0.1524" layer="91"/>
 <label x="642.62" y="137.16" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="3"/>
+<wire x1="332.74" y1="50.8" x2="337.82" y2="50.8" width="0.1524" layer="91"/>
+<label x="332.74" y="50.8" size="1.778" layer="95" rot="MR0"/>
+</segment>
 </net>
 <net name="TIM1_CH4" class="0">
 <segment>
@@ -28333,6 +28307,16 @@ when screen power is off</text>
 <wire x1="640.08" y1="137.16" x2="640.08" y2="149.86" width="0.1524" layer="91"/>
 <label x="640.08" y="137.16" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="4"/>
+<wire x1="337.82" y1="48.26" x2="332.74" y2="48.26" width="0.1524" layer="91"/>
+<label x="332.74" y="48.26" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<label x="480.06" y="106.68" size="1.778" layer="95"/>
+<pinref part="D1" gate="G$1" pin="DIN"/>
+<wire x1="485.14" y1="106.68" x2="480.06" y2="106.68" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="USART6_RX" class="0">
 <segment>
@@ -28344,6 +28328,11 @@ when screen power is off</text>
 <pinref part="TP1" gate="G$1" pin="TP"/>
 <wire x1="617.22" y1="167.64" x2="617.22" y2="160.02" width="0.1524" layer="91"/>
 <label x="617.22" y="165.1" size="1.778" layer="95" rot="MR270"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="6"/>
+<wire x1="337.82" y1="43.18" x2="332.74" y2="43.18" width="0.1524" layer="91"/>
+<label x="332.74" y="43.18" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="N$39" class="0">
@@ -28420,9 +28409,9 @@ when screen power is off</text>
 <label x="121.92" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="_PC" pin="PC3"/>
-<wire x1="33.02" y1="127" x2="35.56" y2="127" width="0.1524" layer="91"/>
-<label x="35.56" y="127" size="1.778" layer="95"/>
+<wire x1="68.58" y1="203.2" x2="71.12" y2="203.2" width="0.1524" layer="91"/>
+<label x="71.12" y="203.2" size="1.778" layer="95"/>
+<pinref part="IC3" gate="_PB" pin="PB0"/>
 </segment>
 </net>
 <net name="ADC_LIGHT" class="0">
@@ -28439,18 +28428,8 @@ when screen power is off</text>
 <junction x="149.86" y="43.18"/>
 <wire x1="149.86" y1="43.18" x2="149.86" y2="45.72" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<wire x1="33.02" y1="195.58" x2="30.48" y2="195.58" width="0.1524" layer="91"/>
-<label x="33.02" y="195.58" size="1.778" layer="95"/>
-<pinref part="IC3" gate="_PA" pin="PA3"/>
-</segment>
 </net>
 <net name="ESP_CH_PD" class="0">
-<segment>
-<pinref part="IC3" gate="_PC" pin="PC0"/>
-<wire x1="33.02" y1="134.62" x2="40.64" y2="134.62" width="0.1524" layer="91"/>
-<label x="35.56" y="134.62" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="X1" gate="G$1" pin="CH_PD"/>
 <wire x1="241.3" y1="66.04" x2="215.9" y2="66.04" width="0.1524" layer="91"/>
@@ -28462,19 +28441,16 @@ when screen power is off</text>
 <wire x1="574.04" y1="370.84" x2="558.8" y2="370.84" width="0.1524" layer="91"/>
 <label x="558.8" y="370.84" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC3" gate="_PC" pin="PC4"/>
+<wire x1="33.02" y1="124.46" x2="35.56" y2="124.46" width="0.1524" layer="91"/>
+<label x="35.56" y="124.46" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="MOM_LEFT" class="0">
 <segment>
 <wire x1="342.9" y1="104.14" x2="345.44" y2="104.14" width="0.1524" layer="91"/>
 <label x="345.44" y="104.14" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC3" gate="_PB" pin="PB2"/>
-<label x="71.12" y="198.12" size="1.778" layer="95"/>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="198.12" x2="88.9" y2="198.12" width="0.1524" layer="91"/>
-<junction x="88.9" y="198.12"/>
-<wire x1="88.9" y1="198.12" x2="93.98" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOM_RIGHT" class="0">
@@ -28482,6 +28458,11 @@ when screen power is off</text>
 <pinref part="S3" gate="G$1" pin="2"/>
 <wire x1="342.9" y1="109.22" x2="345.44" y2="109.22" width="0.1524" layer="91"/>
 <label x="345.44" y="109.22" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="_PD" pin="PD0"/>
+<wire x1="73.66" y1="134.62" x2="76.2" y2="134.62" width="0.1524" layer="91"/>
+<label x="76.2" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOM_DWN" class="0">
@@ -28714,8 +28695,9 @@ when screen power is off</text>
 <pinref part="IC3" gate="_PB" pin="PB9"/>
 </segment>
 <segment>
-<wire x1="304.8" y1="50.8" x2="307.34" y2="50.8" width="0.1524" layer="91"/>
-<label x="304.8" y="50.8" size="1.778" layer="95" rot="MR0"/>
+<wire x1="325.12" y1="76.2" x2="330.2" y2="76.2" width="0.1524" layer="91"/>
+<label x="325.12" y="76.2" size="1.778" layer="95" rot="MR0"/>
+<pinref part="JP1" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="TIM4_CH2" class="0">
@@ -28771,9 +28753,9 @@ when screen power is off</text>
 <label x="248.92" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="_PB" pin="PB10"/>
-<wire x1="68.58" y1="175.26" x2="71.12" y2="175.26" width="0.1524" layer="91"/>
-<label x="71.12" y="175.26" size="1.778" layer="95"/>
+<pinref part="IC3" gate="_PE" pin="PE12"/>
+<wire x1="73.66" y1="38.1" x2="78.74" y2="38.1" width="0.1524" layer="91"/>
+<label x="76.2" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$56" class="0">
@@ -28945,14 +28927,14 @@ when screen power is off</text>
 <label x="637.54" y="365.76" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="_PC" pin="PC1"/>
-<wire x1="40.64" y1="132.08" x2="33.02" y2="132.08" width="0.1524" layer="91"/>
-<label x="35.56" y="132.08" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="X1" gate="G$1" pin="GPIO0"/>
 <wire x1="241.3" y1="58.42" x2="215.9" y2="58.42" width="0.1524" layer="91"/>
 <label x="215.9" y="58.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="35.56" y1="121.92" x2="33.02" y2="121.92" width="0.1524" layer="91"/>
+<label x="35.56" y="121.92" size="1.778" layer="95"/>
+<pinref part="IC3" gate="_PC" pin="PC5"/>
 </segment>
 </net>
 <net name="CC_IRQ" class="0">
@@ -29020,26 +29002,16 @@ when screen power is off</text>
 <wire x1="358.14" y1="396.24" x2="355.6" y2="396.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$70" class="0">
-<segment>
-<pinref part="J4" gate="G$1" pin="IM1"/>
-<wire x1="355.6" y1="388.62" x2="358.14" y2="388.62" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="IM3"/>
-<wire x1="355.6" y1="383.54" x2="358.14" y2="383.54" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="388.62" x2="355.6" y2="386.08" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="386.08" x2="355.6" y2="383.54" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="383.54" x2="330.2" y2="383.54" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="IM2"/>
-<wire x1="358.14" y1="386.08" x2="355.6" y2="386.08" width="0.1524" layer="91"/>
-<junction x="355.6" y="386.08"/>
-<junction x="355.6" y="383.54"/>
-</segment>
-</net>
 <net name="TEAR" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="TE"/>
 <wire x1="358.14" y1="294.64" x2="342.9" y2="294.64" width="0.1524" layer="91"/>
 <label x="342.9" y="294.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="_PD" pin="PD3"/>
+<wire x1="83.82" y1="127" x2="73.66" y2="127" width="0.1524" layer="91"/>
+<label x="76.2" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI3_MISO" class="0">
@@ -29048,12 +29020,22 @@ when screen power is off</text>
 <wire x1="358.14" y1="309.88" x2="342.9" y2="309.88" width="0.1524" layer="91"/>
 <label x="342.9" y="309.88" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC3" gate="_PB" pin="PB4"/>
+<wire x1="68.58" y1="193.04" x2="71.12" y2="193.04" width="0.1524" layer="91"/>
+<label x="71.12" y="193.04" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="COMMAND" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="WRX(D/CX)"/>
 <wire x1="358.14" y1="302.26" x2="342.9" y2="302.26" width="0.1524" layer="91"/>
 <label x="342.9" y="302.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="_PD" pin="PD7"/>
+<wire x1="73.66" y1="116.84" x2="83.82" y2="116.84" width="0.1524" layer="91"/>
+<label x="76.2" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LCD7" class="0">
@@ -29152,16 +29134,166 @@ when screen power is off</text>
 <label x="355.6" y="314.96" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="IC3" gate="_PD" pin="PD0"/>
-<wire x1="73.66" y1="134.62" x2="76.2" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$50" class="0">
+<net name="BTN_MENU" class="0">
 <segment>
 <pinref part="IC3" gate="_PD" pin="PD1"/>
 <wire x1="73.66" y1="132.08" x2="76.2" y2="132.08" width="0.1524" layer="91"/>
+<label x="76.2" y="132.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="S7" gate="G$1" pin="2"/>
+<wire x1="312.42" y1="106.68" x2="299.72" y2="106.68" width="0.1524" layer="91"/>
+<label x="299.72" y="106.68" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SPI2_NSS" class="0">
+<segment>
+<pinref part="IC3" gate="_PB" pin="PB12"/>
+<wire x1="68.58" y1="170.18" x2="71.12" y2="170.18" width="0.1524" layer="91"/>
+<label x="71.12" y="170.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="7"/>
+<wire x1="337.82" y1="40.64" x2="332.74" y2="40.64" width="0.1524" layer="91"/>
+<label x="332.74" y="40.64" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="LCD_RD" class="0">
+<segment>
+<pinref part="J4" gate="G$1" pin="RD"/>
+<wire x1="358.14" y1="304.8" x2="342.9" y2="304.8" width="0.1524" layer="91"/>
+<label x="342.9" y="304.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="_PD" pin="PD4"/>
+<wire x1="73.66" y1="124.46" x2="83.82" y2="124.46" width="0.1524" layer="91"/>
+<label x="76.2" y="124.46" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TIM2_CH1" class="0">
+<segment>
+<pinref part="IC3" gate="_PA" pin="PA0"/>
+<wire x1="30.48" y1="203.2" x2="33.02" y2="203.2" width="0.1524" layer="91"/>
+<label x="33.02" y="203.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="7"/>
+<wire x1="322.58" y1="73.66" x2="330.2" y2="73.66" width="0.1524" layer="91"/>
+<label x="325.12" y="73.66" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="TIM2_CH2" class="0">
+<segment>
+<pinref part="IC3" gate="_PA" pin="PA1"/>
+<wire x1="30.48" y1="200.66" x2="33.02" y2="200.66" width="0.1524" layer="91"/>
+<label x="33.02" y="200.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="8"/>
+<wire x1="330.2" y1="71.12" x2="322.58" y2="71.12" width="0.1524" layer="91"/>
+<label x="325.12" y="71.12" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="TIM2_CH3" class="0">
+<segment>
+<pinref part="IC3" gate="_PA" pin="PA2"/>
+<wire x1="30.48" y1="198.12" x2="33.02" y2="198.12" width="0.1524" layer="91"/>
+<label x="33.02" y="198.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="9"/>
+<wire x1="322.58" y1="68.58" x2="330.2" y2="68.58" width="0.1524" layer="91"/>
+<label x="325.12" y="68.58" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="TIM2_CH4" class="0">
+<segment>
+<wire x1="33.02" y1="195.58" x2="30.48" y2="195.58" width="0.1524" layer="91"/>
+<label x="33.02" y="195.58" size="1.778" layer="95"/>
+<pinref part="IC3" gate="_PA" pin="PA3"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="10"/>
+<wire x1="330.2" y1="66.04" x2="322.58" y2="66.04" width="0.1524" layer="91"/>
+<label x="325.12" y="66.04" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="LCD_MODE" class="0">
+<segment>
+<pinref part="IC3" gate="_PB" pin="PB6"/>
+<wire x1="68.58" y1="187.96" x2="71.12" y2="187.96" width="0.1524" layer="91"/>
+<label x="71.12" y="187.96" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="IM1"/>
+<wire x1="355.6" y1="388.62" x2="358.14" y2="388.62" width="0.1524" layer="91"/>
+<pinref part="J4" gate="G$1" pin="IM3"/>
+<wire x1="355.6" y1="383.54" x2="358.14" y2="383.54" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="388.62" x2="355.6" y2="386.08" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="386.08" x2="355.6" y2="383.54" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="383.54" x2="330.2" y2="383.54" width="0.1524" layer="91"/>
+<pinref part="J4" gate="G$1" pin="IM2"/>
+<wire x1="358.14" y1="386.08" x2="355.6" y2="386.08" width="0.1524" layer="91"/>
+<junction x="355.6" y="386.08"/>
+<junction x="355.6" y="383.54"/>
+</segment>
+</net>
+<net name="LCD_ADC_X" class="0">
+<segment>
+<pinref part="IC3" gate="_PC" pin="PC0"/>
+<wire x1="33.02" y1="134.62" x2="40.64" y2="134.62" width="0.1524" layer="91"/>
+<label x="35.56" y="134.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="X-"/>
+<wire x1="358.14" y1="276.86" x2="355.6" y2="276.86" width="0.1524" layer="91"/>
+<label x="355.6" y="276.86" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="LCD_ADC_Y" class="0">
+<segment>
+<pinref part="IC3" gate="_PC" pin="PC1"/>
+<wire x1="40.64" y1="132.08" x2="33.02" y2="132.08" width="0.1524" layer="91"/>
+<label x="35.56" y="132.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="Y-"/>
+<wire x1="358.14" y1="271.78" x2="355.6" y2="271.78" width="0.1524" layer="91"/>
+<label x="355.6" y="271.78" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="BOOT1" class="0">
+<segment>
+<pinref part="IC3" gate="_PB" pin="PB2"/>
+<label x="71.12" y="198.12" size="1.778" layer="95"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="198.12" x2="88.9" y2="198.12" width="0.1524" layer="91"/>
+<junction x="88.9" y="198.12"/>
+<wire x1="88.9" y1="198.12" x2="93.98" y2="198.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LCD_Y" class="0">
+<segment>
+<pinref part="IC3" gate="_PC" pin="PC13"/>
+<wire x1="33.02" y1="99.06" x2="35.56" y2="99.06" width="0.1524" layer="91"/>
+<label x="35.56" y="99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="Y+"/>
+<wire x1="358.14" y1="274.32" x2="355.6" y2="274.32" width="0.1524" layer="91"/>
+<label x="355.6" y="274.32" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="LCD_X" class="0">
+<segment>
+<pinref part="IC3" gate="_PC" pin="PC3"/>
+<wire x1="33.02" y1="127" x2="35.56" y2="127" width="0.1524" layer="91"/>
+<label x="35.56" y="127" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="X+"/>
+<wire x1="358.14" y1="279.4" x2="355.6" y2="279.4" width="0.1524" layer="91"/>
+<label x="355.6" y="279.4" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 </nets>
