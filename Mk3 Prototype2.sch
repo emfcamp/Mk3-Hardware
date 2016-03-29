@@ -23555,18 +23555,6 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </library>
 <library name="dtb">
 <packages>
-<package name="GND-LOOP">
-<pad name="P$3" x="-2.54" y="0" drill="1.15" shape="octagon"/>
-<pad name="P$4" x="2.54" y="0" drill="1.15" shape="octagon"/>
-<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="1.016" layer="51"/>
-<text x="-1.27" y="-0.47625" size="1.016" layer="21" font="vector" ratio="15">GND</text>
-</package>
-<package name="GND-LOOP-0.4">
-<pad name="P$3" x="-5.08" y="0" drill="1.15" shape="octagon"/>
-<pad name="P$4" x="5.08" y="0" drill="1.15" shape="octagon"/>
-<wire x1="-5.08" y1="0" x2="5.08" y2="0" width="1.016" layer="51"/>
-<text x="-1.651" y="-0.60325" size="1.27" layer="21" font="vector" ratio="15">GND</text>
-</package>
 <package name="SWD_PTH_SHROUD">
 <wire x1="-2.6" y1="2.54" x2="2.6" y2="2.54" width="0.127" layer="51"/>
 <wire x1="2.6" y1="2.54" x2="2.6" y2="1.75" width="0.127" layer="51"/>
@@ -23655,14 +23643,6 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </package>
 </packages>
 <symbols>
-<symbol name="GND-LOOP">
-<pin name="1" x="-2.54" y="-5.08" visible="off" length="middle" direction="pas" rot="R90"/>
-<pin name="2" x="2.54" y="-5.08" visible="off" length="middle" direction="pas" rot="R90"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="0" width="0.4064" layer="94"/>
-<text x="-2.54" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-</symbol>
 <symbol name="SWD_10PIN">
 <pin name="SWDAT" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
 <pin name="SWCLK" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
@@ -23682,31 +23662,6 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="GND-LOOP" prefix="G">
-<gates>
-<gate name="G$1" symbol="GND-LOOP" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="GND-LOOP">
-<connects>
-<connect gate="G$1" pin="1" pad="P$3"/>
-<connect gate="G$1" pin="2" pad="P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="L" package="GND-LOOP-0.4">
-<connects>
-<connect gate="G$1" pin="1" pad="P$3"/>
-<connect gate="G$1" pin="2" pad="P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="SWD_SHROUD" prefix="J">
 <gates>
 <gate name="G$1" symbol="SWD_10PIN" x="0" y="0"/>
@@ -25298,9 +25253,6 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="GND78" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND79" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="L3" library="TiLDA Mk3 Parts" deviceset="WE-CBF" device="_0805" value="Bead"/>
-<part name="G1" library="dtb" deviceset="GND-LOOP" device="" value="GND-LOOP"/>
-<part name="GND56" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="GND57" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="IC3" library="TiLDA Mk3 Parts" deviceset="STM32F401V" device=""/>
 <part name="C29" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/2.2u/6.3V/X5R"/>
 <part name="C22" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
@@ -25844,9 +25796,6 @@ when screen power is off</text>
 <instance part="GND78" gate="1" x="238.76" y="170.18"/>
 <instance part="GND79" gate="1" x="254" y="177.8"/>
 <instance part="L3" gate="G$1" x="139.7" y="193.04"/>
-<instance part="G1" gate="G$1" x="673.1" y="17.78"/>
-<instance part="GND56" gate="1" x="670.56" y="10.16"/>
-<instance part="GND57" gate="1" x="675.64" y="10.16"/>
 <instance part="IC3" gate="_PD" x="68.58" y="114.3"/>
 <instance part="IC3" gate="_PE" x="66.04" y="50.8"/>
 <instance part="IC3" gate="_PWR" x="180.34" y="203.2"/>
@@ -26510,14 +26459,6 @@ when screen power is off</text>
 <wire x1="165.1" y1="185.42" x2="165.1" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="182.88" x2="160.02" y2="182.88" width="0.1524" layer="91"/>
 <junction x="160.02" y="182.88"/>
-</segment>
-<segment>
-<pinref part="G1" gate="G$1" pin="1"/>
-<pinref part="GND56" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="G1" gate="G$1" pin="2"/>
-<pinref part="GND57" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="_PWR" pin="VSS4"/>
