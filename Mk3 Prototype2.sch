@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -17416,7 +17416,41 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <text x="2.54" y="0" size="1.778" layer="95">&gt;NAME</text>
 <text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="ER-TFT022-1">
+<symbol name="CC3100MOD">
+<pin name="VBAT_DCDC_DIG" x="-12.7" y="17.78" length="middle" direction="sup"/>
+<pin name="VBAT_DCDC_ANA" x="-12.7" y="15.24" length="middle" direction="sup"/>
+<pin name="VBAT_DCDC_PA" x="-12.7" y="12.7" length="middle" direction="sup"/>
+<pin name="!RESET" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="RESERVED" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="GND" x="-12.7" y="-17.78" length="middle" direction="sup"/>
+<pin name="!HIB" x="40.64" y="2.54" length="middle" direction="in" rot="R180"/>
+<pin name="SPI_CLK" x="40.64" y="0" length="middle" direction="in" rot="R180"/>
+<pin name="SPI_DIN" x="40.64" y="-2.54" length="middle" direction="in" rot="R180"/>
+<pin name="!SPI_CS" x="40.64" y="-7.62" length="middle" direction="in" rot="R180"/>
+<pin name="IRQ" x="40.64" y="-10.16" length="middle" direction="out" rot="R180"/>
+<pin name="SPI_DOUT" x="40.64" y="-5.08" length="middle" direction="out" rot="R180"/>
+<pin name="RF_BG" x="40.64" y="17.78" length="middle" rot="R180"/>
+<pin name="ANT_SEL_1" x="40.64" y="15.24" length="middle" direction="out" rot="R180"/>
+<pin name="ANT_SEL_2" x="40.64" y="12.7" length="middle" direction="out" rot="R180"/>
+<pin name="UART1_TX" x="40.64" y="-15.24" length="middle" direction="out" rot="R180"/>
+<pin name="UART1_RX" x="40.64" y="-17.78" length="middle" direction="in" rot="R180"/>
+<pin name="!UART_RTS" x="40.64" y="-20.32" length="middle" rot="R180"/>
+<pin name="!UART_CTS" x="40.64" y="-22.86" length="middle" rot="R180"/>
+<pin name="TEST_58" x="40.64" y="-27.94" length="middle" direction="out" rot="R180"/>
+<pin name="TEST_59" x="40.64" y="-30.48" length="middle" direction="out" rot="R180"/>
+<pin name="TEST_60" x="40.64" y="-33.02" length="middle" direction="out" rot="R180"/>
+<pin name="TEST_62" x="40.64" y="-35.56" length="middle" direction="out" rot="R180"/>
+<pin name="SOP0" x="40.64" y="-40.64" length="middle" rot="R180"/>
+<pin name="SOP1" x="40.64" y="-43.18" length="middle" rot="R180"/>
+<pin name="SOP2" x="40.64" y="-45.72" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="20.32" x2="35.56" y2="20.32" width="0.254" layer="94"/>
+<wire x1="35.56" y1="20.32" x2="35.56" y2="-48.26" width="0.254" layer="94"/>
+<wire x1="35.56" y1="-48.26" x2="-7.62" y2="-48.26" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-48.26" x2="-7.62" y2="20.32" width="0.254" layer="94"/>
+<text x="-7.62" y="22.86" size="1.778" layer="95" ratio="14">&gt;NAME</text>
+<text x="-7.62" y="20.32" size="1.778" layer="96" ratio="14">&gt;VALUE</text>
+</symbol>
+<symbol name="ER-TFT024-3">
 <pin name="LEDA" x="-7.62" y="25.4" length="middle" direction="pas"/>
 <pin name="LEDK1" x="-7.62" y="22.86" length="middle" direction="pas"/>
 <pin name="LEDK2" x="-7.62" y="20.32" length="middle" direction="pas"/>
@@ -17468,40 +17502,7 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <text x="-2.54" y="30.48" size="1.778" layer="96">&gt;NAME</text>
 <text x="-2.54" y="27.94" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="TE" x="-7.62" y="-83.82" length="middle" direction="out"/>
-</symbol>
-<symbol name="CC3100MOD">
-<pin name="VBAT_DCDC_DIG" x="-12.7" y="17.78" length="middle" direction="sup"/>
-<pin name="VBAT_DCDC_ANA" x="-12.7" y="15.24" length="middle" direction="sup"/>
-<pin name="VBAT_DCDC_PA" x="-12.7" y="12.7" length="middle" direction="sup"/>
-<pin name="!RESET" x="-12.7" y="7.62" length="middle" direction="in"/>
-<pin name="RESERVED" x="-12.7" y="-2.54" length="middle" direction="in"/>
-<pin name="GND" x="-12.7" y="-17.78" length="middle" direction="sup"/>
-<pin name="!HIB" x="40.64" y="2.54" length="middle" direction="in" rot="R180"/>
-<pin name="SPI_CLK" x="40.64" y="0" length="middle" direction="in" rot="R180"/>
-<pin name="SPI_DIN" x="40.64" y="-2.54" length="middle" direction="in" rot="R180"/>
-<pin name="!SPI_CS" x="40.64" y="-7.62" length="middle" direction="in" rot="R180"/>
-<pin name="IRQ" x="40.64" y="-10.16" length="middle" direction="out" rot="R180"/>
-<pin name="SPI_DOUT" x="40.64" y="-5.08" length="middle" direction="out" rot="R180"/>
-<pin name="RF_BG" x="40.64" y="17.78" length="middle" rot="R180"/>
-<pin name="ANT_SEL_1" x="40.64" y="15.24" length="middle" direction="out" rot="R180"/>
-<pin name="ANT_SEL_2" x="40.64" y="12.7" length="middle" direction="out" rot="R180"/>
-<pin name="UART1_TX" x="40.64" y="-15.24" length="middle" direction="out" rot="R180"/>
-<pin name="UART1_RX" x="40.64" y="-17.78" length="middle" direction="in" rot="R180"/>
-<pin name="!UART_RTS" x="40.64" y="-20.32" length="middle" rot="R180"/>
-<pin name="!UART_CTS" x="40.64" y="-22.86" length="middle" rot="R180"/>
-<pin name="TEST_58" x="40.64" y="-27.94" length="middle" direction="out" rot="R180"/>
-<pin name="TEST_59" x="40.64" y="-30.48" length="middle" direction="out" rot="R180"/>
-<pin name="TEST_60" x="40.64" y="-33.02" length="middle" direction="out" rot="R180"/>
-<pin name="TEST_62" x="40.64" y="-35.56" length="middle" direction="out" rot="R180"/>
-<pin name="SOP0" x="40.64" y="-40.64" length="middle" rot="R180"/>
-<pin name="SOP1" x="40.64" y="-43.18" length="middle" rot="R180"/>
-<pin name="SOP2" x="40.64" y="-45.72" length="middle" rot="R180"/>
-<wire x1="-7.62" y1="20.32" x2="35.56" y2="20.32" width="0.254" layer="94"/>
-<wire x1="35.56" y1="20.32" x2="35.56" y2="-48.26" width="0.254" layer="94"/>
-<wire x1="35.56" y1="-48.26" x2="-7.62" y2="-48.26" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-48.26" x2="-7.62" y2="20.32" width="0.254" layer="94"/>
-<text x="-7.62" y="22.86" size="1.778" layer="95" ratio="14">&gt;NAME</text>
-<text x="-7.62" y="20.32" size="1.778" layer="96" ratio="14">&gt;VALUE</text>
+<pin name="LEDK4" x="-7.62" y="15.24" length="middle" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -23418,9 +23419,49 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </device>
 </devices>
 </deviceset>
-<deviceset name="ER-TFT022-1" prefix="J">
+<deviceset name="CC3100MOD" prefix="IC">
 <gates>
-<gate name="G$1" symbol="ER-TFT022-1" x="-7.62" y="25.4"/>
+<gate name="G$1" symbol="CC3100MOD" x="-12.7" y="12.7"/>
+</gates>
+<devices>
+<device name="" package="CC3100MOD">
+<connects>
+<connect gate="G$1" pin="!HIB" pad="4"/>
+<connect gate="G$1" pin="!RESET" pad="35"/>
+<connect gate="G$1" pin="!SPI_CS" pad="8"/>
+<connect gate="G$1" pin="!UART_CTS" pad="51"/>
+<connect gate="G$1" pin="!UART_RTS" pad="44"/>
+<connect gate="G$1" pin="ANT_SEL_1" pad="25"/>
+<connect gate="G$1" pin="ANT_SEL_2" pad="26"/>
+<connect gate="G$1" pin="GND" pad="1 2 16 27 28 30 32 38 43 55 56 57 58 59 60 61 62 63"/>
+<connect gate="G$1" pin="IRQ" pad="11"/>
+<connect gate="G$1" pin="RESERVED" pad="21"/>
+<connect gate="G$1" pin="RF_BG" pad="31"/>
+<connect gate="G$1" pin="SOP0" pad="34"/>
+<connect gate="G$1" pin="SOP1" pad="24"/>
+<connect gate="G$1" pin="SOP2" pad="23"/>
+<connect gate="G$1" pin="SPI_CLK" pad="5"/>
+<connect gate="G$1" pin="SPI_DIN" pad="6"/>
+<connect gate="G$1" pin="SPI_DOUT" pad="7"/>
+<connect gate="G$1" pin="TEST_58" pad="48"/>
+<connect gate="G$1" pin="TEST_59" pad="49"/>
+<connect gate="G$1" pin="TEST_60" pad="50"/>
+<connect gate="G$1" pin="TEST_62" pad="52"/>
+<connect gate="G$1" pin="UART1_RX" pad="47"/>
+<connect gate="G$1" pin="UART1_TX" pad="46"/>
+<connect gate="G$1" pin="VBAT_DCDC_ANA" pad="36"/>
+<connect gate="G$1" pin="VBAT_DCDC_DIG" pad="40"/>
+<connect gate="G$1" pin="VBAT_DCDC_PA" pad="37"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ER-TFT024-3" prefix="J">
+<gates>
+<gate name="G$1" symbol="ER-TFT024-3" x="-7.62" y="7.62"/>
 </gates>
 <devices>
 <device name="" package="FH12-50S-0.5SH">
@@ -23457,6 +23498,7 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <connect gate="G$1" pin="LEDK1" pad="2"/>
 <connect gate="G$1" pin="LEDK2" pad="3"/>
 <connect gate="G$1" pin="LEDK3" pad="4"/>
+<connect gate="G$1" pin="LEDK4" pad="5"/>
 <connect gate="G$1" pin="RD" pad="35"/>
 <connect gate="G$1" pin="RESET" pad="10"/>
 <connect gate="G$1" pin="SDI" pad="34"/>
@@ -23470,46 +23512,6 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <connect gate="G$1" pin="X-" pad="46"/>
 <connect gate="G$1" pin="Y+" pad="45"/>
 <connect gate="G$1" pin="Y-" pad="47"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CC3100MOD" prefix="IC">
-<gates>
-<gate name="G$1" symbol="CC3100MOD" x="-12.7" y="12.7"/>
-</gates>
-<devices>
-<device name="" package="CC3100MOD">
-<connects>
-<connect gate="G$1" pin="!HIB" pad="4"/>
-<connect gate="G$1" pin="!RESET" pad="35"/>
-<connect gate="G$1" pin="!SPI_CS" pad="8"/>
-<connect gate="G$1" pin="!UART_CTS" pad="51"/>
-<connect gate="G$1" pin="!UART_RTS" pad="44"/>
-<connect gate="G$1" pin="ANT_SEL_1" pad="25"/>
-<connect gate="G$1" pin="ANT_SEL_2" pad="26"/>
-<connect gate="G$1" pin="GND" pad="1 2 16 27 28 30 32 38 43 55 56 57 58 59 60 61 62 63"/>
-<connect gate="G$1" pin="IRQ" pad="11"/>
-<connect gate="G$1" pin="RESERVED" pad="21"/>
-<connect gate="G$1" pin="RF_BG" pad="31"/>
-<connect gate="G$1" pin="SOP0" pad="34"/>
-<connect gate="G$1" pin="SOP1" pad="24"/>
-<connect gate="G$1" pin="SOP2" pad="23"/>
-<connect gate="G$1" pin="SPI_CLK" pad="5"/>
-<connect gate="G$1" pin="SPI_DIN" pad="6"/>
-<connect gate="G$1" pin="SPI_DOUT" pad="7"/>
-<connect gate="G$1" pin="TEST_58" pad="48"/>
-<connect gate="G$1" pin="TEST_59" pad="49"/>
-<connect gate="G$1" pin="TEST_60" pad="50"/>
-<connect gate="G$1" pin="TEST_62" pad="52"/>
-<connect gate="G$1" pin="UART1_RX" pad="47"/>
-<connect gate="G$1" pin="UART1_TX" pad="46"/>
-<connect gate="G$1" pin="VBAT_DCDC_ANA" pad="36"/>
-<connect gate="G$1" pin="VBAT_DCDC_DIG" pad="40"/>
-<connect gate="G$1" pin="VBAT_DCDC_PA" pad="37"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -25179,43 +25181,43 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="U3" library="TiLDA Mk3 Parts" deviceset="MCP73831" device=""/>
 <part name="JP3" library="TiLDA Mk3 Parts" deviceset="M02" device="-JST-2MM-SMT"/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
-<part name="C39" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
-<part name="C19" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
-<part name="C11" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
-<part name="C12" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
-<part name="C9" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/2.2u/6.3V/X5R"/>
+<part name="C39" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/100n/10V/X5R"/>
+<part name="C19" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/100n/10V/X5R"/>
+<part name="C11" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/100n/10V/X5R"/>
+<part name="C12" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/100n/10V/X5R"/>
+<part name="C9" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/2.2u/6.3V/X5R"/>
 <part name="GND47" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="C16" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
-<part name="C15" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/10n/25V/X7R"/>
+<part name="C16" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/100n/10V/X5R"/>
+<part name="C15" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/10n/25V/X7R"/>
 <part name="GND48" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R22" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/220K/5%"/>
-<part name="R21" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/220K/5%"/>
-<part name="C33" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/1u/10V/X5R"/>
+<part name="R22" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/220K/5%"/>
+<part name="R21" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/220K/5%"/>
+<part name="C33" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/1u/10V/X5R"/>
 <part name="GND49" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND51" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R33" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
+<part name="R33" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/100K/5%"/>
 <part name="GND52" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND53" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R23" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/22/1%"/>
-<part name="R25" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/22/1%"/>
+<part name="R23" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/22/1%"/>
+<part name="R25" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/22/1%"/>
 <part name="X2" library="TiLDA Mk3 Parts" deviceset="CRYSTAL" device="-3.2-2.5" value="CRYSTAL-3.2-2.5"/>
 <part name="GND54" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND55" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="C21" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/6.2p/50V/NP0"/>
-<part name="C20" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/6.2p/50V/NP0"/>
+<part name="C21" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/6.2p/50V/NP0"/>
+<part name="C20" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/6.2p/50V/NP0"/>
 <part name="GND58" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R6" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/2k/5%"/>
+<part name="R6" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/2k/5%"/>
 <part name="GND59" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND60" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C3" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/4u7/10V/X5R"/>
 <part name="GND61" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="LED5" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT"/>
-<part name="R2" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER"/>
+<part name="R2" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL"/>
 <part name="S5" library="TiLDA Mk3 Parts" deviceset="SWITCH-SPST" device="-SMD-A"/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="C1" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0805K" value="0603/4u7/10V/X5R"/>
 <part name="GND62" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="C10" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/0R"/>
+<part name="C10" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/0R"/>
 <part name="GND65" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
@@ -25230,21 +25232,21 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="TP4" library="TiLDA Mk3 Parts" deviceset="TP" device="4MM"/>
 <part name="TP8" library="TiLDA Mk3 Parts" deviceset="TP" device="4MM"/>
 <part name="TP5" library="TiLDA Mk3 Parts" deviceset="TP" device="4MM"/>
-<part name="R18" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/220k/5%"/>
-<part name="R19" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/220k/5%"/>
+<part name="R18" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/220k/5%"/>
+<part name="R19" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/220k/5%"/>
 <part name="GND70" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND71" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="R26" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
 <part name="LED4" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT"/>
-<part name="C13" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/1u/10V/X5R"/>
-<part name="R5" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/2M2/5%"/>
+<part name="C13" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/1u/10V/X5R"/>
+<part name="R5" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/2M2/5%"/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND72" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND73" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="X3" library="TiLDA Mk3 Parts" deviceset="RESONATOR_EPSON_FC_145" device="" value="ABS07-32.768KHZ-T"/>
-<part name="C23" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/10p/50V/NP0"/>
-<part name="C24" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/10p/50V/NP0"/>
+<part name="C23" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/10p/50V/NP0"/>
+<part name="C24" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/10p/50V/NP0"/>
 <part name="GND74" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND75" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="TP6" library="TiLDA Mk3 Parts" deviceset="TP" device="4MM"/>
@@ -25254,9 +25256,9 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="GND79" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="L3" library="TiLDA Mk3 Parts" deviceset="WE-CBF" device="_0805" value="Bead"/>
 <part name="IC3" library="TiLDA Mk3 Parts" deviceset="STM32F401V" device=""/>
-<part name="C29" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/2.2u/6.3V/X5R"/>
-<part name="C22" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
-<part name="C34" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
+<part name="C29" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/2.2u/6.3V/X5R"/>
+<part name="C22" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/100n/10V/X5R"/>
+<part name="C34" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/100n/10V/X5R"/>
 <part name="SV2" library="TiLDA Mk3 Parts" deviceset="M03" device="PTH"/>
 <part name="D1" library="SparkFun-LED" deviceset="WS2812B" device=""/>
 <part name="GND50" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -25279,14 +25281,14 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND82" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V14" library="supply1" deviceset="+3V3" device=""/>
-<part name="R3" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/220k/5%"/>
-<part name="R4" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/220k/5%"/>
-<part name="C18" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/1u/10V/X5R"/>
+<part name="R3" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/220k/5%"/>
+<part name="R4" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/220k/5%"/>
+<part name="C18" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/1u/10V/X5R"/>
 <part name="GND83" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND84" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="L2" library="TiLDA Mk3 Parts" deviceset="WE-CBF" device="_0805" value="Bead"/>
 <part name="SJ3" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NO" device="YES_SILK"/>
-<part name="R10" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/1k/5%"/>
+<part name="R10" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/1k/5%"/>
 <part name="GND85" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="R24" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0"/>
 <part name="SV1" library="TiLDA Mk3 Parts" deviceset="M03" device="PTH"/>
@@ -25300,13 +25302,13 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="+3V20" library="supply1" deviceset="+3V3" device=""/>
 <part name="Q1" library="TiLDA Mk3 Parts" deviceset="DMMT5401" device=""/>
 <part name="Q2" library="TiLDA Mk3 Parts" deviceset="MOSFET-P" device="-SOT23" value="NTR4101"/>
-<part name="R15" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/47k/5%"/>
-<part name="R16" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/10k/5%"/>
+<part name="R15" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/47k/5%"/>
+<part name="R16" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/10k/5%"/>
 <part name="GND87" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND88" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND89" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R8" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/90k/1%"/>
-<part name="R9" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/22k/1%"/>
+<part name="R8" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/90k/1%"/>
+<part name="R9" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/22k/1%"/>
 <part name="GND90" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="L1" library="TiLDA Mk3 Parts" deviceset="INDUCTOR" device="1210"/>
 <part name="C5" library="passives-7351" deviceset="CAPACITOR" device="0805-N" value="0805/10u/10V/X5R"/>
@@ -25319,7 +25321,7 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="X6" library="con-coax" deviceset="MC-921" device=""/>
 <part name="R41" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="DNP (0ohm)"/>
 <part name="GND95" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="C8" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/4u7/6.3V/X5R"/>
+<part name="C8" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/4u7/6.3V/X5R"/>
 <part name="C41" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/4u7/6.3V/X5R"/>
 <part name="GND96" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C46" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/1u/10V/X5R"/>
@@ -25331,17 +25333,17 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="C7" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/10n/25V/X7R"/>
 <part name="LED2" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT"/>
 <part name="LED3" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT"/>
-<part name="R12" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER"/>
-<part name="R14" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER"/>
+<part name="R12" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL"/>
+<part name="R14" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL"/>
 <part name="GND100" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND101" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C2" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/4u7/6.3V/X5R"/>
-<part name="R7" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/47k/5%"/>
+<part name="R7" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/47k/5%"/>
 <part name="GND92" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="C14" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/1u/10V/X5R"/>
+<part name="C14" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/1u/10V/X5R"/>
 <part name="GND93" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND103" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R11" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
+<part name="R11" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/100K/5%"/>
 <part name="GND104" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="Q3" library="TiLDA Mk3 Parts" deviceset="MOSFET-P" device="-SOT23" value="NTR4101"/>
 <part name="+3V22" library="supply1" deviceset="+3V3" device=""/>
@@ -25351,7 +25353,7 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="+3V23" library="supply1" deviceset="+3V3" device=""/>
 <part name="SJ2" library="TiLDA Mk3 Parts" deviceset="SOLDERJUMPER" device="TRACE"/>
 <part name="LED1" library="TiLDA Mk3 Parts" deviceset="LED" device="5MM"/>
-<part name="R1" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0207/10"/>
+<part name="R1" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL"/>
 <part name="Q5" library="TiLDA Mk3 Parts" deviceset="MOSFET-P" device="-SOT23" value="NTR4101"/>
 <part name="GND105" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V24" library="supply1" deviceset="+3V3" device=""/>
@@ -25361,9 +25363,9 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="GND106" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V25" library="supply1" deviceset="+3V3" device=""/>
 <part name="IC2" library="TiLDA Mk3 Parts" deviceset="NCP1529" device="MU"/>
-<part name="R43" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/220/5%"/>
+<part name="R43" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/220/5%"/>
 <part name="Q6" library="TiLDA Mk3 Parts" deviceset="MOSFET-P" device="-SOT23" value="NTR4101"/>
-<part name="R45" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/220k/5%"/>
+<part name="R45" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/220k/5%"/>
 <part name="GND107" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C27" library="passives-7351" deviceset="CAPACITOR" device="0805-N" value="0805/22u/??V/X5R"/>
 <part name="C40" library="passives-7351" deviceset="CAPACITOR" device="0805-N" value="0805/22u/??V/X5R"/>
@@ -25372,7 +25374,6 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="TP11" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
 <part name="TP14" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
 <part name="ANT2" library="TiLDA Mk3 Parts" deviceset="CHIPANT" device=""/>
-<part name="J4" library="TiLDA Mk3 Parts" deviceset="ER-TFT022-1" device=""/>
 <part name="S7" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD-1101NE"/>
 <part name="TP7" library="TiLDA Mk3 Parts" deviceset="TP" device="4MM"/>
 <part name="IC6" library="TiLDA Mk3 Parts" deviceset="CC3100MOD" device=""/>
@@ -25389,18 +25390,20 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="JP1" library="TiLDA Mk3 Parts" deviceset="M10" device="NOSILK"/>
 <part name="GND2" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V27" library="supply1" deviceset="+3V3" device=""/>
-<part name="R47" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER"/>
-<part name="R48" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER"/>
-<part name="R49" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER"/>
+<part name="R47" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL"/>
+<part name="R48" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL"/>
+<part name="R49" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL"/>
 <part name="GND4" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND110" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND111" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND112" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V28" library="supply1" deviceset="+3V3" device=""/>
-<part name="C38" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/4u7/6.3V/X5R"/>
+<part name="C38" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/4u7/6.3V/X5R"/>
 <part name="C45" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
 <part name="JP2" library="TiLDA Mk3 Parts" deviceset="M10" device="NOSILK"/>
 <part name="GND113" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
+<part name="J2" library="TiLDA Mk3 Parts" deviceset="ER-TFT024-3" device=""/>
+<part name="R44" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL"/>
 </parts>
 <sheets>
 <sheet>
@@ -25500,14 +25503,18 @@ when screen power is off</text>
 <text x="109.22" y="76.2" size="3.81" layer="97" ratio="15">ADC Inputs</text>
 <text x="566.42" y="365.76" size="1.778" layer="91" rot="R90">add footprint for cap</text>
 <text x="322.58" y="383.54" size="1.778" layer="91">0: parallel; 1: serial</text>
-<text x="347.98" y="393.7" size="1.778" layer="91">5 ohm</text>
+<text x="353.06" y="406.4" size="1.778" layer="91" rot="R180">5 ohm</text>
 <text x="81.28" y="175.26" size="1.778" layer="91">led2</text>
 <text x="337.82" y="78.74" size="1.778" layer="91">i2c</text>
 <text x="337.82" y="76.2" size="1.778" layer="91">i2c</text>
-<text x="363.22" y="393.7" size="1.778" layer="91">extra backlight connection if 2.4"</text>
 <text x="322.58" y="292.1" size="1.778" layer="91">is 3.3V fine?</text>
 <text x="58.42" y="48.26" size="1.778" layer="91">unconnected</text>
 <text x="596.9" y="170.18" size="1.778" layer="91">add small resistors to stop shorting agaoinst vcc/gnd</text>
+<wire x1="546.1" y1="104.14" x2="553.72" y2="104.14" width="0.1524" layer="97"/>
+<wire x1="553.72" y1="104.14" x2="553.72" y2="78.74" width="0.1524" layer="97"/>
+<wire x1="553.72" y1="78.74" x2="660.4" y2="78.74" width="0.1524" layer="97"/>
+<wire x1="660.4" y1="78.74" x2="660.4" y2="45.72" width="0.1524" layer="97"/>
+<wire x1="660.4" y1="45.72" x2="640.08" y2="45.72" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -26002,7 +26009,6 @@ when screen power is off</text>
 <attribute name="NAME" x="232.41" y="85.09" size="1.778" layer="95"/>
 </instance>
 <instance part="ANT2" gate="G$1" x="736.6" y="243.84"/>
-<instance part="J4" gate="G$1" x="365.76" y="378.46"/>
 <instance part="S7" gate="G$1" x="312.42" y="111.76" smashed="yes" rot="R270">
 <attribute name="NAME" x="314.96" y="114.3" size="1.778" layer="95" rot="R270"/>
 </instance>
@@ -26051,6 +26057,11 @@ when screen power is off</text>
 <attribute name="NAME" x="347.98" y="29.21" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="GND113" gate="1" x="320.04" y="274.32"/>
+<instance part="J2" gate="G$1" x="365.76" y="378.46"/>
+<instance part="R44" gate="G$1" x="350.52" y="393.7" smashed="yes">
+<attribute name="NAME" x="346.71" y="395.1986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="344.17" y="390.398" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -26657,9 +26668,9 @@ when screen power is off</text>
 <pinref part="GND109" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="GND"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="358.14" y1="284.48" x2="353.06" y2="284.48" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="R47" gate="G$1" pin="1"/>
@@ -26674,36 +26685,28 @@ when screen power is off</text>
 <junction x="342.9" y="396.24"/>
 <junction x="342.9" y="398.78"/>
 <pinref part="GND4" gate="1" pin="GND"/>
+<pinref part="R44" gate="G$1" pin="1"/>
+<wire x1="345.44" y1="393.7" x2="342.9" y2="393.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="DB17"/>
 <wire x1="358.14" y1="358.14" x2="353.06" y2="358.14" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="358.14" x2="353.06" y2="355.6" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="DB8"/>
 <wire x1="353.06" y1="353.06" x2="353.06" y2="350.52" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="347.98" x2="353.06" y2="345.44" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="342.9" x2="353.06" y2="340.36" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="337.82" x2="353.06" y2="335.28" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="335.28" x2="358.14" y2="335.28" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="DB9"/>
 <wire x1="358.14" y1="337.82" x2="353.06" y2="337.82" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="337.82" x2="353.06" y2="340.36" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="DB10"/>
 <wire x1="353.06" y1="340.36" x2="358.14" y2="340.36" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="DB11"/>
 <wire x1="358.14" y1="342.9" x2="353.06" y2="342.9" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="342.9" x2="353.06" y2="345.44" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="DB12"/>
 <wire x1="353.06" y1="345.44" x2="358.14" y2="345.44" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="DB13"/>
 <wire x1="358.14" y1="347.98" x2="353.06" y2="347.98" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="347.98" x2="353.06" y2="350.52" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="DB14"/>
 <wire x1="353.06" y1="350.52" x2="358.14" y2="350.52" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="DB15"/>
 <wire x1="358.14" y1="353.06" x2="353.06" y2="353.06" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="353.06" x2="353.06" y2="355.6" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="DB16"/>
 <wire x1="353.06" y1="355.6" x2="358.14" y2="355.6" width="0.1524" layer="91"/>
 <junction x="353.06" y="337.82"/>
 <junction x="353.06" y="340.36"/>
@@ -26714,27 +26717,37 @@ when screen power is off</text>
 <junction x="353.06" y="353.06"/>
 <junction x="353.06" y="355.6"/>
 <pinref part="GND110" gate="1" pin="GND"/>
+<pinref part="J2" gate="G$1" pin="DB8"/>
+<pinref part="J2" gate="G$1" pin="DB9"/>
+<pinref part="J2" gate="G$1" pin="DB10"/>
+<pinref part="J2" gate="G$1" pin="DB11"/>
+<pinref part="J2" gate="G$1" pin="DB12"/>
+<pinref part="J2" gate="G$1" pin="DB13"/>
+<pinref part="J2" gate="G$1" pin="DB14"/>
+<pinref part="J2" gate="G$1" pin="DB15"/>
+<pinref part="J2" gate="G$1" pin="DB16"/>
+<pinref part="J2" gate="G$1" pin="DB17"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="DOTCLK"/>
 <pinref part="GND111" gate="1" pin="GND"/>
 <wire x1="358.14" y1="368.3" x2="353.06" y2="368.3" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="DE"/>
 <wire x1="358.14" y1="363.22" x2="353.06" y2="363.22" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="363.22" x2="353.06" y2="368.3" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="HSYNC"/>
 <wire x1="358.14" y1="370.84" x2="353.06" y2="370.84" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="370.84" x2="353.06" y2="368.3" width="0.1524" layer="91"/>
 <junction x="353.06" y="368.3"/>
-<pinref part="J4" gate="G$1" pin="VSYNC"/>
 <wire x1="358.14" y1="373.38" x2="353.06" y2="373.38" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="373.38" x2="353.06" y2="370.84" width="0.1524" layer="91"/>
 <junction x="353.06" y="370.84"/>
+<pinref part="J2" gate="G$1" pin="VSYNC"/>
+<pinref part="J2" gate="G$1" pin="HSYNC"/>
+<pinref part="J2" gate="G$1" pin="DOTCLK"/>
+<pinref part="J2" gate="G$1" pin="DE"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="IM0"/>
 <wire x1="358.14" y1="391.16" x2="355.6" y2="391.16" width="0.1524" layer="91"/>
 <pinref part="GND112" gate="1" pin="GND"/>
+<pinref part="J2" gate="G$1" pin="IM0"/>
 </segment>
 <segment>
 <pinref part="C45" gate="G$1" pin="1"/>
@@ -26888,9 +26901,9 @@ when screen power is off</text>
 <label x="360.68" y="243.84" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="RESET"/>
 <wire x1="358.14" y1="378.46" x2="342.9" y2="378.46" width="0.1524" layer="91"/>
 <label x="345.44" y="378.46" size="1.778" layer="95"/>
+<pinref part="J2" gate="G$1" pin="RESET"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="_PD" pin="PD7"/>
@@ -27576,9 +27589,7 @@ when screen power is off</text>
 <pinref part="+3V27" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="VCI"/>
 <wire x1="358.14" y1="287.02" x2="353.06" y2="287.02" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="VDDI"/>
 <wire x1="358.14" y1="289.56" x2="353.06" y2="289.56" width="0.1524" layer="91"/>
 <pinref part="+3V28" gate="G$1" pin="+3V3"/>
 <wire x1="353.06" y1="289.56" x2="325.12" y2="289.56" width="0.1524" layer="91"/>
@@ -27590,6 +27601,8 @@ when screen power is off</text>
 <pinref part="C38" gate="G$1" pin="2"/>
 <junction x="325.12" y="289.56"/>
 <junction x="353.06" y="289.56"/>
+<pinref part="J2" gate="G$1" pin="VDDI"/>
+<pinref part="J2" gate="G$1" pin="VCI"/>
 </segment>
 </net>
 <net name="USB_ID" class="0">
@@ -27944,9 +27957,9 @@ when screen power is off</text>
 <wire x1="363.22" y1="218.44" x2="353.06" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="D/CX(SCL)"/>
 <wire x1="358.14" y1="299.72" x2="342.9" y2="299.72" width="0.1524" layer="91"/>
 <label x="342.9" y="299.72" size="1.778" layer="95"/>
+<pinref part="J2" gate="G$1" pin="D/CX(SCL)"/>
 </segment>
 </net>
 <net name="SPI3_MOSI" class="0">
@@ -27960,9 +27973,9 @@ when screen power is off</text>
 <wire x1="363.22" y1="215.9" x2="353.06" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="SDI"/>
 <wire x1="358.14" y1="307.34" x2="342.9" y2="307.34" width="0.1524" layer="91"/>
 <label x="342.9" y="307.34" size="1.778" layer="95"/>
+<pinref part="J2" gate="G$1" pin="SDI"/>
 </segment>
 </net>
 <net name="I2C_SDA" class="0">
@@ -28589,14 +28602,10 @@ when screen power is off</text>
 </net>
 <net name="N$12" class="0">
 <segment>
-<wire x1="558.8" y1="111.76" x2="546.1" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="546.1" y1="111.76" x2="546.1" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="OUT"/>
 <wire x1="543.56" y1="104.14" x2="546.1" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="546.1" y1="101.6" x2="546.1" y2="104.14" width="0.1524" layer="91"/>
-<junction x="546.1" y="104.14"/>
-<pinref part="IC2" gate="G$1" pin="EN"/>
 </segment>
 </net>
 <net name="SPI3_NSS" class="0">
@@ -28610,9 +28619,9 @@ when screen power is off</text>
 <label x="360.68" y="246.38" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="CSX"/>
 <wire x1="358.14" y1="297.18" x2="342.9" y2="297.18" width="0.1524" layer="91"/>
 <label x="342.9" y="297.18" size="1.778" layer="95"/>
+<pinref part="J2" gate="G$1" pin="CSX"/>
 </segment>
 </net>
 <net name="TIM11_CH1" class="0">
@@ -28898,37 +28907,37 @@ when screen power is off</text>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="J4" gate="G$1" pin="LEDA"/>
 <pinref part="Q3" gate="G$1" pin="D"/>
 <wire x1="358.14" y1="403.86" x2="342.9" y2="403.86" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="LEDA"/>
 </segment>
 </net>
 <net name="N$46" class="0">
 <segment>
 <pinref part="R47" gate="G$1" pin="2"/>
-<pinref part="J4" gate="G$1" pin="LEDK1"/>
 <wire x1="355.6" y1="401.32" x2="358.14" y2="401.32" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="LEDK1"/>
 </segment>
 </net>
 <net name="N$47" class="0">
 <segment>
-<pinref part="J4" gate="G$1" pin="LEDK2"/>
 <pinref part="R48" gate="G$1" pin="2"/>
 <wire x1="358.14" y1="398.78" x2="355.6" y2="398.78" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="LEDK2"/>
 </segment>
 </net>
 <net name="N$49" class="0">
 <segment>
-<pinref part="J4" gate="G$1" pin="LEDK3"/>
 <pinref part="R49" gate="G$1" pin="2"/>
 <wire x1="358.14" y1="396.24" x2="355.6" y2="396.24" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="LEDK3"/>
 </segment>
 </net>
 <net name="TEAR" class="0">
 <segment>
-<pinref part="J4" gate="G$1" pin="TE"/>
 <wire x1="358.14" y1="294.64" x2="342.9" y2="294.64" width="0.1524" layer="91"/>
 <label x="342.9" y="294.64" size="1.778" layer="95"/>
+<pinref part="J2" gate="G$1" pin="TE"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="_PD" pin="PD3"/>
@@ -28938,9 +28947,9 @@ when screen power is off</text>
 </net>
 <net name="SPI3_MISO" class="0">
 <segment>
-<pinref part="J4" gate="G$1" pin="SDO"/>
 <wire x1="358.14" y1="309.88" x2="342.9" y2="309.88" width="0.1524" layer="91"/>
 <label x="342.9" y="309.88" size="1.778" layer="95"/>
+<pinref part="J2" gate="G$1" pin="SDO"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="_PB" pin="PB4"/>
@@ -28950,9 +28959,9 @@ when screen power is off</text>
 </net>
 <net name="COMMAND" class="0">
 <segment>
-<pinref part="J4" gate="G$1" pin="WRX(D/CX)"/>
 <wire x1="358.14" y1="302.26" x2="342.9" y2="302.26" width="0.1524" layer="91"/>
 <label x="342.9" y="302.26" size="1.778" layer="95"/>
+<pinref part="J2" gate="G$1" pin="WRX(D/CX)"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="_PB" pin="PB7"/>
@@ -28967,9 +28976,9 @@ when screen power is off</text>
 <label x="76.2" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="DB7"/>
 <wire x1="358.14" y1="332.74" x2="353.06" y2="332.74" width="0.1524" layer="91"/>
 <label x="355.6" y="332.74" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J2" gate="G$1" pin="DB7"/>
 </segment>
 </net>
 <net name="LCD6" class="0">
@@ -28979,9 +28988,9 @@ when screen power is off</text>
 <label x="76.2" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="DB6"/>
 <wire x1="353.06" y1="330.2" x2="358.14" y2="330.2" width="0.1524" layer="91"/>
 <label x="355.6" y="330.2" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J2" gate="G$1" pin="DB6"/>
 </segment>
 </net>
 <net name="LCD5" class="0">
@@ -28991,9 +29000,9 @@ when screen power is off</text>
 <label x="76.2" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="DB5"/>
 <wire x1="358.14" y1="327.66" x2="353.06" y2="327.66" width="0.1524" layer="91"/>
 <label x="355.6" y="327.66" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J2" gate="G$1" pin="DB5"/>
 </segment>
 </net>
 <net name="LCD4" class="0">
@@ -29003,9 +29012,9 @@ when screen power is off</text>
 <label x="76.2" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="DB4"/>
 <wire x1="353.06" y1="325.12" x2="358.14" y2="325.12" width="0.1524" layer="91"/>
 <label x="355.6" y="325.12" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J2" gate="G$1" pin="DB4"/>
 </segment>
 </net>
 <net name="LCD3" class="0">
@@ -29015,9 +29024,9 @@ when screen power is off</text>
 <label x="76.2" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="DB3"/>
 <wire x1="358.14" y1="322.58" x2="353.06" y2="322.58" width="0.1524" layer="91"/>
 <label x="355.6" y="322.58" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J2" gate="G$1" pin="DB3"/>
 </segment>
 </net>
 <net name="LCD2" class="0">
@@ -29027,9 +29036,9 @@ when screen power is off</text>
 <label x="76.2" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="DB2"/>
 <wire x1="353.06" y1="320.04" x2="358.14" y2="320.04" width="0.1524" layer="91"/>
 <label x="355.6" y="320.04" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J2" gate="G$1" pin="DB2"/>
 </segment>
 </net>
 <net name="LCD1" class="0">
@@ -29039,9 +29048,9 @@ when screen power is off</text>
 <label x="76.2" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="DB1"/>
 <wire x1="358.14" y1="317.5" x2="353.06" y2="317.5" width="0.1524" layer="91"/>
 <label x="355.6" y="317.5" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J2" gate="G$1" pin="DB1"/>
 </segment>
 </net>
 <net name="LCD0" class="0">
@@ -29051,9 +29060,9 @@ when screen power is off</text>
 <label x="76.2" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="DB0"/>
 <wire x1="353.06" y1="314.96" x2="358.14" y2="314.96" width="0.1524" layer="91"/>
 <label x="355.6" y="314.96" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J2" gate="G$1" pin="DB0"/>
 </segment>
 </net>
 <net name="BTN_MENU" class="0">
@@ -29082,9 +29091,9 @@ when screen power is off</text>
 </net>
 <net name="LCD_RD" class="0">
 <segment>
-<pinref part="J4" gate="G$1" pin="RD"/>
 <wire x1="358.14" y1="304.8" x2="342.9" y2="304.8" width="0.1524" layer="91"/>
 <label x="342.9" y="304.8" size="1.778" layer="95"/>
+<pinref part="J2" gate="G$1" pin="RD"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="_PB" pin="PB6"/>
@@ -29142,17 +29151,17 @@ when screen power is off</text>
 </net>
 <net name="LCD_MODE" class="0">
 <segment>
-<pinref part="J4" gate="G$1" pin="IM1"/>
 <wire x1="355.6" y1="388.62" x2="358.14" y2="388.62" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="IM3"/>
 <wire x1="355.6" y1="383.54" x2="358.14" y2="383.54" width="0.1524" layer="91"/>
 <wire x1="355.6" y1="388.62" x2="355.6" y2="386.08" width="0.1524" layer="91"/>
 <wire x1="355.6" y1="386.08" x2="355.6" y2="383.54" width="0.1524" layer="91"/>
 <wire x1="355.6" y1="383.54" x2="330.2" y2="383.54" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="IM2"/>
 <wire x1="358.14" y1="386.08" x2="355.6" y2="386.08" width="0.1524" layer="91"/>
 <junction x="355.6" y="386.08"/>
 <junction x="355.6" y="383.54"/>
+<pinref part="J2" gate="G$1" pin="IM1"/>
+<pinref part="J2" gate="G$1" pin="IM2"/>
+<pinref part="J2" gate="G$1" pin="IM3"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="_PD" pin="PD4"/>
@@ -29167,9 +29176,9 @@ when screen power is off</text>
 <label x="35.56" y="134.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="X-"/>
 <wire x1="358.14" y1="276.86" x2="355.6" y2="276.86" width="0.1524" layer="91"/>
 <label x="355.6" y="276.86" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J2" gate="G$1" pin="X-"/>
 </segment>
 </net>
 <net name="LCD_ADC_Y" class="0">
@@ -29179,9 +29188,9 @@ when screen power is off</text>
 <label x="35.56" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="Y-"/>
 <wire x1="358.14" y1="271.78" x2="355.6" y2="271.78" width="0.1524" layer="91"/>
 <label x="355.6" y="271.78" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J2" gate="G$1" pin="Y-"/>
 </segment>
 </net>
 <net name="LCD_Y" class="0">
@@ -29191,9 +29200,9 @@ when screen power is off</text>
 <label x="35.56" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="Y+"/>
 <wire x1="358.14" y1="274.32" x2="355.6" y2="274.32" width="0.1524" layer="91"/>
 <label x="355.6" y="274.32" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J2" gate="G$1" pin="Y+"/>
 </segment>
 </net>
 <net name="LCD_X" class="0">
@@ -29203,9 +29212,16 @@ when screen power is off</text>
 <label x="35.56" y="127" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="X+"/>
 <wire x1="358.14" y1="279.4" x2="355.6" y2="279.4" width="0.1524" layer="91"/>
 <label x="355.6" y="279.4" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J2" gate="G$1" pin="X+"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="R44" gate="G$1" pin="2"/>
+<pinref part="J2" gate="G$1" pin="LEDK4"/>
+<wire x1="355.6" y1="393.7" x2="358.14" y2="393.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
