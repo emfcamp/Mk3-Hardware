@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -13052,6 +13052,39 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <vertex x="4.14" y="4.63"/>
 </polygon>
 </package>
+<package name="3MMEDGE">
+<pad name="P$1" x="0" y="-3" drill="3" stop="no"/>
+<polygon width="0.1524" layer="1">
+<vertex x="1.94" y="-0.07"/>
+<vertex x="1.94" y="-3" curve="-90"/>
+<vertex x="0" y="-4.94" curve="-90"/>
+<vertex x="-1.94" y="-3"/>
+<vertex x="-1.94" y="-0.07"/>
+</polygon>
+<polygon width="0.1524" layer="16">
+<vertex x="1.94" y="-0.07"/>
+<vertex x="1.94" y="-2.8" curve="-90"/>
+<vertex x="0" y="-4.94" curve="-90"/>
+<vertex x="-1.94" y="-3"/>
+<vertex x="-1.94" y="-0.07"/>
+</polygon>
+<polygon width="0.1524" layer="30">
+<vertex x="1.94" y="-0.07"/>
+<vertex x="1.94" y="-2.8" curve="-90"/>
+<vertex x="0" y="-4.94" curve="-90"/>
+<vertex x="-1.94" y="-3"/>
+<vertex x="-1.94" y="-0.07"/>
+</polygon>
+<polygon width="0.1524" layer="29">
+<vertex x="1.94" y="-0.07"/>
+<vertex x="1.94" y="-3" curve="-90"/>
+<vertex x="0" y="-4.94" curve="-90"/>
+<vertex x="-1.94" y="-3"/>
+<vertex x="-1.94" y="-0.07"/>
+</polygon>
+<wire x1="0" y1="-0.35" x2="1" y2="0" width="0" layer="20" curve="36.869898"/>
+<wire x1="0" y1="-0.35" x2="-1" y2="0" width="0" layer="20" curve="-36.869898"/>
+</package>
 </packages>
 <symbols>
 <symbol name="A3L-LOC">
@@ -20776,6 +20809,14 @@ Simple slide switch. Spark Fun Electronics SKU : COM-00102</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="3MM" package="3MMEDGE">
+<connects>
+<connect gate="G$1" pin="TP" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="WE-CBF" prefix="L" uservalue="yes">
@@ -25200,11 +25241,11 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="GND53" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="R23" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/22/1%"/>
 <part name="R25" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/22/1%"/>
-<part name="X2" library="TiLDA Mk3 Parts" deviceset="CRYSTAL" device="-3.2-2.5" value="CRYSTAL-3.2-2.5"/>
+<part name="X2" library="TiLDA Mk3 Parts" deviceset="CRYSTAL" device="-3.2-2.5" value="16MHz-3.2-2.5"/>
 <part name="GND54" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND55" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="C21" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/6.2p/50V/NP0"/>
-<part name="C20" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/6.2p/50V/NP0"/>
+<part name="C21" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/10p/50V/NP0"/>
+<part name="C20" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/10p/50V/NP0"/>
 <part name="GND58" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="R6" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/2k/5%"/>
 <part name="GND59" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -25226,12 +25267,12 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="GND67" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND68" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND69" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="TP3" library="TiLDA Mk3 Parts" deviceset="TP" device="4MM"/>
-<part name="TP1" library="TiLDA Mk3 Parts" deviceset="TP" device="4MM"/>
-<part name="TP2" library="TiLDA Mk3 Parts" deviceset="TP" device="4MM"/>
-<part name="TP4" library="TiLDA Mk3 Parts" deviceset="TP" device="4MM"/>
-<part name="TP8" library="TiLDA Mk3 Parts" deviceset="TP" device="4MM"/>
-<part name="TP5" library="TiLDA Mk3 Parts" deviceset="TP" device="4MM"/>
+<part name="TP3" library="TiLDA Mk3 Parts" deviceset="TP" device="3MM" value="TP3MM"/>
+<part name="TP1" library="TiLDA Mk3 Parts" deviceset="TP" device="3MM" value="TP3MM"/>
+<part name="TP2" library="TiLDA Mk3 Parts" deviceset="TP" device="3MM" value="TP3MM"/>
+<part name="TP4" library="TiLDA Mk3 Parts" deviceset="TP" device="3MM" value="TP3MM"/>
+<part name="TP8" library="TiLDA Mk3 Parts" deviceset="TP" device="3MM" value="TP3MM"/>
+<part name="TP5" library="TiLDA Mk3 Parts" deviceset="TP" device="3MM" value="TP3MM"/>
 <part name="R18" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/220k/5%"/>
 <part name="R19" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/220k/5%"/>
 <part name="GND70" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -25249,9 +25290,9 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="C24" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/10p/50V/NP0"/>
 <part name="GND74" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND75" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="TP6" library="TiLDA Mk3 Parts" deviceset="TP" device="4MM"/>
-<part name="TP9" library="TiLDA Mk3 Parts" deviceset="TP" device="4MM"/>
-<part name="TP10" library="TiLDA Mk3 Parts" deviceset="TP" device="4MM"/>
+<part name="TP6" library="TiLDA Mk3 Parts" deviceset="TP" device="3MM" value="TP3MM"/>
+<part name="TP9" library="TiLDA Mk3 Parts" deviceset="TP" device="3MM" value="TP3MM"/>
+<part name="TP10" library="TiLDA Mk3 Parts" deviceset="TP" device="3MM" value="TP3MM"/>
 <part name="GND78" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND79" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="L3" library="TiLDA Mk3 Parts" deviceset="WE-CBF" device="_0805" value="Bead"/>
@@ -25353,7 +25394,7 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="+3V23" library="supply1" deviceset="+3V3" device=""/>
 <part name="SJ2" library="TiLDA Mk3 Parts" deviceset="SOLDERJUMPER" device="TRACE"/>
 <part name="LED1" library="TiLDA Mk3 Parts" deviceset="LED" device="5MM"/>
-<part name="R1" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL"/>
+<part name="R1" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0207/10"/>
 <part name="Q5" library="TiLDA Mk3 Parts" deviceset="MOSFET-P" device="-SOT23" value="NTR4101"/>
 <part name="GND105" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V24" library="supply1" deviceset="+3V3" device=""/>
@@ -25375,7 +25416,7 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="TP14" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
 <part name="ANT2" library="TiLDA Mk3 Parts" deviceset="CHIPANT" device=""/>
 <part name="S7" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD-1101NE"/>
-<part name="TP7" library="TiLDA Mk3 Parts" deviceset="TP" device="4MM"/>
+<part name="TP7" library="TiLDA Mk3 Parts" deviceset="TP" device="3MM" value="TP3MM"/>
 <part name="IC6" library="TiLDA Mk3 Parts" deviceset="CC3100MOD" device=""/>
 <part name="ANT1" library="TiLDA Mk3 Parts" deviceset="CHIPANT" device=""/>
 <part name="GND11" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -25465,7 +25506,7 @@ off/on switch</text>
 <wire x1="518.16" y1="271.78" x2="518.16" y2="243.84" width="0.1524" layer="90"/>
 <text x="612.14" y="264.16" size="1.778" layer="90">http://processors.wiki.ti.com/index.php/CC3100_Production_Line_Guide#Programming_the_CC3100_QFN_in_the_Production_Line</text>
 <text x="797.56" y="127" size="2.54" layer="90">aref arrangment, consider to allow Aref changing on gpio</text>
-<text x="589.28" y="114.3" size="1.778" layer="91">spec</text>
+<text x="589.28" y="114.3" size="1.778" layer="91">SRN2512-2R2M</text>
 <text x="627.38" y="76.2" size="1.778" layer="91">close for OTG</text>
 <text x="86.36" y="109.22" size="1.778" layer="91">/ JOY_CEN</text>
 <text x="797.56" y="96.52" size="2.54" layer="90">pull PB2 (BOOT1) low?</text>
@@ -25515,6 +25556,10 @@ when screen power is off</text>
 <wire x1="553.72" y1="78.74" x2="660.4" y2="78.74" width="0.1524" layer="97"/>
 <wire x1="660.4" y1="78.74" x2="660.4" y2="45.72" width="0.1524" layer="97"/>
 <wire x1="660.4" y1="45.72" x2="640.08" y2="45.72" width="0.1524" layer="97"/>
+<text x="586.74" y="119.38" size="1.778" layer="91">wrong package</text>
+<text x="525.78" y="111.76" size="1.778" layer="91">wrong package</text>
+<text x="358.14" y="114.3" size="1.778" layer="91" rot="R180">consider better switches</text>
+<text x="797.56" y="213.36" size="2.54" layer="90">buzzer, accel footprint?</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
