@@ -13085,6 +13085,61 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <wire x1="0" y1="-0.35" x2="1" y2="0" width="0" layer="20" curve="36.869898"/>
 <wire x1="0" y1="-0.35" x2="-1" y2="0" width="0" layer="20" curve="-36.869898"/>
 </package>
+<package name="WSON-6">
+<smd name="1" x="-0.5" y="-0.575" dx="0.75" dy="0.28" layer="1" rot="R90"/>
+<smd name="2" x="0" y="-0.575" dx="0.75" dy="0.28" layer="1" rot="R90"/>
+<smd name="3" x="0.5" y="-0.575" dx="0.75" dy="0.28" layer="1" rot="R90"/>
+<smd name="4" x="0.5" y="0.575" dx="0.75" dy="0.28" layer="1" rot="R90"/>
+<smd name="5" x="0" y="0.575" dx="0.75" dy="0.28" layer="1" rot="R90"/>
+<smd name="6" x="-0.5" y="0.575" dx="0.75" dy="0.28" layer="1" rot="R90"/>
+<wire x1="0.75" y1="0.75" x2="0.75" y2="-0.75" width="0.127" layer="51"/>
+<wire x1="-0.75" y1="0.75" x2="0.75" y2="0.75" width="0.127" layer="51"/>
+<wire x1="-0.75" y1="-0.75" x2="0.75" y2="-0.75" width="0.127" layer="51"/>
+<wire x1="-0.75" y1="0.75" x2="-0.75" y2="-0.75" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="0.75" x2="-0.8" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0.75" x2="0.8" y2="-0.75" width="0.127" layer="21"/>
+<circle x="-0.95" y="-0.75" radius="0.070709375" width="0.127" layer="21"/>
+</package>
+<package name="TO220V">
+<description>&lt;b&gt;TO 200 vertical&lt;/b&gt;</description>
+<wire x1="5.08" y1="-1.143" x2="4.953" y2="-4.064" width="0.127" layer="21"/>
+<wire x1="4.699" y1="-4.318" x2="4.953" y2="-4.064" width="0.127" layer="21"/>
+<wire x1="4.699" y1="-4.318" x2="-4.699" y2="-4.318" width="0.127" layer="21"/>
+<wire x1="-4.953" y1="-4.064" x2="-4.699" y2="-4.318" width="0.127" layer="21"/>
+<wire x1="-4.953" y1="-4.064" x2="-5.08" y2="-1.143" width="0.127" layer="21"/>
+<circle x="-4.4958" y="-3.7084" radius="0.254" width="0.127" layer="21"/>
+<pad name="1" x="-2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="0" y="-2.54" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
+<text x="-5.08" y="-6.0452" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-3.175" y="-3.175" size="1.27" layer="51" ratio="10">1</text>
+<text x="-0.635" y="-3.175" size="1.27" layer="51" ratio="10">2</text>
+<text x="1.905" y="-3.175" size="1.27" layer="51" ratio="10">3</text>
+<rectangle x1="-5.334" y1="-0.762" x2="5.334" y2="0" layer="21"/>
+<rectangle x1="-5.334" y1="-1.27" x2="-3.429" y2="-0.762" layer="21"/>
+<rectangle x1="-1.651" y1="-1.27" x2="-0.889" y2="-0.762" layer="21"/>
+<rectangle x1="-3.429" y1="-1.27" x2="-1.651" y2="-0.762" layer="51"/>
+<rectangle x1="0.889" y1="-1.27" x2="1.651" y2="-0.762" layer="21"/>
+<rectangle x1="3.429" y1="-1.27" x2="5.334" y2="-0.762" layer="21"/>
+<rectangle x1="-0.889" y1="-1.27" x2="0.889" y2="-0.762" layer="51"/>
+<rectangle x1="1.651" y1="-1.27" x2="3.429" y2="-0.762" layer="51"/>
+</package>
+<package name="SOT523">
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="0.4" x2="-0.8" y2="0.4" width="0.15" layer="21"/>
+<wire x1="-0.8" y1="0.4" x2="-0.8" y2="-0.2" width="0.15" layer="21"/>
+<wire x1="0.5" y1="0.4" x2="0.8" y2="0.4" width="0.15" layer="21"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.2" width="0.15" layer="21"/>
+<smd name="3" x="0" y="0.65" dx="0.4" dy="0.51" layer="1"/>
+<smd name="2" x="0.5" y="-0.65" dx="0.4" dy="0.51" layer="1"/>
+<smd name="1" x="-0.5" y="-0.65" dx="0.4" dy="0.51" layer="1"/>
+<text x="-0.9255" y="1.178" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.116" y="-1.4905" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="A3L-LOC">
@@ -17536,6 +17591,59 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <text x="-2.54" y="27.94" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="TE" x="-7.62" y="-83.82" length="middle" direction="out"/>
 <pin name="LEDK4" x="-7.62" y="15.24" length="middle" direction="pas"/>
+</symbol>
+<symbol name="BQ2970">
+<pin name="BAT" x="7.62" y="2.54" length="middle" direction="in" rot="R180"/>
+<pin name="VSS" x="7.62" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="V-" x="-27.94" y="-5.08" length="middle" direction="in"/>
+<pin name="COUT" x="-12.7" y="-15.24" length="middle" direction="out" rot="R90"/>
+<pin name="DOUT" x="-7.62" y="-15.24" length="middle" direction="out" rot="R90"/>
+<wire x1="2.54" y1="7.62" x2="-22.86" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="7.62" x2="-22.86" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="-10.16" x2="2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<text x="-22.86" y="10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="-22.86" y="7.62" size="1.778" layer="95">&gt;VALUE</text>
+</symbol>
+<symbol name="MOSFET-N">
+<wire x1="0.762" y1="0.762" x2="0.762" y2="0" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="3.175" x2="0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="2.54" x2="0.762" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="-1.905" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="0.762" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0.762" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="2.54" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.508" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="2.54" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="4.572" y1="0.762" x2="4.318" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="0.508" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.508" x2="3.302" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.302" y1="0.508" x2="3.048" y2="0.254" width="0.1524" layer="94"/>
+<circle x="2.54" y="-2.54" radius="0.3592" width="0" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.3592" width="0" layer="94"/>
+<text x="5.08" y="0.635" size="1.27" layer="95">&gt;NAME</text>
+<text x="5.08" y="-1.27" size="1.27" layer="96">&gt;VALUE</text>
+<text x="3.175" y="3.175" size="0.8128" layer="93">D</text>
+<text x="3.175" y="-3.81" size="0.8128" layer="93">S</text>
+<text x="-1.27" y="-1.905" size="0.8128" layer="93">G</text>
+<pin name="G" x="-2.54" y="-2.54" visible="pad" length="short"/>
+<pin name="S" x="2.54" y="-5.08" visible="pad" length="short" rot="R90"/>
+<pin name="D" x="2.54" y="5.08" visible="pad" length="short" rot="R270"/>
+<polygon width="0.1524" layer="94">
+<vertex x="3.81" y="0.508"/>
+<vertex x="3.302" y="-0.254"/>
+<vertex x="4.318" y="-0.254"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="1.016" y="0"/>
+<vertex x="2.032" y="0.762"/>
+<vertex x="2.032" y="-0.762"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -23560,6 +23668,107 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </device>
 </devices>
 </deviceset>
+<deviceset name="BQ2970" prefix="IC">
+<gates>
+<gate name="G$1" symbol="BQ2970" x="10.16" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="WSON-6">
+<connects>
+<connect gate="G$1" pin="BAT" pad="5"/>
+<connect gate="G$1" pin="COUT" pad="2"/>
+<connect gate="G$1" pin="DOUT" pad="3"/>
+<connect gate="G$1" pin="V-" pad="6"/>
+<connect gate="G$1" pin="VSS" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOSFET-N" prefix="Q" uservalue="yes">
+<description>&lt;b&gt;N-Channel Mosfet&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;2N7002E - 60V 260mA SOT23 [Digikey: 2N7002ET1GOSTR-ND] - &lt;b&gt;REEL&lt;/b&gt;&lt;/li&gt;
+&lt;li&gt;BSH103 - 30V 850mA SOT23 [Digikey: 568-5013-1-ND]&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="MOSFET-N" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="WAVE" package="SOT23-W">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="REFLOW" package="SOT23">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="GDS_TO220V" package="TO220V">
+<connects>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SC70-3" package="SC70-3-R">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SOT23-SPARK" package="SOT23-3">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SOT23" package="SOT23">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SOT523" package="SOT523">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="supply1">
@@ -25445,6 +25654,9 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="R44" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL"/>
 <part name="JP1" library="TiLDA Mk3 Parts" deviceset="M10" device="NOSILK"/>
 <part name="JP2" library="TiLDA Mk3 Parts" deviceset="M10" device="NOSILK"/>
+<part name="IC7" library="TiLDA Mk3 Parts" deviceset="BQ2970" device=""/>
+<part name="Q4" library="TiLDA Mk3 Parts" deviceset="MOSFET-N" device="-SOT23-SPARK"/>
+<part name="Q7" library="TiLDA Mk3 Parts" deviceset="MOSFET-N" device="-SOT23-SPARK"/>
 </parts>
 <sheets>
 <sheet>
@@ -25560,6 +25772,8 @@ when screen power is off</text>
 <text x="525.78" y="111.76" size="1.778" layer="91">wrong package</text>
 <text x="358.14" y="114.3" size="1.778" layer="91" rot="R180">consider better switches</text>
 <text x="797.56" y="213.36" size="2.54" layer="90">buzzer, accel footprint?</text>
+<text x="589.28" y="20.32" size="1.778" layer="91" rot="R90">BG2970 + FDS9926A;IRFML8244TRPBF</text>
+<text x="553.72" y="-17.78" size="1.778" layer="91">check</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -26107,6 +26321,9 @@ when screen power is off</text>
 <instance part="JP2" gate="G$1" x="347.98" y="35.56" smashed="yes" rot="R180">
 <attribute name="NAME" x="347.98" y="26.67" size="1.778" layer="95" rot="R180"/>
 </instance>
+<instance part="IC7" gate="G$1" x="563.88" y="17.78"/>
+<instance part="Q4" gate="G$1" x="548.64" y="-10.16"/>
+<instance part="Q7" gate="G$1" x="558.8" y="-10.16"/>
 </instances>
 <busses>
 </busses>
