@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -13140,6 +13140,39 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <text x="-0.9255" y="1.178" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.116" y="-1.4905" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
+<package name="3.5MMEDGE">
+<pad name="P$1" x="0" y="-3.25" drill="3.5" stop="no"/>
+<polygon width="0.1524" layer="1">
+<vertex x="2.19" y="-0.07"/>
+<vertex x="2.19" y="-3.25" curve="-90"/>
+<vertex x="0" y="-5.44" curve="-90"/>
+<vertex x="-2.19" y="-3.25"/>
+<vertex x="-2.19" y="-0.07"/>
+</polygon>
+<polygon width="0.1524" layer="16">
+<vertex x="2.19" y="-0.07"/>
+<vertex x="2.19" y="-3.05" curve="-90"/>
+<vertex x="0" y="-5.44" curve="-90"/>
+<vertex x="-2.19" y="-3.25"/>
+<vertex x="-2.19" y="-0.07"/>
+</polygon>
+<polygon width="0.1524" layer="30">
+<vertex x="2.19" y="-0.07"/>
+<vertex x="2.19" y="-3.3" curve="-90"/>
+<vertex x="0" y="-5.44" curve="-90"/>
+<vertex x="-2.19" y="-3.25"/>
+<vertex x="-2.19" y="-0.07"/>
+</polygon>
+<polygon width="0.1524" layer="29">
+<vertex x="2.19" y="-0.07"/>
+<vertex x="2.19" y="-3.25" curve="-90"/>
+<vertex x="0" y="-5.44" curve="-90"/>
+<vertex x="-2.19" y="-3.25"/>
+<vertex x="-2.19" y="-0.07"/>
+</polygon>
+<wire x1="0" y1="-0.35" x2="1" y2="0" width="0" layer="20" curve="36.869898"/>
+<wire x1="0" y1="-0.35" x2="-1" y2="0" width="0" layer="20" curve="-36.869898"/>
+</package>
 </packages>
 <symbols>
 <symbol name="A3L-LOC">
@@ -20925,6 +20958,14 @@ Simple slide switch. Spark Fun Electronics SKU : COM-00102</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="3.5MMEDGE" package="3.5MMEDGE">
+<connects>
+<connect gate="G$1" pin="TP" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="WE-CBF" prefix="L" uservalue="yes">
@@ -25276,6 +25317,286 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 </deviceset>
 </devicesets>
 </library>
+<library name="tag-connect">
+<description>&lt;h3&gt;TAG-CONNECT ICSP Connector&lt;/h3&gt;&lt;BR&gt;&lt;I&gt;Manufacturer:&lt;/I&gt; &lt;a href="http://www.tag-connect.com"&gt;Tag-Connect&lt;/a&gt;&lt;BR&gt;
+&lt;BR&gt;Cable for easy In-Circuit Serial Programming. Designed for Microchip ICD2, suitable for many others.&lt;BR&gt;
+Two variants - one "with legs" (for hands-free fit on PCB) and another "without legs" for quick programming.
+
+&lt;p&gt;
+&lt;TABLE cellspacing=0 cellpadding=0 border=0&gt;
+&lt;TR&gt;&lt;TD width=20&gt;&lt;/TD&gt;&lt;TD&gt;
+&lt;TABLE cellspacing=0 cellpadding=1 border=1&gt;
+&lt;TR bgcolor=silver&gt;&lt;TD align=center&gt;PAD&lt;/TD&gt;&lt;TD align=center&gt;Description&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;1&lt;/TD&gt;&lt;TD&gt;MCLR/Vpp&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;2&lt;/TD&gt;&lt;TD&gt;Vdd&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;3&lt;/TD&gt;&lt;TD&gt;GND&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;4&lt;/TD&gt;&lt;TD&gt;PGD (ISPDAT)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;5&lt;/TD&gt;&lt;TD&gt;PGC (ISPCLK)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;6&lt;/TD&gt;&lt;TD&gt;nc (used for LVP)&lt;/TD&gt;&lt;/TR&gt;
+&lt;/TABLE&gt;
+&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;BR&gt;&lt;BR&gt;
+
+©2009 ROFA.cz - modified and updated by Robert Darlington &amp;#8249;rdarlington@gmail.com&amp;#8250;</description>
+<packages>
+<package name="TC2030-MCP-NL">
+<description>&lt;B&gt;TAG-CONNECT ICSP Connector&lt;/B&gt;&lt;BR&gt;&lt;I&gt;Manufacturer:&lt;/I&gt; &lt;a href="www.tag-connect.com"&gt;Tag-Connect&lt;/a&gt;&lt;BR&gt;
+&lt;BR&gt;Cable for easy In-Circuit Serial Programming. Designed for Microchip ICD2, suitable for many others.&lt;BR&gt;
+
+&lt;TABLE cellspacing=0 cellpadding=0 border=0&gt;
+&lt;TR&gt;&lt;TD width=20&gt;&lt;/TD&gt;&lt;TD&gt;
+&lt;TABLE cellspacing=0 cellpadding=1 border=1&gt;
+&lt;TR bgcolor=silver&gt;&lt;TD align=center&gt;PAD&lt;/TD&gt;&lt;TD align=center&gt;Description&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;1&lt;/TD&gt;&lt;TD&gt;MCLR/Vpp&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;2&lt;/TD&gt;&lt;TD&gt;Vdd&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;3&lt;/TD&gt;&lt;TD&gt;GND&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;4&lt;/TD&gt;&lt;TD&gt;PGD (ISPDAT)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;5&lt;/TD&gt;&lt;TD&gt;PGC (ISPCLK)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;6&lt;/TD&gt;&lt;TD&gt;nc (used for LVP)&lt;/TD&gt;&lt;/TR&gt;
+&lt;/TABLE&gt;
+&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;BR&gt;&lt;BR&gt;
+
+©2009 ROFA.cz - modified and updated by Robert Darlington &amp;#8249;rdarlington@gmail.com&amp;#8250;</description>
+<smd name="2" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="4" x="2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="6" x="3.81" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="5" x="3.81" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="3" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="1" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;name</text>
+<hole x="0" y="0" drill="0.889"/>
+<hole x="5.08" y="-1.016" drill="0.889"/>
+<hole x="5.08" y="1.016" drill="0.889"/>
+<polygon width="0.0254" layer="39">
+<vertex x="1.27" y="-0.2413"/>
+<vertex x="1.6637" y="-0.2413"/>
+<vertex x="1.6637" y="-0.635"/>
+<vertex x="2.1463" y="-0.635"/>
+<vertex x="2.1463" y="-0.2413"/>
+<vertex x="2.9337" y="-0.2413"/>
+<vertex x="2.9337" y="-0.635"/>
+<vertex x="3.4163" y="-0.635"/>
+<vertex x="3.4163" y="-0.2413"/>
+<vertex x="3.81" y="-0.2413"/>
+<vertex x="3.81" y="0.2413"/>
+<vertex x="3.4163" y="0.2413"/>
+<vertex x="3.4163" y="0.635"/>
+<vertex x="2.9337" y="0.635"/>
+<vertex x="2.9337" y="0.2413"/>
+<vertex x="2.1463" y="0.2413"/>
+<vertex x="2.1463" y="0.635"/>
+<vertex x="1.6637" y="0.635"/>
+<vertex x="1.6637" y="0.2413"/>
+<vertex x="1.27" y="0.2413"/>
+</polygon>
+</package>
+<package name="TC2030-MCP">
+<description>&lt;b&gt;TAG-CONNECT ICSP Connector&lt;/b&gt; - Legged version&lt;BR&gt;&lt;I&gt;Manufacturer:&lt;/I&gt; &lt;a href="http://www.tag-connect.com"&gt;Tag-Connect&lt;/a&gt;
+&lt;p&gt;
+Cable for easy In-Circuit Serial Programming. Designed for Microchip ICD2, suitable for many others.
+&lt;p&gt;
+&lt;b&gt;NOTE:&lt;/b&gt; Eagle's default spacing for drill holes does not leave sufficent room for routing traces for this footprint and should be adjusted. &lt;br&gt;
+This setting can be found in the board layout editor under the Edit menu.  Select "Design Rules" and then the Distance tab.  8 mils for Drill/Hole works well.
+&lt;br&gt;
+&lt;TABLE cellspacing=0 cellpadding=0 border=0&gt;
+&lt;TR&gt;&lt;TD width=20&gt;&lt;/TD&gt;&lt;TD&gt;
+&lt;TABLE cellspacing=0 cellpadding=1 border=1&gt;
+&lt;TR bgcolor=silver&gt;&lt;TD align=center&gt;PAD&lt;/TD&gt;&lt;TD align=center&gt;Description&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;1&lt;/TD&gt;&lt;TD&gt;MCLR/Vpp&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;2&lt;/TD&gt;&lt;TD&gt;Vdd&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;3&lt;/TD&gt;&lt;TD&gt;GND&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;4&lt;/TD&gt;&lt;TD&gt;PGD (ISPDAT)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;5&lt;/TD&gt;&lt;TD&gt;PGC (ISPCLK)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;6&lt;/TD&gt;&lt;TD&gt;nc (used for LVP)&lt;/TD&gt;&lt;/TR&gt;
+&lt;/TABLE&gt;
+&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;BR&gt;&lt;BR&gt;
+©2009 ROFA.cz - modified and updated by Robert Darlington &amp;#8249;rdarlington@gmail.com&amp;#8250;</description>
+<smd name="2" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="4" x="2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="6" x="3.81" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="5" x="3.81" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="3" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="1" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<text x="-1.27" y="-2.54" size="1.27" layer="25" rot="R90">&gt;name</text>
+<hole x="0" y="0" drill="0.889"/>
+<hole x="5.08" y="-1.016" drill="0.889"/>
+<hole x="5.08" y="1.016" drill="0.889"/>
+<hole x="0" y="2.54" drill="2.3748"/>
+<hole x="0" y="-2.54" drill="2.3748"/>
+<hole x="3.175" y="-2.54" drill="2.3748"/>
+<hole x="3.175" y="2.54" drill="2.3748"/>
+<polygon width="0.0254" layer="39">
+<vertex x="1.27" y="-0.2413"/>
+<vertex x="1.6637" y="-0.2413"/>
+<vertex x="1.6637" y="-0.635"/>
+<vertex x="2.1463" y="-0.635"/>
+<vertex x="2.1463" y="-0.2413"/>
+<vertex x="2.9337" y="-0.2413"/>
+<vertex x="2.9337" y="-0.635"/>
+<vertex x="3.4163" y="-0.635"/>
+<vertex x="3.4163" y="-0.2413"/>
+<vertex x="3.81" y="-0.2413"/>
+<vertex x="3.81" y="0.2413"/>
+<vertex x="3.4163" y="0.2413"/>
+<vertex x="3.4163" y="0.635"/>
+<vertex x="2.9337" y="0.635"/>
+<vertex x="2.9337" y="0.2413"/>
+<vertex x="2.1463" y="0.2413"/>
+<vertex x="2.1463" y="0.635"/>
+<vertex x="1.6637" y="0.635"/>
+<vertex x="1.6637" y="0.2413"/>
+<vertex x="1.27" y="0.2413"/>
+</polygon>
+</package>
+<package name="TC2030-MCP-NL-CP">
+<description>&lt;B&gt;TAG-CONNECT ICSP Connector&lt;/B&gt;&lt;I&gt;- with optional copper pads for steel alignment pins&lt;/I&gt;&lt;BR&gt;&lt;I&gt;Manufacturer:&lt;/I&gt; &lt;a href="http://www.tag-connect.com"&gt;Tag-Connect&lt;/a&gt;&lt;BR&gt;
+&lt;BR&gt;Cable for easy In-Circuit Serial Programming. Designed for Microchip ICD2, suitable for many others.
+&lt;p&gt;
+&lt;b&gt;NOTE:&lt;/b&gt; Eagle's default spacing for drill holes does not leave sufficent room for routing traces for this footprint and should be adjusted. &lt;br&gt;
+This setting can be found in the board layout editor under the Edit menu.  Select "Design Rules" and then the Distance tab.  8 mils for Drill/Hole works well.
+&lt;br&gt;
+&lt;TABLE cellspacing=0 cellpadding=0 border=0&gt;
+&lt;TR&gt;&lt;TD width=20&gt;&lt;/TD&gt;&lt;TD&gt;
+&lt;TABLE cellspacing=0 cellpadding=1 border=1&gt;
+&lt;TR bgcolor=silver&gt;&lt;TD align=center&gt;PAD&lt;/TD&gt;&lt;TD align=center&gt;Description&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;1&lt;/TD&gt;&lt;TD&gt;MCLR/Vpp&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;2&lt;/TD&gt;&lt;TD&gt;Vdd&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;3&lt;/TD&gt;&lt;TD&gt;GND&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;4&lt;/TD&gt;&lt;TD&gt;PGD (ISPDAT)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;5&lt;/TD&gt;&lt;TD&gt;PGC (ISPCLK)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;6&lt;/TD&gt;&lt;TD&gt;nc (used for LVP)&lt;/TD&gt;&lt;/TR&gt;
+&lt;/TABLE&gt;
+&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;BR&gt;&lt;BR&gt;
+
+&lt;B&gt;Note:&lt;/B&gt; Suitable Receptacle pins are 0295-0-15-xx-06-xx-10-0 series from &lt;a href="www.mill-max.com"&gt;Mill-Max&lt;/a&gt;&lt;BR&gt;&lt;BR&gt;
+
+©2009 ROFA.cz - modified and updated by Robert Darlington &amp;#8249;rdarlington@gmail.com&amp;#8250;</description>
+<smd name="2" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="4" x="2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="6" x="3.81" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="5" x="3.81" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="3" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="1" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<text x="-1.27" y="1.905" size="1.27" layer="25">&gt;name</text>
+<hole x="0" y="0" drill="1.6"/>
+<hole x="5.08" y="1.016" drill="1.6"/>
+<hole x="5.08" y="-1.016" drill="1.6"/>
+<polygon width="0.0254" layer="39">
+<vertex x="1.27" y="-0.2413"/>
+<vertex x="1.6637" y="-0.2413"/>
+<vertex x="1.6637" y="-0.635"/>
+<vertex x="2.1463" y="-0.635"/>
+<vertex x="2.1463" y="-0.2413"/>
+<vertex x="2.9337" y="-0.2413"/>
+<vertex x="2.9337" y="-0.635"/>
+<vertex x="3.4163" y="-0.635"/>
+<vertex x="3.4163" y="-0.2413"/>
+<vertex x="3.81" y="-0.2413"/>
+<vertex x="3.81" y="0.2413"/>
+<vertex x="3.4163" y="0.2413"/>
+<vertex x="3.4163" y="0.635"/>
+<vertex x="2.9337" y="0.635"/>
+<vertex x="2.9337" y="0.2413"/>
+<vertex x="2.1463" y="0.2413"/>
+<vertex x="2.1463" y="0.635"/>
+<vertex x="1.6637" y="0.635"/>
+<vertex x="1.6637" y="0.2413"/>
+<vertex x="1.27" y="0.2413"/>
+</polygon>
+<polygon width="0.0254" layer="16">
+<vertex x="3.556" y="-1.016" curve="90"/>
+<vertex x="5.08" y="-2.54" curve="90"/>
+<vertex x="6.604" y="-1.016"/>
+<vertex x="6.604" y="1.016" curve="90"/>
+<vertex x="5.08" y="2.54" curve="90"/>
+<vertex x="3.556" y="1.016"/>
+</polygon>
+<polygon width="0.0254" layer="16">
+<vertex x="-1.524" y="0" curve="-90"/>
+<vertex x="0" y="1.524" curve="-90"/>
+<vertex x="1.524" y="0" curve="-90"/>
+<vertex x="0" y="-1.524" curve="-90"/>
+</polygon>
+<polygon width="0.254" layer="30">
+<vertex x="3.556" y="-1.016" curve="90"/>
+<vertex x="5.08" y="-2.54" curve="90"/>
+<vertex x="6.604" y="-1.016"/>
+<vertex x="6.604" y="1.016" curve="90"/>
+<vertex x="5.08" y="2.54" curve="90"/>
+<vertex x="3.556" y="1.016"/>
+</polygon>
+<polygon width="0.254" layer="30">
+<vertex x="-1.524" y="0" curve="-90"/>
+<vertex x="0" y="1.524" curve="-90"/>
+<vertex x="1.524" y="0" curve="-90"/>
+<vertex x="0" y="-1.524" curve="-90"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="SWD">
+<pin name="VCC" x="5.08" y="2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND" x="5.08" y="-10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="SWDAT" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="SWCLK" x="5.08" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="RST" x="5.08" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="SWO" x="5.08" y="-7.62" length="middle" direction="in" rot="R180"/>
+<wire x1="0" y1="5.08" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
+<text x="-12.7" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TC2030-SWD" prefix="JP">
+<gates>
+<gate name="G$1" symbol="SWD" x="5.08" y="2.54"/>
+</gates>
+<devices>
+<device name="NL" package="TC2030-MCP-NL">
+<connects>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="RST" pad="3"/>
+<connect gate="G$1" pin="SWCLK" pad="4"/>
+<connect gate="G$1" pin="SWDAT" pad="2"/>
+<connect gate="G$1" pin="SWO" pad="6"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="TC2030-MCP">
+<connects>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="RST" pad="3"/>
+<connect gate="G$1" pin="SWCLK" pad="4"/>
+<connect gate="G$1" pin="SWDAT" pad="2"/>
+<connect gate="G$1" pin="SWO" pad="6"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NL-CP" package="TC2030-MCP-NL-CP">
+<connects>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="RST" pad="3"/>
+<connect gate="G$1" pin="SWCLK" pad="4"/>
+<connect gate="G$1" pin="SWDAT" pad="2"/>
+<connect gate="G$1" pin="SWO" pad="6"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -25458,7 +25779,6 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="GND58" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="R6" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/2k/5%"/>
 <part name="GND59" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="GND60" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C3" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/4u7/10V/X5R"/>
 <part name="GND61" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="LED5" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT"/>
@@ -25476,12 +25796,12 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="GND67" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND68" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND69" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="TP3" library="TiLDA Mk3 Parts" deviceset="TP" device="3MM" value="TP3MM"/>
-<part name="TP1" library="TiLDA Mk3 Parts" deviceset="TP" device="3MM" value="TP3MM"/>
-<part name="TP2" library="TiLDA Mk3 Parts" deviceset="TP" device="3MM" value="TP3MM"/>
-<part name="TP4" library="TiLDA Mk3 Parts" deviceset="TP" device="3MM" value="TP3MM"/>
-<part name="TP8" library="TiLDA Mk3 Parts" deviceset="TP" device="3MM" value="TP3MM"/>
-<part name="TP5" library="TiLDA Mk3 Parts" deviceset="TP" device="3MM" value="TP3MM"/>
+<part name="TP3" library="TiLDA Mk3 Parts" deviceset="TP" device="3.5MMEDGE" value="TP3.5MMEDGE"/>
+<part name="TP1" library="TiLDA Mk3 Parts" deviceset="TP" device="3.5MMEDGE" value="TP3.5MMEDGE"/>
+<part name="TP2" library="TiLDA Mk3 Parts" deviceset="TP" device="3.5MMEDGE" value="TP3.5MMEDGE"/>
+<part name="TP4" library="TiLDA Mk3 Parts" deviceset="TP" device="3.5MMEDGE" value="TP3.5MMEDGE"/>
+<part name="TP8" library="TiLDA Mk3 Parts" deviceset="TP" device="3.5MMEDGE" value="TP3.5MMEDGE"/>
+<part name="TP5" library="TiLDA Mk3 Parts" deviceset="TP" device="3.5MMEDGE" value="TP3.5MMEDGE"/>
 <part name="R18" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/220k/5%"/>
 <part name="R19" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/220k/5%"/>
 <part name="GND70" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -25499,9 +25819,9 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="C24" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/10p/50V/NP0"/>
 <part name="GND74" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND75" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="TP6" library="TiLDA Mk3 Parts" deviceset="TP" device="3MM" value="TP3MM"/>
-<part name="TP9" library="TiLDA Mk3 Parts" deviceset="TP" device="3MM" value="TP3MM"/>
-<part name="TP10" library="TiLDA Mk3 Parts" deviceset="TP" device="3MM" value="TP3MM"/>
+<part name="TP6" library="TiLDA Mk3 Parts" deviceset="TP" device="3.5MMEDGE" value="TP3.5MMEDGE"/>
+<part name="TP9" library="TiLDA Mk3 Parts" deviceset="TP" device="3.5MMEDGE" value="TP3.5MMEDGE"/>
+<part name="TP10" library="TiLDA Mk3 Parts" deviceset="TP" device="3.5MMEDGE" value="TP3.5MMEDGE"/>
 <part name="GND78" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND79" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="L3" library="TiLDA Mk3 Parts" deviceset="WE-CBF" device="_0805" value="Bead"/>
@@ -25595,7 +25915,6 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="GND103" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="R11" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/100K/5%"/>
 <part name="GND104" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="Q3" library="TiLDA Mk3 Parts" deviceset="MOSFET-P" device="-SOT23" value="NTR4101"/>
 <part name="+3V22" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="C4" library="TiLDA Mk3 Parts" deviceset="CPOL-EU" device="E2.5-6" value="DNP (OTG)"/>
@@ -25604,7 +25923,6 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="SJ2" library="TiLDA Mk3 Parts" deviceset="SOLDERJUMPER" device="TRACE"/>
 <part name="LED1" library="TiLDA Mk3 Parts" deviceset="LED" device="5MM"/>
 <part name="R1" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0207/10"/>
-<part name="Q5" library="TiLDA Mk3 Parts" deviceset="MOSFET-P" device="-SOT23" value="NTR4101"/>
 <part name="GND105" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V24" library="supply1" deviceset="+3V3" device=""/>
 <part name="Z1" library="TiLDA Mk3 Parts" deviceset="VARISTOR" device="CN0603"/>
@@ -25625,13 +25943,13 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="TP14" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
 <part name="ANT2" library="TiLDA Mk3 Parts" deviceset="CHIPANT" device=""/>
 <part name="S7" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD-1101NE"/>
-<part name="TP7" library="TiLDA Mk3 Parts" deviceset="TP" device="3MM" value="TP3MM"/>
+<part name="TP7" library="TiLDA Mk3 Parts" deviceset="TP" device="3.5MMEDGE" value="TP3.5MMEDGE"/>
 <part name="IC6" library="TiLDA Mk3 Parts" deviceset="CC3100MOD" device=""/>
 <part name="ANT1" library="TiLDA Mk3 Parts" deviceset="CHIPANT" device=""/>
 <part name="GND11" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R17" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/10K/5%"/>
+<part name="R17" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/10K/5%"/>
 <part name="GND43" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R20" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="R0402-SMALLER" value="0402/100K/5%"/>
+<part name="R20" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0402/100K/5%"/>
 <part name="+3V26" library="supply1" deviceset="+3V3" device=""/>
 <part name="SV7" library="TiLDA Mk3 Parts" deviceset="M03" device="PTH"/>
 <part name="GND108" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -25642,13 +25960,11 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="R47" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL"/>
 <part name="R48" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL"/>
 <part name="R49" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL"/>
-<part name="GND4" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND110" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND111" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND112" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V28" library="supply1" deviceset="+3V3" device=""/>
 <part name="C38" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/4u7/6.3V/X5R"/>
-<part name="C45" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0402-SMALLER" value="0402/100n/10V/X5R"/>
 <part name="GND113" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="J2" library="TiLDA Mk3 Parts" deviceset="ER-TFT024-3" device=""/>
 <part name="R44" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL"/>
@@ -25657,6 +25973,17 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <part name="IC7" library="TiLDA Mk3 Parts" deviceset="BQ2970" device=""/>
 <part name="Q4" library="TiLDA Mk3 Parts" deviceset="MOSFET-N" device="-SOT23-SPARK"/>
 <part name="Q7" library="TiLDA Mk3 Parts" deviceset="MOSFET-N" device="-SOT23-SPARK"/>
+<part name="GND56" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
+<part name="R50" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="2k2"/>
+<part name="R51" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="330"/>
+<part name="C48" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/??/X5R"/>
+<part name="Q8" library="TiLDA Mk3 Parts" deviceset="MOSFET-N" device="-SOT23-SPARK"/>
+<part name="GND4" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
+<part name="C45" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0402/100n/6.3V/X5R"/>
+<part name="Q3" library="TiLDA Mk3 Parts" deviceset="MOSFET-N" device="-SOT23-SPARK"/>
+<part name="JP4" library="tag-connect" deviceset="TC2030-SWD" device="NL"/>
+<part name="+3V29" library="supply1" deviceset="+3V3" device=""/>
+<part name="GND57" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -25772,8 +26099,9 @@ when screen power is off</text>
 <text x="525.78" y="111.76" size="1.778" layer="91">wrong package</text>
 <text x="358.14" y="114.3" size="1.778" layer="91" rot="R180">consider better switches</text>
 <text x="797.56" y="213.36" size="2.54" layer="90">buzzer, accel footprint?</text>
-<text x="589.28" y="20.32" size="1.778" layer="91" rot="R90">BG2970 + FDS9926A;IRFML8244TRPBF</text>
-<text x="553.72" y="-17.78" size="1.778" layer="91">check</text>
+<text x="637.54" y="-71.12" size="1.778" layer="91" rot="R180">BG2970 + FDS9926A;IRFML8244TRPBF</text>
+<text x="609.6" y="-60.96" size="1.778" layer="91">check</text>
+<text x="93.98" y="203.2" size="1.778" layer="91" rot="R90">&lt; should be pulled down..?</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -25945,7 +26273,7 @@ when screen power is off</text>
 <attribute name="NAME" x="335.28" y="111.76" size="1.778" layer="95"/>
 </instance>
 <instance part="U3" gate="G$1" x="553.72" y="55.88"/>
-<instance part="JP3" gate="G$1" x="596.9" y="38.1" rot="R90"/>
+<instance part="JP3" gate="G$1" x="650.24" y="-27.94" rot="MR0"/>
 <instance part="+3V5" gate="G$1" x="254" y="228.6"/>
 <instance part="C39" gate="G$1" x="231.14" y="200.66" rot="R180"/>
 <instance part="C19" gate="G$1" x="236.22" y="200.66" rot="R180"/>
@@ -25989,12 +26317,11 @@ when screen power is off</text>
 <attribute name="VALUE" x="568.198" y="54.61" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND59" gate="1" x="571.5" y="35.56"/>
-<instance part="GND60" gate="1" x="596.9" y="48.26" rot="R180"/>
 <instance part="C3" gate="G$1" x="581.66" y="50.8" smashed="yes" rot="R180">
 <attribute name="NAME" x="582.041" y="50.8" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="579.501" y="50.8" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND61" gate="1" x="581.66" y="22.86"/>
+<instance part="GND61" gate="1" x="581.66" y="43.18"/>
 <instance part="LED5" gate="G$1" x="538.48" y="53.34" rot="R90"/>
 <instance part="R2" gate="G$1" x="530.86" y="53.34" rot="R180"/>
 <instance part="S5" gate="1" x="637.54" y="38.1" rot="R90"/>
@@ -26215,7 +26542,6 @@ when screen power is off</text>
 <attribute name="VALUE" x="94.742" y="176.53" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND104" gate="1" x="88.9" y="185.42"/>
-<instance part="Q3" gate="G$1" x="337.82" y="403.86" rot="R90"/>
 <instance part="+3V22" gate="G$1" x="322.58" y="162.56" rot="R270"/>
 <instance part="+3V1" gate="G$1" x="327.66" y="119.38" rot="R90"/>
 <instance part="C4" gate="G$1" x="508" y="55.88"/>
@@ -26224,9 +26550,8 @@ when screen power is off</text>
 <instance part="SJ2" gate="1" x="132.08" y="190.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="129.54" y="187.96" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="LED1" gate="G$1" x="269.24" y="121.92" rot="R90"/>
-<instance part="R1" gate="G$1" x="261.62" y="121.92" rot="R180"/>
-<instance part="Q5" gate="G$1" x="251.46" y="121.92" rot="MR270"/>
+<instance part="LED1" gate="G$1" x="259.08" y="121.92" rot="R90"/>
+<instance part="R1" gate="G$1" x="251.46" y="121.92" rot="R180"/>
 <instance part="GND105" gate="1" x="276.86" y="121.92" rot="R90"/>
 <instance part="+3V24" gate="G$1" x="243.84" y="121.92" rot="R90"/>
 <instance part="Z1" gate="G$1" x="127" y="101.6" smashed="yes" rot="R90">
@@ -26286,7 +26611,7 @@ when screen power is off</text>
 </instance>
 <instance part="GND109" gate="1" x="558.8" y="358.14"/>
 <instance part="GND2" gate="1" x="350.52" y="284.48" rot="R270"/>
-<instance part="+3V27" gate="G$1" x="330.2" y="403.86" rot="R90"/>
+<instance part="+3V27" gate="G$1" x="340.36" y="403.86" rot="R90"/>
 <instance part="R47" gate="G$1" x="350.52" y="401.32" smashed="yes">
 <attribute name="NAME" x="346.71" y="402.8186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="344.17" y="398.018" size="1.778" layer="96"/>
@@ -26299,7 +26624,6 @@ when screen power is off</text>
 <attribute name="NAME" x="346.71" y="397.7386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="344.17" y="392.938" size="1.778" layer="96"/>
 </instance>
-<instance part="GND4" gate="1" x="342.9" y="391.16"/>
 <instance part="GND110" gate="1" x="350.52" y="337.82" rot="R270"/>
 <instance part="GND111" gate="1" x="350.52" y="368.3" rot="R270"/>
 <instance part="GND112" gate="1" x="353.06" y="391.16" rot="R270"/>
@@ -26308,7 +26632,6 @@ when screen power is off</text>
 <attribute name="NAME" x="322.961" y="284.48" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="325.501" y="284.48" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C45" gate="G$1" x="317.5" y="284.48" rot="R180"/>
 <instance part="GND113" gate="1" x="320.04" y="274.32"/>
 <instance part="J2" gate="G$1" x="365.76" y="378.46"/>
 <instance part="R44" gate="G$1" x="350.52" y="393.7" smashed="yes">
@@ -26321,9 +26644,26 @@ when screen power is off</text>
 <instance part="JP2" gate="G$1" x="347.98" y="35.56" smashed="yes" rot="R180">
 <attribute name="NAME" x="347.98" y="26.67" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="IC7" gate="G$1" x="563.88" y="17.78"/>
-<instance part="Q4" gate="G$1" x="548.64" y="-10.16"/>
-<instance part="Q7" gate="G$1" x="558.8" y="-10.16"/>
+<instance part="IC7" gate="G$1" x="619.76" y="-25.4"/>
+<instance part="Q4" gate="G$1" x="604.52" y="-53.34" rot="R270"/>
+<instance part="Q7" gate="G$1" x="614.68" y="-53.34" rot="MR270"/>
+<instance part="GND56" gate="1" x="586.74" y="-58.42"/>
+<instance part="R50" gate="G$1" x="586.74" y="-48.26" rot="R270"/>
+<instance part="R51" gate="G$1" x="635" y="-22.86"/>
+<instance part="C48" gate="G$1" x="629.92" y="-40.64" smashed="yes" rot="R180">
+<attribute name="NAME" x="630.301" y="-40.64" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="627.761" y="-40.64" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="Q8" gate="G$1" x="337.82" y="396.24" rot="R270"/>
+<instance part="GND4" gate="1" x="330.2" y="393.7" rot="R270"/>
+<instance part="C45" gate="G$1" x="317.5" y="284.48" smashed="yes" rot="R180">
+<attribute name="NAME" x="315.341" y="284.48" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="317.881" y="284.48" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="Q3" gate="G$1" x="269.24" y="124.46" rot="MR270"/>
+<instance part="JP4" gate="G$1" x="76.2" y="17.78"/>
+<instance part="+3V29" gate="G$1" x="83.82" y="20.32" rot="R270"/>
+<instance part="GND57" gate="1" x="83.82" y="7.62" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -26623,13 +26963,9 @@ when screen power is off</text>
 <wire x1="571.5" y1="45.72" x2="571.5" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="1"/>
-<pinref part="GND60" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="GND61" gate="1" pin="GND"/>
-<wire x1="581.66" y1="25.4" x2="581.66" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="581.66" y1="45.72" x2="581.66" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND62" gate="1" pin="GND"/>
@@ -26883,10 +27219,6 @@ when screen power is off</text>
 <pinref part="GND102" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="GND105" gate="1" pin="GND"/>
-<pinref part="LED1" gate="G$1" pin="C"/>
-</segment>
-<segment>
 <pinref part="Z3" gate="G$1" pin="2"/>
 <wire x1="137.16" y1="96.52" x2="137.16" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="93.98" x2="132.08" y2="93.98" width="0.1524" layer="91"/>
@@ -26929,22 +27261,6 @@ when screen power is off</text>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="358.14" y1="284.48" x2="353.06" y2="284.48" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="R47" gate="G$1" pin="1"/>
-<wire x1="345.44" y1="401.32" x2="342.9" y2="401.32" width="0.1524" layer="91"/>
-<wire x1="342.9" y1="401.32" x2="342.9" y2="398.78" width="0.1524" layer="91"/>
-<pinref part="R49" gate="G$1" pin="1"/>
-<wire x1="342.9" y1="396.24" x2="342.9" y2="393.7" width="0.1524" layer="91"/>
-<wire x1="345.44" y1="396.24" x2="342.9" y2="396.24" width="0.1524" layer="91"/>
-<wire x1="342.9" y1="396.24" x2="342.9" y2="398.78" width="0.1524" layer="91"/>
-<pinref part="R48" gate="G$1" pin="1"/>
-<wire x1="342.9" y1="398.78" x2="345.44" y2="398.78" width="0.1524" layer="91"/>
-<junction x="342.9" y="396.24"/>
-<junction x="342.9" y="398.78"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-<pinref part="R44" gate="G$1" pin="1"/>
-<wire x1="345.44" y1="393.7" x2="342.9" y2="393.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="358.14" y1="358.14" x2="353.06" y2="358.14" width="0.1524" layer="91"/>
@@ -27008,7 +27324,6 @@ when screen power is off</text>
 <pinref part="J2" gate="G$1" pin="IM0"/>
 </segment>
 <segment>
-<pinref part="C45" gate="G$1" pin="1"/>
 <wire x1="317.5" y1="281.94" x2="317.5" y2="276.86" width="0.1524" layer="91"/>
 <pinref part="C38" gate="G$1" pin="1"/>
 <wire x1="317.5" y1="276.86" x2="320.04" y2="276.86" width="0.1524" layer="91"/>
@@ -27016,6 +27331,27 @@ when screen power is off</text>
 <wire x1="325.12" y1="276.86" x2="325.12" y2="281.94" width="0.1524" layer="91"/>
 <pinref part="GND113" gate="1" pin="GND"/>
 <junction x="320.04" y="276.86"/>
+<pinref part="C45" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="Q4" gate="G$1" pin="S"/>
+<wire x1="599.44" y1="-55.88" x2="586.74" y2="-55.88" width="0.1524" layer="91"/>
+<pinref part="GND56" gate="1" pin="GND"/>
+<pinref part="R50" gate="G$1" pin="2"/>
+<wire x1="586.74" y1="-53.34" x2="586.74" y2="-55.88" width="0.1524" layer="91"/>
+<junction x="586.74" y="-55.88"/>
+</segment>
+<segment>
+<pinref part="Q8" gate="G$1" pin="S"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="Q3" gate="G$1" pin="S"/>
+<pinref part="GND105" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="G$1" pin="GND"/>
+<pinref part="GND57" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="F1" class="0">
@@ -27485,6 +27821,11 @@ when screen power is off</text>
 <wire x1="363.22" y1="50.8" x2="365.76" y2="50.8" width="0.1524" layer="91"/>
 <label x="365.76" y="50.8" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="JP4" gate="G$1" pin="RST"/>
+<wire x1="81.28" y1="17.78" x2="91.44" y2="17.78" width="0.1524" layer="91"/>
+<label x="86.36" y="17.78" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SWCLK" class="0">
 <segment>
@@ -27497,6 +27838,11 @@ when screen power is off</text>
 <label x="33.02" y="165.1" size="1.778" layer="95"/>
 <pinref part="IC3" gate="_PA" pin="PA14"/>
 </segment>
+<segment>
+<pinref part="JP4" gate="G$1" pin="SWCLK"/>
+<wire x1="91.44" y1="15.24" x2="81.28" y2="15.24" width="0.1524" layer="91"/>
+<label x="86.36" y="15.24" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SWDAT" class="0">
 <segment>
@@ -27508,6 +27854,11 @@ when screen power is off</text>
 <wire x1="30.48" y1="167.64" x2="33.02" y2="167.64" width="0.1524" layer="91"/>
 <label x="33.02" y="167.64" size="1.778" layer="95"/>
 <pinref part="IC3" gate="_PA" pin="PA13"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="G$1" pin="SWDAT"/>
+<wire x1="81.28" y1="12.7" x2="91.44" y2="12.7" width="0.1524" layer="91"/>
+<label x="86.36" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDIO_D2" class="0">
@@ -27787,10 +28138,6 @@ when screen power is off</text>
 <pinref part="+3V23" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="Q5" gate="G$1" pin="S"/>
-<pinref part="+3V24" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
 <pinref part="D1" gate="G$1" pin="VDD"/>
 <wire x1="457.2" y1="106.68" x2="452.12" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="452.12" y1="106.68" x2="452.12" y2="116.84" width="0.1524" layer="91"/>
@@ -27827,10 +28174,6 @@ when screen power is off</text>
 <pinref part="+3V26" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="Q3" gate="G$1" pin="S"/>
-<pinref part="+3V27" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
 <wire x1="358.14" y1="287.02" x2="353.06" y2="287.02" width="0.1524" layer="91"/>
 <wire x1="358.14" y1="289.56" x2="353.06" y2="289.56" width="0.1524" layer="91"/>
 <pinref part="+3V28" gate="G$1" pin="+3V3"/>
@@ -27838,13 +28181,26 @@ when screen power is off</text>
 <wire x1="325.12" y1="289.56" x2="317.5" y2="289.56" width="0.1524" layer="91"/>
 <wire x1="317.5" y1="289.56" x2="314.96" y2="289.56" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="287.02" x2="353.06" y2="289.56" width="0.1524" layer="91"/>
-<pinref part="C45" gate="G$1" pin="2"/>
-<junction x="317.5" y="289.56"/>
 <pinref part="C38" gate="G$1" pin="2"/>
 <junction x="325.12" y="289.56"/>
 <junction x="353.06" y="289.56"/>
 <pinref part="J2" gate="G$1" pin="VDDI"/>
 <pinref part="J2" gate="G$1" pin="VCI"/>
+<pinref part="C45" gate="G$1" pin="2"/>
+<junction x="317.5" y="289.56"/>
+</segment>
+<segment>
+<wire x1="358.14" y1="403.86" x2="342.9" y2="403.86" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="LEDA"/>
+<pinref part="+3V27" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="+3V24" gate="G$1" pin="+3V3"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="G$1" pin="VCC"/>
+<pinref part="+3V29" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="USB_ID" class="0">
@@ -27912,9 +28268,9 @@ when screen power is off</text>
 <pinref part="U4" gate="G$1" pin="SHIELD@2"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="_PD" pin="PD15"/>
-<wire x1="73.66" y1="93.98" x2="83.82" y2="93.98" width="0.1524" layer="91"/>
-<label x="78.74" y="93.98" size="1.778" layer="95"/>
+<pinref part="IC3" gate="_PA" pin="PA8"/>
+<wire x1="30.48" y1="180.34" x2="33.02" y2="180.34" width="0.1524" layer="91"/>
+<label x="33.02" y="180.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="USB_D_N" class="2">
@@ -28001,19 +28357,25 @@ when screen power is off</text>
 <segment>
 <pinref part="U3" gate="G$1" pin="VBAT"/>
 <wire x1="563.88" y1="58.42" x2="581.66" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="581.66" y1="58.42" x2="594.36" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="594.36" y1="58.42" x2="594.36" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="G$1" pin="2"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="581.66" y1="55.88" x2="581.66" y2="58.42" width="0.1524" layer="91"/>
 <junction x="581.66" y="58.42"/>
-<junction x="594.36" y="58.42"/>
 <label x="581.66" y="58.42" size="1.778" layer="95" rot="R90" xref="yes"/>
 <pinref part="Q2" gate="G$1" pin="D"/>
-<wire x1="607.06" y1="58.42" x2="594.36" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="607.06" y1="58.42" x2="589.28" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="E1"/>
+<wire x1="589.28" y1="58.42" x2="581.66" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="607.06" y1="50.8" x2="607.06" y2="58.42" width="0.1524" layer="91"/>
 <junction x="607.06" y="58.42"/>
+<pinref part="IC7" gate="G$1" pin="BAT"/>
+<pinref part="R51" gate="G$1" pin="1"/>
+<wire x1="629.92" y1="-22.86" x2="627.38" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="C48" gate="G$1" pin="2"/>
+<wire x1="629.92" y1="-35.56" x2="629.92" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="629.92" y1="-22.86" x2="629.92" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="629.92" y1="-15.24" x2="589.28" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="629.92" y="-22.86"/>
+<wire x1="589.28" y1="58.42" x2="589.28" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R21" gate="G$1" pin="2"/>
@@ -28038,13 +28400,17 @@ when screen power is off</text>
 <wire x1="558.8" y1="116.84" x2="556.26" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="556.26" y1="116.84" x2="513.08" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="556.26" y1="104.14" x2="556.26" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="556.26" y1="104.14" x2="556.26" y2="111.76" width="0.1524" layer="91"/>
 <junction x="556.26" y="116.84"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <junction x="513.08" y="116.84"/>
+<wire x1="556.26" y1="111.76" x2="556.26" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="513.08" y1="116.84" x2="502.92" y2="116.84" width="0.1524" layer="91"/>
 <label x="500.38" y="116.84" size="1.778" layer="95"/>
 <pinref part="IC2" gate="G$1" pin="VIN"/>
+<pinref part="IC2" gate="G$1" pin="EN"/>
+<wire x1="558.8" y1="111.76" x2="556.26" y2="111.76" width="0.1524" layer="91"/>
+<junction x="556.26" y="111.76"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -28362,10 +28728,10 @@ when screen power is off</text>
 <label x="71.12" y="167.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="Q5" gate="G$1" pin="G"/>
-<wire x1="248.92" y1="127" x2="248.92" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="129.54" x2="261.62" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="129.54" x2="271.78" y2="129.54" width="0.1524" layer="91"/>
 <label x="254" y="129.54" size="1.778" layer="95"/>
+<pinref part="Q3" gate="G$1" pin="G"/>
+<wire x1="271.78" y1="129.54" x2="271.78" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -28597,12 +28963,9 @@ when screen power is off</text>
 <label x="558.8" y="370.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="_PB" pin="PB2"/>
-<label x="71.12" y="198.12" size="1.778" layer="95"/>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="198.12" x2="88.9" y2="198.12" width="0.1524" layer="91"/>
-<junction x="88.9" y="198.12"/>
-<wire x1="88.9" y1="198.12" x2="93.98" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="_PE" pin="PE8"/>
+<wire x1="73.66" y1="48.26" x2="78.74" y2="48.26" width="0.1524" layer="91"/>
+<label x="76.2" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOM_LEFT" class="0">
@@ -28794,13 +29157,6 @@ when screen power is off</text>
 <wire x1="647.7" y1="355.6" x2="645.16" y2="355.6" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="TIM9_CH1" class="0">
-<segment>
-<pinref part="Q3" gate="G$1" pin="G"/>
-<wire x1="335.28" y1="398.78" x2="335.28" y2="391.16" width="0.1524" layer="91"/>
-<label x="335.28" y="393.7" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$48" class="1">
 <segment>
 <pinref part="R41" gate="G$1" pin="1"/>
@@ -28852,20 +29208,6 @@ when screen power is off</text>
 <wire x1="332.74" y1="48.26" x2="337.82" y2="48.26" width="0.1524" layer="91"/>
 <label x="332.74" y="48.26" size="1.778" layer="95" rot="MR0"/>
 <pinref part="JP2" gate="G$1" pin="3"/>
-</segment>
-</net>
-<net name="TIM4_CH2" class="0">
-<segment>
-<pinref part="IC3" gate="_PD" pin="PD13"/>
-<wire x1="73.66" y1="99.06" x2="83.82" y2="99.06" width="0.1524" layer="91"/>
-<label x="76.2" y="99.06" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="TIM4_CH3" class="0">
-<segment>
-<pinref part="IC3" gate="_PD" pin="PD14"/>
-<wire x1="73.66" y1="96.52" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
-<label x="76.2" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$51" class="0">
@@ -28938,12 +29280,6 @@ when screen power is off</text>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
-</segment>
-</net>
-<net name="N$61" class="0">
-<segment>
-<pinref part="Q5" gate="G$1" pin="D"/>
-<pinref part="R1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$26" class="0">
@@ -29113,13 +29449,6 @@ when screen power is off</text>
 <wire x1="640.08" y1="345.44" x2="640.08" y2="342.9" width="0.1524" layer="91"/>
 <pinref part="SV7" gate="G$1" pin="2"/>
 <wire x1="640.08" y1="342.9" x2="647.7" y2="342.9" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="Q3" gate="G$1" pin="D"/>
-<wire x1="358.14" y1="403.86" x2="342.9" y2="403.86" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="LEDA"/>
 </segment>
 </net>
 <net name="N$46" class="0">
@@ -29432,6 +29761,109 @@ when screen power is off</text>
 <pinref part="R44" gate="G$1" pin="2"/>
 <pinref part="J2" gate="G$1" pin="LEDK4"/>
 <wire x1="355.6" y1="393.7" x2="358.14" y2="393.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$45" class="0">
+<segment>
+<pinref part="Q4" gate="G$1" pin="D"/>
+<pinref part="Q7" gate="G$1" pin="D"/>
+</segment>
+</net>
+<net name="N$50" class="0">
+<segment>
+<pinref part="IC7" gate="G$1" pin="COUT"/>
+<wire x1="607.06" y1="-40.64" x2="607.06" y2="-45.72" width="0.1524" layer="91"/>
+<pinref part="Q4" gate="G$1" pin="G"/>
+<wire x1="607.06" y1="-45.72" x2="601.98" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="601.98" y1="-45.72" x2="601.98" y2="-50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$55" class="0">
+<segment>
+<pinref part="IC7" gate="G$1" pin="DOUT"/>
+<wire x1="612.14" y1="-40.64" x2="612.14" y2="-45.72" width="0.1524" layer="91"/>
+<pinref part="Q7" gate="G$1" pin="G"/>
+<wire x1="612.14" y1="-45.72" x2="617.22" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="617.22" y1="-45.72" x2="617.22" y2="-50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$57" class="0">
+<segment>
+<pinref part="JP3" gate="G$1" pin="1"/>
+<wire x1="642.62" y1="-27.94" x2="637.54" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="637.54" y1="-27.94" x2="637.54" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="Q7" gate="G$1" pin="S"/>
+<wire x1="637.54" y1="-30.48" x2="637.54" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="637.54" y1="-55.88" x2="629.92" y2="-55.88" width="0.1524" layer="91"/>
+<pinref part="IC7" gate="G$1" pin="VSS"/>
+<wire x1="629.92" y1="-55.88" x2="619.76" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="627.38" y1="-30.48" x2="637.54" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="637.54" y="-30.48"/>
+<pinref part="C48" gate="G$1" pin="1"/>
+<wire x1="629.92" y1="-43.18" x2="629.92" y2="-55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$62" class="0">
+<segment>
+<pinref part="JP3" gate="G$1" pin="2"/>
+<wire x1="642.62" y1="-25.4" x2="640.08" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="640.08" y1="-25.4" x2="640.08" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="R51" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$63" class="0">
+<segment>
+<pinref part="IC7" gate="G$1" pin="V-"/>
+<wire x1="591.82" y1="-30.48" x2="586.74" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="R50" gate="G$1" pin="1"/>
+<wire x1="586.74" y1="-30.48" x2="586.74" y2="-43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$64" class="0">
+<segment>
+<pinref part="R47" gate="G$1" pin="1"/>
+<wire x1="345.44" y1="401.32" x2="342.9" y2="401.32" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="401.32" x2="342.9" y2="398.78" width="0.1524" layer="91"/>
+<pinref part="R49" gate="G$1" pin="1"/>
+<wire x1="342.9" y1="396.24" x2="342.9" y2="393.7" width="0.1524" layer="91"/>
+<wire x1="345.44" y1="396.24" x2="342.9" y2="396.24" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="396.24" x2="342.9" y2="398.78" width="0.1524" layer="91"/>
+<pinref part="R48" gate="G$1" pin="1"/>
+<wire x1="342.9" y1="398.78" x2="345.44" y2="398.78" width="0.1524" layer="91"/>
+<junction x="342.9" y="396.24"/>
+<junction x="342.9" y="398.78"/>
+<pinref part="R44" gate="G$1" pin="1"/>
+<wire x1="345.44" y1="393.7" x2="342.9" y2="393.7" width="0.1524" layer="91"/>
+<pinref part="Q8" gate="G$1" pin="D"/>
+<junction x="342.9" y="393.7"/>
+</segment>
+</net>
+<net name="TIM4_CH4" class="0">
+<segment>
+<pinref part="IC3" gate="_PD" pin="PD15"/>
+<wire x1="73.66" y1="93.98" x2="83.82" y2="93.98" width="0.1524" layer="91"/>
+<label x="78.74" y="93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="325.12" y1="398.78" x2="335.28" y2="398.78" width="0.1524" layer="91"/>
+<label x="325.12" y="398.78" size="1.778" layer="95"/>
+<pinref part="Q8" gate="G$1" pin="G"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="Q3" gate="G$1" pin="D"/>
+</segment>
+</net>
+<net name="BOOT1" class="0">
+<segment>
+<pinref part="IC3" gate="_PB" pin="PB2"/>
+<label x="71.12" y="198.12" size="1.778" layer="95"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="198.12" x2="88.9" y2="198.12" width="0.1524" layer="91"/>
+<junction x="88.9" y="198.12"/>
+<wire x1="88.9" y1="198.12" x2="93.98" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
