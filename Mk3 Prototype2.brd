@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.4" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.2" altunitdist="mm" altunit="mm"/>
+<grid distance="0.4" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -28,7 +28,7 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="6" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -2439,8 +2439,8 @@ design rules under a new name.</description>
 <attribute name="NAME" x="140.089" y="57.4985" size="0.8128" layer="26" font="vector" ratio="14" rot="MR0"/>
 </element>
 <element name="J3" library="dtb" package="SWD_PTH_SHROUD" value="SWD_SHROUD" x="22.8" y="55.1" smashed="yes" rot="MR0"/>
-<element name="U4" library="TiLDA Mk3 Parts" package="MICRO-SD-SOCKET-PP" value="USD-SOCKETNEW" x="17.5" y="29.4" smashed="yes" rot="MR270">
-<attribute name="NAME" x="16.89" y="28.25" size="0.8128" layer="26" font="vector" ratio="14" rot="MR0"/>
+<element name="U4" library="TiLDA Mk3 Parts" package="MICRO-SD-SOCKET-PP" value="USD-SOCKETNEW" x="17.1" y="21" smashed="yes" rot="MR270">
+<attribute name="NAME" x="16.49" y="19.85" size="0.8128" layer="26" font="vector" ratio="14" rot="MR0"/>
 </element>
 <element name="SW1" library="TiLDA Mk3 Parts" package="JOYSTICK_MULTICOMP" value="JOYSTICK_MINI_MULTICOMP" x="21.7" y="45.8" smashed="yes" rot="R315">
 <attribute name="NAME" x="24.44141875" y="46.71543125" size="0.8128" layer="25" font="vector" ratio="15" rot="R315"/>
@@ -2531,12 +2531,12 @@ design rules under a new name.</description>
 <element name="C17" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/4u7/10V/X5R" x="11.3" y="19.1" smashed="yes" rot="MR90">
 <attribute name="NAME" x="12.05" y="18.2" size="0.8128" layer="26" font="vector" ratio="14" rot="MR90"/>
 </element>
-<element name="TP3" library="TiLDA Mk3 Parts" package="3.5MMEDGE" value="TP3.5MMEDGE" x="91.35" y="67.7" smashed="yes" rot="R356"/>
-<element name="TP1" library="TiLDA Mk3 Parts" package="3.5MMEDGE" value="TP3.5MMEDGE" x="8.85" y="63.4" smashed="yes" rot="R19"/>
-<element name="TP2" library="TiLDA Mk3 Parts" package="3.5MMEDGE" value="TP3.5MMEDGE" x="15.3" y="65.4" smashed="yes" rot="R14"/>
-<element name="TP4" library="TiLDA Mk3 Parts" package="3.5MMEDGE" value="TP3.5MMEDGE" x="97.45" y="66.95" smashed="yes" rot="R350.8"/>
-<element name="TP8" library="TiLDA Mk3 Parts" package="3.5MMEDGE" value="TP3.5MMEDGE" x="27.9" y="67.75" smashed="yes" rot="R4"/>
-<element name="TP5" library="TiLDA Mk3 Parts" package="3.5MMEDGE" value="TP3.5MMEDGE" x="2.55" y="60.7" smashed="yes" rot="R24"/>
+<element name="TP3" library="TiLDA Mk3 Parts" package="3.5MMEDGE" value="TP3.5MMEDGE" x="91.75" y="67.7" smashed="yes" rot="R355"/>
+<element name="TP1" library="TiLDA Mk3 Parts" package="3.5MMEDGE" value="TP3.5MMEDGE" x="8.625" y="63.275" smashed="yes" rot="R20.4"/>
+<element name="TP2" library="TiLDA Mk3 Parts" package="3.5MMEDGE" value="TP3.5MMEDGE" x="14.975" y="65.3" smashed="yes" rot="R15.4"/>
+<element name="TP4" library="TiLDA Mk3 Parts" package="3.5MMEDGE" value="TP3.5MMEDGE" x="98.3" y="66.8" smashed="yes" rot="R350.2"/>
+<element name="TP8" library="TiLDA Mk3 Parts" package="3.5MMEDGE" value="TP3.5MMEDGE" x="27.9" y="67.7" smashed="yes" rot="R5"/>
+<element name="TP5" library="TiLDA Mk3 Parts" package="3.5MMEDGE" value="TP3.5MMEDGE" x="2.55" y="60.65" smashed="yes" rot="R25.4"/>
 <element name="R18" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0402/220k/5%" x="33" y="26.2" smashed="yes" rot="MR90">
 <attribute name="NAME" x="33.6015" y="25.089" size="0.8128" layer="26" font="vector" ratio="14" rot="MR270"/>
 </element>
@@ -2564,9 +2564,9 @@ design rules under a new name.</description>
 <element name="C24" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0402/10p/50V/NP0" x="51.2" y="29.2" smashed="yes" rot="MR90">
 <attribute name="NAME" x="50.5985" y="29.911" size="0.8128" layer="26" font="vector" ratio="14" rot="MR90"/>
 </element>
-<element name="TP6" library="TiLDA Mk3 Parts" package="3.5MMEDGE" value="TP3.5MMEDGE" x="102.386246875" y="65.4" smashed="yes" rot="R346"/>
-<element name="TP9" library="TiLDA Mk3 Parts" package="3.5MMEDGE" value="TP3.5MMEDGE" x="102.658096875" y="63.55" smashed="yes" rot="R341"/>
-<element name="TP10" library="TiLDA Mk3 Parts" package="3.5MMEDGE" value="TP3.5MMEDGE" x="102.921896875" y="61.25" smashed="yes" rot="R336"/>
+<element name="TP6" library="TiLDA Mk3 Parts" package="3.5MMEDGE" value="TP3.5MMEDGE" x="104.661246875" y="65.325" smashed="yes" rot="R344.6"/>
+<element name="TP9" library="TiLDA Mk3 Parts" package="3.5MMEDGE" value="TP3.5MMEDGE" x="111.008096875" y="63.25" smashed="yes" rot="R339.6"/>
+<element name="TP10" library="TiLDA Mk3 Parts" package="3.5MMEDGE" value="TP3.5MMEDGE" x="117.096896875" y="60.625" smashed="yes" rot="R334.6"/>
 <element name="L3" library="TiLDA Mk3 Parts" package="WUERTH-0805" value="Bead" x="47.9" y="18.9" smashed="yes" rot="MR0">
 <attribute name="NAME" x="51.505" y="18.3125" size="0.8128" layer="26" font="vector" ratio="14" rot="MR0"/>
 </element>
@@ -2785,7 +2785,7 @@ design rules under a new name.</description>
 <element name="S7" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SWITCH-MOMENTARY-2SMD-1101NE" x="94.1" y="53.4">
 <attribute name="PROD_ID" value="SWCH-00815" x="94.1" y="53.4" size="1.778" layer="27" display="off"/>
 </element>
-<element name="TP7" library="TiLDA Mk3 Parts" package="3.5MMEDGE" value="TP3.5MMEDGE" x="21.5" y="66.9" rot="R9.2"/>
+<element name="TP7" library="TiLDA Mk3 Parts" package="3.5MMEDGE" value="TP3.5MMEDGE" x="21.35" y="66.8" rot="R9.8"/>
 <element name="IC6" library="TiLDA Mk3 Parts" package="CC3100MOD" value="CC3100MOD" x="95.2" y="26.3" rot="MR180"/>
 <element name="ANT1" library="TiLDA Mk3 Parts" package="2450AT42A100" value="CHIPANT" x="110.1" y="2.4" rot="MR0"/>
 <element name="R17" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0402/10K/5%" x="92.9" y="16.9" rot="MR90"/>
@@ -3049,7 +3049,7 @@ design rules under a new name.</description>
 <contactref element="R20" pad="2"/>
 <contactref element="SV7" pad="1"/>
 <contactref element="S8" pad="2"/>
-<wire x1="6.6" y1="32.84" x2="8.04" y2="24.44" width="0.2" layer="16"/>
+<wire x1="6.2" y1="24.44" x2="8.04" y2="24.44" width="0.2" layer="16"/>
 <wire x1="8.04" y1="24.44" x2="10.4" y2="26.8" width="0.2" layer="16"/>
 <wire x1="10.4" y1="26.8" x2="12.4" y2="26.8" width="0.2" layer="16"/>
 <wire x1="22.65" y1="13.225" x2="24.05" y2="13.225" width="0.2" layer="16"/>
@@ -3357,11 +3357,11 @@ design rules under a new name.</description>
 <wire x1="58.2" y1="14.725" x2="52.325" y2="19.1" width="0" layer="19" extent="16-16"/>
 <wire x1="23.25" y1="30" x2="26.8" y2="22.35" width="0" layer="19" extent="1-16"/>
 <wire x1="19.925" y1="34.4" x2="20" y2="31.125" width="0" layer="19" extent="16-16"/>
-<wire x1="17.1" y1="37.15" x2="19.925" y2="35.525" width="0" layer="19" extent="16-16"/>
+<wire x1="16.7" y1="28.75" x2="19.925" y2="35.525" width="0" layer="19" extent="16-16"/>
 <wire x1="15.4" y1="30.8" x2="19" y2="31.2" width="0" layer="19" extent="1-1"/>
-<wire x1="3.95" y1="29.85" x2="6.6" y2="32.84" width="0" layer="19" extent="16-16"/>
+<wire x1="3.55" y1="21.45" x2="6.2" y2="24.44" width="0" layer="19" extent="16-16"/>
 <wire x1="5.6" y1="3.43" x2="10.1" y2="2.7" width="0" layer="19" extent="16-16"/>
-<wire x1="12.289" y1="39.446" x2="17.1" y2="37.15" width="0" layer="19" extent="16-16"/>
+<wire x1="12.289" y1="39.446" x2="16.7" y2="28.75" width="0" layer="19" extent="16-16"/>
 <wire x1="22.65" y1="13.225" x2="17.4" y2="7.3" width="0" layer="19" extent="16-16"/>
 <wire x1="43.6" y1="52.4" x2="53.4" y2="50.8" width="0" layer="19" extent="1-1"/>
 <wire x1="39.8" y1="58.4" x2="41.2" y2="58.075" width="0" layer="19" extent="16-16"/>
@@ -3374,9 +3374,9 @@ design rules under a new name.</description>
 <wire x1="24.07" y1="54.465" x2="27.2" y2="53.2" width="0" layer="19" extent="1-1"/>
 <wire x1="22.8" y1="54.465" x2="24.07" y2="54.465" width="0" layer="19" extent="1-1"/>
 <wire x1="20.26" y1="54.465" x2="22.8" y2="54.465" width="0" layer="19" extent="1-1"/>
-<wire x1="2.95" y1="43" x2="12.289" y2="39.446" width="0" layer="19" extent="16-16"/>
-<wire x1="10.25" y1="50.6" x2="2.95" y2="43" width="0" layer="19" extent="16-16"/>
-<wire x1="3.87189375" y1="57.730975" x2="10.25" y2="50.6" width="0" layer="19" extent="16-16"/>
+<wire x1="2.55" y1="34.6" x2="12.289" y2="39.446" width="0" layer="19" extent="16-16"/>
+<wire x1="10.25" y1="50.6" x2="2.55" y2="34.6" width="0" layer="19" extent="16-16"/>
+<wire x1="3.9440375" y1="57.714159375" x2="10.25" y2="50.6" width="0" layer="19" extent="16-16"/>
 <wire x1="39.7" y1="75.6" x2="36.075" y2="60.8" width="0" layer="19" extent="16-16"/>
 <wire x1="35.6" y1="76.5" x2="39.7" y2="75.6" width="0" layer="19" extent="16-16"/>
 <wire x1="32.7" y1="78" x2="35.6" y2="76.5" width="0" layer="19" extent="16-16"/>
@@ -3776,7 +3776,7 @@ design rules under a new name.</description>
 <signal name="SDIO_D2">
 <contactref element="U4" pad="1"/>
 <contactref element="IC3" pad="78"/>
-<wire x1="6.8" y1="38.34" x2="11.54" y2="29.94" width="0.2" layer="16"/>
+<wire x1="6.4" y1="29.94" x2="11.54" y2="29.94" width="0.2" layer="16"/>
 <wire x1="11.54" y1="29.94" x2="18" y2="36.4" width="0.2" layer="16"/>
 <wire x1="26" y1="32.25" x2="26" y2="35.2" width="0.2" layer="16"/>
 <wire x1="26" y1="35.2" x2="24.8" y2="36.4" width="0.2" layer="16"/>
@@ -3785,7 +3785,7 @@ design rules under a new name.</description>
 <signal name="SDIO_D3">
 <contactref element="U4" pad="2"/>
 <contactref element="IC3" pad="79"/>
-<wire x1="7.2" y1="37.24" x2="5.56" y2="28.84" width="0.2" layer="16"/>
+<wire x1="6.8" y1="28.84" x2="5.56" y2="28.84" width="0.2" layer="16"/>
 <wire x1="5.56" y1="28.84" x2="5.2" y2="29.2" width="0.2" layer="16"/>
 <wire x1="5.2" y1="29.2" x2="5.2" y2="30.4" width="0.2" layer="16"/>
 <wire x1="5.2" y1="30.4" x2="5.6" y2="30.8" width="0.2" layer="16"/>
@@ -3798,7 +3798,7 @@ design rules under a new name.</description>
 <signal name="SDIO_CMD">
 <contactref element="U4" pad="3"/>
 <contactref element="IC3" pad="83"/>
-<wire x1="6.8" y1="36.14" x2="8.54" y2="27.74" width="0.2" layer="16"/>
+<wire x1="6.4" y1="27.74" x2="8.54" y2="27.74" width="0.2" layer="16"/>
 <wire x1="8.54" y1="27.74" x2="8.8" y2="28" width="0.2" layer="16"/>
 <wire x1="8.8" y1="28" x2="8.8" y2="29.2" width="0.2" layer="16"/>
 <via x="8.8" y="29.2" extent="1-16" drill="0.5" shape="octagon"/>
@@ -3815,7 +3815,7 @@ design rules under a new name.</description>
 <signal name="SDIO_CLK">
 <contactref element="U4" pad="5"/>
 <contactref element="IC3" pad="80"/>
-<wire x1="6.8" y1="33.94" x2="5.26" y2="25.54" width="0.2" layer="16"/>
+<wire x1="6.4" y1="25.54" x2="5.26" y2="25.54" width="0.2" layer="16"/>
 <wire x1="5.26" y1="25.54" x2="4.8" y2="26" width="0.2" layer="16"/>
 <wire x1="4.8" y1="26" x2="4.8" y2="30.6" width="0.2" layer="16"/>
 <wire x1="4.8" y1="30.6" x2="5.4" y2="31.2" width="0.2" layer="16"/>
@@ -3828,7 +3828,7 @@ design rules under a new name.</description>
 <signal name="SDIO_D0">
 <contactref element="U4" pad="7"/>
 <contactref element="IC3" pad="65"/>
-<wire x1="6.8" y1="31.74" x2="10.54" y2="23.34" width="0.2" layer="16"/>
+<wire x1="6.4" y1="23.34" x2="10.54" y2="23.34" width="0.2" layer="16"/>
 <wire x1="10.54" y1="23.34" x2="11.2" y2="24" width="0.2" layer="16"/>
 <wire x1="11.2" y1="24" x2="10.4" y2="24.8" width="0.2" layer="16"/>
 <via x="10.4" y="24.8" extent="1-16" drill="0.5" shape="octagon"/>
@@ -3845,7 +3845,7 @@ design rules under a new name.</description>
 <signal name="SDIO_D1">
 <contactref element="U4" pad="8"/>
 <contactref element="IC3" pad="66"/>
-<wire x1="6.8" y1="30.64" x2="10.64" y2="22.24" width="0.2" layer="16"/>
+<wire x1="6.4" y1="22.24" x2="10.64" y2="22.24" width="0.2" layer="16"/>
 <wire x1="10.64" y1="22.24" x2="11.6" y2="23.2" width="0.2" layer="16"/>
 <wire x1="11.6" y1="23.2" x2="11.6" y2="25.2" width="0.2" layer="16"/>
 <wire x1="11.6" y1="25.2" x2="11.2" y2="25.6" width="0.2" layer="16"/>
@@ -4033,7 +4033,7 @@ design rules under a new name.</description>
 <wire x1="132" y1="37.3" x2="137.7" y2="32.1" width="0" layer="19" extent="16-16"/>
 <wire x1="129.2" y1="38.3" x2="132" y2="37.3" width="0" layer="19" extent="16-16"/>
 <wire x1="106.05" y1="52.2" x2="129.2" y2="38.3" width="0" layer="19" extent="1-16"/>
-<wire x1="101.6" y1="62.2465375" x2="106.05" y2="52.2" width="0" layer="19" extent="1-1"/>
+<wire x1="103.7981875" y1="62.1916875" x2="106.05" y2="52.2" width="0" layer="19" extent="1-1"/>
 <wire x1="97.05" y1="42.7" x2="106.05" y2="52.2" width="0" layer="19" extent="1-1"/>
 <wire x1="83.6" y1="20.8" x2="97.05" y2="42.7" width="0" layer="19" extent="1-16"/>
 <wire x1="37.475" y1="15.2" x2="37.675" y2="14.6" width="0" layer="19" extent="16-16"/>
@@ -4054,7 +4054,7 @@ design rules under a new name.</description>
 <wire x1="13.78" y1="47.8" x2="18.4" y2="38.8" width="0" layer="19" extent="16-16"/>
 <wire x1="55.4" y1="33.875" x2="53.6" y2="44.4" width="0" layer="19" extent="16-16"/>
 <wire x1="25" y1="16.75" x2="36" y2="16.75" width="0" layer="19" extent="16-16"/>
-<wire x1="6.6" y1="35.04" x2="18.4" y2="35.6" width="0" layer="19" extent="1-16"/>
+<wire x1="6.2" y1="26.64" x2="18.4" y2="35.6" width="0" layer="19" extent="1-16"/>
 <wire x1="11.3" y1="19.975" x2="22.65" y2="14.975" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="USB_ID">
@@ -4528,7 +4528,7 @@ design rules under a new name.</description>
 <wire x1="24.8" y1="19.2" x2="23.2" y2="17.6" width="0.2" layer="16"/>
 <wire x1="23.2" y1="17.6" x2="22.8" y2="17.6" width="0.2" layer="16"/>
 <wire x1="22.8" y1="17.6" x2="22.4" y2="17.2" width="0.2" layer="16"/>
-<wire x1="24.8" y1="30.4" x2="16.08624375" y2="62.2465375" width="0" layer="19" extent="16-16"/>
+<wire x1="24.8" y1="30.4" x2="15.83805625" y2="62.1666875" width="0" layer="19" extent="16-16"/>
 <wire x1="20.8" y1="7.2" x2="22.4" y2="17.2" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="USB_ID_">
@@ -4708,7 +4708,7 @@ design rules under a new name.</description>
 <wire x1="69.3" y1="7.1" x2="69.2" y2="7.2" width="0.2" layer="1"/>
 <via x="69.2" y="7.2" extent="1-16" drill="0.5" shape="octagon"/>
 <wire x1="69.2" y1="7.2" x2="69.2" y2="7.6" width="0.2" layer="16"/>
-<wire x1="101.845" y1="39.37" x2="91.123290625" y2="64.457915625" width="0" layer="19" extent="1-1"/>
+<wire x1="101.845" y1="39.37" x2="91.46674375" y2="64.462365625" width="0" layer="19" extent="1-1"/>
 <wire x1="83.2" y1="7.6" x2="101.845" y2="39.37" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="TIM1_CH2">
@@ -4730,7 +4730,7 @@ design rules under a new name.</description>
 <wire x1="67.4" y1="6" x2="69.8" y2="6" width="0.2" layer="16"/>
 <wire x1="69.8" y1="6" x2="70.6" y2="6.8" width="0.2" layer="16"/>
 <wire x1="70.6" y1="6.8" x2="76.8" y2="6.8" width="0.2" layer="16"/>
-<wire x1="101.845" y1="36.83" x2="96.930384375" y2="63.74180625" width="0" layer="19" extent="1-1"/>
+<wire x1="101.845" y1="36.83" x2="97.74681875" y2="63.597421875" width="0" layer="19" extent="1-1"/>
 <wire x1="76.8" y1="6.8" x2="101.845" y2="36.83" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="TIM1_CH3">
@@ -4758,7 +4758,7 @@ design rules under a new name.</description>
 <wire x1="100.8" y1="5.6" x2="104" y2="5.6" width="0.2" layer="16"/>
 <wire x1="104" y1="5.6" x2="104.4" y2="5.2" width="0.2" layer="16"/>
 <wire x1="104.4" y1="5.2" x2="105.03" y2="5.2" width="0.2" layer="16"/>
-<wire x1="111.37" y1="36.83" x2="101.6" y2="58.280975" width="0" layer="19" extent="1-1"/>
+<wire x1="111.37" y1="36.83" x2="115.70285625" y2="57.689159375" width="0" layer="19" extent="1-1"/>
 <wire x1="97.6" y1="8.8" x2="111.37" y2="36.83" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="TIM1_CH4">
@@ -4781,7 +4781,7 @@ design rules under a new name.</description>
 <wire x1="71" y1="6" x2="94.4" y2="6" width="0.2" layer="16"/>
 <wire x1="94.4" y1="6" x2="95.6" y2="4.8" width="0.2" layer="16"/>
 <wire x1="95.6" y1="4.8" x2="95.6" y2="5.17" width="0.2" layer="16"/>
-<wire x1="111.37" y1="39.37" x2="101.6" y2="60.4770625" width="0" layer="19" extent="1-1"/>
+<wire x1="111.37" y1="39.37" x2="109.8752375" y2="60.20383125" width="0" layer="19" extent="1-1"/>
 <wire x1="100" y1="9.55" x2="111.37" y2="39.37" width="0" layer="19" extent="1-1"/>
 <wire x1="95.6" y1="5.17" x2="100" y2="9.55" width="0" layer="19" extent="1-16"/>
 </signal>
@@ -4814,13 +4814,13 @@ design rules under a new name.</description>
 <wire x1="44.8" y1="2.4" x2="44" y2="1.6" width="0.2" layer="16"/>
 <wire x1="44" y1="1.6" x2="28" y2="1.6" width="0.2" layer="16"/>
 <wire x1="28" y1="1.6" x2="27.6" y2="1.2" width="0.2" layer="16"/>
-<wire x1="22.4" y1="48.4" x2="9.90809375" y2="60.3270625" width="0" layer="19" extent="16-16"/>
+<wire x1="22.4" y1="48.4" x2="9.75785625" y2="60.22883125" width="0" layer="19" extent="16-16"/>
 <wire x1="24.4" y1="28.4" x2="26.8" y2="40" width="0" layer="19" extent="16-16"/>
 <wire x1="28" y1="1.6" x2="19.6" y2="11.2" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SDIO_SW">
 <contactref element="U4" pad="CD1"/>
-<wire x1="17.1" y1="31.45" x2="17.85" y2="23.05" width="0.2" layer="16"/>
+<wire x1="16.7" y1="23.05" x2="17.85" y2="23.05" width="0.2" layer="16"/>
 <wire x1="17.85" y1="23.05" x2="18.4" y2="23.6" width="0.2" layer="16"/>
 <wire x1="18.4" y1="23.6" x2="19.2" y2="23.6" width="0.2" layer="16"/>
 <wire x1="19.2" y1="23.6" x2="20.4" y2="24.8" width="0.2" layer="16"/>
@@ -6066,6 +6066,13 @@ design rules under a new name.</description>
 <vertex x="5.4" y="57"/>
 <vertex x="1.2" y="64.4"/>
 <vertex x="-2.8" y="67"/>
+</polygon>
+</signal>
+<signal name="GND1">
+<polygon width="0.15" layer="16" isolate="0.254">
+<vertex x="79.2" y="106.6"/>
+<vertex x="82.7" y="105.1"/>
+<vertex x="81.2" y="106.6"/>
 </polygon>
 </signal>
 </signals>
