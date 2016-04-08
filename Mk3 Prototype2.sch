@@ -26014,7 +26014,7 @@ when screen power is off</text>
 <text x="-15.24" y="129.54" size="1.778" layer="91">lcdrst</text>
 <text x="76.2" y="116.84" size="1.778" layer="91">LCD_CS (PARALLEL)</text>
 <text x="-15.24" y="127" size="1.778" layer="91">lcd_mode</text>
-<text x="-15.24" y="124.46" size="1.778" layer="91">usart2_tx</text>
+<text x="-15.24" y="124.46" size="1.778" layer="91">usart2_tx/rx</text>
 <text x="88.9" y="124.46" size="1.778" layer="91">(NOE)</text>
 <text x="88.9" y="121.92" size="1.778" layer="91">(NWE)</text>
 <text x="292.1" y="297.18" size="1.778" layer="91">unconnected in parallel mode &gt;</text>
@@ -26027,6 +26027,8 @@ when screen power is off</text>
 <text x="-15.24" y="111.76" size="1.778" layer="91">CC_RST</text>
 <text x="-15.24" y="109.22" size="1.778" layer="91">TIM1_CH1</text>
 <text x="-15.24" y="106.68" size="1.778" layer="91">MOM_DWN</text>
+<text x="-30.48" y="119.38" size="1.778" layer="91">WIRE UP:</text>
+<text x="-15.24" y="104.14" size="1.778" layer="91">WS2812</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -28587,11 +28589,6 @@ when screen power is off</text>
 </segment>
 </net>
 <net name="USART2_RX" class="0">
-<segment>
-<pinref part="IC3" gate="_PD" pin="PD6"/>
-<wire x1="73.66" y1="119.38" x2="83.82" y2="119.38" width="0.1524" layer="91"/>
-<label x="76.2" y="119.38" size="1.778" layer="95"/>
-</segment>
 <segment>
 <label x="878.84" y="2.54" size="1.778" layer="95"/>
 <wire x1="934.72" y1="2.54" x2="901.7" y2="2.54" width="0.1524" layer="91"/>
