@@ -3471,6 +3471,24 @@ chip</description>
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
 </package>
+<package name="Q2">
+<smd name="1" x="-0.65" y="-0.9225" dx="0.4" dy="0.455" layer="1"/>
+<smd name="2" x="0" y="-0.9225" dx="0.4" dy="0.455" layer="1"/>
+<smd name="3" x="0.65" y="-0.9225" dx="0.4" dy="0.455" layer="1"/>
+<smd name="4" x="0.65" y="0.9225" dx="0.4" dy="0.455" layer="1"/>
+<smd name="5" x="0" y="0.9225" dx="0.4" dy="0.455" layer="1"/>
+<smd name="6" x="-0.65" y="0.9225" dx="0.4" dy="0.455" layer="1"/>
+<smd name="EP1" x="-0.325" y="0" dx="1.1" dy="1.05" layer="1" rot="R90"/>
+<smd name="EP2" x="0.65" y="0.1" dx="0.85" dy="0.4" layer="1" rot="R270"/>
+<wire x1="-1" y1="1" x2="1" y2="1" width="0.127" layer="51"/>
+<wire x1="1" y1="1" x2="1" y2="-1" width="0.127" layer="51"/>
+<wire x1="1" y1="-1" x2="-1" y2="-1" width="0.127" layer="51"/>
+<wire x1="-1" y1="-1" x2="-1" y2="1" width="0.127" layer="51"/>
+<text x="2.35" y="-1.7" size="1.016" layer="25" font="vector" ratio="14" rot="R90">&gt;NAME</text>
+<circle x="-1.4" y="-0.975" radius="0.125" width="0.2" layer="25"/>
+<wire x1="-1.075" y1="1" x2="-1.075" y2="-1" width="0.127" layer="25"/>
+<wire x1="1.075" y1="1" x2="1.075" y2="-1" width="0.127" layer="25"/>
+</package>
 <package name="SOT23-3">
 <wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
 <wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
@@ -3485,6 +3503,24 @@ chip</description>
 <smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
 <text x="-0.8255" y="1.778" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.016" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+<package name="Q3A">
+<smd name="1" x="-0.975" y="-1.55" dx="0.3" dy="0.6" layer="1"/>
+<smd name="2" x="-0.325" y="-1.55" dx="0.3" dy="0.6" layer="1"/>
+<smd name="3" x="0.325" y="-1.55" dx="0.3" dy="0.6" layer="1"/>
+<smd name="4" x="0.975" y="-1.55" dx="0.3" dy="0.6" layer="1"/>
+<smd name="5" x="0.975" y="1.55" dx="0.3" dy="0.6" layer="1"/>
+<smd name="6" x="0.325" y="1.55" dx="0.3" dy="0.6" layer="1"/>
+<smd name="7" x="-0.325" y="1.55" dx="0.3" dy="0.6" layer="1"/>
+<smd name="8" x="-0.975" y="1.55" dx="0.3" dy="0.6" layer="1"/>
+<smd name="EP" x="0" y="0.375" dx="2.45" dy="1.775" layer="1" rot="R180"/>
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="51"/>
+<circle x="-1.825" y="-1.475" radius="0.12" width="0.2" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
 </package>
 <package name="SOT23-R">
 <description>&lt;b&gt;SOT23&lt;/b&gt; - Reflow soldering</description>
@@ -3505,21 +3541,6 @@ chip</description>
 <rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
-</package>
-<package name="MICROFET">
-<smd name="D@1" x="-0.65" y="-0.91" dx="0.4" dy="0.47" layer="1" roundness="20"/>
-<smd name="D@2" x="0" y="-0.91" dx="0.4" dy="0.47" layer="1" roundness="20"/>
-<smd name="G@3" x="0.65" y="-0.91" dx="0.4" dy="0.47" layer="1" roundness="20"/>
-<smd name="S@4" x="0.65" y="0.91" dx="0.4" dy="0.47" layer="1" roundness="20"/>
-<smd name="D@5" x="0" y="0.91" dx="0.4" dy="0.47" layer="1" roundness="20"/>
-<smd name="D@6" x="-0.65" y="0.91" dx="0.4" dy="0.47" layer="1" roundness="20"/>
-<smd name="D@PAD" x="-0.3" y="0" dx="1" dy="1.05" layer="1" roundness="20"/>
-<smd name="S@PAD" x="0.65" y="0" dx="0.4" dy="0.66" layer="1" roundness="20"/>
-<wire x1="-1" y1="-1" x2="-1" y2="1" width="0" layer="51"/>
-<wire x1="-1" y1="1" x2="1" y2="1" width="0" layer="51"/>
-<wire x1="1" y1="1" x2="1" y2="-1" width="0" layer="51"/>
-<wire x1="1" y1="-1" x2="-1" y2="-1" width="0" layer="51"/>
-<rectangle x1="-1" y1="-1" x2="-0.8" y2="-0.75" layer="51"/>
 </package>
 <package name="USB-AB-MICRO-SMD_LWK">
 <smd name="D+" x="2.85" y="0" dx="0.4" dy="1.4" layer="1" rot="R90"/>
@@ -18099,66 +18120,16 @@ DIN A3, landscape with location and doc. field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MOSFET-P" prefix="Q">
+<deviceset name="CSD25402Q3A">
 <gates>
 <gate name="G$1" symbol="MOSFET-P" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-SC70-3" package="SC70-3-R">
+<device name="" package="Q3A">
 <connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-SOT23" package="SOT23-R">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-MISROFET" package="MICROFET">
-<connects>
-<connect gate="G$1" pin="D" pad="D@1 D@2 D@5 D@6 D@PAD"/>
-<connect gate="G$1" pin="G" pad="G@3"/>
-<connect gate="G$1" pin="S" pad="S@4 S@PAD"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-SOT23-SPARK" package="SOT23-3">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="REFLOW" package="SOT23">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="WAVE" package="SOT23-W">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
+<connect gate="G$1" pin="D" pad="1 2 3"/>
+<connect gate="G$1" pin="G" pad="4"/>
+<connect gate="G$1" pin="S" pad="5 6 7 8 EP"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -22033,6 +22004,23 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </device>
 </devices>
 </deviceset>
+<deviceset name="CSD13202Q2">
+<gates>
+<gate name="G$1" symbol="MOSFET-N" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="Q2">
+<connects>
+<connect gate="G$1" pin="D" pad="1 2 5 6 EP1"/>
+<connect gate="G$1" pin="G" pad="3"/>
+<connect gate="G$1" pin="S" pad="4 EP2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="MOSFET-N" prefix="Q" uservalue="yes">
 <description>&lt;b&gt;N-Channel Mosfet&lt;/b&gt;
 &lt;ul&gt;
@@ -23934,7 +23922,9 @@ This setting can be found in the board layout editor under the Edit menu.  Selec
 <part name="FID5" library="TiLDA Mk3 Parts" deviceset="FIDUCIAL" device="1X2.5-STOP"/>
 <part name="GND1" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND3" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="J1" library="TiLDA Mk3 Parts" deviceset="USB-AB" device="-LWK" value="ZX62-AB-5PA(11)"/>
+<part name="J1" library="TiLDA Mk3 Parts" deviceset="USB-AB" device="-LWK" value="ZX62-AB-5PA(11)">
+<attribute name="FARNELL" value="2293755"/>
+</part>
 <part name="GND17" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND5" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="FRAME2" library="TiLDA Mk3 Parts" deviceset="A3L-LOC" device=""/>
@@ -23944,11 +23934,19 @@ This setting can be found in the board layout editor under the Edit menu.  Selec
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
-<part name="SW1" library="TiLDA Mk3 Parts" deviceset="JOYSTICK_MINI" device="_MULTICOMP"/>
-<part name="S4" library="Mine" deviceset="SWITCH-MOMENTARY-2" device=""/>
-<part name="S3" library="Mine" deviceset="SWITCH-MOMENTARY-2" device=""/>
+<part name="SW1" library="TiLDA Mk3 Parts" deviceset="JOYSTICK_MINI" device="_MULTICOMP">
+<attribute name="FARNELL" value="1316987"/>
+</part>
+<part name="S4" library="Mine" deviceset="SWITCH-MOMENTARY-2" device="" value="1217769">
+<attribute name="FARNELL" value="1217769"/>
+</part>
+<part name="S3" library="Mine" deviceset="SWITCH-MOMENTARY-2" device="" value="1217769">
+<attribute name="FARNELL" value="1217769"/>
+</part>
 <part name="U3" library="TiLDA Mk3 Parts" deviceset="MCP73831" device=""/>
-<part name="JP3" library="TiLDA Mk3 Parts" deviceset="M02" device="-JST-2MM-SMT"/>
+<part name="JP3" library="TiLDA Mk3 Parts" deviceset="M02" device="-JST-2MM-SMT">
+<attribute name="FARNELL" value="9492615"/>
+</part>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="C39" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/10V/X5R"/>
 <part name="C19" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/10V/X5R"/>
@@ -23969,7 +23967,9 @@ This setting can be found in the board layout editor under the Edit menu.  Selec
 <part name="GND53" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="R23" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/22/1%"/>
 <part name="R25" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/22/1%"/>
-<part name="X2" library="TiLDA Mk3 Parts" deviceset="CRYSTAL" device="-3.2-2.5" value="16MHz-3.2-2.5"/>
+<part name="X2" library="TiLDA Mk3 Parts" deviceset="CRYSTAL" device="-3.2-2.5" value="16MHz-3.2-2.5">
+<attribute name="FARNELL" value="2467444"/>
+</part>
 <part name="GND54" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND55" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C21" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/10p/50V/NP0"/>
@@ -23979,9 +23979,14 @@ This setting can be found in the board layout editor under the Edit menu.  Selec
 <part name="GND59" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C3" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/4u7/10V/X5R"/>
 <part name="GND61" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="LED5" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT"/>
-<part name="R2" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL"/>
-<part name="S5" library="TiLDA Mk3 Parts" deviceset="SWITCH-SPST" device="-SMD-A"/>
+<part name="LED5" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT" value="RED">
+<attribute name="COLOUR" value="RED"/>
+<attribute name="FARNELL" value="2449874"/>
+</part>
+<part name="R2" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/330/5%"/>
+<part name="S5" library="TiLDA Mk3 Parts" deviceset="SWITCH-SPST" device="-SMD-A">
+<attribute name="FARNELL" value="9575146"/>
+</part>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="C1" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/4u7/10V/X5R"/>
 <part name="GND62" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -24005,13 +24010,17 @@ This setting can be found in the board layout editor under the Edit menu.  Selec
 <part name="GND70" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND71" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="LED4" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT"/>
+<part name="LED4" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT" value="RED">
+<attribute name="FARNELL" value="2449874"/>
+</part>
 <part name="C13" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/10V/X5R"/>
 <part name="R5" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/2M2/5%"/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND72" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND73" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="X3" library="TiLDA Mk3 Parts" deviceset="RESONATOR_EPSON_FC_145" device="" value="ABS07-32.768KHZ-T"/>
+<part name="X3" library="TiLDA Mk3 Parts" deviceset="RESONATOR_EPSON_FC_145" device="" value="ABS07-32.768KHZ-T">
+<attribute name="FARNELL" value="2101347"/>
+</part>
 <part name="C23" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/10p/50V/NP0"/>
 <part name="C24" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/10p/50V/NP0"/>
 <part name="GND74" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -24021,8 +24030,12 @@ This setting can be found in the board layout editor under the Edit menu.  Selec
 <part name="TP10" library="TiLDA Mk3 Parts" deviceset="TP" device="3.5MMEDGE" value="TP3.5MMEDGE"/>
 <part name="GND78" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND79" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="L3" library="TiLDA Mk3 Parts" deviceset="WE-CBF" device="_0805" value="Bead"/>
-<part name="IC3" library="TiLDA Mk3 Parts" deviceset="STM32F401V" device=""/>
+<part name="L3" library="TiLDA Mk3 Parts" deviceset="WE-CBF" device="_0805" value="Bead">
+<attribute name="FARNELL" value="1781089"/>
+</part>
+<part name="IC3" library="TiLDA Mk3 Parts" deviceset="STM32F401V" device="">
+<attribute name="FARNELL" value="2432116"/>
+</part>
 <part name="C29" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/2.2u/6.3V/X5R"/>
 <part name="C22" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/10V/X5R"/>
 <part name="C34" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/10V/X5R"/>
@@ -24046,30 +24059,44 @@ This setting can be found in the board layout editor under the Edit menu.  Selec
 <part name="C18" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/10V/X5R"/>
 <part name="GND83" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND84" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="L2" library="TiLDA Mk3 Parts" deviceset="WE-CBF" device="_0805" value="Bead"/>
+<part name="L2" library="TiLDA Mk3 Parts" deviceset="WE-CBF" device="_0805" value="Bead">
+<attribute name="FARNELL" value="1781089"/>
+</part>
 <part name="SJ3" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NO" device="YES_SILK"/>
-<part name="R10" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/1k/5%"/>
-<part name="Q1" library="TiLDA Mk3 Parts" deviceset="DMMT5401" device=""/>
-<part name="Q2" library="TiLDA Mk3 Parts" deviceset="MOSFET-P" device="-SOT23" value="NTR4101"/>
+<part name="R10" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/2k/5%"/>
+<part name="Q1" library="TiLDA Mk3 Parts" deviceset="DMMT5401" device="">
+<attribute name="FARNELL" value="1773583"/>
+</part>
+<part name="Q2" library="TiLDA Mk3 Parts" deviceset="CSD25402Q3A" device="" value="NTR4101"/>
 <part name="R15" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/47k/5%"/>
 <part name="R16" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/10k/5%"/>
 <part name="GND87" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND88" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND89" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="L1" library="TiLDA Mk3 Parts" deviceset="INDUCTOR" device="1210"/>
+<part name="L1" library="TiLDA Mk3 Parts" deviceset="INDUCTOR" device="1210" value="SRN2512-2R2M">
+<attribute name="FARNELL" value="2428203"/>
+</part>
 <part name="C5" library="passives-7351" deviceset="CAPACITOR" device="0805-N" value="0805/10u/10V/X5R"/>
 <part name="GND91" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C6" library="passives-7351" deviceset="CAPACITOR" device="0805-N" value="0805/10u/10V/X5R"/>
 <part name="GND94" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="D3" library="TiLDA Mk3 Parts" deviceset="DIODE" device="SOD-323F"/>
-<part name="D2" library="TiLDA Mk3 Parts" deviceset="DIODE" device="SOD-323F"/>
+<part name="D2" library="TiLDA Mk3 Parts" deviceset="DIODE" device="SOD-323F">
+<attribute name="FARNELL" value="1757770"/>
+</part>
 <part name="SJ1" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NO" device="YES_SILK"/>
 <part name="C8" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/4u7/10V/X5R"/>
 <part name="GND97" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="LED2" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT"/>
-<part name="LED3" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT"/>
-<part name="R12" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL"/>
-<part name="R14" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL"/>
+<part name="LED2" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT" value="RED">
+<attribute name="COLOUR" value="RED"/>
+<attribute name="FARNELL" value="2449874"/>
+</part>
+<part name="LED3" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT" value="GREEN">
+<attribute name="COLOUR" value="GREEN"/>
+<attribute name="FARNELL" value="2426215"/>
+</part>
+<part name="R12" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/150/5%"/>
+<part name="R14" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/120/5%"/>
 <part name="GND100" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND101" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C14" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/10V/X5R"/>
@@ -24083,27 +24110,29 @@ This setting can be found in the board layout editor under the Edit menu.  Selec
 <part name="GND102" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V23" library="supply1" deviceset="+3V3" device=""/>
 <part name="SJ2" library="TiLDA Mk3 Parts" deviceset="SOLDERJUMPER" device="TRACE"/>
-<part name="LED1" library="TiLDA Mk3 Parts" deviceset="LED" device="5MM"/>
-<part name="R1" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0207/10"/>
+<part name="LED1" library="TiLDA Mk3 Parts" deviceset="LED" device="5MM" value="DNP"/>
+<part name="R1" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0207/10" value="DNP"/>
 <part name="GND105" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V24" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V25" library="supply1" deviceset="+3V3" device=""/>
-<part name="R43" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/220/5%"/>
-<part name="Q6" library="TiLDA Mk3 Parts" deviceset="MOSFET-P" device="-SOT23" value="NTR4101"/>
+<part name="R43" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/150/5%"/>
+<part name="Q6" library="TiLDA Mk3 Parts" deviceset="CSD25402Q3A" device="" value="NTR4101"/>
 <part name="R45" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/220k/5%"/>
 <part name="GND107" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="S7" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD-1101NE"/>
 <part name="TP7" library="TiLDA Mk3 Parts" deviceset="TP" device="3.5MMEDGE" value="TP3.5MMEDGE"/>
 <part name="IC6" library="TiLDA Mk3 Parts" deviceset="CC3100MOD" device=""/>
-<part name="ANT1" library="TiLDA Mk3 Parts" deviceset="CHIPANT" device=""/>
+<part name="ANT1" library="TiLDA Mk3 Parts" deviceset="CHIPANT" device="">
+<attribute name="FARNELL" value="2148522"/>
+</part>
 <part name="GND11" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="R17" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/10k/5%"/>
 <part name="GND43" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R20" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/100K/5%"/>
+<part name="R20" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/220k/5%"/>
 <part name="+3V26" library="supply1" deviceset="+3V3" device=""/>
 <part name="SV7" library="TiLDA Mk3 Parts" deviceset="M03" device="PTH"/>
 <part name="GND108" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="S8" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD-1101NE"/>
+<part name="S8" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD-1101NE" value="DNP"/>
 <part name="GND109" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND2" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V27" library="supply1" deviceset="+3V3" device=""/>
@@ -24125,12 +24154,12 @@ This setting can be found in the board layout editor under the Edit menu.  Selec
 <part name="Q7" library="TiLDA Mk3 Parts" deviceset="MOSFET-N" device="-SOT23-SPARK"/>
 <part name="GND56" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="R50" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/2k/5%"/>
-<part name="R51" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="330"/>
+<part name="R51" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/330/5%"/>
 <part name="C48" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/10V/X5R"/>
-<part name="Q8" library="TiLDA Mk3 Parts" deviceset="MOSFET-N" device="-SOT23-SPARK"/>
+<part name="Q8" library="TiLDA Mk3 Parts" deviceset="CSD13202Q2" device="" value="CSD13202Q2"/>
 <part name="GND4" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C45" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/10V/X5R"/>
-<part name="Q3" library="TiLDA Mk3 Parts" deviceset="MOSFET-N" device="-SOT23-SPARK"/>
+<part name="Q3" library="TiLDA Mk3 Parts" deviceset="CSD13202Q2" device="" value="CSD13202Q2"/>
 <part name="JP4" library="tag-connect" deviceset="TC2030-SWD" device="NL"/>
 <part name="+3V29" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND57" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -24161,8 +24190,6 @@ This setting can be found in the board layout editor under the Edit menu.  Selec
 <plain>
 <text x="294.64" y="93.98" size="3.81" layer="97" ratio="15">Headers</text>
 <text x="266.7" y="251.46" size="3.81" layer="97" ratio="15">LCD Connector</text>
-<text x="266.7" y="246.38" size="1.778" layer="97">Taken form the Repaper Dev Board</text>
-<text x="266.7" y="248.92" size="1.778" layer="97">Connector and support parts</text>
 <text x="33.02" y="223.52" size="1.778" layer="91">values depend on crystal</text>
 <text x="599.44" y="35.56" size="1.778" layer="90" rot="MR270">will probably want changing
  to the smaller version</text>
@@ -24214,8 +24241,6 @@ off/on switch</text>
 <text x="129.286" y="199.136" size="1.778" layer="91" rot="R90">low ESR</text>
 <text x="797.56" y="111.76" size="2.54" layer="90">move esp decoupling cap to vcc pin</text>
 <text x="797.56" y="119.38" size="2.54" layer="90">sort out power switch</text>
-<text x="320.04" y="251.46" size="1.778" layer="97">NOTE: need to disable spi
-when screen power is off</text>
 <text x="797.56" y="152.4" size="1.778" layer="90">DONE:</text>
 <text x="408.94" y="58.42" size="3.81" layer="97" ratio="15">MicroSD Card</text>
 <text x="459.74" y="93.98" size="1.778" layer="96">WS2812</text>
@@ -24259,10 +24284,8 @@ when screen power is off</text>
 <text x="-15.24" y="104.14" size="1.778" layer="91">WS2812</text>
 <text x="650.24" y="213.36" size="1.778" layer="91" rot="R90">GRM32ER60J107ME20L</text>
 <text x="607.06" y="86.36" size="1.778" layer="91">or change to 1x22u</text>
-<text x="274.32" y="127" size="1.778" layer="91">CSD13202Q2</text>
-<text x="322.58" y="393.7" size="1.778" layer="91" rot="R90">CSD13202Q2</text>
-<text x="546.1" y="68.58" size="1.778" layer="91">BQ24079</text>
-<text x="637.54" y="63.5" size="1.778" layer="91">CSD25402Q3A</text>
+<text x="546.1" y="68.58" size="1.778" layer="91">bq24092/3</text>
+<text x="436.88" y="7.62" size="1.778" layer="91">688-SCHA4B0419</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -24277,6 +24300,7 @@ when screen power is off</text>
 <instance part="GND3" gate="1" x="355.6" y="170.18"/>
 <instance part="J1" gate="G$1" x="109.22" y="124.46" smashed="yes" rot="R180">
 <attribute name="NAME" x="111.76" y="114.3" size="1.778" layer="95" rot="R180"/>
+<attribute name="FARNELL" x="109.22" y="124.46" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="GND17" gate="1" x="124.46" y="114.3"/>
 <instance part="GND5" gate="1" x="200.66" y="180.34"/>
@@ -24291,15 +24315,21 @@ when screen power is off</text>
 <attribute name="VALUE" x="375.92" y="48.26" size="1.778" layer="96"/>
 </instance>
 <instance part="+3V4" gate="G$1" x="10.16" y="27.94"/>
-<instance part="SW1" gate="G$1" x="330.2" y="129.54"/>
+<instance part="SW1" gate="G$1" x="330.2" y="129.54">
+<attribute name="FARNELL" x="330.2" y="129.54" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="S4" gate="G$1" x="337.82" y="119.38" smashed="yes">
 <attribute name="NAME" x="335.28" y="121.92" size="1.778" layer="95"/>
+<attribute name="FARNELL" x="337.82" y="119.38" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="S3" gate="G$1" x="337.82" y="109.22" smashed="yes">
 <attribute name="NAME" x="335.28" y="111.76" size="1.778" layer="95"/>
+<attribute name="FARNELL" x="337.82" y="109.22" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="U3" gate="G$1" x="553.72" y="55.88"/>
-<instance part="JP3" gate="G$1" x="650.24" y="-27.94" rot="MR0"/>
+<instance part="JP3" gate="G$1" x="650.24" y="-27.94" rot="MR0">
+<attribute name="FARNELL" x="650.24" y="-27.94" size="1.778" layer="96" rot="MR0" display="off"/>
+</instance>
 <instance part="+3V5" gate="G$1" x="254" y="228.6"/>
 <instance part="C39" gate="G$1" x="231.14" y="200.66" rot="R180"/>
 <instance part="C19" gate="G$1" x="236.22" y="200.66" rot="R180"/>
@@ -24329,6 +24359,7 @@ when screen power is off</text>
 <instance part="X2" gate="G$1" x="43.18" y="236.22" smashed="yes" rot="R90">
 <attribute name="NAME" x="46.482" y="236.728" size="1.778" layer="95"/>
 <attribute name="VALUE" x="46.482" y="233.934" size="1.778" layer="96"/>
+<attribute name="FARNELL" x="43.18" y="236.22" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND54" gate="1" x="83.82" y="236.22" rot="R90"/>
 <instance part="GND55" gate="1" x="33.02" y="236.22" rot="R270"/>
@@ -24348,9 +24379,14 @@ when screen power is off</text>
 <attribute name="VALUE" x="579.501" y="50.8" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND61" gate="1" x="581.66" y="43.18"/>
-<instance part="LED5" gate="G$1" x="538.48" y="53.34" rot="R90"/>
+<instance part="LED5" gate="G$1" x="538.48" y="53.34" rot="R90">
+<attribute name="COLOUR" x="538.48" y="53.34" size="1.778" layer="96" rot="R90"/>
+<attribute name="FARNELL" x="538.48" y="53.34" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="R2" gate="G$1" x="530.86" y="53.34" rot="R180"/>
-<instance part="S5" gate="1" x="637.54" y="38.1" rot="R90"/>
+<instance part="S5" gate="1" x="637.54" y="38.1" rot="R90">
+<attribute name="FARNELL" x="637.54" y="38.1" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="+3V6" gate="G$1" x="612.14" y="121.92"/>
 <instance part="C1" gate="G$1" x="525.78" y="45.72" smashed="yes" rot="R180">
 <attribute name="NAME" x="526.161" y="45.72" size="1.778" layer="95" rot="R270"/>
@@ -24391,7 +24427,9 @@ when screen power is off</text>
 <instance part="GND70" gate="1" x="500.38" y="20.32"/>
 <instance part="+3V9" gate="G$1" x="304.8" y="226.06" rot="R90"/>
 <instance part="GND71" gate="1" x="358.14" y="210.82" rot="R270"/>
-<instance part="LED4" gate="G$1" x="149.86" y="48.26" rot="R180"/>
+<instance part="LED4" gate="G$1" x="149.86" y="48.26" rot="R180">
+<attribute name="FARNELL" x="149.86" y="48.26" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="C13" gate="G$1" x="149.86" y="35.56" rot="R180"/>
 <instance part="R5" gate="G$1" x="157.48" y="35.56" rot="R270"/>
 <instance part="+3V10" gate="G$1" x="149.86" y="58.42"/>
@@ -24400,6 +24438,7 @@ when screen power is off</text>
 <instance part="X3" gate="G$1" x="43.18" y="86.36" smashed="yes" rot="R180">
 <attribute name="NAME" x="40.386" y="83.82" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="42.672" y="83.82" size="1.778" layer="96" rot="R270"/>
+<attribute name="FARNELL" x="43.18" y="86.36" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="C23" gate="G$1" x="48.26" y="78.74" rot="R180"/>
 <instance part="C24" gate="G$1" x="38.1" y="78.74" rot="R180"/>
@@ -24410,12 +24449,16 @@ when screen power is off</text>
 <instance part="TP10" gate="G$1" x="642.62" y="134.62" smashed="yes" rot="R180"/>
 <instance part="GND78" gate="1" x="238.76" y="170.18"/>
 <instance part="GND79" gate="1" x="254" y="177.8"/>
-<instance part="L3" gate="G$1" x="139.7" y="193.04"/>
+<instance part="L3" gate="G$1" x="139.7" y="193.04">
+<attribute name="FARNELL" x="139.7" y="193.04" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="IC3" gate="_PD" x="68.58" y="114.3"/>
 <instance part="IC3" gate="_PE" x="66.04" y="50.8"/>
 <instance part="IC3" gate="_PWR" x="180.34" y="203.2"/>
 <instance part="IC3" gate="_PH" x="22.86" y="236.22"/>
-<instance part="IC3" gate="_PC" x="25.4" y="114.3"/>
+<instance part="IC3" gate="_PC" x="25.4" y="114.3">
+<attribute name="FARNELL" x="25.4" y="114.3" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="IC3" gate="_PB" x="60.96" y="182.88"/>
 <instance part="IC3" gate="_PA" x="22.86" y="182.88"/>
 <instance part="C29" gate="G$1" x="157.48" y="200.66" rot="R90"/>
@@ -24450,19 +24493,24 @@ when screen power is off</text>
 <instance part="L2" gate="G$1" x="142.24" y="127" smashed="yes">
 <attribute name="VALUE" x="143.002" y="132.08" size="1.778" layer="96"/>
 <attribute name="NAME" x="138.43" y="132.08" size="1.778" layer="95"/>
+<attribute name="FARNELL" x="142.24" y="127" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SJ3" gate="G$1" x="154.94" y="109.22" smashed="yes" rot="R180">
 <attribute name="NAME" x="157.48" y="106.68" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="R10" gate="G$1" x="165.1" y="116.84" rot="R180"/>
-<instance part="Q1" gate="G$1" x="612.14" y="43.18"/>
+<instance part="Q1" gate="G$1" x="612.14" y="43.18">
+<attribute name="FARNELL" x="612.14" y="43.18" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="Q2" gate="G$1" x="612.14" y="58.42" rot="MR90"/>
 <instance part="R15" gate="G$1" x="622.3" y="27.94" rot="R270"/>
 <instance part="R16" gate="G$1" x="607.06" y="27.94" rot="R270"/>
 <instance part="GND87" gate="1" x="622.3" y="12.7"/>
 <instance part="GND88" gate="1" x="607.06" y="12.7"/>
 <instance part="GND89" gate="1" x="568.96" y="96.52"/>
-<instance part="L1" gate="G$1" x="591.82" y="116.84" rot="R90"/>
+<instance part="L1" gate="G$1" x="591.82" y="116.84" rot="R90">
+<attribute name="FARNELL" x="591.82" y="116.84" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="C5" gate="G$1" x="612.14" y="104.14" smashed="yes">
 <attribute name="NAME" x="611.759" y="104.14" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="616.839" y="88.9" size="1.778" layer="96" rot="R90"/>
@@ -24474,14 +24522,22 @@ when screen power is off</text>
 </instance>
 <instance part="GND94" gate="1" x="546.1" y="96.52"/>
 <instance part="D3" gate="G$1" x="624.84" y="66.04"/>
-<instance part="D2" gate="G$1" x="624.84" y="73.66" rot="R180"/>
+<instance part="D2" gate="G$1" x="624.84" y="73.66" rot="R180">
+<attribute name="FARNELL" x="624.84" y="73.66" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="SJ1" gate="G$1" x="614.68" y="73.66" smashed="yes" rot="R180">
 <attribute name="NAME" x="617.22" y="71.12" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="C8" gate="G$1" x="254" y="200.66" rot="R180"/>
 <instance part="GND97" gate="1" x="487.68" y="116.84" rot="R90"/>
-<instance part="LED2" gate="G$1" x="269.24" y="111.76" rot="R90"/>
-<instance part="LED3" gate="G$1" x="269.24" y="106.68" rot="R90"/>
+<instance part="LED2" gate="G$1" x="269.24" y="111.76" rot="R90">
+<attribute name="COLOUR" x="269.24" y="111.76" size="1.778" layer="96" rot="R90"/>
+<attribute name="FARNELL" x="269.24" y="111.76" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="LED3" gate="G$1" x="269.24" y="106.68" rot="R90">
+<attribute name="FARNELL" x="269.24" y="106.68" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="COLOUR" x="269.24" y="106.68" size="1.778" layer="96" rot="R90"/>
+</instance>
 <instance part="R12" gate="G$1" x="261.62" y="111.76" rot="R180"/>
 <instance part="R14" gate="G$1" x="261.62" y="106.68" rot="R180"/>
 <instance part="GND100" gate="1" x="276.86" y="111.76" rot="R90"/>
@@ -24522,7 +24578,9 @@ when screen power is off</text>
 </instance>
 <instance part="TP7" gate="G$1" x="617.22" y="134.62" smashed="yes" rot="R180"/>
 <instance part="IC6" gate="G$1" x="690.88" y="210.82"/>
-<instance part="ANT1" gate="G$1" x="754.38" y="233.68"/>
+<instance part="ANT1" gate="G$1" x="754.38" y="233.68">
+<attribute name="FARNELL" x="754.38" y="233.68" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND11" gate="1" x="678.18" y="190.5"/>
 <instance part="R17" gate="G$1" x="736.6" y="157.48" rot="R270"/>
 <instance part="GND43" gate="1" x="736.6" y="149.86"/>
@@ -24530,9 +24588,7 @@ when screen power is off</text>
 <instance part="+3V26" gate="G$1" x="673.1" y="243.84"/>
 <instance part="SV7" gate="G$1" x="759.46" y="190.5" rot="MR0"/>
 <instance part="GND108" gate="1" x="751.84" y="185.42"/>
-<instance part="S8" gate="G$1" x="662.94" y="213.36" smashed="yes" rot="R270">
-<attribute name="NAME" x="665.48" y="215.9" size="1.778" layer="95" rot="R270"/>
-</instance>
+<instance part="S8" gate="G$1" x="662.94" y="213.36" rot="R270"/>
 <instance part="GND109" gate="1" x="662.94" y="205.74"/>
 <instance part="GND2" gate="1" x="350.52" y="284.48" rot="R270"/>
 <instance part="+3V27" gate="G$1" x="340.36" y="403.86" rot="R90"/>
@@ -25609,6 +25665,7 @@ when screen power is off</text>
 <wire x1="129.54" y1="127" x2="114.3" y2="127" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="99.06" x2="129.54" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="99.06" x2="129.54" y2="127" width="0.1524" layer="91"/>
+<junction x="129.54" y="127"/>
 </segment>
 </net>
 <net name="USB_D_P" class="2">
@@ -25620,6 +25677,7 @@ when screen power is off</text>
 <wire x1="132.08" y1="124.46" x2="114.3" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="96.52" x2="132.08" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="96.52" x2="132.08" y2="124.46" width="0.1524" layer="91"/>
+<junction x="132.08" y="124.46"/>
 </segment>
 </net>
 <net name="D_N" class="0">
@@ -25699,6 +25757,7 @@ when screen power is off</text>
 <wire x1="629.92" y1="-15.24" x2="589.28" y2="-15.24" width="0.1524" layer="91"/>
 <junction x="629.92" y="-22.86"/>
 <wire x1="589.28" y1="58.42" x2="589.28" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="589.28" y="58.42"/>
 </segment>
 <segment>
 <pinref part="R21" gate="G$1" pin="2"/>
