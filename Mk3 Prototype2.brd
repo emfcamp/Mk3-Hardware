@@ -1494,6 +1494,29 @@ Metric Code Size 3225</description>
 <wire x1="-1.075" y1="1" x2="-1.075" y2="-1" width="0.127" layer="25"/>
 <wire x1="1.075" y1="1" x2="1.075" y2="-1" width="0.127" layer="25"/>
 </package>
+<package name="HVSSOP10">
+<smd name="1" x="-1" y="-2.1" dx="1.6" dy="0.3" layer="1" rot="R90"/>
+<smd name="2" x="-0.5" y="-2.1" dx="1.6" dy="0.3" layer="1" rot="R90"/>
+<smd name="3" x="0" y="-2.1" dx="1.6" dy="0.3" layer="1" rot="R90"/>
+<smd name="4" x="0.5" y="-2.1" dx="1.6" dy="0.3" layer="1" rot="R90"/>
+<smd name="5" x="1" y="-2.1" dx="1.6" dy="0.3" layer="1" rot="R90"/>
+<smd name="6" x="1" y="2.1" dx="1.6" dy="0.3" layer="1" rot="R90"/>
+<smd name="7" x="0.5" y="2.1" dx="1.6" dy="0.3" layer="1" rot="R90"/>
+<smd name="8" x="0" y="2.1" dx="1.6" dy="0.3" layer="1" rot="R90"/>
+<smd name="9" x="-0.5" y="2.1" dx="1.6" dy="0.3" layer="1" rot="R90"/>
+<smd name="10" x="-1" y="2.1" dx="1.6" dy="0.3" layer="1" rot="R90"/>
+<smd name="EP" x="0" y="0" dx="1.88" dy="1.57" layer="1"/>
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-0.5" x2="-1.5" y2="0.5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="0.5" x2="-1.5" y2="1.5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="0.5" x2="-1.5" y2="-0.5" width="0.127" layer="51" curve="-180"/>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<circle x="-1.7" y="-2" radius="0.125" width="0.22" layer="21"/>
+</package>
 </packages>
 </library>
 <library name="dtb">
@@ -1997,7 +2020,7 @@ design rules under a new name.</description>
 <element name="S3" library="Mine" package="TACTILE_SWITCH_TALL" value="1217769" x="103.8" y="47.2" smashed="yes" rot="R90">
 <attribute name="FARNELL" value="1217769" x="103.8" y="47.2" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="IC4" library="TiLDA Mk3 Parts" package="SOT23-5" value="MCP73831" x="36" y="58.4" smashed="yes" rot="MR270">
+<element name="IC40" library="TiLDA Mk3 Parts" package="SOT23-5" value="MCP73831" x="36" y="58.4" smashed="yes" rot="MR270">
 <attribute name="NAME" x="35.111" y="56.841" size="0.8128" layer="26" font="vector" ratio="14" rot="MR180"/>
 </element>
 <element name="JP3" library="TiLDA Mk3 Parts" package="JST-2-SMD" value="" x="47" y="58.8" smashed="yes" rot="MR0">
@@ -2324,6 +2347,7 @@ design rules under a new name.</description>
 </element>
 <element name="C27" library="passives-7351" package="C0805-N" value="0805/10u/10V/X5R" x="33.6" y="46.8" rot="MR0"/>
 <element name="Q4" library="TiLDA Mk3 Parts" package="Q2_DUAL" value="CSD85301Q2" x="50.8" y="52.4" rot="MR180"/>
+<element name="IC4" library="TiLDA Mk3 Parts" package="HVSSOP10" value="BQ2409X" x="-5.6" y="-4.4"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2340,7 +2364,7 @@ design rules under a new name.</description>
 <contactref element="X2" pad="4"/>
 <contactref element="C21" pad="1"/>
 <contactref element="C20" pad="1"/>
-<contactref element="IC4" pad="2"/>
+<contactref element="IC40" pad="2"/>
 <contactref element="R6" pad="2"/>
 <contactref element="C3" pad="1"/>
 <contactref element="C1" pad="1"/>
@@ -3263,13 +3287,13 @@ design rules under a new name.</description>
 <wire x1="47.175" y1="25" x2="47.275" y2="23.6" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$34">
-<contactref element="IC4" pad="5"/>
+<contactref element="IC40" pad="5"/>
 <contactref element="R6" pad="1"/>
 <wire x1="34.6999" y1="59.35" x2="34.6999" y2="60.5999" width="0.2" layer="16"/>
 <wire x1="34.6999" y1="60.5999" x2="34.325" y2="60.8" width="0.2" layer="16"/>
 </signal>
 <signal name="VBAT">
-<contactref element="IC4" pad="3"/>
+<contactref element="IC40" pad="3"/>
 <contactref element="C3" pad="2"/>
 <contactref element="R21" pad="2"/>
 <contactref element="Q2" pad="3"/>
@@ -3326,7 +3350,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="CHARGING">
 <contactref element="LED5" pad="C"/>
-<contactref element="IC4" pad="1"/>
+<contactref element="IC40" pad="1"/>
 <wire x1="23.25" y1="2.8" x2="8.8" y2="2.8" width="0.2" layer="1"/>
 <wire x1="8.8" y1="2.8" x2="7" y2="4.6" width="0.2" layer="1"/>
 <wire x1="7" y1="4.6" x2="4.2" y2="4.6" width="0.2" layer="1"/>
@@ -4063,7 +4087,7 @@ design rules under a new name.</description>
 <wire x1="15.925" y1="8.8" x2="16" y2="9.125" width="1.016" layer="16"/>
 </signal>
 <signal name="VBUS">
-<contactref element="IC4" pad="4"/>
+<contactref element="IC40" pad="4"/>
 <contactref element="R2" pad="2"/>
 <contactref element="C1" pad="2"/>
 <contactref element="R10" pad="2"/>
@@ -5118,6 +5142,14 @@ design rules under a new name.</description>
 <wire x1="51.288" y1="52.4" x2="50.312" y2="52.4" width="0.254" layer="16"/>
 <wire x1="50.15" y1="51.425" x2="50.15" y2="52.238" width="0.254" layer="16"/>
 <wire x1="50.15" y1="52.238" x2="50.312" y2="52.4" width="0.254" layer="16"/>
+</signal>
+<signal name="IN">
+<contactref element="IC4" pad="1"/>
+</signal>
+<signal name="VSS">
+<contactref element="IC4" pad="EP"/>
+<contactref element="IC4" pad="3"/>
+<wire x1="-5.6" y1="-4.4" x2="-5.6" y2="-6.5" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <errors>
