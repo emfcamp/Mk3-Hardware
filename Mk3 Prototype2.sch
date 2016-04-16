@@ -24263,6 +24263,9 @@ off/on switch</text>
 <wire x1="246.38" y1="241.3" x2="233.68" y2="241.3" width="0.1524" layer="97"/>
 <text x="-15.24" y="99.06" size="1.778" layer="91">JOY_RIGHT</text>
 <text x="-15.24" y="96.52" size="1.778" layer="91">JOY_CENTRE/BOOT0</text>
+<text x="-15.24" y="93.98" size="1.778" layer="91">connect i2c on pb11</text>
+<text x="-15.24" y="91.44" size="1.778" layer="91">speaker to tim1</text>
+<text x="-15.24" y="88.9" size="1.778" layer="91">add i2c to edge connectors</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
