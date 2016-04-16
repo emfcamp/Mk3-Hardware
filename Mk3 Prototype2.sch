@@ -24121,6 +24121,7 @@ This setting can be found in the board layout editor under the Edit menu.  Selec
 <part name="R13" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/??/5%"/>
 <part name="GND14" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="R24" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0/dnp"/>
+<part name="R26" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="TEmp"/>
 </parts>
 <sheets>
 <sheet>
@@ -24671,6 +24672,7 @@ off/on switch</text>
 </instance>
 <instance part="GND14" gate="1" x="581.66" y="-20.32"/>
 <instance part="R24" gate="G$1" x="332.74" y="299.72" rot="R180"/>
+<instance part="R26" gate="G$1" x="40.64" y="99.06"/>
 </instances>
 <busses>
 </busses>
@@ -27181,6 +27183,7 @@ off/on switch</text>
 <segment>
 <pinref part="IC3" gate="_PD" pin="PD7"/>
 <wire x1="73.66" y1="116.84" x2="83.82" y2="116.84" width="0.1524" layer="91"/>
+<label x="76.2" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="358.14" y1="297.18" x2="342.9" y2="297.18" width="0.1524" layer="91"/>
@@ -27199,6 +27202,13 @@ off/on switch</text>
 <wire x1="322.58" y1="314.96" x2="322.58" y2="299.72" width="0.1524" layer="91"/>
 <pinref part="R24" gate="G$1" pin="2"/>
 <wire x1="322.58" y1="299.72" x2="327.66" y2="299.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="IC3" gate="_PC" pin="PC13"/>
+<pinref part="R26" gate="G$1" pin="1"/>
+<wire x1="33.02" y1="99.06" x2="35.56" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
