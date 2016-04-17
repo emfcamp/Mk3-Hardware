@@ -24200,6 +24200,7 @@ off/on switch</text>
 <text x="-15.24" y="88.9" size="1.778" layer="91">add i2c to edge connectors</text>
 <text x="579.12" y="-45.72" size="1.778" layer="91" rot="R90">depends on whether battery has thermistor</text>
 <text x="83.82" y="71.12" size="1.778" layer="91">/JOY_CENTRE</text>
+<text x="162.56" y="106.68" size="1.778" layer="91">needed?</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -25536,20 +25537,6 @@ off/on switch</text>
 <pinref part="+3V12" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
-<net name="USB_ID" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="USBID"/>
-<label x="132.08" y="109.22" size="1.778" layer="95"/>
-<pinref part="SJ3" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="121.92" x2="127" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="127" y1="121.92" x2="127" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="127" y1="109.22" x2="149.86" y2="109.22" width="0.1524" layer="91"/>
-<junction x="127" y="109.22"/>
-<wire x1="127" y1="109.22" x2="127" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="IO3"/>
-<wire x1="127" y1="93.98" x2="134.62" y2="93.98" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="C9" gate="G$1" pin="2"/>
@@ -25689,19 +25676,20 @@ off/on switch</text>
 <wire x1="601.98" y1="58.42" x2="596.9" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="607.06" y1="50.8" x2="607.06" y2="58.42" width="0.1524" layer="91"/>
 <junction x="607.06" y="58.42"/>
-<pinref part="IC7" gate="G$1" pin="BAT"/>
-<pinref part="R51" gate="G$1" pin="1"/>
-<wire x1="629.92" y1="-22.86" x2="627.38" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="C48" gate="G$1" pin="2"/>
-<wire x1="629.92" y1="-35.56" x2="629.92" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="629.92" y1="-22.86" x2="629.92" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="629.92" y1="-20.32" x2="629.92" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="629.92" y1="-15.24" x2="601.98" y2="-15.24" width="0.1524" layer="91"/>
-<junction x="629.92" y="-22.86"/>
 <wire x1="601.98" y1="58.42" x2="601.98" y2="-15.24" width="0.1524" layer="91"/>
 <junction x="601.98" y="58.42"/>
 <pinref part="IC4" gate="G$1" pin="OUT"/>
 <wire x1="584.2" y1="58.42" x2="596.9" y2="58.42" width="0.1524" layer="91"/>
 <junction x="596.9" y="58.42"/>
+<pinref part="JP3" gate="G$1" pin="2"/>
+<wire x1="642.62" y1="-25.4" x2="640.08" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="640.08" y1="-25.4" x2="640.08" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="R51" gate="G$1" pin="2"/>
+<wire x1="640.08" y1="-22.86" x2="640.08" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="640.08" y1="-20.32" x2="629.92" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="640.08" y="-22.86"/>
 </segment>
 <segment>
 <pinref part="R21" gate="G$1" pin="2"/>
@@ -25911,18 +25899,6 @@ off/on switch</text>
 <junction x="38.1" y="86.36"/>
 <label x="35.56" y="93.98" size="1.778" layer="95"/>
 <pinref part="IC3" gate="_PC" pin="PC15/OSC32_OUT"/>
-</segment>
-</net>
-<net name="USB_ID_" class="0">
-<segment>
-<wire x1="30.48" y1="175.26" x2="33.02" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="_PA" pin="PA10"/>
-<label x="33.02" y="175.26" size="1.778" layer="95"/>
-</segment>
-<segment>
-<label x="170.18" y="109.22" size="1.778" layer="95"/>
-<wire x1="177.8" y1="109.22" x2="160.02" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="SJ3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="FS_VUSB" class="0">
@@ -26914,14 +26890,6 @@ off/on switch</text>
 <pinref part="Q4" gate="_1" pin="S"/>
 </segment>
 </net>
-<net name="N$62" class="0">
-<segment>
-<pinref part="JP3" gate="G$1" pin="2"/>
-<wire x1="642.62" y1="-25.4" x2="640.08" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="640.08" y1="-25.4" x2="640.08" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="R51" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="N$63" class="0">
 <segment>
 <pinref part="IC7" gate="G$1" pin="V-"/>
@@ -27150,6 +27118,41 @@ off/on switch</text>
 <pinref part="IC3" gate="_PC" pin="PC13"/>
 <pinref part="R26" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="99.06" x2="35.56" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="IC7" gate="G$1" pin="BAT"/>
+<pinref part="R51" gate="G$1" pin="1"/>
+<wire x1="629.92" y1="-22.86" x2="627.38" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="629.92" y="-22.86"/>
+<pinref part="C48" gate="G$1" pin="2"/>
+<wire x1="629.92" y1="-35.56" x2="629.92" y2="-22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="USB_ID" class="0">
+<segment>
+<label x="170.18" y="109.22" size="1.778" layer="95"/>
+<wire x1="177.8" y1="109.22" x2="160.02" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="SJ3" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="109.22" x2="160.02" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="USBID"/>
+<label x="132.08" y="109.22" size="1.778" layer="95"/>
+<pinref part="SJ3" gate="G$1" pin="2"/>
+<wire x1="114.3" y1="121.92" x2="127" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="127" y1="121.92" x2="127" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="127" y1="109.22" x2="149.86" y2="109.22" width="0.1524" layer="91"/>
+<junction x="127" y="109.22"/>
+<wire x1="127" y1="109.22" x2="127" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="IO3"/>
+<wire x1="127" y1="93.98" x2="134.62" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="111.76" x2="149.86" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="111.76" x2="149.86" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="30.48" y1="175.26" x2="33.02" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="_PA" pin="PA10"/>
+<label x="33.02" y="175.26" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
