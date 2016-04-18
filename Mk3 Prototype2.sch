@@ -11922,6 +11922,138 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <rectangle x1="-11.5" y1="1.75" x2="-9.75" y2="5.5" layer="41"/>
 <rectangle x1="-11" y1="7" x2="-9.75" y2="9" layer="41"/>
 </package>
+<package name="BUZZER-12MM">
+<description>&lt;b&gt;BUZZER&lt;/b&gt;</description>
+<circle x="0" y="0" radius="5.9" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="1.27" width="0.2032" layer="51"/>
+<pad name="-" x="-3.25" y="0" drill="0.9" diameter="1.778"/>
+<pad name="+" x="3.25" y="0" drill="0.9" diameter="1.778"/>
+<text x="-2.54" y="2.54" size="0.6096" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.175" y="-3.048" size="0.6096" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="BUZZER-CMT1603">
+<wire x1="-8" y1="8" x2="-8" y2="-8" width="0.127" layer="21"/>
+<wire x1="-8" y1="-8" x2="8" y2="-8" width="0.127" layer="21"/>
+<wire x1="8" y1="-8" x2="8" y2="8" width="0.127" layer="21"/>
+<wire x1="8" y1="8" x2="-8" y2="8" width="0.127" layer="21"/>
+<smd name="P$1" x="-9.3" y="0" dx="2.5" dy="3" layer="1"/>
+<smd name="P$2" x="9.3" y="0" dx="2.5" dy="3" layer="1"/>
+</package>
+<package name="BUZZER-CCV">
+<wire x1="2.6" y1="-6" x2="-2.6" y2="-6" width="0.127" layer="51"/>
+<wire x1="2.6" y1="-6" x2="2.6" y2="-3.7" width="0.127" layer="51"/>
+<wire x1="-2.6" y1="-6" x2="-2.6" y2="-3.7" width="0.127" layer="51"/>
+<wire x1="-4.2" y1="1.6" x2="1.27" y2="4.318" width="0.2032" layer="21" curve="-86.141052"/>
+<wire x1="3.048" y1="3.302" x2="4.191" y2="1.651" width="0.2032" layer="21" curve="-25.69541"/>
+<wire x1="4.2" y1="-1.6" x2="2.6" y2="-3.7" width="0.2032" layer="21" curve="-31.605028"/>
+<wire x1="-3.302" y1="-3.048" x2="-2.6" y2="-3.6" width="0.2032" layer="21" curve="12.917633"/>
+<wire x1="-2.6" y1="-6" x2="2.6" y2="-6" width="0.2032" layer="21"/>
+<wire x1="2.6" y1="-6" x2="2.6" y2="-3.7" width="0.2032" layer="21"/>
+<wire x1="-2.6" y1="-6" x2="-2.6" y2="-3.6" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="4.5" width="0.127" layer="51"/>
+<smd name="-" x="-4" y="0" dx="3.2" dy="2.5" layer="1"/>
+<smd name="+" x="4" y="0" dx="3.2" dy="2.5" layer="1"/>
+<hole x="-3.9" y="-2.25" drill="0.8"/>
+<hole x="2.25" y="3.9" drill="0.8"/>
+</package>
+<package name="BUZZER-CMT1102">
+<wire x1="-5.5" y1="4.5" x2="5.5" y2="4.5" width="0.127" layer="51"/>
+<wire x1="5.5" y1="4.5" x2="5.5" y2="-4.5" width="0.127" layer="51"/>
+<wire x1="5.5" y1="-4.5" x2="-5.5" y2="-4.5" width="0.127" layer="51"/>
+<wire x1="-5.5" y1="-4.5" x2="-5.5" y2="4.5" width="0.127" layer="51"/>
+<wire x1="-5.5" y1="4.5" x2="-5.5" y2="2" width="0.2032" layer="21"/>
+<wire x1="-5.5" y1="4.5" x2="5.5" y2="4.5" width="0.2032" layer="21"/>
+<wire x1="5.5" y1="4.5" x2="5.5" y2="2" width="0.2032" layer="21"/>
+<wire x1="5.5" y1="-2" x2="5.5" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="5.5" y1="-4.5" x2="-5.5" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="-5.5" y1="-4.5" x2="-5.5" y2="-2" width="0.2032" layer="21"/>
+<smd name="1" x="-6.5" y="0" dx="3" dy="3" layer="1"/>
+<smd name="2" x="6.5" y="0" dx="3" dy="3" layer="1"/>
+</package>
+<package name="BUZZER-12MM-NS">
+<circle x="0" y="0" radius="5.9" width="0.2032" layer="51"/>
+<circle x="0" y="0" radius="1.27" width="0.2032" layer="51"/>
+<pad name="-" x="-3.25" y="0" drill="0.9"/>
+<pad name="+" x="3.25" y="0" drill="0.9"/>
+<text x="-2.54" y="2.54" size="0.6096" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.175" y="-3.048" size="0.6096" layer="27" ratio="10">&gt;VALUE</text>
+<text x="2.667" y="1.143" size="1.778" layer="51">+</text>
+</package>
+<package name="BUZZER-12MM-NS-KIT">
+<description>&lt;h3&gt;BUZZER-12MM-NS-KIT&lt;/h3&gt;
+Through-hole buzzer&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Warning:&lt;/b&gt; This is the KIT version of this package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.</description>
+<circle x="0" y="0" radius="5.9" width="0.2032" layer="51"/>
+<circle x="0" y="0" radius="1.27" width="0.2032" layer="51"/>
+<pad name="-" x="-3.25" y="0" drill="0.9" diameter="1.8796" stop="no"/>
+<pad name="+" x="3.25" y="0" drill="0.9" diameter="1.8796" stop="no"/>
+<text x="-2.54" y="2.54" size="0.6096" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.175" y="-3.048" size="0.6096" layer="27" ratio="10">&gt;VALUE</text>
+<text x="2.667" y="1.143" size="1.778" layer="51">+</text>
+<polygon width="0.127" layer="30">
+<vertex x="3.2537" y="-0.9525" curve="-90"/>
+<vertex x="2.2988" y="-0.0228" curve="-90.011749"/>
+<vertex x="3.2512" y="0.9526" curve="-90"/>
+<vertex x="4.2012" y="-0.0254" curve="-90.024193"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="3.2512" y="-0.4445" curve="-90.012891"/>
+<vertex x="2.8067" y="-0.0203" curve="-90"/>
+<vertex x="3.2512" y="0.447" curve="-90"/>
+<vertex x="3.6931" y="-0.0101" curve="-90.012967"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="-3.2487" y="-0.9525" curve="-90"/>
+<vertex x="-4.2036" y="-0.0228" curve="-90.011749"/>
+<vertex x="-3.2512" y="0.9526" curve="-90"/>
+<vertex x="-2.3012" y="-0.0254" curve="-90.024193"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="-3.2512" y="-0.4445" curve="-90.012891"/>
+<vertex x="-3.6957" y="-0.0203" curve="-90"/>
+<vertex x="-3.2512" y="0.447" curve="-90"/>
+<vertex x="-2.8093" y="-0.0101" curve="-90.012967"/>
+</polygon>
+</package>
+<package name="BUZZER-CCV-KIT">
+<description>&lt;h3&gt;BUZZER-CCV-KIT&lt;/h3&gt;
+SMD Buzzer&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Warning:&lt;/b&gt; This is the KIT version of this package. This package has longer pads to aid in hand soldering.</description>
+<wire x1="2.6" y1="-6" x2="-2.6" y2="-6" width="0.127" layer="51"/>
+<wire x1="2.6" y1="-6" x2="2.6" y2="-3.7" width="0.127" layer="51"/>
+<wire x1="-2.6" y1="-6" x2="-2.6" y2="-3.7" width="0.127" layer="51"/>
+<wire x1="-4.2" y1="1.6" x2="1.27" y2="4.318" width="0.2032" layer="21" curve="-86.141052"/>
+<wire x1="3.048" y1="3.302" x2="4.191" y2="1.651" width="0.2032" layer="21" curve="-25.69541"/>
+<wire x1="4.2" y1="-1.6" x2="2.6" y2="-3.7" width="0.2032" layer="21" curve="-31.605028"/>
+<wire x1="-3.302" y1="-3.048" x2="-2.6" y2="-3.6" width="0.2032" layer="21" curve="12.917633"/>
+<wire x1="-2.6" y1="-6" x2="2.6" y2="-6" width="0.2032" layer="21"/>
+<wire x1="2.6" y1="-6" x2="2.6" y2="-3.7" width="0.2032" layer="21"/>
+<wire x1="-2.6" y1="-6" x2="-2.6" y2="-3.6" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="4.5" width="0.127" layer="51"/>
+<smd name="-" x="-4.15" y="0" dx="3.5" dy="2" layer="1"/>
+<smd name="+" x="4.15" y="0" dx="3.5" dy="2" layer="1"/>
+<rectangle x1="-5.2" y1="-0.75" x2="-2.9" y2="0.75" layer="51"/>
+<rectangle x1="2.9" y1="-0.75" x2="5.2" y2="0.75" layer="51" rot="R180"/>
+<hole x="-3.9" y="-2.25" drill="0.8"/>
+<hole x="2.25" y="3.9" drill="0.8"/>
+</package>
+<package name="BUZZER-PKLCS1212E">
+<wire x1="-6" y1="6" x2="-6" y2="2.3" width="0.127" layer="21"/>
+<wire x1="-6" y1="-2.3" x2="-6" y2="-6" width="0.127" layer="21"/>
+<wire x1="-6" y1="-6" x2="6" y2="-6" width="0.127" layer="21"/>
+<wire x1="6" y1="6" x2="-6" y2="6" width="0.127" layer="21"/>
+<smd name="P$1" x="-5.8" y="0" dx="1.6" dy="4" layer="1"/>
+<smd name="P$2" x="5.8" y="0" dx="1.6" dy="4" layer="1"/>
+<wire x1="6" y1="6" x2="6" y2="2.3" width="0.127" layer="21"/>
+<wire x1="6" y1="-2.3" x2="6" y2="-6" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-4.5" y="0"/>
+<vertex x="-4" y="0.5"/>
+<vertex x="-4" y="-0.5"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="A3L-LOC">
@@ -16259,6 +16391,31 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <pin name="DAT2" x="-10.16" y="15.24" length="middle"/>
 <pin name="DET" x="-10.16" y="-7.62" length="middle"/>
 <pin name="SHIELD" x="-10.16" y="-15.24" length="middle"/>
+</symbol>
+<symbol name="BUZZER">
+<wire x1="-1.27" y1="1.905" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.905" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.905" x2="0" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="3.175" x2="0.635" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0.635" x2="1.905" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="0.635" x2="1.905" y2="3.175" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="3.175" x2="0.635" y2="3.175" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="1.905" x2="3.81" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="1.905" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="3.81" width="0.254" layer="94"/>
+<wire x1="5.08" y1="3.81" x2="5.715" y2="3.81" width="0.254" layer="94"/>
+<wire x1="5.715" y1="3.81" x2="5.715" y2="4.445" width="0.254" layer="94"/>
+<wire x1="5.715" y1="4.445" x2="-3.175" y2="4.445" width="0.254" layer="94"/>
+<wire x1="-3.175" y1="4.445" x2="-3.175" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-3.175" y1="3.81" x2="-2.54" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="3.81" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="3.81" x2="5.08" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="6.35" y="0" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="1" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -21761,6 +21918,87 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </device>
 </devices>
 </deviceset>
+<deviceset name="BUZZER" prefix="SG">
+<description>&lt;b&gt;Buzzer 12mm&lt;/b&gt;
+Spark Fun Electronics SKU : Comp-Buzzer</description>
+<gates>
+<gate name="G$1" symbol="BUZZER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PTH" package="BUZZER-12MM">
+<connects>
+<connect gate="G$1" pin="1" pad="+"/>
+<connect gate="G$1" pin="2" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD" package="BUZZER-CMT1603">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD2" package="BUZZER-CCV">
+<connects>
+<connect gate="G$1" pin="1" pad="+"/>
+<connect gate="G$1" pin="2" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD3" package="BUZZER-CMT1102">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NS" package="BUZZER-12MM-NS">
+<connects>
+<connect gate="G$1" pin="1" pad="+"/>
+<connect gate="G$1" pin="2" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PTH-NS-KIT" package="BUZZER-12MM-NS-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="+"/>
+<connect gate="G$1" pin="2" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD2-KIT" package="BUZZER-CCV-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="+"/>
+<connect gate="G$1" pin="2" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-PKLCS1212E" package="BUZZER-PKLCS1212E">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="supply1">
@@ -23810,6 +24048,7 @@ This setting can be found in the board layout editor under the Edit menu.  Selec
 <part name="R24" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0/dnp"/>
 <part name="R26" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="TEmp"/>
 <part name="U1" library="TiLDA Mk3 Parts" deviceset="USD-SOCKET-SDIO" device="DM3AT_0011"/>
+<part name="SG1" library="TiLDA Mk3 Parts" deviceset="BUZZER" device="-PKLCS1212E"/>
 </parts>
 <sheets>
 <sheet>
@@ -23949,6 +24188,7 @@ off/on switch</text>
 <text x="162.56" y="106.68" size="1.778" layer="91">needed?</text>
 <text x="414.02" y="50.8" size="1.778" layer="91">change footprint once final part is known</text>
 <text x="693.42" y="160.02" size="1.778" layer="91">connect pin 10</text>
+<text x="693.42" y="154.94" size="1.778" layer="91">add testpoints</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -24362,6 +24602,7 @@ off/on switch</text>
 <instance part="R24" gate="G$1" x="332.74" y="299.72" rot="R180"/>
 <instance part="R26" gate="G$1" x="40.64" y="99.06"/>
 <instance part="U1" gate="G$1" x="441.96" y="30.48"/>
+<instance part="SG1" gate="G$1" x="223.52" y="60.96"/>
 </instances>
 <busses>
 </busses>
