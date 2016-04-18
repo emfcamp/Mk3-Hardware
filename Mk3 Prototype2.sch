@@ -23948,6 +23948,7 @@ off/on switch</text>
 <text x="83.82" y="71.12" size="1.778" layer="91">/JOY_CENTRE</text>
 <text x="162.56" y="106.68" size="1.778" layer="91">needed?</text>
 <text x="414.02" y="50.8" size="1.778" layer="91">change footprint once final part is known</text>
+<text x="693.42" y="160.02" size="1.778" layer="91">connect pin 10</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
