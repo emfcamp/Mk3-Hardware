@@ -11805,8 +11805,8 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <vertex x="-2.19" y="-3.25"/>
 <vertex x="-2.19" y="-0.07"/>
 </polygon>
-<wire x1="0" y1="-0.35" x2="1" y2="0" width="0" layer="20" curve="36.869898"/>
-<wire x1="0" y1="-0.35" x2="-1" y2="0" width="0" layer="20" curve="-36.869898"/>
+<wire x1="0" y1="-0.35" x2="1" y2="0" width="0" layer="51" curve="36.869898"/>
+<wire x1="0" y1="-0.35" x2="-1" y2="0" width="0" layer="51" curve="-36.869898"/>
 </package>
 <package name="DRL-5">
 <smd name="1" x="-0.5" y="-0.675" dx="0.3" dy="0.45" layer="1"/>
@@ -11817,7 +11817,7 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <circle x="-1.02" y="-0.79" radius="0.08485" width="0.127" layer="21"/>
 <wire x1="1" y1="0.5" x2="1" y2="-0.5" width="0.127" layer="21"/>
 <wire x1="-1" y1="0.5" x2="-1" y2="-0.5" width="0.127" layer="21"/>
-<text x="2.5" y="-1.5" size="1.016" layer="21" font="vector" ratio="14" rot="R90">&gt;NAME</text>
+<text x="2.5" y="-1.5" size="1.016" layer="25" font="vector" ratio="14" rot="R90">&gt;NAME</text>
 </package>
 <package name="WSON8">
 <smd name="1" x="-0.75" y="-0.95" dx="0.5" dy="0.28" layer="1" rot="R90"/>
@@ -11836,7 +11836,7 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <wire x1="-1.15" y1="1" x2="-1.15" y2="-1" width="0.127" layer="21"/>
 <wire x1="1.1" y1="1" x2="1.1" y2="-1" width="0.127" layer="21"/>
 <circle x="-1.25" y="-1" radius="0.111803125" width="0.2" layer="21"/>
-<text x="2.25" y="-1.5" size="1.016" layer="21" font="vector" ratio="14" rot="R90">&gt;NAME</text>
+<text x="2.25" y="-1.5" size="1.016" layer="25" font="vector" ratio="14" rot="R90">&gt;NAME</text>
 </package>
 <package name="Q2_DUAL">
 <smd name="1" x="-0.65" y="-0.975" dx="0.3" dy="0.45" layer="1"/>
@@ -11878,6 +11878,7 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
 <circle x="-1.7" y="-2" radius="0.125" width="0.22" layer="21"/>
+<text x="3.175" y="-2.54" size="1.016" layer="25" font="vector" ratio="14" rot="R90">&gt;NAME</text>
 </package>
 <package name="DM3AT_0011">
 <smd name="GND" x="-10.8" y="10" dx="1.4" dy="1.2" layer="1" rot="R270"/>
@@ -11907,7 +11908,7 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <wire x1="4.25" y1="-1" x2="4.25" y2="-4" width="0.127" layer="21"/>
 <wire x1="-10.5" y1="-1" x2="-10.5" y2="-3.25" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="-3.25" x2="0.75" y2="-4" width="0.127" layer="51" curve="-25.989237"/>
-<text x="-11.25" y="2.75" size="1.016" layer="21" font="vector" ratio="14" rot="R90">&gt;NAME</text>
+<text x="-11.25" y="2.75" size="1.016" layer="25" font="vector" ratio="14" rot="R90">&gt;NAME</text>
 <smd name="GND4" x="0.75" y="10.6" dx="1" dy="1.6" layer="1"/>
 <smd name="GND7" x="4.25" y="-4.5" dx="1.9" dy="1.3" layer="1" rot="R90"/>
 <wire x1="4.25" y1="-4" x2="4.25" y2="-5.5" width="0.127" layer="51"/>
@@ -16192,8 +16193,8 @@ SMD Buzzer&lt;br&gt;
 <pin name="VBAT_DCDC_ANA" x="-12.7" y="15.24" length="middle" direction="sup"/>
 <pin name="VBAT_DCDC_PA" x="-12.7" y="12.7" length="middle" direction="sup"/>
 <pin name="!RESET" x="-12.7" y="7.62" length="middle" direction="in"/>
-<pin name="RESERVED" x="-12.7" y="-2.54" length="middle" direction="in"/>
-<pin name="GND" x="-12.7" y="-17.78" length="middle" direction="sup"/>
+<pin name="RESERVED" x="-12.7" y="-30.48" length="middle" direction="in"/>
+<pin name="GND" x="-12.7" y="-43.18" length="middle" direction="sup"/>
 <pin name="!HIB" x="40.64" y="2.54" length="middle" direction="in" rot="R180"/>
 <pin name="SPI_CLK" x="40.64" y="0" length="middle" direction="in" rot="R180"/>
 <pin name="SPI_DIN" x="40.64" y="-2.54" length="middle" direction="in" rot="R180"/>
@@ -16220,6 +16221,7 @@ SMD Buzzer&lt;br&gt;
 <wire x1="-7.62" y1="-48.26" x2="-7.62" y2="20.32" width="0.254" layer="94"/>
 <text x="-7.62" y="22.86" size="1.778" layer="95" ratio="14">&gt;NAME</text>
 <text x="-7.62" y="20.32" size="1.778" layer="96" ratio="14">&gt;VALUE</text>
+<pin name="FORCE_AP" x="-12.7" y="-27.94" length="middle"/>
 </symbol>
 <symbol name="ER-TFT024-3">
 <pin name="LEDA" x="-7.62" y="25.4" length="middle" direction="pas"/>
@@ -21687,6 +21689,7 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <connect gate="G$1" pin="!UART_RTS" pad="44"/>
 <connect gate="G$1" pin="ANT_SEL_1" pad="25"/>
 <connect gate="G$1" pin="ANT_SEL_2" pad="26"/>
+<connect gate="G$1" pin="FORCE_AP" pad="10"/>
 <connect gate="G$1" pin="GND" pad="1 2 16 27 28 30 32 38 43 55 56 57 58 59 60 61 62 63"/>
 <connect gate="G$1" pin="IRQ" pad="11"/>
 <connect gate="G$1" pin="RESERVED" pad="21"/>
@@ -23913,7 +23916,6 @@ This setting can be found in the board layout editor under the Edit menu.  Selec
 <part name="L2" library="TiLDA Mk3 Parts" deviceset="WE-CBF" device="_0805" value="Bead">
 <attribute name="FARNELL" value="1781089"/>
 </part>
-<part name="SJ3" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NO" device="YES_SILK"/>
 <part name="R10" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/2k/5%"/>
 <part name="Q1" library="TiLDA Mk3 Parts" deviceset="DMMT5401" device="">
 <attribute name="FARNELL" value="1773583"/>
@@ -24049,6 +24051,8 @@ This setting can be found in the board layout editor under the Edit menu.  Selec
 <part name="R26" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="TEmp"/>
 <part name="U1" library="TiLDA Mk3 Parts" deviceset="USD-SOCKET-SDIO" device="DM3AT_0011"/>
 <part name="SG1" library="TiLDA Mk3 Parts" deviceset="BUZZER" device="-PKLCS1212E"/>
+<part name="R27" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/220k/5%"/>
+<part name="TP11" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
 </parts>
 <sheets>
 <sheet>
@@ -24093,7 +24097,6 @@ off/on switch</text>
 <text x="301.244" y="237.744" size="1.778" layer="90">- needed with low voltage cutoff?</text>
 <text x="162.56" y="17.78" size="1.778" layer="91" rot="R90">depends on led</text>
 <text x="86.36" y="198.12" size="1.778" layer="91">/ BOOT1</text>
-<text x="160.02" y="132.08" size="1.778" layer="90">ESD!</text>
 <text x="152.146" y="102.87" size="1.778" layer="91">close for OTG</text>
 <text x="358.14" y="127" size="1.778" layer="91">/ JOY_CEN</text>
 <text x="332.74" y="408.94" size="1.778" layer="90">1431303 / 2317885</text>
@@ -24179,16 +24182,15 @@ off/on switch</text>
 <wire x1="246.38" y1="246.38" x2="246.38" y2="248.92" width="0.1524" layer="97"/>
 <wire x1="246.38" y1="248.92" x2="246.38" y2="254" width="0.1524" layer="97"/>
 <wire x1="246.38" y1="241.3" x2="236.22" y2="241.3" width="0.1524" layer="97"/>
-<text x="-15.24" y="96.52" size="1.778" layer="91">JOY_CENTRE/BOOT0</text>
 <text x="-15.24" y="93.98" size="1.778" layer="91">connect i2c on pb11</text>
 <text x="-15.24" y="91.44" size="1.778" layer="91">speaker to tim1</text>
 <text x="-15.24" y="88.9" size="1.778" layer="91">add i2c to edge connectors</text>
 <text x="579.12" y="-45.72" size="1.778" layer="91" rot="R90">depends on whether battery has thermistor</text>
 <text x="83.82" y="71.12" size="1.778" layer="91">/JOY_CENTRE</text>
-<text x="162.56" y="106.68" size="1.778" layer="91">needed?</text>
 <text x="414.02" y="50.8" size="1.778" layer="91">change footprint once final part is known</text>
 <text x="693.42" y="160.02" size="1.778" layer="91">connect pin 10</text>
 <text x="693.42" y="154.94" size="1.778" layer="91">add testpoints</text>
+<text x="152.4" y="114.3" size="1.778" layer="91">orginally 1K, check to see if value is important</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -24394,9 +24396,6 @@ off/on switch</text>
 <attribute name="NAME" x="138.43" y="132.08" size="1.778" layer="95"/>
 <attribute name="FARNELL" x="142.24" y="127" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="SJ3" gate="G$1" x="154.94" y="109.22" smashed="yes" rot="R180">
-<attribute name="NAME" x="157.48" y="106.68" size="1.778" layer="95" rot="R180"/>
-</instance>
 <instance part="R10" gate="G$1" x="165.1" y="116.84" rot="R180"/>
 <instance part="Q1" gate="G$1" x="612.14" y="43.18">
 <attribute name="FARNELL" x="612.14" y="43.18" size="1.778" layer="96" display="off"/>
@@ -24480,10 +24479,10 @@ off/on switch</text>
 <instance part="ANT1" gate="G$1" x="754.38" y="233.68">
 <attribute name="FARNELL" x="754.38" y="233.68" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="GND11" gate="1" x="678.18" y="190.5"/>
+<instance part="GND11" gate="1" x="675.64" y="165.1"/>
 <instance part="R17" gate="G$1" x="736.6" y="157.48" rot="R270"/>
 <instance part="GND43" gate="1" x="736.6" y="149.86"/>
-<instance part="R20" gate="G$1" x="678.18" y="203.2" rot="R270"/>
+<instance part="R20" gate="G$1" x="675.64" y="175.26" rot="R270"/>
 <instance part="+3V26" gate="G$1" x="673.1" y="243.84"/>
 <instance part="SV7" gate="G$1" x="759.46" y="190.5" rot="MR0"/>
 <instance part="GND108" gate="1" x="751.84" y="185.42"/>
@@ -24603,6 +24602,10 @@ off/on switch</text>
 <instance part="R26" gate="G$1" x="40.64" y="99.06"/>
 <instance part="U1" gate="G$1" x="441.96" y="30.48"/>
 <instance part="SG1" gate="G$1" x="223.52" y="60.96"/>
+<instance part="R27" gate="G$1" x="673.1" y="175.26" rot="R270"/>
+<instance part="TP11" gate="G$1" x="670.56" y="182.88" smashed="yes" rot="R90">
+<attribute name="NAME" x="669.29" y="181.61" size="1.778" layer="95" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -24923,8 +24926,12 @@ off/on switch</text>
 <pinref part="IC6" gate="G$1" pin="GND"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <pinref part="R20" gate="G$1" pin="2"/>
-<wire x1="678.18" y1="198.12" x2="678.18" y2="193.04" width="0.1524" layer="91"/>
-<junction x="678.18" y="193.04"/>
+<wire x1="675.64" y1="167.64" x2="678.18" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="675.64" y1="170.18" x2="675.64" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="R27" gate="G$1" pin="2"/>
+<wire x1="673.1" y1="170.18" x2="673.1" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="673.1" y1="167.64" x2="675.64" y2="167.64" width="0.1524" layer="91"/>
+<junction x="675.64" y="167.64"/>
 </segment>
 <segment>
 <pinref part="R17" gate="G$1" pin="2"/>
@@ -26443,6 +26450,7 @@ off/on switch</text>
 <segment>
 <pinref part="IC6" gate="G$1" pin="RESERVED"/>
 <pinref part="R20" gate="G$1" pin="1"/>
+<wire x1="675.64" y1="180.34" x2="678.18" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CC_HIB" class="0">
@@ -27116,26 +27124,30 @@ off/on switch</text>
 <net name="USB_ID" class="0">
 <segment>
 <label x="170.18" y="109.22" size="1.778" layer="95"/>
-<wire x1="177.8" y1="109.22" x2="160.02" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="SJ3" gate="G$1" pin="1"/>
-<wire x1="160.02" y1="109.22" x2="160.02" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="USBID"/>
 <label x="132.08" y="109.22" size="1.778" layer="95"/>
-<pinref part="SJ3" gate="G$1" pin="2"/>
 <wire x1="114.3" y1="121.92" x2="127" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="127" y1="121.92" x2="127" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="127" y1="109.22" x2="149.86" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="127" y1="109.22" x2="177.8" y2="109.22" width="0.1524" layer="91"/>
 <junction x="127" y="109.22"/>
 <wire x1="127" y1="109.22" x2="127" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="IO3"/>
 <wire x1="127" y1="93.98" x2="134.62" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="111.76" x2="149.86" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="111.76" x2="149.86" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="30.48" y1="175.26" x2="33.02" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="_PA" pin="PA10"/>
 <label x="33.02" y="175.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="IC6" gate="G$1" pin="FORCE_AP"/>
+<pinref part="R27" gate="G$1" pin="1"/>
+<wire x1="678.18" y1="182.88" x2="673.1" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="673.1" y1="182.88" x2="673.1" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="TP11" gate="G$1" pin="TP"/>
+<junction x="673.1" y="182.88"/>
 </segment>
 </net>
 </nets>
