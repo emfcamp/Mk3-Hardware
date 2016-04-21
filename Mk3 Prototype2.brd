@@ -2461,13 +2461,12 @@ design rules under a new name.</description>
 <attribute name="NAME" x="9.55" y="23.55" size="1.016" layer="22" font="vector" ratio="14" rot="MR180"/>
 </element>
 <element name="SG1" library="TiLDA Mk3 Parts" package="BUZZER-PKLCS1212E" value="BUZZER-PKLCS1212E" x="4" y="-9.2" smashed="yes"/>
-<element name="R27" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/220k/5%" x="-1.6" y="-17.6" smashed="yes">
-<attribute name="NAME" x="-2.4" y="-16.95" size="1.016" layer="25" font="vector" ratio="14"/>
+<element name="R27" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/220k/5%" x="106.4" y="28" smashed="yes" rot="MR0">
+<attribute name="NAME" x="104.8" y="27.85" size="1.016" layer="26" font="vector" ratio="14" rot="MR0"/>
 </element>
-<element name="TP11" library="TiLDA Mk3 Parts" package="B1,27" value="TPB1,27" x="-1.6" y="-22.8" smashed="yes">
-<attribute name="TP_SIGNAL_NAME" value="" x="-2.235" y="-24.705" size="1" layer="37"/>
-<attribute name="NAME" x="-2.235" y="-21.784" size="1.016" layer="25" font="vector" ratio="14"/>
-<attribute name="VALUE" x="-2.235" y="-23.562" size="1.016" layer="27" font="vector" ratio="14"/>
+<element name="TP11" library="TiLDA Mk3 Parts" package="B1,27" value="TPB1,27" x="107.2" y="29.6" smashed="yes" rot="MR0">
+<attribute name="TP_SIGNAL_NAME" value="" x="107.835" y="27.695" size="1" layer="38" rot="MR0"/>
+<attribute name="VALUE" x="107.835" y="28.838" size="1.016" layer="28" font="vector" ratio="14" rot="MR0"/>
 </element>
 </elements>
 <signals>
@@ -3020,7 +3019,10 @@ design rules under a new name.</description>
 <via x="97.7" y="16.8" extent="1-16" drill="0.5" shape="octagon"/>
 <via x="97.7" y="19.8" extent="1-16" drill="0.5" shape="octagon"/>
 <via x="97.8" y="22.8" extent="1-16" drill="0.5" shape="octagon"/>
-<wire x1="10.1" y1="2.7" x2="-0.725" y2="-17.6" width="0" layer="19" extent="1-16"/>
+<wire x1="105.525" y1="28" x2="105.525" y2="28.475" width="0.2" layer="16"/>
+<wire x1="105.525" y1="28.475" x2="105.2" y2="28.8" width="0.2" layer="16"/>
+<via x="105.2" y="28.8" extent="1-16" drill="0.5" shape="octagon"/>
+<wire x1="105.2" y1="28.8" x2="104.8" y2="28.8" width="0.2" layer="1"/>
 </signal>
 <signal name="LCD_!RST">
 <contactref element="J2" pad="10"/>
@@ -5105,9 +5107,6 @@ design rules under a new name.</description>
 <signal name="CC_IRQ">
 <contactref element="IC6" pad="11"/>
 <contactref element="IC3" pad="17"/>
-<wire x1="107.9" y1="26.3" x2="107.9" y2="27.7" width="0.2" layer="16"/>
-<wire x1="107.9" y1="27.7" x2="106" y2="29.6" width="0.2" layer="16"/>
-<wire x1="106" y1="29.6" x2="93" y2="29.6" width="0.2" layer="16"/>
 <wire x1="93" y1="29.6" x2="91.6" y2="28.2" width="0.2" layer="16"/>
 <wire x1="91.6" y1="28.2" x2="91.6" y2="22" width="0.2" layer="16"/>
 <wire x1="91.6" y1="22" x2="89.2" y2="19.6" width="0.2" layer="16"/>
@@ -5134,6 +5133,14 @@ design rules under a new name.</description>
 <wire x1="45.32605" y1="21.8" x2="64.07395" y2="21.8" width="0.2" layer="16"/>
 <wire x1="64.07395" y1="21.8" x2="64.971975" y2="22.171975" width="0.2" layer="16" curve="45"/>
 <wire x1="64.971975" y1="22.171975" x2="66.8" y2="24" width="0.2" layer="16"/>
+<wire x1="93" y1="29.6" x2="105.6" y2="29.6" width="0.2" layer="16"/>
+<wire x1="105.6" y1="29.6" x2="106.8" y2="30.8" width="0.2" layer="16"/>
+<wire x1="106.8" y1="30.8" x2="107.6" y2="30.8" width="0.2" layer="16"/>
+<wire x1="107.6" y1="30.8" x2="108.4" y2="30" width="0.2" layer="16"/>
+<wire x1="108.4" y1="30" x2="108.4" y2="27.2" width="0.2" layer="16"/>
+<wire x1="108.4" y1="27.2" x2="108" y2="26.8" width="0.2" layer="16"/>
+<wire x1="108" y1="26.8" x2="108" y2="26.4" width="0.2" layer="16"/>
+<wire x1="108" y1="26.4" x2="107.9" y2="26.3" width="0.2" layer="16"/>
 </signal>
 <signal name="USART1_RX">
 <contactref element="IC6" pad="46"/>
@@ -6637,8 +6644,10 @@ design rules under a new name.</description>
 <contactref element="IC6" pad="10"/>
 <contactref element="R27" pad="1"/>
 <contactref element="TP11" pad="TP"/>
-<wire x1="-2.475" y1="-17.6" x2="106.63" y2="26.3" width="0" layer="19" extent="1-16"/>
-<wire x1="-1.6" y1="-22.8" x2="-2.475" y2="-17.6" width="0" layer="19" extent="1-1"/>
+<wire x1="106.63" y1="26.3" x2="106.63" y2="27.355" width="0.2" layer="16"/>
+<wire x1="106.63" y1="27.355" x2="107.275" y2="28" width="0.2" layer="16"/>
+<wire x1="107.275" y1="28" x2="107.275" y2="29.525" width="0.2" layer="16"/>
+<wire x1="107.275" y1="29.525" x2="107.2" y2="29.6" width="0.2" layer="16"/>
 </signal>
 </signals>
 <errors>
