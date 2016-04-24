@@ -24240,16 +24240,16 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </part>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="C39" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/10V/X5R"/>
-<part name="C19" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/10V/X5R"/>
+<part name="C19" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/10V/X5R or 0 ohm"/>
 <part name="C11" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/10V/X5R"/>
 <part name="C12" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/10V/X5R"/>
-<part name="C9" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/2.2u/6.3V/X5R"/>
+<part name="C9" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/2.2u/6.3V/X5R or DNP"/>
 <part name="GND47" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C16" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/10V/X5R"/>
 <part name="C15" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/10n/25V/X7R"/>
 <part name="GND48" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R22" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/220k/5%"/>
-<part name="R21" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/220k/5%"/>
+<part name="R22" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/470k/5%"/>
+<part name="R21" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/470k/5%"/>
 <part name="C33" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/10V/X5R"/>
 <part name="GND49" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND51" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -24469,7 +24469,7 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="GND13" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="R13" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/??/5%"/>
 <part name="GND14" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R24" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0/dnp"/>
+<part name="R24" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="330/dnp"/>
 <part name="U1" library="TiLDA Mk3 Parts" deviceset="USD-SOCKET-SDIO" device="DM3AT_0011"/>
 <part name="SG1" library="TiLDA Mk3 Parts" deviceset="BUZZER" device="-PKLCS1212E"/>
 <part name="R27" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/220k/5%"/>
@@ -24478,7 +24478,7 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V15" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND1" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="C28" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/10u/10V/X5R"/>
+<part name="C28" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/4u7/10V/X5R"/>
 <part name="C30" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/10V/X5R"/>
 <part name="C31" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/4u7/10V/X5R"/>
 <part name="C32" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/220n/10V/X5R"/>
@@ -24503,6 +24503,7 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="R28" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4.7M/5%"/>
 <part name="R29" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4.7M/5%"/>
+<part name="C14" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/4u7/10V/X5R"/>
 </parts>
 <sheets>
 <sheet>
@@ -24658,6 +24659,7 @@ see if value is important</text>
 <wire x1="640.08" y1="15.24" x2="642.62" y2="15.24" width="0.1524" layer="97"/>
 <wire x1="642.62" y1="15.24" x2="645.16" y2="12.7" width="0.1524" layer="97"/>
 <wire x1="645.16" y1="12.7" x2="645.16" y2="-10.16" width="0.1524" layer="97"/>
+<text x="88.9" y="210.82" size="1.778" layer="97">check this for L4</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -24897,7 +24899,7 @@ see if value is important</text>
 <instance part="GND104" gate="1" x="88.9" y="185.42"/>
 <instance part="C4" gate="G$1" x="528.32" y="121.92"/>
 <instance part="GND102" gate="1" x="528.32" y="114.3"/>
-<instance part="+3V23" gate="G$1" x="132.08" y="182.88" rot="R180"/>
+<instance part="+3V23" gate="G$1" x="129.54" y="195.58" rot="R90"/>
 <instance part="LED1" gate="G$1" x="347.98" y="162.56"/>
 <instance part="R1" gate="G$1" x="347.98" y="170.18" rot="R90"/>
 <instance part="GND105" gate="1" x="347.98" y="144.78"/>
@@ -25095,6 +25097,10 @@ see if value is important</text>
 <instance part="R29" gate="G$1" x="640.08" y="15.24" smashed="yes" rot="R270">
 <attribute name="NAME" x="641.5786" y="19.05" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="636.778" y="19.05" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="C14" gate="G$1" x="269.24" y="127" smashed="yes" rot="R180">
+<attribute name="NAME" x="269.621" y="127" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="271.399" y="129.54" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -25555,6 +25561,7 @@ see if value is important</text>
 <wire x1="274.32" y1="124.46" x2="279.4" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="124.46" x2="279.4" y2="127" width="0.1524" layer="91"/>
 <junction x="274.32" y="124.46"/>
+<pinref part="C14" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="C31" gate="G$1" pin="1"/>
@@ -25923,6 +25930,8 @@ see if value is important</text>
 <pinref part="C30" gate="G$1" pin="2"/>
 <wire x1="274.32" y1="134.62" x2="279.4" y2="134.62" width="0.1524" layer="91"/>
 <junction x="274.32" y="134.62"/>
+<pinref part="C14" gate="G$1" pin="2"/>
+<junction x="269.24" y="132.08"/>
 </segment>
 <segment>
 <pinref part="TP5" gate="G$1" pin="TP"/>
@@ -25939,11 +25948,7 @@ see if value is important</text>
 <segment>
 <pinref part="L3" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="195.58" x2="132.08" y2="195.58" width="0.1524" layer="91"/>
-<label x="127" y="195.58" size="1.778" layer="95"/>
 <pinref part="+3V23" gate="G$1" pin="+3V3"/>
-<wire x1="132.08" y1="195.58" x2="127" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="185.42" x2="132.08" y2="195.58" width="0.1524" layer="91"/>
-<junction x="132.08" y="195.58"/>
 </segment>
 <segment>
 <pinref part="R19" gate="G$1" pin="1"/>
@@ -27210,7 +27215,7 @@ see if value is important</text>
 <label x="264.16" y="55.88" size="1.778" layer="95" rot="MR270"/>
 </segment>
 </net>
-<net name="BOOT1" class="0">
+<net name="WS2812" class="0">
 <segment>
 <pinref part="IC3" gate="_PB" pin="PB2"/>
 <label x="71.12" y="198.12" size="1.778" layer="95"/>
