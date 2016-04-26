@@ -8117,8 +8117,8 @@ design rules under a new name.</description>
 <attribute name="TP_SIGNAL_NAME" value="" x="62.435" y="14.495" size="1" layer="38" rot="MR0"/>
 <attribute name="VALUE" x="62.435" y="15.638" size="0.0254" layer="28" rot="MR0"/>
 </element>
-<element name="R30" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/10k/5%" x="62" y="19.2" rot="MR90"/>
-<element name="R31" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/10k/5%" x="56.8" y="20.4" rot="MR90"/>
+<element name="R30" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="DNP (0603/10k/5%)" x="62" y="19.2" rot="MR90"/>
+<element name="R31" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="DNP (0603/10k/5%)" x="56.8" y="20.4" rot="MR90"/>
 </elements>
 <signals>
 <signal name="GND">

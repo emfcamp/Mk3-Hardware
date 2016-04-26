@@ -24718,8 +24718,8 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="+3V19" library="supply1" deviceset="+3V3" device=""/>
 <part name="TP22" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
 <part name="TP23" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
-<part name="R30" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/10k/5%"/>
-<part name="R31" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/10k/5%"/>
+<part name="R30" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="DNP (0603/10k/5%)"/>
+<part name="R31" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="DNP (0603/10k/5%)"/>
 <part name="+3V20" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND24" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V21" library="supply1" deviceset="+3V3" device=""/>
@@ -24879,13 +24879,11 @@ see if value is important</text>
 <wire x1="642.62" y1="15.24" x2="645.16" y2="12.7" width="0.1524" layer="97"/>
 <wire x1="645.16" y1="12.7" x2="645.16" y2="-10.16" width="0.1524" layer="97"/>
 <text x="88.9" y="210.82" size="1.778" layer="97">check this for L4</text>
-<text x="210.82" y="91.44" size="1.778" layer="91" rot="R90">assume these are needed,
-datasheet is unclear</text>
+<text x="210.82" y="91.44" size="1.778" layer="91" rot="R90">shouldnt be needed</text>
 <text x="182.88" y="58.42" size="1.778" layer="91">sure not needed? &gt;</text>
 <text x="182.88" y="55.88" size="1.778" layer="91">sure not needed? &gt;</text>
 <text x="243.84" y="144.78" size="1.778" layer="91">potentially not needed,
 depends on STM32 pullups</text>
-<text x="182.88" y="40.64" size="1.778" layer="91">does this matter? &gt;</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
