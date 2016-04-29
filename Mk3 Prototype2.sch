@@ -12329,6 +12329,10 @@ SMD Buzzer&lt;br&gt;
 <vertex x="94.013153125" y="67.554840625"/>
 </polygon>
 <circle x="91.7" y="67.7" radius="0" width="0.15" layer="49"/>
+<hole x="33.6" y="64.4" drill="4.2"/>
+<hole x="86" y="64.4" drill="4.2"/>
+<hole x="3.2" y="3.2" drill="3"/>
+<hole x="116.4" y="3.2" drill="3"/>
 </package>
 <package name="UPYTHON_LOGO">
 <rectangle x1="3.948" y1="-4.548" x2="4.152" y2="-4.536" layer="16" rot="R180"/>

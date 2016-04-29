@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -222,11 +222,7 @@ PWR</text>
 <text x="107.2" y="44" size="3.81" layer="21">A</text>
 <text x="98.4" y="34.8" size="3.81" layer="21">B</text>
 <dimension x1="0" y1="58.8" x2="119.6" y2="58.8" x3="59.8" y3="71.2" textsize="1.778" layer="51"/>
-<hole x="33.6" y="64.4" drill="4.2"/>
-<hole x="86" y="64.4" drill="4.2"/>
 <text x="57.6" y="0.8" size="1.016" layer="49">route analogue gpio better</text>
-<hole x="3.2" y="3.2" drill="3"/>
-<hole x="116.4" y="3.2" drill="3"/>
 <text x="88.8" y="16" size="1.016" layer="22" font="vector" ratio="14" rot="MR0">62</text>
 <text x="92.2" y="15" size="1.016" layer="22" font="vector" ratio="14" rot="MR180">60</text>
 <text x="89.8" y="9" size="1.016" layer="22" font="vector" ratio="14" rot="MR0">59</text>
@@ -4356,6 +4352,10 @@ Metric Code Size 3225</description>
 <vertex x="94.013153125" y="67.554840625"/>
 </polygon>
 <circle x="91.7" y="67.7" radius="0" width="0.15" layer="49"/>
+<hole x="33.6" y="64.4" drill="4.2"/>
+<hole x="86" y="64.4" drill="4.2"/>
+<hole x="3.2" y="3.2" drill="3"/>
+<hole x="116.4" y="3.2" drill="3"/>
 </package>
 <package name="UPYTHON_LOGO_SLIKONLY">
 <rectangle x1="3.948" y1="-4.548" x2="4.152" y2="-4.536" layer="22" rot="R180"/>
