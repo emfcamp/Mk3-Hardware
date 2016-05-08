@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -33271,8 +33271,10 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </library>
 </libraries>
 <attributes>
+<attribute name="TEST" value=""/>
 </attributes>
 <variantdefs>
+<variantdef name="L4"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0.15" drill="0.3">
@@ -33318,7 +33320,9 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </classes>
 <parts>
 <part name="FRAME1" library="TiLDA Mk3 Parts" deviceset="A3L-LOC" device=""/>
-<part name="LOGO1" library="TiLDA Mk3 Parts" deviceset="OSHW-LOGO" device="M"/>
+<part name="LOGO1" library="TiLDA Mk3 Parts" deviceset="OSHW-LOGO" device="M">
+<variant name="L4" populate="no"/>
+</part>
 <part name="FID2" library="TiLDA Mk3 Parts" deviceset="FIDUCIAL" device="1X2.5-STOP"/>
 <part name="FID1" library="TiLDA Mk3 Parts" deviceset="FIDUCIAL" device="1X2.5-STOP"/>
 <part name="FID4" library="TiLDA Mk3 Parts" deviceset="FIDUCIAL" device="1X2.5-STOP"/>
@@ -33331,7 +33335,9 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="GND17" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND5" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="FRAME2" library="TiLDA Mk3 Parts" deviceset="A3L-LOC" device=""/>
-<part name="J3" library="dtb" deviceset="SWD_SHROUD" device="" value="SWD_SHROUD"/>
+<part name="J3" library="dtb" deviceset="SWD_SHROUD" device="" value="SWD_SHROUD">
+<attribute name="FARNELL" value="1865285"/>
+</part>
 <part name="GND46" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="SW1" library="TiLDA Mk3 Parts" deviceset="JOYSTICK_MINI" device="_MULTICOMP">
@@ -33348,10 +33354,14 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </part>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="C39" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/10V/X5R"/>
-<part name="C19" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/10V/X5R or 0 ohm"/>
+<part name="C19" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/10V/X5R or 0 ohm">
+<variant name="L4" value="0603/0R"/>
+</part>
 <part name="C11" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/10V/X5R"/>
 <part name="C12" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/10V/X5R"/>
-<part name="C9" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/2.2u/6.3V/X5R or DNP"/>
+<part name="C9" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/2.2u/6.3V/X5R or DNP">
+<variant name="L4" populate="no"/>
+</part>
 <part name="GND47" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C16" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/10V/X5R"/>
 <part name="C15" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/10n/25V/X7R"/>
@@ -33361,19 +33371,24 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="C33" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/10V/X5R"/>
 <part name="GND49" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND51" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R33" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/100K/5%"/>
+<part name="R33" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/47k/5%"/>
 <part name="GND52" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND53" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="R23" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/22/1%"/>
 <part name="R25" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/22/1%"/>
 <part name="X2" library="TiLDA Mk3 Parts" deviceset="CRYSTAL" device="-3.2-2.5" value="DNP (16MHz-3.2-2.5)">
 <attribute name="FARNELL" value="2467444"/>
+<variant name="L4" populate="no"/>
 </part>
 <part name="GND54" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND55" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="C21" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="DNP (0603/10p/50V/NP0)"/>
-<part name="C20" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="DNP (0603/10p/50V/NP0)"/>
-<part name="R6" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/??/5%"/>
+<part name="C21" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="DNP (0603/10p/50V/NP0)">
+<variant name="L4" populate="no"/>
+</part>
+<part name="C20" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="DNP (0603/10p/50V/NP0)">
+<variant name="L4" populate="no"/>
+</part>
+<part name="R6" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/2k/5%"/>
 <part name="GND59" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C3" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/2u2/10V/X5R"/>
 <part name="GND61" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -33397,6 +33412,7 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="GND67" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND69" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="LED4" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT" value="RED">
+<attribute name="COLOUR" value="RED"/>
 <attribute name="FARNELL" value="2449874"/>
 </part>
 <part name="C13" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/10V/X5R"/>
@@ -33419,17 +33435,31 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="IC3" library="TiLDA Mk3 Parts" deviceset="STM32F401V" device="">
 <attribute name="FARNELL" value="2432116"/>
 </part>
-<part name="C29" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/2.2u/6.3V/X5R"/>
+<part name="C29" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/2.2u/6.3V/X5R">
+<variant name="L4" value="0603/100n/10V/X5R"/>
+</part>
 <part name="C22" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/10V/X5R"/>
 <part name="C34" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/10V/X5R"/>
-<part name="SV2" library="TiLDA Mk3 Parts" deviceset="M03" device="PTH"/>
-<part name="D1" library="SparkFun-LED" deviceset="WS2812B" device=""/>
+<part name="SV2" library="TiLDA Mk3 Parts" deviceset="M03" device="PTH">
+<variant name="L4" populate="no"/>
+</part>
+<part name="D1" library="SparkFun-LED" deviceset="WS2812B" device="" value="WS2812B">
+<attribute name="EBAY" value="291036714575"/>
+</part>
 <part name="GND50" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND63" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="SV4" library="TiLDA Mk3 Parts" deviceset="M03" device="PTH"/>
-<part name="SV6" library="TiLDA Mk3 Parts" deviceset="M03" device="PTH"/>
-<part name="SV3" library="TiLDA Mk3 Parts" deviceset="M03" device="PTH"/>
-<part name="SV5" library="TiLDA Mk3 Parts" deviceset="M03" device="PTH"/>
+<part name="SV4" library="TiLDA Mk3 Parts" deviceset="M03" device="PTH">
+<variant name="L4" populate="no"/>
+</part>
+<part name="SV6" library="TiLDA Mk3 Parts" deviceset="M03" device="PTH">
+<variant name="L4" populate="no"/>
+</part>
+<part name="SV3" library="TiLDA Mk3 Parts" deviceset="M03" device="PTH">
+<variant name="L4" populate="no"/>
+</part>
+<part name="SV5" library="TiLDA Mk3 Parts" deviceset="M03" device="PTH">
+<variant name="L4" populate="no"/>
+</part>
 <part name="GND64" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND66" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND76" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -33445,11 +33475,13 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="L2" library="TiLDA Mk3 Parts" deviceset="WE-CBF" device="_0805" value="Bead">
 <attribute name="FARNELL" value="1781089"/>
 </part>
-<part name="R10" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/2k/5%"/>
+<part name="R10" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/0R"/>
 <part name="Q1" library="TiLDA Mk3 Parts" deviceset="DMMT5401" device="">
 <attribute name="FARNELL" value="1773583"/>
 </part>
-<part name="Q2" library="TiLDA Mk3 Parts" deviceset="CSD25402Q3A" device="" value="CSD25402Q3A"/>
+<part name="Q2" library="TiLDA Mk3 Parts" deviceset="CSD25402Q3A" device="" value="CSD25402Q3A">
+<attribute name="FARNELL" value="2501103"/>
+</part>
 <part name="R15" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/47k/5%"/>
 <part name="R16" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/10k/5%"/>
 <part name="GND87" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -33462,11 +33494,15 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="GND91" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C6" library="passives-7351" deviceset="CAPACITOR" device="0805-N" value="0805/10u/10V/X5R"/>
 <part name="GND94" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="D3" library="TiLDA Mk3 Parts" deviceset="DIODE" device="SOD-323F"/>
+<part name="D3" library="TiLDA Mk3 Parts" deviceset="DIODE" device="SOD-323F">
+<attribute name="FARNELL" value="1757770"/>
+</part>
 <part name="D2" library="TiLDA Mk3 Parts" deviceset="DIODE" device="SOD-323F">
 <attribute name="FARNELL" value="1757770"/>
 </part>
-<part name="SJ1" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NO" device="YES_SILK"/>
+<part name="SJ1" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NO" device="YES_SILK">
+<variant name="L4" populate="no"/>
+</part>
 <part name="C8" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/4u7/10V/X5R"/>
 <part name="GND97" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="LED2" library="TiLDA Mk3 Parts" deviceset="LED" device="0603-CORRECT" value="RED">
@@ -33481,22 +33517,38 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="R14" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/120/5%"/>
 <part name="GND100" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND101" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R11" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="DNP / 0603/100K/5%"/>
+<part name="R11" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="DNP / 0603/100K/5%">
+<variant name="L4" populate="no"/>
+</part>
 <part name="GND104" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="C4" library="TiLDA Mk3 Parts" deviceset="CPOL-EU" device="E2.5-6" value="DNP (OTG)"/>
+<part name="C4" library="TiLDA Mk3 Parts" deviceset="CPOL-EU" device="E2.5-6" value="DNP (OTG)">
+<variant name="L4" populate="no"/>
+</part>
 <part name="GND102" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V23" library="supply1" deviceset="+3V3" device=""/>
-<part name="LED1" library="TiLDA Mk3 Parts" deviceset="LED" device="5MM" value="DNP"/>
-<part name="R1" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0207/10" value="DNP"/>
+<part name="LED1" library="TiLDA Mk3 Parts" deviceset="LED" device="5MM" value="DNP">
+<variant name="L4" populate="no"/>
+</part>
+<part name="R1" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0207/10" value="DNP">
+<variant name="L4" populate="no"/>
+</part>
 <part name="GND105" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V24" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V25" library="supply1" deviceset="+3V3" device=""/>
-<part name="R43" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="DNP (0603/150/5%)"/>
-<part name="Q6" library="TiLDA Mk3 Parts" deviceset="CSD25402Q3A" device="" value="CSD25402Q3A"/>
+<part name="R43" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="DNP (0603/150/5%)">
+<variant name="L4" populate="no"/>
+</part>
+<part name="Q6" library="TiLDA Mk3 Parts" deviceset="CSD25402Q3A" device="" value="CSD25402Q3A">
+<attribute name="FARNELL" value="2501103"/>
+</part>
 <part name="R45" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/220k/5%"/>
 <part name="GND107" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="S7" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD-1101NE"/>
-<part name="IC6" library="TiLDA Mk3 Parts" deviceset="CC3100MOD" device=""/>
+<part name="S7" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD-1101NE">
+<attribute name="EBAY" value="272150658613"/>
+</part>
+<part name="IC6" library="TiLDA Mk3 Parts" deviceset="CC3100MOD" device="">
+<attribute name="MOUSER" value="  595-3100MODR11MAMOBR"/>
+</part>
 <part name="ANT1" library="TiLDA Mk3 Parts" deviceset="CHIPANT" device="">
 <attribute name="FARNELL" value="2148522"/>
 </part>
@@ -33505,15 +33557,28 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="GND43" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="R20" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/220k/5%"/>
 <part name="+3V26" library="supply1" deviceset="+3V3" device=""/>
-<part name="SV7" library="TiLDA Mk3 Parts" deviceset="M03" device="PTH"/>
+<part name="SV7" library="TiLDA Mk3 Parts" deviceset="M03" device="PTH">
+<variant name="L4" populate="no"/>
+</part>
 <part name="GND108" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="S8" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD-1101NE" value="DNP"/>
+<part name="S8" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD-1101NE" value="DNP">
+<variant name="L4" populate="no"/>
+</part>
 <part name="GND109" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND2" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V27" library="supply1" deviceset="+3V3" device=""/>
-<part name="R47" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4.7/5%"/>
-<part name="R48" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4.7/5%"/>
-<part name="R49" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4.7/5%"/>
+<part name="R47" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4.7/5%">
+<attribute name="FARNELL" value="9331280"/>
+<attribute name="FARNELL_REEL" value="2130678"/>
+</part>
+<part name="R48" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4.7/5%">
+<attribute name="FARNELL" value="9331280"/>
+<attribute name="FARNELL_REEL" value="2130678"/>
+</part>
+<part name="R49" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4.7/5%">
+<attribute name="FARNELL" value="9331280"/>
+<attribute name="FARNELL_REEL" value="2130678"/>
+</part>
 <part name="GND110" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND111" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND112" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -33521,27 +33586,52 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="C38" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/4u7/10V/X5R"/>
 <part name="GND113" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="J2" library="TiLDA Mk3 Parts" deviceset="ER-TFT024-3" device=""/>
-<part name="R44" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4.7/5%"/>
-<part name="IC7" library="TiLDA Mk3 Parts" deviceset="BQ2970" device=""/>
+<part name="R44" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4.7/5%">
+<attribute name="FARNELL" value="9331280"/>
+<attribute name="FARNELL_REEL" value="2130678"/>
+</part>
+<part name="IC7" library="TiLDA Mk3 Parts" deviceset="BQ2970" device="">
+<attribute name="FARNELL" value="2425793"/>
+</part>
 <part name="GND56" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="R50" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/2k/5%"/>
 <part name="R51" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/330/5%"/>
 <part name="C48" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/10V/X5R"/>
-<part name="Q8" library="TiLDA Mk3 Parts" deviceset="CSD13202Q2" device="" value="CSD13202Q2"/>
+<part name="Q8" library="TiLDA Mk3 Parts" deviceset="CSD13202Q2" device="" value="CSD13202Q2">
+<attribute name="FARNELL" value="2501084"/>
+</part>
 <part name="GND4" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C45" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/10V/X5R"/>
-<part name="Q3" library="TiLDA Mk3 Parts" deviceset="CSD13202Q2" device="" value="CSD13202Q2"/>
-<part name="JP4" library="tag-connect" deviceset="TC2030-SWD" device="NL"/>
+<part name="Q3" library="TiLDA Mk3 Parts" deviceset="CSD13202Q2" device="" value="CSD13202Q2">
+<attribute name="FARNELL" value="2501084"/>
+</part>
+<part name="JP4" library="tag-connect" deviceset="TC2030-SWD" device="NL">
+<variant name="L4" populate="no"/>
+</part>
 <part name="+3V29" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND57" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="TP12" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
-<part name="TP13" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
-<part name="TP14" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
-<part name="TP15" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
-<part name="TP16" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
-<part name="TP17" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
+<part name="TP12" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27">
+<variant name="L4" populate="no"/>
+</part>
+<part name="TP13" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27">
+<variant name="L4" populate="no"/>
+</part>
+<part name="TP14" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27">
+<variant name="L4" populate="no"/>
+</part>
+<part name="TP15" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27">
+<variant name="L4" populate="no"/>
+</part>
+<part name="TP16" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27">
+<variant name="L4" populate="no"/>
+</part>
+<part name="TP17" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27">
+<variant name="L4" populate="no"/>
+</part>
 <part name="C2" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/10V/X5R"/>
-<part name="IC1" library="TiLDA Mk3 Parts" deviceset="TPD3E001" device="DRL"/>
+<part name="IC1" library="TiLDA Mk3 Parts" deviceset="TPD3E001" device="DRL">
+<attribute name="FARNELL" value="1603422"/>
+</part>
 <part name="C7" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/10V/X5R"/>
 <part name="GND6" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="C26" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C1210K" value="1210/100u/20%">
@@ -33552,47 +33642,85 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="C25" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C1210K" value="1210/100u/20%">
 <attribute name="FARNELL" value="1828817"/>
 </part>
-<part name="IC2" library="TiLDA Mk3 Parts" deviceset="TPS62082" device=""/>
+<part name="IC2" library="TiLDA Mk3 Parts" deviceset="TPS62082" device="">
+<attribute name="FARNELL" value="2064227"/>
+</part>
 <part name="C27" library="passives-7351" deviceset="CAPACITOR" device="0805-N" value="0805/10u/10V/X5R"/>
 <part name="GND9" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="Q4" library="TiLDA Mk3 Parts" deviceset="CSD85301Q2" device=""/>
-<part name="IC4" library="TiLDA Mk3 Parts" deviceset="BQ2409X" device=""/>
-<part name="R7" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="DNP or 0"/>
+<part name="Q4" library="TiLDA Mk3 Parts" deviceset="CSD85301Q2" device="">
+<attribute name="FARNELL" value="2470183"/>
+</part>
+<part name="IC4" library="TiLDA Mk3 Parts" deviceset="BQ2409X" device="" value="BQ24092">
+<attribute name="FARNELL" value="2323723"/>
+</part>
+<part name="R7" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="DNP or 0">
+<variant name="L4" value="0603/0R"/>
+</part>
 <part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
-<part name="R8" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="DNP or 0"/>
+<part name="R8" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="DNP or 0">
+<variant name="L4" populate="no"/>
+</part>
 <part name="+3V12" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND10" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R9" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/??/5%"/>
+<part name="R9" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/1k/5%"/>
 <part name="GND12" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND13" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R13" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/??/5%"/>
+<part name="R13" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/10k/5%"/>
 <part name="GND14" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R24" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="330/dnp"/>
-<part name="U1" library="TiLDA Mk3 Parts" deviceset="USD-SOCKET-SDIO" device="DM3AT_0011"/>
+<part name="R24" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/330/5%"/>
+<part name="U1" library="TiLDA Mk3 Parts" deviceset="USD-SOCKET-SDIO" device="DM3AT_0011">
+<attribute name="FARNELL" value="2427719"/>
+</part>
 <part name="SG1" library="TiLDA Mk3 Parts" deviceset="BUZZER" device="-PKLCS1212E"/>
 <part name="R27" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/220k/5%"/>
-<part name="TP11" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
-<part name="TP18" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
-<part name="TP19" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
-<part name="TP20" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
+<part name="TP11" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27">
+<variant name="L4" populate="no"/>
+</part>
+<part name="TP18" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27">
+<variant name="L4" populate="no"/>
+</part>
+<part name="TP19" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27">
+<variant name="L4" populate="no"/>
+</part>
+<part name="TP20" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27">
+<variant name="L4" populate="no"/>
+</part>
 <part name="GND19" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="R26" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/120/5%"/>
 <part name="GND20" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="TP21" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
-<part name="JP1" library="SparkFun-Connectors" deviceset="M11" device="PTH"/>
-<part name="JP2" library="SparkFun-Connectors" deviceset="M11" device="PTH"/>
+<part name="TP21" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27">
+<variant name="L4" populate="no"/>
+</part>
+<part name="JP1" library="SparkFun-Connectors" deviceset="M11" device="PTH">
+<variant name="L4" populate="no"/>
+</part>
+<part name="JP2" library="SparkFun-Connectors" deviceset="M11" device="PTH">
+<variant name="L4" populate="no"/>
+</part>
 <part name="GND21" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND22" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND23" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R18" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="DNP (0603/10k/5%)"/>
-<part name="R19" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="DNP (0603/10k/5%)"/>
+<part name="R18" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="DNP (0603/10k/5%)">
+<variant name="L4" value="0603/10k/5%"/>
+</part>
+<part name="R19" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="DNP (0603/10k/5%)">
+<variant name="L4" value="0603/10k/5%"/>
+</part>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
-<part name="R28" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4.7M/5%"/>
-<part name="R29" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4.7M/5%"/>
-<part name="IC8" library="TiLDA Mk3 Parts" deviceset="LSM6DS3" device=""/>
-<part name="IC9" library="TiLDA Mk3 Parts" deviceset="LIS3MDL" device=""/>
+<part name="R28" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4.7M/5%">
+<attribute name="FARNELL" value="2059694"/>
+</part>
+<part name="R29" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4.7M/5%">
+<attribute name="FARNELL" value="2059694"/>
+</part>
+<part name="IC8" library="TiLDA Mk3 Parts" deviceset="LSM6DS3" device="">
+<attribute name="FARNELL" value="2474253"/>
+</part>
+<part name="IC9" library="TiLDA Mk3 Parts" deviceset="LIS3MDL" device="">
+<attribute name="FARNELL" value="2433083"/>
+</part>
 <part name="+3V16" library="supply1" deviceset="+3V3" device=""/>
 <part name="C35" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/10V/X5R"/>
 <part name="C36" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/100n/10V/X5R"/>
@@ -33607,15 +33735,27 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="C42" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/10V/X5R"/>
 <part name="GND27" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V19" library="supply1" deviceset="+3V3" device=""/>
-<part name="R30" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="DNP (0603/10k/5%)"/>
-<part name="R31" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="DNP (0603/10k/5%)"/>
+<part name="R30" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="DNP (0603/10k/5%)">
+<variant name="L4" populate="no"/>
+</part>
+<part name="R31" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="DNP (0603/10k/5%)">
+<variant name="L4" populate="no"/>
+</part>
 <part name="+3V20" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND24" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V21" library="supply1" deviceset="+3V3" device=""/>
-<part name="OUTLINE1" library="TiLDA Mk3 Parts" deviceset="TILDA_MK3_BOARDOUTLINE" device=""/>
-<part name="LOGO2" library="TiLDA Mk3 Parts" deviceset="MICROPYTHON" device="-SILK"/>
-<part name="LOGO3" library="TiLDA Mk3 Parts" deviceset="MICROPYTHON" device="-STOP"/>
-<part name="TP1" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
+<part name="OUTLINE1" library="TiLDA Mk3 Parts" deviceset="TILDA_MK3_BOARDOUTLINE" device="">
+<variant name="L4" populate="no"/>
+</part>
+<part name="LOGO2" library="TiLDA Mk3 Parts" deviceset="MICROPYTHON" device="-SILK">
+<variant name="L4" populate="no"/>
+</part>
+<part name="LOGO3" library="TiLDA Mk3 Parts" deviceset="MICROPYTHON" device="-STOP">
+<variant name="L4" populate="no"/>
+</part>
+<part name="TP1" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27">
+<variant name="L4" populate="no"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -33656,7 +33796,7 @@ off/on switch</text>
 <text x="797.56" y="119.38" size="2.54" layer="90">sort out power switch</text>
 <text x="797.56" y="152.4" size="1.778" layer="90">DONE:</text>
 <text x="408.94" y="58.42" size="3.81" layer="97" ratio="15">MicroSD Card</text>
-<text x="459.74" y="93.98" size="1.778" layer="96">WS2812</text>
+<text x="459.74" y="93.98" size="1.778" layer="96">WS2812B</text>
 <text x="411.48" y="142.24" size="3.81" layer="97" ratio="15">Servo / WS2812 Headers</text>
 <text x="58.42" y="81.28" size="3.81" layer="97" ratio="15">Port E</text>
 <text x="109.22" y="139.7" size="3.81" layer="97" ratio="15">USB OTG</text>
@@ -33669,7 +33809,6 @@ off/on switch</text>
 <text x="76.2" y="116.84" size="1.778" layer="91">LCD_CS (PARALLEL)</text>
 <text x="88.9" y="124.46" size="1.778" layer="91">(NOE)</text>
 <text x="88.9" y="121.92" size="1.778" layer="91">(NWE)</text>
-<text x="-30.48" y="119.38" size="1.778" layer="91">WIRE UP:</text>
 <text x="408.94" y="215.9" size="1.778" layer="91" rot="R90">GRM32ER60J107ME20L</text>
 <text x="637.54" y="175.26" size="1.778" layer="91">or change to 1x22u</text>
 <text x="566.42" y="134.62" size="1.778" layer="91">bq24092/3</text>
@@ -33716,11 +33855,9 @@ off/on switch</text>
 <wire x1="246.38" y1="246.38" x2="246.38" y2="248.92" width="0.1524" layer="97"/>
 <wire x1="246.38" y1="248.92" x2="246.38" y2="254" width="0.1524" layer="97"/>
 <wire x1="246.38" y1="241.3" x2="236.22" y2="241.3" width="0.1524" layer="97"/>
-<text x="-30.48" y="116.84" size="1.778" layer="91">add i2c to edge connectors</text>
 <text x="599.44" y="20.32" size="1.778" layer="91" rot="R90">depends on whether battery has thermistor</text>
 <text x="83.82" y="71.12" size="1.778" layer="91">/JOY_CENTRE</text>
 <text x="414.02" y="50.8" size="1.778" layer="91">change footprint once final part is known</text>
-<text x="452.12" y="157.48" size="1.778" layer="91">add testpoints</text>
 <text x="147.32" y="111.76" size="1.778" layer="91">orginally 1K, check to 
 see if value is important</text>
 <text x="274.32" y="246.38" size="3.81" layer="97" ratio="15">EXTI List</text>
@@ -33770,6 +33907,18 @@ see if value is important</text>
 <text x="243.84" y="144.78" size="1.778" layer="91">potentially not needed,
 depends on STM32 pullups</text>
 <text x="55.88" y="251.46" size="1.778" layer="97">DNP for L4</text>
+<text x="248.92" y="248.92" size="1.778" layer="91">C29</text>
+<text x="248.92" y="246.38" size="1.778" layer="97">2u2</text>
+<text x="248.92" y="243.84" size="1.778" layer="97">2u2</text>
+<text x="248.92" y="241.3" size="1.778" layer="97">100n</text>
+<wire x1="246.38" y1="241.3" x2="259.08" y2="241.3" width="0.1524" layer="97"/>
+<wire x1="259.08" y1="241.3" x2="259.08" y2="243.84" width="0.1524" layer="97"/>
+<wire x1="259.08" y1="243.84" x2="259.08" y2="246.38" width="0.1524" layer="97"/>
+<wire x1="259.08" y1="248.92" x2="259.08" y2="254" width="0.1524" layer="97"/>
+<wire x1="246.38" y1="248.92" x2="259.08" y2="248.92" width="0.1524" layer="97"/>
+<wire x1="259.08" y1="248.92" x2="259.08" y2="246.38" width="0.1524" layer="97"/>
+<wire x1="259.08" y1="246.38" x2="246.38" y2="246.38" width="0.1524" layer="97"/>
+<wire x1="246.38" y1="243.84" x2="259.08" y2="243.84" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -33787,7 +33936,9 @@ depends on STM32 pullups</text>
 <instance part="GND17" gate="1" x="124.46" y="114.3"/>
 <instance part="GND5" gate="1" x="200.66" y="180.34"/>
 <instance part="FRAME2" gate="G$1" x="401.32" y="0"/>
-<instance part="J3" gate="G$1" x="27.94" y="17.78"/>
+<instance part="J3" gate="G$1" x="27.94" y="17.78">
+<attribute name="FARNELL" x="27.94" y="17.78" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND46" gate="1" x="10.16" y="7.62"/>
 <instance part="+3V4" gate="G$1" x="10.16" y="27.94"/>
 <instance part="SW1" gate="G$1" x="330.2" y="129.54">
@@ -33843,7 +33994,7 @@ depends on STM32 pullups</text>
 <attribute name="VALUE" x="50.8" y="228.981" size="1.778" layer="96"/>
 </instance>
 <instance part="R6" gate="G$1" x="604.52" y="101.6" smashed="yes" rot="R270">
-<attribute name="NAME" x="606.0186" y="105.41" size="1.778" layer="95" rot="R270"/>
+<attribute name="NAME" x="598.3986" y="105.41" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="601.218" y="105.41" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND59" gate="1" x="604.52" y="88.9"/>
@@ -33884,6 +34035,7 @@ depends on STM32 pullups</text>
 <instance part="GND69" gate="1" x="429.26" y="15.24" rot="R270"/>
 <instance part="LED4" gate="G$1" x="149.86" y="48.26" rot="R180">
 <attribute name="FARNELL" x="149.86" y="48.26" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="COLOUR" x="149.86" y="48.26" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="C13" gate="G$1" x="149.86" y="35.56" rot="R180"/>
 <instance part="R5" gate="G$1" x="157.48" y="35.56" rot="R270"/>
@@ -33917,7 +34069,9 @@ depends on STM32 pullups</text>
 <instance part="C22" gate="G$1" x="226.06" y="200.66" rot="R180"/>
 <instance part="C34" gate="G$1" x="220.98" y="200.66" rot="R180"/>
 <instance part="SV2" gate="G$1" x="441.96" y="96.52"/>
-<instance part="D1" gate="G$1" x="462.28" y="101.6"/>
+<instance part="D1" gate="G$1" x="462.28" y="101.6">
+<attribute name="EBAY" x="462.28" y="101.6" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND50" gate="1" x="482.6" y="93.98"/>
 <instance part="GND63" gate="1" x="452.12" y="91.44"/>
 <instance part="SV4" gate="G$1" x="416.56" y="114.3"/>
@@ -33951,7 +34105,9 @@ depends on STM32 pullups</text>
 <instance part="Q1" gate="G$1" x="632.46" y="109.22">
 <attribute name="FARNELL" x="632.46" y="109.22" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="Q2" gate="G$1" x="632.46" y="124.46" rot="MR90"/>
+<instance part="Q2" gate="G$1" x="632.46" y="124.46" rot="MR90">
+<attribute name="FARNELL" x="632.46" y="124.46" size="1.778" layer="96" rot="MR90" display="off"/>
+</instance>
 <instance part="R15" gate="G$1" x="642.62" y="93.98" rot="R270"/>
 <instance part="R16" gate="G$1" x="627.38" y="93.98" rot="R270"/>
 <instance part="GND87" gate="1" x="642.62" y="78.74"/>
@@ -33970,7 +34126,9 @@ depends on STM32 pullups</text>
 <attribute name="VALUE" x="579.501" y="203.2" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND94" gate="1" x="576.58" y="185.42"/>
-<instance part="D3" gate="G$1" x="645.16" y="132.08"/>
+<instance part="D3" gate="G$1" x="645.16" y="132.08">
+<attribute name="FARNELL" x="645.16" y="132.08" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="D2" gate="G$1" x="645.16" y="139.7" rot="R180">
 <attribute name="FARNELL" x="645.16" y="139.7" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
@@ -34010,13 +34168,18 @@ depends on STM32 pullups</text>
 <attribute name="NAME" x="34.29" y="232.6386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="29.21" y="227.838" size="1.778" layer="96"/>
 </instance>
-<instance part="Q6" gate="G$1" x="662.94" y="124.46" rot="R90"/>
+<instance part="Q6" gate="G$1" x="662.94" y="124.46" rot="R90">
+<attribute name="FARNELL" x="662.94" y="124.46" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="R45" gate="G$1" x="655.32" y="116.84" rot="R270"/>
 <instance part="GND107" gate="1" x="657.86" y="99.06"/>
 <instance part="S7" gate="G$1" x="345.44" y="104.14" smashed="yes" rot="MR180">
 <attribute name="NAME" x="342.9" y="101.6" size="1.778" layer="95" rot="MR180"/>
+<attribute name="EBAY" x="345.44" y="104.14" size="1.778" layer="96" rot="MR180" display="off"/>
 </instance>
-<instance part="IC6" gate="G$1" x="449.58" y="213.36"/>
+<instance part="IC6" gate="G$1" x="449.58" y="213.36">
+<attribute name="MOUSER" x="449.58" y="213.36" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="ANT1" gate="G$1" x="513.08" y="236.22">
 <attribute name="FARNELL" x="513.08" y="236.22" size="1.778" layer="96" display="off"/>
 </instance>
@@ -34033,12 +34196,18 @@ depends on STM32 pullups</text>
 <instance part="+3V27" gate="G$1" x="736.6" y="243.84" rot="R90"/>
 <instance part="R47" gate="G$1" x="746.76" y="241.3" smashed="yes">
 <attribute name="NAME" x="742.95" y="242.7986" size="1.778" layer="95"/>
+<attribute name="FARNELL" x="746.76" y="241.3" size="1.778" layer="96" display="off"/>
+<attribute name="FARNELL_REEL" x="746.76" y="241.3" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R48" gate="G$1" x="746.76" y="238.76" smashed="yes">
 <attribute name="NAME" x="742.95" y="240.2586" size="1.778" layer="95"/>
+<attribute name="FARNELL" x="746.76" y="238.76" size="1.778" layer="96" display="off"/>
+<attribute name="FARNELL_REEL" x="746.76" y="238.76" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R49" gate="G$1" x="746.76" y="236.22" smashed="yes">
 <attribute name="NAME" x="742.95" y="237.7186" size="1.778" layer="95"/>
+<attribute name="FARNELL" x="746.76" y="236.22" size="1.778" layer="96" display="off"/>
+<attribute name="FARNELL_REEL" x="746.76" y="236.22" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND110" gate="1" x="746.76" y="177.8" rot="R270"/>
 <instance part="GND111" gate="1" x="746.76" y="208.28" rot="R270"/>
@@ -34053,8 +34222,12 @@ depends on STM32 pullups</text>
 <instance part="R44" gate="G$1" x="746.76" y="233.68" smashed="yes">
 <attribute name="NAME" x="742.95" y="235.1786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="737.87" y="248.158" size="1.778" layer="96"/>
+<attribute name="FARNELL" x="746.76" y="233.68" size="1.778" layer="96" display="off"/>
+<attribute name="FARNELL_REEL" x="746.76" y="233.68" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="IC7" gate="G$1" x="640.08" y="40.64"/>
+<instance part="IC7" gate="G$1" x="640.08" y="40.64">
+<attribute name="FARNELL" x="640.08" y="40.64" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND56" gate="1" x="607.06" y="7.62"/>
 <instance part="R50" gate="G$1" x="607.06" y="17.78" rot="R270"/>
 <instance part="R51" gate="G$1" x="655.32" y="43.18"/>
@@ -34062,13 +34235,17 @@ depends on STM32 pullups</text>
 <attribute name="NAME" x="650.621" y="25.4" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="648.081" y="25.4" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="Q8" gate="G$1" x="734.06" y="236.22" rot="R270"/>
+<instance part="Q8" gate="G$1" x="734.06" y="236.22" rot="R270">
+<attribute name="FARNELL" x="734.06" y="236.22" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="GND4" gate="1" x="726.44" y="233.68" rot="R270"/>
 <instance part="C45" gate="G$1" x="713.74" y="124.46" smashed="yes" rot="R180">
 <attribute name="NAME" x="711.581" y="124.46" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="714.121" y="124.46" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="Q3" gate="G$1" x="350.52" y="152.4" rot="MR0"/>
+<instance part="Q3" gate="G$1" x="350.52" y="152.4" rot="MR0">
+<attribute name="FARNELL" x="350.52" y="152.4" size="1.778" layer="96" rot="MR0" display="off"/>
+</instance>
 <instance part="JP4" gate="G$1" x="76.2" y="17.78"/>
 <instance part="+3V29" gate="G$1" x="83.82" y="20.32" rot="R270"/>
 <instance part="GND57" gate="1" x="83.82" y="7.62" rot="R90"/>
@@ -34094,7 +34271,9 @@ depends on STM32 pullups</text>
 <attribute name="NAME" x="459.74" y="117.221" size="1.778" layer="95"/>
 <attribute name="VALUE" x="459.74" y="119.761" size="1.778" layer="96"/>
 </instance>
-<instance part="IC1" gate="G$1" x="142.24" y="96.52"/>
+<instance part="IC1" gate="G$1" x="142.24" y="96.52">
+<attribute name="FARNELL" x="142.24" y="96.52" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="C7" gate="G$1" x="162.56" y="93.98" rot="R180"/>
 <instance part="GND6" gate="1" x="162.56" y="88.9"/>
 <instance part="C26" gate="G$1" x="414.02" y="233.68">
@@ -34105,15 +34284,21 @@ depends on STM32 pullups</text>
 <instance part="C25" gate="G$1" x="419.1" y="233.68">
 <attribute name="FARNELL" x="419.1" y="233.68" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="IC2" gate="G$1" x="594.36" y="200.66"/>
+<instance part="IC2" gate="G$1" x="594.36" y="200.66">
+<attribute name="FARNELL" x="594.36" y="200.66" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="C27" gate="G$1" x="647.7" y="193.04" smashed="yes">
 <attribute name="NAME" x="647.319" y="193.04" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="652.399" y="177.8" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND9" gate="1" x="647.7" y="185.42"/>
 <instance part="Q4" gate="_1" x="635" y="12.7" rot="MR270"/>
-<instance part="Q4" gate="_2" x="624.84" y="12.7" rot="R270"/>
-<instance part="IC4" gate="G$1" x="586.74" y="119.38"/>
+<instance part="Q4" gate="_2" x="624.84" y="12.7" rot="R270">
+<attribute name="FARNELL" x="624.84" y="12.7" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="IC4" gate="G$1" x="586.74" y="119.38">
+<attribute name="FARNELL" x="586.74" y="119.38" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R7" gate="G$1" x="157.48" y="198.12"/>
 <instance part="+3V11" gate="G$1" x="149.86" y="198.12" rot="R90"/>
 <instance part="R8" gate="G$1" x="236.22" y="228.6" rot="R90"/>
@@ -34121,7 +34306,7 @@ depends on STM32 pullups</text>
 <instance part="GND10" gate="1" x="566.42" y="106.68"/>
 <instance part="R9" gate="G$1" x="607.06" y="101.6" smashed="yes" rot="R270">
 <attribute name="NAME" x="608.5586" y="105.41" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="603.758" y="105.41" size="1.778" layer="96" rot="R270"/>
+<attribute name="VALUE" x="611.378" y="105.41" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND12" gate="1" x="607.06" y="88.9"/>
 <instance part="GND13" gate="1" x="612.14" y="114.3" rot="R90"/>
@@ -34131,7 +34316,9 @@ depends on STM32 pullups</text>
 </instance>
 <instance part="GND14" gate="1" x="601.98" y="45.72"/>
 <instance part="R24" gate="G$1" x="728.98" y="139.7" rot="R180"/>
-<instance part="U1" gate="G$1" x="441.96" y="30.48"/>
+<instance part="U1" gate="G$1" x="441.96" y="30.48">
+<attribute name="FARNELL" x="441.96" y="30.48" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SG1" gate="G$1" x="358.14" y="190.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="363.22" y="193.04" size="1.778" layer="95" rot="R270"/>
 </instance>
@@ -34171,13 +34358,19 @@ depends on STM32 pullups</text>
 <instance part="R28" gate="G$1" x="617.22" y="15.24" smashed="yes" rot="R270">
 <attribute name="NAME" x="618.7186" y="19.05" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="613.918" y="19.05" size="1.778" layer="96" rot="R270"/>
+<attribute name="FARNELL" x="617.22" y="15.24" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="R29" gate="G$1" x="640.08" y="15.24" smashed="yes" rot="R270">
 <attribute name="NAME" x="641.5786" y="19.05" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="636.778" y="19.05" size="1.778" layer="96" rot="R270"/>
+<attribute name="FARNELL" x="640.08" y="15.24" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="IC8" gate="G$1" x="254" y="91.44"/>
-<instance part="IC9" gate="G$1" x="226.06" y="58.42"/>
+<instance part="IC8" gate="G$1" x="254" y="91.44">
+<attribute name="FARNELL" x="254" y="91.44" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="IC9" gate="G$1" x="226.06" y="58.42">
+<attribute name="FARNELL" x="226.06" y="58.42" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="+3V16" gate="G$1" x="251.46" y="116.84"/>
 <instance part="C35" gate="G$1" x="266.7" y="111.76" smashed="yes" rot="R90">
 <attribute name="NAME" x="266.7" y="111.379" size="1.778" layer="95" rot="R180"/>
