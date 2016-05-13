@@ -33444,7 +33444,7 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <attribute name="FARNELL" value="2449874"/>
 </part>
 <part name="R2" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/330/5%"/>
-<part name="S5" library="TiLDA Mk3 Parts" deviceset="SWITCH-SPST" device="-SMD-A">
+<part name="S5" library="TiLDA Mk3 Parts" deviceset="SWITCH-SPST" device="-SMD-A" value="Power Switch">
 <attribute name="FARNELL" value="9575146"/>
 </part>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
@@ -33756,10 +33756,10 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <variant name="L4" value="0603/10k/5%"/>
 </part>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
-<part name="R28" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4.7M/5%">
+<part name="R28" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4M7/5%">
 <attribute name="FARNELL" value="2059694"/>
 </part>
-<part name="R29" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4.7M/5%">
+<part name="R29" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4M7/5%">
 <attribute name="FARNELL" value="2059694"/>
 </part>
 <part name="IC8" library="TiLDA Mk3 Parts" deviceset="LSM6DS3" device="">
@@ -33813,7 +33813,7 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <text x="33.02" y="223.52" size="1.778" layer="91">values depend on crystal</text>
 <text x="668.02" y="33.02" size="1.778" layer="90" rot="MR180">will probably want changing
  to the smaller version</text>
-<text x="662.94" y="104.14" size="1.778" layer="90" rot="R270">perhaps should
+<text x="665.48" y="99.06" size="1.778" layer="90" rot="R270">perhaps should
 look for a better
 off/on switch</text>
 <text x="116.84" y="248.92" size="3.81" layer="97" ratio="15">STM Power</text>
@@ -33903,7 +33903,7 @@ off/on switch</text>
 <wire x1="246.38" y1="246.38" x2="246.38" y2="248.92" width="0.1524" layer="97"/>
 <wire x1="246.38" y1="248.92" x2="246.38" y2="254" width="0.1524" layer="97"/>
 <wire x1="246.38" y1="241.3" x2="236.22" y2="241.3" width="0.1524" layer="97"/>
-<text x="599.44" y="20.32" size="1.778" layer="91" rot="R90">depends on whether battery has thermistor</text>
+<text x="596.9" y="22.86" size="1.778" layer="91" rot="R90">depends on whether battery has thermistor</text>
 <text x="83.82" y="71.12" size="1.778" layer="91">/JOY_CENTRE</text>
 <text x="414.02" y="50.8" size="1.778" layer="91">change footprint once final part is known</text>
 <text x="147.32" y="111.76" size="1.778" layer="91">orginally 1K, check to 
@@ -34056,8 +34056,10 @@ depends on STM32 pullups</text>
 <attribute name="FARNELL" x="551.18" y="119.38" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R2" gate="G$1" x="561.34" y="119.38" rot="R180"/>
-<instance part="S5" gate="1" x="657.86" y="104.14" rot="R90">
-<attribute name="FARNELL" x="657.86" y="104.14" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="S5" gate="1" x="657.86" y="101.6" smashed="yes" rot="R90">
+<attribute name="FARNELL" x="657.86" y="101.6" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="NAME" x="664.21" y="99.695" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="666.75" y="99.06" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="+3V6" gate="G$1" x="642.62" y="210.82"/>
 <instance part="C1" gate="G$1" x="546.1" y="111.76" smashed="yes" rot="R180">
@@ -34220,7 +34222,7 @@ depends on STM32 pullups</text>
 <attribute name="FARNELL" x="662.94" y="124.46" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R45" gate="G$1" x="655.32" y="116.84" rot="R270"/>
-<instance part="GND107" gate="1" x="657.86" y="99.06"/>
+<instance part="GND107" gate="1" x="657.86" y="93.98"/>
 <instance part="S7" gate="G$1" x="345.44" y="104.14" smashed="yes" rot="MR180">
 <attribute name="NAME" x="342.9" y="101.6" size="1.778" layer="95" rot="MR180"/>
 <attribute name="EBAY" x="345.44" y="104.14" size="1.778" layer="96" rot="MR180" display="off"/>
@@ -34241,7 +34243,7 @@ depends on STM32 pullups</text>
 <instance part="S8" gate="G$1" x="421.64" y="215.9" rot="R270"/>
 <instance part="GND109" gate="1" x="421.64" y="208.28"/>
 <instance part="GND2" gate="1" x="746.76" y="124.46" rot="R270"/>
-<instance part="+3V27" gate="G$1" x="736.6" y="243.84" rot="R90"/>
+<instance part="+3V27" gate="G$1" x="728.98" y="248.92"/>
 <instance part="R47" gate="G$1" x="746.76" y="241.3" smashed="yes">
 <attribute name="NAME" x="742.95" y="242.7986" size="1.778" layer="95"/>
 <attribute name="FARNELL" x="746.76" y="241.3" size="1.778" layer="96" display="off"/>
@@ -34283,10 +34285,10 @@ depends on STM32 pullups</text>
 <attribute name="NAME" x="650.621" y="25.4" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="648.081" y="25.4" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="Q8" gate="G$1" x="734.06" y="236.22" rot="R270">
-<attribute name="FARNELL" x="734.06" y="236.22" size="1.778" layer="96" rot="R270" display="off"/>
+<instance part="Q8" gate="G$1" x="718.82" y="236.22" rot="R270">
+<attribute name="FARNELL" x="718.82" y="236.22" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="GND4" gate="1" x="726.44" y="233.68" rot="R270"/>
+<instance part="GND4" gate="1" x="703.58" y="233.68" rot="R270"/>
 <instance part="C45" gate="G$1" x="713.74" y="124.46" smashed="yes" rot="R180">
 <attribute name="NAME" x="711.581" y="124.46" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="714.121" y="124.46" size="1.778" layer="96" rot="R270"/>
@@ -34740,6 +34742,7 @@ depends on STM32 pullups</text>
 <segment>
 <pinref part="S5" gate="1" pin="P"/>
 <pinref part="GND107" gate="1" pin="GND"/>
+<wire x1="657.86" y1="96.52" x2="657.86" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC6" gate="G$1" pin="GND"/>
@@ -34854,6 +34857,7 @@ depends on STM32 pullups</text>
 <segment>
 <pinref part="Q8" gate="G$1" pin="S"/>
 <pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="706.12" y1="233.68" x2="713.74" y2="233.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="Q3" gate="G$1" pin="S"/>
@@ -35262,7 +35266,8 @@ depends on STM32 pullups</text>
 <junction x="713.74" y="129.54"/>
 </segment>
 <segment>
-<wire x1="754.38" y1="243.84" x2="739.14" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="754.38" y1="243.84" x2="728.98" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="728.98" y1="243.84" x2="728.98" y2="246.38" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="LEDA"/>
 <pinref part="+3V27" gate="G$1" pin="+3V3"/>
 </segment>
@@ -36161,11 +36166,12 @@ depends on STM32 pullups</text>
 <segment>
 <pinref part="R45" gate="G$1" pin="2"/>
 <pinref part="Q6" gate="G$1" pin="G"/>
-<wire x1="655.32" y1="111.76" x2="660.4" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="660.4" y1="111.76" x2="660.4" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="655.32" y1="111.76" x2="655.32" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="655.32" y1="109.22" x2="660.4" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="660.4" y1="109.22" x2="660.4" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="S5" gate="1" pin="S"/>
-<wire x1="660.4" y1="109.22" x2="660.4" y2="111.76" width="0.1524" layer="91"/>
-<junction x="660.4" y="111.76"/>
+<wire x1="660.4" y1="106.68" x2="660.4" y2="109.22" width="0.1524" layer="91"/>
+<junction x="660.4" y="109.22"/>
 </segment>
 </net>
 <net name="N$36" class="0">
@@ -36598,6 +36604,7 @@ depends on STM32 pullups</text>
 <wire x1="739.14" y1="241.3" x2="739.14" y2="238.76" width="0.1524" layer="91"/>
 <pinref part="R49" gate="G$1" pin="1"/>
 <wire x1="739.14" y1="236.22" x2="739.14" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="739.14" y1="233.68" x2="723.9" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="741.68" y1="236.22" x2="739.14" y2="236.22" width="0.1524" layer="91"/>
 <wire x1="739.14" y1="236.22" x2="739.14" y2="238.76" width="0.1524" layer="91"/>
 <pinref part="R48" gate="G$1" pin="1"/>
@@ -36605,9 +36612,9 @@ depends on STM32 pullups</text>
 <junction x="739.14" y="236.22"/>
 <junction x="739.14" y="238.76"/>
 <pinref part="R44" gate="G$1" pin="1"/>
-<wire x1="741.68" y1="233.68" x2="739.14" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="741.68" y1="233.68" x2="723.9" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="Q8" gate="G$1" pin="D"/>
-<junction x="739.14" y="233.68"/>
+<junction x="723.9" y="233.68"/>
 </segment>
 </net>
 <net name="FET_OUT" class="0">
@@ -36916,8 +36923,8 @@ depends on STM32 pullups</text>
 <label x="76.2" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="721.36" y1="238.76" x2="731.52" y2="238.76" width="0.1524" layer="91"/>
-<label x="721.36" y="238.76" size="1.778" layer="95"/>
+<wire x1="708.66" y1="243.84" x2="716.28" y2="238.76" width="0.1524" layer="91"/>
+<label x="708.66" y="243.84" size="1.778" layer="95" rot="MR0"/>
 <pinref part="Q8" gate="G$1" pin="G"/>
 </segment>
 </net>
