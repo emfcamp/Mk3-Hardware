@@ -20804,6 +20804,28 @@ SMD Buzzer&lt;br&gt;
 <rectangle x1="7.128" y1="7.26" x2="7.536" y2="9.264" layer="22"/>
 <rectangle x1="4.716" y1="0.036" x2="5.124" y2="2.04" layer="22"/>
 </package>
+<package name="ER-TFT024-3">
+<wire x1="-4.9" y1="0" x2="54" y2="0" width="0.127" layer="21"/>
+<wire x1="54" y1="40.8" x2="54" y2="42.7" width="0.127" layer="21"/>
+<wire x1="54" y1="42.7" x2="-4.9" y2="42.7" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="42.7" x2="-4.9" y2="0" width="0.127" layer="21"/>
+<wire x1="-2" y1="2.5" x2="44.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="44.5" y1="2.5" x2="44.5" y2="40.5" width="0.127" layer="21"/>
+<wire x1="-2" y1="40.5" x2="44.5" y2="40.5" width="0.127" layer="21"/>
+<wire x1="-2" y1="2.5" x2="-2" y2="40.5" width="0.127" layer="21"/>
+<wire x1="54" y1="40.8" x2="53" y2="40.8" width="0.127" layer="21"/>
+<wire x1="53" y1="40.8" x2="53" y2="2" width="0.127" layer="21"/>
+<wire x1="54" y1="0" x2="54" y2="2" width="0.127" layer="21"/>
+<wire x1="53" y1="2" x2="54" y2="2" width="0.127" layer="21"/>
+<wire x1="51.5" y1="40.5" x2="53.8" y2="40.5" width="0" layer="20"/>
+<wire x1="53.8" y1="40.5" x2="53.8" y2="2.3" width="0" layer="20"/>
+<wire x1="51.25" y1="2.3" x2="51.25" y2="9.25" width="0" layer="20"/>
+<wire x1="51.5" y1="33.5" x2="51.5" y2="40.5" width="0" layer="20"/>
+<wire x1="53.8" y1="2.3" x2="51.25" y2="2.3" width="0" layer="20"/>
+<wire x1="51.5" y1="33.5" x2="50" y2="33.5" width="0" layer="20"/>
+<wire x1="50" y1="33.5" x2="50" y2="9.25" width="0" layer="20"/>
+<wire x1="50" y1="9.25" x2="51.25" y2="9.25" width="0" layer="20"/>
+</package>
 </packages>
 <symbols>
 <symbol name="A3L-LOC">
@@ -25188,6 +25210,19 @@ SMD Buzzer&lt;br&gt;
 </symbol>
 <symbol name="MICROPYTHON">
 <text x="0" y="0" size="1.778" layer="94">Micro Python</text>
+</symbol>
+<symbol name="ER-TFT024-3-OUTLINE">
+<wire x1="-15.24" y1="10.16" x2="15.24" y2="10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="10.16" x2="15.24" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-10.16" x2="-15.24" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-10.16" x2="-15.24" y2="10.16" width="0.254" layer="94"/>
+<text x="-7.62" y="0" size="1.778" layer="94">LCD Outline</text>
+<wire x1="-12.7" y1="7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<text x="-15.24" y="12.7" size="1.778" layer="95">&gt;Name</text>
+<text x="-15.24" y="-12.7" size="1.778" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -30711,6 +30746,18 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="ER-TFT024-3-OUTLINE" prefix="U">
+<gates>
+<gate name="G$1" symbol="ER-TFT024-3-OUTLINE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ER-TFT024-3">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="supply1">
@@ -33567,15 +33614,15 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="GND109" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND2" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V27" library="supply1" deviceset="+3V3" device=""/>
-<part name="R47" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4.7/5%">
+<part name="R47" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4R7/5%">
 <attribute name="FARNELL" value="9331280"/>
 <attribute name="FARNELL_REEL" value="2130678"/>
 </part>
-<part name="R48" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4.7/5%">
+<part name="R48" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4R7/5%">
 <attribute name="FARNELL" value="9331280"/>
 <attribute name="FARNELL_REEL" value="2130678"/>
 </part>
-<part name="R49" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4.7/5%">
+<part name="R49" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4R7/5%">
 <attribute name="FARNELL" value="9331280"/>
 <attribute name="FARNELL_REEL" value="2130678"/>
 </part>
@@ -33585,8 +33632,8 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="+3V28" library="supply1" deviceset="+3V3" device=""/>
 <part name="C38" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/4u7/10V/X5R"/>
 <part name="GND113" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="J2" library="TiLDA Mk3 Parts" deviceset="ER-TFT024-3" device=""/>
-<part name="R44" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4.7/5%">
+<part name="J2" library="TiLDA Mk3 Parts" deviceset="ER-TFT024-3" device="" value="ER-CON50HT-1"/>
+<part name="R44" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4R7/5%">
 <attribute name="FARNELL" value="9331280"/>
 <attribute name="FARNELL_REEL" value="2130678"/>
 </part>
@@ -33756,6 +33803,7 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="TP1" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27">
 <variant name="L4" populate="no"/>
 </part>
+<part name="U2" library="TiLDA Mk3 Parts" deviceset="ER-TFT024-3-OUTLINE" device="" value="ER-TFT024-3"/>
 </parts>
 <sheets>
 <sheet>
@@ -34411,6 +34459,7 @@ depends on STM32 pullups</text>
 <instance part="TP1" gate="G$1" x="195.58" y="83.82" smashed="yes" rot="R270">
 <attribute name="NAME" x="196.85" y="85.09" size="1.778" layer="95" rot="R270"/>
 </instance>
+<instance part="U2" gate="G$1" x="767.08" y="88.9"/>
 </instances>
 <busses>
 </busses>

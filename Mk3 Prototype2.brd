@@ -9430,17 +9430,17 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="SWCH-00815" x="73.4" y="22.4" size="1.778" layer="28" rot="MR180" display="off"/>
 <variant name="L4" populate="no"/>
 </element>
-<element name="R47" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/4.7/5%" x="69.6" y="59.2" smashed="yes" rot="MR270">
+<element name="R47" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/4R7/5%" x="69.6" y="59.2" smashed="yes" rot="MR270">
 <attribute name="NAME" x="69.05" y="54.8" size="1.016" layer="26" font="vector" ratio="14" rot="MR90"/>
 <attribute name="FARNELL" value="9331280" x="69.6" y="59.2" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="FARNELL_REEL" value="2130678" x="69.6" y="59.2" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="R48" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/4.7/5%" x="71.2" y="59.2" smashed="yes" rot="MR270">
+<element name="R48" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/4R7/5%" x="71.2" y="59.2" smashed="yes" rot="MR270">
 <attribute name="NAME" x="70.65" y="54.8" size="1.016" layer="26" font="vector" ratio="14" rot="MR90"/>
 <attribute name="FARNELL" value="9331280" x="71.2" y="59.2" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="FARNELL_REEL" value="2130678" x="71.2" y="59.2" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="R49" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/4.7/5%" x="72.8" y="59.2" smashed="yes" rot="MR270">
+<element name="R49" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/4R7/5%" x="72.8" y="59.2" smashed="yes" rot="MR270">
 <attribute name="NAME" x="72.25" y="54.8" size="1.016" layer="26" font="vector" ratio="14" rot="MR90"/>
 <attribute name="FARNELL" value="9331280" x="72.8" y="59.2" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="FARNELL_REEL" value="2130678" x="72.8" y="59.2" size="1.778" layer="28" rot="MR270" display="off"/>
@@ -9448,11 +9448,11 @@ design rules under a new name.</description>
 <element name="C38" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/4u7/10V/X5R" x="59.6" y="32" smashed="yes" rot="MR180">
 <attribute name="NAME" x="58" y="31.8" size="1.016" layer="26" font="vector" ratio="14" rot="MR0"/>
 </element>
-<element name="J2" library="TiLDA Mk3 Parts" package="FH12-50S-0.5SH" value="ER-TFT024-3" x="65.6" y="41.2" smashed="yes" rot="MR270">
+<element name="J2" library="TiLDA Mk3 Parts" package="FH12-50S-0.5SH" value="ER-CON50HT-1" x="65.6" y="41.2" smashed="yes" rot="MR270">
 <attribute name="NAME" x="61.505" y="55.1476" size="1.016" layer="26" font="vector" ratio="14" rot="MR270"/>
 </element>
-<element name="U$2" library="TiLDA Mk3 Parts" package="ER-TFT024-3" value="" x="35.2" y="19.6" smashed="yes"/>
-<element name="R44" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/4.7/5%" x="74.4" y="59.2" smashed="yes" rot="MR270">
+<element name="U$2" library="TiLDA Mk3 Parts" package="ER-TFT024-3" value="ER-TFT024-3" x="35.2" y="19.6" smashed="yes"/>
+<element name="R44" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/4R7/5%" x="74.4" y="59.2" smashed="yes" rot="MR270">
 <attribute name="NAME" x="73.85" y="54.8" size="1.016" layer="26" font="vector" ratio="14" rot="MR90"/>
 <attribute name="FARNELL" value="9331280" x="74.4" y="59.2" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="FARNELL_REEL" value="2130678" x="74.4" y="59.2" size="1.778" layer="28" rot="MR270" display="off"/>
@@ -9621,12 +9621,12 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="53.55" y="21.2" size="1.016" layer="28" rot="MR90"/>
 <variant name="L4" value="0603/10k/5%"/>
 </element>
-<element name="R28" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/4.7M/5%" x="55.6" y="52" smashed="yes" rot="MR180">
+<element name="R28" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/4M7/5%" x="55.6" y="52" smashed="yes" rot="MR180">
 <attribute name="NAME" x="54" y="51.35" size="1.016" layer="26" font="vector" ratio="14" rot="MR180"/>
 <attribute name="VALUE" x="54.8" y="53.65" size="1.016" layer="28" rot="MR180"/>
 <attribute name="FARNELL" value="2059694" x="55.6" y="52" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="R29" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/4.7M/5%" x="52" y="55.6" smashed="yes" rot="MR90">
+<element name="R29" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/4M7/5%" x="52" y="55.6" smashed="yes" rot="MR90">
 <attribute name="NAME" x="51.45" y="57.2" size="1.016" layer="26" font="vector" ratio="14" rot="MR90"/>
 <attribute name="VALUE" x="50.35" y="54.8" size="1.016" layer="28" rot="MR90"/>
 <attribute name="FARNELL" value="2059694" x="52" y="55.6" size="1.778" layer="28" rot="MR90" display="off"/>
@@ -9683,6 +9683,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="54.035" y="15.038" size="0.0254" layer="28" rot="MR0"/>
 <variant name="L4" populate="no"/>
 </element>
+<element name="U2" library="TiLDA Mk3 Parts" package="ER-TFT024-3" value="ER-TFT024-3" x="4" y="-46"/>
 </elements>
 <signals>
 <signal name="GND">
