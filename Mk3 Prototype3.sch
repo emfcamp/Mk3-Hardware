@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -33422,8 +33422,6 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="R33" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/47k/5%"/>
 <part name="GND52" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND53" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R23" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/22/1%"/>
-<part name="R25" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/22/1%"/>
 <part name="X2" library="TiLDA Mk3 Parts" deviceset="CRYSTAL" device="-3.2-2.5" value="DNP (16MHz-3.2-2.5)">
 <attribute name="FARNELL" value="2467444"/>
 <variant name="L4" populate="no"/>
@@ -34021,14 +34019,6 @@ depends on STM32 pullups</text>
 <instance part="R33" gate="G$1" x="137.16" y="215.9"/>
 <instance part="GND52" gate="1" x="127" y="215.9" rot="R270"/>
 <instance part="GND53" gate="1" x="414.02" y="33.02" rot="R270"/>
-<instance part="R23" gate="G$1" x="142.24" y="127" smashed="yes" rot="R180">
-<attribute name="NAME" x="150.876" y="129.0574" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="151.13" y="122.936" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="R25" gate="G$1" x="142.24" y="124.46" smashed="yes" rot="R180">
-<attribute name="NAME" x="150.876" y="126.5174" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="151.13" y="120.396" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="X2" gate="G$1" x="43.18" y="236.22" smashed="yes" rot="R90">
 <attribute name="NAME" x="46.482" y="236.728" size="1.778" layer="95"/>
 <attribute name="VALUE" x="46.482" y="233.934" size="1.778" layer="96"/>
@@ -35445,52 +35435,38 @@ depends on STM32 pullups</text>
 <label x="33.02" y="180.34" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="USB_D_N" class="0">
-<segment>
-<pinref part="R23" gate="G$1" pin="2"/>
-<pinref part="J1" gate="G$1" pin="D-"/>
-<wire x1="137.16" y1="127" x2="129.54" y2="127" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="IO1"/>
-<wire x1="129.54" y1="127" x2="114.3" y2="127" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="99.06" x2="129.54" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="99.06" x2="129.54" y2="127" width="0.1524" layer="91"/>
-<junction x="129.54" y="127"/>
-</segment>
-</net>
-<net name="USB_D_P" class="0">
-<segment>
-<pinref part="R25" gate="G$1" pin="2"/>
-<pinref part="J1" gate="G$1" pin="D+"/>
-<wire x1="137.16" y1="124.46" x2="132.08" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="IO2"/>
-<wire x1="132.08" y1="124.46" x2="114.3" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="96.52" x2="132.08" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="96.52" x2="132.08" y2="124.46" width="0.1524" layer="91"/>
-<junction x="132.08" y="124.46"/>
-</segment>
-</net>
 <net name="D_N" class="0">
-<segment>
-<pinref part="R23" gate="G$1" pin="1"/>
-<wire x1="147.32" y1="127" x2="177.8" y2="127" width="0.1524" layer="91"/>
-<label x="170.18" y="127" size="1.778" layer="95"/>
-</segment>
 <segment>
 <wire x1="30.48" y1="172.72" x2="33.02" y2="172.72" width="0.1524" layer="91"/>
 <label x="33.02" y="172.72" size="1.778" layer="95"/>
 <pinref part="IC3" gate="_PA" pin="PA11"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="D-"/>
+<pinref part="IC1" gate="G$1" pin="IO1"/>
+<wire x1="129.54" y1="127" x2="114.3" y2="127" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="99.06" x2="129.54" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="99.06" x2="129.54" y2="127" width="0.1524" layer="91"/>
+<junction x="129.54" y="127"/>
+<wire x1="129.54" y1="127" x2="177.8" y2="127" width="0.1524" layer="91"/>
+<label x="170.18" y="127" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="D_P" class="0">
-<segment>
-<pinref part="R25" gate="G$1" pin="1"/>
-<wire x1="177.8" y1="124.46" x2="147.32" y2="124.46" width="0.1524" layer="91"/>
-<label x="170.18" y="124.46" size="1.778" layer="95"/>
-</segment>
 <segment>
 <wire x1="30.48" y1="170.18" x2="33.02" y2="170.18" width="0.1524" layer="91"/>
 <label x="33.02" y="170.18" size="1.778" layer="95"/>
 <pinref part="IC3" gate="_PA" pin="PA12"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="D+"/>
+<pinref part="IC1" gate="G$1" pin="IO2"/>
+<wire x1="132.08" y1="124.46" x2="114.3" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="96.52" x2="132.08" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="96.52" x2="132.08" y2="124.46" width="0.1524" layer="91"/>
+<junction x="132.08" y="124.46"/>
+<wire x1="177.8" y1="124.46" x2="132.08" y2="124.46" width="0.1524" layer="91"/>
+<label x="170.18" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$31" class="0">

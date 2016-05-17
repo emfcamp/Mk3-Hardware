@@ -33421,8 +33421,8 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="R33" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/47k/5%"/>
 <part name="GND52" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND53" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R23" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/22/1%"/>
-<part name="R25" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/22/1%"/>
+<part name="R23" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/0R"/>
+<part name="R25" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/0R"/>
 <part name="X2" library="TiLDA Mk3 Parts" deviceset="CRYSTAL" device="-3.2-2.5" value="DNP (16MHz-3.2-2.5)">
 <attribute name="FARNELL" value="2467444"/>
 <variant name="L4" populate="no"/>
