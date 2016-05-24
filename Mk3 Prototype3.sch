@@ -33916,9 +33916,6 @@ depends on STM32 pullups</text>
 <wire x1="259.08" y1="248.92" x2="259.08" y2="246.38" width="0.1524" layer="97"/>
 <wire x1="259.08" y1="246.38" x2="246.38" y2="246.38" width="0.1524" layer="97"/>
 <wire x1="246.38" y1="243.84" x2="259.08" y2="243.84" width="0.1524" layer="97"/>
-<text x="358.14" y="119.38" size="1.778" layer="91">mom_dwn</text>
-<text x="363.22" y="106.68" size="1.778" layer="91">mom_right</text>
-<text x="365.76" y="101.6" size="1.778" layer="91">mom_menu</text>
 <text x="314.96" y="246.38" size="3.81" layer="97" ratio="15">Timers List</text>
 <text x="317.5" y="203.2" size="1.6764" layer="91" ratio="11" align="bottom-right">1
 2
@@ -35326,11 +35323,19 @@ depends on STM32 pullups</text>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
-<net name="PB11" class="0">
+<net name="PB2" class="0">
 <segment>
 <wire x1="332.74" y1="40.64" x2="327.66" y2="40.64" width="0.1524" layer="91"/>
 <label x="327.66" y="40.64" size="1.778" layer="95" rot="MR0"/>
 <pinref part="JP1" gate="G$1" pin="7"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="_PB" pin="PB2"/>
+<label x="71.12" y="198.12" size="1.778" layer="95"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="198.12" x2="88.9" y2="198.12" width="0.1524" layer="91"/>
+<junction x="88.9" y="198.12"/>
+<wire x1="88.9" y1="198.12" x2="93.98" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VBATT_IN" class="0">
@@ -35718,7 +35723,7 @@ depends on STM32 pullups</text>
 <pinref part="JP2" gate="G$1" pin="10"/>
 </segment>
 </net>
-<net name="JOY_UP" class="0">
+<net name="JOY_RIGHT" class="0">
 <segment>
 <pinref part="IC3" gate="_PD" pin="PD6"/>
 <wire x1="73.66" y1="119.38" x2="83.82" y2="119.38" width="0.1524" layer="91"/>
@@ -35730,7 +35735,7 @@ depends on STM32 pullups</text>
 <label x="347.98" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="JOY_DWN" class="0">
+<net name="BTN_B" class="0">
 <segment>
 <pinref part="IC3" gate="_PD" pin="PD11"/>
 <wire x1="73.66" y1="104.14" x2="83.82" y2="104.14" width="0.1524" layer="91"/>
@@ -35742,7 +35747,7 @@ depends on STM32 pullups</text>
 <label x="347.98" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="JOY_LEFT" class="0">
+<net name="BTN_A" class="0">
 <segment>
 <wire x1="33.02" y1="162.56" x2="30.48" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="_PA" pin="PA15"/>
@@ -35754,16 +35759,11 @@ depends on STM32 pullups</text>
 <label x="345.44" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="JOY_RIGHT" class="0">
+<net name="JOY_RIGHTG" class="0">
 <segment>
 <pinref part="IC3" gate="_PD" pin="PD3"/>
 <wire x1="73.66" y1="127" x2="76.2" y2="127" width="0.1524" layer="91"/>
 <label x="76.2" y="127" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="S7" gate="G$1" pin="2"/>
-<wire x1="350.52" y1="104.14" x2="353.06" y2="104.14" width="0.1524" layer="91"/>
-<label x="353.06" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADC_VIN" class="0">
@@ -35818,7 +35818,7 @@ depends on STM32 pullups</text>
 <label x="76.2" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="MOM_RIGHT" class="0">
+<net name="JOY_UP" class="0">
 <segment>
 <pinref part="IC3" gate="_PD" pin="PD8"/>
 <wire x1="73.66" y1="111.76" x2="83.82" y2="111.76" width="0.1524" layer="91"/>
@@ -35830,7 +35830,7 @@ depends on STM32 pullups</text>
 <label x="314.96" y="132.08" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
-<net name="MOM_DWN" class="0">
+<net name="JOY_LEFT" class="0">
 <segment>
 <pinref part="IC3" gate="_PD" pin="PD9"/>
 <wire x1="83.82" y1="109.22" x2="73.66" y2="109.22" width="0.1524" layer="91"/>
@@ -36277,7 +36277,7 @@ depends on STM32 pullups</text>
 <label x="78.74" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="BTN_MENU" class="0">
+<net name="JOY_DOWN" class="0">
 <segment>
 <pinref part="IC3" gate="_PD" pin="PD10"/>
 <wire x1="73.66" y1="106.68" x2="83.82" y2="106.68" width="0.1524" layer="91"/>
@@ -36912,16 +36912,6 @@ depends on STM32 pullups</text>
 <pinref part="JP2" gate="G$1" pin="5"/>
 </segment>
 </net>
-<net name="BOOT1" class="0">
-<segment>
-<pinref part="IC3" gate="_PB" pin="PB2"/>
-<label x="71.12" y="198.12" size="1.778" layer="95"/>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="198.12" x2="88.9" y2="198.12" width="0.1524" layer="91"/>
-<junction x="88.9" y="198.12"/>
-<wire x1="88.9" y1="198.12" x2="93.98" y2="198.12" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="ADC_Y" class="0">
 <segment>
 <pinref part="IC3" gate="_PC" pin="PC3"/>
@@ -36970,6 +36960,13 @@ depends on STM32 pullups</text>
 <pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="645.16" y1="124.46" x2="642.62" y2="124.46" width="0.1524" layer="91"/>
 <junction x="645.16" y="124.46"/>
+</segment>
+</net>
+<net name="BTN_MENU" class="0">
+<segment>
+<pinref part="S7" gate="G$1" pin="2"/>
+<wire x1="350.52" y1="104.14" x2="353.06" y2="104.14" width="0.1524" layer="91"/>
+<label x="353.06" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
