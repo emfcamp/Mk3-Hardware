@@ -11025,10 +11025,12 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </package>
 <package name="2450AT42A100">
 <smd name="P$1" x="-0.5" y="0" dx="1" dy="1.8" layer="1"/>
-<smd name="P$2" x="5.9" y="0" dx="4" dy="1.8" layer="1"/>
+<smd name="P$2" x="5.9" y="0" dx="4" dy="1.8" layer="1" stop="no" thermals="no" cream="no"/>
 <rectangle x1="0.5" y1="-0.2" x2="1.3" y2="0.2" layer="21"/>
 <wire x1="0.2" y1="0.8" x2="3.7" y2="0.8" width="0.127" layer="21"/>
 <wire x1="0.2" y1="-0.8" x2="3.7" y2="-0.8" width="0.127" layer="21"/>
+<rectangle x1="3.9375" y1="-0.875" x2="4.9375" y2="0.875" layer="31"/>
+<rectangle x1="3.875" y1="-0.9375" x2="5" y2="0.9375" layer="29"/>
 </package>
 <package name="FH12-50S-0.5SH">
 <description>&lt;b&gt;0.5mm Pitch Connectors For FPC/FFC&lt;/b&gt;&lt;p&gt;
@@ -20817,14 +20819,21 @@ SMD Buzzer&lt;br&gt;
 <wire x1="53" y1="40.8" x2="53" y2="2" width="0.127" layer="21"/>
 <wire x1="54" y1="0" x2="54" y2="2" width="0.127" layer="21"/>
 <wire x1="53" y1="2" x2="54" y2="2" width="0.127" layer="21"/>
-<wire x1="51.5" y1="40.5" x2="53.8" y2="40.5" width="0" layer="20"/>
-<wire x1="53.8" y1="40.5" x2="53.8" y2="2.3" width="0" layer="20"/>
-<wire x1="51.25" y1="2.3" x2="51.25" y2="9.25" width="0" layer="20"/>
-<wire x1="51.5" y1="33.5" x2="51.5" y2="40.5" width="0" layer="20"/>
-<wire x1="53.8" y1="2.3" x2="51.25" y2="2.3" width="0" layer="20"/>
-<wire x1="51.5" y1="33.5" x2="50" y2="33.5" width="0" layer="20"/>
-<wire x1="50" y1="33.5" x2="50" y2="9.25" width="0" layer="20"/>
-<wire x1="50" y1="9.25" x2="51.25" y2="9.25" width="0" layer="20"/>
+<wire x1="52.5" y1="40.5" x2="52.8" y2="40.5" width="0" layer="20"/>
+<wire x1="53.8" y1="39.5" x2="53.8" y2="3.3" width="0" layer="20"/>
+<wire x1="51.5" y1="3.3" x2="51.5" y2="8.7" width="0" layer="20"/>
+<wire x1="51.5" y1="34" x2="51.5" y2="39.5" width="0" layer="20"/>
+<wire x1="52.8" y1="2.3" x2="52.5" y2="2.3" width="0" layer="20"/>
+<wire x1="50" y1="32.5" x2="50" y2="10.3" width="0" layer="20"/>
+<wire x1="52.8" y1="40.5" x2="53.8" y2="39.5" width="0" layer="20" curve="-90"/>
+<wire x1="51.5" y1="39.5" x2="52.5" y2="40.5" width="0" layer="20" curve="-90"/>
+<wire x1="53.8" y1="3.3" x2="52.8" y2="2.3" width="0" layer="20" curve="-90"/>
+<wire x1="52.5" y1="2.3" x2="51.5" y2="3.3" width="0" layer="20" curve="-90"/>
+<wire x1="51" y1="9.3" x2="50" y2="10.3" width="0" layer="20" curve="-90"/>
+<wire x1="51" y1="9.3" x2="51.5" y2="8.8" width="0" layer="20" curve="-90"/>
+<wire x1="51.5" y1="8.8" x2="51.5" y2="8.7" width="0" layer="20"/>
+<wire x1="50" y1="32.5" x2="51" y2="33.5" width="0" layer="20" curve="-90"/>
+<wire x1="51.5" y1="34" x2="51" y2="33.5" width="0" layer="20" curve="-90"/>
 </package>
 </packages>
 <symbols>
