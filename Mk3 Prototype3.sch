@@ -33835,7 +33835,6 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <text x="797.56" y="96.52" size="2.54" layer="90">pull PB2 (BOOT1) low?</text>
 <text x="797.56" y="104.14" size="2.54" layer="90">see if a resistor is needed on the stm32 crytal</text>
 <text x="162.56" y="17.78" size="1.778" layer="91" rot="R90">depends on led</text>
-<text x="86.36" y="198.12" size="1.778" layer="91">/ BOOT1</text>
 <text x="358.14" y="127" size="1.778" layer="91">/ JOY_CEN</text>
 <text x="129.286" y="199.136" size="1.778" layer="91" rot="R90">low ESR</text>
 <text x="797.56" y="111.76" size="2.54" layer="90">move esp decoupling cap to vcc pin</text>
@@ -33847,7 +33846,7 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <text x="58.42" y="81.28" size="3.81" layer="97" ratio="15">Port E</text>
 <text x="109.22" y="139.7" size="3.81" layer="97" ratio="15">USB OTG</text>
 <text x="500.38" y="142.24" size="3.81" layer="97" ratio="15">Power</text>
-<text x="335.28" y="203.2" size="3.81" layer="97" ratio="15">UI</text>
+<text x="281.94" y="175.26" size="3.81" layer="97" ratio="15">UI</text>
 <text x="119.38" y="66.04" size="3.81" layer="97" ratio="15">ADC Inputs</text>
 <text x="693.42" y="223.52" size="1.778" layer="91">0: parallel; 1: serial</text>
 <text x="497.84" y="73.66" size="1.778" layer="91">add small resistors to stop shorting agaoinst vcc/gnd</text>
@@ -33968,6 +33967,29 @@ depends on STM32 pullups</text>
 <text x="358.14" y="119.38" size="1.778" layer="91">mom_dwn</text>
 <text x="363.22" y="106.68" size="1.778" layer="91">mom_right</text>
 <text x="365.76" y="101.6" size="1.778" layer="91">mom_menu</text>
+<text x="314.96" y="246.38" size="3.81" layer="97" ratio="15">Timers List</text>
+<text x="317.5" y="203.2" size="1.6764" layer="91" ratio="11" align="bottom-right">1
+2
+3
+4
+5
+6
+7
+8
+15
+16
+17</text>
+<text x="322.58" y="223.52" size="1.778" layer="91">internal use</text>
+<wire x1="312.42" y1="231.14" x2="342.9" y2="231.14" width="0.1524" layer="97"/>
+<wire x1="320.04" y1="233.68" x2="320.04" y2="200.66" width="0.1524" layer="97"/>
+<wire x1="312.42" y1="200.66" x2="320.04" y2="200.66" width="0.1524" layer="97"/>
+<wire x1="320.04" y1="200.66" x2="342.9" y2="200.66" width="0.1524" layer="97"/>
+<text x="322.58" y="203.2" size="1.778" layer="91">CH1: Backlight</text>
+<text x="322.58" y="208.28" size="1.778" layer="91">CH1N: WS2812</text>
+<text x="322.58" y="210.82" size="1.778" layer="91">CH2: FET LED</text>
+<text x="322.58" y="226.06" size="1.778" layer="91">CH1-4: servos</text>
+<text x="322.58" y="228.6" size="1.778" layer="91">CH2,4: headers</text>
+<text x="322.58" y="220.98" size="1.778" layer="91">CH1: buzzer</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -34361,8 +34383,8 @@ depends on STM32 pullups</text>
 <instance part="U1" gate="G$1" x="441.96" y="30.48">
 <attribute name="FARNELL" x="441.96" y="30.48" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="SG1" gate="G$1" x="358.14" y="190.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="363.22" y="193.04" size="1.778" layer="95" rot="R270"/>
+<instance part="SG1" gate="G$1" x="304.8" y="162.56" smashed="yes" rot="R270">
+<attribute name="NAME" x="309.88" y="165.1" size="1.778" layer="95" rot="R270"/>
 </instance>
 <instance part="R27" gate="G$1" x="431.8" y="177.8" rot="R270"/>
 <instance part="TP11" gate="G$1" x="429.26" y="185.42" smashed="yes" rot="R90">
@@ -34378,8 +34400,8 @@ depends on STM32 pullups</text>
 <attribute name="NAME" x="420.37" y="224.79" size="1.778" layer="95"/>
 </instance>
 <instance part="GND19" gate="1" x="330.2" y="101.6"/>
-<instance part="R26" gate="G$1" x="350.52" y="190.5" rot="R180"/>
-<instance part="GND20" gate="1" x="355.6" y="185.42"/>
+<instance part="R26" gate="G$1" x="297.18" y="162.56" rot="R180"/>
+<instance part="GND20" gate="1" x="302.26" y="157.48"/>
 <instance part="TP21" gate="G$1" x="744.22" y="132.08" smashed="yes" rot="R180">
 <attribute name="NAME" x="745.49" y="130.81" size="1.778" layer="95" rot="R180"/>
 </instance>
@@ -35760,14 +35782,14 @@ depends on STM32 pullups</text>
 </net>
 <net name="TIM1_CH1N" class="0">
 <segment>
-<pinref part="IC3" gate="_PB" pin="PB13"/>
-<wire x1="68.58" y1="167.64" x2="71.12" y2="167.64" width="0.1524" layer="91"/>
-<label x="71.12" y="167.64" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="370.84" y1="149.86" x2="353.06" y2="149.86" width="0.1524" layer="91"/>
 <label x="363.22" y="149.86" size="1.778" layer="95"/>
 <pinref part="Q3" gate="G$1" pin="G"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="_PC" pin="PC7"/>
+<wire x1="33.02" y1="116.84" x2="35.56" y2="116.84" width="0.1524" layer="91"/>
+<label x="35.56" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -35782,18 +35804,6 @@ depends on STM32 pullups</text>
 <pinref part="IC3" gate="_PE" pin="PE11"/>
 <wire x1="73.66" y1="40.64" x2="78.74" y2="40.64" width="0.1524" layer="91"/>
 <label x="76.2" y="40.64" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="363.22" y1="38.1" x2="358.14" y2="38.1" width="0.1524" layer="91"/>
-<label x="358.14" y="38.1" size="1.778" layer="95" rot="MR0"/>
-<pinref part="JP2" gate="G$1" pin="8"/>
-</segment>
-</net>
-<net name="TIM1_CH3" class="0">
-<segment>
-<pinref part="IC3" gate="_PE" pin="PE13"/>
-<wire x1="73.66" y1="35.56" x2="78.74" y2="35.56" width="0.1524" layer="91"/>
-<label x="76.2" y="35.56" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="358.14" y1="35.56" x2="363.22" y2="35.56" width="0.1524" layer="91"/>
@@ -36037,14 +36047,14 @@ depends on STM32 pullups</text>
 </net>
 <net name="SPI1_SCK" class="0">
 <segment>
-<pinref part="IC3" gate="_PA" pin="PA5"/>
-<wire x1="30.48" y1="190.5" x2="33.02" y2="190.5" width="0.1524" layer="91"/>
-<label x="33.02" y="190.5" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="533.4" y1="213.36" x2="490.22" y2="213.36" width="0.1524" layer="91"/>
 <label x="525.78" y="213.36" size="1.778" layer="95"/>
 <pinref part="IC6" gate="G$1" pin="SPI_CLK"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="_PE" pin="PE13"/>
+<wire x1="73.66" y1="35.56" x2="78.74" y2="35.56" width="0.1524" layer="91"/>
+<label x="76.2" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI1_NSS" class="0">
@@ -36619,17 +36629,14 @@ depends on STM32 pullups</text>
 </net>
 <net name="WS2812" class="0">
 <segment>
-<pinref part="IC3" gate="_PB" pin="PB2"/>
-<label x="71.12" y="198.12" size="1.778" layer="95"/>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="198.12" x2="88.9" y2="198.12" width="0.1524" layer="91"/>
-<junction x="88.9" y="198.12"/>
-<wire x1="88.9" y1="198.12" x2="93.98" y2="198.12" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <label x="480.06" y="106.68" size="1.778" layer="95"/>
 <pinref part="D1" gate="G$1" pin="DIN"/>
 <wire x1="485.14" y1="106.68" x2="480.06" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="_PB" pin="PB13"/>
+<wire x1="68.58" y1="167.64" x2="71.12" y2="167.64" width="0.1524" layer="91"/>
+<label x="71.12" y="167.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$39" class="0">
@@ -36879,9 +36886,9 @@ depends on STM32 pullups</text>
 <pinref part="IC3" gate="_PB" pin="PB0"/>
 </segment>
 <segment>
-<wire x1="363.22" y1="40.64" x2="358.14" y2="40.64" width="0.1524" layer="91"/>
-<label x="358.14" y="40.64" size="1.778" layer="95" rot="MR0"/>
-<pinref part="JP2" gate="G$1" pin="7"/>
+<wire x1="363.22" y1="38.1" x2="358.14" y2="38.1" width="0.1524" layer="91"/>
+<label x="358.14" y="38.1" size="1.778" layer="95" rot="MR0"/>
+<pinref part="JP2" gate="G$1" pin="8"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -36898,8 +36905,8 @@ depends on STM32 pullups</text>
 </segment>
 <segment>
 <pinref part="R26" gate="G$1" pin="2"/>
-<wire x1="345.44" y1="190.5" x2="327.66" y2="190.5" width="0.1524" layer="91"/>
-<label x="327.66" y="190.5" size="1.778" layer="95"/>
+<wire x1="292.1" y1="162.56" x2="274.32" y2="162.56" width="0.1524" layer="91"/>
+<label x="274.32" y="162.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TIM17_CH1" class="0">
@@ -36934,9 +36941,9 @@ depends on STM32 pullups</text>
 <label x="35.56" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="363.22" y1="45.72" x2="358.14" y2="45.72" width="0.1524" layer="91"/>
-<label x="358.14" y="45.72" size="1.778" layer="95" rot="MR0"/>
-<pinref part="JP2" gate="G$1" pin="5"/>
+<wire x1="363.22" y1="43.18" x2="358.14" y2="43.18" width="0.1524" layer="91"/>
+<label x="358.14" y="43.18" size="1.778" layer="95" rot="MR0"/>
+<pinref part="JP2" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="USART3_RX" class="0">
@@ -36946,9 +36953,9 @@ depends on STM32 pullups</text>
 <label x="35.56" y="121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="363.22" y1="43.18" x2="358.14" y2="43.18" width="0.1524" layer="91"/>
-<label x="358.14" y="43.18" size="1.778" layer="95" rot="MR0"/>
-<pinref part="JP2" gate="G$1" pin="6"/>
+<wire x1="363.22" y1="40.64" x2="358.14" y2="40.64" width="0.1524" layer="91"/>
+<label x="358.14" y="40.64" size="1.778" layer="95" rot="MR0"/>
+<pinref part="JP2" gate="G$1" pin="7"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -36991,6 +36998,52 @@ depends on STM32 pullups</text>
 <wire x1="205.74" y1="81.28" x2="205.74" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="55.88" x2="205.74" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="IC9" gate="G$1" pin="DRDY"/>
+</segment>
+</net>
+<net name="DAC_OUT" class="0">
+<segment>
+<pinref part="IC3" gate="_PA" pin="PA5"/>
+<wire x1="30.48" y1="190.5" x2="33.02" y2="190.5" width="0.1524" layer="91"/>
+<label x="33.02" y="190.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="363.22" y1="45.72" x2="358.14" y2="45.72" width="0.1524" layer="91"/>
+<label x="358.14" y="45.72" size="1.778" layer="95" rot="MR0"/>
+<pinref part="JP2" gate="G$1" pin="5"/>
+</segment>
+</net>
+<net name="BOOT1" class="0">
+<segment>
+<pinref part="IC3" gate="_PB" pin="PB2"/>
+<label x="71.12" y="198.12" size="1.778" layer="95"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="198.12" x2="88.9" y2="198.12" width="0.1524" layer="91"/>
+<junction x="88.9" y="198.12"/>
+<wire x1="88.9" y1="198.12" x2="93.98" y2="198.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="X+"/>
+<wire x1="754.38" y1="119.38" x2="751.84" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="Y-"/>
+<wire x1="751.84" y1="111.76" x2="754.38" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="X-"/>
+<wire x1="754.38" y1="116.84" x2="751.84" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="Y+"/>
+<wire x1="754.38" y1="114.3" x2="751.84" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
