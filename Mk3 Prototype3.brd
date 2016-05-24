@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -8553,6 +8553,17 @@ Metric Code Size 3225</description>
 <rectangle x1="7.128" y1="7.26" x2="7.536" y2="9.264" layer="22"/>
 <rectangle x1="4.716" y1="0.036" x2="5.124" y2="2.04" layer="22"/>
 </package>
+<package name="TACTILE_SWITCH_TALL">
+<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.254" layer="21"/>
+<wire x1="3" y1="-3" x2="3" y2="3" width="0.254" layer="21"/>
+<wire x1="3" y1="3" x2="-3" y2="3" width="0.254" layer="21"/>
+<wire x1="-3" y1="3" x2="-3" y2="-3" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="1.75" width="0.254" layer="21"/>
+<smd name="A1" x="-5" y="-2.25" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="A2" x="5" y="-2.25" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="B1" x="-5" y="2.25" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="B2" x="4.975" y="2.25" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+</package>
 </packages>
 </library>
 <library name="dtb">
@@ -8643,21 +8654,6 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <wire x1="-2.45871875" y1="-2.49681875" x2="-2.45871875" y2="-2.499359375" width="0.127" layer="21"/>
 <wire x1="-2.45871875" y1="-2.499359375" x2="2.50951875" y2="-2.499359375" width="0.127" layer="21"/>
 <wire x1="2.50951875" y1="-2.499359375" x2="2.50951875" y2="-2.2733" width="0.127" layer="21"/>
-</package>
-</packages>
-</library>
-<library name="Mine">
-<packages>
-<package name="TACTILE_SWITCH_TALL">
-<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.254" layer="21"/>
-<wire x1="3" y1="-3" x2="3" y2="3" width="0.254" layer="21"/>
-<wire x1="3" y1="3" x2="-3" y2="3" width="0.254" layer="21"/>
-<wire x1="-3" y1="3" x2="-3" y2="-3" width="0.254" layer="21"/>
-<circle x="0" y="0" radius="1.75" width="0.254" layer="21"/>
-<smd name="A1" x="-5" y="-2.25" dx="1.4" dy="2.1" layer="1" rot="R90"/>
-<smd name="A2" x="5" y="-2.25" dx="1.4" dy="2.1" layer="1" rot="R90"/>
-<smd name="B1" x="-5" y="2.25" dx="1.4" dy="2.1" layer="1" rot="R90"/>
-<smd name="B2" x="4.975" y="2.25" dx="1.4" dy="2.1" layer="1" rot="R90"/>
 </package>
 </packages>
 </library>
@@ -9157,10 +9153,10 @@ design rules under a new name.</description>
 <attribute name="NAME" x="93" y="26.4" size="1.016" layer="25" font="vector" ratio="14" rot="R135"/>
 <attribute name="FARNELL" value="1316987" x="97.1" y="28.2" size="1.778" layer="27" rot="R135" display="off"/>
 </element>
-<element name="S4" library="Mine" package="TACTILE_SWITCH_TALL" value="1217769" x="25.2" y="32.4" smashed="yes" rot="R270">
+<element name="S4" library="TiLDA Mk3 Parts" package="TACTILE_SWITCH_TALL" value="1217769" x="25.2" y="32.4" smashed="yes" rot="R270">
 <attribute name="FARNELL" value="1217769" x="25.2" y="32.4" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="S3" library="Mine" package="TACTILE_SWITCH_TALL" value="1217769" x="16.2" y="24.8" smashed="yes" rot="R270">
+<element name="S3" library="TiLDA Mk3 Parts" package="TACTILE_SWITCH_TALL" value="1217769" x="16.2" y="24.8" smashed="yes" rot="R270">
 <attribute name="FARNELL" value="1217769" x="16.2" y="24.8" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="JP3" library="TiLDA Mk3 Parts" package="JST-2-SMD" value="" x="47" y="58.8" smashed="yes" rot="MR0">
