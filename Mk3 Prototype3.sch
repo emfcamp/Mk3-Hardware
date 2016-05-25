@@ -34171,6 +34171,8 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="TP3" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
 <part name="S1" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD-1101NE" value=""/>
 <part name="GND15" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
+<part name="FID2" library="TiLDA Mk3 Parts" deviceset="FIDUCIAL" device="1X2.5-STOP"/>
+<part name="FID5" library="TiLDA Mk3 Parts" deviceset="FIDUCIAL" device="1X2.5-STOP"/>
 </parts>
 <sheets>
 <sheet>
@@ -34831,6 +34833,8 @@ depends on STM32 pullups</text>
 </instance>
 <instance part="S1" gate="G$1" x="162.56" y="226.06" rot="R90"/>
 <instance part="GND15" gate="1" x="162.56" y="233.68" rot="R180"/>
+<instance part="FID2" gate="G$1" x="370.84" y="22.86"/>
+<instance part="FID5" gate="G$1" x="375.92" y="22.86"/>
 </instances>
 <busses>
 </busses>
