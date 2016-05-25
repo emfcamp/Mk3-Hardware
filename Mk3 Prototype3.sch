@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -11778,8 +11778,7 @@ SMD Buzzer&lt;br&gt;
 <wire x1="9.3857875" y1="0" x2="9" y2="0" width="0.15" layer="20"/>
 <wire x1="9" y1="0" x2="0" y2="9" width="0.15" layer="20" curve="-90"/>
 <wire x1="0" y1="9" x2="0" y2="57.6" width="0.15" layer="20"/>
-<wire x1="39.6" y1="63.2" x2="40" y2="63.2" width="0.15" layer="20"/>
-<wire x1="40" y1="63.2" x2="80.5" y2="63.2" width="0.15" layer="20"/>
+<wire x1="39.1" y1="63.2" x2="80.5" y2="63.2" width="0.15" layer="20"/>
 <wire x1="80.5" y1="63.2" x2="82.3" y2="65" width="0.15" layer="20" curve="90"/>
 <wire x1="20.8142125" y1="0" x2="110.6" y2="0" width="0.15" layer="20"/>
 <wire x1="110.6" y1="0" x2="119.6" y2="9" width="0.15" layer="20" curve="90"/>
@@ -12197,7 +12196,8 @@ SMD Buzzer&lt;br&gt;
 <hole x="86" y="64.4" drill="4.2"/>
 <hole x="5.2" y="5.2" drill="4.2"/>
 <hole x="114.4" y="5.2" drill="4.2"/>
-<wire x1="-1" y1="55" x2="-1" y2="9" width="2" layer="46"/>
+<wire x1="-1" y1="57.6" x2="-1" y2="43.5" width="2" layer="46"/>
+<wire x1="-1" y1="36.5" x2="-1" y2="9" width="2" layer="46"/>
 <wire x1="-1" y1="9" x2="9" y2="-1" width="2" layer="46" curve="90"/>
 <wire x1="9" y1="-1" x2="9.371571875" y2="-1" width="2" layer="46"/>
 <wire x1="9.371571875" y1="-1" x2="10.7857875" y2="-0.4142125" width="2" layer="46" curve="45.000063"/>
@@ -12205,22 +12205,51 @@ SMD Buzzer&lt;br&gt;
 <wire x1="10.9" y1="-0.3" x2="19.3" y2="-0.3" width="2" layer="46"/>
 <wire x1="19.3" y1="-0.3" x2="19.4142125" y2="-0.4142125" width="2" layer="46"/>
 <wire x1="19.4142125" y1="-0.4142125" x2="20.828428125" y2="-1" width="2" layer="46" curve="45.00009"/>
-<wire x1="20.828428125" y1="-1" x2="110.6" y2="-1" width="2" layer="46"/>
+<wire x1="20.828428125" y1="-1" x2="26.5" y2="-1" width="2" layer="46"/>
+<wire x1="33.5" y1="-1" x2="86.1" y2="-1" width="2" layer="46"/>
+<wire x1="93.1" y1="-1" x2="110.6" y2="-1" width="2" layer="46"/>
 <wire x1="110.6" y1="-1" x2="120.6" y2="9" width="2" layer="46" curve="90"/>
-<wire x1="120.6" y1="9" x2="120.6" y2="55" width="2" layer="46"/>
+<wire x1="120.6" y1="9" x2="120.6" y2="36.5" width="2" layer="46"/>
+<wire x1="120.6" y1="43.5" x2="120.6" y2="57.6" width="2" layer="46"/>
 <wire x1="38.3" y1="65" x2="39.1" y2="64.2" width="2" layer="46" curve="90"/>
 <wire x1="81.3" y1="65" x2="80.5" y2="64.2" width="2" layer="46" curve="-90"/>
-<wire x1="80.5" y1="64.2" x2="39.1" y2="64.2" width="2" layer="46"/>
+<wire x1="80.5" y1="64.2" x2="63.3" y2="64.2" width="2" layer="46"/>
+<wire x1="56.3" y1="64.2" x2="39.1" y2="64.2" width="2" layer="46"/>
 <wire x1="32" y1="69" x2="34.3" y2="69" width="2" layer="46"/>
 <wire x1="34.3" y1="69" x2="38.3" y2="65" width="2" layer="46" curve="-90"/>
-<wire x1="87" y1="69" x2="85.3" y2="69" width="2" layer="46"/>
+<wire x1="87.6" y1="69" x2="85.3" y2="69" width="2" layer="46"/>
 <wire x1="85.3" y1="69" x2="81.3" y2="65" width="2" layer="46" curve="90"/>
 <wire x1="82.3" y1="65" x2="85.3" y2="68" width="0.15" layer="20" curve="-90"/>
 <wire x1="85.3" y1="68" x2="87.6" y2="68" width="0.15" layer="20"/>
 <wire x1="32" y1="68" x2="34.3" y2="68" width="0.15" layer="20"/>
 <wire x1="34.3" y1="68" x2="37.3" y2="65" width="0.15" layer="20" curve="-90"/>
 <wire x1="37.3" y1="65" x2="39.1" y2="63.2" width="0.15" layer="20" curve="90"/>
-<wire x1="39.1" y1="63.2" x2="39.6" y2="63.2" width="0.15" layer="20"/>
+<hole x="32" y="0.25" drill="0.5"/>
+<hole x="31" y="0.25" drill="0.5"/>
+<hole x="30" y="0.25" drill="0.5"/>
+<hole x="29" y="0.25" drill="0.5"/>
+<hole x="28" y="0.25" drill="0.5"/>
+<hole x="0.25" y="38" drill="0.5"/>
+<hole x="0.25" y="39" drill="0.5"/>
+<hole x="0.25" y="40" drill="0.5"/>
+<hole x="0.25" y="41" drill="0.5"/>
+<hole x="0.25" y="42" drill="0.5"/>
+<hole x="57.8" y="62.95" drill="0.5"/>
+<hole x="58.8" y="62.95" drill="0.5"/>
+<hole x="59.8" y="62.95" drill="0.5"/>
+<hole x="60.8" y="62.95" drill="0.5"/>
+<hole x="61.8" y="62.95" drill="0.5"/>
+<hole x="119.35" y="42" drill="0.5"/>
+<hole x="119.35" y="41" drill="0.5"/>
+<hole x="119.35" y="40" drill="0.5"/>
+<hole x="119.35" y="39" drill="0.5"/>
+<hole x="119.35" y="38" drill="0.5"/>
+<hole x="91.6" y="0.25" drill="0.5"/>
+<hole x="90.6" y="0.25" drill="0.5"/>
+<hole x="89.6" y="0.25" drill="0.5"/>
+<hole x="88.6" y="0.25" drill="0.5"/>
+<hole x="87.6" y="0.25" drill="0.5"/>
+<wire x1="20.828428125" y1="-1" x2="9.371571875" y2="-1" width="2" layer="46"/>
 </package>
 <package name="UPYTHON_LOGO">
 <rectangle x1="3.948" y1="-4.548" x2="4.152" y2="-4.536" layer="16" rot="R180"/>
@@ -20779,33 +20808,37 @@ SMD Buzzer&lt;br&gt;
 <rectangle x1="4.716" y1="0.036" x2="5.124" y2="2.04" layer="22"/>
 </package>
 <package name="ER-TFT024-3">
-<wire x1="-4.9" y1="0" x2="54" y2="0" width="0.127" layer="21"/>
-<wire x1="54" y1="40.8" x2="54" y2="42.7" width="0.127" layer="21"/>
-<wire x1="54" y1="42.7" x2="-4.9" y2="42.7" width="0.127" layer="21"/>
-<wire x1="-4.9" y1="42.7" x2="-4.9" y2="0" width="0.127" layer="21"/>
-<wire x1="-2" y1="2.5" x2="44.5" y2="2.5" width="0.127" layer="21"/>
-<wire x1="44.5" y1="2.5" x2="44.5" y2="40.5" width="0.127" layer="21"/>
-<wire x1="-2" y1="40.5" x2="44.5" y2="40.5" width="0.127" layer="21"/>
-<wire x1="-2" y1="2.5" x2="-2" y2="40.5" width="0.127" layer="21"/>
-<wire x1="54" y1="40.8" x2="53" y2="40.8" width="0.127" layer="21"/>
-<wire x1="53" y1="40.8" x2="53" y2="2" width="0.127" layer="21"/>
-<wire x1="54" y1="0" x2="54" y2="2" width="0.127" layer="21"/>
-<wire x1="53" y1="2" x2="54" y2="2" width="0.127" layer="21"/>
-<wire x1="52.5" y1="40.5" x2="52.8" y2="40.5" width="0" layer="20"/>
-<wire x1="53.8" y1="39.5" x2="53.8" y2="3.3" width="0" layer="20"/>
-<wire x1="51.5" y1="3.3" x2="51.5" y2="8.7" width="0" layer="20"/>
-<wire x1="51.5" y1="34" x2="51.5" y2="39.5" width="0" layer="20"/>
-<wire x1="52.8" y1="2.3" x2="52.5" y2="2.3" width="0" layer="20"/>
-<wire x1="50" y1="32.5" x2="50" y2="10.3" width="0" layer="20"/>
-<wire x1="52.8" y1="40.5" x2="53.8" y2="39.5" width="0" layer="20" curve="-90"/>
-<wire x1="51.5" y1="39.5" x2="52.5" y2="40.5" width="0" layer="20" curve="-90"/>
-<wire x1="53.8" y1="3.3" x2="52.8" y2="2.3" width="0" layer="20" curve="-90"/>
-<wire x1="52.5" y1="2.3" x2="51.5" y2="3.3" width="0" layer="20" curve="-90"/>
-<wire x1="51" y1="9.3" x2="50" y2="10.3" width="0" layer="20" curve="-90"/>
-<wire x1="51" y1="9.3" x2="51.5" y2="8.8" width="0" layer="20" curve="-90"/>
-<wire x1="51.5" y1="8.8" x2="51.5" y2="8.7" width="0" layer="20"/>
-<wire x1="50" y1="32.5" x2="51" y2="33.5" width="0" layer="20" curve="-90"/>
-<wire x1="51.5" y1="34" x2="51" y2="33.5" width="0" layer="20" curve="-90"/>
+<wire x1="-4.9" y1="0" x2="54" y2="0" width="0.15" layer="21"/>
+<wire x1="54" y1="40.8" x2="54" y2="42.7" width="0.15" layer="21"/>
+<wire x1="54" y1="42.7" x2="-4.9" y2="42.7" width="0.15" layer="21"/>
+<wire x1="-4.9" y1="42.7" x2="-4.9" y2="0" width="0.15" layer="21"/>
+<wire x1="-2" y1="2.5" x2="44.5" y2="2.5" width="0.15" layer="51"/>
+<wire x1="44.5" y1="2.5" x2="44.5" y2="40.5" width="0.15" layer="51"/>
+<wire x1="-2" y1="40.5" x2="44.5" y2="40.5" width="0.15" layer="51"/>
+<wire x1="-2" y1="2.5" x2="-2" y2="40.5" width="0.15" layer="51"/>
+<wire x1="54" y1="40.8" x2="53" y2="40.8" width="0.15" layer="21"/>
+<wire x1="53" y1="40.8" x2="53" y2="2" width="0.15" layer="51"/>
+<wire x1="54" y1="0" x2="54" y2="2" width="0.15" layer="21"/>
+<wire x1="53" y1="2" x2="54" y2="2" width="0.15" layer="21"/>
+<wire x1="50.8" y1="33.4" x2="52.8" y2="35.4" width="2" layer="46" curve="90"/>
+<wire x1="52.8" y1="35.4" x2="52.8" y2="39.4" width="2" layer="46"/>
+<wire x1="52.8" y1="3.4" x2="52.8" y2="7.4" width="2" layer="46"/>
+<wire x1="52.8" y1="7.4" x2="50.8" y2="9.4" width="2" layer="46" curve="90"/>
+<wire x1="50.8" y1="9.4" x2="50.8" y2="33.4" width="2" layer="46"/>
+<wire x1="52.8" y1="35.4" x2="52.8" y2="7.4" width="2" layer="46"/>
+<wire x1="52.8" y1="40.4" x2="53.8" y2="39.4" width="0.15" layer="20" curve="-90"/>
+<wire x1="53.8" y1="39.4" x2="53.8" y2="3.4" width="0.15" layer="20"/>
+<wire x1="53.8" y1="3.4" x2="52.8" y2="2.4" width="0.15" layer="20" curve="-90"/>
+<wire x1="52.8" y1="2.4" x2="51.8" y2="3.4" width="0.15" layer="20" curve="-90"/>
+<wire x1="51.8" y1="3.4" x2="51.8" y2="7.4" width="0.15" layer="20"/>
+<wire x1="51.8" y1="7.4" x2="50.8" y2="8.4" width="0.15" layer="20" curve="90"/>
+<wire x1="50.8" y1="8.4" x2="49.8" y2="9.4" width="0.15" layer="20" curve="-90"/>
+<wire x1="49.8" y1="9.4" x2="49.8" y2="33.4" width="0.15" layer="20"/>
+<wire x1="49.8" y1="33.4" x2="50.8" y2="34.4" width="0.15" layer="20" curve="-90"/>
+<wire x1="50.8" y1="34.4" x2="51.8" y2="35.4" width="0.15" layer="20" curve="90"/>
+<wire x1="51.8" y1="35.4" x2="51.8" y2="39.4" width="0.15" layer="20"/>
+<wire x1="51.8" y1="39.4" x2="52.8" y2="40.4" width="0.15" layer="20" curve="-90"/>
+<hole x="53" y="1" drill="1.3"/>
 </package>
 <package name="TACTILE_SWITCH_TALL">
 <wire x1="-3" y1="-3" x2="3" y2="-3" width="0.254" layer="21"/>
