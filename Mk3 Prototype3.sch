@@ -21464,6 +21464,35 @@ SMD Buzzer&lt;br&gt;
 <hole x="3.2" y="3.2" drill="4.2"/>
 <hole x="116.4" y="3.2" drill="4.2"/>
 </package>
+<package name="SKPMAPE010-COMBINED">
+<smd name="1" x="-3" y="0" dx="2" dy="2" layer="1"/>
+<smd name="2" x="3" y="0" dx="2" dy="2" layer="1"/>
+<text x="-4" y="3.5" size="1.778" layer="25">&gt;Name</text>
+<text x="-4" y="-5" size="1.778" layer="27">&gt;Value</text>
+<wire x1="-2.45" y1="-3" x2="2.45" y2="-3" width="0.15" layer="21"/>
+<wire x1="2.45" y1="-3" x2="2.95" y2="-2.5" width="0.15" layer="21"/>
+<wire x1="2.95" y1="2.5" x2="2.45" y2="3" width="0.15" layer="21"/>
+<wire x1="2.45" y1="3" x2="-2.45" y2="3" width="0.15" layer="21"/>
+<wire x1="-2.45" y1="3" x2="-2.95" y2="2.5" width="0.15" layer="21"/>
+<wire x1="-2.95" y1="2.5" x2="-2.95" y2="1.25" width="0.15" layer="21"/>
+<wire x1="-2.95" y1="-1.25" x2="-2.95" y2="-2.5" width="0.15" layer="21"/>
+<wire x1="-2.95" y1="-2.5" x2="-2.45" y2="-3" width="0.15" layer="21"/>
+<circle x="0" y="0" radius="2.3" width="0.15" layer="51"/>
+<wire x1="-3" y1="0.7" x2="-3.3" y2="0.7" width="0.15" layer="51"/>
+<wire x1="-3.3" y1="0.7" x2="-3.3" y2="-0.7" width="0.15" layer="51"/>
+<wire x1="-3.3" y1="-0.7" x2="-3" y2="-0.7" width="0.15" layer="51"/>
+<wire x1="2.95" y1="0.7" x2="3.3" y2="0.7" width="0.15" layer="51"/>
+<wire x1="3.3" y1="0.7" x2="3.3" y2="-0.7" width="0.15" layer="51"/>
+<wire x1="3.3" y1="-0.7" x2="2.95" y2="-0.7" width="0.15" layer="51"/>
+<wire x1="-2.95" y1="1.25" x2="-2.95" y2="-1.25" width="0.15" layer="51"/>
+<wire x1="2.95" y1="-1.25" x2="2.95" y2="1.25" width="0.15" layer="51"/>
+<wire x1="2.95" y1="1.25" x2="2.95" y2="2.5" width="0.15" layer="21"/>
+<wire x1="2.95" y1="-2.5" x2="2.95" y2="-1.25" width="0.15" layer="21"/>
+<smd name="A1" x="-4.55" y="-2.25" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="A2" x="4.55" y="-2.25" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="B1" x="-4.55" y="2.25" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="B2" x="4.55" y="2.25" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="A3L-LOC">
@@ -31454,6 +31483,15 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="-SKPMAPE010-COMBINED" package="SKPMAPE010-COMBINED">
+<connects>
+<connect gate="G$1" pin="1" pad="1 A1 A2"/>
+<connect gate="G$1" pin="2" pad="2 B1 B2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -33733,10 +33771,10 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="SW1" library="TiLDA Mk3 Parts" deviceset="JOYSTICK_MINI" device="_MULTICOMP">
 <attribute name="FARNELL" value="1316987"/>
 </part>
-<part name="S4" library="TiLDA Mk3 Parts" deviceset="SWITCH-MOMENTARY-2" device="" value="1217769">
+<part name="S4" library="TiLDA Mk3 Parts" deviceset="SWITCH-MOMENTARY-2" device="-SKPMAPE010-COMBINED" value="1217769">
 <attribute name="FARNELL" value="1217769"/>
 </part>
-<part name="S3" library="TiLDA Mk3 Parts" deviceset="SWITCH-MOMENTARY-2" device="" value="1217769">
+<part name="S3" library="TiLDA Mk3 Parts" deviceset="SWITCH-MOMENTARY-2" device="-SKPMAPE010-COMBINED" value="1217769">
 <attribute name="FARNELL" value="1217769"/>
 </part>
 <part name="JP3" library="TiLDA Mk3 Parts" deviceset="M02" device="-JST-2MM-SMT">
@@ -36193,9 +36231,9 @@ depends on STM32 pullups</text>
 <label x="76.2" y="109.22" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SW1" gate="G$1" pin="LEFT"/>
-<wire x1="342.9" y1="132.08" x2="353.06" y2="132.08" width="0.1524" layer="91"/>
-<label x="347.98" y="132.08" size="1.778" layer="95"/>
+<pinref part="SW1" gate="G$1" pin="DOWN"/>
+<wire x1="317.5" y1="129.54" x2="309.88" y2="129.54" width="0.1524" layer="91"/>
+<label x="314.96" y="129.54" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -36640,9 +36678,9 @@ depends on STM32 pullups</text>
 <label x="76.2" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SW1" gate="G$1" pin="DOWN"/>
-<wire x1="317.5" y1="129.54" x2="309.88" y2="129.54" width="0.1524" layer="91"/>
-<label x="314.96" y="129.54" size="1.778" layer="95" rot="MR0"/>
+<pinref part="SW1" gate="G$1" pin="LEFT"/>
+<wire x1="342.9" y1="132.08" x2="353.06" y2="132.08" width="0.1524" layer="91"/>
+<label x="347.98" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI2_NSS" class="0">
