@@ -21526,6 +21526,40 @@ SMD Buzzer&lt;br&gt;
 <smd name="B1" x="-4.55" y="2.25" dx="1.4" dy="2.1" layer="1" rot="R90"/>
 <smd name="B2" x="4.55" y="2.25" dx="1.4" dy="2.1" layer="1" rot="R90"/>
 </package>
+<package name="0011XAAX09X">
+<smd name="GND" x="-10.8" y="10" dx="1.4" dy="1.2" layer="1" rot="R270"/>
+<smd name="CD" x="-9.6" y="10.6" dx="0.7" dy="1.6" layer="1"/>
+<smd name="8" x="-8.5" y="10.6" dx="0.7" dy="1.6" layer="1"/>
+<smd name="1" x="-0.8" y="10.6" dx="0.7" dy="1.6" layer="1"/>
+<smd name="2" x="-1.9" y="10.6" dx="0.7" dy="1.6" layer="1"/>
+<smd name="3" x="-3" y="10.6" dx="0.7" dy="1.6" layer="1"/>
+<smd name="4" x="-4.1" y="10.6" dx="0.7" dy="1.6" layer="1"/>
+<smd name="5" x="-5.2" y="10.6" dx="0.7" dy="1.6" layer="1"/>
+<smd name="6" x="-6.3" y="10.6" dx="0.7" dy="1.6" layer="1"/>
+<smd name="7" x="-7.4" y="10.6" dx="0.7" dy="1.6" layer="1"/>
+<hole x="0" y="0" drill="1"/>
+<hole x="-8" y="0" drill="1"/>
+<smd name="GND1" x="3.8" y="10" dx="1.4" dy="1.6" layer="1" rot="R90"/>
+<smd name="GND3" x="4.7" y="0.4" dx="1.2" dy="2.2" layer="1"/>
+<smd name="GND2" x="-10.8" y="0.4" dx="1.2" dy="2.2" layer="1"/>
+<wire x1="-10.5" y1="10.5" x2="4.25" y2="10.5" width="0.127" layer="51"/>
+<wire x1="-10.5" y1="10.5" x2="-10.5" y2="-3.25" width="0.127" layer="51"/>
+<wire x1="4.25" y1="10.5" x2="4.25" y2="-4" width="0.127" layer="51"/>
+<wire x1="4.25" y1="-4" x2="0.75" y2="-4" width="0.127" layer="51"/>
+<wire x1="-10.5" y1="-3.25" x2="-2.5" y2="-3.25" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-3.25" x2="0.75" y2="-4" width="0.127" layer="51" curve="-25.989237"/>
+<wire x1="-10.5" y1="8.75" x2="-10.5" y2="1.75" width="0.127" layer="21"/>
+<wire x1="0" y1="10.5" x2="2.75" y2="10.5" width="0.127" layer="21"/>
+<wire x1="4.25" y1="9" x2="4.25" y2="1.75" width="0.127" layer="21"/>
+<wire x1="4.25" y1="-1" x2="4.25" y2="-4" width="0.127" layer="21"/>
+<wire x1="-10.5" y1="-1" x2="-10.5" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-3.25" x2="0.75" y2="-4" width="0.127" layer="51" curve="-25.989237"/>
+<text x="-11.25" y="2.75" size="1.016" layer="25" font="vector" ratio="14" rot="R90">&gt;NAME</text>
+<wire x1="-8.6" y1="-5" x2="2.4" y2="-5" width="0.127" layer="51"/>
+<wire x1="-8.6" y1="-6.4" x2="2.4" y2="-6.4" width="0.127" layer="51"/>
+<wire x1="-8.6" y1="-11.9" x2="2.4" y2="-11.9" width="0.127" layer="51"/>
+<rectangle x1="-10.5" y1="2.9" x2="0.3" y2="7.3" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="A3L-LOC">
@@ -31202,6 +31236,23 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <technology name=""/>
 </technologies>
 </device>
+<device name="" package="0011XAAX09X">
+<connects>
+<connect gate="G$1" pin="CLK" pad="5"/>
+<connect gate="G$1" pin="CMD" pad="3"/>
+<connect gate="G$1" pin="DAT0" pad="7"/>
+<connect gate="G$1" pin="DAT1" pad="8"/>
+<connect gate="G$1" pin="DAT2" pad="1"/>
+<connect gate="G$1" pin="DAT3" pad="2"/>
+<connect gate="G$1" pin="DET" pad="CD"/>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="SHIELD" pad="GND GND1 GND2 GND3"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="BUZZER" prefix="SG">
@@ -34111,7 +34162,7 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="R13" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/10k/5%"/>
 <part name="GND14" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="R24" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/330/5%"/>
-<part name="U1" library="TiLDA Mk3 Parts" deviceset="USD-SOCKET-SDIO" device="DM3AT_0011">
+<part name="U1" library="TiLDA Mk3 Parts" deviceset="USD-SOCKET-SDIO" device="" value="USD-SOCKET-SDIO">
 <attribute name="FARNELL" value="2427719"/>
 </part>
 <part name="SG1" library="TiLDA Mk3 Parts" deviceset="BUZZER" device="-PKLCS1212E"/>
