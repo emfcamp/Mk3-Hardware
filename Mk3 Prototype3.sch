@@ -34034,7 +34034,6 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <part name="GND13" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="R13" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/10k/5%"/>
 <part name="GND14" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
-<part name="R24" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/330/5%"/>
 <part name="U1" library="TiLDA Mk3 Parts" deviceset="USD-SOCKET-SDIO" device="" value="USD-SOCKET-SDIO">
 <attribute name="FARNELL" value="2427719"/>
 </part>
@@ -34132,6 +34131,7 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <part name="FID5" library="TiLDA Mk3 Parts" deviceset="FIDUCIAL" device="1X2.5-STOP"/>
 <part name="D3" library="Diodes" deviceset="1N4148" device="-SOD123" value="NTS245SFT1G"/>
 <part name="D2" library="Diodes" deviceset="1N4148" device="-SOD123" value="NTS245SFT1G"/>
+<part name="TP4" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
 </parts>
 <sheets>
 <sheet>
@@ -34314,6 +34314,7 @@ depends on STM32 pullups</text>
 <text x="322.58" y="226.06" size="1.778" layer="91">CH1-4: servos</text>
 <text x="322.58" y="228.6" size="1.778" layer="91">CH2,4: headers</text>
 <text x="322.58" y="220.98" size="1.778" layer="91">CH1: buzzer</text>
+<text x="83.82" y="195.58" size="1.778" layer="91">/ SPI3_SCK</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -34679,7 +34680,6 @@ depends on STM32 pullups</text>
 <attribute name="VALUE" x="598.678" y="57.15" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND14" gate="1" x="601.98" y="45.72"/>
-<instance part="R24" gate="G$1" x="728.98" y="139.7" rot="R180"/>
 <instance part="U1" gate="G$1" x="441.96" y="30.48">
 <attribute name="FARNELL" x="441.96" y="30.48" size="1.778" layer="96" display="off"/>
 </instance>
@@ -34790,6 +34790,9 @@ depends on STM32 pullups</text>
 <instance part="FID5" gate="G$1" x="375.92" y="22.86"/>
 <instance part="D3" gate="G$1" x="665.48" y="134.62" rot="R270"/>
 <instance part="D2" gate="G$1" x="645.16" y="127" rot="R90"/>
+<instance part="TP4" gate="G$1" x="731.52" y="137.16" smashed="yes" rot="R180">
+<attribute name="NAME" x="732.79" y="135.89" size="1.778" layer="95" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -35938,19 +35941,6 @@ depends on STM32 pullups</text>
 <pinref part="JP1" gate="G$1" pin="8"/>
 </segment>
 </net>
-<net name="SPI3_SCK" class="0">
-<segment>
-<wire x1="68.58" y1="195.58" x2="71.12" y2="195.58" width="0.1524" layer="91"/>
-<label x="71.12" y="195.58" size="1.778" layer="95"/>
-<pinref part="IC3" gate="_PB" pin="PB3"/>
-</segment>
-<segment>
-<wire x1="754.38" y1="139.7" x2="734.06" y2="139.7" width="0.1524" layer="91"/>
-<label x="739.14" y="139.7" size="1.778" layer="95"/>
-<pinref part="J2" gate="G$1" pin="D/CX(SCL)"/>
-<pinref part="R24" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="SPI3_MOSI" class="0">
 <segment>
 <wire x1="68.58" y1="190.5" x2="71.12" y2="190.5" width="0.1524" layer="91"/>
@@ -37013,8 +37003,16 @@ depends on STM32 pullups</text>
 </segment>
 <segment>
 <label x="708.66" y="139.7" size="1.778" layer="95"/>
-<wire x1="706.12" y1="139.7" x2="723.9" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="R24" gate="G$1" pin="2"/>
+<pinref part="J2" gate="G$1" pin="D/CX(SCL)"/>
+<wire x1="754.38" y1="139.7" x2="731.52" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="TP4" gate="G$1" pin="TP"/>
+<wire x1="731.52" y1="139.7" x2="706.12" y2="139.7" width="0.1524" layer="91"/>
+<junction x="731.52" y="139.7"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="195.58" x2="71.12" y2="195.58" width="0.1524" layer="91"/>
+<label x="71.12" y="195.58" size="1.778" layer="95"/>
+<pinref part="IC3" gate="_PB" pin="PB3"/>
 </segment>
 </net>
 <net name="IMU_IRQ2" class="0">
