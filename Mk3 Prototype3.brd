@@ -7080,6 +7080,7 @@ design rules under a new name.</description>
 </element>
 <element name="C19" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/100n/10V/X5R or 0 ohm" x="42.95" y="20.75" smashed="yes" rot="MR180">
 <attribute name="NAME" x="41.361" y="22.4515" size="1.016" layer="26" font="vector" ratio="14" rot="MR180"/>
+<variant name="L4" value="0603/0R"/>
 </element>
 <element name="C11" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/100n/10V/X5R" x="24.1" y="16.35" smashed="yes" rot="MR180">
 <attribute name="NAME" x="22.211" y="18.0515" size="1.016" layer="26" font="vector" ratio="14" rot="MR180"/>
@@ -7089,6 +7090,7 @@ design rules under a new name.</description>
 </element>
 <element name="C9" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/2.2u/6.3V/X5R or DNP" x="25.85" y="13.7" smashed="yes" rot="MR90">
 <attribute name="NAME" x="26.3485" y="12.811" size="1.016" layer="26" font="vector" ratio="14" rot="MR90"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="C16" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/100n/10V/X5R" x="45.55" y="19.4" smashed="yes" rot="MR270">
 <attribute name="NAME" x="44.8515" y="20.289" size="1.016" layer="26" font="vector" ratio="14" rot="MR270"/>
@@ -7169,6 +7171,7 @@ design rules under a new name.</description>
 </element>
 <element name="C29" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/2.2u/6.3V/X5R" x="22.2" y="35.6" smashed="yes" rot="MR180">
 <attribute name="NAME" x="23.6" y="36.2" size="1.016" layer="26" font="vector" ratio="14" rot="MR180"/>
+<variant name="L4" value="0603/100n/10V/X5R"/>
 </element>
 <element name="C22" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/100n/10V/X5R" x="43.514" y="25.648" smashed="yes" rot="MR180">
 <attribute name="NAME" x="42.025" y="24.9495" size="1.016" layer="26" font="vector" ratio="14" rot="MR180"/>
@@ -7178,6 +7181,7 @@ design rules under a new name.</description>
 </element>
 <element name="SV2" library="TiLDA Mk3 Parts" package="1X03" value="" x="4.2" y="17.5" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="7.121" y="21.31" size="1.27" layer="28" ratio="10" rot="MR270"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="D1" library="SparkFun-LED" package="WS2812B" value="WS2812B" x="21" y="10.8" smashed="yes" rot="R90">
 <attribute name="NAME" x="22" y="11.3" size="1.016" layer="25" font="vector" ratio="14" rot="R90"/>
@@ -7186,15 +7190,19 @@ design rules under a new name.</description>
 </element>
 <element name="SV4" library="TiLDA Mk3 Parts" package="1X03" value="" x="116.45" y="33.909" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="120.26" y="30.988" size="1.27" layer="28" ratio="10" rot="MR0"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="SV6" library="TiLDA Mk3 Parts" package="1X03" value="" x="116.45" y="36.449" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="120.26" y="33.528" size="1.27" layer="28" ratio="10" rot="MR0"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="SV3" library="TiLDA Mk3 Parts" package="1X03" value="" x="116.45" y="41.529" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="120.26" y="38.608" size="1.27" layer="28" ratio="10" rot="MR0"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="SV5" library="TiLDA Mk3 Parts" package="1X03" value="" x="116.45" y="38.989" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="120.26" y="36.068" size="1.27" layer="28" ratio="10" rot="MR0"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="R3" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/220k/5%" x="70.8" y="17.6" smashed="yes" rot="MR270">
 <attribute name="NAME" x="71.4" y="21" size="1.016" layer="26" font="vector" ratio="14" rot="MR270"/>
@@ -7236,6 +7244,7 @@ design rules under a new name.</description>
 <element name="C6" library="passives-7351" package="C0805-N" value="0805/10u/10V/X5R" x="31.2" y="52.85" smashed="yes" rot="MR90">
 <attribute name="NAME" x="30.025" y="53.85" size="1.016" layer="26" font="vector" ratio="14" rot="MR270"/>
 </element>
+<variant name="L4" populate="no"/>
 <element name="SJ1" library="SparkFun-Passives" package="PAD-JUMPER-2-NO_YES_SILK" value="JUMPER-PAD-2-NOYES_SILK" x="41.1" y="55.4" smashed="yes" rot="MR0"/>
 <element name="C8" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/4u7/10V/X5R" x="38.2" y="36" smashed="yes" rot="MR180">
 <attribute name="NAME" x="36.689" y="35.8985" size="1.016" layer="26" font="vector" ratio="14" rot="MR0"/>
@@ -7256,13 +7265,16 @@ design rules under a new name.</description>
 </element>
 <element name="R11" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="DNP / 0603/100K/5%" x="31.5" y="10.65" smashed="yes" rot="MR0">
 <attribute name="NAME" x="30.111" y="9.9515" size="1.016" layer="26" font="vector" ratio="14" rot="MR180"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="C4" library="TiLDA Mk3 Parts" package="E2,5-6" value="DNP (OTG)" x="10" y="10.5" smashed="yes" rot="MR90">
 <attribute name="NAME" x="11.424" y="9.467" size="1.016" layer="26" font="vector" ratio="14" rot="MR90"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="LED1" library="TiLDA Mk3 Parts" package="LED5MM" value="DNP" x="10.6" y="16.6" smashed="yes" rot="R180"/>
 <element name="R1" library="TiLDA Mk3 Parts" package="0207/10" value="DNP" x="6.6" y="16.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="4.3" y="17.2" size="1.016" layer="25" font="vector" ratio="14" rot="R270"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="Q6" library="TiLDA Mk3 Parts" package="Q3A" value="CSD25402Q3A" x="45.2" y="50.6" smashed="yes" rot="MR90">
 <attribute name="NAME" x="48.4" y="51" size="1.016" layer="26" font="vector" ratio="14" rot="MR270"/>
@@ -7291,9 +7303,11 @@ design rules under a new name.</description>
 </element>
 <element name="SV7" library="TiLDA Mk3 Parts" package="1X03" value="" x="70.9" y="24.9" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="69.63" y="28.075" size="1.27" layer="28" rot="MR180"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="S8" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="DNP" x="73.4" y="21.2" smashed="yes" rot="MR180">
 <attribute name="PROD_ID" value="SWCH-00815" x="73.4" y="21.2" size="1.778" layer="28" rot="MR180" display="off"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="R47" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/4R7/5%" x="69.6" y="59.2" smashed="yes" rot="MR270">
 <attribute name="NAME" x="69.05" y="54.8" size="1.016" layer="26" font="vector" ratio="14" rot="MR90"/>
@@ -7346,30 +7360,37 @@ design rules under a new name.</description>
 </element>
 <element name="JP4" library="tag-connect" package="TC2030-MCP-NL" value="TC2030-SWDNL" x="22.8" y="50.2" smashed="yes" rot="MR180">
 <attribute name="NAME" x="22" y="51.4" size="1.016" layer="26" font="vector" ratio="14" rot="MR270"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="TP12" library="TiLDA Mk3 Parts" package="B1,27" value="TPB1,27" x="89.6" y="12.9" smashed="yes" rot="MR0">
 <attribute name="TP_SIGNAL_NAME" value="" x="90.235" y="10.995" size="1" layer="38" rot="MR0"/>
 <attribute name="VALUE" x="90.235" y="12.138" size="1.016" layer="28" font="vector" ratio="14" rot="MR0"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="TP13" library="TiLDA Mk3 Parts" package="B1,27" value="TPB1,27" x="91.6" y="9.4" smashed="yes" rot="MR0">
 <attribute name="TP_SIGNAL_NAME" value="" x="92.235" y="7.495" size="1" layer="38" rot="MR0"/>
 <attribute name="VALUE" x="92.235" y="8.638" size="1.016" layer="28" font="vector" ratio="14" rot="MR0"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="TP14" library="TiLDA Mk3 Parts" package="B1,27" value="TPB1,27" x="91.6" y="11.7" smashed="yes" rot="MR0">
 <attribute name="TP_SIGNAL_NAME" value="" x="92.235" y="9.795" size="1" layer="38" rot="MR0"/>
 <attribute name="VALUE" x="92.235" y="10.938" size="1.016" layer="28" font="vector" ratio="14" rot="MR0"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="TP15" library="TiLDA Mk3 Parts" package="B1,27" value="TPB1,27" x="89.6" y="10.8" smashed="yes" rot="MR0">
 <attribute name="TP_SIGNAL_NAME" value="" x="90.235" y="8.895" size="1" layer="38" rot="MR0"/>
 <attribute name="VALUE" x="90.235" y="10.038" size="1.016" layer="28" font="vector" ratio="14" rot="MR0"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="TP16" library="TiLDA Mk3 Parts" package="B1,27" value="TPB1,27" x="91.6" y="13.8" smashed="yes" rot="MR0">
 <attribute name="TP_SIGNAL_NAME" value="" x="92.235" y="11.895" size="1" layer="38" rot="MR0"/>
 <attribute name="VALUE" x="92.235" y="13.038" size="1.016" layer="28" font="vector" ratio="14" rot="MR0"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="TP17" library="TiLDA Mk3 Parts" package="B1,27" value="TPB1,27" x="89.6" y="15" smashed="yes" rot="MR0">
 <attribute name="TP_SIGNAL_NAME" value="" x="90.235" y="13.095" size="1" layer="38" rot="MR0"/>
 <attribute name="VALUE" x="90.235" y="14.238" size="1.016" layer="28" font="vector" ratio="14" rot="MR0"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="C2" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/1u/10V/X5R" x="9.4" y="14.2" smashed="yes" rot="MR0">
 <attribute name="NAME" x="12.6" y="13.65" size="1.016" layer="26" font="vector" ratio="14" rot="MR0"/>
@@ -7406,9 +7427,11 @@ design rules under a new name.</description>
 </element>
 <element name="R7" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="DNP or 0" x="22.2" y="34.2" smashed="yes" rot="MR180">
 <attribute name="NAME" x="23.6" y="34.75" size="1.016" layer="26" font="vector" ratio="14" rot="MR180"/>
+<variant name="L4" value="0603/0R"/>
 </element>
 <element name="R8" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="DNP or 0" x="48.2" y="21.6" smashed="yes" rot="MR180">
 <attribute name="NAME" x="47.4" y="23.35" size="1.016" layer="26" font="vector" ratio="14" rot="MR180"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="R9" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/1k/5%" x="30.8" y="57.6" smashed="yes" rot="MR90">
 <attribute name="NAME" x="32" y="55.05" size="1.016" layer="26" font="vector" ratio="14" rot="MR0"/>
@@ -7427,18 +7450,22 @@ design rules under a new name.</description>
 <element name="TP11" library="TiLDA Mk3 Parts" package="B1,27" value="TPB1,27" x="105" y="28.5" smashed="yes" rot="MR0">
 <attribute name="TP_SIGNAL_NAME" value="" x="105.635" y="26.595" size="1" layer="38" rot="MR0"/>
 <attribute name="VALUE" x="105.635" y="27.738" size="1.016" layer="28" font="vector" ratio="14" rot="MR0"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="TP18" library="TiLDA Mk3 Parts" package="B1,27" value="TPB1,27" x="57.4" y="18.8" smashed="yes" rot="MR0">
 <attribute name="TP_SIGNAL_NAME" value="" x="58.035" y="16.895" size="1" layer="38" rot="MR0"/>
 <attribute name="VALUE" x="58.035" y="18.038" size="0.0254" layer="28" rot="MR0"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="TP19" library="TiLDA Mk3 Parts" package="B1,27" value="TPB1,27" x="57.4" y="17.2" smashed="yes" rot="MR0">
 <attribute name="TP_SIGNAL_NAME" value="" x="58.035" y="15.295" size="1" layer="38" rot="MR0"/>
 <attribute name="VALUE" x="58.035" y="16.438" size="0.0254" layer="28" rot="MR0"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="TP20" library="TiLDA Mk3 Parts" package="B1,27" value="TPB1,27" x="80.4" y="20.8" smashed="yes" rot="MR0">
 <attribute name="TP_SIGNAL_NAME" value="" x="81.035" y="18.895" size="1" layer="38" rot="MR0"/>
 <attribute name="VALUE" x="81.035" y="20.038" size="0.0254" layer="28" rot="MR0"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="R26" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/120/5%" x="15.8" y="43.2" smashed="yes" rot="MR270">
 <attribute name="NAME" x="16.65" y="42" size="1.016" layer="26" ratio="14" rot="MR90"/>
@@ -7447,12 +7474,15 @@ design rules under a new name.</description>
 <element name="TP21" library="TiLDA Mk3 Parts" package="B1,27" value="TPB1,27" x="54.2" y="32.2" smashed="yes" rot="MR0">
 <attribute name="TP_SIGNAL_NAME" value="" x="54.835" y="30.295" size="1" layer="38" rot="MR0"/>
 <attribute name="VALUE" x="54.835" y="31.438" size="0.0254" layer="28" rot="MR0"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="JP1" library="SparkFun-Connectors" package="1X11" value="M11PTH" x="85.68" y="3.2" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="86.95" y="0.025" size="1.27" layer="28" rot="MR0"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="JP2" library="SparkFun-Connectors" package="1X11" value="M11PTH" x="55.2" y="3.2" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="56.47" y="0.025" size="1.27" layer="28" rot="MR0"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="U$1" library="TiLDA Mk3 Parts" package="NAME_AREA" value="" x="24.625" y="19.125"/>
 <element name="U$5" library="TiLDA Mk3 Parts" package="EMFLOGO1" value="" x="99.2" y="11.6"/>
@@ -7463,6 +7493,7 @@ design rules under a new name.</description>
 <element name="R19" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="DNP (0603/10k/5%)" x="64.2" y="19.2" smashed="yes" rot="MR0">
 <attribute name="NAME" x="62.8" y="18.55" size="1.016" layer="26" font="vector" ratio="14" rot="MR180"/>
 <attribute name="VALUE" x="65" y="17.55" size="1.016" layer="28" rot="MR0"/>
+<variant name="L4" value="0603/10k/5%"/>
 </element>
 <element name="R28" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/4M7/5%" x="53.8" y="49.2" smashed="yes" rot="MR270">
 <attribute name="NAME" x="55.35" y="50.6" size="1.016" layer="26" font="vector" ratio="14" rot="MR270"/>
