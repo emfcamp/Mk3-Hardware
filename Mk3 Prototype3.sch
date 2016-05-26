@@ -3449,7 +3449,7 @@ chip</description>
 <wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
 <wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
 <wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="51"/>
-<circle x="-1.825" y="-1.475" radius="0.12" width="0.2" layer="21"/>
+<circle x="-1.571" y="-1.856" radius="0.12" width="0.2" layer="21"/>
 <wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
 <rectangle x1="-1.2" y1="-0.5" x2="-0.15" y2="0.15" layer="31"/>
@@ -5640,7 +5640,7 @@ Through-hole SPDT Switch&lt;br&gt;
 <rectangle x1="-1.5" y1="-0.75" x2="-0.65" y2="0" layer="51"/>
 <wire x1="-1.5" y1="0.75" x2="-1.5" y2="-0.75" width="0.127" layer="21"/>
 <wire x1="1.5" y1="0.75" x2="1.5" y2="-0.75" width="0.127" layer="21"/>
-<circle x="-1.65" y="-0.65" radius="0.111803125" width="0.127" layer="21"/>
+<circle x="-1.65" y="-0.904" radius="0.111803125" width="0.3048" layer="21"/>
 <text x="-1.25" y="1.7" size="0.6096" layer="25" font="vector">&gt;NAME</text>
 <text x="-1.35" y="-2.3" size="0.6096" layer="27" font="vector">&gt;VALUE</text>
 </package>
@@ -11228,15 +11228,17 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <wire x1="-0.75" y1="0.75" x2="0.75" y2="0.75" width="0.127" layer="51"/>
 <wire x1="-0.75" y1="-0.75" x2="0.75" y2="-0.75" width="0.127" layer="51"/>
 <wire x1="-0.75" y1="0.75" x2="-0.75" y2="-0.75" width="0.127" layer="51"/>
-<wire x1="-0.8" y1="0.75" x2="-0.8" y2="-0.75" width="0.127" layer="21"/>
-<wire x1="0.8" y1="0.75" x2="0.8" y2="-0.75" width="0.127" layer="21"/>
-<circle x="-0.95" y="-0.75" radius="0.070709375" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="0.75" x2="-0.8" y2="-0.75" width="0.15" layer="21"/>
+<wire x1="0.8" y1="0.75" x2="0.8" y2="-0.75" width="0.15" layer="21"/>
+<circle x="-1.077" y="-0.75" radius="0.070709375" width="0.127" layer="21"/>
 <rectangle x1="-0.7" y1="0.1" x2="-0.3" y2="1" layer="29"/>
 <rectangle x1="-0.2" y1="0.1" x2="0.2" y2="1" layer="29"/>
 <rectangle x1="0.3" y1="0.1" x2="0.7" y2="1" layer="29"/>
 <rectangle x1="0.3" y1="-1" x2="0.7" y2="-0.1" layer="29" rot="R180"/>
 <rectangle x1="-0.2" y1="-1" x2="0.2" y2="-0.1" layer="29" rot="R180"/>
 <rectangle x1="-0.7" y1="-1" x2="-0.3" y2="-0.1" layer="29" rot="R180"/>
+<text x="-1.778" y="-2.159" size="1.016" layer="25" font="vector" ratio="14">&gt;NAME</text>
+<circle x="-1.016" y="-0.762" radius="0.127" width="0.127" layer="25"/>
 </package>
 <package name="3.5MMEDGE">
 <pad name="P$1" x="0" y="-3.25" drill="3.5" stop="no"/>
@@ -11298,10 +11300,10 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <wire x1="-1" y1="-1" x2="-1" y2="1" width="0" layer="51"/>
 <wire x1="-1.15" y1="1" x2="-1.15" y2="-1" width="0.15" layer="21"/>
 <wire x1="1.1" y1="1" x2="1.1" y2="-1" width="0.15" layer="21"/>
-<circle x="-1.45" y="-1" radius="0.15" width="0" layer="21"/>
 <text x="2.25" y="-1.5" size="1.016" layer="25" font="vector" ratio="14" rot="R90">&gt;NAME</text>
 <rectangle x1="-0.9" y1="0.5" x2="0.9" y2="0.6" layer="41"/>
 <rectangle x1="-0.9" y1="-0.6" x2="0.9" y2="-0.5" layer="41"/>
+<circle x="-0.889" y="-1.524" radius="0.127" width="0.1778" layer="21"/>
 </package>
 <package name="Q2_DUAL">
 <smd name="1" x="-0.65" y="-0.975" dx="0.3" dy="0.45" layer="1"/>
@@ -36082,7 +36084,7 @@ depends on STM32 pullups</text>
 <pinref part="IC6" gate="G$1" pin="SPI_DIN"/>
 </segment>
 </net>
-<net name="TIM1_CH1N" class="0">
+<net name="TIM8_CH2" class="0">
 <segment>
 <wire x1="370.84" y1="149.86" x2="353.06" y2="149.86" width="0.1524" layer="91"/>
 <label x="363.22" y="149.86" size="1.778" layer="95"/>
