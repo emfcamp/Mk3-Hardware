@@ -11319,7 +11319,7 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <wire x1="1" y1="-1" x2="-1" y2="-1" width="0.127" layer="51"/>
 <wire x1="-1" y1="-1" x2="-1" y2="1" width="0.127" layer="51"/>
 <text x="2.35" y="-1.7" size="1.016" layer="25" font="vector" ratio="14" rot="R90">&gt;NAME</text>
-<circle x="-1.4" y="-0.975" radius="0.125" width="0.2" layer="25"/>
+<circle x="-1.4" y="-0.975" radius="0.15" width="0" layer="25"/>
 <wire x1="-1.075" y1="1" x2="-1.075" y2="-1" width="0.127" layer="25"/>
 <wire x1="1.075" y1="1" x2="1.075" y2="-1" width="0.127" layer="25"/>
 </package>
