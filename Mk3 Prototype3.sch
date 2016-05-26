@@ -34180,6 +34180,7 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <part name="D3" library="Diodes" deviceset="1N4148" device="-SOD123" value="NTS245SFT1G"/>
 <part name="D2" library="Diodes" deviceset="1N4148" device="-SOD123" value="NTS245SFT1G"/>
 <part name="TP4" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
+<part name="TP5" library="TiLDA Mk3 Parts" deviceset="TP" device="B1,27"/>
 </parts>
 <sheets>
 <sheet>
@@ -34839,6 +34840,9 @@ depends on STM32 pullups</text>
 <instance part="D2" gate="G$1" x="645.16" y="127" rot="R90"/>
 <instance part="TP4" gate="G$1" x="731.52" y="137.16" smashed="yes" rot="R180">
 <attribute name="NAME" x="732.79" y="135.89" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="TP5" gate="G$1" x="495.3" y="218.44" smashed="yes">
+<attribute name="NAME" x="494.03" y="219.71" size="1.778" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -36470,8 +36474,11 @@ depends on STM32 pullups</text>
 <net name="CC_HIB" class="0">
 <segment>
 <pinref part="IC6" gate="G$1" pin="!HIB"/>
-<wire x1="490.22" y1="215.9" x2="508" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="490.22" y1="215.9" x2="495.3" y2="215.9" width="0.1524" layer="91"/>
 <label x="500.38" y="215.9" size="1.778" layer="95"/>
+<pinref part="TP5" gate="G$1" pin="TP"/>
+<wire x1="495.3" y1="215.9" x2="508" y2="215.9" width="0.1524" layer="91"/>
+<junction x="495.3" y="215.9"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="_PC" pin="PC6"/>
