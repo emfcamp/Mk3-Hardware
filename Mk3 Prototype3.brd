@@ -7048,7 +7048,9 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="LOGO1" library="TiLDA Mk3 Parts" package="OSHW-LOGO-M" value="OSHW-LOGOM" x="55.9" y="10.7" smashed="yes" rot="MR0"/>
+<element name="LOGO1" library="TiLDA Mk3 Parts" package="OSHW-LOGO-M" value="OSHW-LOGOM" x="55.9" y="10.7" smashed="yes" rot="MR0">
+<variant name="L4" populate="no"/>
+</element>
 <element name="FID1" library="TiLDA Mk3 Parts" package="FIDUCIAL-1X2.5-STOP" value="FIDUCIAL1X2.5-STOP" x="80.2" y="61" smashed="yes" rot="R90"/>
 <element name="FID4" library="TiLDA Mk3 Parts" package="FIDUCIAL-1X2.5-STOP" value="FIDUCIAL1X2.5-STOP" x="1.9" y="8.1" smashed="yes" rot="MR0"/>
 <element name="FID3" library="TiLDA Mk3 Parts" package="FIDUCIAL-1X2.5-STOP" value="FIDUCIAL1X2.5-STOP" x="2" y="8" smashed="yes"/>
@@ -7244,8 +7246,9 @@ design rules under a new name.</description>
 <element name="C6" library="passives-7351" package="C0805-N" value="0805/10u/10V/X5R" x="31.2" y="52.85" smashed="yes" rot="MR90">
 <attribute name="NAME" x="30.025" y="53.85" size="1.016" layer="26" font="vector" ratio="14" rot="MR270"/>
 </element>
+<element name="SJ1" library="SparkFun-Passives" package="PAD-JUMPER-2-NO_YES_SILK" value="JUMPER-PAD-2-NOYES_SILK" x="41.1" y="55.4" smashed="yes" rot="MR0">
 <variant name="L4" populate="no"/>
-<element name="SJ1" library="SparkFun-Passives" package="PAD-JUMPER-2-NO_YES_SILK" value="JUMPER-PAD-2-NOYES_SILK" x="41.1" y="55.4" smashed="yes" rot="MR0"/>
+</element>
 <element name="C8" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/4u7/10V/X5R" x="38.2" y="36" smashed="yes" rot="MR180">
 <attribute name="NAME" x="36.689" y="35.8985" size="1.016" layer="26" font="vector" ratio="14" rot="MR0"/>
 </element>
@@ -7271,7 +7274,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="11.424" y="9.467" size="1.016" layer="26" font="vector" ratio="14" rot="MR90"/>
 <variant name="L4" populate="no"/>
 </element>
-<element name="LED1" library="TiLDA Mk3 Parts" package="LED5MM" value="DNP" x="10.6" y="16.6" smashed="yes" rot="R180"/>
+<element name="LED1" library="TiLDA Mk3 Parts" package="LED5MM" value="DNP" x="10.6" y="16.6" smashed="yes" rot="R180">
+<variant name="L4" populate="no"/>
+</element>
 <element name="R1" library="TiLDA Mk3 Parts" package="0207/10" value="DNP" x="6.6" y="16.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="4.3" y="17.2" size="1.016" layer="25" font="vector" ratio="14" rot="R270"/>
 <variant name="L4" populate="no"/>
@@ -7489,6 +7494,7 @@ design rules under a new name.</description>
 <element name="R18" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="DNP (0603/10k/5%)" x="60.7" y="19.1" smashed="yes" rot="MR180">
 <attribute name="NAME" x="61.9" y="17.55" size="1.016" layer="26" font="vector" ratio="14" rot="MR0"/>
 <attribute name="VALUE" x="59.9" y="20.75" size="1.016" layer="28" rot="MR180"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="R19" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="DNP (0603/10k/5%)" x="64.2" y="19.2" smashed="yes" rot="MR0">
 <attribute name="NAME" x="62.8" y="18.55" size="1.016" layer="26" font="vector" ratio="14" rot="MR180"/>
@@ -7536,13 +7542,19 @@ design rules under a new name.</description>
 <element name="R30" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="DNP (0603/10k/5%)" x="58.5" y="21.2" smashed="yes" rot="MR90">
 <attribute name="NAME" x="56.95" y="20" size="1.016" layer="26" ratio="14" rot="MR90"/>
 <attribute name="VALUE" x="56.85" y="20.4" size="1.016" layer="28" rot="MR90"/>
+<variant name="L4" populate="no"/>
 </element>
 <element name="R31" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="DNP (0603/10k/5%)" x="59.8" y="21.2" smashed="yes" rot="MR90">
 <attribute name="NAME" x="58.25" y="19.6" size="1.016" layer="26" ratio="14" rot="MR90"/>
 <attribute name="VALUE" x="58.15" y="20.4" size="1.016" layer="28" rot="MR90"/>
+<variant name="L4" populate="no"/>
 </element>
-<element name="OUTLINE1" library="TiLDA Mk3 Parts" package="TILDA_MKE_OUTLINE" value="TILDA_MK3_BOARDOUTLINE" x="0" y="0"/>
-<element name="LOGO3" library="TiLDA Mk3 Parts" package="UPYTHON_LOGO_STOPONLY" value="MICROPYTHON-STOP" x="97.1" y="47.3"/>
+<element name="OUTLINE1" library="TiLDA Mk3 Parts" package="TILDA_MKE_OUTLINE" value="TILDA_MK3_BOARDOUTLINE" x="0" y="0">
+<variant name="L4" populate="no"/>
+</element>
+<element name="LOGO3" library="TiLDA Mk3 Parts" package="UPYTHON_LOGO_STOPONLY" value="MICROPYTHON-STOP" x="97.1" y="47.3">
+<variant name="L4" populate="no"/>
+</element>
 <element name="U2" library="TiLDA Mk3 Parts" package="ER-TFT024-3" value="ER-TFT024-3" x="35.2" y="19.6"/>
 <element name="R32" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="DNP (0)" x="49.6" y="52.2" smashed="yes" rot="MR90">
 <attribute name="NAME" x="48.05" y="51" size="1.016" layer="26" ratio="14" rot="MR90"/>
