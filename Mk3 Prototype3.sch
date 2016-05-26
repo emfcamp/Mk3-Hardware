@@ -34113,9 +34113,6 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <part name="OUTLINE1" library="TiLDA Mk3 Parts" deviceset="TILDA_MK3_BOARDOUTLINE" device="">
 <variant name="L4" populate="no"/>
 </part>
-<part name="LOGO2" library="TiLDA Mk3 Parts" deviceset="MICROPYTHON" device="-SILK">
-<variant name="L4" populate="no"/>
-</part>
 <part name="LOGO3" library="TiLDA Mk3 Parts" deviceset="MICROPYTHON" device="-STOP">
 <variant name="L4" populate="no"/>
 </part>
@@ -34770,7 +34767,6 @@ depends on STM32 pullups</text>
 <instance part="GND24" gate="1" x="226.06" y="96.52" rot="R270"/>
 <instance part="+3V21" gate="G$1" x="210.82" y="40.64" rot="R90"/>
 <instance part="OUTLINE1" gate="G$1" x="530.86" y="38.1"/>
-<instance part="LOGO2" gate="G$1" x="292.1" y="5.08"/>
 <instance part="LOGO3" gate="G$1" x="292.1" y="7.62"/>
 <instance part="U2" gate="G$1" x="767.08" y="88.9"/>
 <instance part="R32" gate="G$1" x="662.94" y="27.94" rot="R90"/>
