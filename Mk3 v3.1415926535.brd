@@ -159,7 +159,7 @@
 <wire x1="25.1" y1="1" x2="25.3" y2="1" width="0.2" layer="21"/>
 <text x="10.9" y="17.5" size="1.27" layer="21" ratio="15">+</text>
 <text x="9.4" y="17.5" size="1.27" layer="21" ratio="15">-</text>
-<text x="18.5" y="4.2" size="1.016" layer="21" ratio="15">CHARGE</text>
+<text x="24" y="5" size="1.016" layer="21" ratio="15" rot="SR180">CHARGE</text>
 <text x="21.7" y="60.9" size="1.016" layer="21" ratio="15" rot="R270">SCL</text>
 <text x="15.8" y="59.7" size="1.016" layer="21" ratio="15" rot="R270">SDA</text>
 <text x="114.6" y="55.3" size="1.016" layer="21" ratio="15" rot="R270">0V</text>
@@ -271,8 +271,6 @@
 <text x="80.8" y="8.3" size="1.016" layer="22" font="vector" ratio="14" rot="MR0">TIM2</text>
 <wire x1="62.4" y1="6.8" x2="68.4" y2="6.8" width="0.2" layer="22"/>
 <text x="67.2" y="7.2" size="1.016" layer="22" font="vector" ratio="14" rot="MR0">SPI2</text>
-<text x="17.8" y="57" size="1.016" layer="21" font="vector" ratio="15">I2C1</text>
-<text x="98.8" y="56.8" size="1.016" layer="21" ratio="15">TIM2</text>
 <text x="110.4" y="4.4" size="1.016" layer="22" ratio="14" rot="MR0">Tilda Mk3 Rev.3
 May 2016</text>
 <text x="110.4" y="2.8" size="1.016" layer="22" ratio="14" rot="MR0">MFB</text>
@@ -300,18 +298,17 @@ May 2016</text>
 <wire x1="0" y1="0.4" x2="0" y2="-0.4" width="0.15" layer="21"/>
 <text x="152.2" y="2" size="3.5" layer="22" font="vector" ratio="20" rot="MR0">TiLDA</text>
 <text x="137.1" y="2" size="1.9304" layer="22" font="vector" ratio="15" rot="MR0">MKπ</text>
-<text x="71" y="47" size="1.27" layer="21" font="vector" ratio="15">Brought to 
+<text x="84" y="37" size="1.27" layer="21" font="vector" ratio="15" rot="SR180">Brought to 
 you by:</text>
-<text x="71" y="43.5" size="1.27" layer="21" font="vector" ratio="15">@dpslwk</text>
-<text x="71" y="41" size="1.27" layer="21" font="vector" ratio="15">@thinkl33t</text>
-<text x="71" y="33.5" size="1.27" layer="21" font="vector" ratio="15">@jonty</text>
-<text x="71" y="20" size="1.27" layer="21" font="vector" ratio="15">@CharlesYarnold</text>
-<text x="71" y="36" size="1.27" layer="21" font="vector" ratio="15">@drrk</text>
-<text x="71" y="38.5" size="1.27" layer="21" font="vector" ratio="15">mattbrejza  </text>
-<text x="71" y="26" size="1.27" layer="21" font="vector" ratio="15">@marekventur</text>
-<text x="71" y="31" size="1.27" layer="21" font="vector" ratio="15">@russss</text>
-<text x="71" y="28.5" size="1.27" layer="21" font="vector" ratio="15">@gmjhowe</text>
-<text x="71" y="22.5" size="1.27" layer="21" font="vector" ratio="15">@marksteward</text>
+<text x="84" y="41.5" size="1.27" layer="21" font="vector" ratio="15" rot="SR180">@dpslwk</text>
+<text x="84" y="46.5" size="1.27" layer="21" font="vector" ratio="15" rot="SR180">@thinkl33t</text>
+<text x="84" y="49" size="1.27" layer="21" font="vector" ratio="15" rot="SR180">@jonty</text>
+<text x="84" y="44" size="1.27" layer="21" font="vector" ratio="15" rot="SR180">@drrk</text>
+<text x="84" y="39" size="1.27" layer="21" font="vector" ratio="15" rot="SR180">@mattbrejza</text>
+<text x="84" y="56.5" size="1.27" layer="21" font="vector" ratio="15" rot="SR180">@marekventur</text>
+<text x="84" y="51.5" size="1.27" layer="21" font="vector" ratio="15" rot="SR180">@russss</text>
+<text x="84" y="54" size="1.27" layer="21" font="vector" ratio="15" rot="SR180">@gmjhowe</text>
+<text x="84" y="59" size="1.27" layer="21" font="vector" ratio="15" rot="SR180">@marksteward</text>
 <text x="30.6" y="20" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="top-left">v3.
 1415926535 8979323846 2643383279 5028841971 
 6939937510 5820974944 5923078164 0628620899
@@ -338,8 +335,10 @@ you by:</text>
 8142061717 7669147303 5982534904 2875546873
 1159562863 8823537875 9375195778 1857780532
 1712268066 1300192787 6611195909 216420198</text>
-<text x="71.2" y="55" size="3.5" layer="21" font="vector" ratio="20">TiLDA</text>
-<text x="71.1" y="52" size="1.9304" layer="21" font="vector" ratio="15">MKπ</text>
+<text x="85" y="30" size="3.5" layer="21" font="vector" ratio="20" rot="SR180">TiLDA</text>
+<text x="84" y="33" size="1.9304" layer="21" font="vector" ratio="15" rot="SR180">MKπ</text>
+<text x="102" y="57.8" size="1.016" layer="21" ratio="15" rot="SR180">TIM2</text>
+<text x="21" y="58" size="1.016" layer="21" font="vector" ratio="15" rot="SR180">I2C1</text>
 </plain>
 <libraries>
 <library name="TiLDA Mk3 Parts">
@@ -9201,17 +9200,17 @@ design rules under a new name.</description>
 <attribute name="FARNELL" value="1865285" x="22.8" y="55.1" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="SW1" library="TiLDA Mk3 Parts" package="JOYSTICK_MULTICOMP" value="JOYSTICK_MINI_MULTICOMP" x="99" y="29" smashed="yes" rot="R135">
-<attribute name="NAME" x="94.9" y="27.2" size="0.8128" layer="25" font="vector" ratio="15" rot="R135"/>
+<attribute name="NAME" x="94.9" y="27.2" size="0.8128" layer="25" font="vector" ratio="15" rot="SR135"/>
 <attribute name="FARNELL" value="1316987" x="99" y="29" size="1.778" layer="27" rot="R135" display="off"/>
 </element>
 <element name="S4" library="TiLDA Mk3 Parts" package="SKPMAPE010-COMBINED" value="1217769" x="25.2" y="32.4" smashed="yes" rot="R270">
 <attribute name="FARNELL" value="1217769" x="25.2" y="32.4" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="22.4" y="38.4" size="0.8128" layer="25" ratio="15"/>
+<attribute name="NAME" x="22.4" y="38.4" size="0.8128" layer="25" ratio="15" rot="SR180" align="top-right"/>
 <attribute name="VALUE" x="20.2" y="36.4" size="1.778" layer="27" rot="R270"/>
 </element>
 <element name="S3" library="TiLDA Mk3 Parts" package="SKPMAPE010-COMBINED" value="1217769" x="16.2" y="24.8" smashed="yes" rot="R270">
 <attribute name="FARNELL" value="1217769" x="16.2" y="24.8" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="13.4" y="30.8" size="0.8128" layer="25" ratio="15"/>
+<attribute name="NAME" x="13.4" y="30.8" size="0.8128" layer="25" ratio="15" rot="SR180" align="top-right"/>
 <attribute name="VALUE" x="11.2" y="28.8" size="1.778" layer="27" rot="R270"/>
 </element>
 <element name="JP3" library="TiLDA Mk3 Parts" package="JST-2-SMD" value="JST PH 2mm" x="47" y="58.8" smashed="yes" rot="MR0">
@@ -9329,7 +9328,7 @@ design rules under a new name.</description>
 <variant name="L4" populate="no"/>
 </element>
 <element name="D1" library="SparkFun-LED" package="WS2812B" value="WS2812B" x="21" y="10.8" smashed="yes" rot="R90">
-<attribute name="NAME" x="18.9" y="14.4" size="0.8128" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="18.9" y="14.4" size="0.8128" layer="25" font="vector" ratio="15" rot="SR180" align="top-right"/>
 <attribute name="VALUE" x="22.6" y="14.8" size="0.6096" layer="27" rot="R90"/>
 <attribute name="EBAY" value="291036714575" x="21" y="10.8" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
@@ -9435,7 +9434,7 @@ design rules under a new name.</description>
 <element name="S7" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SWITCH-MOMENTARY-2SMD-1101NE" x="24.5" y="45.8" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value="SWCH-00815" x="24.5" y="45.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="EBAY" value="272150658613" x="24.5" y="45.8" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="19.8" y="47" size="0.8128" layer="25" ratio="15"/>
+<attribute name="NAME" x="19.8" y="47" size="0.8128" layer="25" ratio="15" rot="SR180" align="top-right"/>
 <attribute name="VALUE" x="27.5" y="48.5" size="0.762" layer="27" rot="R180"/>
 </element>
 <element name="IC6" library="TiLDA Mk3 Parts" package="CC3100MOD" value="CC3100MOD" x="95.2" y="26.3" smashed="yes" rot="MR180">
