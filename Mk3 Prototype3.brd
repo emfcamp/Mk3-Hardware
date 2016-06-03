@@ -296,6 +296,50 @@ May 2016</text>
 <text x="53.2" y="31.6" size="1.016" layer="22" ratio="14" rot="MR0">TEAR</text>
 <text x="44.6" y="4.8" size="1.016" layer="22" font="vector" ratio="14" rot="MR90">DAC</text>
 <text x="27" y="4.1" size="1.016" layer="22" font="vector" ratio="14" rot="MR90">!HIB</text>
+<wire x1="-0.4" y1="0" x2="0.4" y2="0" width="0.15" layer="21"/>
+<wire x1="0" y1="0.4" x2="0" y2="-0.4" width="0.15" layer="21"/>
+<text x="152.2" y="2" size="3.5" layer="22" font="vector" ratio="20" rot="MR0">TiLDA</text>
+<text x="137.1" y="2" size="1.9304" layer="22" font="vector" ratio="15" rot="MR0">MKπ</text>
+<text x="71" y="47" size="1.27" layer="21" font="vector" ratio="15">Brought to 
+you by:</text>
+<text x="71" y="43.5" size="1.27" layer="21" font="vector" ratio="15">@dpslwk</text>
+<text x="71" y="41" size="1.27" layer="21" font="vector" ratio="15">@thinkl33t</text>
+<text x="71" y="33.5" size="1.27" layer="21" font="vector" ratio="15">@jonty</text>
+<text x="71" y="20" size="1.27" layer="21" font="vector" ratio="15">@CharlesYarnold</text>
+<text x="71" y="36" size="1.27" layer="21" font="vector" ratio="15">@drrk</text>
+<text x="71" y="38.5" size="1.27" layer="21" font="vector" ratio="15">mattbrejza  </text>
+<text x="71" y="26" size="1.27" layer="21" font="vector" ratio="15">@marekventur</text>
+<text x="71" y="31" size="1.27" layer="21" font="vector" ratio="15">@russss</text>
+<text x="71" y="28.5" size="1.27" layer="21" font="vector" ratio="15">@gmjhowe</text>
+<text x="71" y="22.5" size="1.27" layer="21" font="vector" ratio="15">@marksteward</text>
+<text x="30.6" y="20" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="top-left">v3.
+1415926535 8979323846 2643383279 5028841971 
+6939937510 5820974944 5923078164 0628620899
+8628034825 3421170679 8214808651 3282306647
+0938446095 5058223172 5359408128 4811174502
+8410270193 8521105559 6446229489 5493038196
+4428810975 6659334461 2847564823 3786783165
+2712019091 4564856692 3460348610 4543266482
+1339360726 0249141273 7245870066 0631558817
+4881520920 9628292540 9171536436 7892590360
+0113305305 4882046652 1384146951 9415116094
+3305727036 5759591953 0921861173 8193261179
+3105118548 0744623799 6274956735 1885752724
+8912279381 8301194912 9833673362 4406566430
+8602139494 6395224737 1907021798 6094370277
+0539217176 2931767523 8467481846 7669405132
+0005681271 4526356082 7785771342 7577896091
+7363717872 1468440901 2249534301 4654958537
+1050792279 6892589235 4201995611 2129021960
+8640344181 5981362977 4771309960 5187072113
+4999999837 2978049951 0597317328 1609631859
+5024459455 3469083026 4252230825 3344685035
+2619311881 7101000313 7838752886 5875332083
+8142061717 7669147303 5982534904 2875546873
+1159562863 8823537875 9375195778 1857780532
+1712268066 1300192787 6611195909 216420198</text>
+<text x="71.2" y="55" size="3.5" layer="21" font="vector" ratio="20">TiLDA</text>
+<text x="71.1" y="52" size="1.9304" layer="21" font="vector" ratio="15">MKπ</text>
 </plain>
 <libraries>
 <library name="TiLDA Mk3 Parts">
@@ -7497,7 +7541,7 @@ design rules under a new name.</description>
 <variant name="L4" populate="no"/>
 </element>
 <element name="U$1" library="TiLDA Mk3 Parts" package="NAME_AREA" value="" x="24.625" y="19.125"/>
-<element name="U$5" library="TiLDA Mk3 Parts" package="EMFLOGO1" value="" x="99.2" y="11.6"/>
+<element name="U$5" library="TiLDA Mk3 Parts" package="EMFLOGO1" value="" x="124.2" y="16.6"/>
 <element name="R18" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="DNP (0603/10k/5%)" x="60.7" y="19.1" smashed="yes" rot="MR180">
 <attribute name="NAME" x="61.9" y="17.55" size="1.016" layer="26" font="vector" ratio="14" rot="MR0"/>
 <attribute name="VALUE" x="59.9" y="20.75" size="1.016" layer="28" rot="MR180"/>
