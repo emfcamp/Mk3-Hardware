@@ -6,9 +6,9 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -25,18 +25,18 @@
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="6" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -338,7 +338,7 @@ you by:</text>
 <text x="21" y="58" size="1.016" layer="21" font="vector" ratio="15" rot="SR180">I2C1</text>
 <text x="101" y="2" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="top-left">v3.1415926535</text>
 <text x="79.75" y="12.75" size="1.9304" layer="22" font="vector" ratio="15" rot="MR0">badge.emfcamp.org/2016</text>
-<text x="79.75" y="10" size="1.9304" layer="22" font="vector" ratio="15" rot="MR0">Made in the UK</text>
+<text x="79.75" y="10" size="1.27" layer="22" font="vector" ratio="15" rot="MR0">designed and assembled in the UK </text>
 </plain>
 <libraries>
 <library name="TiLDA Mk3 Parts">
@@ -6009,6 +6009,32 @@ Metric Code Size 3225</description>
 <smd name="B1" x="-4.55" y="2.25" dx="1.4" dy="2.1" layer="1" rot="R90"/>
 <smd name="B2" x="4.55" y="2.25" dx="1.4" dy="2.1" layer="1" rot="R90"/>
 </package>
+<package name="TACTILE-SWITCH-1101NE">
+<description>Sparkfun SKU# COM-08229</description>
+<wire x1="-3" y1="1.1" x2="-3" y2="-1.1" width="0.127" layer="51"/>
+<wire x1="3" y1="1.1" x2="3" y2="-1.1" width="0.127" layer="51"/>
+<wire x1="-2.75" y1="1.75" x2="-3" y2="1.5" width="0.127" layer="21" curve="90"/>
+<wire x1="-2.75" y1="1.75" x2="2.75" y2="1.75" width="0.127" layer="21"/>
+<wire x1="2.75" y1="1.75" x2="3" y2="1.5" width="0.127" layer="21" curve="-90"/>
+<wire x1="3" y1="-1.5" x2="2.65" y2="-1.75" width="0.127" layer="21" curve="-90"/>
+<wire x1="2.65" y1="-1.75" x2="-2.75" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-3" y1="-1.5" x2="-2.75" y2="-1.75" width="0.127" layer="21" curve="90"/>
+<wire x1="-3" y1="-1.5" x2="-3" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="-3" y1="1.1" x2="-3" y2="1.5" width="0.127" layer="21"/>
+<wire x1="3" y1="1.1" x2="3" y2="1.5" width="0.127" layer="21"/>
+<wire x1="3" y1="-1.5" x2="3" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="0.75" x2="1.5" y2="0.75" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-0.75" x2="-1.5" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-0.75" x2="-1.5" y2="0.75" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-0.75" x2="1.5" y2="0.75" width="0.127" layer="21"/>
+<wire x1="-2" y1="0" x2="-1" y2="0" width="0.127" layer="51"/>
+<wire x1="-1" y1="0" x2="0.1" y2="0.5" width="0.127" layer="51"/>
+<wire x1="0.3" y1="0" x2="2" y2="0" width="0.127" layer="51"/>
+<smd name="P$1" x="-3.15" y="0" dx="2.3" dy="1.6" layer="1" rot="R180"/>
+<smd name="P$2" x="3.15" y="0" dx="2.3" dy="1.6" layer="1" rot="R180"/>
+<text x="-3" y="2" size="0.762" layer="25">&gt;NAME</text>
+<text x="-3" y="-2.7" size="0.762" layer="27">&gt;VALUE</text>
+</package>
 <package name="PINHEAD_2X05_127">
 <wire x1="-3.225" y1="-1.32" x2="-3.225" y2="-0.635" width="0.127" layer="21"/>
 <wire x1="-3.225" y1="-0.635" x2="-3.225" y2="1.32" width="0.127" layer="21"/>
@@ -6052,6 +6078,8 @@ Metric Code Size 3225</description>
 <pad name="8" x="1.27" y="0.635" drill="0.6" diameter="1.016" rot="R90"/>
 <pad name="9" x="2.54" y="-0.635" drill="0.6" diameter="1.016" rot="R90"/>
 <pad name="10" x="2.54" y="0.635" drill="0.6" diameter="1.016" rot="R90"/>
+<text x="-3.81" y="2.54" size="1.778" layer="25">&gt;Name</text>
+<text x="-3.81" y="-3.81" size="1.778" layer="27">&gt;Value</text>
 </package>
 <package name="LOGO_MS_4MM">
 <rectangle x1="-0.0057" y1="-0.0057" x2="1.8981" y2="1.8981" layer="21"/>
@@ -11444,55 +11472,7 @@ Metric Code Size 3225</description>
 <rectangle x1="6.445" y1="3.205" x2="6.845" y2="3.705" layer="21"/>
 <rectangle x1="5.695" y1="2.735" x2="6.845" y2="3.205" layer="21"/>
 </package>
-</packages>
-</library>
-<library name="SparkFun-LED">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find discrete LEDs for illumination or indication, but no displays.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="WS2812B">
-<description>&lt;b&gt;Intelligent control LED with integrated light source&lt;/b&gt;&lt;p&gt;
-WS2812B&lt;br&gt;
-source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</description>
-<smd name="1" x="-2.45" y="1.6" dx="1.5" dy="1" layer="1"/>
-<smd name="4" x="2.45" y="1.6" dx="1.5" dy="1" layer="1"/>
-<smd name="3" x="2.45" y="-1.6" dx="1.5" dy="1" layer="1"/>
-<smd name="2" x="-2.45" y="-1.6" dx="1.5" dy="1" layer="1"/>
-<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-2.5" width="0.127" layer="51"/>
-<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
-<wire x1="2.5" y1="-2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
-<wire x1="2.5" y1="2.5" x2="-2.5" y2="2.5" width="0.127" layer="51"/>
-<circle x="-1.149040625" y="1.61858125" radius="0.125" width="0.25" layer="21"/>
-<text x="4" y="1.2" size="1.016" layer="25">&gt;NAME</text>
-<text x="4" y="-1.6" size="0.6096" layer="27">&gt;VALUE</text>
-<wire x1="-2.50951875" y1="2.250440625" x2="-2.50951875" y2="2.504440625" width="0.127" layer="21"/>
-<wire x1="-2.50951875" y1="2.504440625" x2="-2.45871875" y2="2.504440625" width="0.127" layer="21"/>
-<wire x1="-2.45871875" y1="2.504440625" x2="-2.45871875" y2="2.499359375" width="0.127" layer="21"/>
-<wire x1="-2.45871875" y1="2.499359375" x2="2.491740625" y2="2.499359375" width="0.127" layer="21"/>
-<wire x1="2.491740625" y1="2.499359375" x2="2.491740625" y2="2.26821875" width="0.127" layer="21"/>
-<wire x1="-2.50951875" y1="-2.225040625" x2="-2.50951875" y2="-2.49681875" width="0.127" layer="21"/>
-<wire x1="-2.50951875" y1="-2.49681875" x2="-2.45871875" y2="-2.49681875" width="0.127" layer="21"/>
-<wire x1="-2.45871875" y1="-2.49681875" x2="-2.45871875" y2="-2.499359375" width="0.127" layer="21"/>
-<wire x1="-2.45871875" y1="-2.499359375" x2="2.50951875" y2="-2.499359375" width="0.127" layer="21"/>
-<wire x1="2.50951875" y1="-2.499359375" x2="2.50951875" y2="-2.2733" width="0.127" layer="21"/>
-</package>
-</packages>
-</library>
-<library name="SparkFun-Passives">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="PAD-JUMPER-2-NO_YES_SILK">
+<package name="SJ_2S-NO">
 <description>Small solder jumper with no paste layer so it will open after reflow.</description>
 <wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.2032" layer="21"/>
 <wire x1="0.8" y1="1" x2="1" y2="0.7" width="0.2032" layer="21" curve="-90"/>
@@ -11505,146 +11485,51 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-0.908" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-0.908" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
-</packages>
-</library>
-<library name="SparkFun-Electromechanical">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find anything that moves- switches, relays, buttons, potentiometers. Also, anything that goes on a board but isn't electrical in nature- screws, standoffs, etc.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="TACTILE-SWITCH-1101NE">
-<description>SparkFun SKU# COM-08229</description>
-<wire x1="-3" y1="1.1" x2="-3" y2="-1.1" width="0.127" layer="51"/>
-<wire x1="3" y1="1.1" x2="3" y2="-1.1" width="0.127" layer="51"/>
-<wire x1="-2.75" y1="1.75" x2="-3" y2="1.5" width="0.2032" layer="21" curve="90"/>
-<wire x1="-2.75" y1="1.75" x2="2.75" y2="1.75" width="0.2032" layer="21"/>
-<wire x1="2.75" y1="1.75" x2="3" y2="1.5" width="0.2032" layer="21" curve="-90"/>
-<wire x1="3" y1="-1.5" x2="2.75" y2="-1.75" width="0.2032" layer="21" curve="-90"/>
-<wire x1="2.75" y1="-1.75" x2="-2.75" y2="-1.75" width="0.2032" layer="21"/>
-<wire x1="-3" y1="-1.5" x2="-2.75" y2="-1.75" width="0.2032" layer="21" curve="90"/>
-<wire x1="-3" y1="-1.5" x2="-3" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="-3" y1="1.1" x2="-3" y2="1.5" width="0.2032" layer="21"/>
-<wire x1="3" y1="1.1" x2="3" y2="1.5" width="0.2032" layer="21"/>
-<wire x1="3" y1="-1.5" x2="3" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="-1.5" y1="0.75" x2="1.5" y2="0.75" width="0.2032" layer="21"/>
-<wire x1="1.5" y1="-0.75" x2="-1.5" y2="-0.75" width="0.2032" layer="21"/>
-<wire x1="-1.5" y1="-0.75" x2="-1.5" y2="0.75" width="0.2032" layer="21"/>
-<wire x1="1.5" y1="-0.75" x2="1.5" y2="0.75" width="0.2032" layer="21"/>
-<wire x1="-2" y1="0" x2="-1" y2="0" width="0.127" layer="51"/>
-<wire x1="-1" y1="0" x2="0.1" y2="0.5" width="0.127" layer="51"/>
-<wire x1="0.3" y1="0" x2="2" y2="0" width="0.127" layer="51"/>
-<smd name="1" x="-3.15" y="0" dx="2.3" dy="1.6" layer="1" rot="R180"/>
-<smd name="2" x="3.15" y="0" dx="2.3" dy="1.6" layer="1" rot="R180"/>
-<text x="-3" y="2" size="0.762" layer="25">&gt;NAME</text>
-<text x="-3" y="-2.7" size="0.762" layer="27">&gt;VALUE</text>
+<package name="WS2812B">
+<description>&lt;b&gt;Intelligent control LED with integrated light source&lt;/b&gt;&lt;p&gt;
+WS2812B&lt;br&gt;
+source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</description>
+<smd name="1" x="-2.45" y="1.6" dx="1.5" dy="1" layer="1"/>
+<smd name="4" x="2.45" y="1.6" dx="1.5" dy="1" layer="1"/>
+<smd name="3" x="2.45" y="-1.6" dx="1.5" dy="1" layer="1"/>
+<smd name="2" x="-2.45" y="-1.6" dx="1.5" dy="1" layer="1"/>
+<circle x="-1.149040625" y="1.61858125" radius="0.125" width="0.25" layer="21"/>
+<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="2.5" x2="-2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="-2.50951875" y1="2.250440625" x2="-2.50951875" y2="2.504440625" width="0.127" layer="21"/>
+<wire x1="-2.50951875" y1="2.504440625" x2="-2.45871875" y2="2.504440625" width="0.127" layer="21"/>
+<wire x1="-2.45871875" y1="2.504440625" x2="-2.45871875" y2="2.499359375" width="0.127" layer="21"/>
+<wire x1="-2.45871875" y1="2.499359375" x2="2.491740625" y2="2.499359375" width="0.127" layer="21"/>
+<wire x1="2.491740625" y1="2.499359375" x2="2.491740625" y2="2.26821875" width="0.127" layer="21"/>
+<wire x1="-2.50951875" y1="-2.225040625" x2="-2.50951875" y2="-2.49681875" width="0.127" layer="21"/>
+<wire x1="-2.50951875" y1="-2.49681875" x2="-2.45871875" y2="-2.49681875" width="0.127" layer="21"/>
+<wire x1="-2.45871875" y1="-2.49681875" x2="-2.45871875" y2="-2.499359375" width="0.127" layer="21"/>
+<wire x1="-2.45871875" y1="-2.499359375" x2="2.50951875" y2="-2.499359375" width="0.127" layer="21"/>
+<wire x1="2.50951875" y1="-2.499359375" x2="2.50951875" y2="-2.2733" width="0.127" layer="21"/>
+<text x="4" y="1.2" size="1.016" layer="25">&gt;NAME</text>
+<text x="4" y="-1.6" size="0.6096" layer="27">&gt;VALUE</text>
 </package>
-</packages>
-</library>
-<library name="passives-7351">
-<packages>
-<package name="C0805-N">
-<smd name="1" x="-0.9" y="0" dx="1.15" dy="1.45" layer="1"/>
-<smd name="2" x="0.9" y="0" dx="1.15" dy="1.45" layer="1"/>
-<wire x1="-1.749" y1="0.999" x2="1.749" y2="0.999" width="0" layer="39"/>
-<wire x1="1.749" y1="0.999" x2="1.745" y2="-0.999" width="0" layer="39"/>
-<wire x1="1.745" y1="-0.999" x2="-1.745" y2="-0.999" width="0" layer="39"/>
-<wire x1="-1.745" y1="-0.999" x2="-1.749" y2="0.999" width="0" layer="39"/>
-<rectangle x1="-1" y1="-0.6" x2="1" y2="0.6" layer="51"/>
-<text x="-1.72171875" y="1.225875" size="0.8128" layer="25" font="vector" ratio="13">&gt;NAME</text>
-<wire x1="-1.75" y1="1" x2="1.75" y2="1" width="0.1" layer="21"/>
-<wire x1="1.75" y1="1" x2="1.75" y2="-1" width="0.1" layer="21"/>
-<wire x1="1.75" y1="-1" x2="-1.75" y2="-1" width="0.1" layer="21"/>
-<wire x1="-1.75" y1="-1" x2="-1.75" y2="1" width="0.1" layer="21"/>
-</package>
-</packages>
-</library>
-<library name="tag-connect">
-<description>&lt;h3&gt;TAG-CONNECT ICSP Connector&lt;/h3&gt;&lt;BR&gt;&lt;I&gt;Manufacturer:&lt;/I&gt; &lt;a href="http://www.tag-connect.com"&gt;Tag-Connect&lt;/a&gt;&lt;BR&gt;
-&lt;BR&gt;Cable for easy In-Circuit Serial Programming. Designed for Microchip ICD2, suitable for many others.&lt;BR&gt;
-Two variants - one "with legs" (for hands-free fit on PCB) and another "without legs" for quick programming.
-
-&lt;p&gt;
-&lt;TABLE cellspacing=0 cellpadding=0 border=0&gt;
-&lt;TR&gt;&lt;TD width=20&gt;&lt;/TD&gt;&lt;TD&gt;
-&lt;TABLE cellspacing=0 cellpadding=1 border=1&gt;
-&lt;TR bgcolor=silver&gt;&lt;TD align=center&gt;PAD&lt;/TD&gt;&lt;TD align=center&gt;Description&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;1&lt;/TD&gt;&lt;TD&gt;MCLR/Vpp&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;2&lt;/TD&gt;&lt;TD&gt;Vdd&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;3&lt;/TD&gt;&lt;TD&gt;GND&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;4&lt;/TD&gt;&lt;TD&gt;PGD (ISPDAT)&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;5&lt;/TD&gt;&lt;TD&gt;PGC (ISPCLK)&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;6&lt;/TD&gt;&lt;TD&gt;nc (used for LVP)&lt;/TD&gt;&lt;/TR&gt;
-&lt;/TABLE&gt;
-&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;BR&gt;&lt;BR&gt;
-
-©2009 ROFA.cz - modified and updated by Robert Darlington &amp;#8249;rdarlington@gmail.com&amp;#8250;</description>
-<packages>
-<package name="TC2030-MCP-NL">
-<description>&lt;B&gt;TAG-CONNECT ICSP Connector&lt;/B&gt;&lt;BR&gt;&lt;I&gt;Manufacturer:&lt;/I&gt; &lt;a href="www.tag-connect.com"&gt;Tag-Connect&lt;/a&gt;&lt;BR&gt;
-&lt;BR&gt;Cable for easy In-Circuit Serial Programming. Designed for Microchip ICD2, suitable for many others.&lt;BR&gt;
-
-&lt;TABLE cellspacing=0 cellpadding=0 border=0&gt;
-&lt;TR&gt;&lt;TD width=20&gt;&lt;/TD&gt;&lt;TD&gt;
-&lt;TABLE cellspacing=0 cellpadding=1 border=1&gt;
-&lt;TR bgcolor=silver&gt;&lt;TD align=center&gt;PAD&lt;/TD&gt;&lt;TD align=center&gt;Description&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;1&lt;/TD&gt;&lt;TD&gt;MCLR/Vpp&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;2&lt;/TD&gt;&lt;TD&gt;Vdd&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;3&lt;/TD&gt;&lt;TD&gt;GND&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;4&lt;/TD&gt;&lt;TD&gt;PGD (ISPDAT)&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;5&lt;/TD&gt;&lt;TD&gt;PGC (ISPCLK)&lt;/TD&gt;&lt;/TR&gt;
-&lt;TR&gt;&lt;TD align=center&gt;6&lt;/TD&gt;&lt;TD&gt;nc (used for LVP)&lt;/TD&gt;&lt;/TR&gt;
-&lt;/TABLE&gt;
-&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;BR&gt;&lt;BR&gt;
-
-©2009 ROFA.cz - modified and updated by Robert Darlington &amp;#8249;rdarlington@gmail.com&amp;#8250;</description>
-<smd name="2" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
-<smd name="4" x="2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
-<smd name="6" x="3.81" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
-<smd name="5" x="3.81" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
-<smd name="3" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
-<smd name="1" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
-<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;name</text>
-<hole x="0" y="0" drill="0.889"/>
-<hole x="5.08" y="-1.016" drill="0.889"/>
-<hole x="5.08" y="1.016" drill="0.889"/>
-<polygon width="0.0254" layer="39">
-<vertex x="1.27" y="-0.2413"/>
-<vertex x="1.6637" y="-0.2413"/>
-<vertex x="1.6637" y="-0.635"/>
-<vertex x="2.1463" y="-0.635"/>
-<vertex x="2.1463" y="-0.2413"/>
-<vertex x="2.9337" y="-0.2413"/>
-<vertex x="2.9337" y="-0.635"/>
-<vertex x="3.4163" y="-0.635"/>
-<vertex x="3.4163" y="-0.2413"/>
-<vertex x="3.81" y="-0.2413"/>
-<vertex x="3.81" y="0.2413"/>
-<vertex x="3.4163" y="0.2413"/>
-<vertex x="3.4163" y="0.635"/>
-<vertex x="2.9337" y="0.635"/>
-<vertex x="2.9337" y="0.2413"/>
-<vertex x="2.1463" y="0.2413"/>
-<vertex x="2.1463" y="0.635"/>
-<vertex x="1.6637" y="0.635"/>
-<vertex x="1.6637" y="0.2413"/>
-<vertex x="1.27" y="0.2413"/>
+<package name="SOD123">
+<wire x1="-1.3" y1="0.75" x2="1.3" y2="0.75" width="0.1524" layer="51"/>
+<wire x1="1.3" y1="0.75" x2="1.3" y2="-0.75" width="0.1524" layer="51"/>
+<wire x1="1.3" y1="-0.75" x2="-1.3" y2="-0.75" width="0.1524" layer="51"/>
+<wire x1="-1.3" y1="-0.75" x2="-1.3" y2="0.75" width="0.1524" layer="51"/>
+<wire x1="-0.4" y1="0.5" x2="-0.4" y2="-0.5" width="0.1524" layer="21"/>
+<rectangle x1="-1.88" y1="-0.35" x2="-1.38" y2="0.35" layer="51"/>
+<rectangle x1="1.38" y1="-0.35" x2="1.88" y2="0.35" layer="51"/>
+<rectangle x1="-1" y1="-0.7" x2="-0.6" y2="0.7" layer="51"/>
+<smd name="A" x="1.9" y="0" dx="1.1" dy="1.2" layer="1"/>
+<smd name="C" x="-1.9" y="0" dx="1.1" dy="1.2" layer="1"/>
+<text x="-1.1" y="1" size="1.016" layer="25" font="vector" ratio="12">&gt;NAME</text>
+<text x="-1.1" y="-2.3" size="1.016" layer="27" font="vector" ratio="12">&gt;VALUE</text>
+<polygon width="0.1524" layer="21">
+<vertex x="-0.3" y="0"/>
+<vertex x="0.4" y="0.5"/>
+<vertex x="0.4" y="-0.5"/>
 </polygon>
 </package>
-</packages>
-</library>
-<library name="SparkFun-Connectors">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find connectors and sockets- basically anything that can be plugged into or onto.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
 <package name="1X11">
 <wire x1="14.605" y1="1.27" x2="15.875" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="15.875" y1="1.27" x2="16.51" y2="0.635" width="0.2032" layer="21"/>
@@ -11714,6 +11599,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="24.765" y1="1.27" x2="24.13" y2="0.635" width="0.2032" layer="21"/>
 <wire x1="24.13" y1="-0.635" x2="24.765" y2="-1.27" width="0.2032" layer="21"/>
 <wire x1="26.035" y1="-1.27" x2="24.765" y2="-1.27" width="0.2032" layer="21"/>
+<rectangle x1="14.986" y1="-0.254" x2="15.494" y2="0.254" layer="51"/>
+<rectangle x1="12.446" y1="-0.254" x2="12.954" y2="0.254" layer="51"/>
+<rectangle x1="9.906" y1="-0.254" x2="10.414" y2="0.254" layer="51"/>
+<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<rectangle x1="17.526" y1="-0.254" x2="18.034" y2="0.254" layer="51"/>
+<rectangle x1="20.066" y1="-0.254" x2="20.574" y2="0.254" layer="51"/>
+<rectangle x1="22.606" y1="-0.254" x2="23.114" y2="0.254" layer="51"/>
+<rectangle x1="25.146" y1="-0.254" x2="25.654" y2="0.254" layer="51"/>
 <pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
@@ -11727,40 +11623,71 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pad name="11" x="25.4" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="14.986" y1="-0.254" x2="15.494" y2="0.254" layer="51"/>
-<rectangle x1="12.446" y1="-0.254" x2="12.954" y2="0.254" layer="51"/>
-<rectangle x1="9.906" y1="-0.254" x2="10.414" y2="0.254" layer="51"/>
-<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
-<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
-<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-<rectangle x1="17.526" y1="-0.254" x2="18.034" y2="0.254" layer="51"/>
-<rectangle x1="20.066" y1="-0.254" x2="20.574" y2="0.254" layer="51"/>
-<rectangle x1="22.606" y1="-0.254" x2="23.114" y2="0.254" layer="51"/>
-<rectangle x1="25.146" y1="-0.254" x2="25.654" y2="0.254" layer="51"/>
 </package>
-</packages>
-</library>
-<library name="Diodes">
-<packages>
-<package name="SOD123">
-<wire x1="-1.3" y1="0.75" x2="1.3" y2="0.75" width="0.1524" layer="51"/>
-<wire x1="1.3" y1="0.75" x2="1.3" y2="-0.75" width="0.1524" layer="51"/>
-<wire x1="1.3" y1="-0.75" x2="-1.3" y2="-0.75" width="0.1524" layer="51"/>
-<wire x1="-1.3" y1="-0.75" x2="-1.3" y2="0.75" width="0.1524" layer="51"/>
-<smd name="C" x="-1.9" y="0" dx="1.1" dy="1.2" layer="1"/>
-<smd name="A" x="1.9" y="0" dx="1.1" dy="1.2" layer="1"/>
-<text x="-1.1" y="1" size="1.016" layer="25" font="vector" ratio="12">&gt;NAME</text>
-<text x="-1.1" y="-2.3" size="1.016" layer="27" font="vector" ratio="12">&gt;VALUE</text>
-<rectangle x1="-1.88" y1="-0.35" x2="-1.38" y2="0.35" layer="51"/>
-<rectangle x1="1.38" y1="-0.35" x2="1.88" y2="0.35" layer="51"/>
-<rectangle x1="-1" y1="-0.7" x2="-0.6" y2="0.7" layer="51"/>
-<polygon width="0.1524" layer="21">
-<vertex x="-0.3" y="0"/>
-<vertex x="0.4" y="0.5"/>
-<vertex x="0.4" y="-0.5"/>
+<package name="C0805-N">
+<wire x1="-1.749" y1="0.999" x2="1.749" y2="0.999" width="0" layer="39"/>
+<wire x1="1.749" y1="0.999" x2="1.745" y2="-0.999" width="0" layer="39"/>
+<wire x1="1.745" y1="-0.999" x2="-1.745" y2="-0.999" width="0" layer="39"/>
+<wire x1="-1.745" y1="-0.999" x2="-1.749" y2="0.999" width="0" layer="39"/>
+<wire x1="-1.75" y1="1" x2="1.75" y2="1" width="0.1" layer="21"/>
+<wire x1="1.75" y1="1" x2="1.75" y2="-1" width="0.1" layer="21"/>
+<wire x1="1.75" y1="-1" x2="-1.75" y2="-1" width="0.1" layer="21"/>
+<wire x1="-1.75" y1="-1" x2="-1.75" y2="1" width="0.1" layer="21"/>
+<rectangle x1="-1" y1="-0.6" x2="1" y2="0.6" layer="51"/>
+<smd name="1" x="-0.9" y="0" dx="1.15" dy="1.45" layer="1"/>
+<smd name="2" x="0.9" y="0" dx="1.15" dy="1.45" layer="1"/>
+<text x="-1.72171875" y="1.225875" size="0.8128" layer="25" font="vector" ratio="13">&gt;NAME</text>
+</package>
+<package name="TC2030-MCP-NL">
+<description>&lt;B&gt;TAG-CONNECT ICSP Connector&lt;/B&gt;&lt;BR&gt;&lt;I&gt;Manufacturer:&lt;/I&gt; &lt;a href="www.tag-connect.com"&gt;Tag-Connect&lt;/a&gt;&lt;BR&gt;
+&lt;BR&gt;Cable for easy In-Circuit Serial Programming. Designed for Microchip ICD2, suitable for many others.&lt;BR&gt;
+
+&lt;TABLE cellspacing=0 cellpadding=0 border=0&gt;
+&lt;TR&gt;&lt;TD width=20&gt;&lt;/TD&gt;&lt;TD&gt;
+&lt;TABLE cellspacing=0 cellpadding=1 border=1&gt;
+&lt;TR bgcolor=silver&gt;&lt;TD align=center&gt;PAD&lt;/TD&gt;&lt;TD align=center&gt;Description&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;1&lt;/TD&gt;&lt;TD&gt;MCLR/Vpp&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;2&lt;/TD&gt;&lt;TD&gt;Vdd&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;3&lt;/TD&gt;&lt;TD&gt;GND&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;4&lt;/TD&gt;&lt;TD&gt;PGD (ISPDAT)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;5&lt;/TD&gt;&lt;TD&gt;PGC (ISPCLK)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;6&lt;/TD&gt;&lt;TD&gt;nc (used for LVP)&lt;/TD&gt;&lt;/TR&gt;
+&lt;/TABLE&gt;
+&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;BR&gt;&lt;BR&gt;
+
+©2009 ROFA.cz - modified and updated by Robert Darlington &amp;#8249;rdarlington@gmail.com&amp;#8250;</description>
+<smd name="1" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="2" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="3" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="4" x="2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="5" x="3.81" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="6" x="3.81" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;name</text>
+<hole x="0" y="0" drill="0.889"/>
+<hole x="5.08" y="-1.016" drill="0.889"/>
+<hole x="5.08" y="1.016" drill="0.889"/>
+<polygon width="0.0254" layer="39">
+<vertex x="1.27" y="-0.2413"/>
+<vertex x="1.6637" y="-0.2413"/>
+<vertex x="1.6637" y="-0.635"/>
+<vertex x="2.1463" y="-0.635"/>
+<vertex x="2.1463" y="-0.2413"/>
+<vertex x="2.9337" y="-0.2413"/>
+<vertex x="2.9337" y="-0.635"/>
+<vertex x="3.4163" y="-0.635"/>
+<vertex x="3.4163" y="-0.2413"/>
+<vertex x="3.81" y="-0.2413"/>
+<vertex x="3.81" y="0.2413"/>
+<vertex x="3.4163" y="0.2413"/>
+<vertex x="3.4163" y="0.635"/>
+<vertex x="2.9337" y="0.635"/>
+<vertex x="2.9337" y="0.2413"/>
+<vertex x="2.1463" y="0.2413"/>
+<vertex x="2.1463" y="0.635"/>
+<vertex x="1.6637" y="0.635"/>
+<vertex x="1.6637" y="0.2413"/>
+<vertex x="1.27" y="0.2413"/>
 </polygon>
-<wire x1="-0.4" y1="0.5" x2="-0.4" y2="-0.5" width="0.1524" layer="21"/>
 </package>
 </packages>
 </library>
@@ -11994,19 +11921,21 @@ design rules under a new name.</description>
 <attribute name="NAME" x="10.331" y="5.67" size="1.016" layer="26" font="vector" ratio="14" rot="MR270"/>
 <attribute name="FARNELL" value="2293755" x="15.1" y="2.7" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="J3" library="TiLDA Mk3 Parts" package="PINHEAD_2X05_127" value="SWD_SHROUD-PINHEAD" x="22.8" y="55.1" smashed="yes" rot="MR0">
+<element name="J3" library="TiLDA Mk3 Parts" package="PINHEAD_2X05_127" value="2x5 1.27mm" x="22.8" y="55.1" smashed="yes" rot="MR0">
 <attribute name="FARNELL" value="1865285" x="22.8" y="55.1" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="26.11" y="56.64" size="1.016" layer="26" ratio="15" rot="MR0"/>
+<attribute name="VALUE" x="26.61" y="51.29" size="1.778" layer="28" rot="MR0"/>
 </element>
 <element name="SW1" library="TiLDA Mk3 Parts" package="JOYSTICK_MULTICOMP" value="JOYSTICK_MINI_MULTICOMP" x="99" y="29" smashed="yes" rot="R135">
 <attribute name="NAME" x="94.9" y="27.2" size="0.8128" layer="25" font="vector" ratio="15" rot="SR135"/>
 <attribute name="FARNELL" value="1316987" x="99" y="29" size="1.778" layer="27" rot="R135" display="off"/>
 </element>
-<element name="S4" library="TiLDA Mk3 Parts" package="SKPMAPE010-COMBINED" value="1217769" x="25.2" y="32.4" smashed="yes" rot="R270">
+<element name="S4" library="TiLDA Mk3 Parts" package="SKPMAPE010-COMBINED" value="SKPMAPE010" x="25.2" y="32.4" smashed="yes" rot="R270">
 <attribute name="FARNELL" value="1217769" x="25.2" y="32.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="22.4" y="38.4" size="0.8128" layer="25" ratio="15" rot="SR180" align="top-right"/>
 <attribute name="VALUE" x="20.2" y="36.4" size="1.778" layer="27" rot="R270"/>
 </element>
-<element name="S3" library="TiLDA Mk3 Parts" package="SKPMAPE010-COMBINED" value="1217769" x="16.2" y="24.8" smashed="yes" rot="R270">
+<element name="S3" library="TiLDA Mk3 Parts" package="SKPMAPE010-COMBINED" value="SKPMAPE010" x="16.2" y="24.8" smashed="yes" rot="R270">
 <attribute name="FARNELL" value="1217769" x="16.2" y="24.8" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="13.4" y="30.8" size="0.8128" layer="25" ratio="15" rot="SR180" align="top-right"/>
 <attribute name="VALUE" x="11.2" y="28.8" size="1.778" layer="27" rot="R270"/>
@@ -12050,12 +11979,12 @@ design rules under a new name.</description>
 <attribute name="NAME" x="33.725" y="42.5525" size="1.016" layer="26" font="vector" ratio="14" rot="MR0"/>
 </element>
 <element name="R6" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/2k/5%" x="30" y="60" smashed="yes" rot="MR0">
-<attribute name="NAME" x="29.411" y="61.7015" size="1.016" layer="26" font="vector" ratio="14" rot="MR180"/>
+<attribute name="NAME" x="31.289" y="60.6985" size="1.016" layer="26" font="vector" ratio="14" rot="MR0"/>
 </element>
 <element name="C3" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/2u2/10V/X5R" x="41.4" y="58.4" smashed="yes" rot="MR270">
 <attribute name="NAME" x="40.95" y="60.4" size="1.016" layer="26" font="vector" ratio="14" rot="MR90"/>
 </element>
-<element name="LED5" library="TiLDA Mk3 Parts" package="LED-0603-CORRECT" value="RED" x="21.4" y="6.1" smashed="yes" rot="R180">
+<element name="LED5" library="TiLDA Mk3 Parts" package="LED-0603-CORRECT" value="0603 RED" x="21.4" y="6.1" smashed="yes" rot="R180">
 <attribute name="COLOUR" value="RED" x="21.4" y="6.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="FARNELL" value="2449874" x="21.4" y="6.1" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
@@ -12068,7 +11997,7 @@ design rules under a new name.</description>
 <attribute name="FARNELL" value="9575146" x="60.3" y="60.9" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="C1" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/2u2/10V/X5R" x="29.4" y="57.6" smashed="yes" rot="MR270">
-<attribute name="NAME" x="28.975" y="54.4" size="1.016" layer="26" font="vector" ratio="14" rot="MR90"/>
+<attribute name="NAME" x="28.775" y="54.4" size="1.016" layer="26" font="vector" ratio="14" rot="MR90"/>
 </element>
 <element name="C10" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/0R" x="24.45" y="13.7" smashed="yes" rot="MR90">
 <attribute name="NAME" x="22.7485" y="12.411" size="1.016" layer="26" font="vector" ratio="14" rot="MR90"/>
@@ -12079,7 +12008,7 @@ design rules under a new name.</description>
 <element name="C17" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/4u7/10V/X5R" x="19.4" y="32" smashed="yes" rot="MR90">
 <attribute name="NAME" x="18.95" y="27.9" size="1.016" layer="26" font="vector" ratio="14" rot="MR90"/>
 </element>
-<element name="LED4" library="TiLDA Mk3 Parts" package="LED-0603-CORRECT" value="RED" x="24.9" y="1.9" smashed="yes" rot="R180">
+<element name="LED4" library="TiLDA Mk3 Parts" package="LED-0603-CORRECT" value="0603 RED" x="24.9" y="1.9" smashed="yes" rot="R180">
 <attribute name="FARNELL" value="2449874" x="24.9" y="1.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="COLOUR" value="RED" x="24.9" y="1.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="25.916" y="2.9795" size="0.4064" layer="27" rot="R180"/>
@@ -12104,7 +12033,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="50.505" y="16.3625" size="1.016" layer="26" font="vector" ratio="14" rot="MR0"/>
 <attribute name="FARNELL" value="1781089" x="46.7" y="16.9" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="IC3" library="TiLDA Mk3 Parts" package="TQFP100" value="STM32F401V" x="32.2" y="24.5" smashed="yes" rot="MR270">
+<element name="IC3" library="TiLDA Mk3 Parts" package="TQFP100" value="STM32L475VG" x="32.2" y="24.5" smashed="yes" rot="MR270">
 <attribute name="NAME" x="29.977" y="34.237" size="1.016" layer="26" font="vector" ratio="14" rot="MR180"/>
 <attribute name="VALUE" x="36.78" y="17.96" size="1.016" layer="28" font="vector" ratio="14" rot="MR0"/>
 <attribute name="FARNELL" value="2432116" x="32.2" y="24.5" size="1.778" layer="28" rot="MR270" display="off"/>
@@ -12121,7 +12050,7 @@ design rules under a new name.</description>
 <element name="SV2" library="TiLDA Mk3 Parts" package="1X03" value="" x="4.2" y="17.5" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="7.121" y="21.31" size="1.27" layer="28" ratio="10" rot="MR270"/>
 </element>
-<element name="D1" library="SparkFun-LED" package="WS2812B" value="WS2812B" x="21" y="10.8" smashed="yes" rot="R90">
+<element name="D1" library="TiLDA Mk3 Parts" package="WS2812B" value="WS2812B" x="21" y="10.8" smashed="yes" rot="R90">
 <attribute name="NAME" x="18.9" y="14.4" size="0.8128" layer="25" font="vector" ratio="15" rot="SR180" align="top-right"/>
 <attribute name="VALUE" x="22.6" y="14.8" size="0.6096" layer="27" rot="R90"/>
 <attribute name="EBAY" value="291036714575" x="21" y="10.8" size="1.778" layer="27" rot="R90" display="off"/>
@@ -12172,21 +12101,21 @@ design rules under a new name.</description>
 <attribute name="NAME" x="36.5" y="50.6" size="1.016" layer="26" font="vector" ratio="14" rot="MR270"/>
 <attribute name="FARNELL" value="2428203" x="33.7" y="49.4" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="C5" library="passives-7351" package="C0805-N" value="0805/10u/10V/X5R" x="35.9" y="52.9" smashed="yes" rot="MR90">
+<element name="C5" library="TiLDA Mk3 Parts" package="C0805-N" value="0805/10u/10V/X5R" x="35.9" y="52.9" smashed="yes" rot="MR90">
 <attribute name="NAME" x="36.975" y="52.1" size="1.016" layer="26" font="vector" ratio="14" rot="MR90"/>
 </element>
-<element name="C6" library="passives-7351" package="C0805-N" value="0805/10u/10V/X5R" x="31.2" y="52.85" smashed="yes" rot="MR90">
+<element name="C6" library="TiLDA Mk3 Parts" package="C0805-N" value="0805/10u/10V/X5R" x="31.2" y="52.85" smashed="yes" rot="MR90">
 <attribute name="NAME" x="30.15" y="50.925" size="1.016" layer="26" font="vector" ratio="14" rot="MR180"/>
 </element>
-<element name="SJ1" library="SparkFun-Passives" package="PAD-JUMPER-2-NO_YES_SILK" value="JUMPER-PAD-2-NOYES_SILK" x="41.1" y="55.4" smashed="yes" rot="MR0"/>
+<element name="SJ1" library="TiLDA Mk3 Parts" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="41.1" y="55.4" smashed="yes" rot="MR0"/>
 <element name="C8" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/4u7/10V/X5R" x="38.2" y="36" smashed="yes" rot="MR180">
 <attribute name="NAME" x="36.689" y="35.8985" size="1.016" layer="26" font="vector" ratio="14" rot="MR0"/>
 </element>
-<element name="LED2" library="TiLDA Mk3 Parts" package="LED-0603-CORRECT" value="RED" x="24.8" y="20.6" smashed="yes" rot="R270">
+<element name="LED2" library="TiLDA Mk3 Parts" package="LED-0603-CORRECT" value="0603 RED" x="24.8" y="20.6" smashed="yes" rot="R270">
 <attribute name="COLOUR" value="RED" x="24.8" y="20.6" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="FARNELL" value="2449874" x="24.8" y="20.6" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="LED3" library="TiLDA Mk3 Parts" package="LED-0603-CORRECT" value="GREEN" x="27.1" y="20.6" smashed="yes" rot="R270">
+<element name="LED3" library="TiLDA Mk3 Parts" package="LED-0603-CORRECT" value="0603 GREEN" x="27.1" y="20.6" smashed="yes" rot="R270">
 <attribute name="FARNELL" value="2426215" x="27.1" y="20.6" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="COLOUR" value="GREEN" x="27.1" y="20.6" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
@@ -12214,8 +12143,7 @@ design rules under a new name.</description>
 <element name="R45" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/220k/5%" x="54.3" y="61.2" smashed="yes" rot="MR180">
 <attribute name="NAME" x="59.389" y="57.1985" size="1.016" layer="26" font="vector" ratio="14" rot="MR0"/>
 </element>
-<element name="S7" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SWITCH-MOMENTARY-2SMD-1101NE" x="24.5" y="45.8" smashed="yes" rot="R180">
-<attribute name="PROD_ID" value="SWCH-00815" x="24.5" y="45.8" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="S7" library="TiLDA Mk3 Parts" package="TACTILE-SWITCH-1101NE" value="6x3" x="24.5" y="45.8" smashed="yes" rot="R180">
 <attribute name="EBAY" value="272150658613" x="24.5" y="45.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="19.8" y="47" size="0.8128" layer="25" ratio="15" rot="SR180" align="top-right"/>
 <attribute name="VALUE" x="27.5" y="48.5" size="0.762" layer="27" rot="R180"/>
@@ -12236,9 +12164,7 @@ design rules under a new name.</description>
 <element name="SV7" library="TiLDA Mk3 Parts" package="1X03" value="" x="70.9" y="24.9" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="69.63" y="28.075" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="S8" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="DNP" x="73.4" y="21.2" smashed="yes" rot="MR180">
-<attribute name="PROD_ID" value="SWCH-00815" x="73.4" y="21.2" size="1.778" layer="28" rot="MR180" display="off"/>
-</element>
+<element name="S8" library="TiLDA Mk3 Parts" package="TACTILE-SWITCH-1101NE" value="DNP (6x3)" x="73.4" y="21.2" smashed="yes" rot="MR180"/>
 <element name="R47" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/12R/5%" x="69.6" y="59.2" smashed="yes" rot="MR270">
 <attribute name="NAME" x="69.05" y="54.8" size="1.016" layer="26" font="vector" ratio="14" rot="MR90"/>
 <attribute name="FARNELL" value="9331280" x="69.6" y="59.2" size="1.778" layer="28" rot="MR270" display="off"/>
@@ -12289,7 +12215,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="15.6" y="23.2" size="1.016" layer="26" font="vector" ratio="14" rot="MR270"/>
 <attribute name="FARNELL" value="2501084" x="13.2" y="22.4" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="JP4" library="tag-connect" package="TC2030-MCP-NL" value="TC2030-SWDNL" x="22.8" y="50.2" smashed="yes" rot="MR180">
+<element name="JP4" library="TiLDA Mk3 Parts" package="TC2030-MCP-NL" value="TC2030-SWDNL" x="22.8" y="50.2" smashed="yes" rot="MR180">
 <attribute name="NAME" x="24.2" y="48.4" size="1.016" layer="26" font="vector" ratio="14" rot="MR180"/>
 </element>
 <element name="TP12" library="TiLDA Mk3 Parts" package="B1,27" value="TPB1,27" x="89.6" y="12.9" smashed="yes" rot="MR0">
@@ -12338,7 +12264,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="32.3" y="55.25" size="1.016" layer="26" font="vector" ratio="14" rot="MR180"/>
 <attribute name="FARNELL" value="2064227" x="33.6" y="52.8" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="C27" library="passives-7351" package="C0805-N" value="0805/10u/10V/X5R" x="35.2" y="46.8" smashed="yes" rot="MR180">
+<element name="C27" library="TiLDA Mk3 Parts" package="C0805-N" value="0805/10u/10V/X5R" x="35.2" y="46.8" smashed="yes" rot="MR180">
 <attribute name="NAME" x="33.87828125" y="45.574125" size="1.016" layer="26" font="vector" ratio="14" rot="MR180"/>
 </element>
 <element name="Q4" library="TiLDA Mk3 Parts" package="Q2_DUAL" value="CSD85301Q2" x="51.6" y="52.4" smashed="yes" rot="MR180">
@@ -12349,14 +12275,14 @@ design rules under a new name.</description>
 <attribute name="NAME" x="36.54" y="58.825" size="1.016" layer="26" font="vector" ratio="14" rot="MR0"/>
 <attribute name="FARNELL" value="2323723" x="35.2" y="57.2" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="R7" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="DNP or 0" x="22.2" y="34.2" smashed="yes" rot="MR180">
+<element name="R7" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="DNP or 0603/0R/5%" x="22.2" y="34.2" smashed="yes" rot="MR180">
 <attribute name="NAME" x="23.6" y="34.75" size="1.016" layer="26" font="vector" ratio="14" rot="MR180"/>
 </element>
 <element name="R8" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="DNP or 0" x="48.2" y="21.6" smashed="yes" rot="MR180">
 <attribute name="NAME" x="47.4" y="23.35" size="1.016" layer="26" font="vector" ratio="14" rot="MR180"/>
 </element>
 <element name="R9" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/1k/5%" x="30.8" y="57.6" smashed="yes" rot="MR90">
-<attribute name="NAME" x="32.55" y="60.4" size="1.016" layer="26" font="vector" ratio="14" rot="MR270"/>
+<attribute name="NAME" x="32.45" y="58.9" size="1.016" layer="26" font="vector" ratio="14" rot="MR90"/>
 </element>
 <element name="R13" library="TiLDA Mk3 Parts" package="C0603K-SMALL" value="0603/10k/5%" x="39.6" y="58.4" smashed="yes" rot="MR90">
 <attribute name="NAME" x="39.05" y="60.2" size="1.016" layer="26" font="vector" ratio="14" rot="MR90"/>
@@ -12393,10 +12319,10 @@ design rules under a new name.</description>
 <attribute name="TP_SIGNAL_NAME" value="" x="54.835" y="30.295" size="1" layer="38" rot="MR0"/>
 <attribute name="VALUE" x="54.835" y="31.438" size="0.0254" layer="28" rot="MR0"/>
 </element>
-<element name="JP1" library="SparkFun-Connectors" package="1X11" value="M11PTH" x="85.68" y="3.2" smashed="yes" rot="MR0">
+<element name="JP1" library="TiLDA Mk3 Parts" package="1X11" value="M11PTH" x="85.68" y="3.2" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="86.95" y="0.025" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="JP2" library="SparkFun-Connectors" package="1X11" value="M11PTH" x="55.2" y="3.2" smashed="yes" rot="MR0">
+<element name="JP2" library="TiLDA Mk3 Parts" package="1X11" value="M11PTH" x="55.2" y="3.2" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="56.47" y="0.025" size="1.27" layer="28" rot="MR0"/>
 </element>
 <element name="U$1" library="TiLDA Mk3 Parts" package="NAME_AREA" value="" x="24.625" y="19.125"/>
@@ -12472,18 +12398,17 @@ design rules under a new name.</description>
 <attribute name="TP_SIGNAL_NAME" value="" x="57.835" y="36.495" size="1" layer="38" rot="MR0"/>
 <attribute name="VALUE" x="57.835" y="37.638" size="0.0254" layer="28" rot="MR0"/>
 </element>
-<element name="S1" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="" x="23.6" y="42" smashed="yes" rot="MR0">
-<attribute name="PROD_ID" value="SWCH-00815" x="23.6" y="42" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="S1" library="TiLDA Mk3 Parts" package="TACTILE-SWITCH-1101NE" value="6x3" x="23.6" y="42" smashed="yes" rot="MR0">
 <attribute name="NAME" x="26.6" y="44" size="1.016" layer="26" font="vector" ratio="14" rot="MR0"/>
 <attribute name="VALUE" x="26.6" y="39.3" size="0.762" layer="28" rot="MR0"/>
 </element>
 <element name="FID2" library="TiLDA Mk3 Parts" package="FIDUCIAL-1X2.5-STOP" value="FIDUCIAL1X2.5-STOP" x="117.5" y="9" rot="MR0"/>
 <element name="FID5" library="TiLDA Mk3 Parts" package="FIDUCIAL-1X2.5-STOP" value="FIDUCIAL1X2.5-STOP" x="117.5" y="9"/>
-<element name="D3" library="Diodes" package="SOD123" value="NTS245SFT1G" x="29.4" y="46.4" smashed="yes" rot="MR0">
+<element name="D3" library="TiLDA Mk3 Parts" package="SOD123" value="NTS245SFT1G" x="29.4" y="46.4" smashed="yes" rot="MR0">
 <attribute name="NAME" x="30.2" y="44.4" size="1.016" layer="26" font="vector" ratio="14" rot="MR0"/>
 <attribute name="VALUE" x="30.5" y="44.1" size="1.016" layer="28" font="vector" ratio="12" rot="MR0"/>
 </element>
-<element name="D2" library="Diodes" package="SOD123" value="NTS245SFT1G" x="40.9" y="53.4" smashed="yes" rot="MR180">
+<element name="D2" library="TiLDA Mk3 Parts" package="SOD123" value="NTS245SFT1G" x="40.9" y="53.4" smashed="yes" rot="MR180">
 <attribute name="NAME" x="43.3" y="53.9" size="1.016" layer="26" font="vector" ratio="14" rot="MR180"/>
 <attribute name="VALUE" x="39.8" y="55.7" size="1.016" layer="28" font="vector" ratio="12" rot="MR180"/>
 </element>
@@ -12495,11 +12420,11 @@ design rules under a new name.</description>
 <attribute name="TP_SIGNAL_NAME" value="" x="28.235" y="1.295" size="1" layer="38" rot="MR0"/>
 <attribute name="VALUE" x="28.235" y="2.438" size="0.0254" layer="28" rot="MR0"/>
 </element>
-<element name="U$2" library="TiLDA Mk3 Parts" package="LOGO_MS_4MM" value="" x="109" y="31" rot="MR0"/>
-<element name="U$4" library="TiLDA Mk3 Parts" package="LOGO_ST_4MM" value="" x="109" y="41" rot="MR0"/>
-<element name="U$8" library="TiLDA Mk3 Parts" package="LOGO_TI_4MM" value="" x="109" y="36" rot="MR0"/>
-<element name="U$9" library="TiLDA Mk3 Parts" package="LOGO_HDC_4MM" value="" x="99" y="41" rot="MR0"/>
-<element name="U$11" library="TiLDA Mk3 Parts" package="LOGO_MICROPYTHON_8MM" value="" x="105" y="47" rot="MR0"/>
+<element name="LOGO2" library="TiLDA Mk3 Parts" package="LOGO_TI_4MM" value="LOGO_TI-4MM" x="109" y="36" rot="MR0"/>
+<element name="LOGO3" library="TiLDA Mk3 Parts" package="LOGO_ST_4MM" value="LOGO_ST-4MM" x="109" y="41" rot="MR0"/>
+<element name="LOGO5" library="TiLDA Mk3 Parts" package="LOGO_MS_4MM" value="LOGO_MICROSOFT-4MM" x="109" y="31" rot="MR0"/>
+<element name="LOGO4" library="TiLDA Mk3 Parts" package="LOGO_HDC_4MM" value="LOGO_HCD-4MM" x="99" y="41" rot="MR0"/>
+<element name="LOGO6" library="TiLDA Mk3 Parts" package="LOGO_MICROPYTHON_8MM" value="LOGO_MICROPYTHON-8MM" x="105" y="47" rot="MR0"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -12601,7 +12526,7 @@ design rules under a new name.</description>
 <contactref element="R17" pad="2"/>
 <contactref element="R20" pad="2"/>
 <contactref element="SV7" pad="1"/>
-<contactref element="S8" pad="2"/>
+<contactref element="S8" pad="P$2"/>
 <contactref element="C38" pad="1"/>
 <wire x1="39.95" y1="26" x2="41.4" y2="26" width="0.2" layer="16"/>
 <wire x1="41.4" y1="26" x2="41.752" y2="25.648" width="0.2" layer="16"/>
@@ -12808,8 +12733,6 @@ design rules under a new name.</description>
 </polygon>
 <via x="55.9" y="52.8" extent="1-16" drill="0.3"/>
 <via x="23.6" y="17.6" extent="1-16" drill="0.3"/>
-<contactref element="S4" pad="A2"/>
-<contactref element="S3" pad="A2"/>
 <contactref element="SG1" pad="P$2"/>
 <wire x1="2.6" y1="47.6" x2="3.1" y2="48.1" width="0.2" layer="16"/>
 <wire x1="3.1" y1="48.1" x2="4.2" y2="48.1" width="0.2" layer="16"/>
@@ -12841,7 +12764,7 @@ design rules under a new name.</description>
 <via x="111.2" y="0.8" extent="1-16" drill="0.3"/>
 <via x="109.4" y="7.4" extent="1-16" drill="0.3"/>
 <wire x1="32.375" y1="10.65" x2="32.65" y2="10.65" width="0.2" layer="16"/>
-<contactref element="S7" pad="1"/>
+<contactref element="S7" pad="P$1"/>
 <polygon width="0.2" layer="16" isolate="0.254">
 <vertex x="32" y="55.6"/>
 <vertex x="38.4" y="55.6"/>
@@ -12957,7 +12880,7 @@ design rules under a new name.</description>
 <via x="63" y="24.2" extent="1-16" drill="0.3"/>
 <wire x1="62.8" y1="22.9" x2="62.8" y2="24" width="0.2" layer="16"/>
 <wire x1="62.8" y1="24" x2="63" y2="24.2" width="0.2" layer="16"/>
-<contactref element="S1" pad="2"/>
+<contactref element="S1" pad="P$2"/>
 <via x="49" y="46.9" extent="1-16" drill="0.3"/>
 <wire x1="39.725" y1="48.2" x2="39.725" y2="47.725" width="0.2" layer="16"/>
 <wire x1="54.6" y1="30.9" x2="54.9" y2="30.6" width="0.2" layer="16"/>
@@ -13042,9 +12965,7 @@ design rules under a new name.</description>
 <wire x1="53.3" y1="27.3" x2="52.6" y2="26.6" width="0.2" layer="16"/>
 <wire x1="52.6" y1="26.6" x2="52.5" y2="26.6" width="0.2" layer="16"/>
 <contactref element="S4" pad="1"/>
-<contactref element="S4" pad="A1"/>
 <contactref element="S3" pad="1"/>
-<contactref element="S3" pad="A1"/>
 <wire x1="10.275" y1="14.2" x2="10.275" y2="14.21538125" width="0.2" layer="16"/>
 <wire x1="10.275" y1="14.21538125" x2="10.6" y2="15.4" width="0.2" layer="16" curve="-45"/>
 <via x="10.6" y="15.4" extent="1-16" drill="0.3"/>
@@ -13099,6 +13020,10 @@ design rules under a new name.</description>
 <wire x1="38.5" y1="57.9" x2="38.5" y2="58.5" width="0.2" layer="16"/>
 <wire x1="38.5" y1="58.5" x2="37.75" y2="59.25" width="0.2" layer="16"/>
 <wire x1="37.75" y1="59.25" x2="37" y2="59.25" width="0.2" layer="16"/>
+<contactref element="S4" pad="A1"/>
+<contactref element="S4" pad="A2"/>
+<contactref element="S3" pad="A1"/>
+<contactref element="S3" pad="A2"/>
 </signal>
 <signal name="LCD_!RST">
 <contactref element="J2" pad="10"/>
@@ -13213,7 +13138,7 @@ design rules under a new name.</description>
 <wire x1="25.34" y1="50.835" x2="25.34" y2="53.06" width="0.2" layer="16"/>
 <wire x1="25.34" y1="53.06" x2="25" y2="53.4" width="0.2" layer="16"/>
 <wire x1="19.6" y1="50.8" x2="19.6" y2="51.6" width="0.2" layer="16"/>
-<contactref element="S1" pad="1"/>
+<contactref element="S1" pad="P$1"/>
 <wire x1="24.92605" y1="43.4" x2="24.028025" y2="43.771975" width="0.2" layer="16" curve="-45"/>
 <wire x1="24.028025" y1="43.771975" x2="21.171975" y2="46.628025" width="0.2" layer="16"/>
 <wire x1="21.171975" y1="46.628025" x2="20.8" y2="47.52605" width="0.2" layer="16" curve="-45"/>
@@ -13764,13 +13689,6 @@ design rules under a new name.</description>
 <wire x1="56.382" y1="24.582" x2="56.6" y2="24.8" width="0.2" layer="16"/>
 <wire x1="56.164" y1="24.8" x2="57.7" y2="24.8" width="0.2" layer="16"/>
 <wire x1="64.4" y1="31.4" x2="64.6" y2="31.6" width="0.2" layer="16"/>
-<wire x1="52" y1="20.875" x2="53.4" y2="20.875" width="0.2" layer="16"/>
-<wire x1="54.818" y1="22.75" x2="54.25" y2="22.75" width="0.2" layer="16"/>
-<wire x1="54.25" y1="22.75" x2="54" y2="23" width="0.2" layer="16"/>
-<wire x1="54.818" y1="23.25" x2="54.25" y2="23.25" width="0.2" layer="16"/>
-<wire x1="54.25" y1="23.25" x2="54" y2="23" width="0.2" layer="16"/>
-<wire x1="53.8" y1="21.2" x2="53.8" y2="22.8" width="0.2" layer="16"/>
-<wire x1="53.8" y1="22.8" x2="54" y2="23" width="0.2" layer="16"/>
 <wire x1="62.3" y1="22.9" x2="62.3" y2="23.7" width="0.2" layer="16"/>
 <wire x1="62.3" y1="23.7" x2="62" y2="24" width="0.2" layer="16"/>
 <wire x1="62" y1="24" x2="61.4" y2="24" width="0.2" layer="16"/>
@@ -13920,8 +13838,6 @@ design rules under a new name.</description>
 <wire x1="85.68" y1="2.08" x2="85.68" y2="3.2" width="0.8128" layer="1"/>
 <wire x1="39.075" y1="36" x2="39.9" y2="36" width="0.2" layer="16"/>
 <wire x1="40.5" y1="36.6" x2="39.9" y2="36" width="0.2" layer="16"/>
-<wire x1="53.4" y1="20.875" x2="53.725" y2="21.2" width="0.2" layer="16"/>
-<wire x1="53.725" y1="21.2" x2="53.8" y2="21.2" width="0.2" layer="16"/>
 <wire x1="59.8" y1="20.325" x2="58.5" y2="20.325" width="0.2" layer="16"/>
 <wire x1="52.4" y1="20" x2="58.175" y2="20" width="0.2" layer="16"/>
 <wire x1="58.175" y1="20" x2="58.5" y2="20.325" width="0.2" layer="16"/>
@@ -13933,6 +13849,13 @@ design rules under a new name.</description>
 <wire x1="12.4" y1="48.5" x2="6.9" y2="43" width="0.8128" layer="16"/>
 <wire x1="6.9" y1="43" x2="6.9" y2="41.7" width="0.8128" layer="16"/>
 <wire x1="6.9" y1="41.7" x2="6.8" y2="41.6" width="0.8128" layer="16"/>
+<wire x1="54.818" y1="22.75" x2="53.95" y2="22.75" width="0.2" layer="16"/>
+<wire x1="53.95" y1="22.75" x2="53.4" y2="22.2" width="0.2" layer="16"/>
+<wire x1="53.4" y1="22.2" x2="53.4" y2="20.875" width="0.2" layer="16"/>
+<wire x1="54.818" y1="23.25" x2="53.55" y2="23.25" width="0.2" layer="16"/>
+<wire x1="53.55" y1="23.25" x2="52" y2="21.7" width="0.2" layer="16"/>
+<wire x1="52" y1="21.7" x2="52" y2="21.6" width="0.2" layer="16"/>
+<wire x1="53.4" y1="20.875" x2="52" y2="20.875" width="0.2" layer="16"/>
 </signal>
 <signal name="PB2">
 <contactref element="JP1" pad="7"/>
@@ -14054,7 +13977,7 @@ design rules under a new name.</description>
 <wire x1="65.258578125" y1="32.341421875" x2="65.4" y2="32" width="0.2" layer="1" curve="-45"/>
 <wire x1="54.4" y1="46.4" x2="54.8" y2="46.8" width="0.2" layer="16"/>
 </signal>
-<signal name="BOOT0">
+<signal name="BOOT0/JOY_CEN">
 <contactref element="R33" pad="2"/>
 <contactref element="IC3" pad="94"/>
 <contactref element="SW1" pad="CTR"/>
@@ -14647,7 +14570,7 @@ design rules under a new name.</description>
 <wire x1="51.05" y1="27.55" x2="50.1" y2="26.6" width="0.2" layer="16"/>
 <wire x1="49.625" y1="26.6" x2="50.1" y2="26.6" width="0.2" layer="16"/>
 </signal>
-<signal name="N$38">
+<signal name="VACP2">
 <contactref element="IC3" pad="73"/>
 <contactref element="C29" pad="2"/>
 <contactref element="R7" pad="2"/>
@@ -14990,27 +14913,25 @@ design rules under a new name.</description>
 </signal>
 <signal name="BTN_B">
 <contactref element="IC3" pad="58"/>
-<contactref element="S3" pad="B2"/>
 <via x="20" y="20" extent="1-16" drill="0.3"/>
 <wire x1="20" y1="20" x2="18.7" y2="20" width="0.2" layer="1"/>
 <wire x1="24.45" y1="22" x2="22.6" y2="22" width="0.2" layer="16"/>
 <wire x1="22.6" y1="22" x2="20.6" y2="20" width="0.2" layer="16"/>
 <wire x1="20.6" y1="20" x2="20" y2="20" width="0.2" layer="16"/>
 <contactref element="S3" pad="2"/>
-<contactref element="S3" pad="B1"/>
 <wire x1="18.45" y1="20.25" x2="17.75" y2="20.25" width="0.2" layer="1"/>
 <wire x1="17.75" y1="20.25" x2="16.2" y2="21.8" width="0.2" layer="1"/>
 <wire x1="18.7" y1="20" x2="18.45" y2="20.25" width="0.2" layer="1"/>
 <wire x1="16.2" y1="21.8" x2="18.45" y2="29.35" width="0" layer="19" extent="1-1"/>
+<contactref element="S3" pad="B1"/>
+<contactref element="S3" pad="B2"/>
 </signal>
 <signal name="BTN_A">
 <contactref element="IC3" pad="77"/>
-<contactref element="S4" pad="B2"/>
 <wire x1="26.7" y1="32.25" x2="26.7" y2="29.9" width="0.2" layer="16"/>
 <wire x1="26.7" y1="29.9" x2="27" y2="29.6" width="0.2" layer="16"/>
 <via x="27" y="29.6" extent="1-16" drill="0.3"/>
 <contactref element="S4" pad="2"/>
-<contactref element="S4" pad="B1"/>
 <wire x1="25.2" y1="29.4" x2="27" y2="29.4" width="0.2" layer="1"/>
 <wire x1="27" y1="29.4" x2="27" y2="29.6" width="0.2" layer="1"/>
 <wire x1="27.6" y1="27.7" x2="27.6" y2="28.8" width="0.2" layer="1"/>
@@ -15019,6 +14940,8 @@ design rules under a new name.</description>
 <wire x1="27.6" y1="27.575" x2="27.6" y2="27.7" width="0.2" layer="1"/>
 <wire x1="27.6" y1="27.7" x2="27.45" y2="27.85" width="0.2" layer="1"/>
 <wire x1="26.7" y1="32.25" x2="27.45" y2="36.95" width="0" layer="19" extent="1-16"/>
+<contactref element="S4" pad="B1"/>
+<contactref element="S4" pad="B2"/>
 </signal>
 <signal name="ADC_VIN">
 <contactref element="R3" pad="2"/>
@@ -15091,7 +15014,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="CC_RST">
 <contactref element="IC6" pad="35"/>
-<contactref element="S8" pad="1"/>
+<contactref element="S8" pad="P$1"/>
 <via x="74.2" y="6.8" extent="1-16" drill="0.3"/>
 <wire x1="74.2" y1="6.8" x2="74.2" y2="15.8" width="0.2" layer="1"/>
 <wire x1="74.2" y1="15.8" x2="74" y2="16" width="0.2" layer="1"/>
@@ -15339,11 +15262,11 @@ design rules under a new name.</description>
 <wire x1="19.95" y1="6.8" x2="19.7" y2="6.8" width="0.2" layer="16"/>
 <wire x1="21.3" y1="5.425" x2="20.275" y2="4.4" width="0.2" layer="16"/>
 <wire x1="20.275" y1="4.4" x2="20" y2="4.4" width="0.2" layer="16"/>
-<contactref element="SJ1" pad="2"/>
 <contactref element="D3" pad="A"/>
 <wire x1="40.45" y1="55.2" x2="40.65" y2="55.2" width="0.2" layer="16"/>
-<wire x1="40.65" y1="55.2" x2="40.65" y2="55.4" width="0.2" layer="16"/>
 <wire x1="28.2" y1="46.4" x2="27.5" y2="46.4" width="0.4064" layer="16"/>
+<contactref element="SJ1" pad="2"/>
+<wire x1="40.65" y1="55.2" x2="40.65" y2="55.4" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$6">
 <contactref element="Q2" pad="4"/>
@@ -17682,7 +17605,7 @@ design rules under a new name.</description>
 <wire x1="39.8" y1="3.2" x2="37.8" y2="5.2" width="0.2" layer="1"/>
 <wire x1="37.8" y1="5.2" x2="37.8" y2="8.6" width="0.2" layer="1"/>
 </signal>
-<signal name="N$22">
+<signal name="C1">
 <contactref element="C40" pad="1"/>
 <contactref element="IC9" pad="4"/>
 <wire x1="54.818" y1="22.218" x2="54.818" y2="20.893" width="0.2" layer="16"/>
@@ -17716,7 +17639,7 @@ design rules under a new name.</description>
 <wire x1="58.525" y1="20.8" x2="59.8" y2="22.075" width="0.2" layer="1"/>
 <wire x1="59.8" y1="22.075" x2="59.8" y2="23.2" width="0.2" layer="1"/>
 </signal>
-<signal name="N$1">
+<signal name="DRDY">
 <contactref element="IC8" pad="9"/>
 <contactref element="IC9" pad="8"/>
 <wire x1="64.4" y1="25.4" x2="65.2" y2="24.6" width="0.2" layer="16"/>
@@ -17848,7 +17771,7 @@ design rules under a new name.</description>
 <wire x1="43.65" y1="49.625" x2="42.825" y2="49.625" width="0.2" layer="16"/>
 </signal>
 <signal name="BTN_MENU">
-<contactref element="S7" pad="2"/>
+<contactref element="S7" pad="P$2"/>
 <contactref element="IC3" pad="84"/>
 <via x="23.47" y="45.701" extent="1-16" drill="0.3"/>
 <wire x1="30.2" y1="32.25" x2="30.2" y2="33.27395" width="0.2" layer="16"/>
@@ -17869,8 +17792,6 @@ design rules under a new name.</description>
 <wire x1="27.87395" y1="43.8" x2="25.89705" y2="43.8" width="0.2" layer="16"/>
 <wire x1="25.89705" y1="43.8" x2="24.999025" y2="44.171975" width="0.2" layer="16" curve="-45"/>
 <wire x1="24.999025" y1="44.171975" x2="23.47" y2="45.701" width="0.2" layer="16"/>
-</signal>
-<signal name="FRAME1">
 </signal>
 </signals>
 <errors>
