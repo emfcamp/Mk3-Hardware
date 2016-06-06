@@ -9942,7 +9942,7 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <clearance class="8" value="4"/>
 </class>
 </classes>
-<designrules name="TiLDA Mk3 DRC Rules *">
+<designrules name="TiLDA Mk3 DRC Rules">
 <description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 The default Design Rules have been set to cover
@@ -10830,7 +10830,8 @@ design rules under a new name.</description>
 <polygon width="0.2" layer="16" isolate="0.254">
 <vertex x="94.4" y="30.8"/>
 <vertex x="119.6" y="30.8"/>
-<vertex x="119.6" y="0"/>
+<vertex x="119.6" y="9" curve="-90"/>
+<vertex x="110.6" y="0"/>
 <vertex x="109" y="0"/>
 <vertex x="109" y="7.6"/>
 <vertex x="92.8" y="7.6"/>
