@@ -57653,7 +57653,7 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <attribute name="COLOUR" value="RED"/>
 <attribute name="FARNELL" value="2449874"/>
 </part>
-<part name="R2" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/1k/5%"/>
+<part name="R2" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4k7/5%"/>
 <part name="S5" library="TiLDA Mk3 Parts" deviceset="SWITCH-SPST" device="-SMD-A" value="CUS-12TB">
 <attribute name="FARNELL" value="9575146"/>
 </part>
@@ -57673,7 +57673,7 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <attribute name="FARNELL" value="2449874"/>
 </part>
 <part name="C13" library="TiLDA Mk3 Parts" deviceset="C-EU" device="C0603K-SMALL" value="0603/1u/10V/X5R"/>
-<part name="R5" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/2M2/5%"/>
+<part name="R5" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4M7/5%"/>
 <part name="+3V10" library="TiLDA Mk3 Parts" deviceset="+3V3" device=""/>
 <part name="GND72" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND73" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
@@ -57750,8 +57750,8 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <attribute name="COLOUR" value="GREEN"/>
 <attribute name="FARNELL" value="2426215"/>
 </part>
-<part name="R12" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/150R/5%"/>
-<part name="R14" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/120R/5%"/>
+<part name="R12" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/2k/5%"/>
+<part name="R14" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4k7/5%"/>
 <part name="GND100" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="GND101" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="R11" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="DNP"/>
