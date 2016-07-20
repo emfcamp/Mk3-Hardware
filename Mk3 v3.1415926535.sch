@@ -14828,7 +14828,7 @@ SMD Buzzer&lt;br&gt;
 <wire x1="1" y1="4.25" x2="4" y2="4.25" width="0.127" layer="21"/>
 <wire x1="1" y1="-10.5" x2="3.25" y2="-10.5" width="0.127" layer="21"/>
 <wire x1="3.25" y1="-2.5" x2="4" y2="0.75" width="0.127" layer="51" curve="-25.989237"/>
-<text x="-2.75" y="-11.25" size="1.016" layer="25" font="vector" ratio="14" rot="R180">&gt;NAME</text>
+<text x="-8.25" y="-11.75" size="1.016" layer="25" font="vector" ratio="14">&gt;NAME</text>
 <wire x1="5" y1="-8.6" x2="5" y2="2.4" width="0.127" layer="51"/>
 <wire x1="6.4" y1="-8.6" x2="6.4" y2="2.4" width="0.127" layer="51"/>
 <wire x1="11.9" y1="-8.6" x2="11.9" y2="2.4" width="0.127" layer="51"/>
@@ -41212,8 +41212,8 @@ This setting can be found in the board layout editor under the Edit menu.  Selec
 <pin name="CENT" x="12.7" y="-2.54" length="short" rot="R180"/>
 <pin name="DOWN" x="-12.7" y="0" length="short"/>
 <pin name="COM" x="-12.7" y="-2.54" length="short"/>
-<pin name="LEFT" x="12.7" y="2.54" length="short" rot="R180"/>
-<pin name="RIGHT" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="RIGHT" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="LEFT" x="12.7" y="0" length="short" rot="R180"/>
 <pin name="UP" x="-12.7" y="2.54" length="short"/>
 </symbol>
 <symbol name="M02">
@@ -53419,8 +53419,8 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <connect gate="G$1" pin="CENT" pad="CTR"/>
 <connect gate="G$1" pin="COM" pad="GND"/>
 <connect gate="G$1" pin="DOWN" pad="D"/>
-<connect gate="G$1" pin="LEFT" pad="B"/>
-<connect gate="G$1" pin="RIGHT" pad="C"/>
+<connect gate="G$1" pin="LEFT" pad="C"/>
+<connect gate="G$1" pin="RIGHT" pad="B"/>
 <connect gate="G$1" pin="UP" pad="A"/>
 </connects>
 <technologies>
@@ -53432,8 +53432,8 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <connect gate="G$1" pin="CENT" pad="CTR"/>
 <connect gate="G$1" pin="COM" pad="GND"/>
 <connect gate="G$1" pin="DOWN" pad="D"/>
-<connect gate="G$1" pin="LEFT" pad="B"/>
-<connect gate="G$1" pin="RIGHT" pad="C"/>
+<connect gate="G$1" pin="LEFT" pad="C"/>
+<connect gate="G$1" pin="RIGHT" pad="B"/>
 <connect gate="G$1" pin="UP" pad="A"/>
 </connects>
 <technologies>
@@ -53445,8 +53445,8 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <connect gate="G$1" pin="CENT" pad="CTR"/>
 <connect gate="G$1" pin="COM" pad="COM"/>
 <connect gate="G$1" pin="DOWN" pad="D"/>
-<connect gate="G$1" pin="LEFT" pad="B"/>
-<connect gate="G$1" pin="RIGHT" pad="C"/>
+<connect gate="G$1" pin="LEFT" pad="C"/>
+<connect gate="G$1" pin="RIGHT" pad="B"/>
 <connect gate="G$1" pin="UP" pad="A"/>
 </connects>
 <technologies>
@@ -53458,8 +53458,8 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <connect gate="G$1" pin="CENT" pad="CTR"/>
 <connect gate="G$1" pin="COM" pad="COM"/>
 <connect gate="G$1" pin="DOWN" pad="D"/>
-<connect gate="G$1" pin="LEFT" pad="B"/>
-<connect gate="G$1" pin="RIGHT" pad="C"/>
+<connect gate="G$1" pin="LEFT" pad="C"/>
+<connect gate="G$1" pin="RIGHT" pad="B"/>
 <connect gate="G$1" pin="UP" pad="A"/>
 </connects>
 <technologies>
@@ -60170,7 +60170,7 @@ Buttons</text>
 <label x="119.38" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SW1" gate="G$1" pin="RIGHT"/>
+<pinref part="SW1" gate="G$1" pin="LEFT"/>
 <wire x1="342.9" y1="86.36" x2="340.36" y2="86.36" width="0.1524" layer="91"/>
 <label x="340.36" y="86.36" size="1.778" layer="95" rot="MR0"/>
 </segment>
@@ -60743,7 +60743,7 @@ Buttons</text>
 <label x="119.38" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SW1" gate="G$1" pin="LEFT"/>
+<pinref part="SW1" gate="G$1" pin="RIGHT"/>
 <wire x1="342.9" y1="83.82" x2="340.36" y2="83.82" width="0.1524" layer="91"/>
 <label x="340.36" y="83.82" size="1.778" layer="95" rot="MR0"/>
 </segment>
