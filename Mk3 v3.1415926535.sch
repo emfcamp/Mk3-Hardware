@@ -14801,38 +14801,38 @@ SMD Buzzer&lt;br&gt;
 <smd name="B2" x="4.55" y="2.25" dx="1.4" dy="2.1" layer="1" rot="R90"/>
 </package>
 <package name="0011XAAX09X">
-<smd name="GND" x="-10.8" y="10" dx="1.4" dy="1.2" layer="1" rot="R270"/>
-<smd name="CD" x="-9.6" y="10.6" dx="0.7" dy="1.6" layer="1"/>
-<smd name="8" x="-8.5" y="10.6" dx="0.7" dy="1.6" layer="1"/>
-<smd name="1" x="-0.8" y="10.6" dx="0.7" dy="1.6" layer="1"/>
-<smd name="2" x="-1.9" y="10.6" dx="0.7" dy="1.6" layer="1"/>
-<smd name="3" x="-3" y="10.6" dx="0.7" dy="1.6" layer="1"/>
-<smd name="4" x="-4.1" y="10.6" dx="0.7" dy="1.6" layer="1"/>
-<smd name="5" x="-5.2" y="10.6" dx="0.7" dy="1.6" layer="1"/>
-<smd name="6" x="-6.3" y="10.6" dx="0.7" dy="1.6" layer="1"/>
-<smd name="7" x="-7.4" y="10.6" dx="0.7" dy="1.6" layer="1"/>
+<smd name="GND" x="-10" y="-10.8" dx="1.4" dy="1.2" layer="1"/>
+<smd name="CD" x="-10.6" y="-9.6" dx="0.7" dy="1.6" layer="1" rot="R90"/>
+<smd name="8" x="-10.6" y="-8.5" dx="0.7" dy="1.6" layer="1" rot="R90"/>
+<smd name="1" x="-10.6" y="-0.8" dx="0.7" dy="1.6" layer="1" rot="R90"/>
+<smd name="2" x="-10.6" y="-1.9" dx="0.7" dy="1.6" layer="1" rot="R90"/>
+<smd name="3" x="-10.6" y="-3" dx="0.7" dy="1.6" layer="1" rot="R90"/>
+<smd name="4" x="-10.6" y="-4.1" dx="0.7" dy="1.6" layer="1" rot="R90"/>
+<smd name="5" x="-10.6" y="-5.2" dx="0.7" dy="1.6" layer="1" rot="R90"/>
+<smd name="6" x="-10.6" y="-6.3" dx="0.7" dy="1.6" layer="1" rot="R90"/>
+<smd name="7" x="-10.6" y="-7.4" dx="0.7" dy="1.6" layer="1" rot="R90"/>
 <hole x="0" y="0" drill="1"/>
-<hole x="-8" y="0" drill="1"/>
-<smd name="GND1" x="3.8" y="10" dx="1.4" dy="1.6" layer="1" rot="R90"/>
-<smd name="GND3" x="4.7" y="0.4" dx="1.2" dy="2.2" layer="1"/>
-<smd name="GND2" x="-10.8" y="0.4" dx="1.2" dy="2.2" layer="1"/>
-<wire x1="-10.5" y1="10.5" x2="4.25" y2="10.5" width="0.127" layer="51"/>
-<wire x1="-10.5" y1="10.5" x2="-10.5" y2="-3.25" width="0.127" layer="51"/>
-<wire x1="4.25" y1="10.5" x2="4.25" y2="-4" width="0.127" layer="51"/>
-<wire x1="4.25" y1="-4" x2="0.75" y2="-4" width="0.127" layer="51"/>
-<wire x1="-10.5" y1="-3.25" x2="-2.5" y2="-3.25" width="0.127" layer="51"/>
-<wire x1="-2.5" y1="-3.25" x2="0.75" y2="-4" width="0.127" layer="51" curve="-25.989237"/>
-<wire x1="-10.5" y1="8.75" x2="-10.5" y2="1.75" width="0.127" layer="21"/>
-<wire x1="0" y1="10.5" x2="2.75" y2="10.5" width="0.127" layer="21"/>
-<wire x1="4.25" y1="9" x2="4.25" y2="1.75" width="0.127" layer="21"/>
-<wire x1="4.25" y1="-1" x2="4.25" y2="-4" width="0.127" layer="21"/>
-<wire x1="-10.5" y1="-1" x2="-10.5" y2="-3.25" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="-3.25" x2="0.75" y2="-4" width="0.127" layer="51" curve="-25.989237"/>
-<text x="-11.25" y="2.75" size="1.016" layer="25" font="vector" ratio="14" rot="R90">&gt;NAME</text>
-<wire x1="-8.6" y1="-5" x2="2.4" y2="-5" width="0.127" layer="51"/>
-<wire x1="-8.6" y1="-6.4" x2="2.4" y2="-6.4" width="0.127" layer="51"/>
-<wire x1="-8.6" y1="-11.9" x2="2.4" y2="-11.9" width="0.127" layer="51"/>
-<rectangle x1="-10.5" y1="2.9" x2="0.3" y2="7.3" layer="39"/>
+<hole x="0" y="-8" drill="1"/>
+<smd name="GND1" x="-10" y="3.8" dx="1.4" dy="1.6" layer="1" rot="R180"/>
+<smd name="GND3" x="-0.4" y="4.7" dx="1.2" dy="2.2" layer="1" rot="R90"/>
+<smd name="GND2" x="-0.4" y="-10.8" dx="1.2" dy="2.2" layer="1" rot="R90"/>
+<wire x1="-10.5" y1="-10.5" x2="-10.5" y2="4.25" width="0.127" layer="51"/>
+<wire x1="-10.5" y1="-10.5" x2="3.25" y2="-10.5" width="0.127" layer="51"/>
+<wire x1="-10.5" y1="4.25" x2="4" y2="4.25" width="0.127" layer="51"/>
+<wire x1="4" y1="4.25" x2="4" y2="0.75" width="0.127" layer="51"/>
+<wire x1="3.25" y1="-10.5" x2="3.25" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="3.25" y1="-2.5" x2="4" y2="0.75" width="0.127" layer="51" curve="-25.989237"/>
+<wire x1="-8.75" y1="-10.5" x2="-1.75" y2="-10.5" width="0.127" layer="21"/>
+<wire x1="-10.5" y1="0" x2="-10.5" y2="2.75" width="0.127" layer="21"/>
+<wire x1="-9" y1="4.25" x2="-1.75" y2="4.25" width="0.127" layer="21"/>
+<wire x1="1" y1="4.25" x2="4" y2="4.25" width="0.127" layer="21"/>
+<wire x1="1" y1="-10.5" x2="3.25" y2="-10.5" width="0.127" layer="21"/>
+<wire x1="3.25" y1="-2.5" x2="4" y2="0.75" width="0.127" layer="51" curve="-25.989237"/>
+<text x="-2.75" y="-11.25" size="1.016" layer="25" font="vector" ratio="14" rot="R180">&gt;NAME</text>
+<wire x1="5" y1="-8.6" x2="5" y2="2.4" width="0.127" layer="51"/>
+<wire x1="6.4" y1="-8.6" x2="6.4" y2="2.4" width="0.127" layer="51"/>
+<wire x1="11.9" y1="-8.6" x2="11.9" y2="2.4" width="0.127" layer="51"/>
+<rectangle x1="-10.5" y1="-7.3" x2="0.3" y2="-2.9" layer="39" rot="R90"/>
 </package>
 <package name="PINHEAD_2X05_127">
 <wire x1="-3.225" y1="-1.32" x2="-3.225" y2="-0.635" width="0.127" layer="21"/>
@@ -57887,8 +57887,8 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="GND22" library="TiLDA Mk3 Parts" deviceset="GND" device=""/>
 <part name="+3V1" library="TiLDA Mk3 Parts" deviceset="+3V3" device=""/>
 <part name="+3V2" library="TiLDA Mk3 Parts" deviceset="+3V3" device=""/>
-<part name="R18" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="DNP (0603/10k/5%)"/>
-<part name="R19" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="DNP (0603/10k/5%)"/>
+<part name="R18" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4k7/5%"/>
+<part name="R19" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="0603/4k7/5%"/>
 <part name="+3V3" library="TiLDA Mk3 Parts" deviceset="+3V3" device=""/>
 <part name="R28" library="TiLDA Mk3 Parts" deviceset="R-EU_" device="0603K-SMALL" value="DNP (0603/4M7/5%)">
 <attribute name="FARNELL" value="2059694"/>
@@ -60163,7 +60163,7 @@ Buttons</text>
 <pinref part="JP2" gate="G$1" pin="10"/>
 </segment>
 </net>
-<net name="JOY_RIGHT" class="0">
+<net name="JOY_LEFT" class="0">
 <segment>
 <pinref part="IC3" gate="_PD" pin="PD6"/>
 <wire x1="116.84" y1="101.6" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
@@ -60271,7 +60271,7 @@ Buttons</text>
 <label x="370.84" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="JOY_LEFT" class="0">
+<net name="JOY_DOWN" class="0">
 <segment>
 <pinref part="IC3" gate="_PD" pin="PD9"/>
 <wire x1="119.38" y1="91.44" x2="116.84" y2="91.44" width="0.1524" layer="91"/>
@@ -60736,7 +60736,7 @@ Buttons</text>
 <label x="119.38" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="JOY_DOWN" class="0">
+<net name="JOY_RIGHT" class="0">
 <segment>
 <pinref part="IC3" gate="_PD" pin="PD10"/>
 <wire x1="116.84" y1="88.9" x2="119.38" y2="88.9" width="0.1524" layer="91"/>
