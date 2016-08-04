@@ -21,8 +21,10 @@ ST-LINK_CLI.exe -c ID=$id FREQ=2000 -P firmware.hex -Dump 0x1FFF7590 12 id.hex -
 
 
 
-if([System.IO.File]::Exists("id.hex")){
-	if([System.IO.File]::Exists("sec.hex")){
+#if([System.IO.File]::Exists("id.hex")){
+#	if([System.IO.File]::Exists("sec.hex")){
+if (Test-Path id.hex) {
+	if (Test-Path sec.hex) {
 	
 		python ..\upload.py .\id.hex .\sec.hex $pwd
 
@@ -39,7 +41,13 @@ if([System.IO.File]::Exists("id.hex")){
 		Start-Sleep 4
 	
 	}
+	else { 
+
+	}
 }
+else { 
+	
+	}
 
 
 
